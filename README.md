@@ -31,3 +31,5 @@ Zhenke Wu's Research Website: [click to view](http://zhenkewu.com)
 	</script>
 	<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
 
+* projects
+    - For each repo (in the folder `/_data`), the `url` should not end with `/`. For example, use `url: /projects/baker`, instead of `url: /projects/baker/`
