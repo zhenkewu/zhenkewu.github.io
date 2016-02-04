@@ -1,0 +1,78 @@
+---
+- repo: zhenkewu/baker
+  title: baker
+  owner: zhenkewu
+  description: Bayesian Analysis Kit for Etiology Research
+  url: /projects/baker/
+  contributors:
+  - login: zhenkewu
+    avatar: https://avatars.githubusercontent.com/u/4580992?v=3&s=50
+    url: https://github.com/zhenkewu
+  - login: swihart
+    avatar: https://avatars.githubusercontent.com/u/4581196?v=3&s=50
+    url: https://github.com/swihart
+  - login: fupangpangpang
+    avatar: https://avatars.githubusercontent.com/u/7834167?v=3&s=50
+    url: https://github.com/fupangpangpang
+  commits:
+  - date: 2015-11-03 05:22:54.000000000 Z
+    message: edited README.md
+    url: https://github.com/zhenkewu/baker/commit/2c0cd8f9c19f821143bb7ecb41873a979ac517ae
+    author_login: zhenkewu
+    author_url: https://github.com/zhenkewu
+  - date: 2015-11-03 04:35:09.000000000 Z
+    message: Merge branch 'master' into noFSWsharing
+    url: https://github.com/zhenkewu/baker/commit/17cbf9454183f77fb0451a6f6f64e5f15961ea1a
+    author_login: zhenkewu
+    author_url: https://github.com/zhenkewu
+  - date: 2015-11-03 04:33:50.000000000 Z
+    message: calm down
+    url: https://github.com/zhenkewu/baker/commit/826f0dbc8a204ee1a831eabdb3562407eac7594b
+    author_login: zhenkewu
+    author_url: https://github.com/zhenkewu
+  - date: 2015-11-03 04:30:53.000000000 Z
+    message: added back readme
+    url: https://github.com/zhenkewu/baker/commit/03a13ee696eb2647de34a404f73dd4c19251aaf8
+    author_login: zhenkewu
+    author_url: https://github.com/zhenkewu
+  - date: 2015-11-03 04:22:02.000000000 Z
+    message: Merge branch 'noFSWsharing'
+    url: https://github.com/zhenkewu/baker/commit/0aeab94425dc5cfb5e99afd235ca4235c50ca6f0
+    author_login: zhenkewu
+    author_url: https://github.com/zhenkewu
+- repo: zhenkewu/mpcr
+  title: mpcr
+  owner: zhenkewu
+  description: R package for estimating treatment effects in matched-pair cluster
+    randomized trials (MPCR) using covariate calibration
+  url: /projects/mpcr/
+  contributors:
+  - login: zhenkewu
+    avatar: https://avatars.githubusercontent.com/u/4580992?v=3&s=50
+    url: https://github.com/zhenkewu
+  commits:
+  - date: 2015-10-30 10:42:43.000000000 Z
+    message: add all
+    url: https://github.com/zhenkewu/mpcr/commit/58c33fa9122849bd71fece0ebbcd89a0beec3ef1
+    author_login: zhenkewu
+    author_url: https://github.com/zhenkewu
+  - date: 2015-01-07 06:28:47.000000000 Z
+    message: update README.md
+    url: https://github.com/zhenkewu/mpcr/commit/c362cf61902a58c1faa49fabda715a489de4647a
+    author_login: zhenkewu
+    author_url: https://github.com/zhenkewu
+  - date: 2014-12-10 21:22:53.000000000 Z
+    message: edit readme.md
+    url: https://github.com/zhenkewu/mpcr/commit/00aa49f8177b87941835f916630dfe75bf13ed6c
+    author_login: zhenkewu
+    author_url: https://github.com/zhenkewu
+  - date: 2014-12-10 21:22:33.000000000 Z
+    message: edit readme.md
+    url: https://github.com/zhenkewu/mpcr/commit/f922d2c2677a0af8e8471a46f89431bc125eca15
+    author_login: zhenkewu
+    author_url: https://github.com/zhenkewu
+  - date: 2014-12-10 21:20:50.000000000 Z
+    message: edit readme.md
+    url: https://github.com/zhenkewu/mpcr/commit/1b96608d226cd8177735c99e2e09077aa0e2470e
+    author_login: zhenkewu
+    author_url: https://github.com/zhenkewu

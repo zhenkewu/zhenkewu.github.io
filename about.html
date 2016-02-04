@@ -1,0 +1,14 @@
+---
+layout: default
+title: Zhenke Wu / about
+categories:
+ - home
+---
+{% include JB/setup %}
+{% for page in site.categories.misc %}
+{% if page.about %}
+	{% assign aboutpage = page %}
+{% endif %}
+{% endfor %}
+
+{{ aboutpage.content }}

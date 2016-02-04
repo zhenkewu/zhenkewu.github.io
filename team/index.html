@@ -1,0 +1,114 @@
+---
+layout: default
+title: "cv/contact"
+navtab: "cv/contact"
+description: "People in the lab"
+group: navigation
+navorder: 4
+
+---
+{% include JB/setup %}
+
+<div class="bigspacer"></div>
+<hr/>
+<div class="bigspacer"></div>						
+
+<div class="bigspacer"></div>
+{% for member in site.categories.team reversed %}
+	{% if member.alum == false and member.collaborator == false %}
+	    {% cycle 'add rows': '<div class="row">', nil, nil %}
+			<div class="col-md-4 memberbox">
+				<div class="media">
+	  				<a class="pull-left" href="{{ member.url }}">
+	    				<img class="media-object member-photo" src="{{ member.image }}">
+	  				</a>
+	 			 	<div class="media-body">
+	    				<div class="head media-heading member-name"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
+	    				<p class="note">{{ member.position }}</p>
+						{% if member.cv %}		
+						<div class="smallhead">
+							CV
+						</div>	
+						<div class="pad-left note">
+							<div class="smallspacer"></div>
+							<i class="fa fa-file-text-o fa-fw"></i>			
+							<a class="off" href="{{ member.cv }}">{{ member.cv | split: '/' | last }}</a>
+						</div>		
+						<div class="bigspacer"></div>		
+						{% endif %}
+	  				</div>
+				</div>
+	        </div>	  
+	    {% cycle 'close rows': nil, nil, '</div><div class="bigspacer"></div>' %}
+	{% endif %}
+{% endfor %}
+{% comment %}
+{% cycle 'close rows': nil, '</div><div class="bigspacer"></div>', '</div><div class="bigspacer"></div>' %}
+{% endcomment %}
+
+<!-- comment out this next line if there are multiples of three members -->
+</div>
+
+<div class="bigspacer"></div>
+<hr/>
+<div class="title text-center">Collaborators </div>
+
+<div class="smalltitle text-left">Statistical </div>
+<div class="bigspacer"></div>
+
+{% for member in site.categories.team %}
+	{% if member.field == "stat" and member.collaborator == true %}
+	    {% cycle 'add collaborator rows': '<div class="row">', nil, nil %}
+			<div class="col-md-4 memberbox">
+				<div class="media">
+	  				<a class="pull-left" href="{{ member.url }}">
+	    				<img class="media-object member-photo" src="{{ member.image }}">
+	  				</a>
+	 			 	<div class="media-body">
+	    				<div class="head media-heading member-name"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
+	    				<p class="note">{{ member.position }}</p>
+	  				</div>
+				</div>
+	        </div>	  
+	    {% cycle 'close collaborator rows': nil, nil, '</div><div class="bigspacer"></div>' %}
+	{% endif %}
+{% endfor %}
+{% comment %}
+{% cycle 'close collaborator rows': nil, '</div><div class="bigspacer"></div>', '</div><div class="bigspacer"></div>' %}
+{% endcomment %}
+
+<!-- comment out this next line if there are multiples of three alumni -->
+</div>
+
+
+
+<div class="bigspacer"></div>
+<hr/>
+<div class="smalltitle text-left">Scientific </div>
+<div class="bigspacer"></div>
+
+{% for member in site.categories.team %}
+	{% if member.field == "pneumonia" and member.collaborator == true%}
+	    {% cycle 'add scientist rows': '<div class="row">', nil, nil %}
+			<div class="col-md-4 memberbox">
+				<div class="media">
+	  				<a class="pull-left" href="{{ member.url }}">
+	    				<img class="media-object member-photo" src="{{ member.image }}">
+	  				</a>
+	 			 	<div class="media-body">
+	    				<div class="head media-heading member-name"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
+	    				<p class="note">{{ member.position }}</p>
+	  				</div>
+				</div>
+	        </div>	  
+	    {% cycle 'close scientist rows': nil, nil, '</div><div class="bigspacer"></div>' %}
+	{% endif %}
+{% endfor %}
+{% comment %}
+{% cycle 'close scientist rows': nil, '</div><div class="bigspacer"></div>', '</div><div class="bigspacer"></div>' %}
+{% endcomment %}
+
+<!-- comment out this next line if there are multiples of three alumni -->
+</div>
+
+<div class="bigspacer"></div>

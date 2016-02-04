@@ -1,0 +1,206 @@
+<!-- 
+Branched from Trevor Bedford's source, https://github.com/blab/blotter/blob/master/_layouts/paper.html
+with gratitude.
+-->
+
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-md-3">
+		<div class="media">
+			{% if page.image %}
+			<img class="pull-left pad-right media-object paper-image" src="{{ page.image }}">
+			{% endif %}
+		</div>
+	</div>
+
+	<div class="col-md-9">
+		<div class="media-body titlebox">
+			<div class="title media-heading">
+				{{ page.title }}
+			</div>
+			<p>
+			<div class="smallhead">
+				{% assign authorsq = page.authors | split: ', ' %}
+				{% for author_iter in authorsq %}
+				{% if forloop.last %}
+				     {% assign in_file = false %}
+					 {% assign in_file_web = false %}
+				     {% for person in site.categories.team %}
+					 		{% if author_iter contains person.title %}
+							     {% assign in_file = true %}
+								 {% assign in_file_web = person.web %}
+							{% endif %}
+					 {% endfor %}
+					 
+					 {% if in_file %}
+     								<a href="http://{{ in_file_web }}">{{ author_iter }}</a> ({{ page.year }}). 
+					 {% else %}
+     								{{ author_iter }} ({{page.year}}).
+                     {% endif %}
+				 {% else %}
+				     {% assign in_file = false %}
+					 {% assign in_file_web = false %}
+				     {% for person in site.categories.team %}
+					 		{% if author_iter contains person.title %}
+							     {% assign in_file = true %}
+								 {% assign in_file_web = person.web %}
+							{% endif %}
+					 {% endfor %}
+				 
+					 {% if in_file %}
+	 								<a href="http://{{ in_file_web }}">{{ author_iter }}</a>, 
+					 {% else %}
+	 								{{ author_iter }},
+	                 {% endif %}
+				 {% endif %}
+				{% endfor %}
+				
+				<!-- {{ page.authors }},  -->
+				<span class="journal">
+				{{ page.journal }}
+				</span>
+				{% if page.volume %}
+				 {{ page.volume }}
+				{% endif %}
+				{% if page.issue %}
+				({{ page.issue }})
+				{% endif %}
+				{% if page.pages %}
+				:{{ page.pages }} 
+				{% endif %}
+				<!-- ({{ page.year }}). -->
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-md-3">
+		<div class="bigspacer"></div>
+		<div class="glyphbox note"> <!-- DAD: what is this class? -->
+			{% if page.pdf or page.pdflink or page.fulltext %}
+			<div class="smallhead">
+				Full text
+			</div>	
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				{% if page.pdflink %}
+					<i class="fa fa-file-pdf-o fa-fw"></i>
+					<a class="off" href="{{ page.pdflink }}">Journal PDF</a>
+					<br/>
+				{% endif %}
+				{% if page.pdf %}
+					<i class="fa fa-file-pdf-o fa-fw"></i>
+					<a class="off" href="{{ page.pdf }}">PDF</a>
+					<br/>
+				{% endif %}
+				{% if page.fulltext %}
+				<i class="fa fa-external-link fa-fw"></i>
+				<a class="off" href="{{ page.fulltext }}">Journal HTML</a>
+				{% endif %}
+			</div>
+			<div class="bigspacer"></div>			
+			{% endif %}
+
+			{% if page.supplement %}
+			<div class="smallhead">
+				Supplement
+			</div>	
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa fa-paperclip fa-fw"></i>
+				<a class="off" href="{{ page.supplement }}">{{ page.supplement | split: '/' | last }}</a>
+			</div>
+			<div class="bigspacer"></div>			
+			{% endif %}	
+			
+			{% if page.slides %}
+			<div class="smallhead">
+				Slides
+			</div>	
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa fa-paperclip fa-fw"></i>
+				<a class="off" href="{{ page.slides }}">{{ page.slides | split: '/' | last }}</a>
+			</div>
+			<div class="bigspacer"></div>			
+			{% endif %}
+			
+			{% if page.doi %}
+			<div class="smallhead">
+				DOI
+			</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa fa-external-link fa-fw"></i>
+				<a class="off" href="http://dx.doi.org/{{ page.doi }}">{{ page.doi }}</a>
+			</div>
+			<div class="bigspacer"></div>			
+			{% endif %}
+			
+			{% if page.arXiv %}
+			<div class="smallhead">
+				ArXiv.org
+			</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa fa-external-link fa-fw"></i>
+				<a class="off" href="http://arxiv.org/abs/{{ page.arXiv }}">{{ page.arXiv }}</a>
+			</div>
+			<div class="bigspacer"></div>			
+			{% endif %}
+			
+			{% if page.github %}
+			<div class="smallhead">
+				Source code
+			</div>	
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa fa-cog fa-fw"></i>
+				<a class="off" href="{{ page.github }}">{{ page.github | remove: 'http://' | remove: 'https://' }}</a>
+			</div>
+			<div class="bigspacer"></div>
+			{% endif %}
+			{% if page.dryad_doi %}
+			<div class="smallhead">
+				Data
+			</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa fa-database fa-fw"></i>
+				<a class="off" href="http://dx.doi.org/{{ page.dryad_doi }}">Dryad</a>
+			</div>
+			<div class="bigspacer"></div>			
+			{% endif %}
+			<div class="smallhead">
+				Share
+			</div>
+		    <!-- Paste the 3 next lines where you want the sharing button(s) to appear -->
+		    <div class="post-sharing">
+		     {% include JB/sharing %}
+		    </div>
+
+		</div>
+	</div>
+	{% if page.embargo %}
+	<div class="col-md-8">
+		<div class="post">
+		In press...watch this space!
+		</div>
+	</div>
+	{% else %}
+	<div class="col-md-8">	
+		<div class="post">
+			{{ content }}
+		</div>	
+	</div>
+	{% endif %}
+
+	<div class="col-md-1"></div>
+</div>
+
+<div class="bigspacer"></div>
+
