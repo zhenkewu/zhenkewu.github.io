@@ -4,9 +4,9 @@ Zhenke Wu's Research Website: [click to view](http://zhenkewu.com)
 
 * fonts
 	- Use [Typekit](https://typekit.com/) to publish fonts you like; register an Adobe account;
-	- Modify `$font-stack` in `/assets/themes/lab/css/style.scss` to include your fonts. Extra font names are used as fallbacks.
+	- Modify `$font-stack` in `/assets/themes/css/style.scss` to include your fonts. Extra font names are used as fallbacks.
 * posts
-    - To add a post, e.g., a new paper, follow the format of existing `.md` files
+    - To add a post, e.g., a new paper, follow the format of the existing `.md` files
 * tracking
 	- To link your site to Google analytic services, modify the `tracking_id` in `_config.yml` file in the root directory so that it points to your website.
 * MathJax (also see [here](http://www.idryman.org/blog/2012/03/10/writing-math-equations-on-octopress/) )
@@ -33,3 +33,5 @@ Zhenke Wu's Research Website: [click to view](http://zhenkewu.com)
 
 * projects
     - For each repo (in the folder `/_data`), the `url` should not end with `/`. For example, use `url: /projects/baker`, instead of `url: /projects/baker/`
+* navigation:
+    - For example, the "papers" tab is specified in the folder "papers/". At the top, `title` is for tab name; `group` can be either `navigation` or `subnavigation` depending on whether you want to show this tab or collapse into the "More" tab; `navorder` specifies the order appearing in the navigation bar (1 for the first tab).
