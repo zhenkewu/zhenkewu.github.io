@@ -15,7 +15,7 @@ collaborator: true
 web: en.wikipedia.org/wiki/Katherine_O%27Brien
 field: pneumonia
 ---
-Department of Biostatistics <br /> 
+Department of International Health <br /> 
 Bloomberg School of Public Health<br /> 
 Johns Hopkins University <br /> 
  <br /> 
