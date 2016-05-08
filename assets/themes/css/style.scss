@@ -18,11 +18,11 @@ body {
 }
 
 body > .container {
-	padding-top: 200px !important; /* to prevent navbar overlap */
+	padding-top: 100px !important; /* to prevent navbar overlap */
 	font-family: $font-stack;
 	color: $primary-color;
 	font-weight: $font-weight-base;
-	padding-bottom: 200px !important; /* to prevent navbar overlap */
+	padding-bottom: 100px !important; /* to prevent navbar overlap */
 }
 
 h1, .h1 { font-size: floor($font-size-base * 1.75); } /* ~36px */
@@ -33,10 +33,8 @@ h5, .h5 { font-size:  $font-size-base; }
 h6, .h6 { font-size: ceil($font-size-base * 0.85); }  /* ~12px */
 
 .container {
-  padding-top: 200px !important; /* to prevent navbar overlap */
   padding-left: 25px;
   padding-right: 25px;
-  padding-bottom: 200px !important; /* to prevent navbar overlap */
 }
 
 h1,
