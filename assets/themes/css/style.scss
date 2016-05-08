@@ -33,8 +33,10 @@ h5, .h5 { font-size:  $font-size-base; }
 h6, .h6 { font-size: ceil($font-size-base * 0.85); }  /* ~12px */
 
 .container {
+  padding-top: 200px !important; /* to prevent navbar overlap */
   padding-left: 25px;
   padding-right: 25px;
+  padding-bottom: 200px !important; /* to prevent navbar overlap */
 }
 
 h1,
