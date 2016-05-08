@@ -27,9 +27,8 @@ navorder: 6
 	</div>
 </div>
 
-
+<!-- 
 <div class="pager">
-  
 	{% if paginator.previous_page %}
 		{% if paginator.previous_page == 1 %}
 		<a class="prev" href="/{{ page.category }}/">
@@ -50,6 +49,8 @@ navorder: 6
     
 </div>
 
+-->
+
 {% for post in site.categories.blog %}
 
 	{% for member in site.categories.team %}
@@ -58,7 +59,7 @@ navorder: 6
 		{% endif %}
 	{% endfor %}
 
-	<div class="bigspacer"></div>
+	<!-- <div class="bigspacer"></div> -->
 	<div class="row">
 		<div class="col-md-3">
 			<div class="head">
