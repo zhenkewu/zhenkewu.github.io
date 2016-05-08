@@ -1,5 +1,11 @@
 # Notes
 
+## Details
+
+To modify styles:
+* pages: assets/themes/css/style.scss
+* before entering pages: assets/themes/lab/css/style.scss
+
 ## Goals
 
 * Must have
