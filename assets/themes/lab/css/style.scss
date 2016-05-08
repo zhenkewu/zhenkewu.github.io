@@ -7,6 +7,9 @@ $primary-color: #000000;
 $font-weight-base: 300;
 $heavy-font-weight: 700;
 
+@nav-pills-active-link-hover-bg: @navbar-default-bg;
+@nav-pills-active-link-hover-color: @gray;
+
 $carousel-height: 350px;
 
 body {
@@ -18,7 +21,7 @@ body {
 }
 
 body > .container {
-	padding-top: 50px !important; /* to prevent navbar overlap */
+	padding-top: 100px !important; /* to prevent navbar overlap */
 	font-family: $font-stack;
 	color: $primary-color;
 	font-weight: $font-weight-base;
@@ -391,4 +394,21 @@ strong {
 .tag_box a span{
   vertical-align:super;
   font-size:0.8em;
+}
+
+// pills:
+.centered-pills {  
+    text-align: center
+}
+.centered-pills ul.nav-pills {
+    display: inline-block
+}
+.centered-pills li {
+    display: inline
+}
+.centered-pills a {
+    float: left
+}
+* html .centered-pills ul.nav-pills, *+html .centered-pills ul.nav-pills {
+    display: inline
 }
