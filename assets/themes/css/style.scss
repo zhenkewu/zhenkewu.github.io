@@ -152,7 +152,6 @@ strong {
 }
 
 // navbar
-
 	.navbar-brand { 
 		font-size: 21px !important; 
 		font-weight: 1*$font-weight-base;
@@ -162,7 +161,7 @@ strong {
 		font-size: 17px !important; 
 		font-weight: 1*$font-weight-base;
 		a {
-			color: black;
+			color: green !important;
 		}
 	}
 
@@ -182,7 +181,6 @@ strong {
 
 @media all and (max-width: 800px){
     .navbar-header {
-    font-size: 17px !important;
         float: none;
     }
     .navbar-toggle {
