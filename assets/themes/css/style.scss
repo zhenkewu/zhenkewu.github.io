@@ -18,11 +18,11 @@ body {
 }
 
 body > .container {
-	padding-top: 50px; /* to prevent navbar overlap */
+	padding-top: 200px; /* to prevent navbar overlap */
 	font-family: $font-stack;
 	color: $primary-color;
 	font-weight: $font-weight-base;
-	padding-bottom: 50px; /* to prevent navbar overlap */
+	padding-bottom: 200px; /* to prevent navbar overlap */
 }
 
 h1, .h1 { font-size: floor($font-size-base * 1.75); } /* ~36px */
