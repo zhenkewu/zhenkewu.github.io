@@ -10,10 +10,6 @@ navorder: 4
 {% include JB/setup %}
 
 <div class="bigspacer"></div>
-<hr/>
-<div class="bigspacer"></div>						
-
-<div class="bigspacer"></div>
 {% for member in site.categories.team reversed %}
 	{% if member.alum == false and member.collaborator == false %}
 	    {% cycle 'add rows': '<div class="row">', nil, nil %}
@@ -49,13 +45,10 @@ navorder: 4
 <!-- comment out this next line if there are multiples of three members -->
 </div>
 
-<div class="bigspacer"></div>
 <hr/>
 <div class="title text-center">Collaborators </div>
 
 <div class="smalltitle text-left">Statistical </div>
-<div class="bigspacer"></div>
-
 {% for member in site.categories.team %}
 	{% if member.field == "stat" and member.collaborator == true %}
 	    {% cycle 'add collaborator rows': '<div class="row">', nil, nil %}
