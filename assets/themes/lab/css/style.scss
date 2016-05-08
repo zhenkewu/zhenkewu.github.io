@@ -412,3 +412,9 @@ strong {
 * html .centered-pills ul.nav-pills, *+html .centered-pills ul.nav-pills {
     display: inline
 }
+
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus{
+background-color:#e7e7e7;
+color:black;
+}
