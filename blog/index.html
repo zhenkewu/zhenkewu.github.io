@@ -8,6 +8,27 @@ navorder: 6
 {% include JB/setup %}
 <div class="bigspacer"></div>
 
+<div class="row">
+	<div class="col-md-12">
+		<div class="centered-pills">
+			<ul class="nav nav-pills note">
+				<li role="presentation" class="active">
+					<a class="off" href="/blog/">
+						<i class="fa fa-refresh fa-fw"></i> Timeline
+					</a>
+				</li>
+				<li role="presentation">
+					<a class="off" href="/blog/archive/">
+						<i class="fa fa-list-ul fa-fw"></i> Index
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="bigspacer"></div>
+	</div>
+</div>
+
+
 <div class="pager">
   
 	{% if paginator.previous_page %}
@@ -44,6 +65,7 @@ navorder: 6
 			<div class="head">
 				<a href="{{ post.url }}" class="off">{{ post.title }}</a>
 			</div>
+			<div class="smallspacer"></div>
 			<div class="smallnote">
 				{{ post.date | date_to_string }}
 				{% if author %}

@@ -19,8 +19,6 @@ categories:
 		</div>
 	</div>				
 </div>
-
-<div class="bigspacer"></div>
 			
 My main research interests include:
 
@@ -30,27 +28,19 @@ My main research interests include:
 * Causal analysis of modern study designs;
 * Collaborations: infectious disease, medical diagnosis, epidemiology, health policy.
 
-<div class="bigspacer"></div>
 <hr/>
-<div class="bigspacer"></div>
 I am a postdoctoral fellow in the [Department of Biostatistics](http://www.jhsph.edu/departments/biostatistics/) at [Johns Hopkins University](http://www.jhsph.edu/). I am advised by Professor [Scott Zeger](http://www.jhsph.edu/faculty/directory/profile/3859/Zeger/Scott), and work closely with [Hopkins inHealth](http://hopkinsinhealth.jhu.edu/) methodology group, [Causal Inference Working Group](http://jhsphcausalinference.weebly.com/), and [International Vaccine Access Center (IVAC)](http://www.jhsph.edu/research/centers-and-institutes/ivac/).
 
-<br />
 I conduct reasearch on the design and application of statistical methods that inform health decisions made by individuals, or precision medicine. My current focus is on latent variable and causal inference
 methods that can support disease etiology studies, medical diagnosis, and health policy evaluation. Broadly, the statistical goal is to discover simple latent structures that improve inferences and population parameters and individual latent states. I have also worked on causal inference methods 1) to evaluate novel treatment rules under special designs like matched-pair cluster randomized design, as these designs are useful for interventions that can only be applied at cluster level; and 2) to facilitate the inference for novel estimands in semiparametric models by automating and unifying the derivation of efficient influence functions (EIF) and ensuing estimation.
 
-<br />
 Currently a major focus of my work is on the analysis of multiple mixed-type longitudinal measurements with feedbacks in treatment assignments. I am working on hierarchical Bayesian methods to to infer latent trajectories that represent individual disease progressions that have direct applications to childhood pneumonia etiology studies and disease surveillance.
-
 
 <br />
 [Here](/papers/) are my publication samples. My CV is [here](/assets/pdfs/team/zhenkewu-cv.pdf). My contact info is [here](/team/zhenke-wu)
 
 <br />
 [**Click Here for the Pronounciation of My Name**](https://soundcloud.com/zhenke-wu/zhenke-wu-name)
-
-
-<div class="bigspacer"></div>
 
 <hr/>
 
@@ -61,8 +51,6 @@ Currently a major focus of my work is on the analysis of multiple mixed-type lon
 		</div>
 	</div>				
 </div>
-
-<div class="hugespacer"></div>
 
 <div class="row">
 	
