@@ -18,6 +18,7 @@ body {
 }
 
 body > .container {
+	padding-top: 50px !important; /* to prevent navbar overlap */
 	font-family: $font-stack;
 	color: $primary-color;
 	font-weight: $font-weight-base;
