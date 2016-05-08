@@ -155,12 +155,12 @@ strong {
 
 	.navbar-brand { 
 		font-size: 21px; 
-		font-weight: 1.5*$font-weight-base;
+		font-weight: $font-weight-base;
 	}
 
 	.navbar-nav { 
 		font-size: 17px; 
-		font-weight: 1.5*$font-weight-base;
+		font-weight: $font-weight-base;
 		a {
 			color: black;
 		}
