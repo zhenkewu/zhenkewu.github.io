@@ -23,10 +23,10 @@ description: Research updates on Bayesian modelling, causal models and individua
 
 
 institution:
-  url: http://www.jhsph.edu
-  name: Johns Hopkins Bloomberg School of Public Health
+  url: https://sph.umich.edu
+  name: School of Public Health, University of Michigan
 department:
-  url: http://biostat.jhsph.edu
+  url: https://sph.umich.edu/biostat/
   name: Department of Biostatistics
 author :
   name : Zhenke Wu

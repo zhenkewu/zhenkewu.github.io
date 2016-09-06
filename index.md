@@ -29,12 +29,14 @@ My main research interests include:
 * Collaborations: infectious disease, medical diagnosis, epidemiology, health policy.
 
 <hr/>
-I am a postdoctoral fellow in the [Department of Biostatistics](http://www.jhsph.edu/departments/biostatistics/) at [Johns Hopkins University](http://www.jhsph.edu/). I am advised by Professor [Scott Zeger](http://www.jhsph.edu/faculty/directory/profile/3859/Zeger/Scott), and work closely with [Hopkins inHealth](http://hopkinsinhealth.jhu.edu/) methodology group, [Causal Inference Working Group](http://jhsphcausalinference.weebly.com/), and [International Vaccine Access Center (IVAC)](http://www.jhsph.edu/research/centers-and-institutes/ivac/).
+I am a Assistant Professor in the [Department of Biostatistics](https://sph.umich.edu/biostat/) at [University of Michigan](https://www.umich.edu), with joint appointment as Research Assistant Professor in [Michigan Institute for Data Science (MIDAS)](http://midas.umich.edu).
 
 I conduct reasearch on the design and application of statistical methods that inform health decisions made by individuals, or precision medicine. My current focus is on latent variable and causal inference
 methods that can support disease etiology studies, medical diagnosis, and health policy evaluation. Broadly, the statistical goal is to discover simple latent structures that improve inferences and population parameters and individual latent states. I have also worked on causal inference methods 1) to evaluate novel treatment rules under special designs like matched-pair cluster randomized design, as these designs are useful for interventions that can only be applied at cluster level; and 2) to facilitate the inference for novel estimands in semiparametric models by automating and unifying the derivation of efficient influence functions (EIF) and ensuing estimation.
 
 Currently a major focus of my work is on the analysis of multiple mixed-type longitudinal measurements with feedbacks in treatment assignments. I am working on hierarchical Bayesian methods to to infer latent trajectories that represent individual disease progressions that have direct applications to childhood pneumonia etiology studies and disease surveillance.
+
+I collaborate closely with [Hopkins inHealth](http://hopkinsinhealth.jhu.edu/) (directed by [Scott Zeger](http://www.jhsph.edu/faculty/directory/profile/3859/Zeger/Scott)) methodology group, [Causal Inference Working Group](http://jhsphcausalinference.weebly.com/), and [International Vaccine Access Center (IVAC)](http://www.jhsph.edu/research/centers-and-institutes/ivac/).
 
 <br />
 [Here](/papers/) are my publication samples. My CV is [here](/assets/pdfs/team/zhenkewu-cv.pdf). My contact info is [here](/team/zhenke-wu)

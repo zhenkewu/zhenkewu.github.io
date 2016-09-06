@@ -40,6 +40,8 @@ navorder: 3
 		{% endif %}
 	{% endfor %}
 
+  {% if post.master==true %}
+								
 	<div class="teaching-post">
 		<div class="row">
 			<div class="col-md-1"></div>	
@@ -52,9 +54,11 @@ navorder: 3
 						<p>
 						<div class="smallhead">
 							{{ post.date | date_to_string }}
+							
 							{% if author %}
 							by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
-							{% endif %}		
+							{% endif %}	
+
 						</div>
 					</div>
 				</div>
@@ -81,6 +85,7 @@ navorder: 3
 		<div class="spacer"></div>	
 
 	</div>
+{% endif %}
 
 {% endfor %}
 
