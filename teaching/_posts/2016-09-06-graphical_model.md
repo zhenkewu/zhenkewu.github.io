@@ -21,7 +21,35 @@ tags: [teaching, graphical models]
 * **Location**: 4332 SPH II
 * **Office Hours**: Tuesdays 2-3pm and by appointment
 
+## Announcements
+
+[09/08/2016] Please fill out the [class survey for the first week](https://goo.gl/forms/q4mwWHG8RkNeJMH83).
+
 ## Syllabus
 
 * [pdf](/assets/pdfs/slides/teaching/2016/biostat830/BIOSTAT830-syllabus.pdf)
+
+## Lecture Notes (required readings at the end of lecture notes):
+
+#### Module 1 (Representations)
++ Lecture 1.1 - Introduction [[slides]](/assets/pdfs/slides/teaching/2016/biostat830/lecture_notes/Lecture1.pdf)
++ Lecture 1.2 - [slides]
+
+#### Module 2 (Inference and Computation for Graphical Models)
+
+#### Module 3 (Graphical Models for Causality)
+ 
+#### Module 4 (Case Studies)
+
+#### Module 5 (Optional Advanced Topics)
+
+
+## Homework Assignment
+
+## Project
+
+
+
+
+
 

@@ -2,6 +2,8 @@ Zhenke Wu's Research Website: [click to view](http://zhenkewu.com)
 
 # Notes
 
+* After cloning the repo to your local folder, you'll need to install jekyll to build and test your modified site. 
+
 * fonts
 	- Use [Typekit](https://typekit.com/) to publish fonts you like; register an Adobe account;
 	- Modify `$font-stack` in `/assets/themes/css/style.scss` to include your fonts. Extra font names are used as fallbacks.
