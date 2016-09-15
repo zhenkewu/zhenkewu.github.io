@@ -19,7 +19,7 @@ tags: [teaching, graphical models]
 * **Email**: zhenkewu@umich.edu
 * **Time**: Tuesday and Thursday 12:30-2pm (15 weeks; September 6th to December 13th, 2016)
 * **Location**: 4332 SPH II
-* **Office Hours**: Tuesdays 2-3pm and by appointment
+* **Office Hours**: 4166 SPH-II; Tuesdays 2-3pm or by appointment
 
 ## Announcements
 
@@ -32,8 +32,10 @@ tags: [teaching, graphical models]
 ## Lecture Notes (required readings at the end of lecture notes):
 
 #### Module 1 (Representations)
-+ Lecture 1.1 - Introduction [[slides]](/assets/pdfs/slides/teaching/2016/biostat830/lecture_notes/Lecture1.pdf)
-+ Lecture 1.2 - [slides]
++ Lecture 1 - Introduction [[slides]](/assets/pdfs/slides/teaching/2016/biostat830/lecture_notes/Lecture1.pdf)
++ Lecture 2 - D-separation in DAG and Probabilistic Conditional Independence [[slides]](/assets/pdfs/slides/teaching/2016/biostat830/lecture_notes/Lecture2.pdf)
++ Lecture 3 - D-separation continued (blackboard)
++ Lecture 4 - Representation for Undirected Graphical Models [[slides]](/assets/pdfs/slides/teaching/2016/biostat830/lecture_notes/Lecture4.pdf)
 
 #### Module 2 (Inference and Computation for Graphical Models)
 
