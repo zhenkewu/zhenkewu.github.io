@@ -339,8 +339,8 @@ strong {
 	line-height: ceil($font-size-base*1.2);
 
 	a {
-		color: black;
-		border-bottom: 1px dotted;
+		color: #3576BE; /* color of links in post */
+		border-bottom: 0.5px dotted; /* underscore in post*/
 	}
 
 	h1 {
