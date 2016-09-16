@@ -7,11 +7,11 @@ author_handle: Zhenke Wu
 master: false
 published: true
 theme: lab
-tags: [teaching, graphical models]
+tags: 
+  - graphical model
 ---
 {% include JB/setup %}
-
-
+![graphical-title-image](https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Graph_model.svg/123px-Graph_model.svg.png)
 # Statistical and Computational Methods for Learning through Graphical Models
 ------
 
@@ -49,9 +49,4 @@ tags: [teaching, graphical models]
 ## Homework Assignment
 
 ## Project
-
-
-
-
-
 
