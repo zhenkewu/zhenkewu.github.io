@@ -12,6 +12,7 @@ tags:
 ---
 {% include JB/setup %}
 ![graphical-title-image](https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Graph_model.svg/123px-Graph_model.svg.png)
+
 # Statistical and Computational Methods for Learning through Graphical Models
 ------
 
