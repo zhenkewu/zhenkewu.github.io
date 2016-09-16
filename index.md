@@ -62,7 +62,7 @@ I collaborate closely with [Hopkins inHealth](http://hopkinsinhealth.jhu.edu/) (
 		</div>
 		<div class="bigspacer"></div>
 		<div class="feedbox pad-left">
-			{% for news in site.categories.news limit:4 %}
+			{% for news in site.categories.news limit:5 %}
 			
 				{% for member in site.categories.team %}
 					{% if member.handle == news.author_handle %}
@@ -102,7 +102,7 @@ I collaborate closely with [Hopkins inHealth](http://hopkinsinhealth.jhu.edu/) (
 		</div>
 		<div class="bigspacer"></div>
 		<div class="feedbox pad-left">		
-			{% for paper in site.categories.papers limit:4 %}
+			{% for paper in site.categories.papers limit:5 %}
 				<div class="note-title">
 					<i class="fa fa-file-text-o fa-fw"></i>
 					<a class="off" href="{{ paper.url }}">
@@ -132,7 +132,7 @@ I collaborate closely with [Hopkins inHealth](http://hopkinsinhealth.jhu.edu/) (
 		</div>
 		<div class="bigspacer"></div>
 		<div class="feedbox pad-left">
-			{% for blog in site.categories.blog limit:4 %}
+			{% for blog in site.categories.blog limit:5 %}
 				<div class="note-title">
 					<i class="fa fa-comment-o fa-fw"></i>
 					<a class="off" href="{{ blog.url }}">
