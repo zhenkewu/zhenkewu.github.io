@@ -6,7 +6,7 @@ Zhenke Wu's Research Website: [click to view](http://zhenkewu.com)
 
 * fonts
 	- Use [Typekit](https://typekit.com/) to publish fonts you like; register an Adobe account;
-	- Modify `$font-stack` in `/assets/themes/css/style.scss` to include your fonts. Extra font names are used as fallbacks.
+	- Modify `$font-stack` in `/assets/themes/lab/css/style.scss` to include your fonts. Extra font names are used as fallbacks.
 * posts
     - To add a post, e.g., a new paper, follow the format of the existing `.md` files
 * tracking
