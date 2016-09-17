@@ -311,7 +311,7 @@ strong {
 }
 
 .head {
-	font-size: $font-size-base*2;
+	font-size: $font-size-base*1.5;
 	font-weight: $font-weight-base;
 	line-height:30px;
 }
@@ -339,7 +339,7 @@ strong {
 	line-height: ceil($font-size-base*1.2);
 
 	a {
-		color: #3576BE; /* color of links in post */
+		color: black ; /* color of links in post */
 		border-bottom: 0.5px dotted; /* underscore in post*/
 	}
 
@@ -347,6 +347,22 @@ strong {
 
 	}
 }
+
+.note-button {
+	font-size: $font-size-base;
+	font-weight: $font-weight-base;
+	line-height: ceil($font-size-base*1.2);
+
+	a {
+		color: black ; /* color of timeline/index button */
+		border-bottom: false;
+	}
+
+	h1 {
+
+	}
+}
+
 
 .smallnote {
 	font-size: floor($font-size-base*0.9);

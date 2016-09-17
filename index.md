@@ -19,7 +19,8 @@ categories:
 		</div>
 	</div>				
 </div>
-			
+[<i class="fa fa-soundcloud"></i> **Name in Chinese:** 吴振科](https://soundcloud.com/zhenke-wu/zhenke-wu-name) 
+
 My main research interests include:
 
 * Bayesian hierarchical models: biomarkers, data integration, scalable computation, model-averaging;
@@ -42,7 +43,6 @@ I collaborate closely with [Hopkins inHealth](http://hopkinsinhealth.jhu.edu/) (
 [Here](/papers/) are my publication samples. My CV is [here](/assets/pdfs/team/zhenkewu-cv.pdf). My contact info is [here](/team/zhenke-wu)
 
 <br />
-[**Click Here for the Pronounciation of My Name**](https://soundcloud.com/zhenke-wu/zhenke-wu-name)
 
 <hr/>
 
