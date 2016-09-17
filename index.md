@@ -23,6 +23,10 @@ categories:
 </div> 
 **Name in Chinese:**[ 吴振科 <i class="fa fa-soundcloud"></i>](https://soundcloud.com/zhenke-wu/zhenke-wu-name)
 
+[Here](/papers/) are my publication samples. My CV is [here](/assets/pdfs/team/zhenkewu-cv.pdf). My contact info is [here](/team/zhenke-wu)
+
+<hr/>
+
 My main research interests include:
 
 * Bayesian hierarchical models: biomarkers, data integration, scalable computation, model-averaging;
@@ -40,9 +44,6 @@ methods that can support disease etiology studies, medical diagnosis, and health
 Currently a major focus of my work is on the analysis of multiple mixed-type longitudinal measurements with feedbacks in treatment assignments. I am working on hierarchical Bayesian methods to to infer latent trajectories that represent individual disease progressions that have direct applications to childhood pneumonia etiology studies and disease surveillance.
 
 I collaborate closely with [Hopkins inHealth](http://hopkinsinhealth.jhu.edu/) (directed by [Scott Zeger](http://www.jhsph.edu/faculty/directory/profile/3859/Zeger/Scott)) methodology group, [Causal Inference Working Group](http://jhsphcausalinference.weebly.com/), and [International Vaccine Access Center (IVAC)](http://www.jhsph.edu/research/centers-and-institutes/ivac/).
-
-<br />
-[Here](/papers/) are my publication samples. My CV is [here](/assets/pdfs/team/zhenkewu-cv.pdf). My contact info is [here](/team/zhenke-wu)
 
 <br />
 
