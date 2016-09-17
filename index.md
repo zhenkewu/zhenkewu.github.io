@@ -17,9 +17,11 @@ categories:
 		<div class="bigtitle logobox">
 			Zhenke Wu Research
 		</div>
-	</div>				
-</div>
-[<i class="fa fa-soundcloud"></i> **Name in Chinese:** 吴振科](https://soundcloud.com/zhenke-wu/zhenke-wu-name) 
+	</div>	
+<!-- 	    <i class="fa fa-soundcloud"></i> 
+		<a href="https://soundcloud.com/zhenke-wu/zhenke-wu-name"> Name in Chinese: 吴振科 </a>  -->		
+</div> 
+**Name in Chinese:**[ 吴振科 <i class="fa fa-soundcloud"></i>](https://soundcloud.com/zhenke-wu/zhenke-wu-name)
 
 My main research interests include:
 
