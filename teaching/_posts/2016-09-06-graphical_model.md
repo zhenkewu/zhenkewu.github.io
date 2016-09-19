@@ -35,7 +35,8 @@ tags:
 
 
 The pdf file linked below introduces the course objectives, organizational structures, lectures, references, evaluations and other course policies.
-* Syllabus [[pdf]](/assets/pdfs/slides/teaching/2016/biostat830/BIOSTAT830-syllabus.pdf)
+
+> Syllabus [[pdf]](/assets/pdfs/slides/teaching/2016/biostat830/BIOSTAT830-syllabus.pdf)
 
 ------
 ## Lecture Notes (required readings at the end of lecture notes):
