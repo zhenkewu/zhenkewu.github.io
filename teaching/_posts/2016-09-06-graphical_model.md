@@ -23,6 +23,7 @@ tags:
 * **Office Hours**: {{ site.department.office }}; Tuesdays 2-3pm or by appointment
 
 ------
+
 ## Announcements
 
 * <span style="color:red;"> [09/19/2016] [Problem Set 1](/assets/pdfs/slides/teaching/2016/biostat830/homework/ps1.pdf) posted. **Due 11:59PM, October 3rd, 2016 to Instructor's email in electronic copy.** </span>
@@ -30,6 +31,7 @@ tags:
 * [09/08/2016] Please fill out the [class survey for the first week](https://goo.gl/forms/q4mwWHG8RkNeJMH83).
 
 ------
+
 ## Syllabus
 
 The pdf file linked below introduces the course objectives, organizational structures, lectures, references, evaluations and other course policies.
@@ -37,6 +39,7 @@ The pdf file linked below introduces the course objectives, organizational struc
 * Syllabus [[pdf]](/assets/pdfs/slides/teaching/2016/biostat830/BIOSTAT830-syllabus.pdf)
 
 ------
+
 ## Lecture Notes (required readings at the end of lecture notes):
 
 <details>
@@ -64,11 +67,13 @@ The pdf file linked below introduces the course objectives, organizational struc
 #### Module 5 (Optional Advanced Topics)
 
 ------
+
 ## Homework Assignment
 
 * Problem Set 1 [[pdf]](/assets/pdfs/slides/teaching/2016/biostat830/homework/ps1.pdf)
 
 ------
+
 ## Project
 
 ------
