@@ -24,13 +24,26 @@ tags:
 
 ## Announcements
 
-[09/08/2016] Please fill out the [class survey for the first week](https://goo.gl/forms/q4mwWHG8RkNeJMH83).
+* <span style="color:red;"> [09/19/2016] [Problem Set 1](/assets/pdfs/slides/teaching/2016/biostat830/homework/ps1.pdf) posted. **Due 11:59PM, October 3rd, 2016 to Instructor's email in electronic copy.** </span>
+* [09/17/2016] Now you can comment to improve the course at the bottom of this page. Or if you like it, please tweet to share for others who are interested in learning, programming and applying graphical models!
+* [09/08/2016] Please fill out the [class survey for the first week](https://goo.gl/forms/q4mwWHG8RkNeJMH83).
 
 ## Syllabus
 
-* [pdf](/assets/pdfs/slides/teaching/2016/biostat830/BIOSTAT830-syllabus.pdf)
+The pdf file linked below introduces the course objectives, organizational structures, lectures, references, evaluations and other course policies.
+* Syllabus [[pdf]](/assets/pdfs/slides/teaching/2016/biostat830/BIOSTAT830-syllabus.pdf)
 
 ## Lecture Notes (required readings at the end of lecture notes):
+
+<details>
+  <summary>Calendar of Upcoming Lectures [click to expand]</summary>
+  <div class="span3">
+<div id="upcoming"></div><!--/span-->
+</div>
+<div class="span9">
+	<iframe src="https://calendar.google.com/calendar/embed?src=m1v75gnveubh3skivkbqhsbdvk%40group.calendar.google.com&ctz=America/New_York" style=" border-width:0 " width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+</div><!--/span-->
+</details>
 
 #### Module 1 (Representations)
 + Lecture 1 - Introduction [[slides]](/assets/pdfs/slides/teaching/2016/biostat830/lecture_notes/Lecture1.pdf)
@@ -49,7 +62,10 @@ tags:
 
 ## Homework Assignment
 
-
+* Problem Set 1 [[pdf]](/assets/pdfs/slides/teaching/2016/biostat830/homework/ps1.pdf)
 
 ## Project
+
+
+
 
