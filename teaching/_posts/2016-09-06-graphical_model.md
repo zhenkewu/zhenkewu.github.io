@@ -20,19 +20,24 @@ tags:
 * **Email**: zhenkewu@umich.edu
 * **Time**: Tuesday and Thursday 12:30-2pm (15 weeks; September 6th to December 13th, 2016)
 * **Location**: 4332 SPH II
-* **Office Hours**: 4166 SPH-II; Tuesdays 2-3pm or by appointment
+* **Office Hours**: {{ site.department.office }}; Tuesdays 2-3pm or by appointment
 
+------
 ## Announcements
+
 
 * <span style="color:red;"> [09/19/2016] [Problem Set 1](/assets/pdfs/slides/teaching/2016/biostat830/homework/ps1.pdf) posted. **Due 11:59PM, October 3rd, 2016 to Instructor's email in electronic copy.** </span>
 * [09/17/2016] Now you can comment to improve the course at the bottom of this page. Or if you like it, please tweet to share for others who are interested in learning, programming and applying graphical models!
 * [09/08/2016] Please fill out the [class survey for the first week](https://goo.gl/forms/q4mwWHG8RkNeJMH83).
 
+------
 ## Syllabus
+
 
 The pdf file linked below introduces the course objectives, organizational structures, lectures, references, evaluations and other course policies.
 * Syllabus [[pdf]](/assets/pdfs/slides/teaching/2016/biostat830/BIOSTAT830-syllabus.pdf)
 
+------
 ## Lecture Notes (required readings at the end of lecture notes):
 
 <details>
@@ -59,12 +64,14 @@ The pdf file linked below introduces the course objectives, organizational struc
 
 #### Module 5 (Optional Advanced Topics)
 
-
+------
 ## Homework Assignment
 
 * Problem Set 1 [[pdf]](/assets/pdfs/slides/teaching/2016/biostat830/homework/ps1.pdf)
 
+------
 ## Project
+
 
 
 
