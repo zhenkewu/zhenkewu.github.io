@@ -57,6 +57,7 @@ The pdf file linked below introduces the course objectives, organizational struc
 + Lecture 2 - D-separation in DAG and Probabilistic Conditional Independence [[slides]](/assets/pdfs/slides/teaching/2016/biostat830/lecture_notes/Lecture2.pdf)
 + Lecture 3 - D-separation continued (blackboard)
 + Lecture 4 - Representation for Undirected Graphical Models [[slides]](/assets/pdfs/slides/teaching/2016/biostat830/lecture_notes/Lecture4.pdf)
++ Lecture 5 - DAG and UG: Connections and Differences [[slides]](/assets/pdfs/slides/teaching/2016/biostat830/lecture_notes/Lecture5.pdf)
 
 #### Module 2 (Inference and Computation for Graphical Models)
 
