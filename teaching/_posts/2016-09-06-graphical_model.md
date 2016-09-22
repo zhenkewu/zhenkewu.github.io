@@ -58,7 +58,7 @@ The pdf file linked below introduces the course objectives, organizational struc
 + Lecture 3 - D-separation continued (blackboard)
 + Lecture 4 - Representation for Undirected Graphical Models [[slides]](/assets/pdfs/slides/teaching/2016/biostat830/lecture_notes/Lecture4.pdf)
 + Lecture 5 - DAG and UG: Connections and Differences [[slides]](/assets/pdfs/slides/teaching/2016/biostat830/lecture_notes/Lecture5.pdf)
-+ Lecture 6 - Examples of DAG and UG and Conclusion of the Representation Module [[slides.Rmd]](/assets/pdfs/slides/teaching/2016/biostat830/lecture_notes/Lecture6.Rmd). Please use `RStudio` to run the `.Rmd` file to generate Shiny `R` Presentation.
++ Lecture 6 - Examples of DAG and UG and Conclusion of the Representation Module [[slides.Rmd]](/assets/pdfs/slides/teaching/2016/biostat830/lecture_notes/Lecture6.zip). Please use `RStudio` to run the `.Rmd` file to generate Shiny `R` Presentation.
 
 #### Module 2 (Inference and Computation for Graphical Models)
 
