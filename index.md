@@ -25,6 +25,7 @@ categories:
 
 [Here](/papers/) are my publication samples. My CV is [here](/assets/pdfs/team/zhenkewu-cv.pdf). My contact info is [here](/team/zhenke-wu). My GitHub is [here](https://github.com/zhenkewu?tab=activity).
 
+The best way to contact me is email or mobile.
 <hr/>
 
 My main research interests include:
