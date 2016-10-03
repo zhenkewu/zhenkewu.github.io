@@ -186,9 +186,10 @@ p(x_1,x_6) &amp; = \sum_{x_2,x_3,x_4,x_5}p(x_2\mid x_1)p(x_3\mid x_2)p(x_4\mid x
 <p>Suppose all \(X_i\in {1,\ldots, k}\), \(d\) nodes, \(M\) factors.</p>
 
 <ul>
-<li><p>Intermediate &quot;factor-to-variable&quot; message table: \(m_{f_C\rightarrow x_i}(x_i)\), computed from at most \(k^{v_i}\) multiplications and \(k^{|N(f_C)|-1}-1\) additions, where \(v_i=|X_C|+|N(f_C)|-1\) is the number of variables involved. We have at most \(d\times m\) such messages.</p></li>
+<li><p>Intermediate &quot;factor-to-variable&quot; message table: \(m_{f_C\rightarrow x_i}(x_i)\), computed from at most \(k^{v_i}\) multiplications and \(k^{|N(f_C)|-1}-1\) additions, where \(v_i=|X_C|+|N(f_C)|-1\) is the number of variables involved. We have at most \(d\times M\) such messages.</p></li>
 <li><p>&quot;variable-to-factor&quot; massage table computed from \(k(|N(x_i)|-1)\) multiplications. We have at most \(d\times M\) such messages.</p></li>
 <li><p>marginal probability computed from \(1\) multiplication (use cached message table computed by Rule 3 and 4)</p></li>
+<li><p>Intermediate message tables make sharing of computational work easy</p></li>
 </ul>
 
 </article></slide><slide class=''><hgroup><h2>Example: Sum-Product Algorithm</h2></hgroup><article  id="example-sum-product-algorithm">
