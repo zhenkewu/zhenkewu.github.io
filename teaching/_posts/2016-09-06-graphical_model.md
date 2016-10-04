@@ -66,6 +66,7 @@ The pdf file linked below introduces the course objectives, organizational struc
 #### Module 2 (Inference and Computation for Graphical Models)
 + Lecture 7 - Exact inference: factor graphs and variable elimination [[slides]](/assets/pdfs/slides/teaching/2016/biostat830/lecture_notes/Lecture7.html)
 + Lecture 8 - Exact inference: Belief Propagation [[slides]](/assets/pdfs/slides/teaching/2016/biostat830/lecture_notes/Lecture8.html)
++ Lecture 9 - Exact inference Examples [[slides]](/assets/pdfs/slides/teaching/2016/biostat830/lecture_notes/Lecture9.html)
 
 #### Module 3 (Graphical Models for Causality)
  
