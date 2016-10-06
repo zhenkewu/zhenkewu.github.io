@@ -157,7 +157,7 @@
 <ol>
 <li>If \(f_C\) is a leaf node, then \(m_{f_C\rightarrow X}(x_C)=f_C(x_C)\)</li>
 <li>If \(X\) is a leaf node, then \(m_{X\rightarrow f_C}(x)=1\)</li>
-<li>The message sent from a non-leaf factor node \(f_C\) to a variable node \(X_i\) is \[m_{f_C\rightarrow X_i}=\sum_{x_{N(f_C)-X_i}}f_C(\mathbf{x}_C)\prod_{x&#39;: X&#39;\in {N(f_C)-X_i}} m_{X&#39;\rightarrow f_C}(x&#39;)\]</li>
+<li>The message sent from a non-leaf factor node \(f_C\) to a variable node \(X_i\) is \[m_{f_C\rightarrow X_i}(x_i)=\sum_{x_{N(f_C)-X_i}}f_C(\mathbf{x}_C)\prod_{x&#39;: X&#39;\in {N(f_C)-X_i}} m_{X&#39;\rightarrow f_C}(x&#39;)\]</li>
 <li>The message sent from a non-leaf variable node \(X_i\) to a factor node \(f_C\) is: \[m_{X_i\rightarrow f_C}(x_i) =\prod_{f_{C&#39;} \in N(X_i)-f_C} m_{f_{C&#39;}\rightarrow X_i}(x_i)\]</li>
 </ol>
 
@@ -166,9 +166,9 @@
 <ul>
 <li>&quot;A factor collects messages sent to its arms (except the destination arm), bundles them with its direct interaction with the destination variable node, and collapses (integrates over) the arms (except the destination arm).&quot;</li>
 <li>&quot;A variable node bundles (mutiplies) the incoming messages and sends it to the destination factor node&quot;</li>
-<li>In Step 2, a leaf variable node has no extra information bundle, just equally weight all \(X=x\) (recall that messages form a vector of dimension \(|X|\), each corresponding to a value of \(x\))</li>
+<li>In Step 2, a leaf variable node has no extra information to bundle, just equally weight all \(X=x\) (recall that messages form a vector of dimension \(|X|\), each corresponding to a value of \(x\))</li>
 <li>In Step 4, when a variable node has only two factor neighbors, the rule means: &quot;\(X_i\), please just pass the message from factor \(f_{C&#39;}\) to \(f_{C}\), do nothing else!&quot;</li>
-<li>In Step 3, to find the messages from a factor \(f_C\) to \(X_i\), we want to integrate all uncertainties/information about variables other than \(X_i\) but pertaining to \(f_C\). We multiply \(f_C\) by other messages sent to its neighboring nodes (except \(X_i\))</li>
+<li>In Step 3, to find the messages from a factor \(f_C\) to \(X_i\), we integrate all the uncertainties/information about variables other than \(X_i\) but pertaining to \(f_C\). We multiply \(f_C\) by other messages sent to its neighboring nodes (except \(X_i\))</li>
 </ul>
 
 </article></slide><slide class=''><hgroup><h2>Example: Sum-Product Algorithm</h2></hgroup><article  id="example-sum-product-algorithm">
@@ -190,21 +190,21 @@
 
 <ol>
 <li>If a variable node \(X_i\) is a leaf node: \(m_{X_i\rightarrow f_C}(x_i)=0\)</li>
-<li>If a factor node \(f_C\) is a leaf node: \(m_{f_C\rightarrow X_i}=\log f_C(x_C)\)</li>
-<li>The message sent from a non-leaf factor node \(f_C\) to a variable node \(X_i\): \[m_{f_C\rightarrow X_i} = \max_{\mathbf{x}_{N(f_C)-X_i}}\left[\log f_C(\mathbf{x}_C)+\sum_{x&#39;: X&#39; \in N(f_C)-X_i}m_{X&#39;\rightarrow f_C}(x&#39;)\right]\]</li>
+<li>If a factor node \(f_C\) is a leaf node: \(m_{f_C\rightarrow X_i}(x_i)=\log f_C(x_C)\)</li>
+<li>The message sent from a non-leaf factor node \(f_C\) to a variable node \(X_i\): \[m_{f_C\rightarrow X_i}(x_i) = \max_{\mathbf{x}_{N(f_C)-X_i}}\left[\log f_C(\mathbf{x}_C)+\sum_{x&#39;: X&#39; \in N(f_C)-X_i}m_{X&#39;\rightarrow f_C}(x&#39;)\right]\]</li>
 <li>The message sent from a non-leaf variable \(X_i\) to a factor node \(f_C\): \[m_{X_i\rightarrow f_C}(x_i)=\sum_{f_{C&#39;}\in N(X_i)-f_C}m_{f_{C&#39;}\rightarrow X_i}(x_i)\]</li>
 </ol>
 
 </article></slide><slide class=''><hgroup><h2>Max-Sum Algorithm: Highest Joint Probabilities (continued)</h2></hgroup><article  id="max-sum-algorithm-highest-joint-probabilities-continued">
 
 <ul>
-<li>Maximize the combined messages from all neighboring factors: \(\max_{\mathbf{x}} p(\mathbf{x})=\max_{x_R}\sum_{f_C \in N(X_R)}m_{f_C\rightarrow X_R}(x_R)\)</li>
+<li>Maximize the combined messages from all the neighboring factors: \(\max_{\mathbf{x}} p(\mathbf{x})=\max_{x_R}\sum_{f_C \in N(X_R)}m_{f_C\rightarrow X_R}(x_R)\)</li>
 <li>The value of the root node maximizing the joint probability is \(x^{\max}_R=\arg \max_{x_R}\sum_{f_C \in N(X_R)}m_{f_C\rightarrow X_R}(x_R)\)</li>
 <li>What are the maximizing values for nodes other than \(X_R\)?
 
 <ul>
 <li>Q: Can we send messages from the root back to the leaves, and calculate the maximizing value at each variable node?</li>
-<li>A: Problematic. If both \(\mathbf{x}^*\) and \(\mathbf{x}^\dagger\) are maximizers that differ at \(i\)th and \(i&#39;\)th dimension. One would obtain two sets: \(x_i^{\max}= \{x_i^*,x_i^{\dagger}\}\) and \(x_{i&#39;}^{\max} = \{x_{i&#39;}^*,x_{i&#39;}^{\dagger}\}\), but without knowing how to match a value in \(x^{\max}_i\) with a value in \(x^{\max}_{i&#39;}\) that together are part of, say, \(\mathbf{x}^*\)</li>
+<li>A: Problematic. If \(\mathbf{x}^*\) and \(\mathbf{x}^\dagger\) are two maximizers that differ at the \(i\)th and \(i&#39;\)th dimension, one would obtain two sets: \(x_i^{\max}= \{x_i^*,x_i^{\dagger}\}\) and \(x_{i&#39;}^{\max} = \{x_{i&#39;}^*,x_{i&#39;}^{\dagger}\}\), but without knowing how to match a value in \(x^{\max}_i\) with a value in \(x^{\max}_{i&#39;}\) that together are part of, say, \(\mathbf{x}^*\).</li>
 </ul></li>
 </ul>
 
