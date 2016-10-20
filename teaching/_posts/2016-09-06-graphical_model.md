@@ -70,6 +70,7 @@ The pdf file linked below introduces the course objectives, organizational struc
 + Lecture 9 - Exact inference Examples [[slides]](/assets/pdfs/slides/teaching/2016/biostat830/lecture_notes/Lecture9.html)
 + Lecture 10 - Junction Tree Algorithm [[slides]](/assets/pdfs/slides/teaching/2016/biostat830/lecture_notes/Lecture10.html)
 + Lecture 12 - Examples of Junction Tree Algorithm [[marked slides]](/assets/pdfs/slides/teaching/2016/biostat830/lecture_notes/lecture12_inclass_marked.pdf)
++ Lecture 13 - Approximate Inference by Stochastic Simulation/Sampling Methods [[slides]](/assets/pdfs/slides/teaching/2016/biostat830/lecture_notes/Lecture13.pdf)
 
 #### Module 3 (Graphical Models for Causality)
  
