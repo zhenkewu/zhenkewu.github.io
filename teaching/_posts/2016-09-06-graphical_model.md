@@ -77,6 +77,8 @@ The pdf file linked below introduces the course objectives, organizational struc
  
 #### Module 4 (Case Studies)
 
++ Nov 29: Professor Jian Kang on Graphical Models for Neuroscience.
+
 #### Module 5 (Optional Advanced Topics)
 
 ------
