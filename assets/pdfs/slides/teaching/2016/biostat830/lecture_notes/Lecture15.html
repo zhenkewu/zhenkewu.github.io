@@ -130,7 +130,7 @@
 <li>\(x_i\sim N(\mu_{Z_i}, \sigma^2)\), \(i=1,\ldots, n\).</li>
 </ol></li>
 <li><p>Given \(\tau\) and \(\sigma\) and data, Gaussian means (\(\mu_k\)) and indicators (\(Z_i\)) is \[p(\mathbf{\mu},\mathbf{Z}\mid \mathbf{x})=\frac{\prod_{k}p(\mu_k)\prod_{i}p(Z_i)p(x_i\mid Z_i, \mathbf{\mu})}{p(\mathbf{x})}\]</p></li>
-<li><p>Demoninator (marginal distribution of the observed data) is a sum of \(K^n\) terms: \(p(\mathbf{x})=\sum_{\mathbf{Z}}\int_\mathbf{\mu}\prod_{k}p(\mu_k)\prod_{i}p(Z_i)p(x_i\mid Z_i, \mathbf{\mu})\)</p></li>
+<li><p>Denominator (marginal distribution of the observed data) is a sum of \(K^n\) terms: \(p(\mathbf{x})=\sum_{\mathbf{Z}}\int_\mathbf{\mu}\prod_{k}p(\mu_k)\prod_{i}p(Z_i)p(x_i\mid Z_i, \mathbf{\mu})\)</p></li>
 <li><p>Use \(q\) with fitted parameters \(\hat{\mathbf{\nu}}\) as proxy; predictions, parameter inference, etc. (Caution for posterior s.d.)</p></li>
 </ul>
 
@@ -154,7 +154,7 @@
 <p>\[
 \begin{aligned}
 \log p(\mathbf{x}) &amp; = \log \int_{\mathbf{Z}}p(\mathbf{x},\mathbf{Z}) = \log \int_{\mathbf{Z}}p(\mathbf{x},\mathbf{Z})\frac{q(\mathbf{Z})}{q(\mathbf{Z})} = \log \left(E_q\left[\frac{p(\mathbf{x},\mathbf{Z})}{q(\mathbf{Z})}\right]\right)\\
-&amp; \geq E_q[\log p(\mathbf{x},\mathbf{Z})]-E_q[\log p(\mathbf{Z})]\overset{\Delta}{=} ELB
+&amp; \geq E_q[\log p(\mathbf{x},\mathbf{Z})]-E_q[\log q(\mathbf{Z})]\overset{\Delta}{=} ELB
 \end{aligned} 
 \]</p>
 
@@ -164,7 +164,7 @@
 \begin{aligned}
 KL(q(\mathbf{Z})\|p(\mathbf{Z}\mid\mathbf{x})) &amp; = E_q\left[\log \frac{q(\mathbf{Z})}{p(\mathbf{Z}\mid\mathbf{x})}\right]\\
 &amp; = E_q[\log q(\mathbf{Z})]-E_q[\log p(\mathbf{Z},\mathbf{x})]+\log p(\mathbf{x})\\
-&amp; = -\left\{E_q[\log p(\mathbf{x},\mathbf{Z})]-E_q[\log p(\mathbf{Z})]\right\}+\log p(\mathbf{x})\\
+&amp; = -\left\{E_q[\log p(\mathbf{x},\mathbf{Z})]-E_q[\log q(\mathbf{Z})]\right\}+\log p(\mathbf{x})\\
 &amp; = -ELB+\text{a term independent of}~q
 \end{aligned}
 \]</p>
@@ -197,10 +197,11 @@ KL(q(\mathbf{Z})\|p(\mathbf{Z}\mid\mathbf{x})) &amp; = E_q\left[\log \frac{q(\ma
 </article></slide><slide class=''><hgroup><h2>Coordinate Ascent</h2></hgroup><article  id="coordinate-ascent">
 
 <ul>
-<li>Use \(Z_k\) as the last variable in the list</li>
-<li>ELB viewed as a function of \(q(Z_k)\): \[ELB_k=E[\log p(Z_k\mid Z_{[-k]},\mathbf{x})]-E_k[\log q(Z_k)]+const\]</li>
+<li>Recipe: optimize over \(q(Z_j)\), one at a time.</li>
+<li>For coordinate \(k\); Use \(Z_k\) as the last variable in the chain rule (why? So the chain rule has just one term dependent of \(Z_k\))</li>
+<li>ELB viewed as a function of \(q(Z_k)\): \[ELB_k=E[\log p(Z_k\mid Z_{-k},\mathbf{x})]-E_k[\log q(Z_k)]+const\]</li>
 <li>Expand: \[ELB_k=\int_{Z_k} q(Z_k) E_{-k}\log p(Z_k\mid Z_{[-k]},\mathbf{x}) d Z_k-\int_{Z_k}q(Z_k)\log q(Z_k) d Z_k+const\]</li>
-<li>Equlibrium: \[\frac{d ELB_k}{d q_k} = E_{-k}\log p(Z_k\mid Z_{[-k]},\mathbf{x})-\log q(Z_k)-1=0\]</li>
+<li>Equlibrium: \[\frac{d ELB_k}{d q(Z_k)} = E_{-k}\log p(Z_k\mid Z_{[-k]},\mathbf{x})-\log q(Z_k)-1=0\]</li>
 </ul>
 
 </article></slide><slide class=''><hgroup><h2>Coordinate Ascent (continued)</h2></hgroup><article  id="coordinate-ascent-continued">
@@ -225,10 +226,10 @@ KL(q(\mathbf{Z})\|p(\mathbf{Z}\mid\mathbf{x})) &amp; = E_q\left[\log \frac{q(\ma
 <li>The optimal \(q^*\) might not be easy to work with; but easy for many models. (conditional Multinomial example.)</li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>Exponential Family Conditionals</h2></hgroup><article  id="exponential-family-conditionals">
+</article></slide><slide class=''><hgroup><h2>Exponential Family (EF) Conditionals</h2></hgroup><article  id="exponential-family-ef-conditionals">
 
 <ul>
-<li>Suppose each conditional is in the exponential family \[p(z_j\mid z_[-j],\mathbf{x})=h(z_j)\exp\{\eta(z_{-j},\mathbf{x})&#39;t(z_j)-a(\eta(z_{-j},\mathbf{x})\}\]</li>
+<li>Suppose each conditional is in the exponential family \[p(z_j\mid z_{-j},\mathbf{x})=h(z_j)\exp\{\eta(z_{-j},\mathbf{x})&#39;t(z_j)-a(\eta(z_{-j},\mathbf{x})\}\]</li>
 <li>Rich applications:
 
 <ul>
@@ -254,7 +255,7 @@ KL(q(\mathbf{Z})\|p(\mathbf{Z}\mid\mathbf{x})) &amp; = E_q\left[\log \frac{q(\ma
 
 <ul>
 <li>The optimal \(q^*(z_j)\) is in the same exponential family as the conditional</li>
-<li>If we set \(q(\mathbf{z}\mid \mathbf{\nu})=\prod_jq(z_j\mid \nu_j)\), the coordinate ascent algorithm just iteratively sets each \(\nu_j\) (natural variational parameter) equal to the expectation of the natural conditional parameter for variable \(z_j\): \[\nu_j^*=E_{-j}[\eta(Z_{-j}, \mathbf{x})]\]</li>
+<li>If we set \(q(\mathbf{z}\mid \mathbf{\nu})=\prod_jq(z_j\mid \nu_j)\), where \(q(z_j\mid \nu_j)\) is in the same exponential family as the conditionals, the coordinate ascent algorithm just iteratively sets each \(\nu_j\) (natural variational parameter) equal to the expectation of the natural conditional parameter for variable \(z_j\) (recall ML equation for EF): \[\nu_j^*=E_{-j}[\eta(Z_{-j}, \mathbf{x})]\]</li>
 </ul>
 
 </article></slide><slide class=''><hgroup><h2>Comment</h2></hgroup><article  id="comment">
