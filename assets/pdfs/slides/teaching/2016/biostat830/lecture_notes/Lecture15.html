@@ -153,7 +153,7 @@
 
 <p>\[
 \begin{aligned}
-\log p(\mathbf{x}) &amp; = \log \int_{\mathbf{Z}}p(\mathbf{x},\mathbf{Z}) = \log \int_{\mathbf{Z}}p(\mathbf{x},\mathbf{Z})\frac{q(\mathbf{Z})}{q(\mathbf{Z})} = \log \left(E_q\left[\frac{p(\mathbf{x},\mathbf{Z})}{q(\mathbf{Z})}\right]\right)\\
+\log p(\mathbf{x}) &amp; = \log \int_{\mathbf{Z}}p(\mathbf{x},\mathbf{Z}) \mathrm{d} \mathbf{Z} = \log \int_{\mathbf{Z}}p(\mathbf{x},\mathbf{Z})\frac{q(\mathbf{Z})}{q(\mathbf{Z})}  \mathrm{d} \mathbf{Z} = \log \left(E_q\left[\frac{p(\mathbf{x},\mathbf{Z})}{q(\mathbf{Z})}\right]\right)\\
 &amp; \geq E_q[\log p(\mathbf{x},\mathbf{Z})]-E_q[\log q(\mathbf{Z})]\overset{\Delta}{=} ELB
 \end{aligned} 
 \]</p>
