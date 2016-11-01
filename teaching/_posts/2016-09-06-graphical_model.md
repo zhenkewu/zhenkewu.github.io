@@ -74,7 +74,7 @@ The pdf file linked below introduces the course objectives, organizational struc
 + Lecture 13 - Approximate Inference by Stochastic Simulation/Sampling Methods [[slides]](/assets/pdfs/slides/teaching/2016/biostat830/lecture_notes/Lecture13.pdf)
 + Lecture 14 - Survey of Automatic Bayesian Software and Why You Should Care [[slides]](/assets/pdfs/slides/teaching/2016/biostat830/lecture_notes/Lecture14.pdf)[[code]](/assets/pdfs/slides/teaching/2016/biostat830/lecture_notes/Lecture14code.zip)
 + Lecture 15 - Variational Inference Basics [[slides]](/assets/pdfs/slides/teaching/2016/biostat830/lecture_notes/Lecture15.html)[[whiteboard-notes]](/assets/pdfs/slides/teaching/2016/biostat830/lecture_notes/Lecture15-extra-notes.pdf)
-+ Lecture 16 - Variational Inference: Examples [[Required Reading: Blei DM et al. (2016). Variational Inference: A Review for Statisticians]](https://arxiv.org/pdf/1601.00670v3.pdf)
++ Lecture 16 - Variational Inference: Examples [[hand-written note]](/assets/pdfs/slides/teaching/2016/biostat830/lecture_notes/Lecture16_extra_note.pdf) [[Required Reading: Blei DM et al. (2016). Variational Inference: A Review for Statisticians]](https://arxiv.org/pdf/1601.00670v3.pdf)
 
 #### Module 3 (Graphical Models for Causality)
  
