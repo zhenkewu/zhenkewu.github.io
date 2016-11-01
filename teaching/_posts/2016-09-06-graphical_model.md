@@ -26,6 +26,7 @@ tags:
 
 ## Announcements
 
+* [11/01/2016] [[Homework 2]](/assets/pdfs/slides/teaching/2016/biostat830/homework/ps2.pdf) posted; Due to Instructor by 11:59pm on November 15th, 2016.
 * [10/15/2016] Please fill out the midterm survey [here](https://goo.gl/forms/AMfJ1t1d0gQbgQXI3).
 * [09/26/2016] Homework 1 due date extended to 11:59pm on October 10th. I have also redistributed the credits to the theory problems and added extra comments. Please refer to the [[revised Problem Set 1]](/assets/pdfs/slides/teaching/2016/biostat830/homework/ps1_revised.pdf).
 * [09/26/2016] The instructor has moved to a new office 4623 SPH-I within Suite 4605. 
