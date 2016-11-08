@@ -82,6 +82,7 @@ The pdf file linked below introduces the course objectives, organizational struc
 
 #### Module 3 (Graphical Models for Causality)
 + Lecture 18 - Causal Inference in Medicine and Public Health: An Introduction [[slides]](/assets/pdfs/slides/teaching/2016/biostat830/lecture_notes/Lecture18.html)
+
 #### Module 4 (Case Studies)
 
 + Nov 29: Professor Jian Kang on Graphical Models for Neuroscience.
