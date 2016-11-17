@@ -86,9 +86,9 @@ The pdf file linked below introduces the course objectives, organizational struc
 
 #### Module 4 (Case Studies)
 
-+ Nov 29: Professor Jian Kang on Graphical Models for Neuroscience.
++ Nov 29: Professor [Jian Kang](https://sites.google.com/a/umich.edu/junhyuk-oh/) on Graphical Models for Neuroscience.
++ Dec 1: [Junhyuk Oh](https://sites.google.com/a/umich.edu/junhyuk-oh/) on Deep Learning and Reinforcement Learning
 
-#### Module 5 (Optional Advanced Topics)
 
 ------
 
