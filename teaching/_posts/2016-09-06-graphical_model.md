@@ -83,11 +83,13 @@ The pdf file linked below introduces the course objectives, organizational struc
 #### Module 3 (Graphical Models for Causality)
 + Lecture 18 - Causal Inference in Medicine and Public Health: An Introduction [[slides]](/assets/pdfs/slides/teaching/2016/biostat830/lecture_notes/Lecture18.html)
 + Lecture 19/20 - Causal Diagram [[slides]](/assets/pdfs/slides/teaching/2016/biostat830/lecture_notes/lecture19_continued.pdf)
-
++ Lecture 21 - Marginal Structural Models [[Note on IPW]](/assets/pdfs/slides/teaching/2016/biostat830/lecture_notes/lecture21_ipw.html)
 #### Module 4 (Case Studies)
 
 + Nov 29: Professor [Jian Kang](https://sites.google.com/a/umich.edu/junhyuk-oh/) on Graphical Models for Neuroscience.
-+ Dec 1: [Junhyuk Oh](https://sites.google.com/a/umich.edu/junhyuk-oh/) on Deep Learning and Reinforcement Learning
++ Dec 1: [Junhyuk Oh](https://sites.google.com/a/umich.edu/junhyuk-oh/) on Deep Learning and Reinforcement Learning:
+    - *Title*: **Improving Generalization via Deep Reinforcement Learning**
+    - *Abstract*: The ability to generalize from past experience to solve previously unseen tasks or environments is a key research challenge in reinforcement learning (RL). In this talk, I will briefly introduce the basic idea of deep reinforcement learning (Deep RL) and present my recent work that aims to improve generalization ability of RL agents through deep learning. The first work focuses on how to generalize over unseen and larger topologies in 3D world given navigational tasks. The second work discusses how to generalize over new tasks that are described by natural language.
 
 
 ------
