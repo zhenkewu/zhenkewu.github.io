@@ -84,6 +84,8 @@ The pdf file linked below introduces the course objectives, organizational struc
 + Lecture 18 - Causal Inference in Medicine and Public Health: An Introduction [[slides]](/assets/pdfs/slides/teaching/2016/biostat830/lecture_notes/Lecture18.html)
 + Lecture 19/20 - Causal Diagram [[slides]](/assets/pdfs/slides/teaching/2016/biostat830/lecture_notes/lecture19_continued.pdf)
 + Lecture 21 - Marginal Structural Models [[Note on IPW]](/assets/pdfs/slides/teaching/2016/biostat830/lecture_notes/lecture21_ipw.html)
+
+
 #### Module 4 (Case Studies)
 
 + Nov 29: Professor [Jian Kang](https://sites.google.com/a/umich.edu/junhyuk-oh/) on Graphical Models for Neuroscience.
