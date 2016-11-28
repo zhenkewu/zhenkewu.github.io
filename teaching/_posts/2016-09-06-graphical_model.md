@@ -26,6 +26,7 @@ tags:
 
 ## Announcements
 
+* [11/27/2016]  Deadline for extra credit problems: **midnight, December 15, 2016**.
 * [11/08/2016] [[Homework 3]](/assets/pdfs/slides/teaching/2016/biostat830/homework/ps3.pdf) posted; Due to Instructor by 11:59pm on **December 15, 2016**.
 * [11/01/2016] [[Homework 2]](/assets/pdfs/slides/teaching/2016/biostat830/homework/ps2.pdf) posted; Due to Instructor by 11:59pm on **November 21, 2016**.
 * [10/15/2016] Please fill out the midterm survey [here](https://goo.gl/forms/AMfJ1t1d0gQbgQXI3).
