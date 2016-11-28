@@ -101,7 +101,7 @@ The pdf file linked below introduces the course objectives, organizational struc
 
 ## Homework Assignment
 
-* Problem Set 1[[pdf]](/assets/pdfs/slides/teaching/2016/biostat830/homework/ps1_revised.pdf)
+* Problem Set 1[[pdf]](/assets/pdfs/slides/teaching/2016/biostat830/homework/ps1_revised.pdf)[[solution]](/assets/pdfs/slides/teaching/2016/biostat830/homework/hw1_sol.html)
 * Problem Set 2[[pdf]](/assets/pdfs/slides/teaching/2016/biostat830/homework/ps2.pdf)
 [[ps2_data.zip]](/assets/pdfs/slides/teaching/2016/biostat830/homework/ps2_data.zip)
 * Problem Set 3[[pdf]](/assets/pdfs/slides/teaching/2016/biostat830/homework/ps3.pdf)
