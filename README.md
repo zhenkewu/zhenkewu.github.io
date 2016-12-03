@@ -9,6 +9,7 @@ Zhenke Wu's Research Website: [click to view](http://zhenkewu.com)
 	- Modify `$font-stack` in `/assets/themes/lab/css/style.scss` to include your fonts. Extra font names are used as fallbacks.
 * posts
     - To add a post, e.g., a new paper, follow the format of the existing `.md` files
+    - Comment out `</div>` if there are a multiple of three papers in each subsection; otherwise, there will be errors of indentation. 
 * tracking
 	- To link your site to Google analytic services, modify the `tracking_id` in `_config.yml` file in the root directory so that it points to your website.
 * MathJax (also see [here](http://www.idryman.org/blog/2012/03/10/writing-math-equations-on-octopress/) )
