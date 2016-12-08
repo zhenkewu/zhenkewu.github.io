@@ -99,7 +99,7 @@ The pdf file linked below introduces the course objectives, organizational struc
 
 + Dec 1: [Nested partially latent class models for dependent binary data; estimating disease etiology](http://biostatistics.oxfordjournals.org/content/early/2016/08/19/biostatistics.kxw037.short?rss=1)
 
-+ Dec 6: Integrated nested Laplace Approximation by Rue et al. 2009 [[slides]](/assets/pdfs/slides/teaching/2016/biostat830/lecture_notes/Lecture25.html)
++ Dec 6 and 8: Integrated nested Laplace Approximation by Rue et al. 2009 [[slides]](/assets/pdfs/slides/teaching/2016/biostat830/lecture_notes/Lecture26.pdf)
 
 ------
 
