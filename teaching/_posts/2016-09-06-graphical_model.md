@@ -26,7 +26,7 @@ tags:
 
 ## Announcements
 
-* [12/08/2016] Please fill-out the [[end-of-term survey]](https://goo.gl/forms/OhsoYT4TNmP9bCVy2) by December 21, 2016.
+* [12/08/2016] Please fill out the [[end-of-term survey]](https://goo.gl/forms/OhsoYT4TNmP9bCVy2) by December 21, 2016.
 * [12/08/2016] [[Homework 4]](/assets/pdfs/slides/teaching/2016/biostat830/homework/ps4.pdf) posted; Due to Instructor by 11:59pm on **December 21, 2016**.
 * [11/27/2016]  Deadline for extra credit problems: **midnight, December 15, 2016**.
 * [11/08/2016] [[Homework 3]](/assets/pdfs/slides/teaching/2016/biostat830/homework/ps3.pdf) posted; Due to Instructor by 11:59pm on **December 15, 2016**.
