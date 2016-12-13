@@ -93,7 +93,6 @@
 
 
   
-
 </head>
 
 <body style="opacity: 0">
@@ -115,7 +114,7 @@
 
 <ul>
 <li><p><strong>Notation:</strong> Let \(\mathbf{x}=(x_1, \ldots, x_n)&#39;\) be observed data, \(\mathbf{Z}=(Z_1, \ldots, Z_m)&#39;\) be unobserved variables (e.g., unobserved cluster membership indicators, model parameters, etc.). If there exists other hyperparameters \(\alpha\), we assume them fixed for now.</p></li>
-<li><p><strong>Problem:</strong> Calculate the posterior distribution \[p(\mathbf{Z}\mid \mathbf{x},\alpha) = \frac{p(\mathbf{Z}, \mathbf{x}\mid \alpha)}{\int_{\mathbf{Z}}p(\mathbf{Z}, \mathbf{x}\mid \alpha)},\] which is hard for complex likelihood and priors</p></li>
+<li><p><strong>Problem:</strong> Calculate the posterior distribution \[p(\mathbf{Z}\mid \mathbf{x},\alpha) = \frac{p(\mathbf{Z}, \mathbf{x}\mid \alpha)}{\int_{\mathbf{Z}}p(\mathbf{Z}, \mathbf{x}\mid \alpha)\mathrm{d}\boldsymbol{Z}},\] which is hard for complex likelihood and priors</p></li>
 <li><p><strong>One Solution:</strong> Approximate the posterior using a simpler distribution, which is the closest to the actual posterior in a computationally feasible family of distributions. (How to pick such a family? Given this family, how to obtain the &quot;closest&quot; one?)</p></li>
 </ul>
 
