@@ -103,7 +103,7 @@ The pdf file linked below introduces the course objectives, organizational struc
 
 + Dec 6 and 8: Integrated nested Laplace Approximation with Application to Spatial Statistics [[slides]](/assets/pdfs/slides/teaching/2016/biostat830/lecture_notes/Lecture26.pdf)
 
-+ Dec 13: Network Basics, Models and Social Network and Infectious Disease Examples [[slides]]()
++ Dec 13: Network Basics, Models and Social Network and Infectious Disease Examples [[slides]](/assets/pdfs/slides/teaching/2016/biostat830/lecture_notes/Lecture27.pdf)
 
 ------
 
