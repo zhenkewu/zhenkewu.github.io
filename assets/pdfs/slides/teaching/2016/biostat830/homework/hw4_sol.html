@@ -329,8 +329,8 @@ L(\boldsymbol{a},\boldsymbol{g}; \boldsymbol{Y}) &amp;
 # fit Bayesian model:
 mcmc_options &lt;- list(debugstatus     = TRUE,
                      n.chains   = 1,
-                     n.itermcmc = 2000,
-                     n.burnin   = 1000,
+                     n.itermcmc = 10000,
+                     n.burnin   = 5000,
                      n.thin     = 1,
                      result.folder = result_folder,
                      bugsmodel.dir = result_folder
@@ -452,200 +452,200 @@ knitr::kable(
 <tr class="odd">
 <td>pi[1]</td>
 <td align="right">0.20</td>
-<td align="right">0.275</td>
-<td align="right">0.028</td>
-<td align="right">0.212</td>
-<td align="right">0.258</td>
-<td align="right">0.278</td>
-<td align="right">0.295</td>
+<td align="right">0.308</td>
+<td align="right">0.018</td>
+<td align="right">0.263</td>
+<td align="right">0.299</td>
+<td align="right">0.312</td>
 <td align="right">0.321</td>
+<td align="right">0.330</td>
 </tr>
 <tr class="even">
 <td>pi[2]</td>
 <td align="right">0.30</td>
-<td align="right">0.305</td>
-<td align="right">0.023</td>
-<td align="right">0.258</td>
-<td align="right">0.289</td>
-<td align="right">0.306</td>
-<td align="right">0.322</td>
-<td align="right">0.346</td>
+<td align="right">0.337</td>
+<td align="right">0.011</td>
+<td align="right">0.316</td>
+<td align="right">0.330</td>
+<td align="right">0.335</td>
+<td align="right">0.342</td>
+<td align="right">0.362</td>
 </tr>
 <tr class="odd">
 <td>pi[3]</td>
 <td align="right">0.50</td>
-<td align="right">0.420</td>
-<td align="right">0.043</td>
-<td align="right">0.348</td>
-<td align="right">0.388</td>
-<td align="right">0.417</td>
-<td align="right">0.448</td>
-<td align="right">0.515</td>
+<td align="right">0.356</td>
+<td align="right">0.014</td>
+<td align="right">0.336</td>
+<td align="right">0.345</td>
+<td align="right">0.353</td>
+<td align="right">0.364</td>
+<td align="right">0.391</td>
 </tr>
 <tr class="even">
 <td>p[1,1]</td>
 <td align="right">0.95</td>
-<td align="right">0.060</td>
-<td align="right">0.038</td>
-<td align="right">0.010</td>
-<td align="right">0.032</td>
-<td align="right">0.051</td>
-<td align="right">0.081</td>
-<td align="right">0.154</td>
+<td align="right">0.069</td>
+<td align="right">0.036</td>
+<td align="right">0.014</td>
+<td align="right">0.042</td>
+<td align="right">0.064</td>
+<td align="right">0.090</td>
+<td align="right">0.152</td>
 </tr>
 <tr class="odd">
 <td>p[2,1]</td>
 <td align="right">0.40</td>
-<td align="right">0.931</td>
-<td align="right">0.039</td>
-<td align="right">0.846</td>
-<td align="right">0.906</td>
-<td align="right">0.937</td>
-<td align="right">0.961</td>
-<td align="right">0.988</td>
+<td align="right">0.247</td>
+<td align="right">0.065</td>
+<td align="right">0.120</td>
+<td align="right">0.202</td>
+<td align="right">0.246</td>
+<td align="right">0.290</td>
+<td align="right">0.375</td>
 </tr>
 <tr class="even">
 <td>p[3,1]</td>
 <td align="right">0.10</td>
-<td align="right">0.254</td>
-<td align="right">0.060</td>
-<td align="right">0.140</td>
-<td align="right">0.213</td>
-<td align="right">0.255</td>
-<td align="right">0.293</td>
-<td align="right">0.365</td>
+<td align="right">0.916</td>
+<td align="right">0.042</td>
+<td align="right">0.819</td>
+<td align="right">0.891</td>
+<td align="right">0.922</td>
+<td align="right">0.948</td>
+<td align="right">0.981</td>
 </tr>
 <tr class="odd">
 <td>p[1,2]</td>
 <td align="right">0.10</td>
-<td align="right">0.921</td>
-<td align="right">0.053</td>
-<td align="right">0.781</td>
-<td align="right">0.900</td>
-<td align="right">0.931</td>
-<td align="right">0.958</td>
-<td align="right">0.990</td>
+<td align="right">0.911</td>
+<td align="right">0.049</td>
+<td align="right">0.798</td>
+<td align="right">0.881</td>
+<td align="right">0.919</td>
+<td align="right">0.948</td>
+<td align="right">0.983</td>
 </tr>
 <tr class="even">
 <td>p[2,2]</td>
 <td align="right">0.40</td>
-<td align="right">0.062</td>
-<td align="right">0.029</td>
-<td align="right">0.020</td>
-<td align="right">0.041</td>
-<td align="right">0.057</td>
-<td align="right">0.079</td>
-<td align="right">0.134</td>
+<td align="right">0.524</td>
+<td align="right">0.078</td>
+<td align="right">0.377</td>
+<td align="right">0.468</td>
+<td align="right">0.523</td>
+<td align="right">0.578</td>
+<td align="right">0.677</td>
 </tr>
 <tr class="odd">
 <td>p[3,2]</td>
 <td align="right">0.90</td>
-<td align="right">0.534</td>
 <td align="right">0.068</td>
-<td align="right">0.406</td>
-<td align="right">0.487</td>
-<td align="right">0.532</td>
-<td align="right">0.578</td>
-<td align="right">0.672</td>
+<td align="right">0.030</td>
+<td align="right">0.020</td>
+<td align="right">0.046</td>
+<td align="right">0.064</td>
+<td align="right">0.085</td>
+<td align="right">0.135</td>
 </tr>
 <tr class="even">
 <td>p[1,3]</td>
 <td align="right">0.90</td>
-<td align="right">0.073</td>
-<td align="right">0.039</td>
-<td align="right">0.016</td>
-<td align="right">0.042</td>
-<td align="right">0.066</td>
-<td align="right">0.096</td>
-<td align="right">0.165</td>
+<td align="right">0.078</td>
+<td align="right">0.043</td>
+<td align="right">0.013</td>
+<td align="right">0.046</td>
+<td align="right">0.071</td>
+<td align="right">0.103</td>
+<td align="right">0.180</td>
 </tr>
 <tr class="odd">
 <td>p[2,3]</td>
 <td align="right">0.45</td>
-<td align="right">0.853</td>
-<td align="right">0.050</td>
-<td align="right">0.746</td>
-<td align="right">0.818</td>
-<td align="right">0.857</td>
-<td align="right">0.889</td>
-<td align="right">0.938</td>
+<td align="right">0.314</td>
+<td align="right">0.062</td>
+<td align="right">0.192</td>
+<td align="right">0.272</td>
+<td align="right">0.315</td>
+<td align="right">0.355</td>
+<td align="right">0.434</td>
 </tr>
 <tr class="even">
 <td>p[3,3]</td>
 <td align="right">0.10</td>
-<td align="right">0.301</td>
-<td align="right">0.055</td>
-<td align="right">0.199</td>
-<td align="right">0.264</td>
-<td align="right">0.300</td>
-<td align="right">0.338</td>
-<td align="right">0.411</td>
+<td align="right">0.828</td>
+<td align="right">0.052</td>
+<td align="right">0.723</td>
+<td align="right">0.794</td>
+<td align="right">0.830</td>
+<td align="right">0.865</td>
+<td align="right">0.921</td>
 </tr>
 <tr class="odd">
 <td>p[1,4]</td>
 <td align="right">0.90</td>
-<td align="right">0.081</td>
+<td align="right">0.096</td>
 <td align="right">0.049</td>
-<td align="right">0.013</td>
-<td align="right">0.046</td>
-<td align="right">0.073</td>
-<td align="right">0.105</td>
-<td align="right">0.201</td>
+<td align="right">0.019</td>
+<td align="right">0.059</td>
+<td align="right">0.090</td>
+<td align="right">0.126</td>
+<td align="right">0.206</td>
 </tr>
 <tr class="even">
 <td>p[2,4]</td>
 <td align="right">0.50</td>
-<td align="right">0.827</td>
-<td align="right">0.047</td>
-<td align="right">0.723</td>
-<td align="right">0.796</td>
-<td align="right">0.830</td>
-<td align="right">0.862</td>
-<td align="right">0.906</td>
+<td align="right">0.407</td>
+<td align="right">0.069</td>
+<td align="right">0.272</td>
+<td align="right">0.360</td>
+<td align="right">0.407</td>
+<td align="right">0.455</td>
+<td align="right">0.546</td>
 </tr>
 <tr class="odd">
 <td>p[3,4]</td>
 <td align="right">0.15</td>
-<td align="right">0.403</td>
-<td align="right">0.066</td>
-<td align="right">0.258</td>
-<td align="right">0.362</td>
-<td align="right">0.406</td>
-<td align="right">0.447</td>
-<td align="right">0.525</td>
+<td align="right">0.815</td>
+<td align="right">0.047</td>
+<td align="right">0.715</td>
+<td align="right">0.785</td>
+<td align="right">0.818</td>
+<td align="right">0.849</td>
+<td align="right">0.900</td>
 </tr>
 <tr class="even">
 <td>p[1,5]</td>
 <td align="right">0.90</td>
-<td align="right">0.057</td>
+<td align="right">0.062</td>
 <td align="right">0.035</td>
-<td align="right">0.008</td>
-<td align="right">0.031</td>
-<td align="right">0.052</td>
-<td align="right">0.074</td>
-<td align="right">0.142</td>
+<td align="right">0.011</td>
+<td align="right">0.035</td>
+<td align="right">0.056</td>
+<td align="right">0.082</td>
+<td align="right">0.145</td>
 </tr>
 <tr class="odd">
 <td>p[2,5]</td>
 <td align="right">0.40</td>
-<td align="right">0.848</td>
-<td align="right">0.053</td>
-<td align="right">0.736</td>
-<td align="right">0.813</td>
-<td align="right">0.850</td>
-<td align="right">0.888</td>
-<td align="right">0.940</td>
+<td align="right">0.233</td>
+<td align="right">0.058</td>
+<td align="right">0.124</td>
+<td align="right">0.192</td>
+<td align="right">0.231</td>
+<td align="right">0.271</td>
+<td align="right">0.353</td>
 </tr>
 <tr class="even">
 <td>p[3,5]</td>
 <td align="right">0.10</td>
-<td align="right">0.228</td>
-<td align="right">0.051</td>
-<td align="right">0.132</td>
-<td align="right">0.194</td>
-<td align="right">0.227</td>
-<td align="right">0.261</td>
-<td align="right">0.332</td>
+<td align="right">0.823</td>
+<td align="right">0.052</td>
+<td align="right">0.713</td>
+<td align="right">0.788</td>
+<td align="right">0.826</td>
+<td align="right">0.861</td>
+<td align="right">0.917</td>
 </tr>
 </tbody>
 </table>
