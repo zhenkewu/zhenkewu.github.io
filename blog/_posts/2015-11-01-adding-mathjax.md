@@ -7,7 +7,14 @@ author_handle: Zhenke Wu
 category: blog
 published: true
 tags: []
+header:
+  video:
+    id: XsxDH4HcOWA
+    provider: youtube
 ---
+
+{% youtube tnq2gwBhvCc %}
+
 {% include JB/setup %}
 
 We do plenty of math, so I'd like to test out [MathJax](https://www.mathjax.org/) support.
