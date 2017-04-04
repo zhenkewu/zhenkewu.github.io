@@ -13,7 +13,6 @@ header:
     provider: youtube
 ---
 
-{% youtube tnq2gwBhvCc %}
 
 {% include JB/setup %}
 
