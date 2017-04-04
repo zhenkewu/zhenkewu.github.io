@@ -3,52 +3,94 @@
   title: baker
   owner: zhenkewu
   description: Bayesian Analysis Kit for Etiology Research
-  url: /projects/baker
+  url: /projects/baker/
   contributors:
   - login: zhenkewu
-    avatar: https://avatars.githubusercontent.com/u/4580992?v=3&s=50
+    avatar: https://avatars1.githubusercontent.com/u/4580992?v=3&s=50
     url: https://github.com/zhenkewu
+  - login: vjcitn
+    avatar: https://avatars0.githubusercontent.com/u/4624066?v=3&s=50
+    url: https://github.com/vjcitn
   - login: swihart
-    avatar: https://avatars.githubusercontent.com/u/4581196?v=3&s=50
+    avatar: https://avatars0.githubusercontent.com/u/4581196?v=3&s=50
     url: https://github.com/swihart
   - login: fupangpangpang
-    avatar: https://avatars.githubusercontent.com/u/7834167?v=3&s=50
+    avatar: https://avatars1.githubusercontent.com/u/7834167?v=3&s=50
     url: https://github.com/fupangpangpang
   commits:
-  - date: 2015-11-03 05:22:54.000000000 Z
-    message: edited README.md
-    url: https://github.com/zhenkewu/baker/commit/2c0cd8f9c19f821143bb7ecb41873a979ac517ae
+  - date: 2017-04-04 06:04:27.000000000 Z
+    message: edited readme
+    url: https://github.com/zhenkewu/baker/commit/63fdce1a3d33072ea4cf6c44544d3280fc05877e
     author_login: zhenkewu
     author_url: https://github.com/zhenkewu
-  - date: 2015-11-03 04:35:09.000000000 Z
-    message: Merge branch 'master' into noFSWsharing
-    url: https://github.com/zhenkewu/baker/commit/17cbf9454183f77fb0451a6f6f64e5f15961ea1a
+  - date: 2017-04-04 06:03:50.000000000 Z
+    message: edited readme
+    url: https://github.com/zhenkewu/baker/commit/a43abd71e09fcb2d4ff74b722d5acaa2f3392aaf
     author_login: zhenkewu
     author_url: https://github.com/zhenkewu
-  - date: 2015-11-03 04:33:50.000000000 Z
-    message: calm down
-    url: https://github.com/zhenkewu/baker/commit/826f0dbc8a204ee1a831eabdb3562407eac7594b
+  - date: 2017-04-04 06:00:18.000000000 Z
+    message: edited readme
+    url: https://github.com/zhenkewu/baker/commit/cf9885722696325a27807b6aeb497a650185d3f0
     author_login: zhenkewu
     author_url: https://github.com/zhenkewu
-  - date: 2015-11-03 04:30:53.000000000 Z
-    message: added back readme
-    url: https://github.com/zhenkewu/baker/commit/03a13ee696eb2647de34a404f73dd4c19251aaf8
+  - date: 2017-04-04 05:59:56.000000000 Z
+    message: edited readme
+    url: https://github.com/zhenkewu/baker/commit/ac14c0c4accbf72479835186cfec4e6ca2f0b3a0
     author_login: zhenkewu
     author_url: https://github.com/zhenkewu
-  - date: 2015-11-03 04:22:02.000000000 Z
-    message: Merge branch 'noFSWsharing'
-    url: https://github.com/zhenkewu/baker/commit/0aeab94425dc5cfb5e99afd235ca4235c50ca6f0
+  - date: 2017-04-04 05:58:59.000000000 Z
+    message: edited readme
+    url: https://github.com/zhenkewu/baker/commit/4a926ddcfea210d12d0b04171f0c67082f326c5d
     author_login: zhenkewu
     author_url: https://github.com/zhenkewu
+- repo: zhenkewu/spotgear
+  title: spotgear
+  owner: zhenkewu
+  description: Subset Profiling and Organizing Tools for Gel Electrophoresis  Autoradiography
+    in R
+  url: /projects/spotgear/
+  contributors:
+  - login: zhenkewu
+    avatar: https://avatars1.githubusercontent.com/u/4580992?v=3&s=50
+    url: https://github.com/zhenkewu
+  commits:
+  - date: 2017-04-04 05:45:48.000000000 Z
+    message: |-
+      Merge pull request #1 from muschellij2/master
+
+      This should work now - please increase the version and submit to Osler
+    url: https://github.com/zhenkewu/spotgear/commit/0c804fda1fe0efb4f177b868ca09926ede0de111
+    author_login: zhenkewu
+    author_url: https://github.com/zhenkewu
+  - date: 2017-04-03 22:51:13.000000000 Z
+    message: trying to add bioc
+    url: https://github.com/zhenkewu/spotgear/commit/aad250e65bb15248243db5cdaac0c43971263279
+    author_login: muschellij2
+    author_url: https://github.com/muschellij2
+  - date: 2017-04-03 22:38:31.000000000 Z
+    message: added sudo
+    url: https://github.com/zhenkewu/spotgear/commit/dba89306c761d1dcb1feaa48f09e9cffb6d74cbf
+    author_login: muschellij2
+    author_url: https://github.com/muschellij2
+  - date: 2017-04-03 21:54:35.000000000 Z
+    message: added rjags to the mix
+    url: https://github.com/zhenkewu/spotgear/commit/de28799c81656d39f3e3be8b04cce5e3ef4d7d9a
+    author_login: muschellij2
+    author_url: https://github.com/muschellij2
+  - date: 2017-04-03 21:44:27.000000000 Z
+    message: updated description
+    url: https://github.com/zhenkewu/spotgear/commit/0157ce2b9c77179cebe4ae08e6fb70638cbf7b8a
+    author_login: muschellij2
+    author_url: https://github.com/muschellij2
 - repo: zhenkewu/mpcr
   title: mpcr
   owner: zhenkewu
   description: R package for estimating treatment effects in matched-pair cluster
     randomized trials (MPCR) using covariate calibration
-  url: /projects/mpcr
+  url: /projects/mpcr/
   contributors:
   - login: zhenkewu
-    avatar: https://avatars.githubusercontent.com/u/4580992?v=3&s=50
+    avatar: https://avatars1.githubusercontent.com/u/4580992?v=3&s=50
     url: https://github.com/zhenkewu
   commits:
   - date: 2015-10-30 10:42:43.000000000 Z

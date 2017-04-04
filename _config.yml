@@ -217,3 +217,4 @@ exclude:
 projects:
   - zhenkewu/baker
   - zhenkewu/mpcr
+  - zhenkewu/spotgear
