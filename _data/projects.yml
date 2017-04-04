@@ -3,7 +3,7 @@
   title: baker
   owner: zhenkewu
   description: Bayesian Analysis Kit for Etiology Research
-  url: /projects/baker/
+  url: /projects/baker
   contributors:
   - login: zhenkewu
     avatar: https://avatars1.githubusercontent.com/u/4580992?v=3&s=50
@@ -48,7 +48,7 @@
   owner: zhenkewu
   description: Subset Profiling and Organizing Tools for Gel Electrophoresis  Autoradiography
     in R
-  url: /projects/spotgear/
+  url: /projects/spotgear
   contributors:
   - login: zhenkewu
     avatar: https://avatars1.githubusercontent.com/u/4580992?v=3&s=50
@@ -87,7 +87,7 @@
   owner: zhenkewu
   description: R package for estimating treatment effects in matched-pair cluster
     randomized trials (MPCR) using covariate calibration
-  url: /projects/mpcr/
+  url: /projects/mpcr
   contributors:
   - login: zhenkewu
     avatar: https://avatars1.githubusercontent.com/u/4580992?v=3&s=50
