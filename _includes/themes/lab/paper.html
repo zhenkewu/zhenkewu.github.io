@@ -152,6 +152,18 @@ with gratitude.
 			</div>
 			<div class="bigspacer"></div>			
 			{% endif %}
+
+			{% if page.external_link %}
+			<div class="smallhead">
+				URL:
+			</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa fa-external-link fa-fw"></i>
+				<a class="off" href="{{ page.external_link }}">{{ page.external_link | remove: 'http://' | remove: 'https://' }}</a>
+			</div>
+			<div class="bigspacer"></div>			
+			{% endif %}
 			
 			{% if page.github %}
 			<div class="smallhead">
