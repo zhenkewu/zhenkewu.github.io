@@ -3,7 +3,7 @@ layout: member
 title: Laura Hammitt
 position: Assistant Professor of International Health
 institute: Center for American Indian Health; International Vaccine Access Center (IVAC)
-handle: Laura Hammitt
+handle: Laura L. Hammitt
 email: lhammitt@jhu.edu
 twitter: 
 github: 

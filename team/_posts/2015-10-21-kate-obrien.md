@@ -3,7 +3,7 @@ layout: member
 title: Katherine O'Brien
 position: Executive Director, IVAC; Professor of International Health
 institute: Johns Hopkins Bloomberg School of Public Health
-handle: Kate O'Brien
+handle: Katherine O'Brien
 email: klobrien@jhu.edu
 twitter: 
 github: 
