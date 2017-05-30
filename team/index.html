@@ -8,6 +8,7 @@ navorder: 4
 ---
 {% include JB/setup %}
 
+<div>
 <div class="bigspacer"></div>
 {% for member in site.categories.team reversed %}
 	{% if member.alum == false and member.collaborator == false %}
@@ -47,6 +48,7 @@ navorder: 4
 <hr/>
 <div class="title text-center">Collaborators </div>
 
+<div>
 <div class="smalltitle text-left">Statistical </div>
 {% for member in site.categories.team %}
 	{% if member.field == "stat" and member.collaborator == true %}
@@ -76,6 +78,7 @@ navorder: 4
 
 <div class="bigspacer"></div>
 <hr/>
+<div>
 <div class="smalltitle text-left">Scientific </div>
 <div class="bigspacer"></div>
 
