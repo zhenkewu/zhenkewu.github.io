@@ -4,7 +4,7 @@ title: "Lack of Response after Initial Chemoembolization for Hepatocellular Carc
 image: /assets/images/papers/radiology.png
 authors: Christos Georgiades, Jean-François Geschwind, Neil Harrison, Andrew Hines-Peralta, Eleni Liapi, Kelvin Hong, Zhenke Wu, Ihab Kamel, Constantine Frangakis
 year: 2012
-shortref: Radiology
+shortref: Georgiades et al. (2012) Radiology
 journal: "Radiology"
 type: substantive
 doi: 10.1148/radiol.12112264
