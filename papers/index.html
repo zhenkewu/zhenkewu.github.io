@@ -7,11 +7,11 @@ navorder: 1
 ---
 {% include JB/setup %}
 
-<div>
+
 <div class="bigspacer"></div>
 <div class="smalltitle text-left">Statistical Methods</div>
 <div class="bigspacer"></div>
-
+<div>
 <div class="bigspacer"></div>
 {% for paper in site.categories.papers %}
   {% if paper.type == "statistical"%}
@@ -39,12 +39,10 @@ navorder: 1
 <!-- comment out this next line if there are multiples of three papers -->
 </div>
 
-<div class="bigspacer"></div>
 <hr/>
-<div>
 <div class="smalltitle text-left">Substantive</div>
 <div class="bigspacer"></div>
-
+<div>
 <div class="bigspacer"></div>
 {% for paper in site.categories.papers %}
   {% if paper.type == "substantive"%}
