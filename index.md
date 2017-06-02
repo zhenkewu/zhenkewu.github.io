@@ -21,7 +21,7 @@ categories:
 <!-- 	    <i class="fa fa-soundcloud"></i> 
 		<a href="https://soundcloud.com/zhenke-wu/zhenke-wu-name"> Name in Chinese: 吴振科 </a>  -->		
 </div> 
-**Name in Chinese:**[ 吴振科 <i class="fa fa-soundcloud"></i>](https://soundcloud.com/zhenke-wu/zhenke-wu-name)
+**Name in Chinese:**[ 吴振科 <i class="fa fa-soundcloud"></i>](https://soundcloud.com/zhenke-wu/zhenke-wu-name). Transliteration: "Jen-Kuh Wu".
 
 [Here](/papers/) are my publication samples. My CV is [here](/assets/pdfs/team/zhenkewu-cv.pdf). My contact info is [here](/team/zhenke-wu). My GitHub is [here](https://github.com/zhenkewu?tab=activity). 
 
