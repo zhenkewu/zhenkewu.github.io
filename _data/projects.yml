@@ -39,7 +39,7 @@
   title: baker
   owner: zhenkewu
   description: Bayesian Analysis Kit for Etiology Research
-  url: /projects/baker
+  url: http://zhenkewu.com/baker
   contributors:
   - login: zhenkewu
     avatar: https://avatars1.githubusercontent.com/u/4580992?v=3&s=50
@@ -84,7 +84,7 @@
   owner: zhenkewu
   description: Subset Profiling and Organizing Tools for Gel Electrophoresis  Autoradiography
     in R
-  url: /projects/spotgear
+  url: http://zhenkewu.com/spotgear
   contributors:
   - login: zhenkewu
     avatar: https://avatars1.githubusercontent.com/u/4580992?v=3&s=50
