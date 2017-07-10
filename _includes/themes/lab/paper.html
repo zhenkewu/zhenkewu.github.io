@@ -176,6 +176,7 @@ with gratitude.
 			</div>
 			<div class="bigspacer"></div>
 			{% endif %}
+
 			{% if page.dryad_doi %}
 			<div class="smallhead">
 				Data
@@ -187,6 +188,19 @@ with gratitude.
 			</div>
 			<div class="bigspacer"></div>			
 			{% endif %}
+
+			{% if page.video_link %}
+			<div class="smallhead">
+				Video:
+			</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa fa-file-video-o" aria-hidden="true"></i>
+				<a class="off" href="{{ page.video_link }}">{{ page.video_link | remove: 'http://' | remove: 'https://' }}</a>
+			</div>
+			<div class="bigspacer"></div>			
+			{% endif %}
+
 			<div class="smallhead">
 				Share
 			</div>
