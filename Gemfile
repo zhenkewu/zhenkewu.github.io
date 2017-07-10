@@ -25,3 +25,5 @@ gem 'kramdown'
 
 gem "rspec"
 
+gem 'github-pages', group: :jekyll_plugins
+
