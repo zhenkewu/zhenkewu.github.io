@@ -12,6 +12,7 @@ navorder: 2
 
 <div class="bigspacer"></div>
 
+<div class="container">
 {% for project in site.data.projects %}
 
     {% cycle 'add rows': '<div class="row">', '', '' %}
@@ -40,3 +41,4 @@ navorder: 2
     {% cycle 'close rows': '', '', '</div>' %}
 {% endfor %}
 {% cycle 'close rows': '', '</div>', '</div>' %}	
+</div>
