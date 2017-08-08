@@ -14,7 +14,7 @@ navorder: 1
 <div class="bigspacer"></div>
 {% for paper in site.categories.papers %}
   {% if paper.type == "statistical"%}
-    {% cycle 'add rows': '<div class="row">', nil, nil %}
+    {% cycle 'add rows': '<div class="row">', '', '' %}
 		<div class="col-md-4 paperbox">
 			<div class="media">
   				<a class="pull-right" href="{{ paper.url }}">
@@ -28,11 +28,11 @@ navorder: 1
 			<div class="bigspacer"></div>
 			<div class="spacer"></div>
         </div>
-    {% cycle 'close rows': nil, nil, '</div>' %}
+    {% cycle 'close rows': '', '', '</div>' %}
  {% endif %}
 {% endfor %}
 {% comment %}
-{% cycle 'close rows': nil, '</div><div class="bigspacer"></div>', '</div><div class="bigspacer"></div>' %}
+{% cycle 'close rows': '', '</div><div class="bigspacer"></div>', '</div><div class="bigspacer"></div>' %}
 {% endcomment %}
 
 <!-- comment out this next line if there are multiples of three papers -->
@@ -45,7 +45,7 @@ navorder: 1
 <div class="bigspacer"></div>
 {% for paper in site.categories.papers %}
   {% if paper.type == "substantive"%}
-    {% cycle 'add rows': '<div class="row">', nil, nil %}
+    {% cycle 'add rows': '<div class="row">', '', '' %}
 		<div class="col-md-4 paperbox">
 			<div class="media">
   				<a class="pull-right" href="{{ paper.url }}">

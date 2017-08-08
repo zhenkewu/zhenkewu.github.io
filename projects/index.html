@@ -14,7 +14,7 @@ navorder: 2
 
 {% for project in site.data.projects %}
 
-    {% cycle 'add rows': '<div class="row">', nil, nil %}
+    {% cycle 'add rows': '<div class="row">', '', '' %}
 		<div class="col-md-4 projectbox">
 			<div class="head">
 				<a href="{{ project.url }}" class="off">{{ project.title }}</a>
@@ -37,6 +37,6 @@ navorder: 2
 			<div class="bigspacer"></div>
 			<div class="spacer"></div>
 		</div>
-    {% cycle 'close rows': nil, nil, '</div>' %}
+    {% cycle 'close rows': '', '', '</div>' %}
 {% endfor %}
-{% cycle 'close rows': nil, '</div>', '</div>' %}	
+{% cycle 'close rows': '', '</div>', '</div>' %}	

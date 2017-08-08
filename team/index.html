@@ -12,7 +12,7 @@ navorder: 4
 <div class="bigspacer"></div>
 {% for member in site.categories.team reversed %}
 	{% if member.alum == false and member.collaborator == false %}
-	    {% cycle 'add rows': '<div class="row">', nil, nil %}
+	    {% cycle 'add rows': '<div class="row">', '', '' %}
 			<div class="col-md-4 memberbox">
 				<div class="media">
 	  				<a class="pull-left" href="{{ member.url }}">
@@ -35,11 +35,11 @@ navorder: 4
 	  				</div>
 				</div>
 	        </div>	  
-	    {% cycle 'close rows': nil, nil, '</div><div class="bigspacer"></div>' %}
+	    {% cycle 'close rows': '', '', '</div><div class="bigspacer"></div>' %}
 	{% endif %}
 {% endfor %}
 {% comment %}
-{% cycle 'close rows': nil, '</div><div class="bigspacer"></div>', '</div><div class="bigspacer"></div>' %}
+{% cycle 'close rows': '', '</div><div class="bigspacer"></div>', '</div><div class="bigspacer"></div>' %}
 {% endcomment %}
 
 <!-- comment out this next line if there are multiples of three members -->
@@ -52,7 +52,7 @@ navorder: 4
 <div class="smalltitle text-left">Statistical </div>
 {% for member in site.categories.team %}
 	{% if member.field == "stat" and member.collaborator == true %}
-	    {% cycle 'add collaborator rows': '<div class="row">', nil, nil %}
+	    {% cycle 'add collaborator rows': '<div class="row">', '', '' %}
 			<div class="col-md-4 memberbox">
 				<div class="media">
 	  				<a class="pull-left" href="{{ member.url }}">
@@ -64,11 +64,11 @@ navorder: 4
 	  				</div>
 				</div>
 	        </div>	  
-	    {% cycle 'close collaborator rows': nil, nil, '</div><div class="bigspacer"></div>' %}
+	    {% cycle 'close collaborator rows': '', '', '</div><div class="bigspacer"></div>' %}
 	{% endif %}
 {% endfor %}
 {% comment %}
-{% cycle 'close collaborator rows': nil, '</div><div class="bigspacer"></div>', '</div><div class="bigspacer"></div>' %}
+{% cycle 'close collaborator rows': '', '</div><div class="bigspacer"></div>', '</div><div class="bigspacer"></div>' %}
 {% endcomment %}
 
 <!-- comment out this next line if there are multiples of three alumni -->
@@ -84,7 +84,7 @@ navorder: 4
 
 {% for member in site.categories.team %}
 	{% if member.field == "pneumonia" and member.collaborator == true%}
-	    {% cycle 'add scientist rows': '<div class="row">', nil, nil %}
+	    {% cycle 'add scientist rows': '<div class="row">', '', '' %}
 			<div class="col-md-4 memberbox">
 				<div class="media">
 	  				<a class="pull-left" href="{{ member.url }}">
@@ -96,11 +96,11 @@ navorder: 4
 	  				</div>
 				</div>
 	        </div>	  
-	    {% cycle 'close scientist rows': nil, nil, '</div><div class="bigspacer"></div>' %}
+	    {% cycle 'close scientist rows': '', '', '</div><div class="bigspacer"></div>' %}
 	{% endif %}
 {% endfor %}
 {% comment %}
-{% cycle 'close scientist rows': nil, '</div><div class="bigspacer"></div>', '</div><div class="bigspacer"></div>' %}
+{% cycle 'close scientist rows': '', '</div><div class="bigspacer"></div>', '</div><div class="bigspacer"></div>' %}
 {% endcomment %}
 
 <!-- comment out this next line if there are multiples of three alumni -->
