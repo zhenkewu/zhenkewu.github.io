@@ -12,7 +12,7 @@ Platform Website: [http://oslerinhealth.org/](http://oslerinhealth.org/)
 
 # Mission
 ------
-Hopkins inHealth is dedicated to the rapid dissemination of the statistical tools and methodologies developed by the LMC. As such, Hopkins inHealth is developing OSLER inHealth, an R-based statistical package collection that will allow researchers to adapt the tools developed by the LMC investigators for their own research purposes, enabling the faster adoption of innovative inHealth solutions by the wider healthcare community.
+OSLER-inHealth is dedicated to the rapid dissemination of the statistical tools and methodologies developed by the LMC. As such, Hopkins inHealth is developing OSLER inHealth, an R-based statistical package collection that will allow researchers to adapt the tools developed by the LMC investigators for their own research purposes, enabling the faster adoption of innovative inHealth solutions by the wider healthcare community.
 
 Based on the programming language R, OSLERinHealth starts with 2 inter-operable packages that cover multiple areas of imaging including visualization, data processing and storage, and statistical inference. OSLERinHealth accepts new R package submissions, which are subject to a formal review and continuous automated testing.
 
@@ -24,7 +24,6 @@ Based on the programming language R, OSLERinHealth starts with 2 inter-operable 
 # Annoucements
 ------
 * [09/08/2017] [baker](https://github.com/zhenkewu/baker) and [spotgear](https://github.com/zhenkewu/spotgear) are up for testing.
-
 
 
 # Background
