@@ -1,4 +1,19 @@
 ---
+- repo: oslerinhealth
+  title: oslerinhealth
+  owner: oslerinhealth
+  description: Open Source Learning Environment in R for Individualized Health
+  url: /projects/oslerinhealth
+  contributors:
+  - login: oslerinhealth
+    avatar: https://avatars1.githubusercontent.com/u/26066609?v=4&s=400
+    url: https://github.com/oslerinhealth
+  commits:
+  - date: 2017-09-10 06:28:08.000000000 Z
+    message: Package id 10 current
+    url: https://github.com/oslerinhealth/baker/commit/e3c7494f7135018bac11a0ffd2c2fa922b21ee38
+    author_login: oslerinhealth
+    author_url: https://github.com/oslerinhealth
 - repo: zhenkewu/mpcr
   title: mpcr
   owner: zhenkewu
