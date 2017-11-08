@@ -1,19 +1,21 @@
 ---
 layout: default
-title: "cv/contact"
-navtab: "cv/contact"
+title: "people"
+navtab: "people"
 description: "People in the lab"
 group: navigation
 navorder: 4
 ---
 {% include JB/setup %}
 
+
 <div class="container">
+<div class="title text-left">Research Group Members </div>
 <div class="bigspacer"></div>
-{% for member in site.categories.team reversed %}
+{% for member in site.categories.team %}
 	{% if member.alum == false and member.collaborator == false %}
 	    {% cycle 'add rows': '<div class="row">', '', '' %}
-			<div class="col-md-4 memberbox">
+			<div class="col-md-5 memberbox">
 				<div class="media">
 	  				<a class="pull-left" href="{{ member.url }}">
 	    				<img class="media-object member-photo" src="{{ member.image }}">
