@@ -10,12 +10,12 @@ navorder: 4
 
 
 <div class="container">
-<div class="title text-left">Research Group Members </div>
+<div class="smalltitle text-left">Research Group Members </div>
 <div class="bigspacer"></div>
 {% for member in site.categories.team %}
 	{% if member.alum == false and member.collaborator == false %}
 	    {% cycle 'add rows': '<div class="row">', '', '' %}
-			<div class="col-md-5 memberbox">
+			<div class="col-md-9 memberbox">
 				<div class="media">
 	  				<a class="pull-left" href="{{ member.url }}">
 	    				<img class="media-object member-photo" src="{{ member.image }}">
@@ -43,11 +43,13 @@ navorder: 4
 {% cycle 'close rows': '', '</div><div class="bigspacer"></div>', '</div><div class="bigspacer"></div>' %}
 </div>
 
+
+<!--
 <hr/>
 <div class="title text-center">Collaborators </div>
 
 <div class="container">
-<div class="smalltitle text-left">Statistical </div>
+<div class="smalltitle text-left">Statisticians </div>
 {% for member in site.categories.team %}
 	{% if member.field == "stat" and member.collaborator == true %}
 	    {% cycle 'add collaborator rows': '<div class="row">', '', '' %}
@@ -71,9 +73,10 @@ navorder: 4
 <div class="bigspacer"></div>
 <hr/>
 <div class="container">
-<div class="smalltitle text-left">Scientific </div>
+<div class="smalltitle text-left">Scientists </div>
 <div class="bigspacer"></div>
 
+<div class="smalltitle text-left">Childhood Pneumonia </div>
 {% for member in site.categories.team %}
 	{% if member.field == "pneumonia" and member.collaborator == true%}
 	    {% cycle 'add scientist rows': '<div class="row">', '', '' %}
@@ -93,8 +96,29 @@ navorder: 4
 {% endfor %}
 {% cycle 'close scientist rows': '', '</div><div class="bigspacer"></div>', '</div><div class="bigspacer"></div>' %}
 
+<div class="smalltitle text-left">Autoimmune Diseases and Cancer </div>
+{% for member in site.categories.team %}
+	{% if member.field == "Autoimmune Diseases and Cancer" and member.collaborator == true%}
+	    {% cycle 'add scientist rows': '<div class="row">', '', '' %}
+			<div class="col-md-4 memberbox">
+				<div class="media">
+	  				<a class="pull-left" href="{{ member.url }}">
+	    				<img class="media-object member-photo" src="{{ member.image }}">
+	  				</a>
+	 			 	<div class="media-body">
+	    				<div class="head media-heading member-name"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
+	    				<p class="note">{{ member.position }}</p>
+	  				</div>
+				</div>
+	        </div>	  
+	    {% cycle 'close scientist rows': '', '', '</div><div class="bigspacer"></div>' %}
+	{% endif %}
+{% endfor %}
+{% cycle 'close scientist rows': '', '</div><div class="bigspacer"></div>', '</div><div class="bigspacer"></div>' %}
 
-<!-- comment out this next line if there are multiples of three alumni -->
 </div>
+-->
+<!-- comment out the line with /div if there are multiples of three alumni -->
 
 <div class="bigspacer"></div>
+

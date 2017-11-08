@@ -66,7 +66,39 @@ I collaborate closely with
 
 <div class="row">
 	
+
+	
 	<div class="col-md-4">
+		<div class="head">
+			<a class="off" href="/papers/">Recent Papers
+			</a>
+		</div>
+		<div class="bigspacer"></div>
+		<div class="feedbox pad-left">		
+			{% for paper in site.categories.papers limit:10 %}
+				<div class="note-title">
+					<i class="fa fa-file-text-o fa-fw"></i>
+					<a class="off" href="{{ paper.url }}">
+					{{ paper.title }}
+					</a>
+					<br/>
+					<div class='shortref note'>
+					{{ paper.shortref }}
+					</div>
+				</div>
+				<div class="smallspacer"></div>
+				<div class="smallnote">
+					Published
+					{{ paper.date | date_to_string }}
+				</div>
+				<div class="spacer"></div>	
+				<div class="spacer"></div>				
+			{% endfor %}
+		</div>
+		<div class="bigspacer"></div>		
+	</div>
+	
+    	<div class="col-md-4">
 		<div class="head">
 			<a class="off" href="/news/">News</a>
 		</div>
@@ -103,38 +135,6 @@ I collaborate closely with
 		</div>
 		<div class="bigspacer"></div>		
 	</div>
-	
-	
-	<div class="col-md-4">
-		<div class="head">
-			<a class="off" href="/papers/">Recent Papers
-			</a>
-		</div>
-		<div class="bigspacer"></div>
-		<div class="feedbox pad-left">		
-			{% for paper in site.categories.papers limit:5 %}
-				<div class="note-title">
-					<i class="fa fa-file-text-o fa-fw"></i>
-					<a class="off" href="{{ paper.url }}">
-					{{ paper.title }}
-					</a>
-					<br/>
-					<div class='shortref note'>
-					{{ paper.shortref }}
-					</div>
-				</div>
-				<div class="smallspacer"></div>
-				<div class="smallnote">
-					Published
-					{{ paper.date | date_to_string }}
-				</div>
-				<div class="spacer"></div>	
-				<div class="spacer"></div>				
-			{% endfor %}
-		</div>
-		<div class="bigspacer"></div>		
-	</div>
-	
 
 	<div class="col-md-4">
 		<div class="head">
