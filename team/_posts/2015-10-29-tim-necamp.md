@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Timothy NeCamp
-position: PhD Student, Department of Statistics
+position: PhD Student (Statistics) NSF Graduate Fellow
 institute: University of Michigan
 handle: Tim NeCamp
 email: tnecamp@umich[punto]edu
