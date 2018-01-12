@@ -4,7 +4,7 @@ title: Mengbing Li
 position: MS Student (Biostatistics)
 institute: University of Michigan
 handle: Mengbing Li
-email: 
+email: mengbing@umich[punto]edu
 twitter: 
 github: 
 scholar: 
