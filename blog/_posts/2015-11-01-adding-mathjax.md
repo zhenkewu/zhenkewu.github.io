@@ -8,8 +8,11 @@ category: blog
 published: true
 tags: []
 tagline: "This is The Tagline"
+lcb: "{"
 ---
 
+Math Equations
+======
 {% include JB/setup %}
 
 We do plenty of math, so I'd like to test out [MathJax](https://www.mathjax.org/) support.
@@ -48,3 +51,14 @@ Or to write the case likelihood function of PLCM model ([Wu et al. 2015](/assets
 $$
 Pr(\boldsymbol{M}_i \mid I_i=1) = \sum_{\ell=1}^L\pi_\ell\theta_\ell^{M_{i\ell}}(1-\theta_\ell)^{1-M_{i\ell}}\prod_{j\neq \ell}\psi_j^{M_{ij}}(1-\psi_j)^{1-M_{ij}}
 $$
+
+
+One can also use some doses of number theory...
+======
+~~~ html
+{{page.lcb}}% include JB/video id="0Oazb7IWzbA" provider="youtube" %}
+~~~
+
+
+{% include JB/video id="0Oazb7IWzbA" provider="youtube" %}
+
