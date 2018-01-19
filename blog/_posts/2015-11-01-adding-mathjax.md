@@ -7,12 +7,8 @@ author_handle: Zhenke Wu
 category: blog
 published: true
 tags: []
-header:
-  video:
-    id: XsxDH4HcOWA
-    provider: youtube
+tagline: "This is The Tagline"
 ---
-
 
 {% include JB/setup %}
 

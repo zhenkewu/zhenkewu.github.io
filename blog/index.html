@@ -4,10 +4,15 @@ title: "blog"
 description: "Zhenke Wu / blog"
 group: navigation
 navorder: 6
+video: /assets/video/dont-type-www
 ---
 {% include JB/setup %}
 
-<div class="row">
+{% if page.video %}
+<div style="margin-top: -400px"> </div>
+{%endif%}
+
+<div class="row" >
 	<div class="col-md-12">
 		<div class="centered-pills">
 			<ul class="nav nav-pills note-button">
@@ -96,3 +101,6 @@ navorder: 6
 		</a>
 	</div>
 </div>
+
+
+

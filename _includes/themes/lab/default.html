@@ -75,7 +75,37 @@
     -->
 
 	<!-- jQuery -->
-  </head>
+
+{% if page.image %}
+{% assign postImage = page.image %}
+{% elsif post.image %}
+  {% assign postImage = post.image %}
+{% else %}
+  {% if page.video %}
+    {% assign postVideo = page.video %}
+  {% elsif post.video %}
+    {% assign postVideo = post.video %}
+  {% else %}
+    {% assign postImage = site.default_image %}
+  {% endif %}
+{% endif %}
+
+{% if postVideo %}
+<video id="headervideo"
+  loop
+  muted
+  autoplay
+  onclick="this.paused ? this.play() : this.pause();"
+  preload="auto"
+  poster="{{ postVideo }}.jpg">
+<source src="{{ postVideo }}.mp4" type="video/mp4">
+</video>
+
+
+
+{% endif %} 
+
+</head>
 
 <body>
   <!-- Static top navbar -->
@@ -128,10 +158,16 @@
       </div><!-- /.navbar-collapse -->
 	  </div>
   </nav>
+
 </div>
+
+
+
+
    
-   
-   
+
+
+
 
    <!-- Content -->
    <div class="container">
