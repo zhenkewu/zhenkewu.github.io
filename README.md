@@ -7,12 +7,6 @@ Zhenke Wu's Research Website: [click to view](http://zhenkewu.com)
 * fonts
 	- Use [Typekit](https://typekit.com/) to publish fonts you like; register an Adobe account;
 	- Modify `$font-stack` in `/assets/themes/lab/css/style.scss` to include your fonts. Extra font names are used as fallbacks.
-* categories
-    - refers to the subfolders in the main directory without an underscore `_`;
-    - is used to refer to specific locations in the website (my current guess is it ships with the engine of jekyll, so no need to pre-define categories)
-* style sheets
-    - There are two that matters: `/assets/themes/lab/css/style.scss` and `assets/themes/css/style.scss`. The former for posts, the latter for pages PRIOR to entering posts. 
-    - This might best be fixed, but I don't have time now to check how they are currently used in different pages.
 * posts
     - To add a post, e.g., a new paper, follow the format of the existing `.md` files
     - Comment out `</div>` if there are a multiple of three papers in each subsection; otherwise, there will be errors of indentation. 
@@ -44,3 +38,11 @@ Zhenke Wu's Research Website: [click to view](http://zhenkewu.com)
     - For each repo (in the folder `/_data`), the `url` should not end with `/`. For example, use `url: /projects/baker`, instead of `url: /projects/baker/`
 * navigation:
     - For example, the "papers" tab is specified in the folder "papers/". At the top, `title` is for tab name; `group` can be either `navigation` or `subnavigation` depending on whether you want to show this tab or collapse into the "More" tab; `navorder` specifies the order appearing in the navigation bar (1 for the first tab).
+
+ ## Other Technicalities
+ * `categories`
+    - refers to the subfolders in the main directory without an underscore `_`;
+    - is used to refer to specific locations in the website (my current guess is that the definition of `categories` ships with the engine of jekyll, so no need to user-define categories)
+* style sheets
+    - There are two that matter: `/assets/themes/lab/css/style.scss` and `/assets/themes/css/style.scss`; The former works for posts, the latter for pages PRIOR to entering posts. 
+    - This might best be fixed, but I don't have time now to check how they are currently used in different pages.
