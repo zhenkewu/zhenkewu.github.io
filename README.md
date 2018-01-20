@@ -7,6 +7,12 @@ Zhenke Wu's Research Website: [click to view](http://zhenkewu.com)
 * fonts
 	- Use [Typekit](https://typekit.com/) to publish fonts you like; register an Adobe account;
 	- Modify `$font-stack` in `/assets/themes/lab/css/style.scss` to include your fonts. Extra font names are used as fallbacks.
+* categories
+    - refers to the subfolders in the main directory without an underscore `_`;
+    - is used to refer to specific locations in the website (my current guess is it ships with the engine of jekyll, so no need to pre-define categories)
+* style sheets
+    - There are two that matters: `/assets/themes/lab/css/style.scss` and `assets/themes/css/style.scss`. The former for posts, the latter for pages PRIOR to entering posts. 
+    - This might best be fixed, but I don't have time now to check how they are currently used in different pages.
 * posts
     - To add a post, e.g., a new paper, follow the format of the existing `.md` files
     - Comment out `</div>` if there are a multiple of three papers in each subsection; otherwise, there will be errors of indentation. 
