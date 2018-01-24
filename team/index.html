@@ -8,7 +8,37 @@ navorder: 4
 ---
 {% include JB/setup %}
 
+<style>
+    img.photo{
+          object-fit: cover;
+          object-position: 10% 50%; 
+          width:200px;
+          height:300px;
+    }
+</style>
 
+<div class="smalltitle text-left">Research Group Members </div>
+<div class="bigspacer"></div>
+
+I'm extremely fortunate to work with several amazing students. <br>
+
+<div class="bigspacer"></div>
+
+<div class="row">
+    {% for member in site.categories.team %}
+    {% if member.alum == false and member.collaborator == false %}
+    <div class="col-md-4 columns t30" style="text-align: center">
+    {%if member.url%}
+    <a href="{{ member.url }}"> <img class="photo" src="{{member.image}}"> </a> <br>
+    <div class="head media-heading member-name"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>  
+    <p class="note">{{ member.position }}</p>
+    </div>
+    {%endif%}
+    {%endif%}
+    {% endfor %}    
+</div>
+
+<!--
 <div class="container">
 <div class="smalltitle text-left">Research Group Members </div>
 <div class="bigspacer"></div>
@@ -43,7 +73,7 @@ navorder: 4
 {% cycle 'close rows': '', '</div><div class="bigspacer"></div>', '</div><div class="bigspacer"></div>' %}
 </div>
 
-
+-->
 <!--
 <hr/>
 <div class="title text-center">Collaborators </div>

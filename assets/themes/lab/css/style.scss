@@ -102,8 +102,16 @@ a.off {
 }
 
 .member-name {
-	font-size: ceil($font-size-base*1.2);
-	padding-top: 20px;
+	padding-top: 5px;
+
+	a {
+		color: black ; /* color of links in post */
+		border-bottom: 0.5px dotted; /* underscore in post*/
+	}
+
+	h1 {
+
+	}
 }
 
 @media all and (max-width: 800) {
