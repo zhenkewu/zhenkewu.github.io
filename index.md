@@ -51,7 +51,7 @@ Research interests:
 * Latent variable models: dynamics, measurement errors, local dependence, partial-identifiability; 
 * Robust inference: bias reduction, efficiency enhancement by covariate-calibration, semiparametric locally efficient estimation, deductive inference;
 * Causal analysis of modern study designs;
-* Collaborations: infectious disease, medical diagnosis, epidemiology, health policy, cancer, mobile health, Just-in-time adaptive interventions for behaviorial and psychiatric research.
+* Collaborations: infectious disease, autoimmune disease, medical diagnosis, epidemiology, health policy, cancer, mobile health, Just-in-time adaptive interventions for behaviorial and psychiatric research.
 
 <hr/>
 
