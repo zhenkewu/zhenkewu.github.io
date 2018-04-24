@@ -62,6 +62,7 @@ I collaborate closely with
 - [Intern Health Study](https://www.srijan-sen-lab.com/intern-health-study)
 - [Hopkins inHealth](http://hopkinsinhealth.jhu.edu/) methodology group
 - [International Vaccine Access Center (IVAC)](http://www.jhsph.edu/research/centers-and-institutes/ivac/)
+- [Rheumatology at Johns Hopkins](https://www.hopkinsrheumatology.org/research/rosen-casciola-lab/)
 
 <br />
 
