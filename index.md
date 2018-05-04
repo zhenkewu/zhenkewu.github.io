@@ -40,9 +40,6 @@ Currently a major focus of my work is on the analysis of multiple mixed-type lon
 <hr/>
 **Advising**: We are recruiting motivated and hard-working students interested in Bayesian methods and computation, graphical models and large-scale health data analytics. If you are interested in joining the group, please apply to Biostatistics at the University of Michigan, Ann Arbor. If you are an undergrad or grad student at the University of Michigan, and you are interested in any of the papers or projects listed on this website, send me an email with your interests and CV. 
 
-[**Summer 2018**] Currently there is funding for summer research position(s) (May 1 to Sep 1, 2018) to work on 
-* Adaptive latent class regression modeling with constant, linear or nonlinear effects with application to childhood pneumonia etiology
-
 <hr/>
 
 Research interests:
