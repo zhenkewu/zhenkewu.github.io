@@ -128,6 +128,18 @@ with gratitude.
 			</div>
 			<div class="bigspacer"></div>			
 			{% endif %}
+
+			{% if page.poster %}
+			<div class="smallhead">
+				Poster
+			</div>	
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa fa-paperclip fa-fw"></i>
+				<a class="off" href="{{ page.poster }}">{{ page.poster | split: '/' | last }}</a>
+			</div>
+			<div class="bigspacer"></div>			
+			{% endif %}
 			
 			{% if page.doi %}
 			<div class="smallhead">
