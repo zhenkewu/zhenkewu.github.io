@@ -12,7 +12,7 @@ supplement:
 poster: /assets/pdfs/posters/SAMSI_poster_2018Aug14.pdf
 github: https://github.com/zhenkewu/rewind
 doi: 
-external_link: https://www.biorxiv.org/content/early/2018/08/25/400192
+external_link: https://goo.gl/vYvQx7
 video_link: 
 type: statistical
 ---
