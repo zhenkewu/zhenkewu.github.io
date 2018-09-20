@@ -181,6 +181,7 @@ plugins:
   - jekyll-feed
   
   
+  
 future: true
 
 redcarpet: 
@@ -213,7 +214,7 @@ exclude:
   - "*.nex"
   - "Gemfile"
   - "Gemfile.lock"
-  
+
 projects:
   - zhenkewu/baker
   - zhenkewu/mpcr
