@@ -24,7 +24,7 @@ Organizers:
 
 * [Jian Kang](http://www-personal.umich.edu/~jiankang/) (Biostatistics)
 * [Hui Jiang](http://www-personal.umich.edu/~jianghui/) (Biostatistics)
-* [Zhenke Wu](zhenkewu.com) (Biostatistics)
+* [Zhenke Wu](http://zhenkewu.com) (Biostatistics)
 
 * **Email List**: 
 	+  [stat.learning.computing@umich.edu](stat.learning.computing@umich.edu)
