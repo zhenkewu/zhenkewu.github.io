@@ -34,11 +34,7 @@ Organizers:
 
 ## Announcements
 
-* [10/08/2018] Please sign-up for paper(s) and date(s) to present [here](https://docs.google.com/document/d/1Iaef_wRsualPdM5OP7voPBvubW7pkX3vZKH67acuX2I/edit)
-
-------
-
-## Google Sheet for collaborative scheduling
+* [10/08/2018] Please sign-up for paper(s) and date(s) to present. The Google Doc Collaborative Scheduling Sheet is [here](https://docs.google.com/document/d/1Iaef_wRsualPdM5OP7voPBvubW7pkX3vZKH67acuX2I/edit)
 
 
 ------
