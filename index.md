@@ -41,6 +41,8 @@ Currently a major focus of my work is on the analysis of multiple mixed-type lon
 <hr/>
 **Advising**: We are recruiting motivated and hard-working students interested in Bayesian methods and computation, graphical models and large-scale health data analytics. If you are interested in joining the group, please apply to Biostatistics at the University of Michigan, Ann Arbor. If you are an undergrad or grad student at the University of Michigan, and you are interested in any of the papers or projects listed on this website, send me an email with your interests and CV.
 
+[__Statistical Learning and Computing Reading Group, Fall 2018__](/teaching/statistical_learning_reading_group)
+
 <hr/>
 
 Research interests:
