@@ -46,7 +46,7 @@ Organizers:
 ## Resources
 
 * [Reading group tips](https://docs.google.com/document/d/1KqtfhKbePLfSsJ-_hR6kBditC0uMSo0BXAZP5Mm_hPw/edit#heading=h.s31i45kkxhoj) for presenters and listeners (courtesy Lester Mackey, Percy Liang and their groups + [Causal Inference Reading Group at Berkeley](https://www.stat.berkeley.edu/~wfithian/reading-group/causal-group.html))
-*  Because this page is hosted on github, feel free to link to extra resources by pull requests.
+*  Because this page is hosted on github, feel free to link to extra resources by [pull requests](https://github.com/zhenkewu/zhenkewu.github.io/blob/master/teaching/_posts/2018-10-08-statistical_learning_reading_group.md).
 
 ------
 
