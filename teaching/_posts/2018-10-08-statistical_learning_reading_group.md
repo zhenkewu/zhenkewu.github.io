@@ -27,17 +27,21 @@ Organizers:
 * [Zhenke Wu](zhenkewu.com) (Biostatistics)
 
 * **Email List**: TBA
-* **Time**: Mondays 12-1pm (15 weeks; October 15th to December 17th, 2018)
+* **Time**: Mondays 12-1pm (October 15th to December 17th, 2018)
 * **Location**: TBA
 
 ------
 
 ## Announcements
 
-* [10/08/2018] Please sign-up for paper(s) and date(s) to present. The Google Doc Collaborative Scheduling Sheet is [here](https://docs.google.com/document/d/1Iaef_wRsualPdM5OP7voPBvubW7pkX3vZKH67acuX2I/edit)
-
+* [10/08/2018] Please sign-up for paper(s) and date(s) to present. 
 
 ------
+
+## Collaborative Scheduling
+* Please sign up [here](https://docs.google.com/document/d/1Iaef_wRsualPdM5OP7voPBvubW7pkX3vZKH67acuX2I/edit)
+
+
 
 ## Resources
 
