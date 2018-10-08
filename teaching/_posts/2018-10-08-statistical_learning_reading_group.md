@@ -26,9 +26,11 @@ Organizers:
 * [Hui Jiang](http://www-personal.umich.edu/~jianghui/) (Biostatistics)
 * [Zhenke Wu](zhenkewu.com) (Biostatistics)
 
-* **Email List**: TBA
-* **Time**: Mondays 12-1pm (October 15th to December 17th, 2018)
-* **Location**: TBA
+* **Email List**: 
+		* [stat.learning.computing@umich.edu](stat.learning.computing@umich.edu)
+		* Requests [stat.learning.computing-requests@umich.edu](stat.learning.computing-requests@umich.edu)
+* **Time**: Mondays 12-1pm (October 22th to December 17th, 2018)
+* **Location**: M4034 SPH-II
 
 ------
 
