@@ -59,7 +59,7 @@ I collaborate closely with
 
 - [The Michigan Genomics Initiative](https://www.michigangenomics.org)
 - [D3 Lab: Data Science for Dynamic Intervention Decision-Making Lab](http://d3lab-isr.com/team/)
-- [Cancer Control and Population Sciences, University of Michigan Comprehensive Cancer Center](http://www.mcancer.org/research/programs/cancer-control-and-population-sciences)
+- [Cancer Control and Population Sciences, Rogel Cancer Center](http://www.mcancer.org/research/programs/cancer-control-and-population-sciences)
 - [Intern Health Study](https://www.srijan-sen-lab.com/intern-health-study)
 - [Rheumatology at Johns Hopkins](https://www.hopkinsrheumatology.org/research/rosen-casciola-lab/)
 - [Hopkins inHealth](http://hopkinsinhealth.jhu.edu/) methodology group
