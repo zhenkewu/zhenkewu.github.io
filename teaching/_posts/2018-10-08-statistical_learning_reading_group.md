@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Statistical Learning Reading Group (Fall, 2018)"
+title: "Statistical Learning Reading Group (Winter, 2019)"
 description: ""
 author: Zhenke Wu
 author_handle: Zhenke Wu
@@ -29,14 +29,14 @@ Organizers:
 * **Email List**: 
 	+  [stat.learning.computing@umich.edu](stat.learning.computing@umich.edu)
 	+ Requests [stat.learning.computing-requests@umich.edu](stat.learning.computing-requests@umich.edu)
-* **Time**: Mondays 12-1pm (October 22th to December 17th, 2018)
-* **Location**: M4034 SPH-II
+* **Time**: Tuesdays 4-5pm (January 15th to April 23rd, 2019)
+* **Location**: M4117 SPH-II
 
 ------
 
 ## Announcements
 
-* [10/08/2018] Please sign-up for paper(s) and date(s) to present. 
+* [01/04/2019] Please sign-up for paper(s) and date(s) to present. 
 
 ------
 
