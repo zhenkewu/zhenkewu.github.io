@@ -4,8 +4,8 @@ title: "Aetiology of severe hospitalised pneumonia in HIV-uninfected children fr
 image: /assets/images/papers/cid_bayesian.png
 authors: PERCH Study Group
 year: 2019
-shortref: PERCH Study Group (2019). Lancet, In Press
-journal: "Lancet, In Press"
+shortref: PERCH Study Group (2019). The Lancet, In Press
+journal: "The Lancet. In Press"
 pdf: 
 supplement: 
 github: 
