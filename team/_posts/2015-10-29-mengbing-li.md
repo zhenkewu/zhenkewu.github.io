@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Mengbing Li
-position: MS Student (Biostatistics)
+position: PhD Student (Biostatistics); May 2019 - MS
 institute: University of Michigan
 handle: Mengbing Li
 email: mengbing@umich[punto]edu
