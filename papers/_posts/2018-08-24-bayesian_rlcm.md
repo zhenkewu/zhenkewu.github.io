@@ -12,7 +12,7 @@ supplement:  /assets/pdfs/papers/wu-2018-bayesian_rlcm_supp.pdf
 poster: /assets/pdfs/posters/SAMSI_poster_2018Aug14.pdf
 github: https://github.com/zhenkewu/rewind
 doi: 
-external_link: https://goo.gl/vYvQx7
+external_link: https://bit.ly/2Wdf7ew
 video_link: 
 type: statistical
 ---
