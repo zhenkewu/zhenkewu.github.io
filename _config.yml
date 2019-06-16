@@ -10,6 +10,11 @@ highlighter: rouge
 # redcarpet:
 #   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "smart"]
 
+#markdown: CommonMarkGhPages
+#commonmark:
+#  options: ["SMART", "FOOTNOTES"]
+#  extensions: ["strikethrough", "autolink", "tables"]
+
 markdown: kramdown
 
 # Themes are encouraged to use these universal variables 

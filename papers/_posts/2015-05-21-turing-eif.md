@@ -32,3 +32,30 @@ demonstrated through an example.
 
 **Keywords**  Compatibility; Deductive procedure; Gateaux derivative; Influence function; Semiparametric estimation;
 Turing machine.
+
+# Bibtex
+
+```
+@Article{Frangakis2015a,
+  author          = {Frangakis, Constantine E and Qian, Tianchen and Wu, Zhenke and Diaz, Ivan},
+  title           = {Deductive derivation and turing-computerization of semiparametric efficient estimation.},
+  journal         = {Biometrics},
+  year            = {2015},
+  volume          = {71},
+  pages           = {867--874},
+  month           = dec,
+  issn            = {1541-0420},
+  citation-subset = {IM},
+  completed       = {2016-10-17},
+  country         = {United States},
+  doi             = {10.1111/biom.12362},
+  issn-linking    = {0006-341X},
+  issue           = {4},
+  mid             = {NIHMS724246},
+  nlm-id          = {0370625},
+  owner           = {NLM},
+  pmc             = {PMC4715631},
+  pmid            = {26237182},
+  revised         = {2018-11-13},
+}
+```
