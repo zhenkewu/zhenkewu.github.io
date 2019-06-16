@@ -16,3 +16,8 @@ web:
 field: biostat
 ---
 
+
+# Awards:
+
+* 2018, Outstanding Graduate Student Instructor (Biostatistics)
+
