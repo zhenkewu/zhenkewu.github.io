@@ -129,7 +129,7 @@
 			<div class="head">Papers</div>
 			<div class="spacer"></div>
 			{% for paper in site.categories.papers %}
-				{% if paper.authors contains lastname %}
+				{% if paper.authors contains lastname and paper.authors contains firstname %}
 					{% if paper.embargo %}
 					<p>{{ paper.title }}
 					{% else %}
