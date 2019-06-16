@@ -12,7 +12,7 @@ image: /assets/images/team/irena-chen.png
 cv: 
 alum: false
 collaborator: false                               
-web: 
+web: bit.ly/2WNRVok
 field: biostat
 ---
 
