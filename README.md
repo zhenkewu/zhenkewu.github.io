@@ -11,7 +11,15 @@ Zhenke Wu's Research Website: [click to view](http://zhenkewu.com)
     - To add a post, e.g., a new paper, follow the format of the existing `.md` files
     - Comment out `</div>` if there are a multiple of three papers in each subsection; otherwise, there will be errors of indentation. 
 * tracking
-	- To link your site to Google analytic services, modify the `tracking_id` in `_config.yml` file in the root directory so that it points to your website.
+	- To link your site to Google analytic services, modify the `tracking_id` in `_config.yml` file in the root directory so that it points to your website. 
+	- Replace the `tracking_id` with your own id in the following block of codes in `_config.yml`
+    
+    ```
+    analytics :
+        provider : google
+   		google : 
+      	  tracking_id : 'UA-57530925-1'
+    ```
 * MathJax (also see [here](http://www.idryman.org/blog/2012/03/10/writing-math-equations-on-octopress/) )
 	- To properly display the math expressions rendered by MathJax, 
 		+ Add `kramdown` after on the line of `markdown: ` in `_config.yml`; this prevents markdown language to intervene with LaTex commands; Also put `gem 'kramdown'` in `Gemfile`;
@@ -46,12 +54,3 @@ Zhenke Wu's Research Website: [click to view](http://zhenkewu.com)
 * style sheets
     - There are two that matter: `/assets/themes/lab/css/style.scss` and `/assets/themes/css/style.scss`; The former works for posts, the latter for pages PRIOR to entering posts. 
     - This might best be fixed, but I don't have time now to check how they are currently used in different pages.
-* visitor tracking
-    - Google Analytics can track visitors. Replace the `tracking_id` with your own id in the following block of codes in `_config.yml`
-    
-    ```
-    analytics :
-        provider : google
-   		google : 
-      	  tracking_id : 'UA-57530925-1'
-    ```
