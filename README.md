@@ -46,3 +46,12 @@ Zhenke Wu's Research Website: [click to view](http://zhenkewu.com)
 * style sheets
     - There are two that matter: `/assets/themes/lab/css/style.scss` and `/assets/themes/css/style.scss`; The former works for posts, the latter for pages PRIOR to entering posts. 
     - This might best be fixed, but I don't have time now to check how they are currently used in different pages.
+* visitor tracking
+    - Google Analytics can track visitors. Replace the `tracking_id` with your own id in the following block of codes in `_config.yml`
+    
+    ```
+    analytics :
+        provider : google
+   		google : 
+      	  tracking_id : 'UA-57530925-1'
+    ```
