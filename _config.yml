@@ -184,8 +184,8 @@ JB :
 plugins:
   - jekyll-redirect-from
   - jekyll-feed
-  
-  
+  - jekyll-gist
+  - jekyll-twitter-plugin
   
 future: true
 
