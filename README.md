@@ -20,6 +20,25 @@ Zhenke Wu's Research Website: [click to view](http://zhenkewu.com)
    		google : 
       	  tracking_id : 'UA-57530925-1'
     ```
+* twitter feed:
+    - Follow the instructions [here](https://gist.github.com/abhisheknaik96/26ce79ac7a307eb836dcf02a52f87cf2) and [here](https://keitaito.com/blog/2017/01/20/embedding-tweets-in-github-pages.html). The basic idea is to **locally** use the following
+    to embed a tweet.
+    
+    ```
+    <div class='jekyll-twitter-plugin' align="center">
+    {% twitter https://twitter.com/anaik96 maxwidth=500 limit=5 %}
+    </div>
+    ```
+
+     Run `bundle exec jekyll server` to generate a subfolder `_site/` and then find the generated `.html` file that contains the code block for embedding your tweet. Copy the code block such as
+    
+    ```html
+    <blockquote class="twitter-tweet" data-width="500"><p lang="en" dir="ltr">For our first ever <a href="https://twitter.com/hashtag/StudentSpotlight?src=hash&amp;ref_src=twsrc%5Etfw">#StudentSpotlight</a>, we&#39;re excited to feature Tim NeCamp who graduated in May and is an official <a href="https://twitter.com/hashtag/alum?src=hash&amp;ref_src=twsrc%5Etfw">#alum</a>! Tim’s interests lie in the areas of experimental design, causal inference, intensive longitudinal data, and....<br>Read More: <a href="https://t.co/NYfWov7wDk">https://t.co/NYfWov7wDk</a> <a href="https://t.co/S6D3sM2vo7">pic.twitter.com/S6D3sM2vo7</a></p>&mdash; Statistics (@UMichStatistics) <a href="https://twitter.com/UMichStatistics/status/1144334755506401283?ref_src=twsrc%5Etfw">June 27, 2019</a></blockquote>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    ```
+
+    and replace the above `div` block.
+
 * MathJax (also see [here](http://www.idryman.org/blog/2012/03/10/writing-math-equations-on-octopress/) )
 	- To properly display the math expressions rendered by MathJax, 
 		+ Add `kramdown` after on the line of `markdown: ` in `_config.yml`; this prevents markdown language to intervene with LaTex commands; Also put `gem 'kramdown'` in `Gemfile`;
