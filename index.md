@@ -51,7 +51,7 @@ Research interests:
 * Latent variable models: dynamics, measurement errors, local dependence, partial-identifiability; 
 * Robust inference: bias reduction, efficiency enhancement by covariate-calibration, semiparametric locally efficient estimation, deductive inference;
 * Causal analysis of modern study designs;
-* Collaborations: infectious disease, autoimmune disease, medical diagnosis, epidemiology, health policy, cancer, mobile health, Just-in-time adaptive interventions for behaviorial and psychiatric research.
+* Collaborations: mental health, infectious disease, autoimmune disease, medical diagnosis, epidemiology, health policy, cancer, mobile health, Just-in-time adaptive interventions for behaviorial and psychiatric research.
 
 <hr/>
 
@@ -61,6 +61,8 @@ I collaborate closely with
 - [D3 Lab: Data Science for Dynamic Intervention Decision-Making Lab](http://d3lab-isr.com/team/)
 - [Cancer Control and Population Sciences, Rogel Cancer Center](http://www.mcancer.org/research/programs/cancer-control-and-population-sciences)
 - [Intern Health Study](https://www.srijan-sen-lab.com/intern-health-study)
+- [Precision Health Use Case: PROviding Mental Health Precision Treatment (PROMPT)](https://precisionhealth.umich.edu/workgroups/prompt/)
+
 - [Rheumatology at Johns Hopkins](https://www.hopkinsrheumatology.org/research/rosen-casciola-lab/)
 - [Hopkins inHealth](http://hopkinsinhealth.jhu.edu/) methodology group
 - [International Vaccine Access Center (IVAC)](http://www.jhsph.edu/research/centers-and-institutes/ivac/)
