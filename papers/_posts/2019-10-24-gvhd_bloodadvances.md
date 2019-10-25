@@ -21,8 +21,8 @@ Graft-versus-host disease (GvHD) remains a major cause for transplant-related mo
 
 **Key Words**:  early detection, continuous monitoring, disease biomarker, core body temperature
 
-** Main points **
+**Main points**
 
-+ Unsupervised machine learning analysis of continuous body temperature data revealed early signals of acute GvHD in allogeneic HCT mice.
+- Unsupervised machine learning analysis of continuous body temperature data revealed early signals of acute GvHD in allogeneic HCT mice.
 
-+ Continuous measurement of body temperature is promising to investigate for early prediction of aGvHD in human allogeneic HCT patients.
+- Continuous measurement of body temperature is promising to investigate for early prediction of aGvHD in human allogeneic HCT patients.
