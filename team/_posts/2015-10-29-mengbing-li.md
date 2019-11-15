@@ -19,5 +19,6 @@ field: biostat
 
 # Awards:
 
+* 2019, Best Doctoral Qualifying Exam Award
 * 2018, Outstanding Graduate Student Instructor (Biostatistics)
 
