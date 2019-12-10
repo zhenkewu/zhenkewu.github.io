@@ -4,8 +4,8 @@ title: "Causes of severe pneumonia requiring hospital admission in children with
 image: /assets/images/papers/cid_bayesian.png
 authors: PERCH Study Group
 year: 2019
-shortref: PERCH Study Group (2019). The Lancet, In Press
-journal: "The Lancet. In Press"
+shortref: PERCH Study Group (2019). The Lancet
+journal: "The Lancet."
 pdf: 
 slides: http://perchresults.org/
 supplement: https://bit.ly/2KHghJZ
