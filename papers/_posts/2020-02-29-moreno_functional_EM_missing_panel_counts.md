@@ -11,7 +11,7 @@ slides:
 supplement: 
 github: 
 doi: 
-external_link: 
+external_link: https://boostedml.com/wp-content/uploads/2020/03/functional-em-algorithm.pdf
 video_link: 
 type: statistical
 ---
