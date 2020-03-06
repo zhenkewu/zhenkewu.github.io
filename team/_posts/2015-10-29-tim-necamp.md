@@ -23,7 +23,7 @@ Ann Arbor, Michigan 48109, USA <br />  -->
 
 # Thesis:
 
-_Design and Analysis of Sequential Randomized Trials with Applications to Mental Health and Online Education_. Co-Chair (with Ed Ionides)
+[_Design and Analysis of Sequential Randomized Trials with Applications to Mental Health and Online Education_](https://deepblue.lib.umich.edu/handle/2027.42/151503). Co-Chair (with Ed Ionides)
 
 # Awards:
 
