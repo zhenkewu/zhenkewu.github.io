@@ -21,6 +21,15 @@ University of Michigan <br />
  <br /> 
 Ann Arbor, Michigan 48109, USA <br />  -->
 
+# Education:
+
+2014-19, Ph.D. in Statistics - University of Michigan, Ann Arbor, Michigan
+
+2011-13, Master of Education - University of Nevada Las Vegas, Las Vegas, Nevada Focus in Curriculum and Instruction
+
+2007-11, Bachelor of Science - Ohio State University, Columbus, Ohio with Honors in Arts and Science (magna cum laude) Major: Mathematics; Minors: Statistics, Economics
+
+
 # Thesis:
 
 [_Design and Analysis of Sequential Randomized Trials with Applications to Mental Health and Online Education_](https://deepblue.lib.umich.edu/handle/2027.42/151503). Co-Chair (with Ed Ionides)

@@ -16,6 +16,12 @@ web: bit.ly/2WNRVok
 field: biostat
 ---
 
+# Education:
+
+2018-present, PhD Student in Biostatistics, University of Michigan, Ann Arbor
+
+2012-16, Bachelor of Science, Economics; Bachelor of Arts, Mathematics. University of Washington, Seattle
+
 
 # Awards:
 

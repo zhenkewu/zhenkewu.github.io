@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Mengbing Li
-position: PhD Student (Biostatistics); May 2019 - MS
+position: PhD Candidate (Biostatistics); May 2019 - MS
 institute: University of Michigan
 handle: Mengbing Li
 email: mengbing@umich[punto]edu
@@ -15,6 +15,12 @@ collaborator: false
 web: 
 field: biostat
 ---
+
+# Education:
+
+2017-19, M.S. in Biostatistics, University of Michigan, Ann Arbor
+
+2013-17, B.S.P.H., Biostatistics and Mathematics. Minor: Statistics, University of North Carolina at Chapel Hill. Graduated with Highest Honor and Distinction
 
 
 # Awards:
