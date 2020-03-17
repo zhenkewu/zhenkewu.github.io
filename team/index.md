@@ -20,7 +20,7 @@ navorder: 4
 <div class="smalltitle text-left">Research Group Members </div>
 <div class="bigspacer"></div>
 
-I'm extremely fortunate to work with several amazing students. <br>
+I'm extremely fortunate to work with several amazing students to whom I serve as primary or co-advisor. <br>
 
 <div class="bigspacer"></div>
 
@@ -35,8 +35,18 @@ I'm extremely fortunate to work with several amazing students. <br>
     </div>
     {%endif%}
     {%endif%}
-    {% endfor %}    
+    {% endfor %}   
 </div>
+
+<div class="bigspacer"></div>
+
+- **Nicole Wakim**, PhD Student in Biostatistics. *"Statistical Methods for Functional Data Streams of Digital Biomarkers in Predicting Longitudinal Cognitive Outcomes."* Co-advising with [Thomas Braun](https://sph.umich.edu/faculty-profiles/braun-thomas.html).
+
+- **Tian Xie**, MS Student in Biostatistics. *"Variable Selection in Latent Class Models with Application to Verbal Autopsy"*. 
+
+Undergraduate Students:
+- **Jiayuan Dong**, Applied Statistics (Accelerated MS Program)
+
 
 <hr/>
 <div class="bigspacer"></div>
@@ -56,6 +66,9 @@ I'm extremely fortunate to work with several amazing students. <br>
     {%endif%}
     {% endfor %}    
 </div>
+
+- **Zhongyuan Lyu**, MS, Applied Statistics, 2019.
+
 
 <!--
 <div class="container">
