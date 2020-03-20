@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Irena Chen
-position: PhD Student (Biostatistics)
+position: PhD Student (Biostatistics), 2018-present
 institute: University of Michigan
 handle: Irena Chen
 email: irena@umich[punto]edu
