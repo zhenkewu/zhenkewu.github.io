@@ -10,8 +10,8 @@ github:
 scholar: 
 image: /assets/images/team/jiayuan-dong.jpg
 cv: 
-alum: true
-collaborator: true                               
+alum: false
+collaborator: false                               
 web: 
 field: biostat
 ---
@@ -25,4 +25,4 @@ Sept 2016 – July 2019 Bachelor of Science in Financial Statistics, The Chinese
 
 # Interest
 
-Probablistic Graphical Models
+Probabilistic Graphical Models

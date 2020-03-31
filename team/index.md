@@ -42,10 +42,6 @@ I'm extremely fortunate to work with several amazing students to whom I serve as
 
 - **Nicole Wakim**, PhD Student in Biostatistics. *"Statistical Methods for Functional Data Streams of Digital Biomarkers in Predicting Longitudinal Cognitive Outcomes."* Co-advising with [Thomas Braun](https://sph.umich.edu/faculty-profiles/braun-thomas.html).
 
-Undergraduate Students:
-- **Jiayuan Dong**, Applied Statistics (Accelerated MS Program)
-
-
 <hr/>
 <div class="bigspacer"></div>
 <div class="smalltitle text-left">Alumni </div>
