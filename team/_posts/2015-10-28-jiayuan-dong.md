@@ -11,7 +11,7 @@ scholar:
 image: /assets/images/team/jiayuan-dong.jpg
 cv: 
 alum: true
-collaborator: false                               
+collaborator: true                               
 web: 
 field: biostat
 ---
