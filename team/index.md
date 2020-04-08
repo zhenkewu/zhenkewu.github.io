@@ -40,7 +40,6 @@ I'm extremely fortunate to work with several amazing students to whom I serve as
 
 <div class="bigspacer"></div>
 
-- **Nicole Wakim**, PhD Student in Biostatistics. *"Statistical Methods for Functional Data Streams of Digital Biomarkers in Predicting Longitudinal Cognitive Outcomes."* Co-advising with [Thomas Braun](https://sph.umich.edu/faculty-profiles/braun-thomas.html).
 
 <hr/>
 <div class="bigspacer"></div>
