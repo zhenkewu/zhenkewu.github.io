@@ -35,20 +35,29 @@ I am an [Assistant Professor](https://sph.umich.edu/faculty-profiles/wu-zhenke.h
 
 I am interested in the design and application of statistical methods that inform health decisions made by individuals, or precision medicine. My current focus is on latent variable and causal inference methods that can support disease etiology studies, medical diagnosis, and health policy evaluation. Broadly, the statistical goal is to discover simple latent structures that improve inferences and population parameters and individual latent states. I have also worked on causal inference methods 1) to evaluate novel treatment rules under special designs like matched-pair cluster randomized design, as these designs are useful for interventions that can only be applied at cluster level; and 2) to facilitate the inference for novel estimands in semiparametric models by automating and unifying the derivation of efficient influence functions (EIF) and ensuing estimation.
 
-Currently a major focus of my work is on the analysis of multiple mixed-type longitudinal measurements with feedbacks in treatment assignments. I am working on hierarchical Bayesian methods to infer latent trajectories that represent individual disease progressions that have direct applications to childhood pneumonia etiology studies, disease surveillance and just-in-time adaptive interventions (JITAI).
+Currently a major focus of my work is on the analysis of multiple mixed-type longitudinal measurements with feedbacks in treatment assignments. I am working on hierarchical Bayesian methods to infer latent trajectories that represent individual disease progressions that have direct applications to childhood pneumonia etiology studies, analyses of electronic health records and claims data, and just-in-time adaptive interventions (JITAI) in mobile health (mHealth) studies.
 
 
 <hr/>
 
 **Postdoc Openning**
 
-- **[[Priority Review by April 25, 2020] Postdoc Position on Statistical Methods to Individualize Care for Mental Health](https://docs.google.com/document/d/1Eq8VmqvYrF2Fqo5UxzjZbKQpJPnbZWxJTRYbL-6J19I/edit)**
+- **[[Priority Review by May 15, 2020] Postdoc Position on Statistical Methods to Individualize Care for Mental Health](https://docs.google.com/document/d/1Eq8VmqvYrF2Fqo5UxzjZbKQpJPnbZWxJTRYbL-6J19I/edit)**
+
+**Graduate Student Research Assistantship Openning**
+
+- **[[Beginning September 2020] Graduate Student Research Assistantship (GSRA) in 
+Statistical Methods for Improving Outcomes for Care Partners of Persons with Traumatic Brain Injury
+](https://docs.google.com/document/d/1MIQuMSTUVooKz1xYYaBEUsSkBJGVt01uIjd01vCreCk/edit?usp=sharing)**
+
 
 **Advising**: We are recruiting motivated and hard-working students interested in Bayesian methods and computation, graphical models and large-scale health data analytics. If you are interested in joining the group, please apply to Biostatistics at the University of Michigan, Ann Arbor. If you are an undergrad or grad student at the University of Michigan, and you are interested in any of the papers or projects listed on this website, send me an email with your interests and CV.
 
-[__Michigan Statistics for Individualized-healthcare Lab (MiSIL)__ weekly meeting schedules](https://docs.google.com/spreadsheets/d/1CfHqh74SrGH5zuo8W_L_hAGdLJdt_9jLgaeBtoxYp88/edit?usp=sharing)
+**Working Groups**
 
-[__Statistical Learning and Computing Reading Group, Winter 2019__](/teaching/statistical_learning_reading_group)
+- [__Michigan Statistics for Individualized-healthcare Lab (MiSIL)__ weekly meeting schedules](https://docs.google.com/spreadsheets/d/1CfHqh74SrGH5zuo8W_L_hAGdLJdt_9jLgaeBtoxYp88/edit?usp=sharing)
+
+- [__Statistical Learning and Computing Reading Group, Winter 2019__](/teaching/statistical_learning_reading_group)
 
 <hr/>
 
