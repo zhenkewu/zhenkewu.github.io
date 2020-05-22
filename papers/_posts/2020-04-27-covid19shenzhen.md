@@ -4,7 +4,7 @@ title: Characterization of clinical progression of COVID-19 patients in Shenzhen
 image: /assets/images/papers/covid19.png
 authors: Qifang Bi, Chengcheng Hong, Juan Meng, Zhenke Wu, Pengzheng Zhou, Chenfei Ye, Binbin Sun, Lauren Kucirka, Andrew S Azman, Tong Wang, Jiancong Chen, Zhaoqin Wang, Lei Liu,  Justin Lessler, Jessie Edwards, Ting Ma, Guoliang Zhang
 year: 2020+
-shortref: Qi et al. (2020+). Submitted.
+shortref: Bi et al. (2020+). Submitted.
 journal: "medRxiv"
 pdf: 
 slides: 
