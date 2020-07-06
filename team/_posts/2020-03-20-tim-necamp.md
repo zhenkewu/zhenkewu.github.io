@@ -21,7 +21,8 @@ University of Michigan <br />
  <br /> 
 Ann Arbor, Michigan 48109, USA <br />  -->
 
-# 
+# Current Position 
+
 Co-Founder, [Data Bloom](https://thedatabloom.com/)
 
 # Education:
