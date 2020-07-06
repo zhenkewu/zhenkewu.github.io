@@ -21,6 +21,9 @@ University of Michigan <br />
  <br /> 
 Ann Arbor, Michigan 48109, USA <br />  -->
 
+# 
+Co-Founder, [Data Bloom](https://thedatabloom.com/)
+
 # Education:
 
 2014-19, Ph.D. in Statistics - University of Michigan, Ann Arbor, Michigan
