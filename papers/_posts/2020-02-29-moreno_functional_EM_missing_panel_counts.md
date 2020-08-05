@@ -1,6 +1,6 @@
 ---
 layout: paper
-title: A Functional EM Algorithm for Panel Count Data with Missing Counts
+title: A Robust Functional EM Algorithm for Incomplete Panel Count Data
 image: /assets/images/papers/functional_EM.png
 authors: Alexander Moreno, Zhenke Wu, David Wetter, Cho Lam, Inbal Nahum-Shani, Walter Dempsey, James Rehg
 year: 2020+
@@ -18,11 +18,11 @@ type: statistical
 
 # Abstract
 
-Panel count data is recurrent events data where counts  of  events  are  observed  at  discrete  time points. Panel  counts  naturally  describe  self-reported behavioral data, and the occurrence of missing or unreliable reports is common. Unfortunately, no prior work has tackled the problem of missingness in this setting.  We address this gap in the literature by developing a novel functional EM algorithm that can be used as a wrapper around several popular panel count mean function inference methods when some counts are missing.  We provide a novel theoretical analysis of our method showing strong consistency. Extending the methods in Balakrishnan et al., 2017 and Wu et al., 2016, we show that the functional EM algorithm recovers the true mean function of the counting process. We accomplish this by developing alternative regularity conditions for our objective function. We prove strong consistency of the M-step, thus giving strong consistency guarantees for the finite sample EM algorithm.  We present experimental results for synthetic data, synthetic missingness on real data, and a smoking cessation study,  where we find that participants may underestimate cigarettes smoked by approximately 18.6% over a 12 day period.
+Panel count data describes aggregated counts of recurrent events observed at discrete time points. To understand dynamics of health behaviors, the field of quantitative behavioral research has evolved to increasingly rely upon panel count data collected via multiple self reports, for example, about frequencies of smoking using in-the-moment surveys on mobile devices. However, missing reports are common and present a major barrier to downstream statistical learning. As a first step, under a missing completely at random assumption (MCAR), we propose a simple yet widely applicable functional EM algorithm to estimate the counting process mean function, which is of central interest to behavioral scientists. The proposed approach wraps several popular panel count inference methods, seamlessly deals with incomplete counts and is robust to misspecification of the Poisson process assumption. Theoretical analysis of the proposed algorithm provides finite-sample guarantees by expanding parametric EM theory to our general non-parametric setting. We illustrate the utility of the proposed algorithm through numerical experiments and an analysis of smoking cessation data. We also discuss useful extensions to address deviations from the MCAR assumption and covariate effects.
 
 ```
 @misc{alex2020functional,
-    title={A Functional EM Algorithm for Panel Count Data with Missing Counts},
+    title={A Robust Functional EM Algorithm for Incomplete Panel Count Data},
     author={Alexander Moreno and Zhenke Wu and Jamie Yap and David Wetter and Cho Lam and Inbal Nahum-Shani and Walter Dempsey and James M. Rehg},
     year={2020},
     eprint={2003.01169},
