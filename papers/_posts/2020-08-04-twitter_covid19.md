@@ -4,8 +4,8 @@ title: "Modern Senicide in the Face of a Pandemic: An Examination of Public Disc
 image: /assets/images/papers/covid19_twitter.png
 authors: Xiaoling Xiang, Xuan Lu, Alex Halavanau, Jia Xue, Yihang Sun, Patrick Lai, Zhenke Wu
 year: 2020
-shortref: "Xiang et al. (2020). Journal of Gerontology: Series B."
-journal: "Journal of Gerontology: Series B"
+shortref: "Xiang et al. (2020). Journals of Gerontology: Series B."
+journal: "Journals of Gerontology: Series B"
 pdf: 
 slides: 
 supplement: 
