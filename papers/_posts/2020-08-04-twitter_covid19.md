@@ -6,7 +6,7 @@ authors: Xiaoling Xiang, Xuan Lu, Alex Halavanau, Jia Xue, Yihang Sun, Patrick L
 year: 2020
 shortref: "Xiang et al. (2020). Journals of Gerontology: Series B."
 journal: "Journals of Gerontology: Series B"
-pdf: 
+pdf: https://bit.ly/2PMUEZj
 slides: 
 supplement: 
 github: 
