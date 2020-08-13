@@ -8,7 +8,7 @@ shortref: "Xiang et al. (2020). Journals of Gerontology: Series B."
 journal: "Journals of Gerontology: Series B"
 pdf: https://bit.ly/2PMUEZj
 slides: 
-supplement: 
+supplement: https://bit.ly/3iv2cfw
 github: 
 doi: 
 external_link: 
