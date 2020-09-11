@@ -61,7 +61,14 @@ I'm extremely fortunate to work with several amazing students to whom I serve as
 </div>
 
 <div class="bigspacer"></div>
-- **Zhongyuan Lyu**, MS, Applied Statistics, 2019.
+
+<div class="bigspacer"></div>
+<div class="smalltitle text-left">Summer Students: </div>
+<div class="bigspacer"></div>
+
+- **Zhongyuan Lyu**, MS, Applied Statistics, 2019, U of Michigan, Ann Arbor. Summer Intern. (Latent Class Model and Sparse Additive Regression Models)
+- **Jiayuan Dong**, MS, Accelerated Master Degree Program (ADMP), 2021, U of Michigan, Ann Arbor; Summer Intern. (Readings on Probablistic Graphical Models)
+
 
 
 <!--

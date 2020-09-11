@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Jitao Wang
-position: MS of Biostatistics; May 2019
+position: PhD Student, Biostat, 2020-present
 institute: University of Michigan
 handle: Jitao Wang
 email: 
@@ -10,7 +10,7 @@ github:
 scholar: 
 image: /assets/images/team/jitao-wang.png
 cv: 
-alum: true
+alum: false
 collaborator: false                               
 web: 
 field: biostat
