@@ -4,7 +4,7 @@ title: A Bayesian Approach to Restricted Latent Class Models for Scientifically-
 image: /assets/images/papers/binary_factorization.png
 authors: Zhenke Wu, Livia Casciola-Rosen, Antony Rosen, Scott Zeger
 year: 2020+
-shortref: Wu et al. (2020+). Biometrics. Conditionally accepted.
+shortref: Wu et al. (2020+). Biometrics. Accepted.
 journal: Biometrics
 pdf: /assets/pdfs/papers/wu-2018-bayesian_rlcm.pdf
 slides: /assets/pdfs/slides/bayesian_rlcm_web.pdf
