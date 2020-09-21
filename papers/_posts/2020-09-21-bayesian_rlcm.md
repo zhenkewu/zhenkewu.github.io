@@ -3,8 +3,8 @@ layout: paper
 title: A Bayesian Approach to Restricted Latent Class Models for Scientifically-Structured Clustering of Multivariate Binary Outcomes
 image: /assets/images/papers/binary_factorization.png
 authors: Zhenke Wu, Livia Casciola-Rosen, Antony Rosen, Scott Zeger
-year: 2019+
-shortref: Wu et al. (2019+). Submitted
+year: 2020+
+shortref: Wu et al. (2020+). Conditionally accepted.
 journal: Submitted
 pdf: /assets/pdfs/papers/wu-2018-bayesian_rlcm.pdf
 slides: /assets/pdfs/slides/bayesian_rlcm_web.pdf
@@ -26,10 +26,10 @@ type: statistical
 
 # Abstract
 
-This paper presents a model-based method for clustering multivariate binary observations that incorporates constraints consistent with the scientific context. The approach is motivated by the precision medicine problem of identifying autoimmune disease patient subsets who may require different treatments. We start with a family of restricted latent class models or RLCMs (e.g., Xu and Shang, 2018). However, in the motivating example and many others like it, the unknown number of subsets and the definitions of the latent classes are among the targets of inference. We use a Bayesian approach to RCLMs in order to use informative prior assumptions on the number and definitions of latent classes to be consistent with scientific knowledge so that the posterior distribution tends to concentrate on smaller numbers of clusters and sparser binary patterns. The paper presents a novel posterior inference algorithm to handle discrete mixture parameters. Through simulations under the assumed model and realistic deviations from it, we demonstrate greater interpretability of results and superior finite-sample clustering performance for our method compared to common alternatives. The methods are illustrated with an analysis of protein data to detect clusters representing autoantibody classes among scleroderma patients.
+This paper presents a model-based method for clustering multivariate binary observations that incorporates constraints consistent with the scientiﬁc context. The approach is motivated by the precision medicine problem of identifying autoimmune disease patient subsets or classes who may require diﬀerent treatments. We start with a family of restricted latent class models or RLCMs (e.g., Xu and Shang, 2018). However, in the motivating example and many others like it, the unknown number of classes and the deﬁnition of classes using binary states are among the targets of inference. We use a Bayesian approach to RCLMs in order to use informative prior assumptions on the number and deﬁnitions of latent classes to be consistent with scientiﬁc knowledge so that the posterior distribution tends to concentrate on smaller numbers of clusters and sparser binary patterns. The paper derives a posterior sampling algorithm based on Markov chain Monte Carlo with split-merge updates to eﬃciently explore the space of clustering allocations. Through simulations under the assumed model and realistic deviations from it, we demonstrate greater interpretability of results and superior ﬁnite-sample clustering performance for our method compared to common alternatives. The methods are illustrated with an analysis of protein data to detect clusters representing autoantibody classes among scleroderma patients.
 
 
-**Keywords**: Autoimmune disease; Clustering; Dependent Binary Data; Latent Class Models; Markov Chain Monte Carlo; Measurement Error; Mixture of Finite Mixture Models; Scleroderma.
+**Keywords**: Autoimmune disease; Clustering; Dependent Binary Data; Latent Class Models; Markov Chain Monte Carlo; Mixture of Finite Mixture Models.
 
 # Bibtex
 
