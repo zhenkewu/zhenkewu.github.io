@@ -8,7 +8,7 @@ email: tnecamp@umich[punto]edu
 twitter: 
 github: tnecamp
 scholar: 
-image: http://www-personal.umich.edu/~tnecamp/webpic2.jpg
+image: https://pbs.twimg.com/media/D-F-ZHrWsAAFb-_?format=jpg&name=360x360
 cv: 
 alum: true
 collaborator: false                               
