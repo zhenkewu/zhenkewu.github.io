@@ -3,8 +3,8 @@ layout: paper
 title: A Bayesian Approach to Restricted Latent Class Models for Scientifically-Structured Clustering of Multivariate Binary Outcomes
 image: /assets/images/papers/binary_factorization.png
 authors: Zhenke Wu, Livia Casciola-Rosen, Antony Rosen, Scott Zeger
-year: 2020+
-shortref: Wu et al. (2020+). Biometrics. Accepted.
+year: 2020
+shortref: Wu et al. (2020). Biometrics. Accepted.
 journal: Biometrics
 pdf: /assets/pdfs/papers/wu-2018-bayesian_rlcm.pdf
 slides: /assets/pdfs/slides/bayesian_rlcm_web.pdf
