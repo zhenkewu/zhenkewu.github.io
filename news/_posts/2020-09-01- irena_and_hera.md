@@ -9,6 +9,6 @@ tags:
   - qual
 ---
 
-Huge congrats to Mengbing for passing their PhD qualifying exams!!
+Huge congrats to Irena and Hera for passing their PhD qualifying exams!!
 
 
