@@ -8,10 +8,10 @@ shortref: Moreno et al. (2020). NeurIPS. Accepted
 journal: "NeurIPS2020"
 pdf: 
 slides: 
-supplement: 
+supplement: https://papers.nips.cc/paper/2020/file/e56eea9a45b153de634b23780365f976-Supplemental.pdf
 github: 
 doi: 
-external_link: https://arxiv.org/abs/2003.01169
+external_link: https://papers.nips.cc/paper/2020/hash/e56eea9a45b153de634b23780365f976-Abstract.html
 video_link: 
 type: statistical
 ---
