@@ -12,7 +12,7 @@ image: /assets/images/team/mengbing-li.jpg
 cv: 
 alum: false
 collaborator: false                               
-web: 
+web: zhenkewu.com/team/mengbing-li
 field: biostat
 ---
 
