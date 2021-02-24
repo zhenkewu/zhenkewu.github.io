@@ -42,13 +42,7 @@ Currently a major focus of my work is on the analysis of multiple mixed-type lon
 
 **Postdoc Openning**
 
-- **[[Priority Review by May 15, 2020] Postdoc Position on Statistical Methods to Individualize Care for Mental Health](https://docs.google.com/document/d/1Eq8VmqvYrF2Fqo5UxzjZbKQpJPnbZWxJTRYbL-6J19I/edit)**
-
-**Graduate Student Research Assistantship Openning**
-
-- **[[Beginning September 2020] Graduate Student Research Assistantship (GSRA) in 
-Statistical Methods for Improving Outcomes for Care Partners of Persons with Traumatic Brain Injury
-](https://docs.google.com/document/d/1MIQuMSTUVooKz1xYYaBEUsSkBJGVt01uIjd01vCreCk/edit?usp=sharing)**
+- ** [Rolling Reviews] Postdoc Position on Statistical Methods to Individualize Care for Mental Health](https://docs.google.com/document/d/1Eq8VmqvYrF2Fqo5UxzjZbKQpJPnbZWxJTRYbL-6J19I/edit)**
 
 
 **Advising**: We are recruiting motivated and hard-working students interested in Bayesian methods and computation, graphical models and large-scale health data analytics. If you are interested in joining the group, please apply to Biostatistics at the University of Michigan, Ann Arbor. If you are an undergrad or grad student at the University of Michigan, and you are interested in any of the papers or projects listed on this website, send me an email with your interests and CV.
