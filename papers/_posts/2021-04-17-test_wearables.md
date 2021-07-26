@@ -10,8 +10,8 @@ pdf: /assets/pdfs/papers/covid_wearable.pdf
 slides: 
 supplement: 
 github: 
-doi: 
-external_link: 
+doi: 10.1101/2021.04.17.21255513
+external_link: https://bit.ly/3dF0iJQ
 video_link: 
 type: substantive
 ---
