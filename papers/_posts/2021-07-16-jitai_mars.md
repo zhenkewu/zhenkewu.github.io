@@ -4,14 +4,14 @@ title: "The Mobile Assistance for Regulating Smoking (MARS) Micro-Randomized Tri
 image: /assets/images/papers/mars.png
 authors: Inbal Nahum-Shani, Lindsay Potter, Cho Lam, Jamie Yap, Alexander Moreno, Rebecca Stoffel, Zhenke Wu, Neng Wan, Walter Dempsey, Santosh Kumar, Emre Ertin, Susan Murphy, Jim Rehg, David Wetter
 year: 2021+
-shortref: "Nahum-Shani et al. (2021+). In press"
+shortref: "Nahum-Shani et al. (2021+). Contemporary Clinical Trials. In press"
 journal: "Contemporary Clinical Trials"
 pdf:
 slides:
 supplement:
 github:
 doi:
-external_link: https://www.sciencedirect.com/science/article/pii/S1551714421002494?via%3Dihub
+external_link: https://doi.org/10.1016/j.cct.2021.106513
 video_link: 
 type: substantive
 ---
