@@ -1,0 +1,24 @@
+---
+layout: paper
+title: "Tree-informed Bayesian multi-source domain adaptation: cross-site probabilistic cause-of-death assignment using verbal autopsy"
+image: /assets/images/papers/doubletree.png
+authors: Zhenke Wu, Zehang Li, Irena Chen, Mengbing Li
+year: 2021+
+shortref: Wu et al. (2021+). Submitted.
+journal: Submitted.
+pdf: /assets/pdfs/papers/treeVA_biostat_main.pdf
+slides: 
+supplement: /assets/pdfs/papers/treeVA_biostat_appendix.pdf
+poster: 
+github: https://github.com/zhenkewu/doubletree
+doi: 
+external_link: 
+video_link: 
+type: statistical
+---
+
+# Abstract
+
+Determining causes of deaths (COD) occurred outside of civil registration and vital statistics systems is challenging. A technique called verbal autopsy (VA) is widely adopted to gather information on deaths in practice. A VA consists of interviewing relatives of a deceased person about symptoms of the deceased in the period leading to the death, often resulting in multivariate binary responses. While statistical methods have been devised for estimating the cause-speciﬁc mortality fractions (CSMFs) for a study population, continued expansion of VA to new populations (or “domains”) necessitates approaches that recognize between-domain diﬀerences while capitalizing on potential similarities. In this paper, we propose such a domain-adaptive method that integrates external between-domain similarity information encoded by a pre-speciﬁed rooted weighted tree. Given a cause, we use latent class models to characterize the conditional distributions of the responses that may vary by domain. We specify a logistic stick-breaking Gaussian diﬀusion process prior along the tree for class mixing weights with node-speciﬁc spike-and-slab priors to pool information between the domains in a data-driven way. Posterior inference is conducted via a scalable variational Bayes algorithm. Simulation studies show that the domain adaptation enabled by the proposed method improves CSMF estimation and individual COD assignment. We also illustrate and evaluate the method using a validation data set. The paper concludes with a discussion on limitations and future directions.
+
+**Keywords** Domain Adaptation; Gaussian Diffusion Priors; Latent Class Models; Spike-andSlab Prior; Variational Bayes; Verbal Autopsy
