@@ -4,8 +4,8 @@ title: "Vaccine hesitancy during the COVID-19 pandemic: a latent class analysis 
 image: /assets/images/papers/vax_hesitancy.png
 authors: Abram L. Wagner, Julia M. Porth, Zhenke Wu, Matthew L. Boulton, Jessica M. Finlay, Lindsay C. Kobayashi
 year: 2021+
-shortref: "Wagner et al. (2021+). Submitted"
-journal: "Submitted"
+shortref: "Wagner et al. (2022). Journal of Community Health."
+journal: "Journal of Community Health. Accepted"
 pdf: 
 slides: 
 supplement: 
