@@ -5,7 +5,7 @@ image: /assets/images/papers/vax_hesitancy.png
 authors: Abram L. Wagner, Julia M. Porth, Zhenke Wu, Matthew L. Boulton, Jessica M. Finlay, Lindsay C. Kobayashi
 year: 2022
 shortref: "Wagner et al. (2022). Journal of Community Health."
-journal: "Journal of Community Health. Accepted"
+journal: "Journal of Community Health."
 pdf: 
 slides: 
 supplement: 
