@@ -10,7 +10,7 @@ pdf:
 slides: 
 supplement: 
 github: 
-doi:  
+doi:  10.1007/s10900-022-01064-w
 external_link:  
 video_link: 
 type: substantive
