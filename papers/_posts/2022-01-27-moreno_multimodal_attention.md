@@ -4,7 +4,7 @@ title: Kernel Deformed Exponential Families for Sparse Continuous Attention
 image: /assets/images/papers/kernel_attention.png
 authors: Alexander Moreno, Supriya Nagesh, Zhenke Wu, Walter Dempsey, James Rehg
 year: 2022+
-shortref: Moreno et al. (2021+). Submitted. 
+shortref: Moreno et al. (2022+). Submitted. 
 journal: "Submitted"
 pdf: 
 slides: 
