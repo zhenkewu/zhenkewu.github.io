@@ -9,9 +9,7 @@ tags:
   - software
 ---
 
-`baker` has a first public release (v1.0.0) at [CRAN](https://cran.r-project.org/web/packages/baker/index.html)! Discussion related to version `1.0.0` can be submitted to [here](https://github.com/zhenkewu/baker/issues).
-
-Our group recently updated the `baker` package [[vignette]](/assets/html/baker_vignette.html) [[source code]](https://github.com/zhenkewu/baker). 
+`baker` has a first public release (v1.0.0) at [CRAN](https://cran.r-project.org/web/packages/baker/index.html)! Discussion related to version `1.0.0` can be submitted to [here](https://github.com/zhenkewu/baker/issues); [[vignette]](/assets/html/baker_vignette.html) [[source code]](https://github.com/zhenkewu/baker). 
 
 This vignette describes and illustrates the functionality of the `baker` `R` package. The package provides a suite of nested partially-latent class models (NPLCM) for multivariate binary responses that are observed under a case-control design. The `baker` package allows researchers to flexibly estimate population- and individual-level class distributions that may also depend on additional explanatory covariates. 
 
