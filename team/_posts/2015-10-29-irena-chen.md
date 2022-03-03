@@ -16,6 +16,8 @@ web: realirena.github.io/index.html
 field: biostat
 ---
 
+Co-advising with [Michael Elliott](https://sph.umich.edu/faculty-profiles/elliott-michael.html)
+
 # Education:
 
 2018-present, PhD Student in Biostatistics, University of Michigan, Ann Arbor
