@@ -6,12 +6,12 @@ authors: Jitao Wang, Yu Fang, Elena Frank, Maureen Walton, Margit Burmeister, Am
 year: 2022+
 shortref: "Wang et al. (2022+). Submitted"
 journal: "Submitted"
-pdf: /assets/pdfs/papers/ihs_comp_main.pdf
+pdf:
 slides: 
-supplement: /assets/pdfs/papers/ihs_comp_supp.pdf
+supplement:
 github: 
 doi:  
-external_link:  
+external_link:  https://bit.ly/3i6ygrR
 video_link: 
 type: substantive
 ---
