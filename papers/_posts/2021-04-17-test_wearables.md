@@ -4,8 +4,8 @@ title: "A Caveat to Using Wearable Sensor Data for COVID-19 Detection: The Role 
 image: /assets/images/papers/data_scheme.png
 authors: Jennifer Cleary, Yu Fang, Srijan Sen, Zhenke Wu
 year: 2021+
-shortref: "Cleary et al. (2021+). Submitted"
-journal: "Submitted"
+shortref: "Cleary et al. (2021+). In revision"
+journal: "In revision"
 pdf: /assets/pdfs/papers/covid_wearable.pdf
 slides: 
 supplement: 

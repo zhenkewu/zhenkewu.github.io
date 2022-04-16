@@ -3,9 +3,9 @@ layout: paper
 title: Weakly-supervised Multi-output Regression via Correlated Gaussian Processes
 image: /assets/images/papers/wsmgp.png
 authors: Seokhyun Chung, Raed Al Kontar, Zhenke Wu
-year: 2021+
-shortref: Chung, Kontar, Wu (2021+). Revision submitted.
-journal: "Revision submitted"
+year: 2022
+shortref: Chung, Kontar, Wu (2022). INFORMS Journal on Data Science.
+journal: "INFORMS Journal on Data Science."
 pdf: 
 slides: 
 supplement: 
