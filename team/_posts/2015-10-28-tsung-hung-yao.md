@@ -32,4 +32,5 @@ Bayesian graphical model and Bayesian nonparametric with precision medicine.
 # Awards:
 
 * 2019, Outstanding Graduate Student Instructor (Biostatistics)
+* 2022, International Socieity for Bayesian Analysis (ISBA) Travel Award, Montreal, Canada
 
