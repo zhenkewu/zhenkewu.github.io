@@ -6,7 +6,7 @@ author: "Zhenke Wu"
 author_handle: "Zhenke Wu"
 category: news
 tags: 
-  - graduation
+  - students
 ---
 
 Huge congrats to Mengbing for winning "Best Doctoral Qualifying Exam Award".

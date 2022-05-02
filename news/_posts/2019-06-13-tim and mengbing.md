@@ -6,7 +6,7 @@ author: "Zhenke Wu"
 author_handle: "Zhenke Wu"
 category: news
 tags: 
-  - graduation
+  - students
 ---
 
 Huge congrats to Tim for having successfully [defended his thesis](https://twitter.com/ZhenkeWu/status/1121485296208613376) on sequential randomized trials motivated by mental health and online education problems! 

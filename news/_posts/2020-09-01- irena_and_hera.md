@@ -6,7 +6,7 @@ author: "Zhenke Wu"
 author_handle: "Zhenke Wu"
 category: news
 tags: 
-  - qual
+  - students
 ---
 
 Huge congrats to Irena and Hera for passing their PhD qualifying exams!!
