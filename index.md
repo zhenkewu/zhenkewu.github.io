@@ -23,7 +23,7 @@ categories:
 </div> 
 **Name in Chinese:**[ 吴振科 <i class="fa fa-soundcloud"></i>](https://soundcloud.com/zhenke-wu/zhenke-wu-name). Pronounced: "Jen-Kuh Wu".
 
-[Here](/papers/) are my publication samples. My CV is [here (updated Dec 2021)](/assets/pdfs/team/zhenkewu-cv.pdf), contact info is [here](/team/zhenke-wu). My GitHub is [here](https://github.com/zhenkewu?tab=activity) and Bio is [here](/team/zhenke-wu). A recent faculty profile is [here](http://midas.umich.edu/faculty-member/zhenke-wu/).
+[Here](/papers/) are my publication samples. My CV is [here (updated June 2022)](/assets/pdfs/team/zhenkewu-cv.pdf), contact info is [here](/team/zhenke-wu). My GitHub is [here](https://github.com/zhenkewu?tab=activity) and Bio is [here](/team/zhenke-wu). A recent faculty profile is [here](http://midas.umich.edu/faculty-member/zhenke-wu/). Follow my Twitter account [here](https://twitter.com/ZhenkeWu) for updates.
 
 The best way to contact me is email. Direction to my office is [here](assets/pdfs/team/zhenkewu-office.pdf).
 
@@ -33,36 +33,47 @@ I am an [Assistant Professor](https://sph.umich.edu/faculty-profiles/wu-zhenke.h
 
 <hr/>
 
-I am interested in the design and application of statistical methods that inform health decisions made by individuals, or precision medicine. My current focus is on latent variable and causal inference methods that can support disease etiology studies, medical diagnosis, and health policy evaluation. Broadly, the statistical goal is to discover simple latent structures that improve inferences and population parameters and individual latent states. I have also worked on causal inference methods 1) to evaluate novel treatment rules under special designs like matched-pair cluster randomized design, as these designs are useful for interventions that can only be applied at cluster level; and 2) to facilitate the inference for novel estimands in semiparametric models by automating and unifying the derivation of efficient influence functions (EIF) and ensuing estimation.
+My research is motivated by biomedical and public health problems and is centered on the design and application of statistical methods that inform health decisions made by individuals, or precision medicine. Towards this goal, I focus on two lines of methodological research: a) structured Bayesian latent variable models for clustering and disease subtyping, and b) study design, causal and reinforcement learning methods for evaluating sequential interventions that tailor to individuals changing circumstances such as in mobile health studies. I am committed to developing robust, scalable, and interpretable statistical methods to harness real-world, high-dimensional, dynamic data for individualized health. The methods and software developed so far have supported studies in diverse scientiﬁc ﬁelds including infectious disease epidemiology, autoimmune diseases, mental health, behavioral health, and cancer. 
 
-Currently a major focus of my work is on the analysis of multiple mixed-type longitudinal measurements with feedbacks in treatment assignments. I am working on hierarchical Bayesian methods to infer latent trajectories that represent individual disease progressions that have direct applications to childhood pneumonia etiology studies, analyses of electronic health records and claims data, and just-in-time adaptive interventions (JITAI) in mobile health (mHealth) studies.
+**Keywords**:
+
+- *Statistical*: Hierarchical Bayesian models; Latent variable models; Nonparametric Bayes; Bayesian scalable computation; Causal inference; Reinforcement learning.
+
+- *Substantive*: Precision medicine; Mobile health; Infectious diseases; Mental health; Electronic health records/claims data; Healthcare policy; Clinical trials; Just-in-time adaptive interventions for behaviorial and psychiatric research.
+
+
+<!-- Currently a major focus of my work is on the analysis of multiple mixed-type longitudinal measurements with feedbacks in treatment assignments. I am working on hierarchical Bayesian methods to infer latent trajectories that represent individual disease progressions that have direct applications to childhood pneumonia etiology studies, analyses of electronic health records and claims data, and just-in-time adaptive interventions (JITAI) in mobile health (mHealth) studies. -->
 
 
 <hr/>
 
-**Postdoc Openning**
+<!-- **Postdoc Openning**
 
-- **[Rolling Reviews: Postdoc Position on Statistical Methods to Individualize Care for Mental Health](https://docs.google.com/document/d/1Eq8VmqvYrF2Fqo5UxzjZbKQpJPnbZWxJTRYbL-6J19I/edit)**
+- **[Rolling Reviews: Postdoc Position on Statistical Methods to Individualize Care for Mental Health](https://docs.google.com/document/d/1Eq8VmqvYrF2Fqo5UxzjZbKQpJPnbZWxJTRYbL-6J19I/edit)** -->
 
 
-**Advising**: We are recruiting motivated and hard-working students interested in Bayesian methods and computation, graphical models and large-scale health data analytics. If you are interested in joining the group, please apply to Biostatistics at the University of Michigan, Ann Arbor. If you are an undergrad or grad student at the University of Michigan, and you are interested in any of the papers or projects listed on this website, send me an email with your interests and CV.
+**Advising**: We are recruiting motivated and hard-working students interested in Bayesian methods and computation, graphical models, sequential decision making, reinforcement learning and large-scale health data analytics. If you are interested in joining the group, please apply to Biostatistics at the University of Michigan, Ann Arbor. If you are an undergrad or grad student at the University of Michigan, and you are interested in any of the papers or projects listed on this website, send me an email with your interests and CV.
+
+I am extremely fortunate to have worked with many excellent graduate students at UM. Under an apprenticeship model, I have been working closely with my students to gain practical research experience, which when combined with individual students’ particular strengths led to mutually rewarding collaborations and research results. My goal in mentoring is to train students who will be highly sought-after in areas of their interests upon graduation.
 
 **Working Groups**
 
+Current:
+
 - [__Michigan Statistics for Individualized-healthcare Lab (MiSIL)__ weekly meeting schedules](https://docs.google.com/spreadsheets/d/1CfHqh74SrGH5zuo8W_L_hAGdLJdt_9jLgaeBtoxYp88/edit?usp=sharing)
+
+Past:
 
 - [__Statistical Learning and Computing Reading Group, Winter 2019__](/teaching/statistical_learning_reading_group)
 
-<hr/>
 
-Research interests:
 
-* Bayesian hierarchical models: biomarkers, data integration, scalable computation, model-averaging;
+<!-- * Bayesian hierarchical models: biomarkers, data integration, scalable computation, model-averaging;
 * Latent variable models: dynamics, measurement errors, local dependence, partial-identifiability; 
 * Robust inference: bias reduction, efficiency enhancement by covariate-calibration, semiparametric locally efficient estimation, deductive inference;
 * Causal analysis of modern study designs;
 * Collaborations: mental health, infectious disease, autoimmune disease, medical diagnosis, epidemiology, health policy, cancer, mobile health, Just-in-time adaptive interventions for behaviorial and psychiatric research.
-
+ -->
 <hr/>
 
 I collaborate closely with 
