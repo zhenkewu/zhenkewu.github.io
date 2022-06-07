@@ -23,7 +23,7 @@ categories:
 </div> 
 **Name in Chinese:**[ 吴振科 <i class="fa fa-soundcloud"></i>](https://soundcloud.com/zhenke-wu/zhenke-wu-name). Pronounced: "Jen-Kuh Wu".
 
-[Here](/papers/) are my publication samples. My CV is [here (updated June 2022)](/assets/pdfs/team/zhenkewu-cv.pdf), contact info is [here](/team/zhenke-wu). My GitHub is [here](https://github.com/zhenkewu?tab=activity) and Bio is [here](/team/zhenke-wu). A recent faculty profile is [here](http://midas.umich.edu/faculty-member/zhenke-wu/). Follow my Twitter account [here](https://twitter.com/ZhenkeWu) for updates.
+[Here](/papers/) are my publication samples. My CV is [here](https://www.overleaf.com/read/dbktqfjxccbv), contact info is [here](/team/zhenke-wu). My GitHub is [here](https://github.com/zhenkewu?tab=activity) and Bio is [here](/team/zhenke-wu). A recent faculty profile is [here](http://midas.umich.edu/faculty-member/zhenke-wu/). Follow my Twitter account [here](https://twitter.com/ZhenkeWu) for updates.
 
 The best way to contact me is email. Direction to my office is [here](assets/pdfs/team/zhenkewu-office.pdf).
 
