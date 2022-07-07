@@ -27,7 +27,7 @@ I'm extremely fortunate to work with several amazing students to whom I serve as
 <div class="row">
     {% for member in site.categories.team %}
     {% if member.alum == false and member.collaborator == false %}
-    <div class="col-md-4 columns t30" style="text-align: center">
+    <div class="col-md-3 columns t30" style="text-align: center">
     {%if member.url%}
     <a href="{{ member.url }}"> <img class="photo" src="{{member.image}}"> </a> <br>
     <div class="head media-heading member-name"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>  
@@ -61,6 +61,8 @@ I'm extremely fortunate to work with several amazing students to whom I serve as
 </div>
 
 <div class="bigspacer"></div>
+
+- **Chen Chen**, MS, Biostatistics, 2022, U of Michigan, Ann Arbor. Graduate Student Research Assistant (November 2021 to August 2022; co-advise with Mike Elliott). (*Variance as a predictor for survival outcomes*). First position after graduation: PhD Student in Biostatistics, University of Toronto.
 
 <div class="bigspacer"></div>
 <div class="smalltitle text-left">Summer Students: </div>
