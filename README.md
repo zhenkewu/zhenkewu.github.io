@@ -45,21 +45,21 @@ Zhenke Wu's Research Website: [click to view](http://zhenkewu.com)
 	- Add the following code block to /_includes/themes/lab/default.html, before `</head>`
 	
 >
-     <!-- Math via MathJax -->
-	<script type="text/x-mathjax-config">
-	MathJax.Hub.Config({
-	  jax: ["input/TeX", "output/HTML-CSS"],
-	  tex2jax: {
-	    inlineMath: [ ['$', '$'] ],
-	    displayMath: [ ['$$', '$$']],
-	    processEscapes: true,
-	    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-	  },
-	  messageStyle: "none",
-	  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
-	});
-	</script>
-	<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+    <!-- Math via MathJax -->
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ["tex2jax.js"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+                processEscapes: true
+            },
+        "HTML-CSS": { availableFonts: ["TeX"] }
+        });
+    </script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
 
 * projects
     - For each repo (in the folder `/_data`), the `url` should not end with `/`. For example, use `url: /projects/baker`, instead of `url: /projects/baker/`
