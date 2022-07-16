@@ -49,7 +49,7 @@ author :
 #  feedburner : feedname
 
 # The production_url is only used when full-domain names are needed
-# such as sitemap.txt 
+# such as sitemap.txt (deleted on July 16, 2022)
 # Most places will/should use BASE_PATH to make the urls
 #
 # If you have set a CNAME (pages.github.com) set your custom domain here.
