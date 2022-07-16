@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Nicole Wakim
-position: PhD Student (Biostat, Co-Advising with Thomas Braun); May 2018 - MS
+position: PhD Candidate (Biostat)
 institute: University of Michigan
 handle: Nicole Wakim
 email: nwakim@umich[punto]edu
@@ -27,7 +27,7 @@ Nicole currently focuses on high-frequency digital biomarker data in Alzheimerâ€
 
 # Education:
 
-2018, M.S. in Biostatistics,Â University of Michigan, Ann Arbor
+2018, M.S. in Biostatistics, University of Michigan, Ann Arbor
 
 2016, BS in Biomedical Engineering at the University of Virginia
 

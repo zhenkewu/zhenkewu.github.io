@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Jitao Wang
-position: PhD Student, Biostat, 2020-present
+position: PhD Candidate (Biostat)
 institute: University of Michigan
 handle: Jitao Wang
 email: 

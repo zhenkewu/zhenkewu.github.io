@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Mengbing Li
-position: PhD Candidate (Biostatistics); May 2019 - MS
+position: PhD Candidate (Biostat)
 institute: University of Michigan
 handle: Mengbing Li
 email: mengbing@umich[punto]edu

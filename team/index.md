@@ -11,9 +11,10 @@ navorder: 4
 <style>
     img.photo{
           object-fit: cover;
-          object-position: 10% 50%; 
-          width:200px;
-          height:300px;
+          border-radius: 50%;
+          object-position: 10% 10%; 
+          width:150px;
+          height:150px;
     }
 </style>
 

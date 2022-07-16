@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Tsung-Hung Yao
-position: PhD Candidate (Biostat, Co-Advising with Veera Baladandayuthapani); May 2017 - MS
+position: PhD Candidate (Biostat)
 institute: University of Michigan
 handle: Tsung-Hung Yao
 email: yaots@umich[punto]edu
