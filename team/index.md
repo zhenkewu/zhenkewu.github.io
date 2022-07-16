@@ -28,7 +28,7 @@ I'm extremely fortunate to work with several amazing students to whom I serve as
 <div class="row">
     {% for member in site.categories.team %}
     {% if member.alum == false and member.collaborator == false %}
-    <div class="col-md-3 columns t30" style="text-align: center">
+    <div class="col-xs-3 columns t30" style="text-align: center">
     {%if member.url%}
     <a href="{{ member.url }}"> <img class="photo" src="{{member.image}}"> </a> <br>
     <div class="head media-heading member-name"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>  
@@ -50,7 +50,7 @@ I'm extremely fortunate to work with several amazing students to whom I serve as
 <div class="row">
     {% for member in site.categories.team %}
     {% if member.alum == true and member.collaborator == false %}
-    <div class="col-md-3 columns t30" style="text-align: center">
+    <div class="col-xs-3 columns t30" style="text-align: center">
     {%if member.url%}
     <a href="{{ member.url }}"> <img class="photo" src="{{member.image}}"> </a> <br>
     <div class="head media-heading member-name"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>  
