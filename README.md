@@ -67,7 +67,6 @@ Zhenke Wu's Research Website: [click to view](http://zhenkewu.com)
     - For example, the "papers" tab is specified in the folder "papers/". At the top, `title` is for tab name; `group` can be either `navigation` or `subnavigation` depending on whether you want to show this tab or collapse into the "More" tab; `navorder` specifies the order appearing in the navigation bar (1 for the first tab).
 * team
     - for photos, set roughly 200px wide and 300px height, with resolution 144. The width requirement is to help display the photo properly on an individual's page.
-    - for `position` field, needs to write a bit longer so that the 3 people per row layout can function well. If the position field is too short, the layout may be messed up.
 
  ## Other Technicalities
  * `categories`

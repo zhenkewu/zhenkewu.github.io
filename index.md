@@ -11,6 +11,8 @@ categories:
 {% endif %}
 {% endfor %}
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
 <div class="row">
 	<div class="col-md-12">
 		<!-- <object class="pull-left biglogo" data="assets/themes/lab/images/logo/logo-none.svg" type="image/svg+xml"></object> -->
@@ -18,12 +20,14 @@ categories:
 			Zhenke Wu Research
 		</div>
 	</div>	
-<!-- 	    <i class="fa fa-soundcloud"></i> 
-		<a href="https://soundcloud.com/zhenke-wu/zhenke-wu-name"> Name in Chinese: 吴振科 </a>  -->		
+	
 </div> 
 **Name in Chinese:**[ 吴振科 <i class="fa fa-soundcloud"></i>](https://soundcloud.com/zhenke-wu/zhenke-wu-name). Pronounced: "Jen-Kuh Wu".
 
-[Here](/papers/) are my publication samples. My CV is [here](https://www.overleaf.com/read/dbktqfjxccbv), contact info is [here](/team/zhenke-wu). My GitHub is [here](https://github.com/zhenkewu?tab=activity) and Bio is [here](/team/zhenke-wu). A recent faculty profile is [here](http://midas.umich.edu/faculty-member/zhenke-wu/). Follow my Twitter account [here](https://twitter.com/ZhenkeWu) for updates.
+
+[[Publications]](/papers/) [[CV]](https://www.overleaf.com/read/dbktqfjxccbv) [[Contact]](/team/zhenke-wu) [[Bio]](/team/zhenke-wu)
+
+[[Google Scholar<i class="ai ai-google-scholar"></i>]](https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en) [[GitHub<i class="fa fa-github"></i>]](https://github.com/zhenkewu?tab=activity) [[Twitter<i class="fa fa-twitter"></i>]](https://twitter.com/ZhenkeWu).
 
 The best way to contact me is email. Direction to my office is [here](assets/pdfs/team/zhenkewu-office.pdf).
 
@@ -32,6 +36,8 @@ The best way to contact me is email. Direction to my office is [here](assets/pdf
 I am an [Assistant Professor](https://sph.umich.edu/faculty-profiles/wu-zhenke.html) in the [Department of Biostatistics](https://sph.umich.edu/biostat/) at [University of Michigan](https://www.umich.edu), with joint appointment as [Research Assistant Professor](http://midas.umich.edu/faculty-member/zhenke-wu/) in [Michigan Institute for Data Science (MIDAS)](http://midas.umich.edu). I am also Faculty Associate in [Quantitative Methodology Program](http://www.qmp.isr.umich.edu/), [Survey Research Center](http://home.isr.umich.edu/centers/src/) of Institute for Social Research ([ISR](http://home.isr.umich.edu/)), University of Michigan.
 
 <hr/>
+
+**Research Theme**:
 
 My research is motivated by biomedical and public health problems and is centered on the design and application of statistical methods that inform health decisions made by individuals, or precision medicine. Towards this goal, I focus on two lines of methodological research: a) structured Bayesian latent variable models for clustering and disease subtyping, and b) study design, causal and reinforcement learning methods for evaluating sequential interventions that tailor to individuals changing circumstances such as in mobile health studies. I am committed to developing robust, scalable, and interpretable statistical methods to harness real-world, high-dimensional, dynamic data for individualized health. The methods and software developed so far have supported studies in diverse scientiﬁc ﬁelds including infectious disease epidemiology, autoimmune diseases, mental health, behavioral health, and cancer. 
 
@@ -52,19 +58,15 @@ My research is motivated by biomedical and public health problems and is centere
 - **[Rolling Reviews: Postdoc Position on Statistical Methods to Individualize Care for Mental Health](https://docs.google.com/document/d/1Eq8VmqvYrF2Fqo5UxzjZbKQpJPnbZWxJTRYbL-6J19I/edit)** -->
 
 
-**Advising**: We are recruiting motivated and hard-working students interested in Bayesian methods and computation, graphical models, sequential decision making, reinforcement learning and large-scale health data analytics. If you are interested in joining the group, please apply to Biostatistics at the University of Michigan, Ann Arbor. If you are an undergrad or grad student at the University of Michigan, and you are interested in any of the papers or projects listed on this website, send me an email with your interests and CV.
+**Advising**: We are recruiting motivated and hard-working people interested in Bayesian methods and computation, graphical models, sequential decision making, reinforcement learning and large-scale health data analytics. If you want to get involved, please [say hi](/sayhi/). 
 
-I am extremely fortunate to have worked with many excellent graduate students at UM. Under an apprenticeship model, I have been working closely with my students to gain practical research experience, which when combined with individual students’ particular strengths led to mutually rewarding collaborations and research results. My goal in mentoring is to train students who will be highly sought-after in areas of their interests upon graduation.
-
-**Working Groups**
-
-Current:
+**Working Group**:
 
 - [__Michigan Statistics for Individualized-healthcare Lab (MiSIL)__ weekly meeting schedules](https://docs.google.com/spreadsheets/d/1CfHqh74SrGH5zuo8W_L_hAGdLJdt_9jLgaeBtoxYp88/edit?usp=sharing)
 
-Past:
+<!-- Past:
 
-- [__Statistical Learning and Computing Reading Group, Winter 2019__](/teaching/statistical_learning_reading_group)
+- [__Statistical Learning and Computing Reading Group, Winter 2019__](/teaching/statistical_learning_reading_group) -->
 
 
 
