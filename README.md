@@ -76,3 +76,6 @@ Zhenke Wu's Research Website: [click to view](http://zhenkewu.com)
 * style sheets
     - There are two that matter: `/assets/themes/lab/css/style.scss` and `/assets/themes/css/style.scss`; The former works for posts, the latter for pages PRIOR to entering posts. 
     - This might best be fixed, but I don't have time now to check how they are currently used in different pages.
+* team page
+    - Currently the [landing page of the Team](https://github.com/zhenkewu/zhenkewu.github.io/blob/master/team/index.md) is four-column circular headshots (without stacking if the screen is wider than 576px). The circular image is achieved via `border-radius: 50%` - one may remove this to return to rectangular.
+    - Please check [here](https://getbootstrap.com/docs/4.0/layout/grid/) and [here](https://www.w3schools.com/bootstrap/bootstrap_grid_examples.asp) for making changes regarding the landing page of Team based on the Bootstrap grid system.
