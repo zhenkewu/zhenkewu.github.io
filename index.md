@@ -58,7 +58,7 @@ My research is motivated by biomedical and public health problems and is centere
 - **[Rolling Reviews: Postdoc Position on Statistical Methods to Individualize Care for Mental Health](https://docs.google.com/document/d/1Eq8VmqvYrF2Fqo5UxzjZbKQpJPnbZWxJTRYbL-6J19I/edit)** -->
 
 
-**Advising**: We are recruiting motivated and hard-working people interested in Bayesian methods and computation, graphical models, sequential decision making, reinforcement learning and large-scale health data analytics. If you want to get involved, please [say hi](/sayhi/). 
+**Advising**: We are recruiting motivated and hard-working people interested in Bayesian methods and computation, graphical models, causal inference, sequential decision making, reinforcement learning and large-scale health data analytics. If you want to get involved, please [say hi](/sayhi/). 
 
 **Working Group**:
 
