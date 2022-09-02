@@ -85,6 +85,7 @@ I collaborate closely with
 - [Cancer Control and Population Sciences, Rogel Cancer Center](http://www.mcancer.org/research/programs/cancer-control-and-population-sciences)
 - [Intern Health Study](https://www.srijan-sen-lab.com/intern-health-study)
 - [Precision Health Use Case: PROviding Mental Health Precision Treatment (PROMPT)](https://precisionhealth.umich.edu/workgroups/prompt/)
+- [Data Science in Africa] - the [UZIMA-DS project](https://uzimadatascience.org/).
 
 - [Rheumatology at Johns Hopkins](https://www.hopkinsrheumatology.org/research/rosen-casciola-lab/)
 - [Hopkins inHealth](http://hopkinsinhealth.jhu.edu/) methodology group
