@@ -1,6 +1,6 @@
 ---
 layout: paper
-title: "Effectiveness of gamified competition in the context of mHealth intervention for medical interns: a micro-randomized trial"
+title: "Effectiveness of gamified competition in the context of mHealth intervention for medical interns: a clustered micro-randomized trial"
 image: /assets/images/papers/ihs_comp.png
 authors: Jitao Wang, Yu Fang, Elena Frank, Maureen Walton, Margit Burmeister, Ambuj Tewari, Walter Dempsey, Timothy NeCamp, Srijan Sen, Zhenke Wu
 year: 2022+
