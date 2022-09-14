@@ -11,7 +11,7 @@ slides:
 supplement: /assets/images/pdfs/kernel_multimodal_continuous_attention_supp.pdf
 github: 
 doi: 
-external_link: 
+external_link: https://openreview.net/forum?id=qmy23tNBvbh
 video_link: 
 type: statistical
 ---
