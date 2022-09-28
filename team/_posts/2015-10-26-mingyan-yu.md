@@ -16,6 +16,8 @@ web:
 field: biostat
 ---
 
+Co-advising with Michael Elliott
+
 Mingyan is interested in Bayesian hierarchical model, longitudinal data analysis methods and their application to physical and mental health related field
 
 # Education:
