@@ -80,12 +80,14 @@ My research is motivated by biomedical and public health problems and is centere
 
 I collaborate closely with 
 
-- [The Michigan Genomics Initiative](https://www.michigangenomics.org)
-- [D3 Lab: Data Science for Dynamic Intervention Decision-Making Lab](http://d3lab-isr.com/team/)
-- [Cancer Control and Population Sciences, Rogel Cancer Center](http://www.mcancer.org/research/programs/cancer-control-and-population-sciences)
 - [Intern Health Study](https://www.srijan-sen-lab.com/intern-health-study)
-- [Precision Health Use Case: PROviding Mental Health Precision Treatment (PROMPT)](https://precisionhealth.umich.edu/workgroups/prompt/)
+- [openVA](https://openva.net/)
 - [Data Science in Africa] - the [UZIMA-DS project](https://uzimadatascience.org/).
+- [D3 Lab: Data Science for Dynamic Intervention Decision-Making Lab](http://d3lab-isr.com/team/)
+
+- [The Michigan Genomics Initiative](https://www.michigangenomics.org)
+- [Precision Health Use Case: PROviding Mental Health Precision Treatment (PROMPT)](https://precisionhealth.umich.edu/workgroups/prompt/)
+- [Cancer Control and Population Sciences, Rogel Cancer Center](http://www.mcancer.org/research/programs/cancer-control-and-population-sciences)
 
 - [Rheumatology at Johns Hopkins](https://www.hopkinsrheumatology.org/research/rosen-casciola-lab/)
 - [Hopkins inHealth](http://hopkinsinhealth.jhu.edu/) methodology group
