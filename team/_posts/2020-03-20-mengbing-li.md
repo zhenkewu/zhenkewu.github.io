@@ -7,7 +7,7 @@ handle: Mengbing Li
 email: mengbing@umich[punto]edu
 twitter: 
 github: 
-scholar: 
+scholar: PZAo084AAAAJ
 image: /assets/images/team/mengbing-li.jpg
 cv: 
 alum: false
