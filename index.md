@@ -60,6 +60,12 @@ My research is motivated by biomedical and public health problems and is centere
 
 **Advising**: We are recruiting motivated and hard-working people interested in Bayesian methods and computation, graphical models, causal inference, sequential decision making, reinforcement learning and large-scale health data analytics. If you want to get involved, please [say hi](/sayhi/). 
 
+
+*Check this out and send me an email if interested in collaborating!*
+
+[**AI in Science Postdoctoral Fellowship Program**](https://midas.umich.edu/ai-in-science/); The program will pay a competitive salary ($74,000 annually for 2022-23) plus benefits. Travel to funder’s AI in Science events will also be covered.
+
+
 **Working Group**:
 
 - [__Michigan Statistics for Individualized-healthcare Lab (MiSIL)__ weekly meeting schedules](https://docs.google.com/spreadsheets/d/1CfHqh74SrGH5zuo8W_L_hAGdLJdt_9jLgaeBtoxYp88/edit?usp=sharing)
