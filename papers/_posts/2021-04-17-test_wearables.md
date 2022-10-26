@@ -3,10 +3,10 @@ layout: paper
 title: "A Caveat to Using Wearable Sensor Data for COVID-19 Detection: The Role of Behavioral Change after Receipt of Test Results"
 image: /assets/images/papers/data_scheme.png
 authors: Jennifer Cleary, Yu Fang, Srijan Sen, Zhenke Wu
-year: 2021+
-shortref: "Cleary et al. (2021+). In revision"
-journal: "In revision"
-pdf: /assets/pdfs/papers/covid_wearable.pdf
+year: 2022
+shortref: "Cleary et al. (2022). PLOS ONE. Accepted."
+journal: "PLOS ONE. Accepted"
+pdf: 
 slides: 
 supplement: 
 github: 
@@ -18,5 +18,10 @@ type: substantive
 
 # Abstract
 
+**Background:** Recent studies indicate that wearable sensors can capture subtle withinperson changes caused by SARS-CoV-2 infection and play a role in detecting COVID-19 infections. However, in addition to direct effects of infection, wearable sensor data may capture changes in behavior after the receipt of COVID test results. At present, it remains unclear to what extent the observed discriminative performance of the wearable sensor data is affected by behavioral changes upon receipt of the test results.
 
-Recent studies indicate that wearable sensors have the potential to capture subtle within-person changes that signal SARS-CoV-2 infection. However, it remains unclear the extent to which observed discriminative performance is attributable to behavioral change after receiving test results. We conducted a retrospective study in a sample of medical interns who received COVID-19 test results from March to December 2020. Our data confirmed that sensor data were able to differentiate between symptomatic COVID-19 positive and negative individuals with good accuracy (area under the curve (AUC) = 0.75). However, removing post-result data substantially reduced discriminative capacity (0.75 to 0.63; delta= -0.12, p=0.013). Removing data in the symptomatic period prior to receipt of test results did not produce similar reductions in discriminative capacity. These findings suggest a meaningful proportion of the discriminative capacity of wearable sensor data for SARS-CoV-2 infection may be due to behavior change after receiving test results.
+**Methods:** We conducted a retrospective study of wearable sensor data in a sample of medical interns who had symptoms and received COVID-19 test results from March to December 2020, and calculated wearable sensor metrics incorporating changes in step, sleep, and resting heart rate for interns who tested positive (cases, n=22) and negative (controls, n=83) after symptom onset. All these interns had wearable sensor data available for > 50% of the days in pre- and post-symptom onset periods. We assessed discriminative accuracy of the metrics via area under the curve (AUC) and tested the impact of behavior changes after receiving test results by comparing AUCs of three models: all data, pre-test-result-only data, and post-test-result-only data. Results : Wearable sensor metrics differentiated between symptomatic COVID-19 positive and negative individuals with good accuracy (AUC = 0.75). However, the discriminative capacity of the model with pre-test-result-only data substantially decreased (AUC from 0.75 to 0.63; change= -0.12, p=0.013). The model with post-testresult-only data did not produce similar reductions in discriminative capacity. Conclusions : Changes in wearable sensor data, especially physical activity and sleep, are robust indicators of COVID-19 infection, though they may be reflective of a person’s behavior change after receiving a positive test result as opposed to a physiological signature of the virus. Thus, wearable sensor data could facilitate the monitoring of COVID-19 prevalence, but not yet replace SARS-CoV-2 testing.
+
+
+
+*keywords*: wearable device; COVID-19; COVID-19 infection; COVID-19 detection; behavior change; model accuracy, public health; Epidemiology
