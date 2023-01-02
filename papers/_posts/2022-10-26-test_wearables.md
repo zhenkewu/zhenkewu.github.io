@@ -4,14 +4,14 @@ title: "A Caveat to Using Wearable Sensor Data for COVID-19 Detection: The Role 
 image: /assets/images/papers/data_scheme.png
 authors: Jennifer Cleary, Yu Fang, Srijan Sen, Zhenke Wu
 year: 2022
-shortref: "Cleary et al. (2022). PLOS ONE. Accepted."
-journal: "PLOS ONE. Accepted"
+shortref: "Cleary et al. (2022). PLOS ONE."
+journal: "PLOS ONE."
 pdf: 
 slides: 
 supplement: 
 github: 
-doi: 10.1101/2021.04.17.21255513
-external_link: https://bit.ly/3dF0iJQ
+doi: 10.1371/journal.pone.0277350
+external_link: https://doi.org/10.1371/journal.pone.0277350
 video_link: 
 type: substantive
 ---
