@@ -25,6 +25,7 @@ field: biostat
 
 # Awards:
 
+* 2023, Winner of Research Poster Competition, International Biometric Society, Eastern North American Region, Nashville, TN
 * 2019, Best Doctoral Qualifying Exam Award
 * 2018, Outstanding Graduate Student Instructor (Biostatistics)
 
