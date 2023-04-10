@@ -45,7 +45,7 @@ My research is motivated by biomedical and public health problems and is centere
 
 - *Statistical*: Hierarchical Bayesian models; Latent variable models; Nonparametric Bayes; Bayesian scalable computation; Causal inference; Reinforcement learning.
 
-- *Substantive*: Precision medicine; Wearable device data; Mobile health; Infectious diseases; Mental health; Electronic health records/claims data; Healthcare policy; Clinical trials; Just-in-time adaptive interventions for behaviorial and psychiatric research.
+- *Substantive*: Precision medicine; Wearable device data; Mobile health; Infectious diseases; Mental health; Electronic health records/claims data; Healthcare policy; Clinical trials; Just-in-time adaptive interventions for behaviorial and psychiatric research; Computational Social Science.
 
 
 <!-- Currently a major focus of my work is on the analysis of multiple mixed-type longitudinal measurements with feedbacks in treatment assignments. I am working on hierarchical Bayesian methods to infer latent trajectories that represent individual disease progressions that have direct applications to childhood pneumonia etiology studies, analyses of electronic health records and claims data, and just-in-time adaptive interventions (JITAI) in mobile health (mHealth) studies. -->
