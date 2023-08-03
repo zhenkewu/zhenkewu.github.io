@@ -29,9 +29,3 @@ type: substantive
 **Trial Registration**: ClinicalTrial.gov [NCT04556591](https://clinicaltrials.gov/ct2/show/NCT04556591)
 
 **Key words**: Caregivers; Quality of Life; Spinal Cord Injuries; Huntington Disease; Hematopoietic Stem Cell Transplantation; Feasibility Studies; Self-management; Mobile Applications; Outcome Assessment
-
-
-
-**Trial Registration**: ClinicalTrial.gov NCT045556591; https://clinicaltrials.gov/ct2/show/NCT045556591 
-
-**Key words**: caregivers; quality of life; Spinal Cord Injuries; Huntington Disease; Hematopoietic Stem Cell Transplantation; Feasibility Studies; self-management; mobile applications; outcome assessment
