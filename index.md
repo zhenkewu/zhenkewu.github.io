@@ -27,7 +27,7 @@ categories:
 
 [[Publications]](/papers/) [[CV-overleaf]](https://www.overleaf.com/read/dbktqfjxccbv) [[CV-pdf]](assets/pdfs/team/zhenkewu_cv.pdf) [[Contact]](/team/zhenke-wu) [[Bio]](/team/zhenke-wu)
 
-[[Google Scholar<i class="ai ai-google-scholar"></i>]](https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en) [[GitHub<i class="fa fa-github"></i>]](https://github.com/zhenkewu?tab=activity) [[Twitter<i class="fa fa-twitter"></i>]](https://twitter.com/ZhenkeWu).
+[[Google Scholar<i class="ai ai-google-scholar"></i>]](https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en) [[GitHub<i class="fa fa-github"></i>]](https://github.com/zhenkewu?tab=activity) [[X<i class="fa-brands fa-x-twitter"></i>]](https://twitter.com/ZhenkeWu).
 
 The best way to contact me is email. Direction to my office is [here](assets/pdfs/team/zhenkewu-office.pdf).
 
