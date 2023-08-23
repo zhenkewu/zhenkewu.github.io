@@ -29,7 +29,7 @@ categories:
 
 [[Google Scholar<i class="ai ai-google-scholar"></i>]](https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en) [[GitHub<i class="fa fa-github"></i>]](https://github.com/zhenkewu?tab=activity) [[X<i class="fa fa-twitter"></i>]](https://twitter.com/ZhenkeWu).
 
-The best way to contact me is email. Direction to my office is [here](assets/pdfs/team/zhenkewu-office.pdf).
+The best way to contact me is email (zhenkewu [arroba] umich [punto] edu). Direction to my office is [here](assets/pdfs/team/zhenkewu-office.pdf).
 
 
 <hr/>
