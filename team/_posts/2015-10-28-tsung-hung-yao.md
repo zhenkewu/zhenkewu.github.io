@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Tsung-Hung Yao
-position: PhD Candidate (Biostat)
+position: PhD (Biostat)
 institute: University of Michigan
 handle: Tsung-Hung Yao
 email: yaots@umich[punto]edu
@@ -10,19 +10,25 @@ github:
 scholar: 
 image: /assets/images/team/tsung-hung-yao.png
 cv: 
-alum: false
+alum: true
 collaborator: false                               
 web: thyao.github.io/
 field: biostat
 ---
 
-Co-advising with [Veera Baladandayuthapani](https://bayesrx.github.io/)
 
-# Research Interest
+# First position after graduation
 
-Bayesian graphical model and Bayesian nonparametric with precision medicine.
+Postdoctoral Fellow, Department of Biostatistics, MD Anderson Cancer Center
+
+
+# Thesis:
+
+Bayesian Learning of Structured Covariances, with Applications to Cancer Data. Co-Chair (with [Veera Baladandayuthapani](https://bayesrx.github.io/))
 
 # Education:
+
+2017-2023, Ph.D. in Biostatistics, University of Michigan, Ann Arbor
 
 2017, M.S. in Biostatistics, University of Michigan, Ann Arbor
 
