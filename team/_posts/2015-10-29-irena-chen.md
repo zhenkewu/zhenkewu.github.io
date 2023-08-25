@@ -10,17 +10,24 @@ github:
 scholar: 
 image: /assets/images/team/irena-chen.png
 cv: 
-alum: false
+alum: true
 collaborator: false                               
 web: realirena.github.io/index.html
 field: biostat
 ---
 
-Co-advising with [Michael Elliott](https://sph.umich.edu/faculty-profiles/elliott-michael.html)
+
+# First position after graduation
+
+Postdoctoral Fellow, Max Planck Institute, Germany
+
+# Thesis:
+
+Joint Modeling Methods for Individual-level Variances as Predictors of Health Outcomes. Co-Chair with [Michael Elliott](https://sph.umich.edu/faculty-profiles/elliott-michael.html)
 
 # Education:
 
-2018-present, PhD Student in Biostatistics, University of Michigan, Ann Arbor
+2018-2023, Ph.D. in Biostatistics, University of Michigan, Ann Arbor
 
 2012-16, Bachelor of Science, Economics; Bachelor of Arts, Mathematics. University of Washington, Seattle
 
