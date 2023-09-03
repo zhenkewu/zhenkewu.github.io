@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Tsung-Hung Yao
-position: PhD (Biostat)
+position: PhD (Biostat), 2023
 institute: University of Michigan
 handle: Tsung-Hung Yao
 email: yaots@umich[punto]edu

@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Irena Chen
-position: PhD Candidate (Biostat)
+position: PhD (Biostat), 2023
 institute: University of Michigan
 handle: Irena Chen
 email: irena@umich[punto]edu
