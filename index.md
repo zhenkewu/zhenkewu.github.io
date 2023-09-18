@@ -33,7 +33,7 @@ The best way to contact me is email (zhenkewu [arroba] umich [punto] edu). Direc
 
 
 <hr/>
-I am an [Associate Professor](https://sph.umich.edu/faculty-profiles/wu-zhenke.html) in the [Department of Biostatistics](https://sph.umich.edu/biostat/) at [University of Michigan](https://www.umich.edu) and a faculty affiliate at [Michigan Institute for Data Science (MIDAS)](http://midas.umich.edu). 
+I am an [Associate Professor](https://sph.umich.edu/faculty-profiles/wu-zhenke.html) (with tenure) in the [Department of Biostatistics](https://sph.umich.edu/biostat/) at [University of Michigan](https://www.umich.edu) and a faculty affiliate at [Michigan Institute for Data Science (MIDAS)](http://midas.umich.edu). 
 
 <hr/>
 
