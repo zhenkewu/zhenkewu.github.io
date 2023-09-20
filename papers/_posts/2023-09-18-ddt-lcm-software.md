@@ -7,7 +7,7 @@ authors: Mengbing Li, Bolin Wu, Briana Stephenson, Zhenke Wu
 year: 2023+
 shortref: Li, Wu, Stephenson, Wu. (2023+). Submitted.
 journal: Submitted.
-pdf: 
+pdf: /assets/pdfs/papers/ddtlcm_r_package.pdf
 slides: 
 supplement:
 poster: 
