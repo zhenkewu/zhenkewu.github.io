@@ -12,7 +12,7 @@ image: /assets/images/team/jitao-wang.png
 cv: 
 alum: false
 collaborator: false                               
-web: https://jtwang95.github.io/
+web: jtwang95.github.io/
 field: biostat
 ---
 
