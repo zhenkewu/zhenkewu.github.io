@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Nicole Wakim
-position: PhD, Biostat, Jan 2023
+position: PhD (Biostat), 2023
 institute: University of Michigan
 handle: Nicole Wakim
 email: nwakim@umich[punto]edu
