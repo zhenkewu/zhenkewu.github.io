@@ -11,7 +11,8 @@ scholar:
 image: https://www.hopkinsrheumatology.org/wp-content/uploads/connections-images/livia-casciola-rosen/CASCIOLA_original-5ebdd7c6a6bfcf671cd9b2eddb6fd9c3.jpg
 cv: 
 alum: false
-collaborator: true                               
+collaborator: true 
+support: false                         
 web: goo.gl/MLDEUJ
 field: Autoimmune Diseases and Cancer
 ---

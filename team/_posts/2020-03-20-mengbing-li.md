@@ -11,7 +11,8 @@ scholar: PZAo084AAAAJ
 image: /assets/images/team/mengbing-li.jpg
 cv: 
 alum: false
-collaborator: false                               
+collaborator: false         
+support: false                           
 web: limengbinggz.github.io/
 field: biostat
 ---

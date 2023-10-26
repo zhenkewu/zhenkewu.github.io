@@ -11,7 +11,8 @@ scholar:
 image: /assets/images/team/jitao-wang.png
 cv: 
 alum: false
-collaborator: false                               
+collaborator: false
+support: false                                  
 web: jtwang95.github.io/
 field: biostat
 ---

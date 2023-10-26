@@ -11,7 +11,8 @@ scholar: 9SPUQWIAAAAJ
 image: /assets/images/team/thomas-louis.jpg
 cv: 
 alum: false
-collaborator: true                               
+collaborator: true
+support: false                                  
 web: www.biostat.jhsph.edu/~tlouis/
 field: stat
 ---

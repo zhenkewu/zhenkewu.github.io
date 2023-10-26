@@ -27,7 +27,7 @@ I'm extremely fortunate to work with several amazing students to whom I serve as
 <div class="bigspacer"></div>
 <div class="row">
     {% for member in site.categories.team %}
-    {% if member.alum == false and member.collaborator == false and member.other == false %}
+    {% if member.alum == false and member.collaborator == false and member.support == false %}
     <div class="col-sm-3" style="text-align: center">
     {%if member.url%}
     <a href="{{ member.url }}"> <img class="photo" src="{{member.image}}"> </a> <br>
@@ -48,7 +48,7 @@ I'm extremely fortunate to work with several amazing students to whom I serve as
 
 <div class="row">
     {% for member in site.categories.team %}
-    {% if member.other == true %}
+    {% if member.support == true and member.alum == false %}
     <div class="col-sm-3" style="text-align: center">
     {%if member.url%}
     <a href="{{ member.url }}"> <img class="photo" src="{{member.image}}"> </a> <br>

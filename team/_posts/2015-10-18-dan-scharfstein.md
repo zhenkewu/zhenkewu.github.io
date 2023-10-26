@@ -11,7 +11,8 @@ scholar: fN4wnGQAAAAJ
 image: /assets/images/team/dan-scharfstein.jpg
 cv: 
 alum: false
-collaborator: true                               
+collaborator: true
+support: false                                  
 web: www.biostat.jhsph.edu/~dscharf/
 field: stat
 ---

@@ -11,7 +11,8 @@ scholar: hHV7tXcAAAAJ
 image: /assets/images/team/constantine-frangakis.jpg
 cv: 
 alum: false
-collaborator: true                                  
+collaborator: true
+support: false                                     
 web: biosun01.biostat.jhsph.edu/~cfrangak/
 field: stat
 ---

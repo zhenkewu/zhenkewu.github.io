@@ -11,7 +11,8 @@ scholar:
 image: /assets/images/team/tsung-hung-yao.png
 cv: 
 alum: true
-collaborator: false                               
+collaborator: false
+support: false                                  
 web: thyao.github.io/
 field: biostat
 ---

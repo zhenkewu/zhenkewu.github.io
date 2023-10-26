@@ -11,7 +11,8 @@ scholar:
 image: https://pbs.twimg.com/media/D-F-ZHrWsAAFb-_?format=jpg&name=360x360
 cv: 
 alum: true
-collaborator: false                               
+collaborator: false  
+support: false                            
 web: www-personal.umich.edu/~tnecamp/
 field: stat
 ---

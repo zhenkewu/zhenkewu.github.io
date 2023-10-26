@@ -11,7 +11,8 @@ scholar:
 image: /assets/images/team/maria-knoll.jpeg
 cv: 
 alum: false
-collaborator: true                               
+collaborator: true
+support: false                                  
 web: en.wikipedia.org/wiki/Maria_Deloria_Knoll
 field: pneumonia
 ---
