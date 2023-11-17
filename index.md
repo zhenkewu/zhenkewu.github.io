@@ -66,7 +66,7 @@ My research is motivated by biomedical and public health problems and is centere
 
 *Check this out and send me an email if interested in collaborating!*
 
-[**AI in Science Postdoctoral Fellowship Program**](https://midas.umich.edu/ai-in-science/); The program will pay a competitive salary ($74,000 annually for 2022-23) plus benefits. Travel to funder’s AI in Science events will also be covered.
+[**AI in Science Postdoctoral Fellowship Program**](https://midas.umich.edu/ai-in-science/); The program will pay a competitive salary plus benefits. Travel to funder’s AI in Science events will also be covered.
 
 
 **Working Group**:
