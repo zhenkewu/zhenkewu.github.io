@@ -26,6 +26,7 @@ field: biostat
 
 # Awards:
 
+* 2023, ENAR Distinguished Student Paper Award, Baltimore 2024
 * 2023, Outstanding Graduate Student Instructor (Biostatistics)
 * 2023, Institute of Mathematical Statistics Hannan Graduate Student Travel Award
 * 2023, Winner of Research Poster Competition, International Biometric Society, Eastern North American Region, Nashville, TN
