@@ -21,11 +21,10 @@ markdown: kramdown
 # so be sure to set them if your theme uses them.
 #
 title : Zhenke Wu, PhD
-tagline: Research updates on Bayesian modelling, causal models and individualized health from Johns Hopkins Biostatistics
+tagline: Research updates on AI for Health, Computational and Interventinal Digital Health
 url: http://zhenkewu.com
 name : Zhenke Wu, PhD
-description: Research updates on Bayesian modelling, causal models and individualized health from Johns Hopkins Biostatistics
-
+description: Research updates on AI for Health, Computational and Interventinal Digital Health
 
 institution:
   url: https://www.umich.edu

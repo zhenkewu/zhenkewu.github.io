@@ -6,6 +6,9 @@ To modify styles:
 * pages: assets/themes/css/style.scss
 * before entering pages: assets/themes/lab/css/style.scss
 
+* `ASSET_PATH` are in `assets`
+* When we use `_layout`, the default one points to `_includes/themes/lab/default` which has the top and bottom static bars; any of the non-default ones specifies the layout as default, and them set up ASSET_PATH and points to `themes/lab/xxx.html` for more specific setting. So when editing layouts, we just need to go to `theme/lab/xxx.html` for style changes.
+
 ## Goals
 
 * Must have

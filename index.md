@@ -5,7 +5,7 @@ categories:
  - home
 ---
 {% include JB/setup %}
-{% for page in site.categories.misc %}
+{% for page in site.categories.about %}
 {% if page.homepage %}
 	{% assign homepage = page %}
 {% endif %}
