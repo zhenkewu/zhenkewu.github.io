@@ -11,8 +11,18 @@
 <div class="wrapper">
   <div class="searchBar">
     <input id="search-input" type="search" name="search-input"
-    placeholder="&#xf06e; Search. Try 'Bayesian','causal','AI', ... " value="" style="font-family:Arial, FontAwesome"/>
+    placeholder="&#xf06e; Search Papers. Try 'Bayesian','causal','2023+', ... " value="" style="font-family:Arial, FontAwesome"/>
   </div>
+    <!-- select how many lists to display -->
+    <form>
+      <label>   <i class="fa-solid fa-list"></i> <small>Show </small></label>
+      <select id="viewnresults" onchange="getSelectedVal(this)">
+        <option value="5" selected="selected">5</option>
+        <option value="10">10</option>
+        <option value="20">20</option>
+        <option value="50">50</option>
+      </select>  <label><small>results</small></label>
+    </form>
   <ul id="results-container"></ul>
 </div>
   
@@ -22,17 +32,41 @@
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
   
  <!-- Configuration -->
- <script>
-  SimpleJekyllSearch({
-    searchInput: document.getElementById('search-input'),
-    resultsContainer: document.getElementById('results-container'),
-    json: '/search.json',
-    sortMiddleware: function(a, b) {
-    var astr = String(a.year);
-    var bstr = String(b.year);
-    return bstr.localeCompare(astr)},
-    searchResultTemplate: '<li>({year}) <a href="{url}">{title}</a> {author} (<em>{journal}</em>) <span class="post-meta"></span></li>',
-    limit: 10,// initial number of results
-    fuzzy: false
-  })
-  </script>
+
+<script src="/js/search-result.js" type="text/javascript"></script>
+
+<!-- Configuration -->
+<script>
+
+function sort_curr(a, b) {
+      var astr = String(a.year);
+      var bstr = String(b.year);
+      return bstr.localeCompare(astr)
+    }
+
+var paper_result_template = '<li>({year}) <a href="{url}">{title}</a> {author} (<em>{journal}</em>) <span class="post-meta"></span></li>';
+
+window.addEventListener("load",
+  function () {
+    // Get the selected value from the select element
+    var selectedValue = document.getElementById("viewnresults").value;
+    // You can now pass the selectedValue to your desired JavaScript function
+    // For example, display it in an alert
+    // alert("Loaded initial value: " + selectedValue);
+    // Or perform any other action with the selected value
+    simple_search(paper_result_template,sort_curr,'/search.json');
+  }, false
+)
+
+function getSelectedVal(selectElement) {
+  // Get the selected value from the select element
+  var selectedValue = selectElement.value;
+  // You can now pass the selectedValue to your desired JavaScript function
+  // For example, display it in an alert
+  // alert("Selected value: " + selectedValue);
+  // Or perform any other action with the selected value
+  simple_search(paper_result_template,sort_curr,'/search.json');
+}
+
+
+</script>

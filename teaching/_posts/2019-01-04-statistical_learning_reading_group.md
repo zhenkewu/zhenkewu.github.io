@@ -4,7 +4,7 @@ title: "Statistical Learning Reading Group (Winter, 2019)"
 year: 2019
 category: teaching
 description: ""
-author: Zhenke Wu
+authors: Zhenke Wu
 author_handle: Zhenke Wu
 master: false
 published: true

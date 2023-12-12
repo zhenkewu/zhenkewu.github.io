@@ -4,7 +4,7 @@ title: "2016 Fall: BIOSTAT830 Graphical Models"
 year: 2016
 category: teaching
 description: ""
-author: Zhenke Wu
+authors: Zhenke Wu
 author_handle: Zhenke Wu
 master: false
 published: true
