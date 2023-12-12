@@ -173,9 +173,11 @@ categories:
 **Name in Chinese:**[ 吴振科 <i class="fa-brands fa-soundcloud"></i>](https://soundcloud.com/zhenke-wu/zhenke-wu-name). Pronounced: "Jen-Kuh Wu".
 
 
-[[Publications]](/papers/) [[CV-overleaf]](https://www.overleaf.com/read/dbktqfjxccbv) [[CV-pdf]](assets/pdfs/team/zhenkewu_cv.pdf) [[Contact]](/team/zhenke-wu) [[Bio]](/team/zhenke-wu)
+[[Publications]](/papers/) [[CV-overleaf]](https://www.overleaf.com/read/dbktqfjxccbv) [[CV-pdf]](assets/pdfs/team/zhenkewu_cv.pdf) 
 
-[[Google Scholar<i class="fa-brands fa-google-scholar"></i>]](https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en) [[GitHub<i class="fa-brands fa-github"></i>]](https://github.com/zhenkewu?tab=activity) [[X<i class="fa-brands fa-x-twitter"></i>]](https://twitter.com/ZhenkeWu).
+[[Contact]](/team/zhenke-wu) [[Bio]](/team/zhenke-wu)
+
+[[Google Scholar<i class="fa-brands fa-google-scholar"></i>]](https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en) [[GitHub<i class="fa-brands fa-github"></i>]](https://github.com/zhenkewu?tab=activity) [[<i class="fa-brands fa-x-twitter"></i>]](https://twitter.com/ZhenkeWu).
 
 The best way to contact me is email (zhenkewu [arroba] umich [punto] edu). Direction to my office is [here](assets/pdfs/team/zhenkewu-office.pdf).
 

@@ -19,6 +19,10 @@ navorder: 4
 </style>
 
 
+<div>
+{% include search-form-global.html %}
+</div> 
+
 <div class="smalltitle text-left">Research Group Members </div>
 <div class="bigspacer"></div>
 
