@@ -15,7 +15,7 @@ To modify styles:
 	* Site is available
 	* Modern tools
 	* Modern look and feel
-	* Source code available
+	* Source code available 
 	* Blog
 	* Trusted users can update
 	* Separation of content and style
