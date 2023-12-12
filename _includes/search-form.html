@@ -1,8 +1,18 @@
 <!-- Html Elements for Search -->
 <div id="search-container">
-  Search papers:
+  <!-- Search papers:
   <input type="search" name="search" size="50" id="search-input" 
   placeholder="&#xF002; Try 'Bayesian', '2023', 'causal', 'mobile health', ... " style="font-family:Arial, FontAwesome">
+  <ul id="results-container"></ul>
+</div> -->
+
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+<div class="wrapper">
+  <div class="searchBar">
+    <input id="search-input" type="search" name="search-input"
+    placeholder="&#xf06e; Search. Try 'Bayesian','causal','AI', ... " value="" style="font-family:Arial, FontAwesome"/>
+  </div>
   <ul id="results-container"></ul>
 </div>
   
@@ -21,6 +31,8 @@
     var astr = String(a.year);
     var bstr = String(b.year);
     return bstr.localeCompare(astr)},
-    searchResultTemplate: '<li>({year}) <a href="{url}">{title}</a> {author} (<em>{journal}</em>) <span class="post-meta"></span></li>'
+    searchResultTemplate: '<li>({year}) <a href="{url}">{title}</a> {author} (<em>{journal}</em>) <span class="post-meta"></span></li>',
+    limit: 10,// initial number of results
+    fuzzy: false
   })
   </script>
