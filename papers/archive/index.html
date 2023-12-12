@@ -43,7 +43,42 @@ A more complete list of publication can be found at <a href="https://scholar.goo
 				<div class="media">
 					<div class="media-body">
 						<div class="smallhead media-heading"><a href="{{ paper.url }}" class="off">{{ paper.title }}</a></div>
-						<p class="note">{{ paper.authors }} ({{ paper.year }}). <em>{{ paper.journal }}</em> 
+						<p class="note"> 
+							{% assign authorsq = paper.authors | split: ', ' %}
+							{% for author_iter in authorsq %}
+							{% if forloop.last %}
+								 {% assign in_file = false %}
+								 {% assign in_file_web = false %}
+								 {% for person in site.categories.team %}
+										 {% if author_iter contains person.title %}
+											 {% assign in_file = true %}
+											 {% assign in_file_web = person.web %}
+										{% endif %}
+								 {% endfor %}
+								 
+								 {% if in_file %}
+												 <a href="http://{{ in_file_web }}">{{ author_iter }}</a> ({{ paper.year }}). 
+								 {% else %}
+												 {{ author_iter }} ({{paper.year}}).
+								 {% endif %}
+							 {% else %}
+								 {% assign in_file = false %}
+								 {% assign in_file_web = false %}
+								 {% for person in site.categories.team %}
+										 {% if author_iter contains person.title %}
+											 {% assign in_file = true %}
+											 {% assign in_file_web = person.web %}
+										{% endif %}
+								 {% endfor %}
+							 
+								 {% if in_file %}
+												 <a href="http://{{ in_file_web }}">{{ author_iter }}</a>, 
+								 {% else %}
+												 {{ author_iter }},
+								 {% endif %}
+							 {% endif %}
+							{% endfor %}
+							<em>{{ paper.journal }}</em> 
 						{%if paper.external_link%}<a href="{{ paper.external_link}}" class="off">[paper link]</a>{% endif %}
 						{%if paper.github%}<a href="{{ paper.github }}" class="off">[code]</a>{% endif %}
 						{%if paper.doi%}<a href="{{ paper.doi }}" class="off">[doi]</a>{% endif %}
