@@ -2,7 +2,7 @@
 layout: post
 title: "Testing MathJax"
 description: "This blog tests math compatibility on this site"
-author: Zhenke Wu
+authors: Zhenke Wu
 author_handle: Zhenke Wu
 category: blog
 published: true

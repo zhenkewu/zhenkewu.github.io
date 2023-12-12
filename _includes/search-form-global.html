@@ -1,7 +1,8 @@
 <!-- Html Elements for Search -->
 <div id="search-container">
   Search the site:
-  <i class="fa fa-search"></i> <input type="search" name="search" size="50" id="search-input"  placeholder="Try 'Bayesian','causal','AI', ... " >
+  <input type="search" name="search" size="50" id="search-input"  
+  placeholder="&#xf06e; Try 'Bayesian','causal','AI', ... " style="font-family:Arial, FontAwesome" >
  
   
   <ul id="results-container"></ul>
@@ -23,6 +24,6 @@
     var astr = String(a.category) + "-" + String(a.year);
     var bstr = String(b.category) + "-" + String(b.year);
     return bstr.localeCompare(astr)},
-    searchResultTemplate: '<li>[<em>{category}</em>] ({year}) <a href="{url}">{title}</a> <br>{author}<span class="post-meta"></span></li>'
+    searchResultTemplate: '<li>[<em>{category}</em>] ({year}) <a href="{url}">{title}</a> {author}<span class="post-meta"></span></li>'
   })
   </script>

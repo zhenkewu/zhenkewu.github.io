@@ -2,7 +2,7 @@
 layout: post
 title: "Personal Tips for Academic Statisticians Working in OSX"
 description: "Personal"
-author: Zhenke Wu
+authors: Zhenke Wu
 author_handle: Zhenke Wu
 category: blog
 published: true

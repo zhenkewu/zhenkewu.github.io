@@ -1,7 +1,8 @@
 <!-- Html Elements for Search -->
 <div id="search-container">
   Search papers:
-  <i class="fa fa-search"></i> <input type="search" name="search" size="50" id="search-input" placeholder="Try 'Bayesian', '2023', 'causal', 'mobile health', ... ">
+  <input type="search" name="search" size="50" id="search-input" 
+  placeholder="&#xF002; Try 'Bayesian', '2023', 'causal', 'mobile health', ... " style="font-family:Arial, FontAwesome">
   <ul id="results-container"></ul>
 </div>
   
@@ -20,6 +21,6 @@
     var astr = String(a.year);
     var bstr = String(b.year);
     return bstr.localeCompare(astr)},
-    searchResultTemplate: '<li>({year}) <a href="{url}">{title}</a> (<em>{journal}</em>) <br>{author}<span class="post-meta"></span></li>'
+    searchResultTemplate: '<li>({year}) <a href="{url}">{title}</a> {author} (<em>{journal}</em>) <span class="post-meta"></span></li>'
   })
   </script>

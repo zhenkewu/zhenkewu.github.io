@@ -2,7 +2,7 @@
 layout: post
 title: "Building R Package for Reproducibility: Why, When and How"
 description: "Personal"
-author: Zhenke Wu
+authors: Zhenke Wu
 author_handle: Zhenke Wu
 category: blog
 published: true

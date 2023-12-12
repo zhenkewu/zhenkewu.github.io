@@ -486,8 +486,6 @@ color:black;
     transform: translate(-50%, -60%);
  }
 
-
-
  ul#results-container {
 	padding: 0.5;
 	list-style-type: lower-greek;
@@ -500,3 +498,194 @@ color:black;
   span.post-meta {
 	font-size: 0.8rem;
   }
+
+//   ul li:hover {
+// 	background-color: lightblue;
+//   }
+
+
+  body {
+	font-family: sans-serif
+  }
+
+  .castle{
+  body {
+	background-color: #000;
+  }
+  
+  p {
+	font-family: "Poppins", sans-serif;
+	color: #748b91;
+	font-size: 17px;
+  }
+  
+  .center {
+	text-align: center;
+  }
+  
+  #MonValley #BrightDoor {
+	transition: all 0.3s ease-in-out;
+	opacity: 0;
+  }
+  
+  #MonValley:hover #BrightDoor {
+	opacity: 1;
+  }
+  #MonValley #Step1 {
+	transition: all 0.65s ease-in-out;
+	transform: translate(0px, 150px);
+  }
+  #MonValley:hover #Step1 {
+	transform: translate(0px, 0px);
+  }
+  
+  #MonValley #Step2 {
+	transition: all 0.6s ease-in-out;
+	transform: translate(0px, 150px);
+  }
+  #MonValley:hover #Step2 {
+	transform: translate(0px, 0px);
+  }
+  #MonValley #Step3 {
+	transition: all 0.55s ease-in-out;
+	transform: translate(0px, 150px);
+  }
+  #MonValley:hover #Step3 {
+	transform: translate(0px, 0px);
+  }
+  #MonValley #Step4 {
+	transition: all 0.5s ease-in-out;
+	transform: translate(0px, 150px);
+  }
+  #MonValley:hover #Step4 {
+	transform: translate(0px, 0px);
+  }
+  #MonValley #Step5 {
+	transition: all 0.45s ease-in-out;
+	transform: translate(0px, 150px);
+  }
+  #MonValley:hover #Step5 {
+	transform: translate(0px, 0px);
+  }
+  #MonValley #Step6 {
+	transition: all 0.4s ease-in-out;
+	transform: translate(0px, 150px);
+  }
+  #MonValley:hover #Step6 {
+	transform: translate(0px, 0px);
+  }
+  #MonValley #Step7 {
+	transition: all 0.35s ease-in-out;
+	transform: translate(0px, 150px);
+  }
+  #MonValley:hover #Step7 {
+	transform: translate(0px, 0px);
+  }
+  #MonValley #Step8 {
+	transition: all 0.3s ease-in-out;
+	transform: translate(0px, 150px);
+  }
+  #MonValley:hover #Step8 {
+	transform: translate(0px, 0px);
+  }
+  #MonValley #Step9 {
+	transition: all 0.25s ease-in-out;
+	transform: translate(0px, 150px);
+  }
+  #MonValley:hover #Step9 {
+	transform: translate(0px, 0px);
+  }
+  #MonValley #Step10 {
+	transition: all 0.2s ease-in-out;
+	transform: translate(0px, 150px);
+  }
+  #MonValley:hover #Step10 {
+	transform: translate(0px, 0px);
+  }
+  #MonValley #Step11 {
+	transition: all 0.15s ease-in-out;
+	transform: translate(0px, 150px);
+  }
+  #MonValley:hover #Step11 {
+	transform: translate(0px, 0px);
+  }
+  #MonValley #Step12 {
+	transition: all 0.1s ease-in-out;
+	transform: translate(0px, 150px);
+  }
+  #MonValley:hover #Step12 {
+	transform: translate(0px, 0px);
+  }
+  #MonValley #Step13 {
+	transition: all 0.05s ease-in-out;
+	transform: translate(0px, 150px);
+  }
+  #MonValley:hover #Step13 {
+	transform: translate(0px, 0px);
+  }
+  .black-block {
+	background-color: black;
+	margin-top: -5px;
+	min-height: 5px;
+	z-index: 10;
+	position: relative;
+  }
+}
+
+// For li in search bar
+
+  ul#results-container li {
+	  list-style: lower-greek;
+	  a {
+		position: relative;
+		display: block;
+		text-transform: uppercase;
+		margin: 0px 0px;
+		padding: 0px 0px;
+		text-decoration: none;
+		color: #262626;
+		font-family: sans-serif;
+		font-size: 1.5rem;
+		font-weight: 600;
+		transition: .5s;
+		z-index: 1;
+		&:before {
+		  content: '';
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  width: 100%;
+		  height: 100%;
+		  border-top: 2px solid #262626;
+		  border-bottom: 2px solid #262626;
+		  transform: scaleY(2);
+		  opacity: 0;
+		  transition: .3s;
+		}
+		&:after {
+		  content: '';
+		  position: absolute;
+		  top: 2px;
+		  left: 0;
+		  width: 100%;
+		  height: 100%;
+		  background-color: #262626;
+		  transform: scale(0);
+		  opacity: 0;
+		  transition: .3s;
+		  z-index: -1;
+		}
+		&:hover {
+		  color: #fff;
+		  &:before {
+			transform: scaleY(1);
+			opacity: 1;
+		  }
+		  &:after {
+			transform: scaleY(1);
+			opacity: 1;
+		  }
+		}
+	  }
+	}
+  
