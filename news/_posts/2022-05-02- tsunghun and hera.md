@@ -2,7 +2,8 @@
 layout: news
 title: "congrats to students"
 description: ""
-author: "Zhenke Wu"
+authors: " "
+year: 2023-05-02
 author_handle: "Zhenke Wu"
 category: news
 tags: 

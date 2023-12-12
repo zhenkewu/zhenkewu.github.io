@@ -3,7 +3,7 @@ layout: paper
 title: "Effectiveness of gamified competition in the context of mHealth intervention for medical interns: a clustered micro-randomized trial"
 image: /assets/images/papers/ihs_comp.png
 authors: Jitao Wang, Yu Fang, Elena Frank, Maureen Walton, Margit Burmeister, Ambuj Tewari, Walter Dempsey, Timothy NeCamp, Srijan Sen, Zhenke Wu
-year: 2022+
+year: 2022
 shortref: "Wang et al. (2023). npj Digital Medicine."
 journal: "npj Digital Medicine. "
 pdf:
@@ -14,6 +14,7 @@ doi:
 external_link:  https://www.nature.com/articles/s41746-022-00746-y
 video_link: 
 type: substantive
+ 
 ---
 
 # Summary 

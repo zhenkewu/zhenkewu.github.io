@@ -14,6 +14,7 @@ doi: 10.1287/ijds.2022.0018
 external_link: https://arxiv.org/abs/2002.08412
 video_link: 
 type: statistical
+ 
 ---
 
 # Abstract
@@ -24,4 +25,3 @@ Multi-output regression seeks to borrow strength and leverage commonalities acro
 
 Weakly-supervised learning, Multi-output regression, Gaussian process, Real-life applications
 
-# Bibtex

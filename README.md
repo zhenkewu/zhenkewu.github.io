@@ -2,6 +2,10 @@ Zhenke Wu's Research Website: [click to view](http://zhenkewu.com)
 
 # Notes
 
+* [2023/12/11] search function added; a useful reference is [here](https://github.com/christian-fei/Simple-Jekyll-Search) and [here](https://kevquirk.com/how-to-add-search-jekyll).
+    - used sorting function `sortMiddleware` in `search-form.html` and `search-form-global.html` (in `_includes`), where the former is for papers only, the latter is for the entire website.
+
+
 * After cloning the repo to your local folder, you'll need to install jekyll to build and test your modified site. 
 
 * fonts

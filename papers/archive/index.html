@@ -1,0 +1,63 @@
+---
+layout: default
+title: "papers"
+categories: papers
+---
+{% include JB/setup %}
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="centered-pills">
+			<ul class="nav nav-pills note-button">
+				<li role="presentation" >
+					<a class="off" href="/papers/">
+						<i class="fa fa-refresh fa-fw"></i> Squares
+					</a>
+				</li>
+				<li role="presentation" class="active">
+					<a class="off" href="/papers/archive/">
+						<i class="fa fa-list-ul fa-fw"></i> List
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="bigspacer"></div>
+	</div>
+</div>
+
+
+{% include search-form.html %}
+
+A more complete list of publication can be found at <a href="https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en">Google Scholar</a>. 
+
+
+<div class="container">
+<div class="bigspacer"></div>
+
+{% assign years = site.categories.papers | map: 'year' | uniq  %}
+{% for year in years %}
+<div class="smalltitle text-left"><b>{{ year }}</b></div>
+	{% for paper in site.categories.papers %}
+	{% if paper.year == year%}
+			<div class="col-md-12 paperbox">
+				<div class="media">
+					<div class="media-body">
+						<div class="smallhead media-heading"><a href="{{ paper.url }}" class="off">{{ paper.title }}</a></div>
+						<p class="note">{{ paper.authors }} ({{ paper.year }}). <em>{{ paper.journal }}</em> 
+						{%if paper.external_link%}<a href="{{ paper.external_link}}" class="off">[paper link]</a>{% endif %}
+						{%if paper.github%}<a href="{{ paper.github }}" class="off">[code]</a>{% endif %}
+						{%if paper.doi%}<a href="{{ paper.doi }}" class="off">[doi]</a>{% endif %}
+						{%if paper.pdf%}<a href="{{ paper.pdf }}" class="off">[pdf]</a>{% endif %}
+						{%if paper.supplement%}<a href="{{ paper.supplement }}" class="off">[supplement]</a>{% endif %}					
+						{%if paper.slides%}<a href="{{ paper.github }}" class="off">[slides]</a>{% endif %}
+					</p>
+					</div>
+				</div>
+				<div class="bigspacer"></div>
+				<div class="spacer"></div>
+			</div>
+	{% endif %}
+	{% endfor %}
+{% endfor %}
+
+</div>

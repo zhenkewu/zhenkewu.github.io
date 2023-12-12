@@ -2,7 +2,8 @@
 layout: news
 title: "Will join U of Michigan Biostat and MIDAS"
 description: "My new position at U of Michigan"
-author: "Zhenke Wu"
+authors: " "
+year: 2016-07-05
 author_handle: "Zhenke Wu"
 category: news
 tags: [job, move]

@@ -2,7 +2,8 @@
 layout: news
 title: "congrats"
 description: ""
-author: "Zhenke Wu"
+authors: " "
+year: 2023-06-15
 author_handle: "Zhenke Wu"
 category: news
 tags: 

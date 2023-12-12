@@ -2,7 +2,8 @@
 layout: news
 title: "PERCH Main Results out in The Lancet"
 description: ""
-author: "Zhenke Wu"
+authors: " "
+year: 2019-06-28
 author_handle: "Zhenke Wu"
 category: news
 tags: 

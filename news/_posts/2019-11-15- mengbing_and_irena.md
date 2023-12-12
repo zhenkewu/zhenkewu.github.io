@@ -2,7 +2,8 @@
 layout: news
 title: "Congrats to Mengbing and Irena"
 description: ""
-author: "Zhenke Wu"
+authors: " "
+year: 2019-11-15
 author_handle: "Zhenke Wu"
 category: news
 tags: 

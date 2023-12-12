@@ -2,7 +2,8 @@
 layout: news
 title: "Statisticians Impacting Global Public Health"
 description: ""
-author: "Zhenke Wu"
+authors: " "
+year: 2017-02-24
 author_handle: "Zhenke Wu"
 category: news
 tags: 

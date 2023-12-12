@@ -2,7 +2,8 @@
 layout: news
 title: "Congrats to Tim and Mengbing"
 description: ""
-author: "Zhenke Wu"
+authors: " "
+year: 2019-06-13
 author_handle: "Zhenke Wu"
 category: news
 tags: 

@@ -3,7 +3,7 @@ layout: paper
 title: "Factors associated with inferior vena cava placement and retrieval for patients with cancer associated thrombosis"
 image: /assets/images/papers/ivc.png
 authors: Subhash Edupuganti, Mengbing Li, Zhenke Wu, Tanima Basu, Geoffrey Barnes, Marc Carrier, Suman Sood, Jennifer Griggs, Jordan Schaefer
-year: 2021+
+year: 2021
 shortref: "Edupuganti et al. (2021). The American Journal of Medicine."
 journal: "The American Journal of Medicine."
 pdf: 
@@ -14,6 +14,7 @@ doi:  10.1016/j.amjmed.2021.11.006
 external_link:  https://www.amjmed.com/article/S0002-9343(21)00791-9/fulltext
 video_link: 
 type: substantive
+ 
 ---
 
 **Importance**: Venous thromboembolism (VTE) is a leading cause of death in patients with cancer. Inferior vena cava (IVC) filters are utilized to mitigate the risk of pulmonary embolism (PE) for patients who have contraindication to or failure of anticoagulation. 

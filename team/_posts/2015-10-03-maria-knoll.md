@@ -15,6 +15,8 @@ collaborator: true
 support: false                                  
 web: en.wikipedia.org/wiki/Maria_Deloria_Knoll
 field: pneumonia
+authors: " "
+
 ---
 Department of International Health <br /> 
 Bloomberg School of Public Health<br /> 

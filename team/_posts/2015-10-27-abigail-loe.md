@@ -15,6 +15,8 @@ collaborator: false
 support: false                                  
 web: 
 field: biostat
+authors: " "
+
 ---
 
 Abby is interested in social determinants of health, methods in sampling and sociology research, and latent variable modeling.

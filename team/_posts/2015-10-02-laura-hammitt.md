@@ -15,6 +15,8 @@ collaborator: true
 support: false   
 field: pneumonia                          
 web: goo.gl/uJWYjX
+authors: " "
+
 ---
 
 Department of International Health <br /> 

@@ -15,6 +15,8 @@ collaborator: true
 support: false                                     
 web: biosun01.biostat.jhsph.edu/~cfrangak/
 field: stat
+authors: " "
+
 ---
 Department of Biostatistics <br /> 
 Bloomberg School of Public Health<br /> 

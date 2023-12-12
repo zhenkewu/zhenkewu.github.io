@@ -15,6 +15,7 @@ collaborator: false
 support: false                                  
 web: 
 field: biostat
+authors: " "
 ---
 
 Co-chair with [Thomas Braun](https://sph.umich.edu/faculty-profiles/braun-thomas.html)

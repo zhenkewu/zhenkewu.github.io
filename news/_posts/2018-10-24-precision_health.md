@@ -2,7 +2,8 @@
 layout: news
 title: "U of Michigan Precision Health Investigator Award"
 description: ""
-author: "Zhenke Wu"
+authors: " "
+year: 2018-10-24
 author_handle: "Zhenke Wu"
 category: news
 tags: 

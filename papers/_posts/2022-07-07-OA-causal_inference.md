@@ -3,7 +3,7 @@ layout: paper
 title: "Outcome Adaptive Propensity Score Methods for Handling Censoring and High-Dimensionality: Application to Insurance Claims"
 image: /assets/images/papers/OA_causal.png
 authors: Youfei Yu, Jiacong Du, Min Zhang, Zhenke Wu, Andrew Ryan, Bhramar Mukherjee
-year: 2022+
+year: 2023+
 shortref: Yu et al. (2022+). Submitted.
 journal: Submitted.
 pdf: 
@@ -15,6 +15,7 @@ doi:
 external_link: https://arxiv.org/abs/2208.00114
 video_link: 
 type: statistical
+ 
 ---
 
 # Abstract

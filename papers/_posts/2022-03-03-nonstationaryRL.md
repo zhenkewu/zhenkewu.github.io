@@ -3,7 +3,7 @@ layout: paper
 title: "Reinforcement Learning in Possibly Nonstationary Environment"
 image: /assets/images/papers/nonstationaryRL.png
 authors: Mengbing Li, Chengchun Shi, Zhenke Wu, Piotr Fryzlewicz
-year: 2022+
+year: 2023+
 shortref: Li et al. (2022+). Submitted.
 journal: Submitted.
 pdf: /assets/pdfs/papers/nonstationaryRL_main.pdf
@@ -15,6 +15,7 @@ doi:
 external_link: https://arxiv.org/abs/2203.01707
 video_link: 
 type: statistical
+ 
 ---
 
 # Abstract

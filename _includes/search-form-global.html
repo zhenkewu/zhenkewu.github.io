@@ -1,0 +1,28 @@
+<!-- Html Elements for Search -->
+<div id="search-container">
+  Search the site:
+  <i class="fa fa-search"></i> <input type="search" name="search" size="50" id="search-input"  placeholder="Try 'Bayesian','causal','AI', ... " >
+ 
+  
+  <ul id="results-container"></ul>
+  
+</div>
+  
+  <!-- Script pointing to search-script.js -->
+  <script src="/js/search-script.js" type="text/javascript"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
+  
+ <!-- Configuration -->
+ <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/search-global.json',
+    sortMiddleware: function(a, b) {
+    var astr = String(a.category) + "-" + String(a.year);
+    var bstr = String(b.category) + "-" + String(b.year);
+    return bstr.localeCompare(astr)},
+    searchResultTemplate: '<li>[<em>{category}</em>] ({year}) <a href="{url}">{title}</a> <br>{author}<span class="post-meta"></span></li>'
+  })
+  </script>

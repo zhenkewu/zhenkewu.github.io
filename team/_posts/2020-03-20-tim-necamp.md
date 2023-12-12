@@ -15,6 +15,7 @@ collaborator: false
 support: false                            
 web: www-personal.umich.edu/~tnecamp/
 field: stat
+authors: " "
 ---
 <!-- 436 West Hall <br /> 
 1085 S. University Avenue<br /> 

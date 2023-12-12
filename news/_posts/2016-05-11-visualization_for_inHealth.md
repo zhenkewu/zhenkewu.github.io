@@ -2,7 +2,8 @@
 layout: news
 title: "Visualization for Individualized Health"
 description: "Visualization for Individualized Health"
-author: "Zhenke Wu"
+authors: " "
+year: 2016-05-11
 author_handle: "Zhenke Wu"
 category: news
 tags: [visualization, statistical graphs, undergrad course, public health major]

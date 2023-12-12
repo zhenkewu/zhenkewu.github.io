@@ -15,6 +15,7 @@ collaborator: true
 support: false                           
 web: goo.gl/e7CI9a
 field: stat
+authors: " "
 ---
 Department of Biostatistics <br /> 
 Bloomberg School of Public Health<br /> 

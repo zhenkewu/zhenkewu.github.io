@@ -15,6 +15,8 @@ collaborator: false
 support: false                                  
 web: 
 field: biostat
+authors: " "
+
 ---
 
 Co-advising with Michael Elliott

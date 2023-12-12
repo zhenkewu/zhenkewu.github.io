@@ -3,7 +3,7 @@ layout: paper
 title: "Acceptability and feasibility of an app-based just-in-time-adaptive self-management intervention for care partners: Protocol for the CareQOL pilot trial"
 image: /assets/images/papers/jitai_tbi.png
 authors: Noelle Carlozzi, Sung Won Choi, Zhenke Wu, Jennifer Miner, Angela Lyden, Christopher Graves, Angelle Sander, Jitao Wang, Srijan Sen
-year: 2021+
+year: 2021
 shortref: "Carlozzi et al. (2021). JMIR: Research Protocol."
 journal: "JMIR: Research Protocol."
 pdf:
@@ -14,6 +14,7 @@ doi:
 external_link: https://preprints.jmir.org/preprint/32842
 video_link: 
 type: substantive
+ 
 ---
 
 # Abstract

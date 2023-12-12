@@ -1,0 +1,17 @@
+---
+layout: null
+---
+[
+    {% for post in site.posts %}
+        {
+        "title"    : "{{ post.title | escape }}",
+        "year"     : "{{ post.date | date: "%Y" }}",
+        "author"   : "{{ post.authors}}",
+        "category" : "{{ post.categories }}",
+        "tags"     : "{{ post.tags | join: ', ' }}",
+        "url"      : "{{ site.baseurl }}{{ post.url }}",
+        "content"  : "{{ post.content | strip_html | strip_newlines | remove_chars | remove: '\'| remove:  "	" | escape }}"
+        } {% unless forloop.last %},{% endunless %}
+    {% endfor %}
+]
+

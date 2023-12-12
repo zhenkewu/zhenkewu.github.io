@@ -2,7 +2,8 @@
 layout: news
 title: "Our team receives Data Science Challenge Initiative award in mobile health analytics"
 description: ""
-author: "Zhenke Wu"
+authors: " "
+year: 2017-04-09
 author_handle: "Zhenke Wu"
 category: news
 tags: 

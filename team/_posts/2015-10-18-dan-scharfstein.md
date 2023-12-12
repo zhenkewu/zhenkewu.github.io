@@ -15,6 +15,8 @@ collaborator: true
 support: false                                  
 web: www.biostat.jhsph.edu/~dscharf/
 field: stat
+authors: " "
+
 ---
 Department of Biostatistics <br /> 
 Bloomberg School of Public Health<br /> 

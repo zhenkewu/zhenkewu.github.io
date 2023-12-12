@@ -2,7 +2,8 @@
 layout: news
 title: "promotion"
 description: ""
-author: "Zhenke Wu"
+authors: " "
+year: 2023-5-18
 author_handle: "Zhenke Wu"
 category: news
 tags: 

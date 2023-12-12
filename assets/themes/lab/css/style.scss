@@ -485,3 +485,18 @@ color:black;
     z-index: -100;
     transform: translate(-50%, -60%);
  }
+
+
+
+ ul#results-container {
+	padding: 0.5;
+	list-style-type: lower-greek;
+  }
+  
+  #results-container li {
+	margin-bottom: 1.5rem;
+  }
+  
+  span.post-meta {
+	font-size: 0.8rem;
+  }

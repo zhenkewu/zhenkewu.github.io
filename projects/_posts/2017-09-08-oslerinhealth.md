@@ -2,6 +2,7 @@
 layout: project
 title: oslerinhealth/
 project: oslerinhealth
+authors: " "
 ---
 
 {% include JB/setup %}

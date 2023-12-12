@@ -2,7 +2,8 @@
 layout: news
 title: "baker on CRAN!"
 description: ""
-author: "Zhenke Wu"
+authors: " "
+year: 2022-02-02
 author_handle: "Zhenke Wu"
 category: news
 tags: 

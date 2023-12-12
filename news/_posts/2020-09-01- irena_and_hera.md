@@ -2,7 +2,8 @@
 layout: news
 title: "Congrats to Irena and Hera"
 description: ""
-author: "Zhenke Wu"
+authors: " "
+year: 2023-09-01
 author_handle: "Zhenke Wu"
 category: news
 tags: 

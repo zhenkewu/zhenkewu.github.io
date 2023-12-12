@@ -11,6 +11,7 @@ slides: /assets/pdfs/slides/turing-eif.pdf
 github: http://goo.gl/Pqw7GL
 doi: 10.1111/biom.12365
 type: statistical
+ 
 ---
 
 # Abstract
@@ -31,30 +32,3 @@ demonstrated through an example.
 
 **Keywords**  Compatibility; Deductive procedure; Gateaux derivative; Influence function; Semiparametric estimation;
 Turing machine.
-
-# Bibtex
-
-```
-@Article{Frangakis2015b,
-  author          = {Frangakis, Constantine E and Qian, Tianchen and Wu, Zhenke and Díaz, Iván},
-  title           = {Rejoinder to Discussions on: Deductive derivation and turing-computerization of semiparametric efficient estimation.},
-  journal         = {Biometrics},
-  year            = {2015},
-  volume          = {71},
-  pages           = {881--883},
-  month           = dec,
-  issn            = {1541-0420},
-  citation-subset = {IM},
-  completed       = {2016-08-24},
-  country         = {United States},
-  doi             = {10.1111/biom.12365},
-  issn-linking    = {0006-341X},
-  issue           = {4},
-  mid             = {NIHMS728531},
-  nlm-id          = {0370625},
-  owner           = {NLM},
-  pmc             = {PMC4715508},
-  pmid            = {26229019},
-  revised         = {2018-12-02},
-}
-```

@@ -15,6 +15,7 @@ doi: doi:10.1111/biom.13388
 external_link: https://onlinelibrary.wiley.com/doi/abs/10.1111/biom.13388
 video_link: 
 type: statistical
+ 
 ---
 
 <!-- <details><summary>BIBTEX</summary>
@@ -31,22 +32,6 @@ This paper presents a model-based method for clustering multivariate binary obse
 
 **Keywords**: Autoimmune disease; Clustering; Dependent Binary Data; Latent Class Models; Markov Chain Monte Carlo; Mixture of Finite Mixture Models.
 
-# Bibtex
-
-```r
-@article {wu2019barlcm,
-	author = {Wu, Zhenke and Casciola-Rosen, Livia and Rosen, Antony and Zeger, Scott L.},
-	title = {A Bayesian Approach to Restricted Latent Class Models for Scientifically-Structured Clustering of Multivariate Binary Outcomes},
-	elocation-id = {400192},
-	year = {2019},
-	doi = {10.1101/400192},
-	publisher = {Cold Spring Harbor Laboratory},
-	URL = {https://www.biorxiv.org/content/early/2019/04/05/400192},
-	eprint = {https://www.biorxiv.org/content/early/2019/04/05/400192.full.pdf},
-	journal = {bioRxiv}
-}
-```
-
 # Notable Features
 
 ### Special Case: Binary Matrix Factorization
@@ -54,7 +39,7 @@ This paper presents a model-based method for clustering multivariate binary obse
 This paper introduces a Bayesian framework that includes **binary matrix factorization (BMF)** as a special case (with unknown number of active latent dimensions and unknown number of distinct binary individual latent states). See the following illustration for an orthogonal decomposition:
 
 ![alt text](/assets/images/papers/binary_factorization.png){:class="img-responsive"}
-**Figure 1**: Binary matrix factorization generates composite autoantibody signatures that are further subject to misclassification. The signature $\Gamma_{i\star}= \mathbf{\eta}_i^\top\mathbf{Q}$ assembles three *orthogonal* machines with 3, 4 and 3 landmark proteins, respectively. The highlighted individual is expected to mount immune responses against antigens in Machines 1 and 3. See texts after model (6).
+**Figure 1**: Binary matrix factorization generates composite autoantibody signatures that are further subject to misclassification. The sigatures assemble three *orthogonal* machines with 3, 4 and 3 landmark proteins, respectively. The highlighted individual is expected to mount immune responses against antigens in Machines 1 and 3. See texts after model (6).
 
 
 ### Superior Clustering Performance Compared to Hierarchical Clustering, All-feature Latent Class Analysis and Subset Clustering
