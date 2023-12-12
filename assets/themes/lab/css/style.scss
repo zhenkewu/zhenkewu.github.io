@@ -700,6 +700,18 @@ color:black;
 		// max-width: 31.25rem;
 		margin: 1rem auto;
 	  }
+
+
+
+	//   Usually, the problem lies with the font size of your input. 
+	//   If the input font was reduced below 16px, even just a little bit, the mobile device zooms in on the view so the user can better see any text.
+	//   A really simple fix is to add the following to your root .scss file:
+
+	  @media screen and (max-width: 767px) {
+		input, select, textarea {
+			 font-size: 16px !important;
+		}
+   }
 	  
 	  .label {
 		font-size: .625rem;
