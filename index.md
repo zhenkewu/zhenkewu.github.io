@@ -19,14 +19,16 @@ categories:
 
 <div class="row">
 	
-<!-- <object class="pull-left biglogo" data="assets/themes/lab/images/logo/logo-none.svg" type="image/svg+xml"></object> -->
-<div class="pull-left castle">
-			<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
-<div class="center">
+  <!-- <object class="pull-left biglogo" data="assets/themes/lab/images/logo/logo-none.svg" type="image/svg+xml"></object> -->
+  <div class="col-sm-12">
+        <div class="bigtitle logobox">
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+               <div class="center castle">
   <p>            </p>
-  <svg id="MonValley" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 300 300.001" enable-background="new 0 0 300 300.001" xml:space="preserve">
+  <svg id="MonValley" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" 
+  width="50px" height="50px" viewBox="0 0 300 300.001" enable-background="new 0 0 300 300.001" xml:space="preserve">
     <g id="Background">
       <path d="M300,275.612c0,13.506-10.949,24.456-24.455,24.456H24.455C10.949,300.068,0,289.118,0,275.612V24.523
     C0,11.017,10.949,0.067,24.455,0.067h251.089C289.05,0.067,300,11.017,300,24.523V275.612z" />
@@ -160,24 +162,20 @@ categories:
     </g>
   </svg>
   <!-- <div class="black-block"></div> -->
-</div>
-</div>
-
-   <div class="col-md-9">
-	    <div class="bigtitle logobox">
-			Zhenke Wu Research
-		</div>
-	</div>	
+  Zhenke Wu Research
+</div> 
+        </div>
+  </div>	
 	
 </div> 
 **Name in Chinese:**[ 吴振科 <i class="fa-brands fa-soundcloud"></i>](https://soundcloud.com/zhenke-wu/zhenke-wu-name). Pronounced: "Jen-Kuh Wu".
 
 
-[[Publications]](/papers/) [[CV-overleaf]](https://www.overleaf.com/read/dbktqfjxccbv) [[CV-pdf]](assets/pdfs/team/zhenkewu_cv.pdf) 
+[[Publications]](/papers/) [[CV-pdf]](assets/pdfs/team/zhenkewu_cv.pdf) [[<i class="fa-brands fa-google-scholar"></i>Google Scholar]](https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en) [[<i class="fa-brands fa-github"></i>GitHub]](https://github.com/zhenkewu?tab=activity)
 
-[[Contact]](/team/zhenke-wu) [[Bio]](/team/zhenke-wu)
+[[<i class="fa-brands fa-x-twitter"></i>]](https://twitter.com/ZhenkeWu)[[Contact]](/team/zhenke-wu) [[Bio]](/team/zhenke-wu) [[CV-overleaf]](https://www.overleaf.com/read/dbktqfjxccbv)
 
-[[Google Scholar<i class="fa-brands fa-google-scholar"></i>]](https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en) [[GitHub<i class="fa-brands fa-github"></i>]](https://github.com/zhenkewu?tab=activity) [[<i class="fa-brands fa-x-twitter"></i>]](https://twitter.com/ZhenkeWu).
+
 
 The best way to contact me is email (zhenkewu [arroba] umich [punto] edu). Direction to my office is [here](assets/pdfs/team/zhenkewu-office.pdf).
 
