@@ -1,3 +1,4 @@
 <!-- Twitter -->
 <i class="fa-brands fa-x-twitter"></i>
-<a class="off" href="https://twitter.com/share?url={{ site.JB.sharing.twitter.via }}&text=check this out: {{ page.title }}, by {{ page.shortref}}" data-text="{{ page.title }}" data-via="{{ site.JB.sharing.twitter.via }}" data-related="{{ site.author.twitter }}" target="_blank">tweet</a>
+<a class="off" href="https://twitter.com/share?url={{ site.JB.sharing.twitter.via }}&text=check this out: {{ page.title }}, by {{ page.shortref}} &url={{ site.url }}{{ site.baseurl }}{{ page.url }}" data-text="{{ page.title }}" data-via="{{ site.JB.sharing.twitter.via }}" data-related="{{ site.author.twitter }}" target="_blank">tweet</a>
+
