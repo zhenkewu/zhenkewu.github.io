@@ -283,7 +283,7 @@ I collaborate closely with
 		<div class="feedbox pad-left">		
 			{% for paper in site.categories.papers limit:10 %}
 				<div class="note-title">
-					<i class="fa fa-file-text-o fa-fw"></i>
+					<i class="fa-regular fa-file-lines"></i>
 					<a class="off" href="{{ paper.url }}">
 					{{ paper.title }}
 					</a>
@@ -350,7 +350,7 @@ I collaborate closely with
 		<div class="feedbox pad-left">
 			{% for blog in site.categories.blog limit:5 %}
 				<div class="note-title">
-					<i class="fa fa-comment-o fa-fw"></i>
+					<i class="fa-solid fa-blog"></i>
 					<a class="off" href="{{ blog.url }}">
 					{{ blog.title }}
 					</a>

@@ -46,6 +46,11 @@
 <script>
   var global_result_template = '<li>[<em>{category}</em>] ({year}) <a href="{url}">{title}</a> {author}</li>';
 
+  // function sort_curr(a, b) {
+  //   var astr = String(a.category) + "-" + String(a.year);
+  //   var bstr = String(b.category) + "-" + String(b.year);
+  //   return bstr.localeCompare(astr)
+  // }
 
   function sort_curr(a, b) {
     var astr = String(a.category) + "-" + String(a.year);
@@ -62,7 +67,7 @@
       // alert("Loaded initial value: " + selectedValue);
 
       // Or perform any other action with the selected value
-      simple_search(global_result_template, sort_curr, '/search-global.json');
+      simple_search(global_result_template,sort_curr, '/search-global.json');
     }, false
   )
 
@@ -74,6 +79,6 @@
     // alert("Selected value: " + selectedValue);
     // Or perform any other action with the selected value
     // console.log(document.getElementById('search-input').value);
-    simple_search(global_result_template, sort_curr, '/search-global.json');
+    simple_search(global_result_template, sort_curr,'/search-global.json');
   }
 </script>
