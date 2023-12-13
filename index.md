@@ -168,10 +168,14 @@ categories:
   </div>	
 	
 </div> 
+
+<br>
+
 **Name in Chinese:**[ 吴振科 <i class="fa-brands fa-soundcloud"></i>](https://soundcloud.com/zhenke-wu/zhenke-wu-name). Pronounced: "Jen-Kuh Wu".
 
 
 [[Publications]](/papers/) [[CV-pdf]](assets/pdfs/team/zhenkewu_cv.pdf) 
+
 [[<i class="fa-brands fa-google-scholar"></i>Google Scholar]](https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en) [[<i class="fa-brands fa-github"></i>GitHub]](https://github.com/zhenkewu?tab=activity)
 
 [[<i class="fa-brands fa-x-twitter"></i>]](https://twitter.com/ZhenkeWu)[[Contact]](/team/zhenke-wu) [[Bio]](/team/zhenke-wu) [[CV-overleaf]](https://www.overleaf.com/read/dbktqfjxccbv)
