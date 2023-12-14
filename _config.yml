@@ -130,7 +130,7 @@ JB :
   analytics :
     provider : google
     google : 
-      tracking_id : 'G-S6P4NYZBF1'
+      tracking_id : G-S6P4NYZBF1 # this is Google Analytics 4 measurement ID.
     getclicky :
       site_id : 
     mixpanel :
