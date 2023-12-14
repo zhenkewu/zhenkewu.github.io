@@ -22,7 +22,7 @@ Zhenke Wu's Research Website: [click to view](http://zhenkewu.com)
     analytics :
         provider : google
    		google : 
-      	  tracking_id : 'UA-57530925-1'
+      	  tracking_id : G-XXXXXXX
     ```
 * twitter feed:
     - Follow the instructions [here](https://gist.github.com/abhisheknaik96/26ce79ac7a307eb836dcf02a52f87cf2) and [here](https://keitaito.com/blog/2017/01/20/embedding-tweets-in-github-pages.html). The basic idea is to **locally** use the following
