@@ -30,11 +30,14 @@ navorder: 1
 </div>
 
 See <a href="https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en">Google Scholar</a> for a more complete list.<br>
+
+<div> 
 {% include search-form.html %}
+</div>
 
 
 <div class="bigspacer"></div>
-<div class="smalltitle text-left">Statistical Methods</div>
+<div class="smalltitle text-left" style="color:#00274C">Statistical Methods</div>
 <div class="bigspacer"></div>
 <div class="container">
 <div class="bigspacer"></div>
@@ -61,7 +64,7 @@ See <a href="https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en">Googl
 </div>
 
 <hr/>
-<div class="smalltitle text-left">Substantive</div>
+<div class="smalltitle text-left" style="color:#00274C">Substantive</div>
 <div class="bigspacer"></div>
 
 <div class="container">

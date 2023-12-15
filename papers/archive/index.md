@@ -31,14 +31,17 @@ categories: papers
 
 See <a href="https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en">Google Scholar</a> for a more complete list. <br>
 
+<div>
 {% include search-form.html %}
+</div>
+
 
 <div class="container">
 <div class="bigspacer"></div>
 
 {% assign years = site.categories.papers | map: 'year' | uniq  %}
 {% for year in years %}
-<div class="smalltitle text-left"><b>{{ year }}</b></div>
+<div class="smalltitle text-left " style="color:#00274C"><b >{{ year }}</b></div>
 	{% for paper in site.categories.papers %}
 	{% if paper.year == year%}
 			<div class="col-md-12 paperbox">

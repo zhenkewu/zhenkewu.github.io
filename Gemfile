@@ -1,17 +1,15 @@
 source 'https://rubygems.org'
 
 # jekyll
-gem "jekyll"
-gem "redcarpet"
+gem "jekyll", "4.3.2"
+# gem "redcarpet"   
 
-gem 'jekyll-press'
-
-# compiling less
-gem 'therubyracer'
-gem 'less'
+# # compiling less
+# gem 'therubyracer'
+# gem 'less'
 
 # minifying
-#gem 'jekyll-press'
+gem 'jekyll-press'
 
 # octokit
 gem 'octokit'
@@ -27,11 +25,12 @@ gem 'kramdown'
 
 gem "rspec"
 
-gem 'github-pages', group: :jekyll_plugins
+# gem 'github-pages', group: :jekyll_plugins
 
-gem 'jekyll-twitter-plugin', group: :jekyll_plugins
+gem 'jekyll-twitter-plugin'#, group: :jekyll_plugins
 
 #group :jekyll_plugins do
 #  gem 'jekyll-commonmark-ghpages'
 #end
 
+gem 'jekyll-gist'

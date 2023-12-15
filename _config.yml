@@ -44,6 +44,7 @@ author :
   email : zhenkewu@gmail.com
   github : zhenkewu
   twitter : ZhenkeWu
+  googlescholar: 3ffCNrEAAAAJ
   uri: http://zhenkewu.com
 #  feedburner : feedname
 
@@ -184,7 +185,7 @@ plugins:
   - jekyll-redirect-from
   - jekyll-feed
   - jekyll-gist
-  - jekyll-twitter-plugin
+  # - jekyll-twitter-plugin
   
 future: true
 
