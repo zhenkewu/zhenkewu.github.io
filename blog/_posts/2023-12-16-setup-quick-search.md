@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Creat `lookfor` shortcut for use in command line"
+title: "Creat quick search shortcut for use in command line"
 description: "Personal"
 authors: Zhenke Wu
 author_handle: Zhenke Wu
 category: blog
 published: true
-tags: []
-tagline: "macOSX"
+tags: [tips]
+tagline: "macOSX quick search"
 lcb: "{"
 ---
 
