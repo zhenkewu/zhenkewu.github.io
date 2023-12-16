@@ -5,11 +5,11 @@ layout: null
     {% for post in site.categories.papers %}
         {
         "title"    : "{{ post.title | escape }}",
+        "content"  : "{{ post.content | strip_html | strip_newlines | remove_chars | escape }}",
         "year"     : "{{ post.year }}",
         "author"   : "{{ post.authors}}",
         "journal"    : "{{ post.journal}}",
         "category" : "{{ post.category }}",
-        "content"  : "{{ post.content | strip_html | strip_newlines | remove_chars | escape }}",
         "tags"     : "{{ post.tags | join: ', ' }}",
         "url"      : "{{ site.baseurl }}{{ post.url }}"
         } {% unless forloop.last %},{% endunless %}

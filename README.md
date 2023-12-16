@@ -2,8 +2,14 @@ Zhenke Wu's Research Website: [click to view](http://zhenkewu.com)
 
 # Notes
 
-* [2023/12/11] search function added; a useful reference is [here](https://github.com/christian-fei/Simple-Jekyll-Search) and [here](https://kevquirk.com/how-to-add-search-jekyll).
-    - used sorting function `sortMiddleware` in `search-form.html` and `search-form-global.html` (in `_includes`), where the former is for papers only, the latter is for the entire website.
+* [2023/12/11] search function added; a useful reference is [here](https://github.com/christian-fei/Simple-Jekyll-Search) and [here](https://kevquirk.com/how-to-add-search-jekyll). Need to do the following:
+    - Put the the javascript file at `./js/search-scripts.js`, which is based on the[`SimpleJekyllSearch`](https://github.com/christian-fei/Simple-Jekyll-Search) which specifies options for doing additional operations on the search results, e.g., sorting.
+    - Put the javascript file at `./js/search-result.js` which defines a `simple_search()` function that calls the `SimpleJekyllSearch()` function above, with additional specifications of how the search inputs and outputs would be. The inputs and results will be processed by `search-form-global.html` or `search-form.html` below to be included into a page to render search bar and display search results
+    - Put `search-form-global.html` into the `_include` folder and put the following into where you'd like your search bar to be 
+        -  `<div> {% include search-form-global.html %} </div>`
+      - The above is to search globally (based on `search-global.json` which pulls data from posts in all of the website and produce an actual `.json` file with the same name in the generated static site folder named `_site`); if you want to only search for a subset of posts, e.g., papers, you can modify the json file into what you want, e.g., `search.json` in the main directory is a separate json file to pull data on posts in the papers category only. Please feel free to modify the Liquid commands or include additional info to be pulled. To include search bar only for the subset of posts, ew need to use a include a different html statement to insert the search bar where you'd like to be. For example, I included only the paper search bar on the paper pages:
+        - `<div> {% include search-form-global.html %} </div>` 
+    - Ther optional settings: currently I use sorting function argument `sortMiddleware` in `search-form.html` and `search-form-global.html`, where the former is for papers only (order by year), the latter is for the entire website (order by category and year). You will need to specify the `sort_curr` function to define your desired sorting mechanism in `Javascript`.
 
 
 * After cloning the repo to your local folder, you'll need to install jekyll to build and test your modified site. 
@@ -15,7 +21,7 @@ Zhenke Wu's Research Website: [click to view](http://zhenkewu.com)
     - To add a post, e.g., a new paper, follow the format of the existing `.md` files
     - Comment out `</div>` if there are a multiple of three papers in each subsection; otherwise, there will be errors of indentation. 
 * tracking
-	- To link your site to Google analytic services, modify the `tracking_id` in `_config.yml` file in the root directory so that it points to your website. 
+	- To link your site to Google analytic services (Google Analytics 4), modify the `tracking_id` in `_config.yml` file in the root directory so that it points to your website. 
 	- Replace the `tracking_id` with your own id in the following block of codes in `_config.yml`
     
     ```
