@@ -9,7 +9,9 @@ To modify styles:
 * `ASSET_PATH` are in `assets`
 * When we use `_layout`, the default one points to `_includes/themes/lab/default` which has the top and bottom static bars; any of the non-default ones specifies the layout as default, and them set up ASSET_PATH and points to `themes/lab/xxx.html` for more specific setting. So when editing layouts, we just need to go to `theme/lab/xxx.html` for style changes.
 
-* need to check how to add "show N results" with 
+* need to check how to add "show N results" that update results shown in realtime, without needing to type again (just use the current prompt)
+
+* todo: add software to replace project; add media/press.
 
 ## Goals
 
