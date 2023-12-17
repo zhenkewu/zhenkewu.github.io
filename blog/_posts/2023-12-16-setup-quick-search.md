@@ -11,24 +11,24 @@ tagline: "macOSX quick search"
 lcb: "{"
 ---
 
-## Quick search on command line?
+## 1. Quick search on command line?
 
-Want to quickly search in your directories? For example, you want to search for `.R` files that contain a string `"latent"`, and print out the results. You may hope to do something like:
+>Want to quickly search in your directories? For example, you want to search for `.R` files that contain a string `"latent"`, and print out the results. You may hope to do something like:
+>
+>- `lookfor "latent" ".R"`
+>
+>Or you want to just look for the files without specifying the file type by something like:
+>
+>- `lookfor "latent"`
+>
+>Or you want to print page-by-page using `less`
+>
+>- `lookfor latent | less` (the quotation marks around `latent` are not needed)
+>
+>If achieved, this could speed up your debugging process when you need to find certain variable names or keywords that you identified as useful. 
 
-- `lookfor "latent" ".R"`
 
-Or you want to just look for the files without specifying the file type by something like:
-
-- `lookfor "latent"`
-
-Or you want to print page-by-page using `less`
-
-- `lookfor latent | less` (the quotation marks around `latent` are not needed)
-
-If achieved, this could speed up your debugging process when you need to find certain variable names or keywords that you identified as useful. 
-
-
-### Back-story
+### 1.1. Back-story
 
 Here is one excellent solution I have been using (see more explanation at the end):
 
@@ -50,15 +50,24 @@ As you can see by comparing the codes from the two tweets, I have used a differe
   - **Too many outputs?** You may also append `"| less"` when you use the command, e.g., `lookfor latent | less`, to print only page-by-page when `lookfor` identifies exceedingly many files or long files that contain the target string `latent`. However, by using `less`, the results lose syntax highlighting. This is why I have no `| less` by default to make it easier for my eyes when staring at the returned results.
 
 
-## Set up symbolic link and make the file executable
+## 2. Set things up
 
-Then follow [this](https://askubuntu.com/questions/427818/how-to-run-scripts-without-typing-the-full-path) link to create a symlink to the created file in  `/usr/local/bin` so that you may achieve the functionality as desired at the start of this article:
-  - `sudo ln -s /full/path/to/your/file /usr/local/bin/name_of_new_command`
+- **Create the file** at `/full/path/to/your/file`, e.g., I created a file `~/bin/lookfor` with the following bash code:
+  - ```
+    #!/bin/bash
+    rg --no-heading -i "$1" --iglob \*$2	
+    ```
+- **Make the file excutable**: 
+  - ```
+    chmod +x /full/path/to/your/file
+    ```
 
-- Then make the file excutable: 
-    - `chmod +x /full/path/to/your/file`
+- **Create a symbolic link to the file** by  following [this](https://askubuntu.com/questions/427818/how-to-run-scripts-without-typing-the-full-path). The symlink may be in a different location `/usr/local/bin/name_of_new_command`. I created a symbolic link with the same name (does not have to be), `lookfor`. 
+  - ```
+  sudo ln -s /full/path/to/your/file /usr/local/bin/name_of_new_command
+  ```
 
-#### Example
+### 2.1. Example
 
 For example, because I created the `lookfor` file at `~/bin/lookfor`, I needed to replace `/full/path/to/your/file` with `~/bin/lookfor`; I wanted to type `lookfor` to execute the file, so I replaced `name_of_new_command` with `lookfor`. 
 
@@ -66,11 +75,12 @@ Note that we just created a symbolic in a different directory `/usr/local/bin` t
 
 Now you may type `lookfor` with appropriate arguments to do the quick search, save your time, and be less cranky!
 
-## More explanation (by GPT-4)
+## 3. More explanation (by GPT-4)
 
-> `#!/bin/bash
+```
+#!/bin/bash
 rg --no-heading -i "$1" --iglob \*$2	
-`
+```
 
 This Bash script snippet utilizes `rg`, which is the command for Ripgrep, a fast search tool. The script performs a case-insensitive search for the pattern specified by `$1` in files that match the glob pattern `*$2`.
 
