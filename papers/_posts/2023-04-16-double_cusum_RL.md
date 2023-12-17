@@ -9,7 +9,7 @@ journal: "ICML"
 pdf: /assets/images/pdfs/double_cusum_RL.pdf
 slides: 
 supplement: 
-github: 
+github: https://github.com/jtwang95/Double_CUSUM_RL
 doi: 
 external_link: https://openreview.net/forum?id=KoIqF3Dztr
 video_link: 
