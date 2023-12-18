@@ -218,11 +218,11 @@ My research is motivated by biomedical and public health problems and is centere
 
 
 **Advising**: We are recruiting motivated and hard-working people interested in Bayesian methods and computation, graphical models, causal inference, sequential decision making, reinforcement learning and large-scale health data analytics. If you want to get involved, please [say hi](/sayhi/). 
+  - **Please consider providing relevant information via Google Form [here](https://forms.gle/zNf4aMBiE69prweU7)**.
 
 
-*Check this out and send me an email if interested in collaborating!*
-
-[**AI in Science Postdoctoral Fellowship Program**](https://midas.umich.edu/fellows/apply-2024/#submission); The program will pay a competitive salary plus benefits. Travel to funder’s AI in Science events will also be covered.
+- *Check this out and send me an email if interested in collaborating!* 
+  - [**AI in Science Postdoctoral Fellowship Program**](https://midas.umich.edu/fellows/apply-2024/#submission); The program will pay a competitive salary plus benefits. Travel to funder’s AI in Science events will also be covered.
 
 
 **Working Group**:

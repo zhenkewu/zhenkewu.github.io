@@ -20,6 +20,8 @@ I am extremely fortunate to have worked with many excellent graduate students at
 
 I very much look forward to meeting you! Let's do the following to streamline the process. 
 
+For potential trainees and student visitors, **please consider providing relevant information via Google Form [here](https://forms.gle/zNf4aMBiE69prweU7)**.
+
 **Please send an email if none of the following applies to you!**
 
 ## UMich Students
