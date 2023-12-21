@@ -31,6 +31,7 @@ For potential trainees and student visitors, **please consider providing relevan
 - If you are an **UMich undergraduate student interested in research**, please start by doing an independent study with me to find out if there is a good match. Please send me an email with a brief description of interests, CV, and transcript. We will find a time to meet. You are also welcome to sign up for [office hours](https://calendly.com/zhenkewu/office_hour_zhenke_wu).
 
 - If you are an **UMich student with other questions** such as outreach activities, graduate school application, or asking for a reference letter, please send an email or sign up to come to [office hours](https://calendly.com/zhenkewu/office_hour_zhenke_wu).
+  - If you requesting a reference letter, you need to send your transcript(s), CV, and statements in an email explaining your objective.
 	
 ## Non-UMich Folks
 
