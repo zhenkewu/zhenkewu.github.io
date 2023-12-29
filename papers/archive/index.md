@@ -42,12 +42,14 @@ See <a href="https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en">Googl
 {% assign years = site.categories.papers | map: 'year' | uniq  %}
 {% for year in years %}
 <div class="smalltitle text-left " style="color:#00274C"><b >{{ year }}</b></div>
+    {% assign paper_num = 0 %}
 	{% for paper in site.categories.papers %}
 	{% if paper.year == year%}
+	        {% assign paper_num = paper_num | plus: 1 %}
 			<div class="col-md-12 paperbox">
 				<div class="media">
 					<div class="media-body">
-						<div class="smallhead media-heading"><a href="{{ paper.url }}" class="off">{{ paper.title }}</a></div>
+						<div class="smallhead media-heading"><a href="{{ paper.url }}" class="off">{{ paper_num }}. {{ paper.title }}</a></div>
 						<p class="note"> 
 							{% assign authorsq = paper.authors | split: ', ' %}
 							{% for author_iter in authorsq %}
