@@ -11,7 +11,13 @@ To modify styles:
 
 * need to check how to add "show N results" that update results shown in realtime, without needing to type again (just use the current prompt)
 
-* todo: add software to replace project; add media/press.
+## Desired Features
+
+* Add software to replace project
+* Add media/press.
+* Sort publication by research topic
+* Consider a lab website to allow login and member-specific information (good-to-have)
+
 
 ## Goals
 
