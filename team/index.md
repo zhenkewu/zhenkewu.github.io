@@ -43,6 +43,8 @@ I'm extremely fortunate to work with several amazing students to whom I serve as
     {% endfor %}   
 </div>
 
+- [**Peter Yang**](https://peteryang.xyz/), Undergrad, Math/Computer Science/Stat, U of Michigan. "Apple SensorKit Data Analysis"
+
 <div class="bigspacer"></div>
 
 <hr/>
@@ -72,6 +74,10 @@ I'm extremely fortunate to work with several amazing students to whom I serve as
 <div class="smalltitle text-left">Alumni </div>
 <div class="bigspacer"></div>
 
+Please send an email to zhenkewu@gmail[punto]com for updates.
+<br>
+
+
 <div class="row">
     {% for member in site.categories.team %}
     {% if member.alum == true and member.collaborator == false %}
@@ -91,13 +97,11 @@ I'm extremely fortunate to work with several amazing students to whom I serve as
 - **Chen Chen**, MS, Biostatistics, 2022, U of Michigan, Ann Arbor. Graduate Student Research Assistant (November 2021 to August 2022; co-advise with Mike Elliott). (*Variance as a predictor for survival outcomes*). First position after graduation: PhD Student in Biostatistics, University of Toronto.
 
 <div class="bigspacer"></div>
-<div class="smalltitle text-left">Summer Students: </div>
+<div class="smalltitle text-left">Rotation/Summer Students: </div>
 <div class="bigspacer"></div>
-
-- **Bolin Wu**, Undergrad, Computer Science, 2023, U Of Michigan, Ann Arbor. "Shinyapp for Enhancing Latent Class Analysis using Dirichlet Diffusion Tree" 
-- **Zhongyuan Lyu**, MS, Applied Statistics, 2019, U of Michigan, Ann Arbor. Summer Intern. (Latent Class Model and Sparse Additive Regression Models)
-- **Jiayuan Dong**, MS, Accelerated Master Degree Program (ADMP), 2021, U of Michigan, Ann Arbor; Summer Intern. (Readings on Probablistic Graphical Models)
-
+- 2023 Summer: **Bolin Wu**, Undergrad, Computer Science, U Of Michigan, Ann Arbor. "Shinyapp for Enhancing Latent Class Analysis using Dirichlet Diffusion Tree". First position after graduation: Carnegie Mellon University, Master of Computational Data Science Program. 
+- 2021 Summer: **Jiayuan Dong**, MS, Accelerated Master Degree Program (ADMP), U of Michigan, Ann Arbor; Summer Intern. (Readings on Probablistic Graphical Models). First position after graduation: UMich, Mechanical Engineering PhD Student
+- 2019 Summer: **Zhongyuan Lyu**, MS, Applied Statistics, U of Michigan, Ann Arbor. Summer Intern. (Latent Class Model and Sparse Additive Regression Models). First position after graduation: Hong Kong University of Technology and Science, Math PhD Student
 
 
 <!--
