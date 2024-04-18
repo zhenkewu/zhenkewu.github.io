@@ -193,7 +193,11 @@ I am an [Associate Professor](https://sph.umich.edu/faculty-profiles/wu-zhenke.h
 
 <hr/>
 
+
 **Research Theme**:
+
+**Tagline**: AI for affordable and equitable individualized healthcare; computational and interventional digital health.
+
 
 My research is motivated by biomedical and public health problems and is centered on the design and application of statistical methods that inform health decisions made by individuals, or precision medicine. Towards this goal, I focus on two lines of methodological research: a) structured Bayesian latent variable models for clustering and disease subtyping, and b) study design, causal and reinforcement learning methods for evaluating sequential interventions that tailor to individuals' changing circumstances such as in interventional mobile health studies. I am committed to developing robust, scalable, and interpretable statistical methods to harness real-world, high-dimensional, dynamic data for individualized health. The methods and software developed so far have supported studies in diverse scientiﬁc ﬁelds including infectious disease epidemiology, autoimmune diseases, mental health, behavioral health, and cancer. I am also exploring the intersection between generative AI and biostatistics.
 
