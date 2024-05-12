@@ -174,11 +174,11 @@ categories:
 **Name in Chinese:**[ 吴振科 <i class="fa-brands fa-soundcloud"></i>](https://soundcloud.com/zhenke-wu/zhenke-wu-name). Pronounced: "Jen-Kuh Wu".
 
 
-[[Publications]](/papers/) [[CV-pdf]](assets/pdfs/team/zhenkewu_cv.pdf) 
+[[Publications]](/papers/) [[CV-pdf]](assets/pdfs/team/zhenkewu_cv.pdf) [[one-page CV pdf]](assets/pdfs/team/zhenkewu_cv_one_page.pdf) [[CV-overleaf]](https://www.overleaf.com/read/dbktqfjxccbv)
 
 [[<i class="fa-brands fa-google-scholar"></i>Google Scholar]](https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en) [[<i class="fa-brands fa-github"></i>GitHub]](https://github.com/zhenkewu?tab=activity)
 
-[[<i class="fa-brands fa-x-twitter"></i>]](https://twitter.com/ZhenkeWu)[[Contact]](/team/zhenke-wu) [[Bio]](/team/zhenke-wu) [[CV-overleaf]](https://www.overleaf.com/read/dbktqfjxccbv)
+[[<i class="fa-brands fa-x-twitter"></i>]](https://twitter.com/ZhenkeWu)[[Contact]](/team/zhenke-wu) [[Bio]](/team/zhenke-wu) 
 
 
 
@@ -212,7 +212,6 @@ I am deeply passionate about advancement of modern Bayesian latent variable meth
 
 
 <!-- Currently a major focus of my work is on the analysis of multiple mixed-type longitudinal measurements with feedbacks in treatment assignments. I am working on hierarchical Bayesian methods to infer latent trajectories that represent individual disease progressions that have direct applications to childhood pneumonia etiology studies, analyses of electronic health records and claims data, and just-in-time adaptive interventions (JITAI) in mobile health (mHealth) studies. -->
-
 
 <hr/>
 
@@ -257,7 +256,7 @@ I collaborate closely with
 - [The Michigan Genomics Initiative](https://www.michigangenomics.org)
 - [Precision Health Use Case: PROviding Mental Health Precision Treatment (PROMPT)](https://precisionhealth.umich.edu/workgroups/prompt/)
 - [Cancer Control and Population Sciences, Rogel Cancer Center](http://www.mcancer.org/research/programs/cancer-control-and-population-sciences)
-
+- 
 - [Rheumatology at Johns Hopkins](https://www.hopkinsrheumatology.org/research/rosen-casciola-lab/)
 - [Hopkins inHealth](http://hopkinsinhealth.jhu.edu/) methodology group
 - [International Vaccine Access Center (IVAC)](http://www.jhsph.edu/research/centers-and-institutes/ivac/)
