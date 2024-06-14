@@ -4,14 +4,14 @@ title: "Pediatric urinary tract infections caused by poultry-associated Escheric
 image: /assets/images/papers/zoonotic_uti.png
 authors: Maliha Aziz, Gregg Davis, Dan Park, Azza Idris, Sanjeev Sariya, Yashan Wang, Sara Zerbonne, Lora Nordstrom, Brett Weaver, Sally Statham, Timothy Johnson, Joseph Campos, Eduardo Castro-Nallar, Keith Crandall, Zhenke Wu, Cindy Liu, Roberta DeBiasi, Lance Price
 year: 2024
-shortref: Aziz et al. (2024). Spectrum
-journal: Spectrum
+shortref: Aziz et al. (2024). Microbiology Spectrum
+journal: Microbiology Spectrum
 pdf: 
 slides: 
 supplement: 
 poster: 
 github: 
-doi: 
+doi: 10.1128/spectrum.03415-23
 external_link: 
 video_link: 
 type: substantive

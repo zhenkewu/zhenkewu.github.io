@@ -15,7 +15,7 @@ To modify styles:
 
 * Add software to replace project
 * Add media/press.
-* Sort publication by research topic
+* Sort publication by research topic; associate relevant grant to the research topic
 * Consider a lab website to allow login and member-specific information (good-to-have)
 
 
