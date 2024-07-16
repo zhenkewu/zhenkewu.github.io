@@ -4,25 +4,29 @@ title: "ddtlcm: An R package for overcoming weak separation in Bayesian latent
 class analysis via tree-regularization"
 image: /assets/images/papers/ddt_lcm_schema.png
 authors: Mengbing Li, Bolin Wu, Briana Stephenson, Zhenke Wu
-year: 2023+
-shortref: Li, Wu, Stephenson, Wu. (2023+). Submitted.
-journal: Submitted.
+year: 2024
+shortref: Li, Wu, Stephenson, Wu. (2024). Journal of Open Source Software.
+journal: JOSS.
 pdf: /assets/pdfs/papers/ddtlcm_r_package.pdf
 slides: 
 supplement:
 poster: 
 github: https://github.com/limengbinggz/ddtlcm
-doi: 
-external_link: https://shorturl.at/lqFLY
+doi: 10.21105/joss.06220
+external_link: https://doi.org/10.21105/joss.06220
 video_link: 
 type: statistical
  
 ---
 
 
+
+
 Methods paper:
 
 - [Arxiv](https://arxiv.org/abs/2306.04700)
+- [JOSS Published](https://doi.org/10.21105/joss.06220) [![DOI](https://joss.theoj.org/papers/10.21105/joss.06220/status.svg)](https://doi.org/10.21105/joss.06220)
+- [Review history](https://github.com/openjournals/joss-reviews/issues/6220)
 
 Software: 
 
