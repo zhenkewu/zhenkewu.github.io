@@ -20,7 +20,7 @@ navorder: 1
 				</li>
 				<li role="presentation">
 					<a class="off" href="/papers/archive/">
-						<i class="fa fa-list-ul fa-fw"></i> List
+						<i class="fa fa-list-ul fa-fw"></i> By Year
 					</a>
 				</li>
 			</ul>
