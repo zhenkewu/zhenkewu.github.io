@@ -184,12 +184,8 @@ categories:
 
 The best way to contact me is email (zhenkewu [arroba] umich [punto] edu). Direction to my office is [here](assets/pdfs/team/zhenkewu-office.pdf).
 
-
-
-
-
 <hr/>
-I am an [Associate Professor](https://sph.umich.edu/faculty-profiles/wu-zhenke.html) (with tenure) in the [Department of Biostatistics](https://sph.umich.edu/biostat/) at [University of Michigan](https://www.umich.edu) and a faculty affiliate at [Michigan Institute for Data Science (MIDAS)](http://midas.umich.edu). 
+I am an [Associate Professor](https://sph.umich.edu/faculty-profiles/wu-zhenke.html) (with tenure) in the [Department of Biostatistics](https://sph.umich.edu/biostat/) at [University of Michigan](https://www.umich.edu) and a faculty affiliate at [Michigan Institute for Data and AI in Society (MIDAS)](http://midas.umich.edu). 
 <hr/>
 
 **Research Theme**:
@@ -230,34 +226,18 @@ I am deeply passionate about advancement of modern Bayesian latent variable meth
 
 - [__Michigan Statistics for Individualized-healthcare Lab (MiSIL)__ weekly meeting schedules](https://docs.google.com/spreadsheets/d/1CfHqh74SrGH5zuo8W_L_hAGdLJdt_9jLgaeBtoxYp88/edit?usp=sharing)
 
-<!-- Past:
-
-- [__Statistical Learning and Computing Reading Group, Winter 2019__](/teaching/statistical_learning_reading_group) -->
-
-
-
-<!-- * Bayesian hierarchical models: biomarkers, data integration, scalable computation, model-averaging;
-* Latent variable models: dynamics, measurement errors, local dependence, partial-identifiability; 
-* Robust inference: bias reduction, efficiency enhancement by covariate-calibration, semiparametric locally efficient estimation, deductive inference;
-* Causal analysis of modern study designs;
-* Collaborations: mental health, infectious disease, autoimmune disease, medical diagnosis, epidemiology, health policy, cancer, mobile health, Just-in-time adaptive interventions for behaviorial and psychiatric research.
- -->
 <hr/>
 
-I collaborate closely with 
+I currently collaborate closely with
 
 - [Intern Health Study](https://www.srijan-sen-lab.com/intern-health-study)
-- [openVA](https://openva.net/)
+- [openVA - mortality estimation using verbal autopsy](https://openva.net/)
+- [Center for Clinical Outcomes Development and Application (CODA)](https://medresearch.umich.edu/labs-departments/centers/coda)
 - [Data Science in Africa] - the [UZIMA-DS project](https://uzimadatascience.org/).
-- [D3 Lab: Data Science for Dynamic Intervention Decision-Making Lab](http://d3lab-isr.com/team/)
-
-- [The Michigan Genomics Initiative](https://www.michigangenomics.org)
+ 
 - [Precision Health Use Case: PROviding Mental Health Precision Treatment (PROMPT)](https://precisionhealth.umich.edu/workgroups/prompt/)
 - [Cancer Control and Population Sciences, Rogel Cancer Center](http://www.mcancer.org/research/programs/cancer-control-and-population-sciences)
-- 
-- [Rheumatology at Johns Hopkins](https://www.hopkinsrheumatology.org/research/rosen-casciola-lab/)
-- [Hopkins inHealth](http://hopkinsinhealth.jhu.edu/) methodology group
-- [International Vaccine Access Center (IVAC)](http://www.jhsph.edu/research/centers-and-institutes/ivac/)
+- [The Michigan Genomics Initiative](https://www.michigangenomics.org)
 
 <br />
 

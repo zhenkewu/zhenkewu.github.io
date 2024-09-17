@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Xingran Chen
-position: MS Student (Biostat)
+position: PhD Student (Biostat)
 institute: University of Michigan
 handle: Xingran Chen
 email: chenxran@umich[punto]edu
@@ -25,7 +25,7 @@ Other info: "I learned chess during my childhood and Japanese during my undergra
 
 # Education:
 
-2024 Fall, Incoming PhD Student in Biostatistics, University of Michigan, Ann Arbor
+2024 Fall, PhD Student in Biostatistics, University of Michigan, Ann Arbor
 
 2022-2024, MS in Biostatistics, University of Michigan, Ann Arbor, 
 
