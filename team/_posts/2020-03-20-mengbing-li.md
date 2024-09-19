@@ -27,7 +27,7 @@ authors: " "
 
 # Awards:
 
-* 2024, MICDE Fellowship (Michigan Institute for Computational Discovery & Engineering)
+* 2024, [MICDE Fellowship](https://micde.umich.edu/academic-programs/fellowships/) (Michigan Institute for Computational Discovery & Engineering)
 * 2023, ENAR Distinguished Student Paper Award, Baltimore 2024
 * 2023, Outstanding Graduate Student Instructor (Biostatistics)
 * 2023, Institute of Mathematical Statistics Hannan Graduate Student Travel Award
