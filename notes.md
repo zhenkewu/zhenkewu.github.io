@@ -18,6 +18,7 @@ To modify styles:
 * Sort publication by research topic; associate relevant grant to the research topic
 * Consider a lab website to allow login and member-specific information (good-to-have)
 * Add student/trainee news/awards
+* Add paper information for each team member's individual page (at the bottom)
 
 
 ## Goals

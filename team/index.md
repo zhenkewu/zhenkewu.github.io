@@ -44,6 +44,8 @@ I'm extremely fortunate to work with several amazing students to whom I serve as
 </div>
 
 - [**Peter Yang**](https://peteryang.xyz/), Undergrad, Math/Computer Science/Stat, U of Michigan. "Apple SensorKit Data Analysis"
+- [**Owen Yoo**](https://owen-hy.github.io/personal-web/), Undergrad,  Statistics and Data Science, Minor in Music, U of Michigan. "Prior elicitation algorithms for inferring causes of death from computer-coded verbal autopsy data"
+- [**Jianhan Zhang**](https://www.linkedin.com/in/jianhan-zhang-175536231/), Undergrad, Pure Math, Data Science, U of Michigan. "Counterfactual Fairness in Reinforcement Learning"
 
 <div class="bigspacer"></div>
 

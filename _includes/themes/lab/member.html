@@ -129,14 +129,59 @@
 
 		{% if papersq == true %}
 			<div class="bigspacer"></div>
-			<div class="head">Papers</div>
+			<div class="head">Papers (selected)</div>
 			<div class="spacer"></div>
+			{% assign paper_num = 0 %}	
 			{% for paper in site.categories.papers %}
-				{% if paper.authors contains lastname and paper.authors contains firstname %}
+			{% if paper.authors contains lastname and paper.authors contains firstname %}
+					{% assign paper_num = paper_num | plus: 1 %}
 					{% if paper.embargo %}
-					<p>{{ paper.title }}
+					<p>{{ paper.title }}</p>
 					{% else %}
-					<p><a href="{{ paper.url }}" class="off">{{ paper.title }}</a>
+					<p><a href="{{ paper.url }}" class="off" style="font-family: Arial; color: #fa625f">{{ paper_num }}. {{ paper.title }} ({{ paper.year }}).  </a>
+						
+							{% assign authorsq = paper.authors | split: ', ' %}
+							{% for author_iter in authorsq %}
+							{% if forloop.last %}
+								 {% assign in_file = false %}
+								 {% assign in_file_web = false %}
+								 {% for person in site.categories.team %}
+										 {% if author_iter contains person.title %}
+											 {% assign in_file = true %}
+											 {% assign in_file_web = person.web %}
+										{% endif %}
+								 {% endfor %}
+								 
+								 {% if in_file %}
+												 <a href="http://{{ in_file_web }}">{{ author_iter }}</a>. 
+								 {% else %}
+												 {{ author_iter }} ({{paper.year}}).
+								 {% endif %}
+							 {% else %}
+								 {% assign in_file = false %}
+								 {% assign in_file_web = false %}
+								 {% for person in site.categories.team %}
+										 {% if author_iter contains person.title %}
+											 {% assign in_file = true %}
+											 {% assign in_file_web = person.web %}
+										{% endif %}
+								 {% endfor %}
+							 
+								 {% if in_file %}
+												 <a href="http://{{ in_file_web }}">{{ author_iter }}</a>, 
+								 {% else %}
+												 {{ author_iter }},
+								 {% endif %}
+							 {% endif %}
+							{% endfor %}
+							&#9658 <em> {{ paper.journal }}</em> 
+						{%if paper.external_link%}<a href="{{ paper.external_link}}" class="off">[paper link]</a>{% endif %}
+						{%if paper.github%}<a href="{{ paper.github }}" class="off">[code]</a>{% endif %}
+						{%if paper.doi%}<a href="{{ paper.doi }}" class="off">[doi]</a>{% endif %}
+						{%if paper.pdf%}<a href="{{ paper.pdf }}" class="off">[pdf]</a>{% endif %}
+						{%if paper.supplement%}<a href="{{ paper.supplement }}" class="off">[supplement]</a>{% endif %}					
+						{%if paper.slides%}<a href="{{ paper.github }}" class="off">[slides]</a>{% endif %}
+					
 					{% endif %}
 				{% endif %}
 			{% endfor %}
