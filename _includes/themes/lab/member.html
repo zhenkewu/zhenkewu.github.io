@@ -138,7 +138,7 @@
 					{% if paper.embargo %}
 					<p>{{ paper.title }}</p>
 					{% else %}
-					<p><a href="{{ paper.url }}" class="off" style="font-family: Arial; color: #fa625f">{{ paper_num }}. {{ paper.title }} ({{ paper.year }}).  </a>
+					<p>{{ paper_num }}. <a href="{{ paper.url }}" class="off" style="font-family: Arial; color: #fa625f">{{ paper.title }}  </a>({{ paper.year }}).
 						
 							{% assign authorsq = paper.authors | split: ', ' %}
 							{% for author_iter in authorsq %}
