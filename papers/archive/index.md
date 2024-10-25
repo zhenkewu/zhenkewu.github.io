@@ -87,13 +87,13 @@ See <a href="https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en">Googl
 								 {% endfor %}
 							 
 								 {% if in_file %}
-												 <a href="http://{{ in_file_web }}">{{ author_iter }}</a>, 
+												 <a href="http://{{ in_file_web }}">{{ author_iter }} </a>, 
 								 {% else %}
 												 {{ author_iter }},
 								 {% endif %}
 							 {% endif %}
 							{% endfor %}
-							<em>{{ paper.journal }}</em> 
+							  ► <em>{{ paper.journal }}</em> 
 						{%if paper.external_link%}<a href="{{ paper.external_link}}" class="off">[paper link]</a>{% endif %}
 						{%if paper.github%}<a href="{{ paper.github }}" class="off">[code]</a>{% endif %}
 						{%if paper.doi%}<a href="{{ paper.doi }}" class="off">[doi]</a>{% endif %}
@@ -160,7 +160,7 @@ See <a href="https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en">Googl
 								 {% endif %}
 							 {% endif %}
 							{% endfor %}
-							<em>{{ paper.journal }}</em> 
+							► <em>{{ paper.journal }}</em> 
 						{%if paper.external_link%}<a href="{{ paper.external_link}}" class="off">[paper link]</a>{% endif %}
 						{%if paper.github%}<a href="{{ paper.github }}" class="off">[code]</a>{% endif %}
 						{%if paper.doi%}<a href="{{ paper.doi }}" class="off">[doi]</a>{% endif %}
