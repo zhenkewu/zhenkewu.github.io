@@ -3,9 +3,9 @@ layout: paper
 title: "Estimating Time-Varying Direct and Indirect Causal Excursion Effects with Longitudinal Binary Outcomes"
 image: /assets/images/papers/binary_c_MRT.png
 authors: Jieru Shi, Zhenke Wu, Walter Dempsey
-year: 2023+
+year: submitted
 shortref: Shi, Wu and Dempsey (2022+). Submitted.
-journal: Submitted.
+journal:
 pdf: 
 slides: 
 supplement:   

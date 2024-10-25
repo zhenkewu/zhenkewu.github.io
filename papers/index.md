@@ -23,6 +23,11 @@ navorder: 1
 						<i class="fa fa-list-ul fa-fw"></i> By Year
 					</a>
 				</li>
+				<li role="presentation">
+					<a class="off" href="/papers/archive/index_by_topic">
+						<i class="fa fa-list-ul fa-fw"></i> By Topic
+					</a>
+				</li>
 			</ul>
 		</div>
 		<div class="bigspacer"></div>

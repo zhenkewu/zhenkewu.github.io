@@ -3,9 +3,9 @@ layout: paper
 title: "Geometry-driven Bayesian Inference for Ultrametric Covariance Matrices"
 image: /assets/images/papers/ultrametric_inference.png
 authors: Tsung-Hung Yao, Zhenke Wu, Karthik Bharath, Veerabhadran Baladandayuthapani
-year: 2023+
+year: submitted
 shortref: Yao et al. (2023+). Submitted.
-journal: Submitted.
+journal:
 pdf: /assets/pdfs/papers/ultrametric_inference_main.pdf
 slides: 
 supplement: /assets/pdfs/papers/ultrametric_inference_supp.pdf
