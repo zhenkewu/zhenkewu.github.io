@@ -13,6 +13,8 @@ github:
 doi: 
 external_link: 
 type: substantive
+tags:
+    - clinical trial
  
 ---
 

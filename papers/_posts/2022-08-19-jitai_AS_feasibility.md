@@ -14,6 +14,9 @@ doi:
 external_link: 
 video_link: 
 type: substantive
+tags:
+    - mobile health
+    - wearable
  
 ---
 

@@ -14,6 +14,8 @@ doi:
 external_link: https://bit.ly/3cT4HWk
 video_link: 
 type: substantive
+tags:
+    - infectious disease
  
 ---
 

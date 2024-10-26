@@ -15,6 +15,11 @@ doi: 10.1017/S0033291722003014
 external_link: https://shorturl.at/chOWX
 video_link: 
 type: substantive
+tags:
+    - machine learning
+    - mental health
+    - mobile health
+    - intern health study
  
 ---
 

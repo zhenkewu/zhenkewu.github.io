@@ -2,6 +2,11 @@ Zhenke Wu's Research Website: [click to view](http://zhenkewu.com)
 
 # Notes
 
+
+* [2024/10/26] Added paper by topic; it uses `pages_list_paper` and `tags_list_paper` in `JB` folder. They will look for `tags` in papers.
+  * when specifying tags, please use lower cases; it is painful to implement sorting in a case insensitive way (if you know, let me know!)
+  * once you click `Topic` in the `papers` tab, you should be able to see the keywords with counts at the top and the list of papers by the keywords below.
+
 * [2023/12/16] Added search function; a useful reference is [here](https://github.com/christian-fei/Simple-Jekyll-Search) and [here](https://kevquirk.com/how-to-add-search-jekyll). Need to do the following:
     - Put the the javascript file at `./js/search-scripts.js`, which is based on the[`SimpleJekyllSearch`](https://github.com/christian-fei/Simple-Jekyll-Search) which specifies options for doing additional operations on the search results, e.g., sorting.
     - Put the javascript file at `./js/search-result.js` which defines a `simple_search()` function that calls the `SimpleJekyllSearch()` function above, with additional specifications of how the search inputs and outputs would be. The inputs and results will be processed by `search-form-global.html` or `search-form.html` below to be included into a page to render search bar and display search results

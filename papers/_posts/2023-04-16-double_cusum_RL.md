@@ -14,7 +14,11 @@ doi:
 external_link: https://openreview.net/forum?id=KoIqF3Dztr
 video_link: 
 type: statistical
- 
+tags:
+    - change-point analysis
+    - reinforcement learning
+    - mobile health
+    - intern health study
 ---
 
 # Abstract: 

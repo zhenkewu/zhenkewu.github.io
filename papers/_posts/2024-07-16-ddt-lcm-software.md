@@ -16,6 +16,13 @@ doi: 10.21105/joss.06220
 external_link: https://doi.org/10.21105/joss.06220
 video_link: 
 type: statistical
+tags:
+    - r
+    - software
+    - latent class models
+    - nonparametric Bayes
+    - bayesian methods
+    - nutrition epidemiology
  
 ---
 

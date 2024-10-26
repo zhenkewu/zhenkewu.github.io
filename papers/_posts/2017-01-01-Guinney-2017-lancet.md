@@ -8,6 +8,8 @@ shortref: Guinney et al. (2017). The Lancet Oncology
 journal: "The Lancet Oncology"
 doi: doi:10.1016/S1470-2045(16)30560-5
 type: substantive
+tags:
+    - cancer
  
 ---
 

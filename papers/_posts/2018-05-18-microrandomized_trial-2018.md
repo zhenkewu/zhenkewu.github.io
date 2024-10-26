@@ -10,6 +10,9 @@ doi: doi:10.1002/9781118445112.stat08050
 external_link: bit.ly/2wWs9PC
 video_link: 
 type: statistical
+tags:
+    - micro-randomized trial
+    - causal inference
  
 ---
 

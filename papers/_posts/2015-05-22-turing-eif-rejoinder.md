@@ -11,6 +11,9 @@ slides: /assets/pdfs/slides/turing-eif.pdf
 github: http://goo.gl/Pqw7GL
 doi: 10.1111/biom.12365
 type: statistical
+tags:
+    - causal inference
+    - semiparametrics
  
 ---
 

@@ -15,6 +15,9 @@ doi:
 external_link: 
 video_link: 
 type: statistical
+tags:
+    - bayesian methods
+    - cancer
  
 ---
 

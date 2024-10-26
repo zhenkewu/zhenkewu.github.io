@@ -14,6 +14,8 @@ doi: 10.1287/ijds.2022.0018
 external_link: https://arxiv.org/abs/2002.08412
 video_link: 
 type: statistical
+tags:
+    - gaussian process
  
 ---
 

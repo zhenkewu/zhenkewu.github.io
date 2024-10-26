@@ -14,6 +14,9 @@ doi:
 external_link: https://preprints.jmir.org/preprint/32842
 video_link: 
 type: substantive
+tags:
+    - clinical trial
+    - mobile health
  
 ---
 

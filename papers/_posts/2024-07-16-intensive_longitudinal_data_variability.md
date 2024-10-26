@@ -15,7 +15,10 @@ doi:
 external_link: https://arxiv.org/abs/2401.07421
 video_link: 
 type: statistical
- 
+tags:
+    - bayesian methods
+    - wearable
+    - variance as predictor 
 ---
 
 # Abstract

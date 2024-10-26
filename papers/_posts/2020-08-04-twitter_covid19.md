@@ -14,6 +14,10 @@ doi:
 external_link: 
 video_link: 
 type: substantive
+tags:
+    - machine learning
+    - aging
+    - infectious disease
  
 ---
 

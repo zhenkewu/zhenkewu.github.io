@@ -15,17 +15,17 @@ navorder: 1
 			<ul class="nav nav-pills note-button">
 				<li role="presentation" class="active">
 					<a class="off" href="/papers/">
-						<i class="fa fa-refresh fa-fw"></i> Squares
+						<i class="fa fa-binoculars fa-fw"></i> Squares
 					</a>
 				</li>
 				<li role="presentation">
 					<a class="off" href="/papers/archive/">
-						<i class="fa fa-list-ul fa-fw"></i> By Year
+						<i class="fa fa-calendar fa-fw"></i> Year
 					</a>
 				</li>
 				<li role="presentation">
 					<a class="off" href="/papers/archive/index_by_topic">
-						<i class="fa fa-list-ul fa-fw"></i> By Topic
+						<i class="fa fa-podcast fa-fw"></i> Topic
 					</a>
 				</li>
 			</ul>

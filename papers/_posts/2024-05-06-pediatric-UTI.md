@@ -15,6 +15,8 @@ doi: 10.1128/spectrum.03415-23
 external_link: 
 video_link: 
 type: substantive
+tags:
+    - infectious disease
 ---
 
 # Abstract

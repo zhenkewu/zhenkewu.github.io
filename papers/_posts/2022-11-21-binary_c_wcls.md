@@ -15,6 +15,10 @@ doi:
 external_link: https://arxiv.org/abs/2212.01472
 video_link: 
 type: statistical
+tags:
+    - micro-randomized trial
+    - mobile health
+    - causal inference
  
 ---
 

@@ -14,6 +14,9 @@ doi:
 external_link: https://arxiv.org/abs/2210.15417
 video_link: 
 type: statistical
+tags:
+    - causal inference
+    - machine learning
  
 ---
 

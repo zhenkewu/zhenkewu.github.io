@@ -14,6 +14,8 @@ doi: 10.25302/09.2020.ME.140820318
 external_link: 
 video_link: 
 type: substantive
+tags:
+    - bayesian methods
  
 ---
 

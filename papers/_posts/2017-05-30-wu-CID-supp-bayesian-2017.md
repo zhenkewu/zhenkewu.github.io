@@ -12,6 +12,10 @@ github:
 doi: doi:10.1093/cid/cix144
 external_link: https://goo.gl/gquiE3
 type: substantive
+tags:
+    - bayesian methods
+    - infectious disease
+    - global health
  
 ---
 

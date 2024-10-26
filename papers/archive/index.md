@@ -11,19 +11,19 @@ categories: papers
 	<div class="col-md-12">
 		<div class="centered-pills">
 			<ul class="nav nav-pills note-button">
-				<li role="presentation" >
+				<li role="presentation">
 					<a class="off" href="/papers/">
-						<i class="fa fa-refresh fa-fw"></i> Squares
+						<i class="fa fa-binoculars fa-fw"></i> Squares
 					</a>
 				</li>
-				<li role="presentation" class="active">
+				<li role="presentation"  class="active">
 					<a class="off" href="/papers/archive/">
-						<i class="fa fa-list-ul fa-fw"></i> By Year
+						<i class="fa fa-calendar fa-fw"></i> Year
 					</a>
 				</li>
-			<li role="presentation">
+				<li role="presentation">
 					<a class="off" href="/papers/archive/index_by_topic">
-						<i class="fa fa-list-ul fa-fw"></i> By Topic
+						<i class="fa fa-podcast fa-fw"></i> Topic
 					</a>
 				</li>
 			</ul>
@@ -57,7 +57,8 @@ See <a href="https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en">Googl
 			<div class="col-md-12 paperbox">
 				<div class="media">
 					<div class="media-body">
-						<div class="smallhead media-heading"><a href="{{ paper.url }}" class="off" >{{ paper_num }}. {{ paper.title }}</a></div>
+						<!-- <div class="smallhead media-heading"><a href="{{ paper.url }}" class="off" >{{ paper_num }}. {{ paper.title }}</a></div> -->
+						<div>{{ paper_num }}. <a href="{{ paper.url }}" class="off" style="font-family: Arial"> {{ paper.title }}</a></div>
 						<!-- <p class="note">  -->
 							{% assign authorsq = paper.authors | split: ', ' %}
 							{% for author_iter in authorsq %}
@@ -124,7 +125,7 @@ See <a href="https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en">Googl
 			<div class="col-md-12 paperbox">
 				<div class="media">
 					<div class="media-body">
-						<div class="smallhead media-heading"><a href="{{ paper.url }}" class="off">{{ paper_num }}. {{ paper.title }}</a></div>
+						<div>{{ paper_num }}. <a href="{{ paper.url }}" class="off" style="font-family: Arial"> {{ paper.title }}</a></div>
 						<!-- <p class="note">  -->
 							{% assign authorsq = paper.authors | split: ', ' %}
 							{% for author_iter in authorsq %}

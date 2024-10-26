@@ -14,6 +14,9 @@ doi:
 external_link: https://doi.org/10.1016/j.cct.2021.106513
 video_link: 
 type: substantive
+tags:
+    - clinical trial
+    - mobile health
  
 ---
 

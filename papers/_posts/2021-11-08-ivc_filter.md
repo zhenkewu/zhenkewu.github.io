@@ -14,6 +14,9 @@ doi:  10.1016/j.amjmed.2021.11.006
 external_link:  https://www.amjmed.com/article/S0002-9343(21)00791-9/fulltext
 video_link: 
 type: substantive
+tags:
+    - cancer
+    - insurance claims data
  
 ---
 

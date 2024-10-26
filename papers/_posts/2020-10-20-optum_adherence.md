@@ -14,6 +14,9 @@ doi: 10.1111/jth.15153
 external_link: https://bit.ly/37Ho4lT
 video_link: 
 type: substantive
+tags:
+    - insurance claims data
+    - cancer
  
 ---
 

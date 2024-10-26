@@ -15,6 +15,10 @@ doi:
 external_link: https://arxiv.org/abs/2203.01707
 video_link: 
 type: statistical
+tags:
+    - change-point analysis
+    - reinforcement learning
+    - intern health study
  
 ---
 
