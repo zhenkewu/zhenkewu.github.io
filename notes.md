@@ -10,6 +10,7 @@ To modify styles:
 * When we use `_layout`, the default one points to `_includes/themes/lab/default` which has the top and bottom static bars; any of the non-default ones specifies the layout as default, and them set up ASSET_PATH and points to `themes/lab/xxx.html` for more specific setting. So when editing layouts, we just need to go to `theme/lab/xxx.html` for style changes.
 
 * need to check how to add "show N results" that update results shown in realtime, without needing to type again (just use the current prompt)
+* `index_by_topic.md` vs `index_by_topic.html`, the latter can render symbols like `&nbsp` but the former cannot. Not sure why. For now, change all the paper pages, `index.html`, `archive/index.html` and `archive/index_by_topic.html`, into `.html` from `.md`.
 
 ## Desired Features
 
