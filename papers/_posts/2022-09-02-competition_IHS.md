@@ -15,7 +15,7 @@ external_link:  https://www.nature.com/articles/s41746-022-00746-y
 video_link: 
 type: substantive
 tags:
-    - clnical trial
+    - clinical trial
     - mobile health
     - wearable
     - intern health study
