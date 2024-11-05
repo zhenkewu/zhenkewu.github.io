@@ -27,6 +27,7 @@ authors: " "
 
 # Awards:
 
+* 2024, Excellence in Research, Honorable Mention, Department of Biostatistics, UMich
 * 2024, [MICDE Fellowship](https://micde.umich.edu/academic-programs/fellowships/) (Michigan Institute for Computational Discovery & Engineering)
 * 2023, ENAR Distinguished Student Paper Award, Baltimore 2024
 * 2023, Outstanding Graduate Student Instructor (Biostatistics)
