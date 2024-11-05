@@ -47,6 +47,7 @@ See <a href="https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en">Googl
 {% endfor %} -->
 
 {% assign filtered_tags = "" | split: "" %}
+{% assign tagsize_paper = "" | split: "" %}
 {% for tag in sorted_tags %} 
    <!-- check if there are papers with this tag -->
   {% assign has_paper = 0 %}
@@ -58,7 +59,9 @@ See <a href="https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en">Googl
 
   <!-- add to list only if there are papers with the current tag -->
   {%if has_paper != 0 %}
+  <!-- {% assign tag[1] = tag[1] | where_exp: "post", "post.layout contains 'paper'" %} --> 
   {% assign filtered_tags = filtered_tags | push: tag %}
+  {% assign tagsize_paper = tagsize_paper | push: has_paper %}
   {% endif %} 
 {% endfor %}
 
