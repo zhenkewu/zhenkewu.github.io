@@ -20,8 +20,8 @@ Usage:
 {% if site.JB.tags_list.provider == "custom" %}
   {% include custom/tags_list %}
 {% else %}
+  {% assign i = 0 %}
   {% if tags_list.first[0] == null %}
-    {% assign i = 0 %}
     {% for tag in tags_list %} 
     	<!-- <li><a href="{{ BASE_PATH }}{{ site.JB.tags_path_paper }}#{{ tag }}-ref">{{ tag }}</a><sup>{{ site.tags[tag].size }}</sup>&nbsp</li> -->
       <li><a href="{{ BASE_PATH }}{{ site.JB.tags_path_paper }}#{{ tag }}-ref">{{ tag }}</a><sup>{{ tagsize_paper[i] }}</sup>&nbsp</li>
