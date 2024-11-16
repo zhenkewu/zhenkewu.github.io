@@ -11,14 +11,15 @@ slides:
 supplement: 
 poster: 
 github: 
-doi: 
-external_link: https://arxiv.org/abs/2401.07421
+doi: 10.1002/sim.10281
+external_link: 
 video_link: 
 type: statistical
 tags:
     - bayesian methods
     - wearable
     - variance as predictor 
+    - intensive longitudinal data
 ---
 
 # Abstract
