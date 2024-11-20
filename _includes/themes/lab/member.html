@@ -138,7 +138,7 @@
 					{% if paper.embargo %}
 					<p>{{ paper.title }}</p>
 					{% else %}
-					<p>{{ paper_num }}. <a href="{{ paper.url }}" class="off" style="font-family: Arial; color: #fa625f">{{ paper.title }}  </a>({{ paper.year }}).
+					<p>{{ paper_num }}. <a href="{{ paper.url }}" class="off" style="font-family: Arial; color: #fa625f">{{ paper.title }}</a>.
 						
 							{% assign authorsq = paper.authors | split: ', ' %}
 							{% for author_iter in authorsq %}
@@ -153,9 +153,9 @@
 								 {% endfor %}
 								 
 								 {% if in_file %}
-												 <a href="http://{{ in_file_web }}">{{ author_iter }}</a>. 
+												 <a href="http://{{ in_file_web }}">{{ author_iter }} </a> ({{paper.year}})
 								 {% else %}
-												 {{ author_iter }} ({{paper.year}}).
+												 {{ author_iter }} ({{paper.year}})
 								 {% endif %}
 							 {% else %}
 								 {% assign in_file = false %}
