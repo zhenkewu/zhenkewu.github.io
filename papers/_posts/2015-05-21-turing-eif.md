@@ -15,8 +15,6 @@ type: statistical
 tags:
     - causal inference
     - semiparametrics
- 
-authors: " "
 
 ---
 
