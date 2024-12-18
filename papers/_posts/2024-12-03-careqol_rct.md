@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: "Improving outcomes for care partners of individuals with traumatic brain injury: Results for a mHealth randomized control trial of the CareQOL app"
-image: /assets/images/papers/careqol_dose.png
+image: /assets/images/papers/careqol_main.png
 authors: Noelle Carlozzi, Jonathan Troost, Angelle Sander, Sung Won Choi, Zhenke Wu, Jennifer Miner, Wendy Lombard, Christopher Graves, Srijan Sen
 year: 2024
 shortref: "Carlozzi et al. (2024). Archives of Physical Medicine and Rehabilitation"
