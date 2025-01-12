@@ -2,16 +2,16 @@
 layout: paper
 title: "Improving outcomes for care partners of individuals with traumatic brain injury: Results for a mHealth randomized control trial of the CareQOL app"
 image: /assets/images/papers/careqol_main.png
-authors: Noelle Carlozzi, Jonathan Troost, Angelle Sander, Sung Won Choi, Zhenke Wu, Jennifer Miner, Wendy Lombard, Christopher Graves, Srijan Sen
-year: 2024
-shortref: "Carlozzi et al. (2024). Archives of Physical Medicine and Rehabilitation"
+authors: Noelle Carlozzi, Jonathan Troost, Srijan Sen, Sung Won Choi, Zhenke Wu, Jennifer Miner, Wendy Lombard, Christopher Graves, Angelle Sander
+year: 2025
+shortref: "Carlozzi et al. (2025). Archives of Physical Medicine and Rehabilitation"
 journal: "Archives of Physical Medicine and Rehabilitation"
 pdf:
 slides:
 supplement:
 github:
 doi:
-external_link:
+external_link: https://shorturl.at/j7VrB
 video_link: 
 type: substantive
 tags:
@@ -24,7 +24,7 @@ tags:
 
 # Abstract
 
-**Objective**: Care partners (i.e., informal caregivers) of people with traumatic brain injury (TBI) are often overwhelmed, with limited time for self-care given their demanding caregiver role. To address this problem, we implemented a low-touch mobile health intervention designed to promote care partner self-awareness and self-care.
+**Objective**: To test the efficacy of a randomized control trial low-touch mobile health intervention designed to promote care partner self-awareness and self-care.
 
 **Design**: This randomized controlled trial (RCT) included a baseline assessment of self-report surveys of health-related quality of life (HRQOL), care partner-specific outcomes, and the functional/mental status of the person with TBI, as well as a 6-month home monitoring period that included three daily questions about HRQOL, monthly assessments of 12 HRQOL domains, and the use of a Fitbit® to continuously monitor physical activity and sleep. HRQOL surveys were repeated at 3- and 6-months post-home monitoring.
 
@@ -38,8 +38,7 @@ tags:
 
 **Conclusions**: Findings suggest that engagement with the app, even when it is confined to self-monitoring alone, is associated with small improvements in HRQOL.
 
-
-**Trial Registration**: ClinicalTrial.gov NCT04570930; https://clinicaltrials.gov/ct2/show/NCT04570930
+**Trial Registration**: ClinicalTrial.gov [NCT04570930](https://clinicaltrials.gov/ct2/show/NCT04570930)
 
 
 **Key words**: caregivers; brain injuries, traumatic; quality of life; self-monitoring; mobile applications; outcome assessment, health care
