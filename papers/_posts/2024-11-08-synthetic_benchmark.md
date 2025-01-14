@@ -2,7 +2,7 @@
 layout: paper
 title: "Generating Synthetic Electronic Health Record (EHR) Data: A Review with Benchmarking"
 image: /assets/images/papers/synth_benchmark.png
-authors: Xingran Chen, Zhenke Wu$^*$, Xu Shi, Hyunghoon Cho, Bhramar Mukherjee$^**$
+authors: Xingran Chen, Zhenke Wu$^*$, Xu Shi, Hyunghoon Cho, Bhramar Mukherjee$^{**}$
 year: submitted
 shortref: Chen et al. (2024+). Submitted.
 journal: 
@@ -23,7 +23,7 @@ tags:
  
 ---
 
-$^*$: corresponding author; $^**$: senior author
+$^*$: corresponding author; $^{**}$: senior author
 
 # Abstract
 
