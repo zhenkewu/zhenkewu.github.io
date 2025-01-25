@@ -190,7 +190,7 @@ I am an [Associate Professor](https://sph.umich.edu/faculty-profiles/wu-zhenke.h
 
 **Research Theme**:
 
-**Tagline**: AI for affordable and equitable individualized healthcare; computational and interventional digital health. 
+**Tagline**: AI for affordable and individualized healthcare; computational and interventional digital health. 
 
 [View publication samples by topic](papers/archive/index_by_topic)
 
