@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Abigail Loe
-position: PhD Student (Biostat)
+position: PhD Candidate (Biostat)
 institute: University of Michigan
 handle: Abigail Loe
 email: agloe@umich[punto]edu
@@ -18,6 +18,8 @@ field: biostat
 authors: " "
 
 ---
+
+Co-chair: Susan Murray
 
 Abby is interested in social determinants of health, methods in sampling and sociology research, and latent variable modeling.
 

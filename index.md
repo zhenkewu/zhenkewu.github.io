@@ -181,11 +181,15 @@ categories:
 [[<i class="fa-brands fa-x-twitter"></i>]](https://twitter.com/ZhenkeWu)[[Contact]](/team/zhenke-wu) [[Bio]](/team/zhenke-wu) 
 
 
-
 The best way to contact me is email (zhenkewu [arroba] umich [punto] edu). Direction to my office is [here](assets/pdfs/team/zhenkewu-office.pdf).
 
 <hr/>
 I am an [Associate Professor](https://sph.umich.edu/faculty-profiles/wu-zhenke.html) (with tenure) in the [Department of Biostatistics](https://sph.umich.edu/biostat/) at [University of Michigan](https://www.umich.edu) and a faculty affiliate at [Michigan Institute for Data and AI in Society (MIDAS)](http://midas.umich.edu). 
+<hr/>
+
+[<i class="fas fa-bullhorn"></i>**Position Openings**] Please contact me for details if interested! 
+- [Feb 2025] Work period: *May 1 - August 31, 2025*. Summer AI + Health research project on reinforcement learning that integrates [reinforcement learning, counterfactual fairness](https://arxiv.org/abs/2501.06366) and budget constraint. 
+    - PhD/MS students. [Link to position ad](https://docs.google.com/document/d/1R8dZr0X_aZsvKY70TbcEi3Vpa3APLP7ozVbg6JRtWz0/edit?usp=sharing).
 <hr/>
 
 **Research Theme**:

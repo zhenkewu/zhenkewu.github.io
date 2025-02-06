@@ -46,9 +46,12 @@ I'm extremely fortunate to work with several amazing students to whom I serve as
     {% endfor %}   
 </div>
 
+<div class="bigspacer"></div>
+
+MS/Undergraduate Students:
+
 - [**Peter Yang**](https://peteryang.xyz/), Undergrad, Math/Computer Science/Stat, U of Michigan. "Apple SensorKit Data Analysis"
-- [**Owen Yoo**](https://owen-hy.github.io/personal-web/), Undergrad,  Statistics and Data Science, Minor in Music, U of Michigan. "Prior elicitation algorithms for inferring causes of death from computer-coded verbal autopsy data"
-- [**Jianhan Zhang**](https://www.linkedin.com/in/jianhan-zhang-175536231/), Undergrad, Pure Math, Data Science, U of Michigan. "Counterfactual Fairness in Reinforcement Learning"
+- [**Jianhan Zhang** working with Jitao Wang](https://www.linkedin.com/in/jianhan-zhang-175536231/), Undergrad, Pure Math, Data Science, U of Michigan. "Counterfactual Fairness in Reinforcement Learning"
 
 <div class="bigspacer"></div>
 
@@ -102,8 +105,9 @@ Please send an email to zhenkewu@gmail[punto]com for updates.
 - **Chen Chen**, MS, Biostatistics, 2022, U of Michigan, Ann Arbor. Graduate Student Research Assistant (November 2021 to August 2022; co-advise with Mike Elliott). (*Variance as a predictor for survival outcomes*). First position after graduation: PhD Student in Biostatistics, University of Toronto.
 
 <div class="bigspacer"></div>
-<div class="smalltitle text-left">Rotation/Summer Students: </div>
+<div class="smalltitle text-left">Former MS/Undergraduate Students: </div>
 <div class="bigspacer"></div>
+- 2024 Fall: [**Owen Yoo**](https://owen-hy.github.io/personal-web/), Undergrad,  Statistics and Data Science, Minor in Music, U of Michigan. "Prior elicitation algorithms for inferring causes of death from computer-coded verbal autopsy data"
 - 2023 Summer: **Bolin Wu**, Undergrad, Computer Science, U Of Michigan, Ann Arbor. "Shinyapp for Enhancing Latent Class Analysis using Dirichlet Diffusion Tree". First position after graduation: Carnegie Mellon University, Master of Computational Data Science Program. 
 - 2021 Summer: **Jiayuan Dong**, MS, Accelerated Master Degree Program (ADMP), U of Michigan, Ann Arbor; Summer Intern. (Readings on Probablistic Graphical Models). First position after graduation: UMich, Mechanical Engineering PhD Student
 - 2019 Summer: [Zhongyuan Lyu](https://zhongyuanlyu.github.io/), MS, Applied Statistics, U of Michigan, Ann Arbor. Summer Intern. (Latent Class Model and Sparse Additive Regression Models). First position after graduation: Hong Kong University of Technology and Science, Math PhD Student

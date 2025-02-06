@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Mingyan Yu
-position: PhD Student (Biostat)
+position: PhD Candidate (Biostat)
 institute: University of Michigan
 handle: Mingyan Yu
 email: myanyu@umich[punto]edu
