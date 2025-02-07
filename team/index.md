@@ -102,15 +102,27 @@ Please send an email to zhenkewu@gmail[punto]com for updates.
 
 <div class="bigspacer"></div>
 
-- **Chen Chen**, MS, Biostatistics, 2022, U of Michigan, Ann Arbor. Graduate Student Research Assistant (November 2021 to August 2022; co-advise with Mike Elliott). (*Variance as a predictor for survival outcomes*). First position after graduation: PhD Student in Biostatistics, University of Toronto.
+
+
 
 <div class="bigspacer"></div>
-<div class="smalltitle text-left">Former MS/Undergraduate Students: </div>
+<div class="smalltitle text-left">Former MS Students: </div>
+<div class="bigspacer"></div>
+- **Abigail Loe**. Next position: PhD Student in UMich Biostat
+- **Xingran Chen**. Next position: PhD Student in UMich Biostat
+- **Jieru Shi**. Next position: PhD Student in UMich Biostat
+- **Jitao Wang**. Next position: PhD Student in UMich Biostat
+- **Mengbing Li**. Next position: PhD Student in UMich Biostat
+- **Chen Chen**, MS, Biostatistics, 2022, U of Michigan, Ann Arbor. Graduate Student Research Assistant (November 2021 to August 2022; co-advise with Mike Elliott). (*Variance as a predictor for survival outcomes*). First position after graduation: PhD Student in Biostatistics, University of Toronto.
+- 2019 Summer: [**Zhongyuan Lyu**](https://zhongyuanlyu.github.io/), MS, Applied Statistics, U of Michigan, Ann Arbor. Summer Intern. (Latent Class Model and Sparse Additive Regression Models). First position after graduation: Hong Kong University of Technology and Science, Math PhD Student
+
+
+<div class="bigspacer"></div>
+<div class="smalltitle text-left">Former Undergraduate Students (those who wrote paper in the lab is marked with $^*$): </div>
 <div class="bigspacer"></div>
 - 2024 Fall: [**Owen Yoo**](https://owen-hy.github.io/personal-web/), Undergrad,  Statistics and Data Science, Minor in Music, U of Michigan. "Prior elicitation algorithms for inferring causes of death from computer-coded verbal autopsy data"
-- 2023 Summer: **Bolin Wu**, Undergrad, Computer Science, U Of Michigan, Ann Arbor. "Shinyapp for Enhancing Latent Class Analysis using Dirichlet Diffusion Tree". First position after graduation: Carnegie Mellon University, Master of Computational Data Science Program. 
+- $^*$2023 Summer: **Bolin Wu**, Undergrad, Computer Science, U Of Michigan, Ann Arbor. "Shinyapp for Enhancing Latent Class Analysis using Dirichlet Diffusion Tree". First position after graduation: Carnegie Mellon University, Master of Computational Data Science Program. 
 - 2021 Summer: **Jiayuan Dong**, MS, Accelerated Master Degree Program (ADMP), U of Michigan, Ann Arbor; Summer Intern. (Readings on Probablistic Graphical Models). First position after graduation: UMich, Mechanical Engineering PhD Student
-- 2019 Summer: [Zhongyuan Lyu](https://zhongyuanlyu.github.io/), MS, Applied Statistics, U of Michigan, Ann Arbor. Summer Intern. (Latent Class Model and Sparse Additive Regression Models). First position after graduation: Hong Kong University of Technology and Science, Math PhD Student
 
 
 <!--
