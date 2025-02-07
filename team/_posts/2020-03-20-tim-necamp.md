@@ -12,7 +12,8 @@ image: https://pbs.twimg.com/media/D-F-ZHrWsAAFb-_?format=jpg&name=360x360
 cv: 
 alum: true
 collaborator: false  
-support: false                            
+support: false
+showicon: true                            
 web: www-personal.umich.edu/~tnecamp/
 field: stat
 authors: " "

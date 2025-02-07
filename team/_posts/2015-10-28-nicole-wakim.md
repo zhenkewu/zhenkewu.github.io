@@ -12,7 +12,8 @@ image: /assets/images/team/nicole-wakim.jpg
 cv: 
 alum: true
 collaborator: false
-support: false                                  
+support: false
+showicon: true                                  
 web: 
 field: biostat
 authors: " "

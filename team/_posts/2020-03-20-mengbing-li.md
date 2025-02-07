@@ -12,7 +12,8 @@ image: /assets/images/team/mengbing-li.jpg
 cv: 
 alum: false
 collaborator: false         
-support: false                           
+support: false
+showicon: true                           
 web: limengbinggz.github.io/
 field: biostat
 authors: " "

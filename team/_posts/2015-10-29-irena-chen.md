@@ -12,7 +12,8 @@ image: /assets/images/team/irena-chen.png
 cv: 
 alum: true
 collaborator: false
-support: false                                 
+support: false
+showicon: true                                 
 web: realirena.github.io/index.html
 field: biostat
 authors: " "

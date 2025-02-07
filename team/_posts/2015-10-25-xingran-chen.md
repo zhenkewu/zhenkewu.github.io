@@ -12,7 +12,8 @@ image: /assets/images/team/xingran-chen.jpg
 cv: 
 alum: false
 collaborator: false
-support: false                                  
+support: false
+showicon: true                                  
 web: chenxingran.com/
 field: biostat
 authors: " "

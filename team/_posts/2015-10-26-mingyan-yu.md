@@ -12,7 +12,8 @@ image: /assets/images/team/mingyan-yu.jpg
 cv: 
 alum: false
 collaborator: false
-support: false                                  
+support: false
+showicon: true                                  
 web: 
 field: biostat
 authors: " "

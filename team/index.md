@@ -48,10 +48,10 @@ I'm extremely fortunate to work with several amazing students to whom I serve as
 
 <div class="bigspacer"></div>
 
-MS/Undergraduate Students:
+MS/Undergraduate Students (those writing paper with lab is marked with $^*$):
 
-- [**Peter Yang**](https://peteryang.xyz/), Undergrad, Math/Computer Science/Stat, U of Michigan. "Apple SensorKit Data Analysis"
-- [**Jianhan Zhang** working with Jitao Wang](https://www.linkedin.com/in/jianhan-zhang-175536231/), Undergrad, Pure Math, Data Science, U of Michigan. "Counterfactual Fairness in Reinforcement Learning"
+- $^*$[**Peter Yang**](https://peteryang.xyz/), Undergrad, Math/Computer Science/Stat, U of Michigan. "Apple SensorKit Data Analysis"
+- [**Jianhan Zhang**](https://www.linkedin.com/in/jianhan-zhang-175536231/), co-mentored by [Jitao Wang](/team/jitao-wang) Undergrad, Pure Math, Data Science, U of Michigan. "Counterfactual Fairness in Reinforcement Learning"
 
 <div class="bigspacer"></div>
 
@@ -85,10 +85,13 @@ MS/Undergraduate Students:
 Please send an email to zhenkewu@gmail[punto]com for updates.
 <br>
 
+<div class="bigspacer"></div>
+<div class="smalltitle text-left">Former PhD Students: </div>
+<div class="bigspacer"></div>
 
 <div class="row">
     {% for member in site.categories.team %}
-    {% if member.alum == true and member.collaborator == false %}
+    {% if member.showicon == true and member.alum == true and member.collaborator == false %}
     <div class="col-sm-3" style="text-align: center">
     {%if member.url%}
     <a href="{{ member.url }}"> <img class="photo" src="{{member.image}}"> </a> <br>
@@ -108,12 +111,13 @@ Please send an email to zhenkewu@gmail[punto]com for updates.
 <div class="bigspacer"></div>
 <div class="smalltitle text-left">Former MS Students: </div>
 <div class="bigspacer"></div>
-- **Abigail Loe**. Next position: PhD Student in UMich Biostat
-- **Xingran Chen**. Next position: PhD Student in UMich Biostat
-- **Jieru Shi**. Next position: PhD Student in UMich Biostat
-- **Jitao Wang**. Next position: PhD Student in UMich Biostat
-- **Mengbing Li**. Next position: PhD Student in UMich Biostat
+- [**Abigail Loe**](/team/abigail-loe). Next position: PhD Student in UMich Biostat
+- [**Xingran Chen**](/team/xingran-chen). Next position: PhD Student in UMich Biostat
+- [**Jieru Shi**](/team/jieru-shi). Next position: PhD Student in UMich Biostat
+- [**Jitao Wang**](/team/jitao-wang). Next position: PhD Student in UMich Biostat
+- [**Mengbing Li**](/team/mengbing-li). Next position: PhD Student in UMich Biostat
 - **Chen Chen**, MS, Biostatistics, 2022, U of Michigan, Ann Arbor. Graduate Student Research Assistant (November 2021 to August 2022; co-advise with Mike Elliott). (*Variance as a predictor for survival outcomes*). First position after graduation: PhD Student in Biostatistics, University of Toronto.
+- [**Jing Chu**](/team/jing-chu), MS in Applied Statistics, Department of Statistics, U of Michigan, Ann Arbor, 2018. Topic: Regression Extension to Bayesian Analytic Kit for Etiology Research (baker).
 - 2019 Summer: [**Zhongyuan Lyu**](https://zhongyuanlyu.github.io/), MS, Applied Statistics, U of Michigan, Ann Arbor. Summer Intern. (Latent Class Model and Sparse Additive Regression Models). First position after graduation: Hong Kong University of Technology and Science, Math PhD Student
 
 
@@ -121,7 +125,7 @@ Please send an email to zhenkewu@gmail[punto]com for updates.
 <div class="smalltitle text-left">Former Undergraduate Students (those who wrote paper in the lab is marked with $^*$): </div>
 <div class="bigspacer"></div>
 - 2024 Fall: [**Owen Yoo**](https://owen-hy.github.io/personal-web/), Undergrad,  Statistics and Data Science, Minor in Music, U of Michigan. "Prior elicitation algorithms for inferring causes of death from computer-coded verbal autopsy data"
-- $^*$2023 Summer: **Bolin Wu**, Undergrad, Computer Science, U Of Michigan, Ann Arbor. "Shinyapp for Enhancing Latent Class Analysis using Dirichlet Diffusion Tree". First position after graduation: Carnegie Mellon University, Master of Computational Data Science Program. 
+- $^*$2023 Summer: **Bolin Wu** (co-mentored by [Mengbing Li](/team/mengbing-li)), Undergrad, Computer Science, U Of Michigan, Ann Arbor. "Shinyapp for Enhancing Latent Class Analysis using Dirichlet Diffusion Tree". First position after graduation: Carnegie Mellon University, Master of Computational Data Science Program. 
 - 2021 Summer: **Jiayuan Dong**, MS, Accelerated Master Degree Program (ADMP), U of Michigan, Ann Arbor; Summer Intern. (Readings on Probablistic Graphical Models). First position after graduation: UMich, Mechanical Engineering PhD Student
 
 

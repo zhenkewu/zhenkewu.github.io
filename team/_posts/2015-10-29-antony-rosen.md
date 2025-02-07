@@ -12,7 +12,8 @@ image: https://www.hopkinsmedicine.org/sebin/b/t/586C84803ED90B12699900F893D7817
 cv: 
 alum: false
 collaborator: true
-support: false                                  
+support: false
+showicon: false                                  
 web: cellbio.jhmi.edu/people/faculty/antony-rosen-md
 field: Autoimmune Diseases and Cancer
 authors: " "
