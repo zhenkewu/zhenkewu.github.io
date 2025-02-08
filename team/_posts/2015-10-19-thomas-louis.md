@@ -12,7 +12,8 @@ image: /assets/images/team/thomas-louis.jpg
 cv: 
 alum: false
 collaborator: true
-support: false                                  
+support: false
+showicon: false                                  
 web: www.biostat.jhsph.edu/~tlouis/
 field: stat
 authors: " "

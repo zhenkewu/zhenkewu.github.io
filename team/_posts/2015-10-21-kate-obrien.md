@@ -12,7 +12,8 @@ image: /assets/images/team/kate-obrien.png
 cv: 
 alum: false
 collaborator: true
-support: false                                  
+support: false
+showicon: false                                  
 web: en.wikipedia.org/wiki/Katherine_O%27Brien
 field: pneumonia
 authors: " "

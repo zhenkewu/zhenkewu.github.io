@@ -12,7 +12,8 @@ image: https://www.hopkinsrheumatology.org/wp-content/uploads/connections-images
 cv: 
 alum: false
 collaborator: true 
-support: false                         
+support: false
+showicon: false                        
 web: goo.gl/MLDEUJ
 field: Autoimmune Diseases and Cancer
 authors: " "

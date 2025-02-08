@@ -12,7 +12,8 @@ image: /assets/images/team/scott-zeger.jpg
 cv: 
 alum: false
 collaborator: true
-support: false                           
+support: false
+showicon: false                           
 web: goo.gl/e7CI9a
 field: stat
 authors: " "

@@ -12,7 +12,8 @@ image: /assets/images/team/laura-hammitt.jpg
 cv: 
 alum: false
 collaborator: true     
-support: false   
+support: false
+showicon: false      
 field: pneumonia                          
 web: goo.gl/uJWYjX
 authors: " "
