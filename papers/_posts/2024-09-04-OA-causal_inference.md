@@ -3,16 +3,16 @@ layout: paper
 title: "Outcome Adaptive Propensity Score Methods for Handling Censoring and High-Dimensionality: Application to Insurance Claims"
 image: /assets/images/papers/OA_causal.png
 authors: Jiacong Du, Youfei Yu, Min Zhang, Zhenke Wu, Andrew Ryan, Bhramar Mukherjee
-year: 2024
-shortref: Du et al. (2024). Statistical Methods in Medical Research. In press.
+year: 2025
+shortref: Du et al. (2025). Statistical Methods in Medical Research.
 journal: Statistical Methods in Medical Research.
 pdf: 
 slides: 
 supplement: 
 poster: 
 github: 
-doi: 
-external_link: https://arxiv.org/abs/2208.00114
+doi: 10.1177/09622802241306856
+external_link: 
 video_link: 
 type: statistical
 tags:
