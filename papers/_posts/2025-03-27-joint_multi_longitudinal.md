@@ -12,7 +12,7 @@ supplement:
 poster: 
 github: 
 doi: 
-external_link: 
+external_link: https://arxiv.org/abs/2503.24146
 video_link: 
 type: statistical
 tags:
