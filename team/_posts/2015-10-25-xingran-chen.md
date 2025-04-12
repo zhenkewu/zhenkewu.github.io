@@ -31,3 +31,9 @@ Other info: "I learned chess during my childhood and Japanese during my undergra
 2022-2024, MS in Biostatistics, University of Michigan, Ann Arbor, 
 
 2017-2021, BS in Statistics (Data Science Track), Shanghai University of Finance and Economics, China
+
+
+# Awards:
+
+* 2023, Outstanding First Year Masters Student (Biostatistics)
+* 2025, Best Poster at Michigan Student Symposium for Interdisciplinary Statistical Sciences (MSSISS), University of Michigan
