@@ -118,7 +118,7 @@ Please send an email to zhenkewu@gmail[punto]com for updates.
 - [**Mengbing Li**](/team/mengbing-li). Next position: PhD Student in UMich Biostat
 - **Chen Chen**, MS, Biostatistics, 2022, U of Michigan, Ann Arbor. Graduate Student Research Assistant (November 2021 to August 2022; co-advise with Mike Elliott). (*Variance as a predictor for survival outcomes*). First position after graduation: PhD Student in Biostatistics, University of Toronto.
 - [**Jing Chu**](/team/jing-chu), MS in Applied Statistics, Department of Statistics, U of Michigan, Ann Arbor, 2018. Topic: Regression Extension to Bayesian Analytic Kit for Etiology Research (baker).
-- 2019 Summer: [**Zhongyuan Lyu**](https://zhongyuanlyu.github.io/), MS, Applied Statistics, U of Michigan, Ann Arbor. Summer Intern. (Latent Class Model and Sparse Additive Regression Models). First position after graduation: Hong Kong University of Technology and Science, Math PhD Student
+- 2019 Summer: [**Zhongyuan Lyu**](https://zhongyuanlyu.github.io/), MS, Applied Statistics, U of Michigan, Ann Arbor. Summer Intern. (Latent Class Model and Sparse Additive Regression Models). First position after graduation: Hong Kong University of Technology and Science, Math PhD Student. Now: Lecturer (Assistant Professor) in the Discipline of Business Analytics, University of Sydney Business School,
 
 
 <div class="bigspacer"></div>

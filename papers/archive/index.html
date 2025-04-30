@@ -32,10 +32,6 @@ categories: papers
 	</div>
 </div>
 
-
-
-See <a href="https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en">Google Scholar</a> for a more complete list. <br>
-
 <div>
 {% include search-form.html %}
 </div>
@@ -45,6 +41,12 @@ See <a href="https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en">Googl
 <div class="bigspacer"></div>
 
 {% assign years = site.categories.papers | map: 'year' | uniq %}
+
+
+<b >Some papers are not listed below. See <a href="https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en">Google Scholar</a> for a more complete list. </b><br>
+
+<div class="bigspacer"></div>
+
 
 <!-- submitted -->
 {% for year in years %}
