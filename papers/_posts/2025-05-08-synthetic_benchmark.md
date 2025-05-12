@@ -11,7 +11,7 @@ slides:
 supplement: 
 poster: 
 github: https://github.com/chenxran/synthEHRella
-doi: 
+doi: 10.1093/jamia/ocaf082
 external_link: https://arxiv.org/abs/2411.04281
 video_link: 
 type: statistical

@@ -31,3 +31,7 @@ Abby is interested in social determinants of health, methods in sampling and soc
 2021-2023, MS Student in Biostatistics, University of Michigan, Ann Arbor
 
 2021, B.A., Mathematics and minor in Women's & Gender Studies, Carleton College, Northfield, MN
+
+# Awards:
+
+* 2025, [Gertrude M. Cox Scholarship](https://www.amstat.org/your-career/awards/gertrude-m-cox-scholarship). American Statistical Association.
