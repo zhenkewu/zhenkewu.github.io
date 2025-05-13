@@ -48,7 +48,7 @@ I'm extremely fortunate to work with several amazing students to whom I serve as
 
 <div class="bigspacer"></div>
 
-MS/Undergraduate Students (those writing paper with lab is marked with $^*$):
+Undergraduate Students (those writing paper with lab is marked with $^*$):
 
 - $^*$[**Peter Yang**](https://peteryang.xyz/), Undergrad, Math/Computer Science/Stat, U of Michigan. "Apple SensorKit Data Analysis"
 - [**Jianhan Zhang**](https://www.linkedin.com/in/jianhan-zhang-175536231/), co-mentored by [Jitao Wang](/team/jitao-wang) Undergrad, Pure Math, Data Science, U of Michigan. "Counterfactual Fairness in Reinforcement Learning"
