@@ -10,8 +10,8 @@ pdf:
 slides:
 supplement:
 github:
-doi:
-external_link: https://shorturl.at/j7VrB
+doi: 10.1016/j.apmr.2024.12.022
+external_link:
 video_link: 
 type: substantive
 tags:

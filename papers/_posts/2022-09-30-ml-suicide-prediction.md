@@ -12,7 +12,7 @@ supplement:
 poster: 
 github: 
 doi: 10.1017/S0033291722003014
-external_link: https://shorturl.at/chOWX
+external_link:
 video_link: 
 type: substantive
 tags:

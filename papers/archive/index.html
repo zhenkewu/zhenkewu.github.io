@@ -43,7 +43,7 @@ categories: papers
 {% assign years = site.categories.papers | map: 'year' | uniq %}
 
 
-<b >Some papers are not listed below. See <a href="https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en">Google Scholar</a> for a more complete list. </b><br>
+<b >Some papers are not listed below. See <a href="https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en" class="label label-primary">Google Scholar</a> for a more complete list. </b><br>
 
 <div class="bigspacer"></div>
 
@@ -96,14 +96,15 @@ categories: papers
 								 {% endif %}
 							 {% endif %}
 							{% endfor %}
-							  ► <em>{{ paper.journal }}</em> 
-						{%if paper.external_link%}<a href="{{ paper.external_link}}" class="off">[paper link]</a>{% endif %}
-						{%if paper.github%}<a href="{{ paper.github }}" class="off">[code]</a>{% endif %}
-						{%if paper.doi%}<a href="http://dx.doi.org/{{ paper.doi }}" class="off">[doi]</a>{% endif %}
-						{%if paper.pdf%}<a href="{{ paper.pdf }}" class="off">[pdf]</a>{% endif %}
-						{%if paper.poster%}<a href="{{ paper.poster }}" class="off">[poster]</a>{% endif %}
-						{%if paper.supplement%}<a href="{{ paper.supplement }}" class="off">[supplement]</a>{% endif %}					
-						{%if paper.slides%}<a href="{{ paper.github }}" class="off">[slides]</a>{% endif %}
+							  <!-- ► <em>{{ paper.journal }}</em>  -->
+							  {%if paper.external_link%}<a href="{{ paper.external_link}}" class="label label-info">[paper link]</a>{% endif %}
+							  {%if paper.github%}<a href="{{ paper.github }}" class="label label-red">[code]</a>{% endif %}
+							  {%if paper.doi%}<a href="http://dx.doi.org/{{ paper.doi }}" class="label label-default">[doi]</a>{% endif %}
+							  <!-- {%if paper.pdf%}<a href="{{ paper.pdf }}" class="off">[pdf]</a>{% endif %} -->
+							  {%if paper.pdf%}<a href="{{ paper.pdf }}" class="label label-primary">[pdf]</a>{% endif %}
+							  {%if paper.poster%}<a href="{{ paper.poster }}" class="label label-green">[poster]</a>{% endif %}
+							  {%if paper.supplement%}<a href="{{ paper.supplement }}" class="label label-primary">[supplement]</a>{% endif %}					
+							  {%if paper.slides%}<a href="{{ paper.slides }}" class="label label-purple">[slides]</a>{% endif %}
 					<!-- </p> -->
 					</div>
 				</div>
@@ -165,13 +166,14 @@ categories: papers
 							 {% endif %}
 							{% endfor %}
 							► <em>{{ paper.journal }}</em> 
-							{%if paper.external_link%}<a href="{{ paper.external_link}}" class="off">[paper link]</a>{% endif %}
-							{%if paper.github%}<a href="{{ paper.github }}" class="off">[code]</a>{% endif %}
-							{%if paper.doi%}<a href="http://dx.doi.org/{{ paper.doi }}" class="off">[doi]</a>{% endif %}
-							{%if paper.pdf%}<a href="{{ paper.pdf }}" class="off">[pdf]</a>{% endif %}
-							{%if paper.poster%}<a href="{{ paper.poster }}" class="off">[poster]</a>{% endif %}
-							{%if paper.supplement%}<a href="{{ paper.supplement }}" class="off">[supplement]</a>{% endif %}					
-							{%if paper.slides%}<a href="{{ paper.github }}" class="off">[slides]</a>{% endif %}
+							{%if paper.external_link%}<a href="{{ paper.external_link}}" class="label label-info">[paper link]</a>{% endif %}
+							{%if paper.github%}<a href="{{ paper.github }}" class="label label-red">[code]</a>{% endif %}
+							{%if paper.doi%}<a href="http://dx.doi.org/{{ paper.doi }}" class="label label-default">[doi]</a>{% endif %}
+							<!-- {%if paper.pdf%}<a href="{{ paper.pdf }}" class="off">[pdf]</a>{% endif %} -->
+						    {%if paper.pdf%}<a href="{{ paper.pdf }}" class="label label-primary">[pdf]</a>{% endif %}
+							{%if paper.poster%}<a href="{{ paper.poster }}" class="label label-green">[poster]</a>{% endif %}
+							{%if paper.supplement%}<a href="{{ paper.supplement }}" class="label label-primary">[supplement]</a>{% endif %}					
+							{%if paper.slides%}<a href="{{ paper.slides }}" class="label label-purple">[slides]</a>{% endif %}
 					<!-- </p> -->
 					</div>
 				</div>
