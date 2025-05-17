@@ -173,15 +173,17 @@ categories:
 
 **Name in Chinese:**[ 吴振科 <i class="fa-brands fa-soundcloud"></i>](https://soundcloud.com/zhenke-wu/zhenke-wu-name). Pronounced: "Jen-Kuh Wu".
 
+[[Bio + Contact]](/team/zhenke-wu)
 
-[[Publications]](/papers/) [[CV-pdf]](assets/pdfs/team/zhenkewu_cv.pdf) [[one-page CV pdf]](assets/pdfs/team/zhenkewu_cv_one_page.pdf) [[CV-overleaf]](https://www.overleaf.com/read/dbktqfjxccbv)
+[[Publications]](/papers/) by: [[Year]](papers/archive/index) or [[Topic]](papers/archive/index_by_topic), 
 
-[[<i class="fa-brands fa-google-scholar"></i>Google Scholar]](https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en) [[<i class="fa-brands fa-github"></i>GitHub]](https://github.com/zhenkewu?tab=activity)
+CV: [[pdf]](assets/pdfs/team/zhenkewu_cv.pdf) or [[1-pager]](assets/pdfs/team/zhenkewu_cv_one_page.pdf) or [[Overleaf]](https://www.overleaf.com/read/dbktqfjxccbv)
 
-[[<i class="fa-brands fa-x-twitter"></i>]](https://twitter.com/ZhenkeWu)[[Contact]](/team/zhenke-wu) [[Bio]](/team/zhenke-wu) 
+[[<i class="fa-brands fa-google-scholar"></i> Google Scholar]](https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en) [[<i class="fa-brands fa-github"></i> GitHub]](https://github.com/zhenkewu?tab=activity) [[<i class="fa-brands fa-x-twitter"></i>]](https://twitter.com/ZhenkeWu)
 
+The best way to contact me is email (zhenkewu [arroba] umich [punto] edu). 
 
-The best way to contact me is email (zhenkewu [arroba] umich [punto] edu). Direction to my office is [here](assets/pdfs/team/zhenkewu-office.pdf).
+Direction to my office is [here](assets/pdfs/team/zhenkewu-office.pdf).
 
 <hr/>
 I am an [Associate Professor](https://sph.umich.edu/faculty-profiles/wu-zhenke.html) (with tenure) in the [Department of Biostatistics](https://sph.umich.edu/biostat/) at [University of Michigan](https://www.umich.edu) and a faculty affiliate at [Michigan Institute for Data and AI in Society (MIDAS)](http://midas.umich.edu). 
@@ -195,8 +197,6 @@ I am an [Associate Professor](https://sph.umich.edu/faculty-profiles/wu-zhenke.h
 **Research Theme**:
 
 **Tagline**: AI for affordable and individualized healthcare; computational and interventional digital health. 
-
-[View publication samples by topic](papers/archive/index_by_topic)
 
 My research is motivated by biomedical and public health problems and is centered on the design and application of statistical methods that inform health decisions made by individuals, or precision medicine. Towards this goal, I focus on two lines of methodological research: a) structured Bayesian latent variable models for clustering and disease subtyping, and b) study design, causal and reinforcement learning methods for evaluating sequential interventions that tailor to individuals' changing circumstances such as in interventional mobile health studies. I am committed to developing robust, scalable, and interpretable statistical methods to harness real-world, high-dimensional, dynamic data for individualized health. The methods and software developed so far have supported studies in diverse scientiﬁc ﬁelds including infectious disease epidemiology, autoimmune diseases, mental health, behavioral health, and cancer. I am also exploring the intersection between generative AI and biostatistics.
 
