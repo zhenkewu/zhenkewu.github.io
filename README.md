@@ -2,6 +2,7 @@ Zhenke Wu's Research Website: [click to view](http://zhenkewu.com)
 
 # Notes
 
+* [2025/05/28] Added IpMeta and Google Tag Manager.
 
 * [2024/10/26] Added paper by topic; it uses `pages_list_paper` and `tags_list_paper` in `JB` folder. They will look for `tags` in papers.
   * when specifying tags, please use lower cases; it is painful to implement sorting in a case insensitive way (if you know, let me know!)
