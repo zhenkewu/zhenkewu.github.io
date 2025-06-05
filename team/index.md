@@ -55,7 +55,11 @@ Undergraduate Students (those writing paper with lab is marked with $^*$):
 
 <div class="bigspacer"></div>
 
-Staff:
+<hr/>
+<div class="bigspacer"></div>
+<div class="smalltitle text-left">Research Staff </div>
+<div class="bigspacer"></div>
+
 - Zihan Wang. MS, Biostatistics, U of Michigan (2025). 
 
 
