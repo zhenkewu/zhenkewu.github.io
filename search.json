@@ -8,7 +8,8 @@ layout: null
         "content"  : "{{ post.content | strip_html | strip_newlines | remove_chars | escape }}",
         "year"     : "{{ post.year }}",
         "author"   : "{{ post.authors}}",
-        "journal"    : "{{ post.journal}}",
+        {% if post.journal and post.journal != "" %}"journal"  : "{{ post.journal}}",
+                {% else %}"journal"  : "submitted",{% endif %}
         "category" : "{{ post.category }}",
         "tags"     : "{{ post.tags | join: ', ' }}",
         "url"      : "{{ site.baseurl }}{{ post.url }}"

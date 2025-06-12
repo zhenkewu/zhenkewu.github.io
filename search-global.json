@@ -7,8 +7,12 @@ layout: null
         "title"    : "{{ post.title | escape }}",
         "content"  : "{{ post.content | newline_to_br | strip_newlines | replace: '<br />', ' '| strip_html |  remove_chars | remove: '\'| remove:  "	" | escape }}",
         "year"     : "{{ post.date | date: "%Y" }}",
-        "author"   : "{{ post.authors}}",
+        {% if post.year and post.year != "" %}"yearpaper"  : "{{ post.year}}",
+        {% else %}"yearpaper"  : ">",{% endif %} 
+        "author"   : "{{ post.authors }}",
         "category" : "{{ post.categories }}",
+        {% if post.journal and post.journal != "" %}"journal"  : "{{ post.journal}}",
+        {% else %}"journal"  : ">",{% endif %}
         "tags"     : "{{ post.tags | join: ', ' }}",
         "url"      : "{{ site.baseurl }}{{ post.url }}"
         } {% unless forloop.last %},{% endunless %}

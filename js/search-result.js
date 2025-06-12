@@ -1,4 +1,4 @@
-//search template diferent from 
+//search template different from 
 function simple_search(result_template,sortfun,jsonfile) {
 
   SimpleJekyllSearch({

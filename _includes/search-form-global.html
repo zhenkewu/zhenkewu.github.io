@@ -44,7 +44,7 @@
 
 <!-- Configuration -->
 <script>
-  var global_result_template = '<li>[<em>{category}</em>] ({year}) <a href="{url}">{title}</a> {author}</li>';
+  var global_result_template = '<li>[<em >{category}</em>] ({year}) <i class="label label-default"> {journal}</i> <a href="{url}">{title}</a> {author} </li>';
 
   function sort_curr(a, b) {
     var astr = String(a.category) + "-" + String(a.year);
