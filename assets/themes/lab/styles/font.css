@@ -1,6 +1,6 @@
 @font-face {
     font-family: mottoFont;
-    src: url("../fonts/SCRIPTIN.ttf") format("TrueType");
+    src: local("../fonts/SCRIPTIN.ttf") format("TrueType");
 }
 
 @font-face {
@@ -8,8 +8,15 @@
     src: url("../fonts/angelina.ttf") format("TrueType");
 }
 
+/* all characters font */
 @font-face {
     font-family: jinkaiFont;
     src: url("../fonts/jinkai.ttf") format("TrueType");
 }
 
+/* Chinese characters font */
+@font-face {
+    font-family: jinkaiFont-cn;
+    src: url("../fonts/jinkai.ttf") format("TrueType");
+    unicode-range: U+4E00-9FFF; /* Chinese characters range */
+}
