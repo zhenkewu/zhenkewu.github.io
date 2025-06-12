@@ -2,7 +2,7 @@
 ---
 
 $font-size-base: 16px;
-$font-stack:    "museo-sans", Optima, sans-serif;
+$font-stack:    jinkaiFont, "museo-sans", Optima, sans-serif;
 $primary-color: #000000;
 $font-weight-base: 300;
 $heavy-font-weight: 700;
@@ -492,9 +492,9 @@ color:black;
 //   }
 
 
-  body {
-	font-family: sans-serif
-  }
+//   body {
+// 	font-family: sans-serif
+//   }
 
 
   // castle
@@ -694,9 +694,9 @@ color:black;
 
 	// search bar input
 
-	body {
-		font-family: 'Roboto', Arial, sans-serif;
-	  }
+	// body { // this can control the navbar font only. not sure why
+	// 	font-family: 'Roboto', Arial, sans-serif;
+	//   }
 	  
 	  .wrapper {
 		width: 100%;
