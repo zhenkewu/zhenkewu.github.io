@@ -4,7 +4,7 @@ title: "Improving outcomes for care partners of individuals with traumatic brain
 image: /assets/images/papers/careqol_main.png
 authors: Noelle Carlozzi, Jonathan Troost, Srijan Sen, Sung Won Choi, Zhenke Wu, Jennifer Miner, Wendy Lombard, Christopher Graves, Angelle Sander
 year: 2025
-shortref: "Carlozzi et al. (2025). Archives of Physical Medicine and Rehabilitation"
+shortref: Carlozzi et al.
 journal: "Archives of Physical Medicine and Rehabilitation"
 pdf:
 slides:

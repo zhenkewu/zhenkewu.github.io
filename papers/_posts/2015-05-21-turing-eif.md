@@ -4,7 +4,7 @@ title: Deductive Derivation and Turing-Computerization of Semiparametric Efficie
 image: /assets/images/papers/turing-eif.png
 authors: Constantine Frangakis, Tianchen Qian, Zhenke Wu, Ivan Diaz
 year: 2015
-shortref: Frangakis et al. (2015). Biometrics
+shortref: Frangakis et al.
 journal: "Biometrics"
 pdf: /assets/pdfs/papers/turing-eif.pdf
 supplement: /assets/pdfs/papers/turing-eif-supp.pdf

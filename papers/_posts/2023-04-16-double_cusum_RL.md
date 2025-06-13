@@ -4,8 +4,8 @@ title: A Robust Test for the Stationarity Assumption in Sequential Decision Maki
 image: /assets/images/papers/double_cusum_RL.png
 authors: Jitao Wang, Chengchun Shi, Zhenke Wu
 year: 2023
-shortref: Wang et al. (2023). ICML
-journal: "ICML"
+shortref: Wang et al.
+journal: ICML
 pdf: /assets/images/pdfs/double_cusum_RL.pdf
 slides: 
 supplement: 

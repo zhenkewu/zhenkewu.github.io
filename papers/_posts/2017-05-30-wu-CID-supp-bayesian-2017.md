@@ -4,7 +4,7 @@ title: "Bayesian Estimation of Pneumonia Etiology: Epidemiologic Considerations 
 image: /assets/images/papers/cid_bayesian.png
 authors: Maria Deloria-Knoll,  Wei Fu,  Qiyuan Shi,  Christine Prosperi,  Zhenke Wu,  Laura Hammitt,  Daniel R. Feikin, Henry C. Baggett,  Stephen R.C. Howie,  J. Anthony G. Scott,  David R. Murdoch,  Shabir A. Madhi,  Donald M. Thea, W. Abdullah Brooks,  Karen L. Kotloff,  Mengying Li,  Daniel E. Park,  Wenyi Lin,  Orin S. Levine, Katherine O’Brien, Scott Zeger
 year: 2017
-shortref: Deloria-Knoll et al. (2017) Clin Infect Dis
+shortref: Deloria-Knoll et al.
 journal: "Clinical Infectious Diseases"
 pdf: 
 supplement: 

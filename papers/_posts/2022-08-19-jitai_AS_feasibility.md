@@ -4,7 +4,7 @@ title: "An App-Based Just-in-Time-Adaptive Self-Management Intervention for Care
 image: /assets/images/papers/jitai_tbi.png
 authors: Noelle Carlozzi, Sung Won Choi, Zhenke Wu, Jonathan Troost, Angela Lyden, Jennifer Miner, Christopher Graves, Jitao Wang, Xinghui Yan, Srijan Sen
 year: 2022
-shortref: "Carlozzi et al. (2022). Rehabilitation Psychology"
+shortref: Carlozzi et al.
 journal: "Rehabilitation Psychology"
 pdf:
 slides:

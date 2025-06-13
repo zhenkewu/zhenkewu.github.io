@@ -4,8 +4,8 @@ title: "Does the Dosing of Mobile-based Just-in-Time-Adaptive Self-Management Pr
 image: /assets/images/papers/careqol_dose.png
 authors: Jitao Wang, Zhenke Wu, Sung Won Choi, Srijan Sen, Xinghui Yan, Jennifer Miner, Angelle Sander, Angela Lyden, Johnathan Troost, Noelle Carlozzi
 year: 2023
-shortref: "Wang et al. (2023). JMIR Formative Research"
-journal: "JMIR Formative Research"
+shortref: Wang et al.
+journal: JMIR Formative Research
 pdf:
 slides:
 supplement:

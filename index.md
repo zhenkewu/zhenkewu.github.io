@@ -222,7 +222,7 @@ I am deeply passionate about advancement of modern Bayesian latent variable meth
 
 
 - *Check this out and send me an email if interested in collaborating!* 
-  - [**AI in Science Postdoctoral Fellowship Program**](https://midas.umich.edu/fellows/apply-2024/#submission); The program will pay a competitive salary plus benefits. Travel to funder’s AI in Science events will also be covered.
+  - [**AI in Science Postdoctoral Fellowship Program**](https://midas.umich.edu/training/postdoctoral-programs/schmidt-ai-in-science-postdoctoral-fellowship/); The program will pay a competitive salary plus benefits. Travel to funder’s AI in Science events will also be covered.
 
 
 **Working Group**:
@@ -273,7 +273,8 @@ I currently collaborate closely with
 					</a>
 					<br/>
 					<div class='shortref note'>
-					{{ paper.shortref }}
+					{{ paper.shortref }} ({{ paper.year }}). {% if paper.journal and paper.journal != "" %}<i>{{ paper.journal }}.</i>
+          {% else %}{% endif %}
 					</div>
 				</div>
 				<div class="smallspacer"></div>

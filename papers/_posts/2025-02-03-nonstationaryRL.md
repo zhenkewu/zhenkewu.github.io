@@ -4,7 +4,7 @@ title: "Testing Stationarity and Change Point Detection in Reinforcement Learnin
 image: /assets/images/papers/nonstationaryRL.png
 authors: Mengbing Li, Chengchun Shi, Zhenke Wu, Piotr Fryzlewicz
 year: 2025
-shortref: Li et al. (2025). Annals of Statistics
+shortref: Li et al.
 journal: Annals of Statistics
 pdf: 
 slides: 

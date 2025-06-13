@@ -4,7 +4,7 @@ title: "Joint Modeling of Multiple Longitudinal Biomarkers and Survival Outcomes
 image: /assets/images/papers/joint_multi_longitudinal.png
 authors: Mingyan Yu, Zhenke Wu, Michelle Hood, Carrie Karvonen-Gutierrez, Sioban Harlow, Michael R Elliott
 year: submitted
-shortref: Yu et al. (2025+). Submitted.
+shortref: Yu et al.
 journal:
 pdf: 
 slides: 

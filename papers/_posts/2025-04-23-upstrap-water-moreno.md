@@ -4,7 +4,7 @@ title: "Comparing the Power of Low vs High-Precision Methods for Measuring E. co
 image: /assets/images/papers/upstrap_water.png
 authors: Andrea Sosa-Moreno, Gwenyth O. Lee, Zhenke Wu, S. Aya Fanny, Gabriel Trueba, Philip J. Cooper, Karen Levy, Joseph N. S. Eisenberg
 year: 2025
-shortref: "Sosa-Moreno et al. (2025). ACS ES&T Water"
+shortref: Sosa-Moreno et al.
 journal: "ACS ES&T Water"
 pdf:
 slides:

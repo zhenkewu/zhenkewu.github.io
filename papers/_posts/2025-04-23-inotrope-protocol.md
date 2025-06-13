@@ -4,7 +4,7 @@ title: "Clinician attitudes, opinions and practice patterns regarding inotrope u
 image: /assets/images/papers/inotrope_protocol.png
 authors: Michael R Mathis, Kamolnat Mirizzi, Courtney J Burns, Allison M Janda, Graciela Mentz, Keith D Aaronson, Zhenke Wu, Donald S Likosky, Francis D Pagani, Sachin Kheterpal, Kamrouz Ghadimi, Milisa Manojlovich, Timothy Guetterman
 year: 2025
-shortref: "Mathis et al. (2025). BMJ Open"
+shortref: Mathis et al.
 journal: "BMJ Open"
 pdf:
 slides:

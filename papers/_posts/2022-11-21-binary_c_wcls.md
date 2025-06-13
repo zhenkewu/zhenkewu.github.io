@@ -4,7 +4,7 @@ title: "Estimating Time-Varying Direct and Indirect Causal Excursion Effects wit
 image: /assets/images/papers/binary_c_MRT.png
 authors: Jieru Shi, Zhenke Wu, Walter Dempsey
 year: submitted
-shortref: Shi, Wu and Dempsey (2022+). Submitted.
+shortref: Shi, Wu and Dempsey
 journal:
 pdf: 
 slides: 

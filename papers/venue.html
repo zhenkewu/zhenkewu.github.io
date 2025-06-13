@@ -1,0 +1,122 @@
+---
+layout: default
+title: "papers"
+categories: papers
+---
+{% include JB/setup %}
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="centered-pills">
+			<ul class="nav nav-pills note-button">
+				<li role="presentation">
+					<a class="off" href="/papers/">
+						<i class="fa fa-binoculars fa-fw"></i> Squares
+					</a>
+				</li>
+				<li role="presentation" >
+					<a class="off" href="/papers/archive/">
+						<i class="fa fa-calendar fa-fw"></i> Year
+					</a>
+				</li>
+				<li role="presentation">
+					<a class="off" href="/papers/archive/index_by_topic">
+						<i class="fa fa-podcast fa-fw"></i> Topic
+					</a>
+				</li>
+                <li role="presentation"  class="active">
+					<a class="off" href="/papers/archive/index_by_venue">
+						<i class="fa fa-podcast fa-fw"></i> Venue
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="bigspacer"></div>
+	</div>
+</div>
+
+
+
+See <a href="https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en">Google Scholar</a> for a more complete list. <br>
+
+<div>
+{% include search-form.html %}
+</div>
+
+<div class="container">
+<div class="bigspacer"></div>
+<b >Some papers are not listed below. See <a href="https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en" class="label label-primary">Google Scholar</a> for a more complete list. </b><br>
+<br>
+
+<!-- {% assign journals = site.categories.papers | map: 'journal' | compact | uniq | sort %} -->
+
+{% assign journals = site.categories.papers | map: 'journal'  | compact | uniq | sort %}
+
+
+
+{% for journal in journals %}
+<div class="smalltitle text-left " style="color:#00274C"><b >{{ journal }}</b></div>
+    {% assign paper_num = 0 %}
+	{% for paper in site.categories.papers %}
+	{% if paper.journal == journal%}
+	        {% assign paper_num = paper_num | plus: 1 %}
+			<div class="col-md-12 paperbox">
+				<div class="media">
+					<div class="media-body">
+						<div>{{ paper_num }}. <a href="{{ paper.url }}" class="off" style="font-family: Arial"> {{ paper.title }}</a></div>
+						<!-- <p class="note">  -->
+							{% assign authorsq = paper.authors | split: ', ' %}
+							{% for author_iter in authorsq %}
+							{% if forloop.last %}
+								 {% assign in_file = false %}
+								 {% assign in_file_web = false %}
+								 {% for person in site.categories.team %}
+										 {% if author_iter contains person.title %}
+											 {% assign in_file = true %}
+											 {% assign in_file_web = person.web %}
+										{% endif %}
+								 {% endfor %}
+								 
+								 {% if in_file %}
+												 <a href="http://{{ in_file_web }}">{{ author_iter }}</a> ({{ paper.year }}). 
+								 {% else %}
+												 {{ author_iter }} ({{paper.year}}).
+								 {% endif %}
+							 {% else %}
+								 {% assign in_file = false %}
+								 {% assign in_file_web = false %}
+								 {% for person in site.categories.team %}
+										 {% if author_iter contains person.title %}
+											 {% assign in_file = true %}
+											 {% assign in_file_web = person.web %}
+										{% endif %}
+								 {% endfor %}
+							 
+								 {% if in_file %}
+												 <a href="http://{{ in_file_web }}">{{ author_iter }}</a>, 
+								 {% else %}
+												 {{ author_iter }},
+								 {% endif %}
+							 {% endif %}
+							{% endfor %}
+							► <em>{{ paper.journal }}</em> 
+							{%if paper.external_link%}<a href="{{ paper.external_link}}" class="label label-info">[paper link]</a>{% endif %}
+							{%if paper.github%}<a href="{{ paper.github }}" class="label label-red">[code]</a>{% endif %}
+							{%if paper.doi%}<a href="http://dx.doi.org/{{ paper.doi }}" class="label label-default">[doi]</a>{% endif %}
+							<!-- {%if paper.pdf%}<a href="{{ paper.pdf }}" class="off">[pdf]</a>{% endif %} -->
+						    {%if paper.pdf%}<a href="{{ paper.pdf }}" class="label label-primary">[pdf]</a>{% endif %}
+							{%if paper.poster%}<a href="{{ paper.poster }}" class="label label-green">[poster]</a>{% endif %}
+							{%if paper.supplement%}<a href="{{ paper.supplement }}" class="label label-primary">[supplement]</a>{% endif %}					
+							{%if paper.slides%}<a href="{{ paper.slides }}" class="label label-purple">[slides]</a>{% endif %}
+					<!-- </p> -->
+					</div>
+				</div>
+				<div class="bigspacer"></div>
+				<div class="spacer"></div>
+			</div>
+	{% endif %}
+	{% endfor %}
+{% endfor %}
+    
+
+</div>

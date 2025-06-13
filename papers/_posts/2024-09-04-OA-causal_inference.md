@@ -4,8 +4,8 @@ title: "Outcome Adaptive Propensity Score Methods for Handling Censoring and Hig
 image: /assets/images/papers/OA_causal.png
 authors: Jiacong Du, Youfei Yu, Min Zhang, Zhenke Wu, Andrew Ryan, Bhramar Mukherjee
 year: 2025
-shortref: Du et al. (2025). Statistical Methods in Medical Research.
-journal: Statistical Methods in Medical Research.
+shortref: Du et al.
+journal: Statistical Methods in Medical Research
 pdf: 
 slides: 
 supplement: 

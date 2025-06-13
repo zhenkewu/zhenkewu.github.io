@@ -4,8 +4,8 @@ title: A Robust Functional EM Algorithm for Incomplete Panel Count Data
 image: /assets/images/papers/functional_EM.png
 authors: Alexander Moreno, Zhenke Wu, David Wetter, Cho Lam, Inbal Nahum-Shani, Walter Dempsey, James Rehg
 year: 2020
-shortref: Moreno et al. (2020). NeurIPS. 
-journal: "NeurIPS2020"
+shortref: Moreno et al.
+journal: "NeurIPS"
 pdf: 
 slides: 
 supplement: https://bit.ly/3l973EP

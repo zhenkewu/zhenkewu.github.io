@@ -4,7 +4,7 @@ title: Kernel Multimodal Continuous Attention
 image: /assets/images/papers/kernel_attention.png
 authors: Alexander Moreno, Zhenke Wu, Supriya Nagesh, Walter Dempsey, James Rehg
 year: 2022
-shortref: Moreno et al. (2022). NeurIPS. 
+shortref: Moreno et al.
 journal: "NeurIPS"
 pdf: /assets/images/pdfs/kernel_multimodal_continuous_attention.pdf
 slides: 

@@ -4,8 +4,8 @@ title: "Using machine learning with intensive longitudinal data to predict depre
 image: /assets/images/papers/ml-suicide-prediction.png
 authors: Adam Horwitz, Shane Kentopp, Jennifer Cleary, Katherine Ross, Zhenke Wu, Srijan Sen, Ewa K. Czyz
 year: 2022
-shortref: Horwitz et al. (2022). Psychological Medicine. 
-journal: Psychological Medicine.
+shortref: Horwitz et al.
+journal: Psychological Medicine
 pdf: 
 slides: 
 supplement:

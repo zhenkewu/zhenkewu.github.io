@@ -4,7 +4,7 @@ title: "Anticoagulant Medication Adherence for Cancer Associated Thrombosis: A C
 image: /assets/images/papers/optum_adherence.png
 authors: Jordan K. Schaefer, Mengbing Li, Zhenke Wu, Tanima Basu, Michael P. Dorsch, PharmD, Geoffrey D. Barnes, Marc Carrier, Jennifer J. Griggs, Suman L. Sood
 year: 2020
-shortref: "Schaefer et al. (2020). Journal of Thrombosis and Haemostasis."
+shortref: Schaefer et al.
 journal: "Journal of Thrombosis and Haemostasis"
 pdf: 
 slides: 

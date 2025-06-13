@@ -4,7 +4,7 @@ title: Prediction of overall survival for patients with metastatic castration-re
 image: /assets/images/papers/iterative_imputation.png
 authors: Guinney J et al., Zhenke Wu, as part of Bmore Dream Team in Prostate Cancer Challenge DREAM Community
 year: 2017
-shortref: Guinney et al. (2017). The Lancet Oncology
+shortref: Guinney et al.
 journal: "The Lancet Oncology"
 doi: doi:10.1016/S1470-2045(16)30560-5
 type: substantive

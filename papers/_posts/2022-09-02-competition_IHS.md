@@ -4,8 +4,8 @@ title: "Effectiveness of gamified competition in the context of mHealth interven
 image: /assets/images/papers/ihs_comp.png
 authors: Jitao Wang, Yu Fang, Elena Frank, Maureen Walton, Margit Burmeister, Ambuj Tewari, Walter Dempsey, Timothy NeCamp, Srijan Sen, Zhenke Wu
 year: 2022
-shortref: "Wang et al. (2023). npj Digital Medicine."
-journal: "npj Digital Medicine. "
+shortref: Wang et al.
+journal: npj Digital Medicine
 pdf:
 slides: 
 supplement:

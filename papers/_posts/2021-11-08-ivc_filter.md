@@ -4,8 +4,8 @@ title: "Factors associated with inferior vena cava placement and retrieval for p
 image: /assets/images/papers/ivc.png
 authors: Subhash Edupuganti, Mengbing Li, Zhenke Wu, Tanima Basu, Geoffrey Barnes, Marc Carrier, Suman Sood, Jennifer Griggs, Jordan Schaefer
 year: 2021
-shortref: "Edupuganti et al. (2021). The American Journal of Medicine."
-journal: "The American Journal of Medicine."
+shortref: Edupuganti et al.
+journal: The American Journal of Medicine
 pdf: 
 slides: 
 supplement: 

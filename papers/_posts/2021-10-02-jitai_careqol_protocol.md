@@ -4,8 +4,8 @@ title: "Acceptability and feasibility of an app-based just-in-time-adaptive self
 image: /assets/images/papers/jitai_tbi.png
 authors: Noelle Carlozzi, Sung Won Choi, Zhenke Wu, Jennifer Miner, Angela Lyden, Christopher Graves, Angelle Sander, Jitao Wang, Srijan Sen
 year: 2021
-shortref: "Carlozzi et al. (2021). JMIR: Research Protocol."
-journal: "JMIR: Research Protocol."
+shortref: Carlozzi et al.
+journal: JMIR Research Protocol
 pdf:
 slides:
 supplement:

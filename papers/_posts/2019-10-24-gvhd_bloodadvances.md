@@ -4,8 +4,8 @@ title: "Computational Analysis of Continuous Body Temperature Provides Early Dis
 image: /assets/images/papers/gvhd.png
 authors: Kuang He, Zhenke Wu, Hideaki Fujiwara, Steven Whitesall, Cynthia K Zajac, Sung Won Choi, Pavan Reddy, Muneesh Tewari
 year: 2019
-shortref: Kuang et al. (2019). Blood Advances.
-journal: "Blood Advances."
+shortref: Kuang et al.
+journal: "Blood Advances"
 pdf: 
 slides: 
 supplement: 

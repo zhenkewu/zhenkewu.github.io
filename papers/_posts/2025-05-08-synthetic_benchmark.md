@@ -4,8 +4,8 @@ title: "Generating Synthetic Electronic Health Record (EHR) Data: A Methodologic
 image: /assets/images/papers/synth_benchmark.png
 authors: Xingran Chen, Zhenke Wu$^*$, Xu Shi, Hyunghoon Cho, Bhramar Mukherjee$^{**}$
 year: 2025
-shortref: Chen et al. (2025). Journal of the American Medical Informatics Association.
-journal: Journal of the American Medical Informatics Association.
+shortref: Chen et al.
+journal: Journal of the American Medical Informatics Association
 pdf: 
 slides: 
 supplement: 

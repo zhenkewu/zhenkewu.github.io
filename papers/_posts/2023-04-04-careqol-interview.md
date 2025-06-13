@@ -4,8 +4,8 @@ title: "Identifying Design Opportunities for Adaptive mHealth Interventions That
 image: /assets/images/papers/careqol_interview.png
 authors: Xinghui Yan, Mark W Newman, Sun Young Park, Angelle Sander, Sung Won Choi, Jennifer Miner, Zhenke Wu, Noelle Carlozzi
 year: 2023
-shortref: "Yan. (2023). JMIR (Formative Research)"
-journal: "JMIR (Formative Research)"
+shortref: Yan et al.
+journal: JMIR Formative Research
 pdf:
 slides:
 supplement:

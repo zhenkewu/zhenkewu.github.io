@@ -4,8 +4,8 @@ title: "A Bayesian Approach to Modeling Variance of Intensive Longitudinal Bioma
 image: /assets/images/papers/ilr_variability.png
 authors: Mingyan Yu, Zhenke Wu, Margaret Hicken, Michael R Elliott
 year: 2024
-shortref: Yu et al. (2024). Statistics in Medicine.
-journal: Statistics in Medicine.
+shortref: Yu et al.
+journal: Statistics in Medicine
 pdf: 
 slides: 
 supplement: 

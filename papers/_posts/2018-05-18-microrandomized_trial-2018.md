@@ -4,7 +4,7 @@ title: Micro-Randomized Trial
 image: /assets/images/papers/fitbit.jpg
 authors: Gongjun Xu, Zhenke Wu, Susan A. Murphy
 year: 2018
-shortref: Xu, Wu and Murphy (2018). Wiley StatsRef Statistics Reference Online
+shortref: Xu, Wu and Murphy
 journal: "Wiley StatsRef: Statistics Reference Online"
 doi: doi:10.1002/9781118445112.stat08050
 external_link: bit.ly/2wWs9PC

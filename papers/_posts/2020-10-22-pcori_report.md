@@ -4,7 +4,7 @@ title: "Using a Bayesian Approach to Predict Patients’ Health and Response to 
 image: /assets/images/papers/pcori_dag.png
 authors: "Scott Zeger, Zhenke Wu, Yates Coley, Anthony Todd Fojo, Bal Carter, Katherine O'Brien, Peter Zandi, Mary Cooke, Vince Carey, Ciprian Crainiceanu, John Muscelli, Adrian Gherman, Jason Mekosh"
 year: 2020
-shortref: "Zeger SL, Wu Z, Coley Y, et al. (2020). PCORI"
+shortref: Zeger SL, Wu Z, Coley Y, et al.
 journal: "Patient-Centered Outcomes Research Institute (PCORI)"
 pdf: 
 slides: 

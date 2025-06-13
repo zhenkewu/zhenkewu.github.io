@@ -4,8 +4,8 @@ title: "Feasibility pilot trial for the Trajectories of Recovery after Intraveno
 image: /assets/images/papers/thrive_feasibility.png
 authors: Bethany Tellor Pennington, Douglas A. Colquhoun, Mark D. Neuman, Mary C Politi, Allison Janda, Cathie Spino, Zhenke Wu, Steven Thelen-Perry, Sathish S. Kumar, Stephen H. Gregory, Michael S. Avidan, Sachin Kheterpal, for the THRIVE research group
 year: 2023
-shortref: Pennington et al. (2023). BMJ Open. Accepted.
-journal: "BMJ Open. Accepted"
+shortref: Pennington et al.
+journal: BMJ Open
 pdf: 
 slides: 
 supplement:

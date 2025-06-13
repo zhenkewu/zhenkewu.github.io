@@ -4,8 +4,8 @@ title: Dynamic Survival Transformers for Causal Inference with Electronic Health
 image: /assets/images/papers/DynST.png
 authors: Prayag Chatha, Yixin Wang, Zhenke Wu, Jeffrey Regier
 year: 2022
-shortref: Chatha et al. (2022). NeurIPS Workshop on Learning from Time Series for Health. 
-journal: "NeurIPS 2022 Workshop on Learning from Time Series for Health"
+shortref: Chatha et al.
+journal: "NeurIPS Workshop"
 pdf: 
 slides: 
 supplement: 
