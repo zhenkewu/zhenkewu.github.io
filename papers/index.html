@@ -58,7 +58,11 @@ navorder: 1
   				</a>
  			 	<div class="media-body">
     				<div class="smallhead media-heading"><a href="{{ paper.url }}" class="off">{{ paper.title }}</a></div>
-    				<p class="note">{{ paper.shortref }}</p>
+    				<!-- <p class="note">{{ paper.shortref }}</p> -->
+					<p class='shortref note'>
+						{{ paper.shortref }} ({{ paper.year }}). {% if paper.journal and paper.journal != "" %}<i>{{ paper.journal }}.</i>
+			  {% else %}{% endif %}
+					</p>
   				</div>
 			</div>
 			<div class="bigspacer"></div>
@@ -86,7 +90,11 @@ navorder: 1
   				</a>
  			 	<div class="media-body">
     				<div class="smallhead media-heading"><a href="{{ paper.url }}" class="off">{{ paper.title }}</a></div>
-    				<p class="note">{{ paper.shortref }}</p>
+    				<!-- <p class="note">{{ paper.shortref }}</p> -->
+					<p class='shortref note'>
+						{{ paper.shortref }} ({{ paper.year }}). {% if paper.journal and paper.journal != "" %}<i>{{ paper.journal }}.</i>
+			  {% else %}{% endif %}
+					</p>
   				</div>
 			</div>
 			<div class="bigspacer"></div>
