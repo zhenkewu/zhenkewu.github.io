@@ -175,7 +175,7 @@ categories:
 
 [[Bio + Contact]](/team/zhenke-wu)
 
-[[Publications]](/papers/) by: [[Year]](papers/archive/index) or [[Topic]](papers/archive/index_by_topic), 
+[[Publications]](/papers/) by: [[Year]](papers/archive/year) or [[Topic]](papers/archive/topic) 
 
 CV: [[pdf]](assets/pdfs/team/zhenkewu_cv.pdf) or [[1-pager]](assets/pdfs/team/zhenkewu_cv_one_page.pdf) or [[Overleaf]](https://www.overleaf.com/read/dbktqfjxccbv)
 

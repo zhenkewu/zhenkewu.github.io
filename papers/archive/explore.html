@@ -1,0 +1,371 @@
+---
+layout: default
+title: "Explore Papers"
+categories: papers
+---
+{% include JB/setup %}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="centered-pills">
+            <ul class="nav nav-pills note-button">
+                <li role="presentation">
+                    <a class="off" href="/papers/">
+                        <i class="fa fa-binoculars fa-fw"></i> Squares
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a class="off" href="/papers/archive/year">
+                        <i class="fa fa-calendar fa-fw"></i> Year
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a class="off" href="/papers/archive/topic">
+                        <i class="fa fa-podcast fa-fw"></i> Topic
+                    </a>
+                </li>
+                <li role="presentation" class="active">
+                    <a class="off" href="/papers/archive/explore">
+                        <i class="fa fa-filter fa-fw"></i> Explore
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="bigspacer"></div>
+    </div>
+</div>
+
+<b>Some papers are not listed below. See <a href="https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en" class="label label-primary">Google Scholar</a> for a more complete list.</b><br>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Filter Papers</h3>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-3 filter-col">
+                        <div class="form-group filter-group">
+                            <label for="yearFilter">Year</label>
+                            <select class="form-control" id="yearFilter" multiple>
+                                {% assign years = site.categories.papers | map: 'year' | uniq %}
+                                {% assign numeric_years = years | where_exp: "year", "year != 'submitted'" | sort | reverse %}
+                                {% assign submitted_years = years | where_exp: "year", "year == 'submitted'" %}
+                                {% for year in submitted_years %}
+                                <option value="{{ year }}">{{ year }}</option>
+                                {% endfor %}
+                                {% for year in numeric_years %}
+                                <option value="{{ year }}">{{ year }}</option>
+                                {% endfor %}
+                            </select>
+                            <button class="clear-filter" data-filter="yearFilter">clear</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3 filter-col">
+                        <div class="form-group filter-group">
+                            <label for="typeFilter">Type</label>
+                            <select class="form-control" id="typeFilter" multiple>
+                                <option value="statistical">Statistical</option>
+                                <option value="substantive">Substantive</option>
+                            </select>
+                            <button class="clear-filter" data-filter="typeFilter">clear</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4 filter-col">
+                        <div class="form-group filter-group">
+                            <label for="journalFilter">Venue</label>
+                            <select class="form-control" id="journalFilter" multiple>
+                                {% assign journals = site.categories.papers | map: 'journal' | compact | uniq | sort %}
+                                {% for journal in journals %}
+                                <option value="{{ journal }}">{{ journal }}</option>
+                                {% endfor %}
+                            </select>
+                            <button class="clear-filter" data-filter="journalFilter">clear</button>
+                        </div>
+                    </div>
+                    <div class="col-md-2 filter-col">
+                        <div class="form-group">
+                            <label>&nbsp;</label>
+                            <button id="resetFilters" class="btn btn-default btn-block">Reset All</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div id="paperCount" class="alert alert-info">
+            Showing all papers ({{ site.categories.papers | size }} entries)
+        </div>
+        <div id="filterCriteria" class="alert alert-warning" style="display: none;">
+        </div>
+    </div>
+</div>
+
+<div id="papersList">
+    {% for paper in site.categories.papers %}
+    <div class="paper-item" 
+         data-year="{{ paper.year }}"
+         data-journal="{{ paper.journal | default: '' }}"
+         data-type="{% if paper.type %}{{ paper.type }}{% else %}substantive{% endif %}"
+         data-authors="{{ paper.authors }}">
+        <div class="paper-title">
+            <span class="paper-number"></span><a href="{{ paper.url }}" class="off" style="font-family: Arial">{{ paper.title }}</a>
+        </div>
+        <div class="paper-authors">
+            {% assign authorsq = paper.authors | split: ', ' %}
+            {% for author_iter in authorsq %}
+            {% if forloop.last %}
+                {% assign in_file = false %}
+                {% assign in_file_web = false %}
+                {% for person in site.categories.team %}
+                    {% if author_iter contains person.title %}
+                        {% assign in_file = true %}
+                        {% assign in_file_web = person.web %}
+                    {% endif %}
+                {% endfor %}
+                
+                {% if in_file %}
+                    <a href="http://{{ in_file_web }}">{{ author_iter }}</a> ({{ paper.year }}).
+                {% else %}
+                    {{ author_iter }} ({{paper.year}}).
+                {% endif %}
+            {% else %}
+                {% assign in_file = false %}
+                {% assign in_file_web = false %}
+                {% for person in site.categories.team %}
+                    {% if author_iter contains person.title %}
+                        {% assign in_file = true %}
+                        {% assign in_file_web = person.web %}
+                    {% endif %}
+                {% endfor %}
+            
+                {% if in_file %}
+                    <a href="http://{{ in_file_web }}">{{ author_iter }}</a>,
+                {% else %}
+                    {{ author_iter }},
+                {% endif %}
+            {% endif %}
+            {% endfor %}
+        </div>
+        <div class="paper-links">
+            {% if paper.journal %}<span class="paper-journal">► <em>{{ paper.journal }}</em></span>{% endif %}
+            {%if paper.external_link%}<a href="{{ paper.external_link}}" class="label label-info">[paper link]</a>{% endif %}
+            {%if paper.github%}<a href="{{ paper.github }}" class="label label-red">[code]</a>{% endif %}
+            {%if paper.doi%}<a href="http://dx.doi.org/{{ paper.doi }}" class="label label-default">[doi]</a>{% endif %}
+            {%if paper.pdf%}<a href="{{ paper.pdf }}" class="label label-primary">[pdf]</a>{% endif %}
+            {%if paper.poster%}<a href="{{ paper.poster }}" class="label label-green">[poster]</a>{% endif %}
+            {%if paper.supplement%}<a href="{{ paper.supplement }}" class="label label-primary">[supplement]</a>{% endif %}
+            {%if paper.slides%}<a href="{{ paper.slides }}" class="label label-purple">[slides]</a>{% endif %}
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<style>
+.paper-item {
+    margin-bottom: 4px;
+    padding: 8px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.paper-item:hover {
+    background-color: #f8f9fa;
+}
+
+.paper-title {
+    font-size: 1.1em;
+    margin-bottom: 2px;
+}
+
+.paper-authors {
+    margin-bottom: 2px;
+}
+
+.paper-links {
+    margin-top: 2px;
+}
+
+.paper-journal {
+    margin-right: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+#paperCount {
+    margin-bottom: 15px;
+}
+
+.filter-col {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.filter-col .form-control {
+    width: 100%;
+    min-width: 120px;
+}
+
+.filter-group {
+    position: relative;
+}
+
+.clear-filter {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 2px 8px;
+    font-size: 11px;
+    line-height: 1.2;
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    cursor: pointer;
+    display: none;
+    color: #666;
+}
+
+.clear-filter:hover {
+    background: #e9ecef;
+    color: #333;
+}
+
+.filter-group.has-selection .clear-filter {
+    display: block;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const yearFilter = document.getElementById('yearFilter');
+    const journalFilter = document.getElementById('journalFilter');
+    const typeFilter = document.getElementById('typeFilter');
+    const resetButton = document.getElementById('resetFilters');
+    const paperItems = document.querySelectorAll('.paper-item');
+    const paperCount = document.getElementById('paperCount');
+    const filterCriteria = document.getElementById('filterCriteria');
+    const totalPapers = paperItems.length;
+
+    function updateFilterGroups() {
+        document.querySelectorAll('.filter-group').forEach(group => {
+            const select = group.querySelector('select');
+            if (select.selectedOptions.length > 0) {
+                group.classList.add('has-selection');
+            } else {
+                group.classList.remove('has-selection');
+            }
+        });
+    }
+
+    function clearFilter(filterId) {
+        const filter = document.getElementById(filterId);
+        filter.selectedIndex = -1;
+        applyFilters();
+    }
+
+    // Add click handlers for clear buttons
+    document.querySelectorAll('.clear-filter').forEach(button => {
+        button.addEventListener('click', function() {
+            const filterId = this.dataset.filter;
+            clearFilter(filterId);
+        });
+    });
+
+    function updateFilterCriteria() {
+        const selectedYears = Array.from(yearFilter.selectedOptions).map(option => option.value);
+        const selectedJournals = Array.from(journalFilter.selectedOptions).map(option => option.value);
+        const selectedTypes = Array.from(typeFilter.selectedOptions).map(option => option.value);
+
+        let criteriaText = [];
+        
+        if (selectedYears.length > 0) {
+            criteriaText.push(`Year: ${selectedYears.join(', ')}`);
+        }
+        if (selectedJournals.length > 0) {
+            criteriaText.push(`Venue: ${selectedJournals.join(', ')}`);
+        }
+        if (selectedTypes.length > 0) {
+            criteriaText.push(`Type: ${selectedTypes.join(', ')}`);
+        }
+
+        if (criteriaText.length > 0) {
+            filterCriteria.innerHTML = `<strong>Filter Criteria:</strong> ${criteriaText.join(' | ')}`;
+            filterCriteria.style.display = 'block';
+        } else {
+            filterCriteria.style.display = 'none';
+        }
+    }
+
+    function updatePaperCount() {
+        const visiblePapers = document.querySelectorAll('.paper-item:not(.hidden)').length;
+        if (visiblePapers === totalPapers) {
+            paperCount.textContent = `Showing all papers (${totalPapers} entries)`;
+        } else {
+            paperCount.textContent = `Showing ${visiblePapers} of ${totalPapers} papers`;
+        }
+    }
+
+    function updateNumbering() {
+        let visibleCount = 0;
+        paperItems.forEach(item => {
+            if (!item.classList.contains('hidden')) {
+                visibleCount++;
+                const numberSpan = item.querySelector('.paper-number');
+                numberSpan.textContent = `${visibleCount}. `;
+            } else {
+                const numberSpan = item.querySelector('.paper-number');
+                numberSpan.textContent = '';
+            }
+        });
+    }
+
+    function applyFilters() {
+        const selectedYears = Array.from(yearFilter.selectedOptions).map(option => option.value);
+        const selectedJournals = Array.from(journalFilter.selectedOptions).map(option => option.value);
+        const selectedTypes = Array.from(typeFilter.selectedOptions).map(option => option.value);
+
+        paperItems.forEach(item => {
+            const year = item.dataset.year;
+            const journal = item.dataset.journal;
+            const type = item.dataset.type;
+
+            const yearMatch = selectedYears.length === 0 || selectedYears.includes(year);
+            const journalMatch = selectedJournals.length === 0 || selectedJournals.includes(journal);
+            const typeMatch = selectedTypes.length === 0 || selectedTypes.includes(type);
+
+            if (yearMatch && journalMatch && typeMatch) {
+                item.classList.remove('hidden');
+            } else {
+                item.classList.add('hidden');
+            }
+        });
+        updatePaperCount();
+        updateNumbering();
+        updateFilterCriteria();
+        updateFilterGroups();
+    }
+
+    yearFilter.addEventListener('change', applyFilters);
+    journalFilter.addEventListener('change', applyFilters);
+    typeFilter.addEventListener('change', applyFilters);
+
+    resetButton.addEventListener('click', function() {
+        yearFilter.selectedIndex = -1;
+        journalFilter.selectedIndex = -1;
+        typeFilter.selectedIndex = -1;
+        applyFilters();
+    });
+
+    // Initial updates
+    updateNumbering();
+    updateFilterCriteria();
+    updateFilterGroups();
+});
+</script>

@@ -24,6 +24,11 @@ categories: papers
 						<i class="fa fa-podcast fa-fw"></i> Topic
 					</a>
 				</li>
+        <li role="presentation">
+          <a class="off" href="/papers/archive/explore">
+              <i class="fa fa-filter fa-fw"></i> Explore
+          </a>
+      </li>
 			</ul>
 		</div>
 		<div class="bigspacer"></div>
@@ -32,17 +37,14 @@ categories: papers
 
 
 
-See <a href="https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en">Google Scholar</a> for a more complete list. <br>
+<b >Some papers are not listed below. See <a href="https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en" class="label label-primary">Google Scholar</a> for a more complete list. </b><br>
 
 <div>
 {% include search-form.html %}
 </div>
 
 <div class="container">
-<div class="bigspacer"></div>
-<b >Some papers are not listed below. See <a href="https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en" class="label label-primary">Google Scholar</a> for a more complete list. </b><br>
-<br>
-{% assign sorted_tags = (site.tags | sort:0) %}
+{% assign sorted_tags = site.tags | sort %}
 <!-- {% for tag in sorted_tags %}
 <li>{{ tag | first }}</li>
 {% endfor %} -->
@@ -84,7 +86,7 @@ See <a href="https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en">Googl
 
   <!-- add to list only if there are papers with the current tag -->
   {%if has_paper != 0 %}
-  <h2 id="{{ tag[0] }}-ref">{{ tag[0] }}</h2>
+  <h2 id="{{ tag[0] }}-ref" class="label label-default">{{ tag[0] }}</h2>
   <ul>
     {% assign pages_list = filtered_posts %}  
     {% include JB/pages_list_paper %}

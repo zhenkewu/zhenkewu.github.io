@@ -26,31 +26,31 @@ categories: papers
 						<i class="fa fa-podcast fa-fw"></i> Topic
 					</a>
 				</li>
+				<li role="presentation">
+					<a class="off" href="/papers/archive/explore">
+						<i class="fa fa-filter fa-fw"></i> Explore
+					</a>
+				</li>
 			</ul>
 		</div>
 		<div class="bigspacer"></div>
 	</div>
 </div>
 
+<b >Some papers are not listed below. See <a href="https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en" class="label label-primary">Google Scholar</a> for a more complete list. </b><br>
+
 <div>
 {% include search-form.html %}
 </div>
 
 
-<div class="bigspacer"></div>
-
 {% assign years = site.categories.papers | map: 'year' | uniq %}
-
-
-<b >Some papers are not listed below. See <a href="https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en" class="label label-primary">Google Scholar</a> for a more complete list. </b><br>
-
-<div class="bigspacer"></div>
 
 
 <!-- submitted -->
 {% for year in years %}
 {% if year contains "submitted" %}
-<div class="smalltitle label-green " style="color:#00274c"><b > submitted </b></div>
+<div class="smalltitle label-green" style="color:#00274c"><b > submitted </b></div>
     {% assign paper_num = 0 %}
 	{% for paper in site.categories.papers %}
 	{% if paper.year == year%}

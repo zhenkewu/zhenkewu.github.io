@@ -854,3 +854,8 @@ color:black;
 .label-brown{background-color:#a37e62}
 .label-purple{background-color:#9e7fc7}
 .label-green{background-color:#73a895}
+
+// Add padding to tag headings to prevent navbar overlap
+h2[id] {
+	scroll-margin-top: 55px;
+}
