@@ -15,18 +15,18 @@ categories: papers
 					</a>
 				</li>
 				<li role="presentation" >
-					<a class="off" href="/papers/archive/">
+					<a class="off" href="/papers/archive/year">
 						<i class="fa fa-calendar fa-fw"></i> Year
 					</a>
 				</li>
 				<li role="presentation">
-					<a class="off" href="/papers/archive/index_by_topic">
+					<a class="off" href="/papers/archive/topic">
 						<i class="fa fa-podcast fa-fw"></i> Topic
 					</a>
 				</li>
                 <li role="presentation"  class="active">
-					<a class="off" href="/papers/archive/index_by_venue">
-						<i class="fa fa-podcast fa-fw"></i> Venue
+					<a class="off" href="/papers/venue">
+						<i class="fa fa-university fa-fw"></i> Venue
 					</a>
 				</li>
 			</ul>
@@ -43,7 +43,6 @@ See <a href="https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en">Googl
 {% include search-form.html %}
 </div>
 
-<div class="container">
 <div class="bigspacer"></div>
 <b >Some papers are not listed below. See <a href="https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en" class="label label-primary">Google Scholar</a> for a more complete list. </b><br>
 <br>
@@ -52,17 +51,13 @@ See <a href="https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en">Googl
 
 {% assign journals = site.categories.papers | map: 'journal'  | compact | uniq | sort %}
 
-
-
 {% for journal in journals %}
-<div class="smalltitle text-left " style="color:#00274C"><b >{{ journal }}</b></div>
+<div class="smalltitle label-green " style="color:#00274C"><b >{{ journal }}</b></div>
     {% assign paper_num = 0 %}
 	{% for paper in site.categories.papers %}
 	{% if paper.journal == journal%}
 	        {% assign paper_num = paper_num | plus: 1 %}
-			<div class="col-md-12 paperbox">
-				<div class="media">
-					<div class="media-body">
+			<div>
 						<div>{{ paper_num }}. <a href="{{ paper.url }}" class="off" style="font-family: Arial"> {{ paper.title }}</a></div>
 						<!-- <p class="note">  -->
 							{% assign authorsq = paper.authors | split: ', ' %}
@@ -109,8 +104,7 @@ See <a href="https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en">Googl
 							{%if paper.supplement%}<a href="{{ paper.supplement }}" class="label label-primary">[supplement]</a>{% endif %}					
 							{%if paper.slides%}<a href="{{ paper.slides }}" class="label label-purple">[slides]</a>{% endif %}
 					<!-- </p> -->
-					</div>
-				</div>
+		
 				<div class="bigspacer"></div>
 				<div class="spacer"></div>
 			</div>
@@ -118,5 +112,3 @@ See <a href="https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en">Googl
 	{% endfor %}
 {% endfor %}
     
-
-</div>

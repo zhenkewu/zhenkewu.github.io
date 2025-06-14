@@ -17,12 +17,12 @@ categories: papers
 					</a>
 				</li>
 				<li role="presentation"  class="active">
-					<a class="off" href="/papers/archive/">
+					<a class="off" href="/papers/archive/year">
 						<i class="fa fa-calendar fa-fw"></i> Year
 					</a>
 				</li>
 				<li role="presentation">
-					<a class="off" href="/papers/archive/index_by_topic">
+					<a class="off" href="/papers/archive/topic">
 						<i class="fa fa-podcast fa-fw"></i> Topic
 					</a>
 				</li>
@@ -37,7 +37,6 @@ categories: papers
 </div>
 
 
-<div class="container">
 <div class="bigspacer"></div>
 
 {% assign years = site.categories.papers | map: 'year' | uniq %}
@@ -51,14 +50,12 @@ categories: papers
 <!-- submitted -->
 {% for year in years %}
 {% if year contains "submitted" %}
-<div class="smalltitle text-left " style="color:#00274C"><b > submitted </b></div>
+<div class="smalltitle label-green " style="color:#00274c"><b > submitted </b></div>
     {% assign paper_num = 0 %}
 	{% for paper in site.categories.papers %}
 	{% if paper.year == year%}
 	        {% assign paper_num = paper_num | plus: 1 %}
-			<div class="col-md-12 paperbox">
-				<div class="media">
-					<div class="media-body">
+		
 						<!-- <div class="smallhead media-heading"><a href="{{ paper.url }}" class="off" >{{ paper_num }}. {{ paper.title }}</a></div> -->
 						<div>{{ paper_num }}. <a href="{{ paper.url }}" class="off" style="font-family: Arial"> {{ paper.title }}</a></div>
 						<!-- <p class="note">  -->
@@ -106,11 +103,11 @@ categories: papers
 							  {%if paper.supplement%}<a href="{{ paper.supplement }}" class="label label-primary">[supplement]</a>{% endif %}					
 							  {%if paper.slides%}<a href="{{ paper.slides }}" class="label label-purple">[slides]</a>{% endif %}
 					<!-- </p> -->
-					</div>
-				</div>
+					
+				
 				<div class="bigspacer"></div>
 				<div class="spacer"></div>
-			</div>
+			
 	{% endif %}
 	{% endfor %}
 	{% endif %}
@@ -121,14 +118,12 @@ categories: papers
 
 {% for year in years %}
 {% unless year contains "submitted" %}
-<div class="smalltitle text-left " style="color:#00274C"><b >{{ year }}</b></div>
+<div class="smalltitle label-green" style="color:#00274C"><b >{{ year }}</b></div>
     {% assign paper_num = 0 %}
 	{% for paper in site.categories.papers %}
 	{% if paper.year == year%}
 	        {% assign paper_num = paper_num | plus: 1 %}
-			<div class="col-md-12 paperbox">
-				<div class="media">
-					<div class="media-body">
+
 						<div>{{ paper_num }}. <a href="{{ paper.url }}" class="off" style="font-family: Arial"> {{ paper.title }}</a></div>
 						<!-- <p class="note">  -->
 							{% assign authorsq = paper.authors | split: ', ' %}
@@ -175,11 +170,10 @@ categories: papers
 							{%if paper.supplement%}<a href="{{ paper.supplement }}" class="label label-primary">[supplement]</a>{% endif %}					
 							{%if paper.slides%}<a href="{{ paper.slides }}" class="label label-purple">[slides]</a>{% endif %}
 					<!-- </p> -->
-					</div>
-				</div>
+	
 				<div class="bigspacer"></div>
 				<div class="spacer"></div>
-			</div>
+			
 	{% endif %}
 	{% endfor %}
 	{% endunless %}
@@ -187,6 +181,3 @@ categories: papers
 
 
 
-
-
-</div>
