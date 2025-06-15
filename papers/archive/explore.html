@@ -447,10 +447,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 // Common words to exclude
                 const stopWords = new Set([
-                    'the', 'and', 'of', 'to', 'a', 'in', 'for', 'is', 'on', 'that', 'by', 'this', 'with', 'as', 'at', 'from', 'an', 'are', 'be', 'it', 'or', 'was', 'were', 'will', 'have', 'has', 'had', 'can', 'could', 'would', 'should', 'may', 'might', 'must', 'shall',
-                    'using', 'based', 'based on', 'using', 'via', 'through', 'towards', 'toward', 'into', 'onto', 'upon', 'within', 'without', 'about', 'above', 'below', 'under', 'over', 'between', 'among', 'around', 'before', 'after', 'during', 'since', 'until', 'while', 'when', 'where', 'why', 'how', 'what', 'which', 'who', 'whom', 'whose', 'whether', 'if', 'because', 'although', 'though', 'unless', 'except', 'but', 'nor', 'yet', 'so', 'therefore', 'thus', 'hence', 'consequently', 'furthermore', 'moreover', 'however', 'nevertheless', 'nonetheless', 'otherwise', 'instead', 'rather', 'indeed', 'in fact', 'in particular', 'in general', 'in addition', 'in contrast', 'in comparison', 'in conclusion', 'in summary', 'in brief', 'in short', 'in other words',
+                    // check this website: https://gist.github.com/sebleier/554280
+                    'ups', 'ninety', 'biol', 'don', 'exactly', 'everything', 'pj', 'go', 'se', "that's", 'please', 'ci', 'downwards', 'mu', 'to', 'po', 'thousand', 'needn', 'a1', 'sometimes', 'pf', 'dy', 'los', 'themselves', 'fj', 'sufficiently', 'tries', 'come', 'because', 'ix', 's', 'against', 'c3', 'sj', 'research', 'provides', 'about', "shan't", 'sp', 'tq', 'rf', 'fifteen', 'tf', 'cm', 'date', "they've", 'kg', 'according', 'everywhere', 'still', 'th', 'ti', 'somewhere', "they'll", 'just', 'owing', 'affected', 'quickly', 'ui', 'latterly', 'pc', 'poorly', 'words', 'been', 'potentially', 'oj', "how's", 'pr', 'therein', 'yj', 'ok', 'nl', 'into', 'ibid', 'anybody', 'rn', 'within', 'affecting', 'ar', 'lj', "c's", 'nearly', 'causes', 'greetings', 'using', 'yl', 'sa', 'u201d', 'me', 'mightn', 'viz', 'tj', "we've", 'above', 'even', 'et-al', 'gets', 'oa', 'pagecount', 'eu', 'particular', 'added', 'everybody', 'mo', 'pq', 'sf', 'ue', 'us', 'i4', 'ro', 'immediate', 'pas', 'beside', 'iz', 'ny', 'theyre', 'z', 'have', 'appreciate', 'shown', 'line', 'ra', "mightn't", 'very', "you'd", 'anyone', 'nevertheless', 'can', 'isn', 'usefulness', 'eo', 'f', 'several', 'apart', 'none', 'az', 'another', 'here', 'ox', 'although', 'happens', 'see', 'hy', 'only', 'does', 'vq', 'il', 'shall', "should've", 'stop', "what'll", 'et', 'edu', 'shouldn', 'iy', 'nc', 'from', 'hs', 'ps', 'le', 'example', 'hadn', 'du', 'a3', 'formerly', 'four', 'lately', 'rm', 'keep', 'reasonably', 'thered', 'vd', 'rc', 'thru', 'b3', 'able', 'how', 'ignored', 'p2', 'find', 'hither', 'should', 'him', 'least', 'fc', 'n2', 'gives', 'b1', 'g', 'might', 'say', 'under', 'uses', "there's", 'out', 'taking', 'tried', 'willing', 'better', 'ex', 'up', 'saying', 'mean', 'heres', 'miss', 'proud', 'overall', 'same', 'obtain', 'got', 'qv', "what's", 'my', 'asking', 'fa', 'par', 'recently', "shouldn't", 'right', 'somewhat', 'thereafter', "they'd", "who's", 'i', 'someone', 'cs', 'front', 'nonetheless', 'around', 'gone', 'million', 'new', 'ot', 'va', 'being', 'dp', 'ad', 'run', 'thanx', "that'll", 'oh', 'bi', 'past', 'al', 'strongly', 'p1', 'ft', 'whats', "it's", 'second', 'inner', 'thanks', 'interest', 'related', 'er', "wasn't", 'ip', 'many', 'ff', 'yt', 't', 'best', 'tx', 'much', 'between', 'possibly', 'available', 'empty', 'found', 'les', 'lets', 'oq', 'qu', 'es', 'fifth', 'lr', 'didn', 'pages', 'q', 're', 'her', 'seriously', 't2', 'wasn', 'whatever', 'make', 'your', "there'll", 'om', 'indicated', 'tr', 'fi', 'three', 'vu', 'described', 'made', "here's", 'rv', 'anyways', 'anywhere', 'ch', 'usually', 'y', 'successfully', 'ought', 'ss', 'ph', 'c1', 'i2', 'xs', 'll', 'indeed', 'gr', 'thence', 'side', 'shes', 'w', 'last', 'believe', 'aj', 'for', 'indicates', 'ba', 'i8', 'move', 'thoroughly', 'went', 'i7', 'lest', 'often', 'obviously', 'xj', "i'm", 'give', 'specify', 'eight', 't1', 'doesn', 'uk', 'sure', 'were', "don't", 'when', 'wherein', 'rd', 'substantially', 'zero', 'as', 'take', 'tn', 'getting', 'seven', 'youre', 'm', 'makes', 'h2', 'off', 'recent', 'af', 'fr', "wouldn't", 'put', 'que', 'r2', 'awfully', 'd', 'od', 'lc', 'again', 'est', 'hasn', 'during', 'nn', 'hardly', 'cv', 'having', 'latter', 'whereafter', 'xt', 'amount', 'every', 'km', 'dc', 'nor', 'possible', 'useful', "we'll", 'seem', 'forth', 'ri', "she'll", 'truly', 'where', 'become', 'twenty', "we're", 'st', 'behind', 'rr', 'l2', 'n', 'p', 'page', 'tp', 'ls', 'x2', 'either', 'fs', 'hereupon', 'i3', 'lt', 'likely', 'ii', 'mustn', 'ru', 'ni', 'than', 'particularly', 'co', 'sub', 'doing', 'im', 'beginning', 'wish', 'throug', 'xf', 'av', 'h', "doesn't", 'zi', 'showed', "hadn't", 'relatively', 'there', 'little', 'sup', 'could', 'them', 'effect', 'de', 'hence', 'nothing', 'yes', 'wants', '3a', 'somethan', 'bl', 'needs', 'already', 'inc', 'sent', 'anyhow', 'ry', 'those', 'theres', 'x1', 'followed', 'id', 'inasmuch', 'begins', 'onto', 'h3', 'and', 'py', 'ow', 'both', 'lb', 'via', 'lo', 'mrs', 'ln', 'arise', 'e2', 'hasnt', 'ah', 'kj', 'moreover', 'meantime', 'wa', 'xo', 'wi', 'selves', "there've", 'you', 'nobody', 'novel', 'couldnt', 'also', 'oz', 'ref', 'so', 'world', 'cry', 'outside', 'done', 'hopefully', 'whose', 'further', 'non', "he'll", 'whither', 'most', 'ns', 'rather', 'act', 'afterwards', 'seemed', 'ea', 'top', 'contains', 'concerning', 'consider', 'previously', 'ol', 'sixty', 'fill', 'ord', 'information', 'con', 'gotten', 'sl', 'know', 'thank', 'cu', 'six', 'former', 'wheres', 'following', 'begin', 'j', 'mostly', 'an', 'elsewhere', 'somehow', 'c2', 'value', 'dk', '6o', 'couldn', 'howbeit', 'later', 'whether', 'below', 'u', 'without', 'actually', 'regards', 'tb', 'beyond', 'insofar', "i'll", 'jt', 'may', 'ag', 'course', 'always', 'ec', 'nos', 'different', 'going', 'herein', 'gy', 'hh', 'dj', 'these', 'whereas', 'zz', 'f2', 'allow', 'corresponding', 'detail', 'bn', 'ap', "couldn't", 'everyone', 'sr', 'briefly', 'presumably', 'whos', 'yr', 'fl', 'tt', 'full', 'old', 'gi', 'pt', 'op', 'hes', 'sq', 'system', 'eleven', 'cit', 'ko', 'ds', 'weren', 'among', 'werent', 'entirely', "you're", 'shed', 'http', 'clearly', 'due', 'fify', 'fire', 'she', 'bx', 'nr', 'consequently', 'won', 'tends', 'had', 'thereupon', 'ef', 'look', 'obtained', 'beginnings', 'placed', 'si', 'ur', 'e3', 'with', 'known', 'furthermore', 'anymore', 'pn', 'yet', "who'll", 'cz', 'amoungst', 'wed', 'iv', 'describe', 'accordingly', 'ms', 'sz', 'tip', 'okay', 'says', 'together', 'wo', 'becomes', 'whereby', 'used', 'means', 'wont', 'b2', 'are', 'fn', "ain't", 'came', 'mine', 'never', 'oi', 'get', 'vols', 'follows', "when's", 'of', 'necessary', 'otherwise', 'thin', 'ig', 'over', 'aren', 'liked', 'they', 'xx', 'regardless', "we'd", 'noted', 'seeming', 'og', 'xn', "needn't", 'back', 'ten', 'amongst', 'x', 'five', 'thickv', 'bill', 'normally', 'really', 'os', 'showns', 'indicate', 'bu', 'merely', 'nj', 'pm', 'our', 'per', 'sincere', 'way', 'section', 'anyway', 'his', 'mn', 'td', 'show', 'be', 'call', 'cy', 'specifying', "haven't", 'mug', 'whenever', 'specified', 'once', 'theyd', 'i6', 'ones', 'did', 'containing', 'others', 'fu', 'though', 'was', 'yours', 'ut', 'o', 'what', 'promptly', 'ts', 'maybe', 'except', 'sc', 'something', 'two', 'seeing', 'trying', 'less', 'became', 'becoming', 'hundred', 'au', 'since', 'such', 'whomever', 'similarly', 'taken', '0s', 'whence', 'do', 'bd', 'em', 'js', 'ours', 'across', 'few', 'next', 'ia', "she's", 'we', 'on', "won't", 'until', 'is', 'inward', 'ltd', "it'd", 'ca', 'perhaps', 'ax', 'ib', 'else', 'jj', 'meanwhile', 'no', 'pp', 'sy', 'various', 'must', 'aside', 'considering', 'bj', "isn't", 'ourselves', 'ever', 'widely', 'who', 'x3', 'hj', 'ain', 't3', 'bc', 'now', 'vt', 'df', 'ay', 'ei', 'think', 'iq', 'ab', 'besides', 'un', 'changes', 'neither', 'or', 'thou', 'appropriate', 'uo', 'thereto', 'gs', 'a4', 'ep', 'would', 'cd', 'thus', 'if', "where's", 'vs', 'immediately', 'towards', 'ne', 'ev', 'ask', 'ir', 'lf', 'volumtype', 'its', "weren't", 'y2', 'thereof', 'himself', 'own', 'sensible', 'rt', 'cannot', 'k', 'kept', 'gave', 'each', 'hu', 'necessarily', 'regarding', 'cant', 'first', 'need', 'unlikely', 'therefore', 'whereupon', 'dr', 'invention', 'pu', "you'll", 'given', 'quite', '0o', 'tv', 'seems', 'usefully', 'herself', 'importance', 'hereafter', 'wasnt', 'di', 'try', 'noone', 'specifically', 'goes', 'hers', 'bk', 'third', 'whoever', 'announce', 'cx', 'sd', 'am', 'certainly', 'ed', 'ob', 'similar', "a's", 'til', 'tell', 'mt', "c'mon", "she'd", 'ej', "i'd", 'hello', 'nine', 'ng', 'ce', 'not', 'cq', 'p3', 'sec', 'sn', 'tm', 'instead', 'gl', 'da', 'namely', 'ee', 'ma', 'rq', 'serious', 'v', 'xv', 'primarily', 'which', 'down', 'anything', 'gj', 'la', 'qj', 'took', 'ys', 'nowhere', 'te', 'wouldn', 'hi', 'keeps', 'yourselves', 'eq', 'bt', 'want', 'any', 'present', 'a2', 'etc', 'whod', 'vj', 'r', 'he', 'dd', "he'd", 'rh', 'ie', 'seen', 'all', 's2', 'some', 'tc', 'use', 'this', 'in', 'certain', 'e', "you've", 'fy', 'apparently', 'unfortunately', "he's", 'mill', 'more', 'cp', 'especially', 'along', 'ju', 'then', 'contain', 'home', 'suggest', 'ct', 'xi', 'a', 'however', 'ho', 'thats', 'said', 'ml', 'ran', 'ae', 'oc', 'cc', 'abst', 'like', 'approximately', 'itd', 'sm', 'ac', 'one', 'pe', "they're", 'self', 'whim', 'fo', 'despite', 'ke', 'twice', 'ge', 'readily', 'plus', 'well-b', 'mg', 'nay', 'b', 'rj', 'somebody', 'enough', 'near', 'cn', 'upon', 'adj', 'well', 'end', 'cj', 'refs', 'through', 'will', 'wonder', 'looks', 'ao', 'thorough', "it'll", 'hereby', 'l', 'shan', 'theirs', 'thereby', 'pi', 'bp', 'ga', 'help', 'cause', 'dl', 'ending', 'soon', 'youd', 'mainly', 'throughout', 'alone', 'beforehand', 'sorry', 'their', 'resulted', 'br', 'xk', "i've", 'respectively', 've', "can't", 'probably', 'definitely', 'comes', 'while', 'toward', 'ey', 'other', 'but', 'important', 'dt', 'let', 'pd', 'io', 'hid', 'rl', 'wouldnt', 'twelve', 'fix', 'nd', 'part', 'm2', 'ij', 'com', 'resulting', 'oo', 'hr', "why's", 'brief', 'currently', 'ih', 'bs', 'mr', 'significantly', 'welcome', '3b', 'cg', '6b', "that've", 'd2', 'slightly', 'thoughh', 'that', 'arent', 'affects', 'en', 'nt', 'ou', 'haven', 'therere', "let's", "aren't", 'results', 'eg', 'appear', 'accordance', 'unlike', 'whole', 'bottom', 'cf', 'na', 'largely', 'whom', 'allows', 'name', 'far', 'myself', 'rs', 'too', 'almost', 'at', "didn't", 'itself', 'research-articl', 'xl', 'after', 'jr', 'www', "mustn't", '3d', 'tl', 'el', 'shows', 'yourself', 'omitted', "hasn't", 'the', 'c', 'cr', 'looking', 'vol', 'cl', 'giving', 'unless', 'ic', 'dx', 'significant', 'index', 'why', 'knows', 'pl', 'away', 'auth', 'eighty', 'has', 'sometime', 'it', 'associated', 'aw', 'wherever', 'hed', 'forty', "t's", 'unto', 'um', 'secondly', 'uj', 'before', 'by', 'saw', 'pk', 'predominantly', 'vo',
+                    'versus','year','years','high','low','most','least',
                     // Add common academic terms to exclude
-                    'paper', 'study', 'research','abstract','methods','models','keywords'
+                    'paper', 'study', 'research','abstract','methods','models','keywords','proposed',
+                    'new','used','existing','demonstrate',
+                    'collected','response','propose',
                      'analysis', 'method', 'approach', 'result', 'conclusion', 'finding', 'data', 'model', 'system', 'process', 'development', 'application', 'implementation', 'evaluation', 'assessment', 'review', 'survey', 'investigation', 'examination', 'exploration', 'discussion', 'consideration', 'perspective', 'framework', 'theory', 'practice', 'case', 'example', 'instance', 'aspect', 'factor', 'element', 'component', 'feature', 'characteristic', 'property', 'attribute', 'quality', 'nature', 'form', 'type', 'kind', 'category', 'class', 'group', 'set', 'collection', 'series', 'sequence', 'order', 'arrangement', 'structure', 'organization', 'pattern', 'design', 'plan', 'scheme', 'strategy', 'tactic', 'technique', 'procedure', 'protocol', 'guideline', 'principle', 'rule', 'law', 'regulation', 'policy', 'standard', 'criterion', 'measure', 'metric', 'indicator', 'parameter', 'variable', 'constant', 'coefficient', 'ratio', 'proportion', 'percentage', 'fraction', 'portion', 'part', 'section', 'segment', 'division', 'unit', 'module', 'block', 'piece', 'item', 'object', 'entity', 'unit', 'entity', 'object', 'item', 'piece', 'block', 'module', 'unit', 'division', 'segment', 'section', 'part', 'portion', 'fraction', 'percentage', 'proportion', 'ratio', 'coefficient', 'constant', 'variable', 'parameter', 'indicator', 'metric', 'measure', 'criterion', 'standard', 'policy', 'regulation', 'law', 'rule', 'principle', 'guideline', 'protocol', 'procedure', 'technique', 'tactic', 'strategy', 'scheme', 'plan', 'design', 'pattern', 'organization', 'structure', 'arrangement', 'order', 'sequence', 'series', 'collection', 'set', 'group', 'class', 'category', 'kind', 'type', 'form', 'nature', 'quality', 'attribute', 'property', 'characteristic', 'feature', 'component', 'element', 'factor', 'aspect', 'instance', 'example', 'case', 'practice', 'theory', 'framework', 'perspective', 'consideration', 'discussion', 'exploration', 'examination', 'investigation', 'survey', 'review', 'assessment', 'evaluation', 'implementation', 'application', 'development', 'process', 'system', 'model', 'data', 'finding', 'conclusion', 'result', 'approach', 'method', 'analysis', 'research', 'study', 'paper'
                 ]);
 
@@ -460,16 +463,430 @@ document.addEventListener('DOMContentLoaded', function() {
                     .replace(/\s+/g, ' ')
                     .trim()
                     .split(/\s+/)
-                    .filter(word => word.length > 2 && !stopWords.has(word));
+                    .filter(word => word.length > 2 && !stopWords.has(word) && !/\d/.test(word));
+
+                // Function to convert word to singular form
+                function toSingular(word) {
+                    // Common irregular plurals
+                    const irregulars = {
+                        'children': 'child',
+                        'people': 'person',
+                        'men': 'man',
+                        'women': 'woman',
+                        'mice': 'mouse',
+                        'geese': 'goose',
+                        'teeth': 'tooth',
+                        'feet': 'foot',
+                        'knives': 'knife',
+                        'leaves': 'leaf',
+                        'lives': 'life',
+                        'wives': 'wife',
+                        'wolves': 'wolf',
+                        'shelves': 'shelf',
+                        'loaves': 'loaf',
+                        'thieves': 'thief',
+                        'calves': 'calf',
+                        'elves': 'elf',
+                        'halves': 'half',
+                        'scarves': 'scarf',
+                        'wharves': 'wharf',
+                        'analyses': 'analysis',
+                        'bases': 'basis',
+                        'crises': 'crisis',
+                        'diagnoses': 'diagnosis',
+                        'hypotheses': 'hypothesis',
+                        'parentheses': 'parenthesis',
+                        'phenomena': 'phenomenon',
+                        'criteria': 'criterion',
+                        'data': 'datum',
+                        'media': 'medium',
+                        'memoranda': 'memorandum',
+                        'strata': 'stratum',
+                        'symposia': 'symposium',
+                        'theses': 'thesis',
+                        'indices': 'index',
+                        'matrices': 'matrix',
+                        'vertices': 'vertex',
+                        'appendices': 'appendix',
+                        'formulae': 'formula',
+                        'fungi': 'fungus',
+                        'nuclei': 'nucleus',
+                        'stimuli': 'stimulus',
+                        'syllabi': 'syllabus',
+                        'termini': 'terminus',
+                        'viri': 'virus',
+                        'alumni': 'alumnus',
+                        'cacti': 'cactus',
+                        'foci': 'focus',
+                        'hippopotami': 'hippopotamus',
+                        'octopi': 'octopus',
+                        'platypi': 'platypus',
+                        'stimuli': 'stimulus',
+                        'syllabi': 'syllabus',
+                        'termini': 'terminus',
+                        'viri': 'virus'
+                    };
+
+                    // Check irregular plurals first
+                    if (irregulars[word]) {
+                        return irregulars[word];
+                    }
+
+                    // Handle common plural endings
+                    if (word.endsWith('ies')) {
+                        return word.slice(0, -3) + 'y';
+                    }
+                    if (word.endsWith('es')) {
+                        // Handle words ending in 'es' (e.g., 'boxes', 'watches')
+                        const base = word.slice(0, -2);
+                        if (base.endsWith('s') || base.endsWith('x') || base.endsWith('z') || 
+                            base.endsWith('ch') || base.endsWith('sh')) {
+                            return base;
+                        }
+                    }
+                    if (word.endsWith('s')) {
+                        return word.slice(0, -1);
+                    }
+
+                    return word;
+                }
+
+                // Function to convert verb to base form
+                function toBaseForm(word) {
+                    // Common irregular verbs
+                    const irregulars = {
+                        'is': 'be',
+                        'are': 'be',
+                        'was': 'be',
+                        'were': 'be',
+                        'been': 'be',
+                        'being': 'be',
+                        'has': 'have',
+                        'had': 'have',
+                        'having': 'have',
+                        'does': 'do',
+                        'did': 'do',
+                        'doing': 'do',
+                        'goes': 'go',
+                        'went': 'go',
+                        'gone': 'go',
+                        'going': 'go',
+                        'makes': 'make',
+                        'made': 'make',
+                        'making': 'make',
+                        'takes': 'take',
+                        'took': 'take',
+                        'taken': 'take',
+                        'taking': 'take',
+                        'comes': 'come',
+                        'came': 'come',
+                        'coming': 'come',
+                        'sees': 'see',
+                        'saw': 'see',
+                        'seen': 'see',
+                        'seeing': 'see',
+                        'knows': 'know',
+                        'knew': 'know',
+                        'known': 'know',
+                        'knowing': 'know',
+                        'gets': 'get',
+                        'got': 'get',
+                        'gotten': 'get',
+                        'getting': 'get',
+                        'gives': 'give',
+                        'gave': 'give',
+                        'given': 'give',
+                        'giving': 'give',
+                        'finds': 'find',
+                        'found': 'find',
+                        'finding': 'find',
+                        'thinks': 'think',
+                        'thought': 'think',
+                        'thinking': 'think',
+                        'tells': 'tell',
+                        'told': 'tell',
+                        'telling': 'tell',
+                        'asks': 'ask',
+                        'asked': 'ask',
+                        'asking': 'ask',
+                        'works': 'work',
+                        'worked': 'work',
+                        'working': 'work',
+                        'seems': 'seem',
+                        'seemed': 'seem',
+                        'seeming': 'seem',
+                        'feels': 'feel',
+                        'felt': 'feel',
+                        'feeling': 'feel',
+                        'tries': 'try',
+                        'tried': 'try',
+                        'trying': 'try',
+                        'leaves': 'leave',
+                        'left': 'leave',
+                        'leaving': 'leave',
+                        'calls': 'call',
+                        'called': 'call',
+                        'calling': 'call',
+                        'asks': 'ask',
+                        'asked': 'ask',
+                        'asking': 'ask',
+                        'needs': 'need',
+                        'needed': 'need',
+                        'needing': 'need',
+                        'wants': 'want',
+                        'wanted': 'want',
+                        'wanting': 'want',
+                        'shows': 'show',
+                        'showed': 'show',
+                        'shown': 'show',
+                        'showing': 'show',
+                        'provides': 'provide',
+                        'provided': 'provide',
+                        'providing': 'provide',
+                        'includes': 'include',
+                        'included': 'include',
+                        'including': 'include',
+                        'considers': 'consider',
+                        'considered': 'consider',
+                        'considering': 'consider',
+                        'appears': 'appear',
+                        'appeared': 'appear',
+                        'appearing': 'appear',
+                        'requires': 'require',
+                        'required': 'require',
+                        'requiring': 'require',
+                        'allows': 'allow',
+                        'allowed': 'allow',
+                        'allowing': 'allow',
+                        'suggests': 'suggest',
+                        'suggested': 'suggest',
+                        'suggesting': 'suggest',
+                        'indicates': 'indicate',
+                        'indicated': 'indicate',
+                        'indicating': 'indicate',
+                        'demonstrates': 'demonstrate',
+                        'demonstrated': 'demonstrate',
+                        'demonstrating': 'demonstrate',
+                        'represents': 'represent',
+                        'represented': 'represent',
+                        'representing': 'represent',
+                        'develops': 'develop',
+                        'developed': 'develop',
+                        'developing': 'develop',
+                        'occurs': 'occur',
+                        'occurred': 'occur',
+                        'occurring': 'occur',
+                        'exists': 'exist',
+                        'existed': 'exist',
+                        'existing': 'exist',
+                        'involves': 'involve',
+                        'involved': 'involve',
+                        'involving': 'involve',
+                        'results': 'result',
+                        'resulted': 'result',
+                        'resulting': 'result',
+                        'follows': 'follow',
+                        'followed': 'follow',
+                        'following': 'follow',
+                        'changes': 'change',
+                        'changed': 'change',
+                        'changing': 'change',
+                        'continues': 'continue',
+                        'continued': 'continue',
+                        'continuing': 'continue',
+                        'begins': 'begin',
+                        'began': 'begin',
+                        'begun': 'begin',
+                        'beginning': 'begin',
+                        'becomes': 'become',
+                        'became': 'become',
+                        'becoming': 'become',
+                        'contains': 'contain',
+                        'contained': 'contain',
+                        'containing': 'contain',
+                        'means': 'mean',
+                        'meant': 'mean',
+                        'meaning': 'mean',
+                        'reduces': 'reduce',
+                        'reduced': 'reduce',
+                        'reducing': 'reduce',
+                        'increases': 'increase',
+                        'increased': 'increase',
+                        'increasing': 'increase',
+                        'produces': 'produce',
+                        'produced': 'produce',
+                        'producing': 'produce',
+                        'determines': 'determine',
+                        'determined': 'determine',
+                        'determining': 'determine',
+                        'forms': 'form',
+                        'formed': 'form',
+                        'forming': 'form',
+                        'creates': 'create',
+                        'created': 'create',
+                        'creating': 'create',
+                        'causes': 'cause',
+                        'caused': 'cause',
+                        'causing': 'cause',
+                        'serves': 'serve',
+                        'served': 'serve',
+                        'serving': 'serve',
+                        'moves': 'move',
+                        'moved': 'move',
+                        'moving': 'move',
+                        'uses': 'use',
+                        'used': 'use',
+                        'using': 'use',
+                        'applies': 'apply',
+                        'applied': 'apply',
+                        'applying': 'apply',
+                        'includes': 'include',
+                        'included': 'include',
+                        'including': 'include',
+                        'provides': 'provide',
+                        'provided': 'provide',
+                        'providing': 'provide',
+                        'requires': 'require',
+                        'required': 'require',
+                        'requiring': 'require',
+                        'allows': 'allow',
+                        'allowed': 'allow',
+                        'allowing': 'allow',
+                        'suggests': 'suggest',
+                        'suggested': 'suggest',
+                        'suggesting': 'suggest',
+                        'indicates': 'indicate',
+                        'indicated': 'indicate',
+                        'indicating': 'indicate',
+                        'demonstrates': 'demonstrate',
+                        'demonstrated': 'demonstrate',
+                        'demonstrating': 'demonstrate',
+                        'represents': 'represent',
+                        'represented': 'represent',
+                        'representing': 'represent',
+                        'develops': 'develop',
+                        'developed': 'develop',
+                        'developing': 'develop',
+                        'occurs': 'occur',
+                        'occurred': 'occur',
+                        'occurring': 'occur',
+                        'exists': 'exist',
+                        'existed': 'exist',
+                        'existing': 'exist',
+                        'involves': 'involve',
+                        'involved': 'involve',
+                        'involving': 'involve',
+                        'results': 'result',
+                        'resulted': 'result',
+                        'resulting': 'result',
+                        'follows': 'follow',
+                        'followed': 'follow',
+                        'following': 'follow',
+                        'changes': 'change',
+                        'changed': 'change',
+                        'changing': 'change',
+                        'continues': 'continue',
+                        'continued': 'continue',
+                        'continuing': 'continue',
+                        'begins': 'begin',
+                        'began': 'begin',
+                        'begun': 'begin',
+                        'beginning': 'begin',
+                        'becomes': 'become',
+                        'became': 'become',
+                        'becoming': 'become',
+                        'contains': 'contain',
+                        'contained': 'contain',
+                        'containing': 'contain',
+                        'means': 'mean',
+                        'meant': 'mean',
+                        'meaning': 'mean',
+                        'reduces': 'reduce',
+                        'reduced': 'reduce',
+                        'reducing': 'reduce',
+                        'increases': 'increase',
+                        'increased': 'increase',
+                        'increasing': 'increase',
+                        'produces': 'produce',
+                        'produced': 'produce',
+                        'producing': 'produce',
+                        'determines': 'determine',
+                        'determined': 'determine',
+                        'determining': 'determine',
+                        'forms': 'form',
+                        'formed': 'form',
+                        'forming': 'form',
+                        'creates': 'create',
+                        'created': 'create',
+                        'creating': 'create',
+                        'causes': 'cause',
+                        'caused': 'cause',
+                        'causing': 'cause',
+                        'serves': 'serve',
+                        'served': 'serve',
+                        'serving': 'serve',
+                        'moves': 'move',
+                        'moved': 'move',
+                        'moving': 'move',
+                        'uses': 'use',
+                        'used': 'use',
+                        'using': 'use',
+                        'applies': 'apply',
+                        'applied': 'apply',
+                        'applying': 'apply'
+                    };
+
+                    // Check irregular verbs first
+                    if (irregulars[word]) {
+                        return irregulars[word];
+                    }
+
+                    // Handle regular verb endings
+                    if (word.endsWith('ing')) {
+                        // Handle present participle
+                        const base = word.slice(0, -3);
+                        if (base.endsWith('i')) {
+                            return base.slice(0, -1) + 'y';
+                        }
+                        if (base.endsWith('e')) {
+                            return base.slice(0, -1);
+                        }
+                        return base;
+                    }
+                    if (word.endsWith('ed')) {
+                        // Handle past tense and past participle
+                        const base = word.slice(0, -2);
+                        if (base.endsWith('i')) {
+                            return base.slice(0, -1) + 'y';
+                        }
+                        if (base.endsWith('e')) {
+                            return base.slice(0, -1);
+                        }
+                        return base;
+                    }
+                    if (word.endsWith('s')) {
+                        // Handle third person singular
+                        const base = word.slice(0, -1);
+                        if (base.endsWith('i')) {
+                            return base.slice(0, -1) + 'y';
+                        }
+                        return base;
+                    }
+
+                    return word;
+                }
 
                 const wordCount = {};
                 words.forEach(word => {
-                    wordCount[word] = (wordCount[word] || 0) + 1;
+                    const singular = toSingular(word);
+                    const base = toBaseForm(singular);
+                    wordCount[base] = (wordCount[base] || 0) + 1;
                 });
 
                 // Convert to array of objects for d3-cloud
                 const wordData = Object.entries(wordCount)
                     .sort((a, b) => b[1] - a[1]) // Sort by frequency
+                    .filter(([_, count]) => count > 2) // Only include words that appear more than twice
                     .slice(0, 100) // Take top 100 words
                     .map(([text, size]) => {
                         // Calculate relative size (percentage of total words)
