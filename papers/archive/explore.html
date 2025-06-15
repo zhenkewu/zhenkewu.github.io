@@ -5,6 +5,10 @@ categories: papers
 ---
 {% include JB/setup %}
 
+<!-- Add d3 and d3-cloud libraries -->
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3-cloud@1.2.5/build/d3.layout.cloud.min.js"></script>
+
 <div class="row">
     <div class="col-md-12">
         <div class="centered-pills">
@@ -102,6 +106,20 @@ categories: papers
             Showing all papers ({{ site.categories.papers | size }} entries)
         </div>
         <div id="filterCriteria" class="alert alert-warning" style="display: none;">
+        </div>
+    </div>
+</div>
+
+<!-- Add word cloud section -->
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Word Cloud</h3>
+            </div>
+            <div class="panel-body">
+                <div id="wordcloud" style="width: 100%; height: 400px;"></div>
+            </div>
         </div>
     </div>
 </div>
@@ -240,6 +258,36 @@ categories: papers
 .filter-group.has-selection .clear-filter {
     display: block;
 }
+
+#wordcloud {
+    text-align: center;
+    position: relative;
+}
+
+.word {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.word:hover {
+    fill: #007bff;
+}
+
+.wordcloud-loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: none;
+}
+
+.wordcloud-loading.active {
+    display: block;
+}
 </style>
 
 <script>
@@ -252,6 +300,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const paperCount = document.getElementById('paperCount');
     const filterCriteria = document.getElementById('filterCriteria');
     const totalPapers = paperItems.length;
+
+    // Add word cloud container
+    const wordcloudContainer = d3.select('#wordcloud');
+    let currentLayout = null;
 
     function updateFilterGroups() {
         document.querySelectorAll('.filter-group').forEach(group => {
@@ -326,6 +378,181 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    function generateWordCloud() {
+        // Show loading indicator
+        wordcloudContainer.selectAll('*').remove();
+        const loadingDiv = wordcloudContainer
+            .append('div')
+            .attr('class', 'wordcloud-loading active')
+            .text('Updating word cloud...');
+
+        // Get visible papers
+        const visiblePapers = document.querySelectorAll('.paper-item:not(.hidden)');
+        let text = '';
+        
+        // Create an array of promises for fetching paper content
+        const paperPromises = Array.from(visiblePapers).map(paper => {
+            // Get title
+            const title = paper.querySelector('.paper-title').textContent;
+            let paperText = title + ' ';
+
+            // Get paper URL and fetch content
+            const paperLink = paper.querySelector('.paper-title a').href;
+            return fetch(paperLink)
+                .then(response => response.text())
+                .then(html => {
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(html, 'text/html');
+                    
+                    // Get abstract if available - improved extraction
+                    let paperText = title + ' ';
+                    
+                    // Try different ways to find the abstract
+                    const abstractHeading = Array.from(doc.querySelectorAll('strong, h1, h2, h3, h4, h5, h6'))
+                        .find(el => el.textContent.toLowerCase().includes('abstract'));
+                    
+                    if (abstractHeading) {
+                        // Get the next element that contains the abstract text
+                        let currentNode = abstractHeading.nextElementSibling;
+                        while (currentNode && 
+                               !(currentNode.tagName && 
+                                 currentNode.tagName.match(/^H[1-6]$/) && 
+                                 !currentNode.textContent.toLowerCase().includes('abstract'))) {
+                            paperText += currentNode.textContent + ' ';
+                            currentNode = currentNode.nextElementSibling;
+                        }
+                    }
+                    
+                    // Get keywords if available
+                    const keywordsHeading = Array.from(doc.querySelectorAll('strong, h1, h2, h3, h4, h5, h6'))
+                        .find(el => el.textContent.toLowerCase().includes('keywords'));
+                    
+                    if (keywordsHeading && keywordsHeading.nextElementSibling) {
+                        paperText += keywordsHeading.nextElementSibling.textContent + ' ';
+                    }
+                    
+                    return paperText;
+                })
+                .catch(error => {
+                    console.error('Error fetching paper content:', error);
+                    return paperText; // Return just the title if fetch fails
+                });
+        });
+
+        // Wait for all paper content to be fetched
+        Promise.all(paperPromises)
+            .then(paperTexts => {
+                // Combine all paper texts
+                text = paperTexts.join(' ');
+
+                // Common words to exclude
+                const stopWords = new Set([
+                    'the', 'and', 'of', 'to', 'a', 'in', 'for', 'is', 'on', 'that', 'by', 'this', 'with', 'as', 'at', 'from', 'an', 'are', 'be', 'it', 'or', 'was', 'were', 'will', 'have', 'has', 'had', 'can', 'could', 'would', 'should', 'may', 'might', 'must', 'shall',
+                    'using', 'based', 'based on', 'using', 'via', 'through', 'towards', 'toward', 'into', 'onto', 'upon', 'within', 'without', 'about', 'above', 'below', 'under', 'over', 'between', 'among', 'around', 'before', 'after', 'during', 'since', 'until', 'while', 'when', 'where', 'why', 'how', 'what', 'which', 'who', 'whom', 'whose', 'whether', 'if', 'because', 'although', 'though', 'unless', 'except', 'but', 'nor', 'yet', 'so', 'therefore', 'thus', 'hence', 'consequently', 'furthermore', 'moreover', 'however', 'nevertheless', 'nonetheless', 'otherwise', 'instead', 'rather', 'indeed', 'in fact', 'in particular', 'in general', 'in addition', 'in contrast', 'in comparison', 'in conclusion', 'in summary', 'in brief', 'in short', 'in other words',
+                    // Add common academic terms to exclude
+                    'paper', 'study', 'research','abstract','methods','models',
+                     'analysis', 'method', 'approach', 'result', 'conclusion', 'finding', 'data', 'model', 'system', 'process', 'development', 'application', 'implementation', 'evaluation', 'assessment', 'review', 'survey', 'investigation', 'examination', 'exploration', 'discussion', 'consideration', 'perspective', 'framework', 'theory', 'practice', 'case', 'example', 'instance', 'aspect', 'factor', 'element', 'component', 'feature', 'characteristic', 'property', 'attribute', 'quality', 'nature', 'form', 'type', 'kind', 'category', 'class', 'group', 'set', 'collection', 'series', 'sequence', 'order', 'arrangement', 'structure', 'organization', 'pattern', 'design', 'plan', 'scheme', 'strategy', 'tactic', 'technique', 'procedure', 'protocol', 'guideline', 'principle', 'rule', 'law', 'regulation', 'policy', 'standard', 'criterion', 'measure', 'metric', 'indicator', 'parameter', 'variable', 'constant', 'coefficient', 'ratio', 'proportion', 'percentage', 'fraction', 'portion', 'part', 'section', 'segment', 'division', 'unit', 'module', 'block', 'piece', 'item', 'object', 'entity', 'unit', 'entity', 'object', 'item', 'piece', 'block', 'module', 'unit', 'division', 'segment', 'section', 'part', 'portion', 'fraction', 'percentage', 'proportion', 'ratio', 'coefficient', 'constant', 'variable', 'parameter', 'indicator', 'metric', 'measure', 'criterion', 'standard', 'policy', 'regulation', 'law', 'rule', 'principle', 'guideline', 'protocol', 'procedure', 'technique', 'tactic', 'strategy', 'scheme', 'plan', 'design', 'pattern', 'organization', 'structure', 'arrangement', 'order', 'sequence', 'series', 'collection', 'set', 'group', 'class', 'category', 'kind', 'type', 'form', 'nature', 'quality', 'attribute', 'property', 'characteristic', 'feature', 'component', 'element', 'factor', 'aspect', 'instance', 'example', 'case', 'practice', 'theory', 'framework', 'perspective', 'consideration', 'discussion', 'exploration', 'examination', 'investigation', 'survey', 'review', 'assessment', 'evaluation', 'implementation', 'application', 'development', 'process', 'system', 'model', 'data', 'finding', 'conclusion', 'result', 'approach', 'method', 'analysis', 'research', 'study', 'paper'
+                ]);
+
+                // Process text and count word frequencies
+                const words = text.toLowerCase()
+                    .replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, '')
+                    .replace(/\s+/g, ' ')
+                    .trim()
+                    .split(/\s+/)
+                    .filter(word => word.length > 2 && !stopWords.has(word));
+
+                const wordCount = {};
+                words.forEach(word => {
+                    wordCount[word] = (wordCount[word] || 0) + 1;
+                });
+
+                // Convert to array of objects for d3-cloud
+                const wordData = Object.entries(wordCount)
+                    .sort((a, b) => b[1] - a[1]) // Sort by frequency
+                    .slice(0, 100) // Take top 100 words
+                    .map(([text, size]) => {
+                        // Calculate relative size (percentage of total words)
+                        const relativeSize = size / words.length;
+                        return {
+                            text,
+                            size: Math.pow(relativeSize * 200, 1.2) * 5 // Scale relative size
+                        };
+                    });
+
+                // Normalize word sizes to have consistent maximum size
+                const maxSize = 100; // Maximum font size in pixels
+                const minSize = 20;  // Minimum font size in pixels
+                const maxRelativeSize = Math.max(...wordData.map(d => d.size));
+                const minRelativeSize = Math.min(...wordData.map(d => d.size));
+                
+                wordData.forEach(d => {
+                    // Linear interpolation between min and max sizes
+                    d.size = minSize + (maxSize - minSize) * 
+                        ((d.size - minRelativeSize) / (maxRelativeSize - minRelativeSize));
+                });
+
+                // Get container dimensions
+                const width = wordcloudContainer.node().offsetWidth;
+                const height = 400;
+
+                // Create new layout
+                if (currentLayout) {
+                    currentLayout.stop();
+                }
+
+                currentLayout = d3.layout.cloud()
+                    .size([width, height])
+                    .words(wordData)
+                    .padding(2)  // Reduced padding between words
+                    .rotate(() => ~~(Math.random() * 2) * 90)
+                    .font('Arial')
+                    .fontSize(d => d.size)
+                    .spiral('archimedean')  // Use archimedean spiral for tighter packing
+                    .on('end', draw);
+
+                currentLayout.start();
+
+                function draw(words) {
+                    // Clear previous word cloud
+                    wordcloudContainer.selectAll('svg').remove();
+
+                    const svg = wordcloudContainer
+                        .append('svg')
+                        .attr('width', width)
+                        .attr('height', height);
+
+                    // Add words with transition
+                    const wordElements = svg.append('g')
+                        .attr('transform', `translate(${width/2},${height/2})`)
+                        .selectAll('text')
+                        .data(words)
+                        .enter()
+                        .append('text')
+                        .style('font-size', d => `${d.size}px`)
+                        .style('font-family', 'Arial')
+                        .style('fill', () => d3.schemeCategory10[~~(Math.random() * 10)])
+                        .attr('text-anchor', 'middle')
+                        .attr('transform', d => `translate(${d.x},${d.y}) rotate(${d.rotate})`)
+                        .text(d => d.text)
+                        .classed('word', true)
+                        .style('opacity', 0)
+                        .transition()
+                        .duration(500)
+                        .style('opacity', 1);
+
+                    // Hide loading indicator after transition
+                    setTimeout(() => {
+                        loadingDiv.classed('active', false);
+                    }, 500);
+                }
+            })
+            .catch(error => {
+                console.error('Error processing papers:', error);
+                loadingDiv.classed('active', false);
+            });
+    }
+
     function applyFilters() {
         const selectedYears = Array.from(yearFilter.selectedOptions).map(option => option.value);
         const selectedJournals = Array.from(journalFilter.selectedOptions).map(option => option.value);
@@ -346,12 +573,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 item.classList.add('hidden');
             }
         });
+
         updatePaperCount();
         updateNumbering();
         updateFilterCriteria();
         updateFilterGroups();
+        generateWordCloud(); // Generate word cloud immediately after filtering
     }
 
+    // Add event listeners for filters
     yearFilter.addEventListener('change', applyFilters);
     journalFilter.addEventListener('change', applyFilters);
     typeFilter.addEventListener('change', applyFilters);
@@ -367,5 +597,6 @@ document.addEventListener('DOMContentLoaded', function() {
     updateNumbering();
     updateFilterCriteria();
     updateFilterGroups();
+    generateWordCloud(); // Generate initial word cloud
 });
 </script>
