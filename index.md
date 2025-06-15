@@ -173,9 +173,9 @@ categories:
 
 **Name in Chinese:**[ 吴振科 <i class="fa-brands fa-soundcloud"></i>](https://soundcloud.com/zhenke-wu/zhenke-wu-name). Pronounced: "Jen-Kuh Wu".
 
-[[Bio + Contact]](/team/zhenke-wu)
+[Bio + Contact](/team/zhenke-wu)
 
-[[Publications]](/papers/) by: [[Year]](papers/archive/year) or [[Topic]](papers/archive/topic) 
+[Publications](/papers/) by: [year](papers/archive/year) or [topic](papers/archive/topic) or [explore](papers/archive/explore)
 
 CV: [[pdf]](assets/pdfs/team/zhenkewu_cv.pdf) or [[1-pager]](assets/pdfs/team/zhenkewu_cv_one_page.pdf) or [[Overleaf]](https://www.overleaf.com/read/dbktqfjxccbv)
 

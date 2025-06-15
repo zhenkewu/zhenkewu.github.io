@@ -35,7 +35,6 @@ categories: papers
                 </li>
             </ul>
         </div>
-        <div class="bigspacer"></div>
     </div>
 </div>
 
@@ -43,16 +42,16 @@ categories: papers
 
 <div class="row">
     <div class="col-md-12">
-        <div class="panel panel-default">
+        <div class="panel panel-default filter-panel">
             <div class="panel-heading">
-                <h3 class="panel-title">Filter Papers</h3>
+                <h3 class="panel-title"><i class="fa fa-filter"></i> Filter Papers</h3>
             </div>
             <div class="panel-body">
                 <div class="row">
                     <div class="col-md-3 filter-col">
                         <div class="form-group filter-group">
-                            <label for="yearFilter">Year</label>
-                            <select class="form-control" id="yearFilter" multiple>
+                            <label for="yearFilter"><i class="fa fa-calendar"></i> Year</label>
+                            <select class="form-control filter-select" id="yearFilter" multiple>
                                 {% assign years = site.categories.papers | map: 'year' | uniq %}
                                 {% assign numeric_years = years | where_exp: "year", "year != 'submitted'" | sort | reverse %}
                                 {% assign submitted_years = years | where_exp: "year", "year == 'submitted'" %}
@@ -63,35 +62,37 @@ categories: papers
                                 <option value="{{ year }}">{{ year }}</option>
                                 {% endfor %}
                             </select>
-                            <button class="clear-filter" data-filter="yearFilter">clear</button>
+                            <button class="clear-filter" data-filter="yearFilter"><i class="fa fa-times"></i> Clear</button>
                         </div>
                     </div>
                     <div class="col-md-3 filter-col">
                         <div class="form-group filter-group">
-                            <label for="typeFilter">Type</label>
-                            <select class="form-control" id="typeFilter" multiple>
+                            <label for="typeFilter"><i class="fa fa-tag"></i> Type</label>
+                            <select class="form-control filter-select" id="typeFilter" multiple>
                                 <option value="statistical">Statistical</option>
                                 <option value="substantive">Substantive</option>
                             </select>
-                            <button class="clear-filter" data-filter="typeFilter">clear</button>
+                            <button class="clear-filter" data-filter="typeFilter"><i class="fa fa-times"></i> Clear</button>
                         </div>
                     </div>
                     <div class="col-md-4 filter-col">
                         <div class="form-group filter-group">
-                            <label for="journalFilter">Venue</label>
-                            <select class="form-control" id="journalFilter" multiple>
+                            <label for="journalFilter"><i class="fa fa-book"></i> Venue</label>
+                            <select class="form-control filter-select" id="journalFilter" multiple>
                                 {% assign journals = site.categories.papers | map: 'journal' | compact | uniq | sort %}
                                 {% for journal in journals %}
                                 <option value="{{ journal }}">{{ journal }}</option>
                                 {% endfor %}
                             </select>
-                            <button class="clear-filter" data-filter="journalFilter">clear</button>
+                            <button class="clear-filter" data-filter="journalFilter"><i class="fa fa-times"></i> Clear</button>
                         </div>
                     </div>
                     <div class="col-md-2 filter-col">
                         <div class="form-group">
                             <label>&nbsp;</label>
-                            <button id="resetFilters" class="btn btn-default btn-block">Reset All</button>
+                            <button id="resetFilters" class="btn btn-default btn-block reset-button">
+                                <i class="fa fa-refresh"></i> Reset All
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -233,30 +234,115 @@ categories: papers
 
 .filter-group {
     position: relative;
+    margin-bottom: 10px;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 4px;
+    color: #495057;
+    font-weight: 500;
+    font-size: 0.95em;
+}
+
+.filter-group label i {
+    margin-right: 5px;
+    color: #6c757d;
+}
+
+.filter-select {
+    width: 100%;
+    padding: 4px 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: all 0.2s ease;
+    max-height: 200px;
+}
+
+.filter-select:hover {
+    border-color: #adb5bd;
+}
+
+.filter-select:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,0.25);
 }
 
 .clear-filter {
     position: absolute;
     right: 0;
     top: 0;
-    padding: 2px 8px;
+    padding: 2px 6px;
     font-size: 11px;
-    line-height: 1.2;
-    background: #f8f9fa;
-    border: 1px solid #ddd;
+    background-color: #dc3545 !important;  /* Bootstrap danger color */
+    border: 1px solid #dc3545 !important;
     border-radius: 3px;
     cursor: pointer;
     display: none;
-    color: #666;
+    color: white !important;
+    transition: all 0.2s ease;
+    font-weight: 500;
+    text-decoration: none;
 }
 
 .clear-filter:hover {
-    background: #e9ecef;
-    color: #333;
+    background-color: #c82333 !important;  /* Darker red on hover */
+    border-color: #bd2130 !important;
+    color: white !important;
+    text-decoration: none;
+}
+
+.clear-filter i {
+    margin-right: 3px;
+    font-size: 10px;
 }
 
 .filter-group.has-selection .clear-filter {
     display: block;
+}
+
+.reset-button {
+    padding: 8px 12px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    color: #495057;
+    transition: all 0.2s ease;
+}
+
+.reset-button:hover {
+    background-color: #e9ecef;
+    border-color: #ced4da;
+    color: #212529;
+}
+
+.reset-button i {
+    margin-right: 5px;
+}
+
+/* Style for multiple select options */
+.filter-select option {
+    padding: 2px 4px;
+    margin: 0;
+    border-radius: 2px;
+    font-size: 0.95em;
+    line-height: 1.4;
+}
+
+.filter-select option:checked {
+    background-color: #e9ecef;
+    color: #495057;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .filter-col {
+        margin-bottom: 15px;
+    }
+    
+    .filter-panel .panel-body {
+        padding: 15px;
+    }
 }
 
 #wordcloud {
@@ -287,6 +373,79 @@ categories: papers
 
 .wordcloud-loading.active {
     display: block;
+}
+
+.filter-panel {
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.filter-panel .panel-heading {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;  /* Reduced border thickness */
+    padding: 8px 15px;  /* Reduced padding */
+    min-height: auto;  /* Remove minimum height */
+}
+
+.filter-panel .panel-title {
+    font-size: 1.1em;  /* Slightly smaller font */
+    color: #495057;
+    margin: 0;
+    line-height: 1.2;  /* Tighter line height */
+}
+
+.filter-panel .panel-title i {
+    margin-right: 6px;  /* Reduced margin */
+    color: #6c757d;
+    font-size: 0.95em;  /* Slightly smaller icon */
+}
+
+.filter-panel .panel-body {
+    padding: 15px;
+}
+
+.filter-col {
+    padding: 0 8px;
+}
+
+/* Make the select box more compact */
+.filter-group {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 4px;
+    color: #495057;
+    font-weight: 500;
+    font-size: 0.95em;
+}
+
+/* Adjust the clear button position */
+.clear-filter {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 2px 6px;
+    font-size: 11px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 3px;
+    cursor: pointer;
+    display: none;
+    color: #6c757d;
+    transition: all 0.2s ease;
+}
+
+/* Adjust panel padding */
+.filter-panel .panel-body {
+    padding: 15px;
+}
+
+.filter-col {
+    padding: 0 8px;
 }
 </style>
 
