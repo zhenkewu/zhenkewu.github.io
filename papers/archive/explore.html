@@ -683,6 +683,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         return base;
                     }
 
+                    
+
                     // Common irregular plurals
                     const irregulars = {
                         'children': 'child',
@@ -752,7 +754,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     if (word.endsWith('ss')) {
                         return word;
                     }
-
+            
                     // Handle common plural endings
                     if (word.endsWith('ies')) {
                         return word.slice(0, -3) + 'y';
@@ -765,9 +767,6 @@ document.addEventListener('DOMContentLoaded', function() {
                             return base;
                         }
                     }
-                    // if (word.endsWith('s')) {
-                    //     return word.slice(0, -1);
-                    // }
 
                     return word;
                 }
@@ -1081,6 +1080,10 @@ document.addEventListener('DOMContentLoaded', function() {
                         if (base.endsWith('e')) {
                             return base.slice(0, -1);
                         }
+                        // Add back 'e' for verbs that should end with 'e'
+                        if (!base.endsWith('e') && !base.endsWith('i')) {
+                            return base + 'e';
+                        }
                         return base;
                     }
                     if (word.endsWith('ed')) {
@@ -1103,6 +1106,9 @@ document.addEventListener('DOMContentLoaded', function() {
                         const base = word.slice(0, -1);
                         if (base.endsWith('i')) {
                             return base.slice(0, -1) + 'y';
+                        }
+                        if (base.endsWith('u')) { // e.g., continuous.
+                            return base+ 's';
                         }
                         return base;
                     }
