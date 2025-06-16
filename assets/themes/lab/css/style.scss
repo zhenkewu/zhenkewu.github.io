@@ -163,20 +163,43 @@ strong {
 }
 
 // navbar
-	.navbar-brand { 
-		font-size: 21px !important; 
-		font-weight: 1*$font-weight-base;
-	}
+.navbar-default { 
+  background: linear-gradient(to bottom, rgba(255,255,255,0.95), rgba(255,255,255,0.85)) !important;
+  border: none !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
 
-	.navbar-nav { 
-		font-size: 17px !important; 
-		font-weight: 1*$font-weight-base;
-		a {
-			color: black !important;
-		}
-	}
+.navbar-fixed-top {
+  background: linear-gradient(to bottom, rgba(255,255,255,0.95), rgba(255,255,255,0.85)) !important;
+  border: none !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
 
-	.dropdown-menu {
+.navbar-fixed-bottom {
+  background: linear-gradient(to top, rgba(255,255,255,0.95), rgba(255,255,255,0.85)) !important;
+  border: none !important;
+  box-shadow: 0 -1px 3px rgba(0,0,0,0.05);
+}
+
+.navbar-brand { 
+  font-size: 21px !important; 
+  font-weight: 1*$font-weight-base;
+  text-shadow: 0 1px 1px rgba(255,255,255,0.5);
+}
+
+.navbar-nav { 
+  font-size: 17px !important; 
+  font-weight: 1*$font-weight-base;
+  a {
+    color: black !important;
+    text-shadow: 0 1px 1px rgba(255,255,255,0.5);
+    &:hover {
+      color: #333 !important;
+    }
+  }
+}
+
+.dropdown-menu {
 		padding-left: 2%;
 		font-size: $font-size-base !important;
 		font-weight: $font-weight-base;

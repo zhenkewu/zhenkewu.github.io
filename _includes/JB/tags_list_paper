@@ -24,13 +24,13 @@ Usage:
   {% if tags_list.first[0] == null %}
     {% for tag in tags_list %} 
     	<!-- <li><a href="{{ BASE_PATH }}{{ site.JB.tags_path_paper }}#{{ tag }}-ref">{{ tag }}</a><sup>{{ site.tags[tag].size }}</sup>&nbsp</li> -->
-      <li><a href="{{ BASE_PATH }}{{ site.JB.tags_path_paper }}#{{ tag }}-ref" class="label label-default">{{ tag }}</a><sup>{{ tagsize_paper[i] }}</sup>&nbsp</li>
+      <li><a href="{{ BASE_PATH }}{{ site.JB.tags_path_paper }}#{{ tag }}-ref" class="label label-green">{{ tag }}</a><sup>{{ tagsize_paper[i] }}</sup>&nbsp</li>
       {% assign i = i | plus: 1 %}
     {% endfor %}
   {% else %}
     {% for tag in tags_list %} 
     	<!-- <li><a href="{{ BASE_PATH }}{{ site.JB.tags_path_paper }}#{{ tag[0] }}-ref">{{ tag[0] }}</a><sup>{{ tag[1].size }}</sup>&nbsp</li> -->
-      <li><a href="{{ BASE_PATH }}{{ site.JB.tags_path_paper }}#{{ tag[0] }}-ref" class="label label-default">{{ tag[0] }}</a><sup>{{ tagsize_paper[i] }}</sup>&nbsp</li> 
+      <li><a href="{{ BASE_PATH }}{{ site.JB.tags_path_paper }}#{{ tag[0] }}-ref" class="label label-green">{{ tag[0] }}</a><sup>{{ tagsize_paper[i] }}</sup>&nbsp</li> 
       {% assign i = i | plus: 1 %}
     {% endfor %}
   {% endif %}

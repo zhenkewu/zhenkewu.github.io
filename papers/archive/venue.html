@@ -1,9 +1,217 @@
 ---
 layout: default
-title: "papers"
+title: "Publications by Venue"
 categories: papers
 ---
 {% include JB/setup %}
+
+
+<style>
+	/* Navigation pills styling */
+.centered-pills {
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
+
+.centered-pills .nav-pills {
+    display: inline-block;
+}
+
+.centered-pills .nav-pills > li {
+    margin: 0 2px;
+}
+
+.centered-pills .nav-pills > li > a {
+    padding: 5px 10px;
+    font-size: 0.9em;
+}
+
+/* Paper statistics */
+.paper-stats {
+    margin: 20px 0;
+}
+
+.paper-stats .badge {
+    margin-right: 10px;
+    padding: 8px 12px;
+    font-size: 0.9em;
+}
+
+/* Venue section styling */
+.venue-section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+.venue-title {
+    color: #00274C;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #00274C;
+}
+
+/* Paper entry styling */
+.paper-entry {
+    display: flex;
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.paper-number {
+    font-weight: bold;
+    margin-right: 15px;
+    color: #666;
+    min-width: 30px;
+}
+
+.paper-content {
+    flex: 1;
+}
+
+.paper-title {
+    margin: 0 0 10px 0;
+    font-size: 1.1em;
+}
+
+.paper-title a {
+    color: #00274C;
+    text-decoration: none;
+}
+
+.paper-title a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.paper-authors {
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 0.95em;
+}
+
+.paper-links {
+    margin-top: 10px;
+}
+
+.paper-links .label {
+    margin-right: 5px;
+    padding: 5px 8px;
+    font-size: 0.85em;
+}
+
+.paper-links .label i {
+    margin-right: 3px;
+}
+
+/* Alert styling */
+.alert {
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.alert-info {
+    background-color: #e8f4f8;
+    border: 1px solid #b8e2f2;
+    color: #0c5460;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .paper-entry {
+        flex-direction: column;
+    }
+    
+    .paper-number {
+        margin-bottom: 10px;
+    }
+    
+    .paper-links .label {
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+}
+
+/* Additional styles for new informative elements */
+.venue-stats {
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    display: inline-block;
+}
+
+.venue-stats .stat-item {
+    display: inline-block;
+    padding: 0 15px;
+    border-right: 1px solid #eee;
+}
+
+.venue-stats .stat-item:last-child {
+    border-right: none;
+}
+
+.venue-stats .stat-number {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #00274C;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.venue-stats .stat-label {
+    color: #666;
+    font-size: 0.9em;
+    display: inline-block;
+}
+
+.venue-description {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #fff;
+    border-left: 4px solid #00274C;
+    border-radius: 4px;
+}
+
+.paper-metrics {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+}
+
+.paper-metrics span {
+    margin-right: 15px;
+}
+
+.paper-metrics i {
+    margin-right: 3px;
+}
+
+.venue-categories {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.venue-categories .category-tag {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    font-size: 0.9em;
+    color: #555;
+}
+</style>
+<!-- <link rel="stylesheet" href="/assets/css/papers.css"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <div class="row">
 	<div class="col-md-12">
@@ -14,7 +222,7 @@ categories: papers
 						<i class="fa fa-binoculars fa-fw"></i> Squares
 					</a>
 				</li>
-				<li role="presentation" >
+				<li role="presentation">
 					<a class="off" href="/papers/archive/year">
 						<i class="fa fa-calendar fa-fw"></i> Year
 					</a>
@@ -24,93 +232,177 @@ categories: papers
 						<i class="fa fa-podcast fa-fw"></i> Topic
 					</a>
 				</li>
-                <li role="presentation"  class="active">
-					<a class="off" href="/papers/venue">
-						<i class="fa fa-university fa-fw"></i> Venue
-					</a>
-				</li>
 				<li role="presentation">
 					<a class="off" href="/papers/archive/explore">
 						<i class="fa fa-filter fa-fw"></i> Explore
 					</a>
 				</li>
+				<li role="presentation" class="active">
+					<a class="off" href="/papers/archive/venue">
+						<i class="fa fa-university fa-fw"></i> Venue
+					</a>
+				</li>
 			</ul>
 		</div>
-		<!-- <div class="bigspacer"></div> -->
 	</div>
 </div>
 
+<!-- <div class="row">
+	<div class="col-md-12">
+		<div class="venue-description">
+			<h4><i class="fa fa-info-circle"></i> About This Page</h4>
+			<p>This page organizes publications by their publishing venues (journals and conferences). Each venue section contains papers published in that venue, with detailed information about each publication including authors, year, and available resources.</p>
+		</div>
+	</div>
+</div> -->
 
-<b >Some papers are not listed below. See <a href="https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en" class="label label-primary">Google Scholar</a> for a more complete list. </b><br>
-
-<div>
-{% include search-form.html %}
+<div class="row">
+	<div class="col-md-12">
+		<div class="alert alert-info">
+			<i class="fa fa-info-circle"></i> Some papers are not listed below. See 
+			<a href="https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en" class="label label-primary">
+				<i class="fa fa-google"></i> Google Scholar
+			</a> 
+			for a more complete list.
+		</div>
+	</div>
 </div>
 
+<div class="row">
+	<div class="col-md-12">
+		{% include search-form.html %}
+	</div>
+</div>
 
-<!-- {% assign journals = site.categories.papers | map: 'journal' | compact | uniq | sort %} -->
+{% assign journals = site.categories.papers | map: 'journal' | compact | uniq | sort %}
+{% assign total_papers = site.categories.papers | size %}
 
-{% assign journals = site.categories.papers | map: 'journal'  | compact | uniq | sort %}
-
+<div class="row">
+	<div class="col-md-12">
+		<div class="venue-stats">
+			<small>
+				<span class="badge badge-info">{{ total_papers }}</span>
+				<span class="stat-label">Total Publications</span>
+			</small>
+			<small>
+				<span class="badge badge-info">{{ journals | size }}</span>
+				<span class="stat-label">Unique Venues</span>
+			</small>
+		</div>
+	</div>
+</div>
 
 {% for journal in journals %}
-<div class="smalltitle label-green " style="color:#00274C"><b >{{ journal }}</b></div>
-    {% assign paper_num = 0 %}
+<div class="venue-section">
+	<h3 class="venue-title">
+		<i class="fa fa-book"></i> {{ journal }}
+		<small>
+			{% assign journal_papers = site.categories.papers | where: "journal", journal %}
+			<span class="badge badge-info">{{ journal_papers | size }} papers</span>
+		</small>
+	</h3>
+	
+	{% assign paper_num = 0 %}
 	{% for paper in site.categories.papers %}
-	{% if paper.journal == journal%}
-	        {% assign paper_num = paper_num | plus: 1 %}
-			<div>
-						<div>{{ paper_num }}. <a href="{{ paper.url }}" class="off" style="font-family: Arial"> {{ paper.title }}</a></div>
-						<!-- <p class="note">  -->
-							{% assign authorsq = paper.authors | split: ', ' %}
-							{% for author_iter in authorsq %}
+		{% if paper.journal == journal %}
+			{% assign paper_num = paper_num | plus: 1 %}
+			<div class="paper-entry">
+				<div class="paper-number">{{ paper_num }}.</div>
+				<div class="paper-content">
+					<h4 class="paper-title">
+						<a href="{{ paper.url }}">{{ paper.title }}</a>
+					</h4>
+					
+					<div class="paper-authors">
+						{% assign authorsq = paper.authors | split: ', ' %}
+						{% for author_iter in authorsq %}
 							{% if forloop.last %}
-								 {% assign in_file = false %}
-								 {% assign in_file_web = false %}
-								 {% for person in site.categories.team %}
-										 {% if author_iter contains person.title %}
-											 {% assign in_file = true %}
-											 {% assign in_file_web = person.web %}
-										{% endif %}
-								 {% endfor %}
-								 
-								 {% if in_file %}
-												 <a href="http://{{ in_file_web }}">{{ author_iter }}</a> ({{ paper.year }}). 
-								 {% else %}
-												 {{ author_iter }} ({{paper.year}}).
-								 {% endif %}
-							 {% else %}
-								 {% assign in_file = false %}
-								 {% assign in_file_web = false %}
-								 {% for person in site.categories.team %}
-										 {% if author_iter contains person.title %}
-											 {% assign in_file = true %}
-											 {% assign in_file_web = person.web %}
-										{% endif %}
-								 {% endfor %}
-							 
-								 {% if in_file %}
-												 <a href="http://{{ in_file_web }}">{{ author_iter }}</a>, 
-								 {% else %}
-												 {{ author_iter }},
-								 {% endif %}
-							 {% endif %}
-							{% endfor %}
-							► <em>{{ paper.journal }}</em> 
-							{%if paper.external_link%}<a href="{{ paper.external_link}}" class="label label-info">[paper link]</a>{% endif %}
-							{%if paper.github%}<a href="{{ paper.github }}" class="label label-red">[code]</a>{% endif %}
-							{%if paper.doi%}<a href="http://dx.doi.org/{{ paper.doi }}" class="label label-default">[doi]</a>{% endif %}
-							<!-- {%if paper.pdf%}<a href="{{ paper.pdf }}" class="off">[pdf]</a>{% endif %} -->
-						    {%if paper.pdf%}<a href="{{ paper.pdf }}" class="label label-primary">[pdf]</a>{% endif %}
-							{%if paper.poster%}<a href="{{ paper.poster }}" class="label label-green">[poster]</a>{% endif %}
-							{%if paper.supplement%}<a href="{{ paper.supplement }}" class="label label-primary">[supplement]</a>{% endif %}					
-							{%if paper.slides%}<a href="{{ paper.slides }}" class="label label-purple">[slides]</a>{% endif %}
-					<!-- </p> -->
-		
-				<div class="bigspacer"></div>
-				<div class="spacer"></div>
+								{% assign in_file = false %}
+								{% assign in_file_web = false %}
+								{% for person in site.categories.team %}
+									{% if author_iter contains person.title %}
+										{% assign in_file = true %}
+										{% assign in_file_web = person.web %}
+									{% endif %}
+								{% endfor %}
+								
+								{% if in_file %}
+									<a href="http://{{ in_file_web }}">{{ author_iter }}</a>
+								{% else %}
+									{{ author_iter }}
+								{% endif %}
+								({{ paper.year }})
+							{% else %}
+								{% assign in_file = false %}
+								{% assign in_file_web = false %}
+								{% for person in site.categories.team %}
+									{% if author_iter contains person.title %}
+										{% assign in_file = true %}
+										{% assign in_file_web = person.web %}
+									{% endif %}
+								{% endfor %}
+								
+								{% if in_file %}
+									<a href="http://{{ in_file_web }}">{{ author_iter }}</a>,
+								{% else %}
+									{{ author_iter }},
+								{% endif %}
+							{% endif %}
+						{% endfor %}
+					</div>
+
+					{% if paper.citations or paper.impact_factor %}
+					<div class="paper-metrics">
+						{% if paper.citations %}
+						<span><i class="fa fa-quote-right"></i> {{ paper.citations }} citations</span>
+						{% endif %}
+						{% if paper.impact_factor %}
+						<span><i class="fa fa-star"></i> Impact Factor: {{ paper.impact_factor }}</span>
+						{% endif %}
+					</div>
+					{% endif %}
+
+					<div class="paper-links">
+						{% if paper.external_link %}
+							<a href="{{ paper.external_link }}" class="label label-info">
+								<i class="fa fa-external-link"></i> Paper
+							</a>
+						{% endif %}
+						{% if paper.github %}
+							<a href="{{ paper.github }}" class="label label-red">
+								<i class="fa fa-github"></i> Code
+							</a>
+						{% endif %}
+						{% if paper.doi %}
+							<a href="http://dx.doi.org/{{ paper.doi }}" class="label label-default">
+								<i class="fa fa-link"></i> DOI
+							</a>
+						{% endif %}
+						{% if paper.pdf %}
+							<a href="{{ paper.pdf }}" class="label label-primary">
+								<i class="fa fa-file-pdf-o"></i> PDF
+							</a>
+						{% endif %}
+						{% if paper.poster %}
+							<a href="{{ paper.poster }}" class="label label-green">
+								<i class="fa fa-file-image-o"></i> Poster
+							</a>
+						{% endif %}
+						{% if paper.supplement %}
+							<a href="{{ paper.supplement }}" class="label label-primary">
+								<i class="fa fa-plus-circle"></i> Supplement
+							</a>
+						{% endif %}
+						{% if paper.slides %}
+							<a href="{{ paper.slides }}" class="label label-purple">
+								<i class="fa fa-file-powerpoint-o"></i> Slides
+							</a>
+						{% endif %}
+					</div>
+				</div>
 			</div>
-	{% endif %}
+		{% endif %}
 	{% endfor %}
+</div>
 {% endfor %}
     
