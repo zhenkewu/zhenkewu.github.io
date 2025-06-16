@@ -40,61 +40,58 @@ categories: papers
 
 <b>Some papers are not listed below. See <a href="https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en" class="label label-primary">Google Scholar</a> for a more complete list.</b><br>
 
+<!-- Add word cloud section -->
 <div class="row">
-    <div class="col-md-12">
-        <div class="panel panel-default filter-panel">
+    <div class="col-md-8">
+        <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title"><i class="fa fa-filter"></i> Filter Papers</h3>
+                <h3 class="panel-title">Word Cloud</h3>
             </div>
             <div class="panel-body">
-                <div class="row">
-                    <div class="col-md-3 filter-col">
-                        <div class="form-group filter-group">
-                            <label for="yearFilter"><i class="fa fa-calendar"></i> Year</label>
-                            <select class="form-control filter-select" id="yearFilter" multiple>
-                                {% assign years = site.categories.papers | map: 'year' | uniq %}
-                                {% assign numeric_years = years | where_exp: "year", "year != 'submitted'" | sort | reverse %}
-                                {% assign submitted_years = years | where_exp: "year", "year == 'submitted'" %}
-                                {% for year in submitted_years %}
-                                <option value="{{ year }}">{{ year }}</option>
-                                {% endfor %}
-                                {% for year in numeric_years %}
-                                <option value="{{ year }}">{{ year }}</option>
-                                {% endfor %}
-                            </select>
-                            <button class="clear-filter" data-filter="yearFilter"><i class="fa fa-times"></i> Clear</button>
-                        </div>
-                    </div>
-                    <div class="col-md-3 filter-col">
-                        <div class="form-group filter-group">
-                            <label for="typeFilter"><i class="fa fa-tag"></i> Type</label>
-                            <select class="form-control filter-select" id="typeFilter" multiple>
-                                <option value="statistical">Statistical</option>
-                                <option value="substantive">Substantive</option>
-                            </select>
-                            <button class="clear-filter" data-filter="typeFilter"><i class="fa fa-times"></i> Clear</button>
-                        </div>
-                    </div>
-                    <div class="col-md-4 filter-col">
-                        <div class="form-group filter-group">
-                            <label for="journalFilter"><i class="fa fa-book"></i> Venue</label>
-                            <select class="form-control filter-select" id="journalFilter" multiple>
-                                {% assign journals = site.categories.papers | map: 'journal' | compact | uniq | sort %}
-                                {% for journal in journals %}
-                                <option value="{{ journal }}">{{ journal }}</option>
-                                {% endfor %}
-                            </select>
-                            <button class="clear-filter" data-filter="journalFilter"><i class="fa fa-times"></i> Clear</button>
-                        </div>
-                    </div>
-                    <div class="col-md-2 filter-col">
-                        <div class="form-group">
-                            <label>&nbsp;</label>
-                            <button id="resetFilters" class="btn btn-default btn-block reset-button">
-                                <i class="fa fa-refresh"></i> Reset All
-                            </button>
-                        </div>
-                    </div>
+                <div id="wordcloud" style="width: 100%; height: 400px;"></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="panel panel-default filter-panel">
+            <div class="panel-body">
+                <div class="form-group filter-group">
+                    <label for="yearFilter"><i class="fa fa-calendar"></i> Year <small class="text-muted">(Select one or more years)</small></label>
+                    <select class="form-control filter-select" id="yearFilter" multiple>
+                        {% assign years = site.categories.papers | map: 'year' | uniq %}
+                        {% assign numeric_years = years | where_exp: "year", "year != 'submitted'" | sort | reverse %}
+                        {% assign submitted_years = years | where_exp: "year", "year == 'submitted'" %}
+                        {% for year in submitted_years %}
+                        <option value="{{ year }}">{{ year }}</option>
+                        {% endfor %}
+                        {% for year in numeric_years %}
+                        <option value="{{ year }}">{{ year }}</option>
+                        {% endfor %}
+                    </select>
+                    <button class="clear-filter" data-filter="yearFilter"><i class="fa fa-times"></i> Clear</button>
+                </div>
+                <div class="form-group filter-group">
+                    <label for="typeFilter"><i class="fa fa-tag"></i> Type <small class="text-muted">(Select one or more types)</small></label>
+                    <select class="form-control filter-select" id="typeFilter" multiple>
+                        <option value="statistical">Statistical</option>
+                        <option value="substantive">Substantive</option>
+                    </select>
+                    <button class="clear-filter" data-filter="typeFilter"><i class="fa fa-times"></i> Clear</button>
+                </div>
+                <div class="form-group filter-group">
+                    <label for="journalFilter"><i class="fa fa-book"></i> Venue <small class="text-muted">(Select one or more venues)</small></label>
+                    <select class="form-control filter-select" id="journalFilter" multiple>
+                        {% assign journals = site.categories.papers | map: 'journal' | compact | uniq | sort %}
+                        {% for journal in journals %}
+                        <option value="{{ journal }}">{{ journal }}</option>
+                        {% endfor %}
+                    </select>
+                    <button class="clear-filter" data-filter="journalFilter"><i class="fa fa-times"></i> Clear</button>
+                </div>
+                <div class="form-group">
+                    <button id="resetFilters" class="btn btn-default btn-block reset-button">
+                        <i class="fa fa-refresh"></i> Reset All
+                    </button>
                 </div>
             </div>
         </div>
@@ -107,20 +104,6 @@ categories: papers
             Showing all papers ({{ site.categories.papers | size }} entries)
         </div>
         <div id="filterCriteria" class="alert alert-warning" style="display: none;">
-        </div>
-    </div>
-</div>
-
-<!-- Add word cloud section -->
-<div class="row">
-    <div class="col-md-12">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title">Word Cloud</h3>
-            </div>
-            <div class="panel-body">
-                <div id="wordcloud" style="width: 100%; height: 400px;"></div>
-            </div>
         </div>
     </div>
 </div>
@@ -191,6 +174,16 @@ categories: papers
     padding: 8px;
     border-radius: 5px;
     transition: all 0.3s ease;
+}
+
+.alert-info {
+    padding: 5px 15px;
+    margin-bottom: 10px;
+}
+
+.alert-warning {
+    padding: 5px 15px;
+    margin-bottom: 10px;
 }
 
 .paper-item:hover {
@@ -376,7 +369,7 @@ categories: papers
 }
 
 .filter-panel {
-    margin-top: 20px;
+    margin-top: 0px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
@@ -446,6 +439,41 @@ categories: papers
 
 .filter-col {
     padding: 0 8px;
+}
+
+.filter-panel {
+    margin-bottom: 10px;
+}
+
+.filter-panel .panel-body {
+    padding: 10px;
+}
+
+.filter-group {
+    margin-bottom: 5px;
+}
+
+.filter-select {
+    margin-bottom: 5px;
+}
+
+.clear-btn {
+    margin: 5px 0;
+}
+
+/* Add margin control for word cloud panel */
+.panel-default {
+    margin-bottom: 10px;
+}
+
+/* Override for word cloud panel to reduce gap */
+.panel-default:has(#wordcloud) {
+    margin-bottom: 5px;
+}
+
+.alert-info {
+    padding: 5px 15px;
+    margin-bottom: 10px;
 }
 </style>
 
@@ -618,7 +646,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 // Process text and count word frequencies
                 const words = text.toLowerCase()
-                    .replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, '')
+                    .replace(/[.,\/#!$%\^&\*;:{}=\_`~()]/g, '')  // Remove punctuation but keep hyphens
                     .replace(/\s+/g, ' ')
                     .trim()
                     .split(/\s+/)
@@ -626,6 +654,35 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 // Function to convert word to singular form
                 function toSingular(word) {
+                    // Clean up the word first
+                    word = word.trim().toLowerCase();
+                    
+                    // Handle possessive forms first
+                    if (word.includes("'s")) {
+                        const base = word.replace("'s", "");
+                        // Check if the base is an irregular plural
+                        if (irregulars[base]) {
+                            return irregulars[base];
+                        }
+                        return base;
+                    }
+                    if (word.includes("s'")) {
+                        const base = word.replace("s'", "");
+                        // Check if the base is an irregular plural
+                        if (irregulars[base]) {
+                            return irregulars[base];
+                        }
+                        return base;
+                    }
+                    if (word.endsWith("'")) {
+                        const base = word.slice(0, -1);
+                        // Check if the base is an irregular plural
+                        if (irregulars[base]) {
+                            return irregulars[base];
+                        }
+                        return base;
+                    }
+
                     // Common irregular plurals
                     const irregulars = {
                         'children': 'child',
@@ -691,6 +748,11 @@ document.addEventListener('DOMContentLoaded', function() {
                         return irregulars[word];
                     }
 
+                    // Keep words ending with 'ss' as is
+                    if (word.endsWith('ss')) {
+                        return word;
+                    }
+
                     // Handle common plural endings
                     if (word.endsWith('ies')) {
                         return word.slice(0, -3) + 'y';
@@ -703,9 +765,9 @@ document.addEventListener('DOMContentLoaded', function() {
                             return base;
                         }
                     }
-                    if (word.endsWith('s')) {
-                        return word.slice(0, -1);
-                    }
+                    // if (word.endsWith('s')) {
+                    //     return word.slice(0, -1);
+                    // }
 
                     return word;
                 }
@@ -1000,8 +1062,17 @@ document.addEventListener('DOMContentLoaded', function() {
                         return irregulars[word];
                     }
 
+                    // Keep words ending with 'ss' as is
+                    if (word.endsWith('ss')) {
+                        return word;
+                    }
+
                     // Handle regular verb endings
                     if (word.endsWith('ing')) {
+                        // Keep hyphenated compound words unchanged
+                        if (word.includes('-')) {
+                            return word;
+                        }
                         // Handle present participle
                         const base = word.slice(0, -3);
                         if (base.endsWith('i')) {
@@ -1019,7 +1090,11 @@ document.addEventListener('DOMContentLoaded', function() {
                             return base.slice(0, -1) + 'y';
                         }
                         if (base.endsWith('e')) {
-                            return base.slice(0, -1);
+                            return base;
+                        }
+                        // Add back 'e' for verbs that should end with 'e'
+                        if (!base.endsWith('e') && !base.endsWith('i')) {
+                            return base + 'e';
                         }
                         return base;
                     }
