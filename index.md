@@ -41,7 +41,12 @@ The best way to contact me is email (zhenkewu [arroba] umich [punto] edu).
 Direction to my office is [here](assets/pdfs/team/zhenkewu-office.pdf).
 
 <hr/>
-I am an [Associate Professor](https://sph.umich.edu/faculty-profiles/wu-zhenke.html) (with tenure) in the [Department of Biostatistics](https://sph.umich.edu/biostat/) at [University of Michigan](https://www.umich.edu) and a faculty affiliate at [Michigan Institute for Data and AI in Society (MIDAS)](http://midas.umich.edu). 
+I am an [Associate Professor](https://sph.umich.edu/faculty-profiles/wu-zhenke.html) (with tenure) in the [Department of Biostatistics](https://sph.umich.edu/biostat/) at [University of Michigan](https://www.umich.edu) and a faculty affiliate at [Michigan Institute for Data and AI in Society (MIDAS)](http://midas.umich.edu).
+
+
+##### Working Group:
+
+- [__Michigan Statistics for Individualized-healthcare Lab (MiSIL)__ weekly meeting schedules](https://docs.google.com/spreadsheets/d/1CfHqh74SrGH5zuo8W_L_hAGdLJdt_9jLgaeBtoxYp88/edit?usp=sharing)
 <hr/>
 
 <!-- [<i class="fas fa-bullhorn"></i>**Position Openings**] Please contact me for details if interested! 
@@ -49,40 +54,36 @@ I am an [Associate Professor](https://sph.umich.edu/faculty-profiles/wu-zhenke.h
     - PhD/MS students. [Link to position ad](https://docs.google.com/document/d/1R8dZr0X_aZsvKY70TbcEi3Vpa3APLP7ozVbg6JRtWz0/edit?usp=sharing).
 <hr/> -->
 
-**Research Theme**:
+#### Research Themes
 
-**Tagline**: AI for affordable and individualized healthcare; computational and interventional digital health. 
+> Tagline: AI for affordable and individualized healthcare; computational and interventional digital health. 
 
 My research is motivated by biomedical and public health problems and is centered on the design and application of statistical methods that inform health decisions made by individuals, or precision medicine. Towards this goal, I focus on two lines of methodological research: a) structured Bayesian latent variable models for clustering and disease subtyping, and b) study design, causal and reinforcement learning methods for evaluating sequential interventions that tailor to individuals' changing circumstances such as in interventional mobile health studies. I am committed to developing robust, scalable, and interpretable statistical methods to harness real-world, high-dimensional, dynamic data for individualized health. The methods and software developed so far have supported studies in diverse scientiﬁc ﬁelds including infectious disease epidemiology, autoimmune diseases, mental health, behavioral health, and cancer. I am also exploring the intersection between generative AI and biostatistics.
 
 I am deeply passionate about advancement of modern Bayesian latent variable methods, with a keen focus on developing tools that address pivotal public health challenges faced predominantly by low and middle-income countries (LMIC). My contributions include the development of general methods and the creation of publicly-accessible software tailored for world's most updated pediatric [pneumonia etiology estimates across seven sub-Saharan African and Southeast Asian countries](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(19)30721-4/fulltext). Additionally, in collaboration with demographers and statisticians, I've pioneered domain-adaptive mortality estimation for deaths occurring outside the civil registration and vital statistics systems using [computer-coded verbal autopsy](https://openva.net/). Recently, I've been working to advance digital mental health for healthcare workers in Kenya, in collaboration with the [Data Science Initiative in Africa](https://www.datascienceafrica.org/). This effort draws upon my expertise in interventional and predictive mobile health, honed through pioneering studies in the US (Intern Health Study - world's largest multi-year microrandomized trial, and Caregiver Quality of Life Study). I enjoy embracing and navigating the unique challenges presented within the LMIC contexts and seizing the opportunity therein to shape how statistics can effect meaningful change.
 
 
-**Keywords**:
+#### Keywords
 
 - *Statistical*: Hierarchical Bayesian models; Latent variable models; Nonparametric Bayes; Bayesian scalable computation; Causal inference; Reinforcement learning.
 
 - *Substantive*: Precision medicine; Wearable device data; Mobile health; Infectious diseases dynamics; Mental health; Electronic health records/claims data; Healthcare policy; Clinical trials; Just-in-time adaptive interventions for behaviorial and psychiatric research; Computational Social Science.
-
-
-<hr/>
 
 <!-- **Postdoc Openning**
 
 - **[Rolling Reviews: Postdoc Position on Statistical Methods to Individualize Care for Mental Health](https://docs.google.com/document/d/1Eq8VmqvYrF2Fqo5UxzjZbKQpJPnbZWxJTRYbL-6J19I/edit)** -->
 
 
-**Advising**: We are recruiting motivated and hard-working people interested in Bayesian methods and computation, graphical models, causal inference, sequential decision making, reinforcement learning and large-scale health data analytics. If you want to get involved, please [say hi](/sayhi/). 
-  - **Please consider providing relevant information via Google Form [here](https://forms.gle/zNf4aMBiE69prweU7)**.
+<hr/>
 
+#### Advising
+We are recruiting motivated and hard-working people interested in Bayesian methods and computation, graphical models, causal inference, sequential decision making, reinforcement learning and large-scale health data analytics. If you want to get involved, please
+- Review our [research themes](#research-themes) and [recent publications](papers/archive/year)
+- [Say hi](/sayhi/) via email or form to discuss your interests
 
-- *Check this out and send me an email if interested in collaborating!* 
-  - [**AI in Science Postdoctoral Fellowship Program**](https://midas.umich.edu/training/postdoctoral-programs/schmidt-ai-in-science-postdoctoral-fellowship/); The program will pay a competitive salary plus benefits. Travel to funder’s AI in Science events will also be covered.
+##### Other opportunities: send me an email if interested in collaborating!
 
-
-**Working Group**:
-
-- [__Michigan Statistics for Individualized-healthcare Lab (MiSIL)__ weekly meeting schedules](https://docs.google.com/spreadsheets/d/1CfHqh74SrGH5zuo8W_L_hAGdLJdt_9jLgaeBtoxYp88/edit?usp=sharing)
+- [**AI in Science Postdoctoral Fellowship Program**](https://midas.umich.edu/training/postdoctoral-programs/schmidt-ai-in-science-postdoctoral-fellowship/); The program will pay a competitive salary plus benefits. Travel to funder’s AI in Science events will also be covered.
 
 <hr/>
 
@@ -157,7 +158,7 @@ I currently collaborate closely with
 						{% assign author = member %}
 					{% endif %}
 				{% endfor %}		
-				
+    
 				<div class="note-title">
 					<i class="fa fa-bullhorn"></i>
 					<a class="off" href="{{ news.url }}">
