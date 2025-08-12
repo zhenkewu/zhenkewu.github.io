@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Mengbing Li
-position: PhD Candidate (Biostat)
+position: PhD (Biostat), 2025
 institute: University of Michigan
 handle: Mengbing Li
 email: mengbing@umich[punto]edu
@@ -10,7 +10,7 @@ github:
 scholar: PZAo084AAAAJ
 image: /assets/images/team/mengbing-li.jpg
 cv: 
-alum: false
+alum: true
 collaborator: false         
 support: false
 showicon: true                           
@@ -19,7 +19,14 @@ field: biostat
 authors: " "
 ---
 
+
+# First position after graduation 
+
+Eli Lily
+
 # Education:
+
+2019-25, Ph.D. in Biostatistics, University of Michigan, Ann Arbor
 
 2017-19, M.S. in Biostatistics, University of Michigan, Ann Arbor
 

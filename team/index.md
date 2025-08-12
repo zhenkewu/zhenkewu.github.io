@@ -55,20 +55,17 @@ Undergraduate Students (those writing paper with lab is marked with $^*$):
 
 <div class="bigspacer"></div>
 
-<hr/>
-<div class="bigspacer"></div>
 <div class="smalltitle text-left">Research Staff </div>
-<div class="bigspacer"></div>
 
 - Zihan Wang. MS, Biostatistics, U of Michigan (2025). 
 
 
-<div class="bigspacer"></div>
+<!-- <div class="bigspacer"></div>
 
 <hr/>
 <div class="bigspacer"></div>
 <div class="smalltitle text-left">Support Staff </div>
-<div class="bigspacer"></div>
+<div class="bigspacer"></div> -->
 
 <div class="row">
     {% for member in site.categories.team %}
