@@ -14,7 +14,7 @@ navorder: 5
 
 <div class="bigspacer"></div>
 
-We are recruiting motivated and hard-working people interested in Bayesian methods and computation, graphical models, sequential decision making, reinforcement learning and large-scale health data analytics. 
+We are recruiting motivated and hard-working people interested in the intersection of AI/ML and statistics, Bayesian methods and computation, graphical models, sequential decision making, reinforcement learning and large-scale health data analytics. You can review [recent publications](/papers/) to get a rough sense of what we are working on; it often is much more effective to talk if there is a sense of match in interest/technical ability/vision.
 
 I am extremely fortunate to have worked with many excellent graduate students at UM. Under an apprenticeship model, I have been working closely with my students to gain practical research experience, which when combined with individual students’ particular strengths led to mutually rewarding collaborations and research results. My goal in mentoring is to train students who will be highly sought-after in areas of their interests upon graduation.
 
@@ -39,7 +39,7 @@ For potential trainees and student visitors, **please consider providing relevan
 
 - If you are **applying to study at the UMich**, there is no need to email me, please (1) apply to the UMich Biostat PhD/MS program, (2) mention my name in the application. I look forward to meeting you once you are admitted. If you are interested in developing graduate student fellowship application (e.g., NSF Graduate Student Fellowship), please send me an email with a brief description of interests, CV, and transcript. We will find a time to meet. You are also welcome to sign up for [office hours](https://calendar.app.google/KPxDS1RAB85avAmq5).
 
-- If you are **interested in a temporary research position**, this is available at a non-regular basis and depends on projects and funding. Because of may such requests, unfortunately we are not able to respond to all such inquiries.
+- If you are **interested in a temporary research position**, this is available at a non-regular basis and depends on projects and funding. Because of many such requests, unfortunately we are not able to respond to all such inquiries.
 
 - If you are **interested in other collaborations**, please send me an email.
 
