@@ -2,7 +2,7 @@
 layout: paper
 title: "CFRL: A Python library for counterfactually fair offline reinforcement learning via sequential data preprocessing"
 image: /assets/images/papers/cfrl.png
-authors: Jianhan Zhang, Jitao Wang, Chengchun Shi, John Piette, Joshua Loftus, Donglin Zeng, Zhenke Wu
+authors: Jianhan Zhang, Jitao Wang, Chengchun Shi, John Piette, Donglin Zeng, Zhenke Wu
 year: submitted
 shortref: Zhang et al.
 journal: 
