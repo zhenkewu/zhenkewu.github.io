@@ -16,7 +16,6 @@ external_link:
 video_link: 
 type: statistical
 tags:
-    - mobile health
     - reinforcement learning
     - ethical AI
     - fairness
