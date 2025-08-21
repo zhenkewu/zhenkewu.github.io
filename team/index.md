@@ -55,12 +55,6 @@ I'm extremely fortunate to work with several amazing students to whom I serve as
 
 - $^*$[**Jianhan Zhang**](https://www.linkedin.com/in/jianhan-zhang-175536231/), co-mentored by [Jitao Wang](/team/jitao-wang). Undergrad, Pure Math, Data Science, U of Michigan. Undergraduate Honor Thesis: "Counterfactual Fairness in Reinforcement Learning via Marginal Distributional Matching"
 
-<div class="bigspacer"></div>
-
-<div class="label label-info">Research Staff </div>
-
-- Zihan Wang. MS, Biostatistics, U of Michigan (2025). 
-
 
 <!-- <div class="bigspacer"></div>
 
@@ -137,6 +131,12 @@ Please send an email to zhenkewu@gmail[punto]com for updates.
 - [**Owen Yoo**](https://owen-hy.github.io/personal-web/) (2024 Fall). Undergrad,  Statistics and Data Science, Minor in Music, U of Michigan. "Prior elicitation algorithms for inferring causes of death from computer-coded verbal autopsy data"
 - $^*$**Bolin Wu** (co-mentored by [Mengbing Li](/team/mengbing-li)) (2023 Summer). Undergrad, Computer Science, U Of Michigan, Ann Arbor. "Shinyapp for Enhancing Latent Class Analysis using Dirichlet Diffusion Tree". First position after graduation: Carnegie Mellon University, Master of Computational Data Science Program. 
 - **Jiayuan Dong** (2021 Summer). MS, Accelerated Master Degree Program (ADMP), U of Michigan, Ann Arbor; Summer Intern. (Readings on Probablistic Graphical Models). First position after graduation: UMich, Mechanical Engineering PhD Student
+
+<div class="bigspacer"></div>
+
+<div class="label label-info">Former Research Staff </div> 
+
+- Zihan Wang. MS, Biostatistics, U of Michigan (2025). Next position: PhD Student in Health Data Science (Biostatistics concentration). Geroge Washington University. 
 
 
 <!--
