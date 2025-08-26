@@ -11,8 +11,8 @@ slides:
 supplement: 
 poster: 
 github: 
-doi:
-external_link: https://www.medrxiv.org/content/10.1101/2025.08.20.25334076v1
+doi: 10.1101/2025.08.20.25334076
+external_link: 
 video_link: 
 type: substantive
 tags:
