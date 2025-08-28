@@ -35,5 +35,6 @@ Other info: "I learned chess during my childhood and Japanese during my undergra
 
 # Awards:
 
-* 2023, Outstanding First Year Masters Student (Biostatistics)
+* 2025, [Michigan Institute for Computational Discovery and Engineering (MICDE) Graduate Fellowship](https://micde.umich.edu/academic-programs/fellowships/)
 * 2025, Best Poster at Michigan Student Symposium for Interdisciplinary Statistical Sciences (MSSISS), University of Michigan
+* 2023, Outstanding First Year Masters Student (Biostatistics)
