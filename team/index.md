@@ -53,7 +53,7 @@ I'm extremely fortunate to work with several amazing students to whom I serve as
 <div class="label label-info"> Undergraduate Students </div> 
 (those writing paper with lab is marked with $^*$):
 
-- $^*$[**Jianhan Zhang**](https://www.linkedin.com/in/jianhan-zhang-175536231/), co-mentored by [Jitao Wang](/team/jitao-wang). Undergrad, Pure Math, Data Science, U of Michigan. Undergraduate Honor Thesis: "Counterfactual Fairness in Reinforcement Learning via Marginal Distributional Matching"
+- $^*$[**Jianhan Zhang**](https://www.linkedin.com/in/jianhan-zhang-175536231/), co-mentored by [Jitao Wang](/team/jitao-wang). Undergrad, Pure Math, Data Science, U of Michigan. **Undergraduate Honor Thesis**: "Counterfactual Fairness in Reinforcement Learning via Marginal Distributional Matching"
 
 
 <!-- <div class="bigspacer"></div>
