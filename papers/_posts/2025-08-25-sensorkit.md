@@ -2,7 +2,7 @@
 layout: paper
 title: "Patterns of smartphone typing performance by time awake in US training physicians: implications for unobtrusive ambulatory mental fatigue assessment"
 image: /assets/images/papers/sensorkit.png
-authors: Fang Y, Yang P, Frank E, Goldstein C, Wright AGC, Bohnert ASB, Kheterpal V, Sen S, Wu Z
+authors: Yu Fang, Peter Yang, Elena Frank, Cathy Goldstein, Aidan GC Wright, Amy SB Bohnert, Vik Kheterpal, Srijan Sen, Zhenke Wu
 year: submitted
 shortref: Fang et al.
 journal: medRxiv
