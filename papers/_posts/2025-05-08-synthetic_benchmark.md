@@ -20,6 +20,7 @@ tags:
     - generative AI
     - benchmarking
     - review
+    - ehr
  
 ---
 

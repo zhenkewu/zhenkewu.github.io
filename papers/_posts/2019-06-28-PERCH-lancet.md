@@ -2,7 +2,7 @@
 layout: paper
 title: "Causes of severe pneumonia requiring hospital admission in children without HIV infection from Africa and Asia: the PERCH multi-country case-control study"
 image: /assets/images/papers/cid_bayesian.png
-authors: PERCH Study Group
+authors: Zhenke Wu, as part of PERCH Study Group
 year: 2019
 shortref: PERCH Study Group
 journal: The Lancet

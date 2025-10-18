@@ -22,6 +22,40 @@ navorder: 1
   padding: 5px 10px;
   font-size: 0.9em;
 }
+
+/* Enhanced styling for section jump buttons */
+.section-jump-buttons .nav-pills > li > a {
+  padding: 0px 5px;
+  font-size: 0.9em;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  background-color: #f8f9fa;
+  border: 2px solid #e9ecef;
+  color: #495057;
+  text-decoration: none;
+  display: inline-block;
+  min-width: 140px;
+  text-align: center;
+}
+
+.section-jump-buttons .nav-pills > li > a:hover {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,123,255,0.3);
+}
+
+.section-jump-buttons .nav-pills > li > a:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 1px rgba(0,123,255,0.3);
+}
+
+/* Add scroll padding to section headers to account for fixed navigation */
+#statistical-methods, #substantive {
+  scroll-margin-top: 80px;
+}
 </style>
 
 <div class="row">
@@ -61,8 +95,36 @@ navorder: 1
 {% include search-form.html %}
 </div>
 
-<div class="label label-default">Statistical Methods</div>
+<div class="row">
+	<div class="col-md-12">
+		<div class="centered-pills section-jump-buttons">
+			<ul class="nav nav-pills">
+				<li role="presentation">
+					<a href="#statistical-methods">
+						<i class="fa fa-microchip fa-fw"></i> Theory/Methods
+					</a>
+				</li>
+				<li role="presentation">
+					<a href="#substantive">
+						<i class="fa fa-flask fa-fw"></i> Substantive
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="bigspacer"></div>
+	</div>
+</div>
+
+<div class="label label-default" id="statistical-methods">Statistical Methods</div>
 <div class="bigspacer"></div>
+<div class="row">
+	<div class="col-md-12">
+		<a href="#" class="btn btn-sm btn-default">
+			<i class="fa fa-chevron-up fa-fw"></i> Back to Top
+		</a>
+		<div class="spacer"></div>
+	</div>
+</div>
 <div class="container">
 {% for paper in site.categories.papers %}
   {% if paper.type == "statistical"%}
@@ -91,8 +153,16 @@ navorder: 1
 </div>
 
 <hr/>
-<div class="label label-default">Substantive</div>
+<div class="label label-default" id="substantive">Substantive</div>
 <div class="bigspacer"></div>
+<div class="row">
+	<div class="col-md-12">
+		<a href="#" class="btn btn-sm btn-default">
+			<i class="fa fa-chevron-up fa-fw"></i> Back to Top
+		</a>
+		<div class="spacer"></div>
+	</div>
+</div>
 
 <div class="container">
 {% for paper in site.categories.papers %}
