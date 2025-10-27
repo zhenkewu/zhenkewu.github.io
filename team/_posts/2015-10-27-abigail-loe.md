@@ -6,7 +6,7 @@ institute: University of Michigan
 handle: Abigail Loe
 email: agloe@umich[punto]edu
 twitter: 
-github: 
+github: AbigailLoe
 scholar: 
 image: /assets/images/team/abby-loe.jpeg
 cv: 
@@ -14,7 +14,7 @@ alum: false
 collaborator: false
 support: false
 showicon: true                                  
-web: 
+web: github.com/AbigailLoe
 field: biostat
 authors: " "
 
