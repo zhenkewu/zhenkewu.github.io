@@ -34,4 +34,5 @@ Abby is interested in social determinants of health, methods in sampling and soc
 
 # Awards:
 
+* 2025, Outstanding Citizenship Award. Department of Biostatistics, University of Michigan.
 * 2025, [Gertrude M. Cox Scholarship](https://www.amstat.org/your-career/awards/gertrude-m-cox-scholarship). American Statistical Association.

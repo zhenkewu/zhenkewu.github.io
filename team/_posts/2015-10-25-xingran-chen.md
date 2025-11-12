@@ -35,6 +35,7 @@ Other info: "I learned chess during my childhood and Japanese during my undergra
 
 # Awards:
 
+* 2025, Excellence in Research Award, Department of Biostatistics, University of Michigan.
 * 2025， First Place, Student Poster Competition. ICSA Midwest Chapter and [NIC-ASA](https://community.amstat.org/northeasternillinoischapter/home) Joint Fall Conference, Northbrook, IL, Oct 2-3.
 * 2025, [Michigan Institute for Computational Discovery and Engineering (MICDE) Graduate Fellowship](https://micde.umich.edu/academic-programs/fellowships/)
 * 2025, Best Poster at Michigan Student Symposium for Interdisciplinary Statistical Sciences (MSSISS), University of Michigan
