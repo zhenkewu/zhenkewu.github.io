@@ -26,7 +26,7 @@ Abby is interested in social determinants of health, methods in sampling and soc
 
 # Education:
 
-2023 Fall, PhD Student in Biostatistics, University of Michigan, Ann Arbor.
+2023 Fall - present, PhD Student in Biostatistics, University of Michigan, Ann Arbor.
 
 2021-2023, MS Student in Biostatistics, University of Michigan, Ann Arbor
 
