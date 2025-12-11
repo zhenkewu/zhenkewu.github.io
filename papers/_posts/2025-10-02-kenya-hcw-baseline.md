@@ -11,7 +11,7 @@ slides:
 supplement:
 poster:
 github: 
-doi:
+doi: 10.1001/jamapsychiatry.2025.3727
 external_link: 
 video_link: 
 type: substantive
