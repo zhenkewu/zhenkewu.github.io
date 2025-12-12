@@ -35,7 +35,8 @@ I'm extremely fortunate to work with several amazing students to whom I serve as
 
 
 <div class="row">
-    {% for member in site.categories.team %}
+    <!-- iterate over members; new members last. -->
+    {% for member in site.categories.team reversed %} 
     {% if member.alum == false and member.collaborator == false and member.support == false %}
     <div class="col-sm-3" style="text-align: center">
     {%if member.url%}
@@ -64,6 +65,7 @@ I'm extremely fortunate to work with several amazing students to whom I serve as
 <div class="bigspacer"></div> -->
 
 <div class="row">
+    <!-- iterate over members; new alumni first. -->
     {% for member in site.categories.team %}
     {% if member.support == true and member.alum == false %}
     <div class="col-sm-3" style="text-align: center">

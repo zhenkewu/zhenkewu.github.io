@@ -24,6 +24,10 @@ authors: " "
 
 Eli Lily
 
+# Thesis
+
+Title: Bayesian Structured Latent Variable Models for Individualized Health. 
+
 # Education:
 
 2019-25, Ph.D. in Biostatistics, University of Michigan, Ann Arbor
