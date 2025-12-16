@@ -35,6 +35,7 @@ Other info: "I learned chess during my childhood and Japanese during my undergra
 
 # Awards:
 
+* 2026, [ENAR Distinguished Student Paper awards](https://www.enar.org/meetings/StudentPaperAwards/index.cfm)
 * 2025, Rackham International Students Fellowship, University of Michigan
 * 2025, Excellence in Research Award, Department of Biostatistics, University of Michigan.
 * 2025， First Place, Student Poster Competition. ICSA Midwest Chapter and [NIC-ASA](https://community.amstat.org/northeasternillinoischapter/home) Joint Fall Conference, Northbrook, IL, Oct 2-3.
