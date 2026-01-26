@@ -32,7 +32,7 @@ categories:
 
 [Publications](/papers/) by: [year](papers/archive/year), [topic](papers/archive/topic), or [word cloud](papers/archive/explore) 
 
-CV: [[pdf]](assets/pdfs/team/zhenkewu_cv.pdf) or [[1-pager]](assets/pdfs/team/zhenkewu_cv_one_page.pdf) or [[Overleaf]](https://www.overleaf.com/read/dbktqfjxccbv)
+CV: [[pdf]](assets/pdfs/team/zhenkewu_cv.pdf) or [[1-pager]](assets/pdfs/team/zhenkewu_cv_one_page.pdf)
 
 [[<i class="fa-brands fa-google-scholar"></i> Google Scholar]](https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en) [[<i class="fa-brands fa-github"></i> GitHub]](https://github.com/zhenkewu?tab=activity) [[<i class="fa-brands fa-x-twitter"></i>]](https://twitter.com/ZhenkeWu)
 
