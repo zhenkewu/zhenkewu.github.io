@@ -24,6 +24,8 @@ For potential trainees and student visitors, **please consider providing relevan
 
 **Please send an email if none of the following applies to you!**
 
+If you are emailing, add the word `giraffe` at the end of the subject line to indicate you have visited this site.
+
 ## UMich Students
 
 - If you are an **UMich gradudate student interested in doing research**, such as doctoral/master theses, independent studies/readings, journal clubs, and lab meetings, send me an email with a brief description of interests, CV, transcript, and a link to your homepage (if you have one). We will find a time to meet. You are also welcome to sign up for [office hours](https://calendar.app.google/KPxDS1RAB85avAmq5).
