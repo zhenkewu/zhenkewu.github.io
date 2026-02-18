@@ -24,7 +24,7 @@ For potential trainees and student visitors, **please consider providing relevan
 
 **Please send an email if none of the following applies to you!**
 
-If you are emailing, add the word `giraffe` at the end of the subject line to indicate you have visited this site.
+If you are emailing for the first time, add the word `giraffe` at the end of the subject line to indicate you have visited this site.
 
 ## UMich Students
 
