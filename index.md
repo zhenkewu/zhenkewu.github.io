@@ -28,20 +28,22 @@ categories:
 
 **Name in Chinese:**[ 吴振科 <i class="fa-brands fa-soundcloud"></i>](https://soundcloud.com/zhenke-wu/zhenke-wu-name). Pronounced: "Jen-Kuh Wu".
 
-[Bio + Contact](/team/zhenke-wu)
+<hr/>
+I am an [Associate Professor](https://sph.umich.edu/faculty-profiles/wu-zhenke.html) (with tenure) in the [Department of Biostatistics](https://sph.umich.edu/biostat/) at [University of Michigan](https://www.umich.edu), Associate Professor of Global Public Health, and a faculty affiliate at [Michigan Institute for Data and AI in Society (MIDAS)](http://midas.umich.edu).
 
-[Publications](/papers/) by: [year](papers/archive/year), [topic](papers/archive/topic), or [word cloud](papers/archive/explore) 
+[[Bio + Contact](/team/zhenke-wu)][[CV](assets/pdfs/team/zhenkewu_cv.pdf)] or [[CV 1-pager](assets/pdfs/team/zhenkewu_cv_one_page.pdf)]
 
-CV: [[pdf]](assets/pdfs/team/zhenkewu_cv.pdf) or [[1-pager]](assets/pdfs/team/zhenkewu_cv_one_page.pdf)
+[Publications](/papers/) by [year](papers/archive/year), [topic](papers/archive/topic), or [word cloud](papers/archive/explore) 
 
-[[<i class="fa-brands fa-google-scholar"></i> Google Scholar]](https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en) [[<i class="fa-brands fa-github"></i> GitHub]](https://github.com/zhenkewu?tab=activity) [[<i class="fa-brands fa-x-twitter"></i>]](https://twitter.com/ZhenkeWu)
+
+
+[[<i class="fa-brands fa-google-scholar"></i> Google Scholar](https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en)] [[<i class="fa-brands fa-github"></i> GitHub](https://github.com/zhenkewu?tab=activity)] [[<i class="fa-brands fa-x-twitter"></i>](https://twitter.com/ZhenkeWu)]
 
 The best way to contact me is email (zhenkewu [arroba] umich [punto] edu). 
 
 Direction to my office is [here](assets/pdfs/team/zhenkewu-office.pdf).
 
-<hr/>
-I am an [Associate Professor](https://sph.umich.edu/faculty-profiles/wu-zhenke.html) (with tenure) in the [Department of Biostatistics](https://sph.umich.edu/biostat/) at [University of Michigan](https://www.umich.edu), Associate Professor of Global Public Health, and a faculty affiliate at [Michigan Institute for Data and AI in Society (MIDAS)](http://midas.umich.edu).
+
 
 
 ##### Working Group:
