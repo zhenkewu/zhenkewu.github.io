@@ -28,7 +28,7 @@ If you are emailing for the first time, add the word `giraffe` at the end of the
 
 ## UMich Students
 
-- If you are an **UMich gradudate student interested in doing research**, such as doctoral/master theses, independent studies/readings, journal clubs, and lab meetings, send me an email with a brief description of interests, CV, transcript, and a link to your homepage (if you have one). We will find a time to meet. You are also welcome to sign up for [office hours](https://calendar.app.google/KPxDS1RAB85avAmq5).
+- If you are an **UMich graduate student interested in doing research**, such as doctoral/master theses, independent studies/readings, journal clubs, and lab meetings, send me an email with a brief description of interests, CV, transcript, and a link to your homepage (if you have one). We will find a time to meet. You are also welcome to sign up for [office hours](https://calendar.app.google/KPxDS1RAB85avAmq5).
 
 - If you are an **UMich undergraduate student interested in research**, please start by doing an independent study with me to find out if there is a good match. Please send me an email with a brief description of interests, CV, and transcript. We will find a time to meet. You are also welcome to sign up for [office hours](https://calendar.app.google/KPxDS1RAB85avAmq5).
 

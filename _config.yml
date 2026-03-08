@@ -21,10 +21,10 @@ markdown: kramdown
 # so be sure to set them if your theme uses them.
 #
 title : Zhenke Wu, PhD
-tagline: Research updates on AI for Health, Computational and Interventinal Digital Health
+tagline: Research updates on AI for Health, Computational and Interventional Digital Health
 url: http://zhenkewu.com
 name : Zhenke Wu, PhD
-description: Research updates on AI for Health, Computational and Interventinal Digital Health
+description: Research updates on AI for Health, Computational and Interventional Digital Health
 
 institution:
   url: https://www.umich.edu
@@ -45,7 +45,7 @@ author :
   github : zhenkewu
   twitter : ZhenkeWu
   googlescholar: 3ffCNrEAAAAJ
-  uri: http://zhenkewu.com
+  uri: https://zhenkewu.com
 #  feedburner : feedname
 
 # The production_url is only used when full-domain names are needed
@@ -56,7 +56,7 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://zhenkewu.com
+production_url : https://zhenkewu.com
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
