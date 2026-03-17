@@ -3,9 +3,9 @@ layout: paper
 title: "Spatially Robust Inference with Predicted and Missing at Random Labels"
 image: /assets/images/papers/spatial_ipd.png
 authors: Stephen Salerno, Zhenke Wu, Tyler McCormick
-year: 2026
+year: submitted
 shortref: Salerno et al.
-journal: submitted
+journal: arXiv
 pdf: 
 slides:
 supplement: 
