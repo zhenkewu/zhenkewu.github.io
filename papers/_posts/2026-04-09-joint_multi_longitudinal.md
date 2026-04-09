@@ -3,9 +3,9 @@ layout: paper
 title: "Joint Modeling of Multiple Longitudinal Biomarkers and Survival Outcomes via Threshold Regression: Variability as a Predictor"
 image: /assets/images/papers/joint_multi_longitudinal.png
 authors: Mingyan Yu, Zhenke Wu, Michelle Hood, Carrie Karvonen-Gutierrez, Sioban Harlow, Michael R Elliott
-year: submitted
+year: 2026
 shortref: Yu et al.
-journal:
+journal: Biometrics
 pdf: 
 slides: 
 supplement: 
