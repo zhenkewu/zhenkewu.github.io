@@ -1,6 +1,6 @@
 ---
 layout: news
-title: "Jianhan Zhang highest honors"
+title: "Jianhan Zhang undergrad highest honors"
 description: ""
 authors: " "
 year: 2026-04-16
