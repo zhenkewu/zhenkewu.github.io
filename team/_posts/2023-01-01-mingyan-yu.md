@@ -20,11 +20,15 @@ authors: " "
 
 ---
 
-Co-advising with Michael Elliott
+# First position after graduation 
 
-Mingyan is interested in Bayesian hierarchical model, longitudinal data analysis methods and their application to physical and mental health related field
+Takeda, Boston, MA
 
-Current topic: A Bayesian approach for modeling variance of intensive longitudinal biomarker data as predictors of health outcomes
+# Thesis
+
+Bayesian Joint Models to Incorporate Individual-Level Variability as Predictors for Health Outcomes
+
+Co-chair: Michael Elliott
 
 # Education:
 

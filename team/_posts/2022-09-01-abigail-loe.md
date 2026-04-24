@@ -20,9 +20,15 @@ authors: " "
 
 ---
 
-Co-chair: Susan Murray
+# First position after graduation 
 
-Abby is interested in social determinants of health, methods in sampling and sociology research, and latent variable modeling.
+Assistant Professor of Math/Stat/Computer Science, Macalester College, St Paul, MN
+
+# Thesis
+
+Dynamic Prediction Models for Recurrent and Alternating Recurrent Events
+
+Co-chair: Susan Murray
 
 # Education:
 

@@ -5,7 +5,7 @@ image: /assets/images/papers/spatial_ipd.png
 authors: Stephen Salerno, Zhenke Wu, Tyler McCormick
 year: submitted
 shortref: Salerno et al.
-journal: arXiv
+journal: 
 pdf: 
 slides:
 supplement: 

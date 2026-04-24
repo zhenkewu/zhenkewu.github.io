@@ -5,7 +5,7 @@ image: /assets/images/papers/ehr-ppi.png
 authors: Xingran Chen, Cheng-Han Yang, Zhenke Wu, Bhramar Mukherjee
 year: submitted
 shortref: Chen et al.
-journal: arXiv
+journal: 
 pdf: 
 slides:
 supplement: 

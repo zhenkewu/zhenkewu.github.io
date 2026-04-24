@@ -23,6 +23,97 @@ navorder: 1
   font-size: 0.9em;
 }
 
+.paper-viz-wrap {
+  border: 1px solid #e7ecef;
+  border-left: 4px solid #5cb85c;
+  border-radius: 6px;
+  padding: 8px 10px;
+  background: #fcfdfc;
+  width: 100%;
+  margin: 0 0 4px 0;
+}
+
+.paper-viz-title {
+  font-weight: 600;
+  font-size: 0.9em;
+  margin-bottom: 2px;
+  color: #2f3a44;
+}
+
+.paper-viz-help {
+  font-size: 0.74em;
+  color: #6d7680;
+  margin-bottom: 4px;
+}
+
+.paper-viz-metrics {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  margin-bottom: 2px;
+}
+
+.paper-viz-metrics .label {
+  font-size: 0.72em;
+  font-weight: 500;
+  border-radius: 999px;
+  padding: 3px 7px;
+}
+
+.paper-viz-tabs {
+  margin-bottom: 4px;
+}
+
+.paper-viz-tabs .btn {
+  font-size: 0.72em;
+  padding: 1px 7px;
+  border-radius: 999px;
+  margin-right: 4px;
+}
+
+.paper-viz-bars {
+  margin-top: 2px;
+}
+
+.paper-viz-bars-scroll {
+  max-height: 180px;
+  overflow-y: auto;
+  padding-right: 3px;
+}
+
+.paper-viz-row {
+  margin-bottom: 2px;
+}
+
+.paper-viz-section-title {
+  font-size: 0.75em;
+  font-weight: 600;
+  color: #4a4f55;
+  margin: 6px 0 3px;
+}
+
+.paper-viz-row-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 6px;
+  font-size: 0.74em;
+  margin-bottom: 0;
+  color: #4a4f55;
+}
+
+.paper-viz-track {
+  width: 100%;
+  height: 6px;
+  background: #efefef;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.paper-viz-fill {
+  height: 100%;
+  border-radius: 999px;
+}
+
 /* Enhanced styling for section jump buttons */
 .section-jump-buttons .nav-pills > li > a {
   padding: 0px 5px;
@@ -89,12 +180,50 @@ navorder: 1
 </div>
 
 
-<b >Some papers are not listed below. See <a href="https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en" class="label label-primary">Google Scholar</a> for a more complete list. </b><br>
+<!-- <b >Some papers are not listed below. See <a href="https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en" class="label label-primary">Google Scholar</a> for a more complete list. </b><br> -->
 
 <div> 
 {% include search-form.html %}
 </div>
 
+<div class="spacer"></div>
+<div class="paper-viz-wrap">
+	<div class="paper-viz-title"><i class="fa fa-chart-bar fa-fw"></i> Papers at a glance</div>
+  <div class="paper-viz-help">
+    Some papers are not listed here. See
+    <a href="https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en">Google Scholar</a>
+    for a complete list.
+  </div>
+	<div id="paper-viz-metrics" class="paper-viz-metrics"></div>
+  <div class="paper-viz-tabs">
+    <button type="button" class="btn btn-xs btn-default active" data-paper-viz-view="type"> type</button>
+    <button type="button" class="btn btn-xs btn-default" data-paper-viz-view="themes"> theme</button>
+    <button type="button" class="btn btn-xs btn-default" data-paper-viz-view="venues-methods">Methods venue</button>
+    <button type="button" class="btn btn-xs btn-default" data-paper-viz-view="venues-substantive">Substantive venue</button>
+    <button type="button" class="btn btn-xs btn-default" data-paper-viz-view="coauthors-methods">Methods co-author</button>
+    <button type="button" class="btn btn-xs btn-default" data-paper-viz-view="coauthors-substantive">Substantive co-author</button>
+  </div>
+  <div id="paper-viz-subtitle" class="smallnote"></div>
+	<div id="paper-viz-bars" class="paper-viz-bars"></div>
+</div>
+<ul id="paper-viz-data" style="display:none;">
+  {% for paper in site.categories.papers %}
+  <li
+    data-year-raw="{{ paper.year | default: '' | escape }}"
+    data-year-fallback="{{ paper.date | date: '%Y' | escape }}"
+    data-type="{{ paper.type | default: 'other' | escape }}"
+    data-journal="{{ paper.journal | default: 'Preprint' | escape }}"
+    data-authors="{{ paper.authors | default: '' | escape }}"
+    data-tags="{{ paper.tags | join: '||' | default: '' | escape }}"
+    data-github="{{ paper.github | default: '' | escape }}"
+    data-supplement="{{ paper.supplement | default: '' | escape }}"
+    data-pdf="{{ paper.pdf | default: '' | escape }}"
+    data-title="{{ paper.title | escape }}">
+  </li>
+  {% endfor %}
+</ul>
+
+<div class="spacer"></div>
 <div class="row">
 	<div class="col-md-12">
 		<div class="centered-pills section-jump-buttons">
@@ -207,4 +336,225 @@ navorder: 1
 		</div>
 	</div>
 </div> -->
+
+<script>
+(function () {
+  var paperNodes = Array.prototype.slice.call(document.querySelectorAll("#paper-viz-data li"));
+  var papers = paperNodes.map(function (node) {
+    var rawYear = (node.getAttribute("data-year-raw") || "").trim();
+    var fallbackYear = (node.getAttribute("data-year-fallback") || "").trim();
+    var yearValue = /^\d{4}$/.test(rawYear) ? rawYear : (rawYear ? "Submitted/In press" : fallbackYear);
+    return {
+      year: yearValue,
+      type: node.getAttribute("data-type") || "other",
+      journal: node.getAttribute("data-journal") || "Preprint",
+      authors: node.getAttribute("data-authors") || "",
+      tags: node.getAttribute("data-tags") || "",
+      github: node.getAttribute("data-github") || "",
+      supplement: node.getAttribute("data-supplement") || "",
+      pdf: node.getAttribute("data-pdf") || "",
+      title: node.getAttribute("data-title") || ""
+    };
+  });
+
+  function normalizeType(raw) {
+    var t = (raw || "").toLowerCase();
+    if (t === "statistical") return "Theory/Methods";
+    if (t === "substantive") return "Substantive";
+    return "Other";
+  }
+
+  function countBy(items, keyFn) {
+    var out = {};
+    items.forEach(function (item) {
+      var key = keyFn(item);
+      out[key] = (out[key] || 0) + 1;
+    });
+    return out;
+  }
+
+  function topEntries(mapObj, limit, sortMode) {
+    var entries = Object.keys(mapObj).map(function (k) {
+      return { label: k, value: mapObj[k] };
+    });
+    if (sortMode === "label-asc") {
+      entries.sort(function (a, b) { return a.label.localeCompare(b.label); });
+    } else {
+      entries.sort(function (a, b) {
+        if (b.value !== a.value) return b.value - a.value;
+        return a.label.localeCompare(b.label);
+      });
+    }
+    return typeof limit === "number" ? entries.slice(0, limit) : entries;
+  }
+
+  function renderBars(container, rows, color) {
+    if (!rows.length) {
+      container.innerHTML = "<div class='smallnote'>No data available.</div>";
+      return;
+    }
+    var max = rows[0].value || 1;
+    container.innerHTML = rows.map(function (row) {
+      var width = Math.max(6, Math.round((row.value / max) * 100));
+      return (
+        "<div class='paper-viz-row'>" +
+          "<div class='paper-viz-row-head'><span>" + row.label + "</span><strong>" + row.value + "</strong></div>" +
+          "<div class='paper-viz-track'><div class='paper-viz-fill' style='width:" + width + "%; background:" + color + ";'></div></div>" +
+        "</div>"
+      );
+    }).join("");
+  }
+
+  function rowsToHtml(rows, color) {
+    if (!rows.length) return "<div class='smallnote'>No data available.</div>";
+    var max = rows[0].value || 1;
+    return rows.map(function (row) {
+      var width = Math.max(6, Math.round((row.value / max) * 100));
+      return (
+        "<div class='paper-viz-row'>" +
+          "<div class='paper-viz-row-head'><span>" + row.label + "</span><strong>" + row.value + "</strong></div>" +
+          "<div class='paper-viz-track'><div class='paper-viz-fill' style='width:" + width + "%; background:" + color + ";'></div></div>" +
+        "</div>"
+      );
+    }).join("");
+  }
+
+  function renderMetrics() {
+    var years = papers
+      .map(function (p) { return Number(p.year); })
+      .filter(function (y) { return !Number.isNaN(y); });
+    var minYear = years.length ? Math.min.apply(null, years) : "-";
+    var maxYear = years.length ? Math.max.apply(null, years) : "-";
+    var uniqueJournals = {};
+    papers.forEach(function (p) { uniqueJournals[p.journal] = true; });
+
+    document.getElementById("paper-viz-metrics").innerHTML =
+      "<span class='label label-success'><i class='fa fa-file-text-o fa-fw'></i> " + papers.length + " papers</span>" +
+      "<span class='label label-default'><i class='fa fa-book fa-fw'></i> " + Object.keys(uniqueJournals).length + " venues</span>" +
+      "<span class='label label-default'><i class='fa fa-calendar fa-fw'></i> " + minYear + " - " + maxYear + "</span>";
+  }
+
+  function splitAuthors(rawAuthors) {
+    if (!rawAuthors) return [];
+    return rawAuthors
+      .split(",")
+      .map(function (name) { return name.trim(); })
+      .filter(function (name) {
+        if (!name) return false;
+        var lower = name.toLowerCase();
+        if (lower.indexOf("study group") >= 0 || lower.indexOf("research group") >= 0) return false;
+        if (lower === "zhenke wu") return false;
+        return true;
+      })
+      .map(function (name) {
+        return name.replace(/\*+$/g, "").trim();
+      });
+  }
+
+  function authorRowsByType(targetType) {
+    var authorCount = {};
+    papers.forEach(function (paper) {
+      if (normalizeType(paper.type) !== targetType) return;
+      var seen = {};
+      splitAuthors(paper.authors).forEach(function (author) {
+        var key = author.toLowerCase();
+        if (seen[key]) return;
+        seen[key] = true;
+        if (!authorCount[author]) authorCount[author] = 0;
+        authorCount[author] += 1;
+      });
+    });
+    return topEntries(authorCount, null, "value-desc");
+  }
+
+  function venueRowsByType(targetType) {
+    var venueCount = {};
+    papers.forEach(function (paper) {
+      if (normalizeType(paper.type) !== targetType) return;
+      var venue = (paper.journal || "").trim();
+      if (!venue || venue.toLowerCase() === "preprint") return;
+      venueCount[venue] = (venueCount[venue] || 0) + 1;
+    });
+    return topEntries(venueCount, null, "value-desc");
+  }
+
+  function themeRows() {
+    var themeCount = {};
+    var displayName = {};
+    papers.forEach(function (paper) {
+      var seen = {};
+      (paper.tags || "")
+        .split("||")
+        .map(function (tag) { return tag.trim(); })
+        .filter(function (tag) { return !!tag; })
+        .forEach(function (tag) {
+          var key = tag.toLowerCase();
+          if (seen[key]) return;
+          seen[key] = true;
+          if (!displayName[key]) displayName[key] = tag;
+          themeCount[key] = (themeCount[key] || 0) + 1;
+        });
+    });
+    var converted = {};
+    Object.keys(themeCount).forEach(function (k) {
+      converted[displayName[k]] = themeCount[k];
+    });
+    return topEntries(converted, null, "value-desc");
+  }
+
+  function render(view) {
+    var bars = document.getElementById("paper-viz-bars");
+    var subtitle = document.getElementById("paper-viz-subtitle");
+    var rows;
+    var color;
+    if (view === "coauthors-methods") {
+      rows = authorRowsByType("Theory/Methods");
+      color = "#5bc0de";
+      subtitle.textContent = "Most frequent co-authors on theory/methods papers.";
+      bars.classList.add("paper-viz-bars-scroll");
+    } else if (view === "coauthors-substantive") {
+      rows = authorRowsByType("Substantive");
+      color = "#3498db";
+      subtitle.textContent = "Most frequent co-authors on substantive papers.";
+      bars.classList.add("paper-viz-bars-scroll");
+    } else if (view === "venues-methods") {
+      rows = venueRowsByType("Theory/Methods");
+      color = "#f0ad4e";
+      subtitle.textContent = "Top venues for theory/methods papers (excluding preprints).";
+      bars.classList.add("paper-viz-bars-scroll");
+    } else if (view === "venues-substantive") {
+      rows = venueRowsByType("Substantive");
+      color = "#4aa3df";
+      subtitle.textContent = "Top venues for substantive papers (excluding preprints).";
+      bars.classList.add("paper-viz-bars-scroll");
+    } else if (view === "themes") {
+      rows = themeRows();
+      color = "#9b59b6";
+      subtitle.textContent = "Themes from paper tags.";
+      bars.classList.add("paper-viz-bars-scroll");
+    } else {
+      rows = topEntries(countBy(papers, function (p) { return normalizeType(p.type); }), 3, "value-desc");
+      color = "#5cb85c";
+      subtitle.textContent = "Distribution between theory/methods and substantive work.";
+      bars.classList.remove("paper-viz-bars-scroll");
+    }
+    renderBars(bars, rows, color);
+  }
+
+  function bindTabs() {
+    var buttons = Array.prototype.slice.call(document.querySelectorAll("[data-paper-viz-view]"));
+    buttons.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        buttons.forEach(function (b) { b.classList.remove("active"); });
+        btn.classList.add("active");
+        render(btn.getAttribute("data-paper-viz-view"));
+      });
+    });
+  }
+
+  renderMetrics();
+  bindTabs();
+  render("type");
+})();
+</script>
 
