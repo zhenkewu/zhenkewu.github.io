@@ -2,7 +2,7 @@
 layout: paper
 title: "Comparing the Power of Low vs High-Precision Methods for Measuring E. coli in Drinking Water in Low-Resource Settings"
 image: /assets/images/papers/upstrap_water.png
-authors: Andrea Sosa-Moreno, Gwenyth O. Lee, Zhenke Wu, S. Aya Fanny, Gabriel Trueba, Philip J. Cooper, Karen Levy, Joseph N. S. Eisenberg
+authors: Andrea Sosa-Moreno, Gwenyth O. Lee, Zhenke Wu, S. Aya Fanny, Gabriel Trueba, Philip J. Cooper, Karen Levy, Joseph N.S. Eisenberg
 year: 2025
 shortref: Sosa-Moreno et al.
 journal: "ACS ES&T Water"
