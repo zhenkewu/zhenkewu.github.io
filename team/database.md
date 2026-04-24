@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Member Database"
+title: "Team Member Database"
 navtab: "team"
 description: "Sortable, searchable, filterable member database"
 ---
@@ -70,6 +70,13 @@ description: "Sortable, searchable, filterable member database"
   table.member-db th:nth-child(1),
   table.member-db td:nth-child(1) {
     white-space: nowrap;
+    width: 72px;
+  }
+
+  table.member-db th:nth-child(2),
+  table.member-db td:nth-child(2) {
+    white-space: nowrap;
+    width: 88px;
   }
 
   table.member-db tbody tr:nth-child(even) {
@@ -87,6 +94,19 @@ description: "Sortable, searchable, filterable member database"
 
   table.member-db a:hover {
     text-decoration: underline;
+  }
+
+  .member-db-position-cell {
+    display: grid;
+    gap: 4px;
+  }
+
+  .member-db-position-line {
+    line-height: 1.25;
+  }
+
+  .member-db-position-line strong {
+    font-weight: 600;
   }
 
   .member-db-note {
@@ -188,7 +208,17 @@ description: "Sortable, searchable, filterable member database"
     .member-db-controls select {
       width: 100%;
       min-width: 0;
-      font-size: 14px;
+      font-size: 11px;
+      line-height: 1;
+      padding: 0 4px;
+      min-height: unset !important;
+      height: 1.3em !important;
+      max-height: 1.3em !important;
+      box-sizing: border-box;
+      border-radius: 6px;
+      border-width: 1px;
+      -webkit-appearance: none;
+      appearance: none;
     }
 
     table.member-db th,
@@ -212,9 +242,29 @@ description: "Sortable, searchable, filterable member database"
     }
 
   }
+
+  @media (max-width: 420px) {
+    .member-db-controls {
+      gap: 6px;
+    }
+
+    .member-db-controls input,
+    .member-db-controls select {
+      font-size: 10px;
+      line-height: 1;
+      padding: 0 3px;
+      min-height: unset !important;
+      height: 1.2em !important;
+      max-height: 1.2em !important;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+  }
 </style>
 
-<p>This page includes all current and former members from the team posts.</p>
+<p>This page includes all current and former members.</p>
+
+<div class="member-db-note" id="member-db-count"></div>
 
 <div class="member-db-controls">
   <input type="text" id="member-search" placeholder="Search name, role, thesis..." />
@@ -225,6 +275,9 @@ description: "Sortable, searchable, filterable member database"
   </select>
   <select id="member-filter-field">
     <option value="">All fields</option>
+  </select>
+  <select id="member-filter-institution">
+    <option value="">All institutions</option>
   </select>
 </div>
 
@@ -237,10 +290,8 @@ description: "Sortable, searchable, filterable member database"
         <th data-key="role" title="Click to sort">Role <span class="sort-hint">↕</span></th>
         <th data-key="field" title="Click to sort">Field <span class="sort-hint">↕</span></th>
         <th data-key="institution" title="Click to sort">Institution <span class="sort-hint">↕</span></th>
-        <th data-key="alum" title="Click to sort">Current <span class="sort-hint">↕</span></th>
-        <th data-key="endyear" title="Click to sort">Aluminus Since <span class="sort-hint">↕</span></th>
-        <th data-key="first_position" title="Click to sort">First Position <span class="sort-hint">↕</span></th>
-        <th data-key="current_position" title="Click to sort">Current Position <span class="sort-hint">↕</span></th>
+        <th data-key="endyear" title="Click to sort">Alumni Yr <span class="sort-hint">↕</span></th>
+        <th data-key="first_position" title="Click to sort">Position <span class="sort-hint">↕</span></th>
         <th data-key="thesis_title" title="Click to sort">Thesis (Project if not a thesis) <span class="sort-hint">↕</span></th>
       </tr>
     </thead>
@@ -249,8 +300,6 @@ description: "Sortable, searchable, filterable member database"
 </div>
 
 <div class="member-db-cards" id="member-db-cards"></div>
-
-<div class="member-db-note" id="member-db-count"></div>
 
 <script>
   (function () {
@@ -278,6 +327,7 @@ description: "Sortable, searchable, filterable member database"
     var searchInput = document.getElementById("member-search");
     var alumFilter = document.getElementById("member-filter-alum");
     var fieldFilter = document.getElementById("member-filter-field");
+    var institutionFilter = document.getElementById("member-filter-institution");
     var table = document.getElementById("member-db-table");
     var tbody = table.querySelector("tbody");
     var cardsNode = document.getElementById("member-db-cards");
@@ -323,10 +373,12 @@ description: "Sortable, searchable, filterable member database"
     }
 
     fillSelect(fieldFilter, uniqueValues("field"));
+    fillSelect(institutionFilter, uniqueValues("institution"));
     function filteredMembers() {
       var q = searchInput.value.trim().toLowerCase();
       var alumValue = alumFilter.value;
       var fieldValue = fieldFilter.value;
+      var institutionValue = institutionFilter.value;
 
       return members.filter(function (m) {
         if (alumValue && String(m.alum) !== alumValue) return false;
@@ -334,6 +386,7 @@ description: "Sortable, searchable, filterable member database"
           var memberFields = splitMultiValue(m.field);
           if (memberFields.indexOf(fieldValue) === -1) return false;
         }
+        if (institutionValue && m.institution !== institutionValue) return false;
 
         if (!q) return true;
         var haystack = [
@@ -389,6 +442,11 @@ description: "Sortable, searchable, filterable member database"
         if (m.thesis_url && m.thesis_title) {
           thesisCell = '<a href="' + m.thesis_url + '">' + m.thesis_title + "</a>";
         }
+        var positionCell =
+          '<div class="member-db-position-cell">' +
+          '<div class="member-db-position-line"><strong>First:</strong> ' + (m.first_position || "") + "</div>" +
+          '<div class="member-db-position-line"><strong>Current:</strong> ' + (currentPositionCell || "") + "</div>" +
+          "</div>";
 
         tr.innerHTML =
           '<td><a href="' + (m.url || "#") + '">' + (m.first_name || "") + "</a></td>" +
@@ -396,10 +454,8 @@ description: "Sortable, searchable, filterable member database"
           "<td>" + (m.role || "") + "</td>" +
           "<td>" + splitMultiValue(m.field).join(", ") + "</td>" +
           "<td>" + institutionCell + "</td>" +
-          "<td>" + (m.alum ? "No" : "Yes") + "</td>" +
           "<td>" + (m.endyear || "") + "</td>" +
-          "<td>" + (m.first_position || "") + "</td>" +
-          "<td>" + currentPositionCell + "</td>" +
+          "<td>" + positionCell + "</td>" +
           "<td>" + thesisCell + "</td>";
 
         tbody.appendChild(tr);
@@ -438,7 +494,7 @@ description: "Sortable, searchable, filterable member database"
       });
     });
 
-    [searchInput, alumFilter, fieldFilter].forEach(function (el) {
+    [searchInput, alumFilter, fieldFilter, institutionFilter].forEach(function (el) {
       el.addEventListener("input", render);
       el.addEventListener("change", render);
     });
