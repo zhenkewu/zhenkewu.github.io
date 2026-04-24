@@ -470,10 +470,10 @@ description: "Sortable, searchable, filterable member database"
           '<div class="member-db-card-main"><strong>Current:</strong> ' + (m.alum ? "No" : "Yes") + "</div>" +
           '<details class="member-db-card-details"><summary>More details</summary>' +
           '<div class="member-db-card-details-content">' +
-          "<div><strong>Aluminus Since:</strong> " + (m.endyear || "") + "</div>" +
+          "<div><strong>Alumnus Since:</strong> " + (m.endyear || "") + "</div>" +
           "<div><strong>First Position:</strong> " + (m.first_position || "") + "</div>" +
           "<div><strong>Current Position:</strong> " + currentPositionCell + "</div>" +
-          "<div><strong>Thesis:</strong> " + thesisCell + "</div>" +
+          "<div><strong>Thesis/Project:</strong> " + thesisCell + "</div>" +
           "</div></details>";
         cardsNode.appendChild(card);
       });

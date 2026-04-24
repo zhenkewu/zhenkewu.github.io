@@ -88,6 +88,7 @@ I am deeply passionate about advancement of modern Bayesian latent variable meth
 We are recruiting motivated and hard-working people interested in Bayesian methods and computation, graphical models, causal inference, sequential decision making, reinforcement learning and large-scale health data analytics. If you want to get involved, please
 - Review our [research themes](#research-themes) and [recent publications](papers/archive/year)
 - [Say hi](/sayhi/) via email (if first email, add the word `giraffe` at the end of the subject line to indicate you have visited this site) or form to discuss your interests
+- [Open Member Database](/team/database) <span class="member-db-text">Search, filter, and sort all members</span>
 
 ##### Other opportunities: send me an email if interested in collaborating!
 

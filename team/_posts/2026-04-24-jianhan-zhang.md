@@ -24,7 +24,7 @@ showicon: true
 web: https://www.linkedin.com/in/jianhan-zhang-175536231/
 field: 
     - math
-    - stat
+    - data science
 authors: " "
 ---
 

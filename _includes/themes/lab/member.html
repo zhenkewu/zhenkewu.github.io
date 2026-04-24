@@ -117,7 +117,7 @@
 	<div class="col-md-8">	
 		<div class="post">
 			{% if member.alum == true and member.endyear and member.endyear != "" %}
-			<h1>Aluminus Since</h1>
+			<h1>Alumnus Since</h1>
 			<p>{{ member.endyear }}</p>
 			{% endif %}
 
@@ -127,7 +127,7 @@
 			{% endif %}
 
 			{% if member.thesis_title and member.thesis_title != "" %}
-			<h1>Thesis </h1>
+			<h1>Thesis/Project </h1>
 			{% if member.thesis_url and member.thesis_url != "" %}
 			<p><a href="{{ member.thesis_url }}">{{ member.thesis_title }}</a></p>
 			{% else %}
