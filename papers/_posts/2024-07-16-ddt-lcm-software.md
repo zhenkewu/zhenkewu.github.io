@@ -6,7 +6,7 @@ image: /assets/images/papers/ddt_lcm_schema.png
 authors: Mengbing Li, Bolin Wu, Briana Stephenson, Zhenke Wu
 year: 2024
 shortref: Li, Wu, Stephenson, Wu
-journal: JOSS
+journal: Journal of Open Source Software
 pdf: /assets/pdfs/papers/ddtlcm_r_package.pdf
 slides: 
 supplement:
