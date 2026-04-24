@@ -2,7 +2,14 @@
 layout: member
 title: Abigail Loe
 position: PhD Candidate (Biostat)
+role: PhD Candidate
+first_position: Assistant Professor of Math/Stat/Computer Science, Macalester College, St Paul, MN
+current_position: Assistant Professor of Math/Stat/Computer Science, Macalester College, St Paul, MN
+endyear: 2026
+thesis_title: Dynamic Prediction Models for Recurrent and Alternating Recurrent Events
+thesis_url: ""
 institute: University of Michigan
+institution: UMich
 handle: Abigail Loe
 email: agloe@umich[punto]edu
 twitter: 
@@ -19,16 +26,6 @@ field: biostat
 authors: " "
 
 ---
-
-# First position after graduation 
-
-Assistant Professor of Math/Stat/Computer Science, Macalester College, St Paul, MN
-
-# Thesis
-
-Dynamic Prediction Models for Recurrent and Alternating Recurrent Events
-
-Co-chair: Susan Murray
 
 # Education:
 

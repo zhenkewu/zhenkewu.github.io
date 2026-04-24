@@ -73,12 +73,13 @@ navorder: 1
 
 .paper-viz-bars {
   margin-top: 2px;
+  padding: 0 12px 0 6px;
 }
 
 .paper-viz-bars-scroll {
   max-height: 180px;
   overflow-y: auto;
-  padding-right: 3px;
+  scrollbar-gutter: stable;
 }
 
 .paper-viz-row {
@@ -429,7 +430,7 @@ navorder: 1
     papers.forEach(function (p) { uniqueJournals[p.journal] = true; });
 
     document.getElementById("paper-viz-metrics").innerHTML =
-      "<span class='label label-success'><i class='fa fa-file-text-o fa-fw'></i> " + papers.length + " papers</span>" +
+      "<span class='label label-success'><i class='fa fa-camera-retro fa-fw'></i> " + papers.length + " papers</span>" +
       "<span class='label label-default'><i class='fa fa-book fa-fw'></i> " + Object.keys(uniqueJournals).length + " venues</span>" +
       "<span class='label label-default'><i class='fa fa-calendar fa-fw'></i> " + minYear + " - " + maxYear + "</span>";
   }

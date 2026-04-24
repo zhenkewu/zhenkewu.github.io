@@ -2,7 +2,14 @@
 layout: member
 title: Nicole Wakim
 position: PhD (Biostat), 2023
+role: PhD
+first_position: Assistant Professor of Biostatistics, Oregon Health and Science University
+current_position: Assistant Professor of Biostatistics, Oregon Health and Science University
+endyear: 2023
+thesis_title: Methods for Summarizing and Imputing High-Frequency Digital Biomarkers in the Context of Longitudinal Data Analysis
+thesis_url: ""
 institute: University of Michigan
+institution: UMich
 handle: Nicole Wakim
 email: nwakim@umich[punto]edu
 twitter: 

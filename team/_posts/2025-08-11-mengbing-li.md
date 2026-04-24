@@ -2,7 +2,14 @@
 layout: member
 title: Mengbing Li
 position: PhD (Biostat), 2025
+role: PhD
+first_position: Eli Lilly
+current_position: Eli Lilly
+endyear: 2025
+thesis_title: Bayesian Structured Latent Variable Models for Individualized Health
+thesis_url: ""
 institute: University of Michigan
+institution: UMich
 handle: Mengbing Li
 email: mengbing@umich[punto]edu
 twitter: 
@@ -19,14 +26,6 @@ field: biostat
 authors: " "
 ---
 
-
-# First position after graduation 
-
-Eli Lily
-
-# Thesis
-
-Title: Bayesian Structured Latent Variable Models for Individualized Health. 
 
 # Education:
 

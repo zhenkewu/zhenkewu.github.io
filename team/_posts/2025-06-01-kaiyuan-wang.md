@@ -2,7 +2,14 @@
 layout: member
 title: Kaiyuan Wang
 position: PhD Student (Biostat)
+role: PhD Student
+first_position:  
+current_position:  
+endyear: ""
+thesis_title: ""
+thesis_url: ""
 institute: University of Michigan
+institution: UMich
 handle: Kaiyuan Wang
 email: kaiyuanw@umich[punto]edu
 twitter: 

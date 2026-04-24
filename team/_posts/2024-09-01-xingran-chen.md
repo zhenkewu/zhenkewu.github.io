@@ -2,7 +2,14 @@
 layout: member
 title: Xingran Chen
 position: PhD Student (Biostat)
+role: PhD Student 
+first_position:  
+current_position:  
+endyear: ""
+thesis_title: ""
+thesis_url: ""
 institute: University of Michigan
+institution: UMich
 handle: Xingran Chen
 email: chenxran@umich[punto]edu
 twitter: 

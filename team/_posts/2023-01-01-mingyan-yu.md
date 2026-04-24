@@ -2,7 +2,14 @@
 layout: member
 title: Mingyan Yu
 position: PhD Candidate (Biostat)
+role: PhD Candidate
+first_position: Takeda, Boston, MA
+current_position: Takeda, Boston, MA
+endyear: 2026
+thesis_title: Bayesian Joint Models to Incorporate Individual-Level Variability as Predictors for Health Outcomes
+thesis_url: ""
 institute: University of Michigan
+institution: UMich
 handle: Mingyan Yu
 email: myanyu@umich[punto]edu
 twitter: 
@@ -19,16 +26,6 @@ field: biostat
 authors: " "
 
 ---
-
-# First position after graduation 
-
-Takeda, Boston, MA
-
-# Thesis
-
-Bayesian Joint Models to Incorporate Individual-Level Variability as Predictors for Health Outcomes
-
-Co-chair: Michael Elliott
 
 # Education:
 

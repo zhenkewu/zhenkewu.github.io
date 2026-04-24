@@ -116,6 +116,25 @@
 	</div>
 	<div class="col-md-8">	
 		<div class="post">
+			{% if member.alum == true and member.endyear and member.endyear != "" %}
+			<h1>Aluminus Since</h1>
+			<p>{{ member.endyear }}</p>
+			{% endif %}
+
+			{% if member.first_position and member.first_position != "" %}
+			<h1>First position after graduation</h1>
+			<p>{{ member.first_position }}</p>
+			{% endif %}
+
+			{% if member.thesis_title and member.thesis_title != "" %}
+			<h1>Thesis </h1>
+			{% if member.thesis_url and member.thesis_url != "" %}
+			<p><a href="{{ member.thesis_url }}">{{ member.thesis_title }}</a></p>
+			{% else %}
+			<p>{{ member.thesis_title }}</p>
+			{% endif %}
+			{% endif %}
+
 			{{ content }}
 		</div>
 		

@@ -16,6 +16,39 @@ navorder: 4
           width:150px;
           height:150px;
     }
+
+    .member-db-cta {
+          margin: 10px 0 20px 0;
+          padding: 12px 14px;
+          border: 1px solid #dfe7f3;
+          border-radius: 10px;
+          background: linear-gradient(180deg, #f8fbff 0%, #f2f7ff 100%);
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    }
+
+    .member-db-cta .member-db-btn {
+          background: #1d5fa7;
+          color: #fff;
+          border: 1px solid #174d87;
+          border-radius: 8px;
+          padding: 7px 12px;
+          font-weight: 600;
+          text-decoration: none;
+    }
+
+    .member-db-cta .member-db-btn:hover {
+          background: #174d87;
+          color: #fff;
+          text-decoration: none;
+    }
+
+    .member-db-cta .member-db-text {
+          color: #35557a;
+          font-size: 13px;
+    }
 </style>
 
 
@@ -28,6 +61,12 @@ navorder: 4
 <div class="bigspacer"></div>
 
 I'm extremely fortunate to work with several amazing students to whom I serve as primary or co-advisor. <br>
+
+<div class="smallspacer"></div>
+<div class="member-db-cta">
+  <a href="/team/database" class="member-db-btn">Open Member Database</a>
+  <span class="member-db-text">Search, filter, and sort all members</span>
+</div>
 
 <div class="bigspacer"></div>
 <div class="label label-primary">Current </div>
@@ -54,7 +93,7 @@ I'm extremely fortunate to work with several amazing students to whom I serve as
 <div class="label label-info"> Undergraduate Students </div> 
 (those writing paper with lab is marked with $^*$):
 
-- $^*$[**Jianhan Zhang**](https://www.linkedin.com/in/jianhan-zhang-175536231/), co-mentored by [Jitao Wang](/team/jitao-wang). Undergrad, Pure Math, Data Science, U of Michigan. **Undergraduate Honor Thesis**: "Counterfactual Fairness in Reinforcement Learning via Marginal Distributional Matching". Thesis work awarded `Highest Honors` in Statistics.
+<!-- - $^*$[**Jianhan Zhang**](/team/jianhan-zhang), co-mentored by [Jitao Wang](/team/jitao-wang). Undergrad, Pure Math, Data Science, U of Michigan. **Undergraduate Honor Thesis**: "Counterfactual Fairness in Reinforcement Learning via Marginal Distributional Matching". Thesis work awarded `Highest Honors` in Statistics. -->
 
 
 <!-- <div class="bigspacer"></div>
@@ -121,24 +160,24 @@ Please send an email to zhenkewu@gmail[punto]com for updates.
 - [**Jieru Shi**](/team/jieru-shi). Next position: PhD Student in UMich Biostat
 - [**Jitao Wang**](/team/jitao-wang). Next position: PhD Student in UMich Biostat
 - [**Mengbing Li**](/team/mengbing-li). Next position: PhD Student in UMich Biostat
-- **Chen Chen**, MS, Biostatistics, 2022, U of Michigan, Ann Arbor. Graduate Student Research Assistant (November 2021 to August 2022; co-advise with Mike Elliott). (*Variance as a predictor for survival outcomes*). First position after graduation: PhD Student in Biostatistics, University of Toronto.
+- [**Chen Chen**](/team/chen-chen), MS, Biostatistics, 2022, U of Michigan, Ann Arbor. Graduate Student Research Assistant (November 2021 to August 2022; co-advise with Mike Elliott). (*Variance as a predictor for survival outcomes*). First position after graduation: PhD Student in Biostatistics, University of Toronto.
 - [**Jing Chu**](/team/jing-chu), MS in Applied Statistics, Department of Statistics, U of Michigan, Ann Arbor, 2018. Topic: Regression Extension to Bayesian Analytic Kit for Etiology Research (baker).
-- [**Zhongyuan Lyu**](https://zhongyuanlyu.github.io/), MS, Applied Statistics, U of Michigan, Ann Arbor. 2019 Summer. Topic: Latent Class Model and Sparse Additive Regression Models" First position after graduation: Hong Kong University of Technology and Science, Math PhD Student. Now: Lecturer (Assistant Professor) in the Discipline of Business Analytics, University of Sydney Business School,
+- [**Zhongyuan Lyu**](/team/zhongyuan-lyu), MS, Applied Statistics, U of Michigan, Ann Arbor. 2019 Summer. Topic: Latent Class Model and Sparse Additive Regression Models" First position after graduation: Hong Kong University of Technology and Science, Math PhD Student. Now: Lecturer (Assistant Professor) in the Discipline of Business Analytics, University of Sydney Business School,
 
 
 <div class="bigspacer"></div>
 <div class="label label-info">Former Undergraduate Students </div>  (those who wrote paper in the lab is marked with $^*$):
 <div class="bigspacer"></div>
-- $^*$[**Peter Yang**](https://peteryang.xyz/) (2024 May - 2025 May). Undergrad, Math/Computer Science/Stat, U of Michigan. "Apple SensorKit Data Analysis". First position after graduation: Software Engineer at Meta
-- [**Owen Yoo**](https://owen-hy.github.io/personal-web/) (2024 Fall). Undergrad,  Statistics and Data Science, Minor in Music, U of Michigan. "Prior elicitation algorithms for inferring causes of death from computer-coded verbal autopsy data"
-- $^*$**Bolin Wu** (co-mentored by [Mengbing Li](/team/mengbing-li)) (2023 Summer). Undergrad, Computer Science, U Of Michigan, Ann Arbor. "Shinyapp for Enhancing Latent Class Analysis using Dirichlet Diffusion Tree". First position after graduation: Carnegie Mellon University, Master of Computational Data Science Program. 
-- **Jiayuan Dong** (2021 Summer). MS, Accelerated Master Degree Program (ADMP), U of Michigan, Ann Arbor; Summer Intern. (Readings on Probablistic Graphical Models). First position after graduation: UMich, Mechanical Engineering PhD Student
+- $^*$[**Peter Yang**](/team/peter-yang) (2024 May - 2025 May). Undergrad, Math/Computer Science/Stat, U of Michigan. "Apple SensorKit Data Analysis". First position after graduation: Software Engineer at Meta
+- [**Owen Yoo**](/team/owen-yoo) (2024 Fall). Undergrad,  Statistics and Data Science, Minor in Music, U of Michigan. "Prior elicitation algorithms for inferring causes of death from computer-coded verbal autopsy data"
+- $^*$[**Bolin Wu**](/team/bolin-wu) (co-mentored by [Mengbing Li](/team/mengbing-li)) (2023 Summer). Undergrad, Computer Science, U Of Michigan, Ann Arbor. "Shinyapp for Enhancing Latent Class Analysis using Dirichlet Diffusion Tree". First position after graduation: Carnegie Mellon University, Master of Computational Data Science Program. 
+- [**Jiayuan Dong**](/team/jiayuan-dong) (2021 Summer). MS, Accelerated Master Degree Program (ADMP), U of Michigan, Ann Arbor; Summer Intern. (Readings on Probablistic Graphical Models). First position after graduation: UMich, Mechanical Engineering PhD Student
 
 <div class="bigspacer"></div>
 
 <div class="label label-info">Former Research Staff </div> 
 
-- Zihan Wang. MS, Biostatistics, U of Michigan (2025). Next position: PhD Student in Health Data Science (Biostatistics concentration). Geroge Washington University. 
+- [**Zihan Wang**](/team/zihan-wang). MS, Biostatistics, U of Michigan (2025). Next position: PhD Student in Health Data Science (Biostatistics concentration). Geroge Washington University. 
 
 
 <!--

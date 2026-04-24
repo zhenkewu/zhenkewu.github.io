@@ -2,7 +2,14 @@
 layout: member
 title: Timothy NeCamp
 position: PhD(Stat),19;NSF Grad Fellow 
+role: PhD;NSF Grad Fellow 
+first_position: Co-Founder, Data Bloom
+current_position: Co-Founder, Data Bloom
+endyear: 2019
+thesis_title: Design and Analysis of Sequential Randomized Trials with Applications to Mental Health and Online Education
+thesis_url: https://deepblue.lib.umich.edu/handle/2027.42/151503
 institute: University of Michigan
+institution: UMich
 handle: Tim NeCamp
 email: tnecamp@umich[punto]edu
 twitter: 
@@ -24,10 +31,6 @@ University of Michigan <br />
  <br /> 
 Ann Arbor, Michigan 48109, USA <br />  -->
 
-# First position after graduation 
-
-Co-Founder, [Data Bloom](https://thedatabloom.com/)
-
 # Education:
 
 2014-19, Ph.D. in Statistics - University of Michigan, Ann Arbor, Michigan
@@ -36,10 +39,6 @@ Co-Founder, [Data Bloom](https://thedatabloom.com/)
 
 2007-11, Bachelor of Science - Ohio State University, Columbus, Ohio with Honors in Arts and Science (magna cum laude) Major: Mathematics; Minors: Statistics, Economics
 
-
-# Thesis:
-
-[_Design and Analysis of Sequential Randomized Trials with Applications to Mental Health and Online Education_](https://deepblue.lib.umich.edu/handle/2027.42/151503). Co-Chair (with Ed Ionides)
 
 # Awards:
 
