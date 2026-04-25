@@ -26,6 +26,88 @@ description: "Sortable, searchable, filterable member database"
     background: #fff;
   }
 
+  .member-db-controls .member-db-reset-btn {
+    padding: 8px 14px;
+    min-width: auto;
+    border: 1px solid #c5d4e8;
+    border-radius: 8px;
+    background: #f0f5fb;
+    color: #1d5fa7;
+    font-weight: 600;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+
+  .member-db-controls .member-db-reset-btn:hover {
+    background: #e2ecf7;
+    border-color: #a8bdd9;
+  }
+
+  .member-db-columns-panel {
+    margin: 10px 0 15px 0;
+    border: 1px solid #dfe7f3;
+    border-radius: 10px;
+    padding: 8px 12px;
+    background: #fafcfe;
+  }
+
+  .member-db-columns-summary {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 12px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #1d5fa7;
+    outline: none;
+  }
+
+  .member-db-columns-showall-btn {
+    padding: 2px 10px;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.4;
+    border: 1px solid #c5d4e8;
+    border-radius: 6px;
+    background: #fff;
+    color: #1d5fa7;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+
+  .member-db-columns-showall-btn:hover {
+    background: #eef4fc;
+    border-color: #a8bdd9;
+  }
+
+  .member-db-columns-body {
+    margin-top: 10px;
+    padding-top: 8px;
+    border-top: 1px solid #e8eef6;
+  }
+
+  .member-db-columns-checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    align-items: center;
+  }
+
+  .member-db-col-check {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: #333;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .member-db-col-check input {
+    margin: 0;
+    cursor: pointer;
+  }
+
   .member-db-table-wrap {
     overflow-x: auto;
     border: 1px solid #e8e8e8;
@@ -109,6 +191,31 @@ description: "Sortable, searchable, filterable member database"
     font-weight: 600;
   }
 
+  .member-db-field-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 6px;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .member-db-field-chip {
+    display: inline-block;
+    padding: 2px 8px;
+    font-size: 11px;
+    line-height: 1.35;
+    font-weight: 500;
+    color: #1d5fa7;
+    background: #eef4fc;
+    border: 1px solid #c5d4e8;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+
+  table.member-db td .member-db-field-chips {
+    min-width: 0;
+  }
+
   .member-db-note {
     margin-top: 10px;
     color: #666;
@@ -152,6 +259,18 @@ description: "Sortable, searchable, filterable member database"
 
   .member-db-card-main strong {
     font-weight: 600;
+  }
+
+  .member-db-card-field-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 6px 8px;
+  }
+
+  .member-db-card-field-row .member-db-field-chips {
+    flex: 1 1 auto;
+    min-width: 0;
   }
 
   .member-db-card-details {
@@ -237,6 +356,10 @@ description: "Sortable, searchable, filterable member database"
       display: none;
     }
 
+    .member-db-columns-panel {
+      display: none;
+    }
+
     .member-db-cards {
       display: grid;
     }
@@ -262,7 +385,7 @@ description: "Sortable, searchable, filterable member database"
   }
 </style>
 
-<p>This page includes all current and former members.</p>
+This page includes all current and former members. Please notify via  `zhenkewu [arroba] gmail [punto] com` if there are updates.
 
 <div class="member-db-note" id="member-db-count"></div>
 
@@ -279,7 +402,18 @@ description: "Sortable, searchable, filterable member database"
   <select id="member-filter-institution">
     <option value="">All institutions</option>
   </select>
+  <button type="button" id="member-reset" class="member-db-reset-btn">Reset</button>
 </div>
+
+<details class="member-db-columns-panel" id="member-db-columns-panel" open>
+  <summary class="member-db-columns-summary">
+    Select to show:
+    <button type="button" id="member-columns-show-all" class="member-db-columns-showall-btn">Show all</button>
+  </summary>
+  <div class="member-db-columns-body">
+    <div class="member-db-columns-checkboxes" id="member-db-column-checkboxes"></div>
+  </div>
+</details>
 
 <div class="member-db-table-wrap">
   <table class="member-db" id="member-db-table">
@@ -328,12 +462,66 @@ description: "Sortable, searchable, filterable member database"
     var alumFilter = document.getElementById("member-filter-alum");
     var fieldFilter = document.getElementById("member-filter-field");
     var institutionFilter = document.getElementById("member-filter-institution");
+    var resetBtn = document.getElementById("member-reset");
+    var columnCheckboxHost = document.getElementById("member-db-column-checkboxes");
+    var showAllColumnsBtn = document.getElementById("member-columns-show-all");
     var table = document.getElementById("member-db-table");
     var tbody = table.querySelector("tbody");
     var cardsNode = document.getElementById("member-db-cards");
     var countNode = document.getElementById("member-db-count");
     var sortKey = "endyear";
     var sortDir = -1;
+
+    var COLUMN_DEFS = [
+      { key: "first_name", label: "First", lock: true },
+      { key: "last_name", label: "Last", lock: true },
+      { key: "role", label: "Role" },
+      { key: "field", label: "Field" },
+      { key: "institution", label: "Institution" },
+      { key: "endyear", label: "Alumni Yr" },
+      { key: "first_position", label: "Position" },
+      { key: "thesis_title", label: "Thesis / project" }
+    ];
+
+    function applyColumnVisibility() {
+      COLUMN_DEFS.forEach(function (col) {
+        var cb = document.getElementById("member-col-" + col.key);
+        var visible = !cb || cb.checked;
+        var cells = table.querySelectorAll('[data-key="' + col.key + '"]');
+        for (var i = 0; i < cells.length; i++) {
+          cells[i].style.display = visible ? "" : "none";
+        }
+      });
+    }
+
+    function setAllColumnsVisible() {
+      COLUMN_DEFS.forEach(function (col) {
+        var cb = document.getElementById("member-col-" + col.key);
+        if (cb) cb.checked = true;
+      });
+    }
+
+    function buildColumnControls() {
+      if (!columnCheckboxHost) return;
+      columnCheckboxHost.innerHTML = "";
+      COLUMN_DEFS.forEach(function (col) {
+        var id = "member-col-" + col.key;
+        var label = document.createElement("label");
+        label.className = "member-db-col-check";
+        label.setAttribute("for", id);
+        var cb = document.createElement("input");
+        cb.type = "checkbox";
+        cb.id = id;
+        cb.checked = true;
+        if (col.lock) {
+          cb.disabled = true;
+        }
+        cb.addEventListener("change", applyColumnVisibility);
+        label.appendChild(cb);
+        label.appendChild(document.createTextNode(col.label));
+        columnCheckboxHost.appendChild(label);
+      });
+    }
 
     function splitMultiValue(value) {
       if (!value) return [];
@@ -346,6 +534,29 @@ description: "Sortable, searchable, filterable member database"
         .split(/[;,|]/)
         .map(function (v) { return v.trim(); })
         .filter(function (v) { return v.length > 0; });
+    }
+
+    function escapeHtml(str) {
+      if (str == null) return "";
+      return String(str)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    function multiValueChipsHtml(value) {
+      var parts = splitMultiValue(value);
+      if (!parts.length) return "";
+      return (
+        '<span class="member-db-field-chips">' +
+        parts
+          .map(function (p) {
+            return '<span class="member-db-field-chip">' + escapeHtml(p) + "</span>";
+          })
+          .join("") +
+        "</span>"
+      );
     }
 
     function uniqueValues(key) {
@@ -449,14 +660,14 @@ description: "Sortable, searchable, filterable member database"
           "</div>";
 
         tr.innerHTML =
-          '<td><a href="' + (m.url || "#") + '">' + (m.first_name || "") + "</a></td>" +
-          "<td>" + (m.last_name || "") + "</td>" +
-          "<td>" + (m.role || "") + "</td>" +
-          "<td>" + splitMultiValue(m.field).join(", ") + "</td>" +
-          "<td>" + institutionCell + "</td>" +
-          "<td>" + (m.endyear || "") + "</td>" +
-          "<td>" + positionCell + "</td>" +
-          "<td>" + thesisCell + "</td>";
+          '<td data-key="first_name"><a href="' + (m.url || "#") + '">' + (m.first_name || "") + "</a></td>" +
+          '<td data-key="last_name">' + (m.last_name || "") + "</td>" +
+          '<td data-key="role">' + multiValueChipsHtml(m.role) + "</td>" +
+          '<td data-key="field">' + multiValueChipsHtml(m.field) + "</td>" +
+          '<td data-key="institution">' + institutionCell + "</td>" +
+          '<td data-key="endyear">' + (m.endyear || "") + "</td>" +
+          '<td data-key="first_position">' + positionCell + "</td>" +
+          '<td data-key="thesis_title">' + thesisCell + "</td>";
 
         tbody.appendChild(tr);
 
@@ -464,8 +675,8 @@ description: "Sortable, searchable, filterable member database"
         card.className = "member-db-card";
         card.innerHTML =
           '<div class="member-db-card-title"><a href="' + (m.url || "#") + '">' + (m.first_name || "") + " " + (m.last_name || "") + "</a></div>" +
-          '<div class="member-db-card-main"><strong>Role:</strong> ' + (m.role || "") + "</div>" +
-          '<div class="member-db-card-main"><strong>Field:</strong> ' + splitMultiValue(m.field).join(", ") + "</div>" +
+          '<div class="member-db-card-main member-db-card-field-row"><strong>Role:</strong> ' + multiValueChipsHtml(m.role) + "</div>" +
+          '<div class="member-db-card-main member-db-card-field-row"><strong>Field:</strong> ' + multiValueChipsHtml(m.field) + "</div>" +
           '<div class="member-db-card-main"><strong>Institution:</strong> ' + institutionCell + "</div>" +
           '<div class="member-db-card-main"><strong>Current:</strong> ' + (m.alum ? "No" : "Yes") + "</div>" +
           '<details class="member-db-card-details"><summary>More details</summary>' +
@@ -479,6 +690,7 @@ description: "Sortable, searchable, filterable member database"
       });
 
       countNode.textContent = rows.length + " member(s) shown";
+      applyColumnVisibility();
     }
 
     Array.prototype.slice.call(table.querySelectorAll("th[data-key]")).forEach(function (th) {
@@ -499,6 +711,27 @@ description: "Sortable, searchable, filterable member database"
       el.addEventListener("change", render);
     });
 
+    resetBtn.addEventListener("click", function () {
+      searchInput.value = "";
+      alumFilter.value = "";
+      fieldFilter.value = "";
+      institutionFilter.value = "";
+      sortKey = "endyear";
+      sortDir = -1;
+      setAllColumnsVisible();
+      render();
+    });
+
+    if (showAllColumnsBtn) {
+      showAllColumnsBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        setAllColumnsVisible();
+        applyColumnVisibility();
+      });
+    }
+
+    buildColumnControls();
     render();
   })();
 </script>

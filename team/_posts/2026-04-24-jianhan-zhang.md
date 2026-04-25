@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Jianhan Zhang
-position: Undergraduate Student (Math, Data Science)
+position: "*Undergrad (Math, Data Science)"
 role: Undergrad
 first_position: PhD Student, Michigan Statistics
 current_position: 

@@ -3,8 +3,8 @@ layout: member
 title: Mengbing Li
 position: PhD (Biostat), 2025
 role: PhD
-first_position: Eli Lilly
-current_position: Eli Lilly
+first_position: Eli Lilly, Indy, IN
+current_position:
 endyear: 2025
 thesis_title: Bayesian Structured Latent Variable Models for Individualized Health
 thesis_url: ""

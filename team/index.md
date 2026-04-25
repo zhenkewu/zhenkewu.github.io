@@ -74,9 +74,10 @@ I'm extremely fortunate to work with several amazing students to whom I serve as
 
 
 <div class="row">
-    <!-- iterate over members; new members last. -->
-    {% for member in site.categories.team reversed %} 
+    <!-- iterate over members; new members last. Undergrads are listed under Undergraduate Students. -->
+    {% for member in site.categories.team reversed %}
     {% if member.alum == false and member.collaborator == false and member.support == false %}
+    {% unless member.role == "Undergrad" %}
     <div class="col-sm-3" style="text-align: center">
     {%if member.url%}
     <a href="{{ member.url }}"> <img class="photo" src="{{member.image}}"> </a> <br>
@@ -84,6 +85,7 @@ I'm extremely fortunate to work with several amazing students to whom I serve as
     <p class="note">{{ member.position }}</p>
     </div>
     {%endif%}
+    {% endunless %}
     {%endif%}
     {% endfor %}   
 </div>
@@ -104,18 +106,17 @@ I'm extremely fortunate to work with several amazing students to whom I serve as
 <div class="bigspacer"></div> -->
 
 <div class="row">
-    <!-- iterate over members; new alumni first. -->
-    {% for member in site.categories.team %}
-    {% if member.support == true and member.alum == false %}
+    {% for member in site.categories.team reversed %}
+    {% if member.alum == false and member.collaborator == false and member.support == false and member.role == "Undergrad" %}
+    {% if member.url %}
     <div class="col-sm-3" style="text-align: center">
-    {%if member.url%}
     <a href="{{ member.url }}"> <img class="photo" src="{{member.image}}"> </a> <br>
     <div class="head media-heading member-name"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>  
     <p class="note">{{ member.position }}</p>
     </div>
-    {%endif%}
-    {%endif%}
-    {% endfor %}    
+    {% endif %}
+    {% endif %}
+    {% endfor %}
 </div>
 
 <div class="bigspacer"></div>
