@@ -2,7 +2,9 @@
 layout: member
 title: Timothy NeCamp
 position: PhD(Stat),19;NSF Grad Fellow 
-role: PhD;NSF Grad Fellow 
+role: 
+    - PhD
+    - NSF Grad Fellow 
 first_position: Co-Founder, Data Bloom
 current_position: Co-Founder, Data Bloom
 endyear: 2019

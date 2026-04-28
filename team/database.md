@@ -121,6 +121,7 @@ description: "Sortable, searchable, filterable member database"
     border-collapse: collapse;
     margin-top: 0;
     table-layout: auto;
+    min-width: 1200px;
   }
 
   table.member-db th,
@@ -191,6 +192,52 @@ description: "Sortable, searchable, filterable member database"
     font-weight: 600;
   }
 
+  .member-db-position-tag {
+    display: inline-block;
+    margin-right: 6px;
+    padding: 2px 8px;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #1d5fa7;
+    background: #eef4fc;
+    border: 1px solid #c5d4e8;
+    border-radius: 999px;
+    white-space: nowrap;
+    vertical-align: middle;
+  }
+
+  .member-db-role-field-cell {
+    display: grid;
+    gap: 4px;
+  }
+
+  .member-db-role-field-line {
+    line-height: 1.3;
+  }
+
+  .member-db-field-chip.member-db-field-chip--role {
+    color: #7a3e00;
+    background: #fff3e8;
+    border-color: #f0c9a6;
+  }
+
+  .member-db-field-chip.member-db-field-chip--field {
+    color: #145a32;
+    background: #eaf8ef;
+    border-color: #b8e0c6;
+  }
+
+  table.member-db th[data-key="first_position"],
+  table.member-db td[data-key="first_position"] {
+    min-width: 280px;
+  }
+
+  table.member-db th[data-key="thesis_title"],
+  table.member-db td[data-key="thesis_title"] {
+    min-width: 260px;
+  }
+
   .member-db-field-chips {
     display: flex;
     flex-wrap: wrap;
@@ -220,6 +267,11 @@ description: "Sortable, searchable, filterable member database"
     margin-top: 10px;
     color: #666;
     font-size: 13px;
+  }
+
+  .member-db-note-criteria {
+    margin-left: 8px;
+    color: #4f4f4f;
   }
 
   .member-db-cards {
@@ -396,6 +448,9 @@ This page includes all current and former members. Please notify via  `zhenkewu 
     <option value="true">Alumni only</option>
     <option value="false">Current only</option>
   </select>
+  <select id="member-filter-role">
+    <option value="">All roles</option>
+  </select>
   <select id="member-filter-field">
     <option value="">All fields</option>
   </select>
@@ -421,8 +476,7 @@ This page includes all current and former members. Please notify via  `zhenkewu 
       <tr>
         <th data-key="first_name" title="Click to sort">First <span class="sort-hint">↕</span></th>
         <th data-key="last_name" title="Click to sort">Last <span class="sort-hint">↕</span></th>
-        <th data-key="role" title="Click to sort">Role <span class="sort-hint">↕</span></th>
-        <th data-key="field" title="Click to sort">Field <span class="sort-hint">↕</span></th>
+        <th data-key="role_field" title="Click to sort">Role / Field <span class="sort-hint">↕</span></th>
         <th data-key="institution" title="Click to sort">Institution <span class="sort-hint">↕</span></th>
         <th data-key="endyear" title="Click to sort">Alumni Yr <span class="sort-hint">↕</span></th>
         <th data-key="first_position" title="Click to sort">Position <span class="sort-hint">↕</span></th>
@@ -460,6 +514,7 @@ This page includes all current and former members. Please notify via  `zhenkewu 
 
     var searchInput = document.getElementById("member-search");
     var alumFilter = document.getElementById("member-filter-alum");
+    var roleFilter = document.getElementById("member-filter-role");
     var fieldFilter = document.getElementById("member-filter-field");
     var institutionFilter = document.getElementById("member-filter-institution");
     var resetBtn = document.getElementById("member-reset");
@@ -475,8 +530,7 @@ This page includes all current and former members. Please notify via  `zhenkewu 
     var COLUMN_DEFS = [
       { key: "first_name", label: "First", lock: true },
       { key: "last_name", label: "Last", lock: true },
-      { key: "role", label: "Role" },
-      { key: "field", label: "Field" },
+      { key: "role_field", label: "Role / Field" },
       { key: "institution", label: "Institution" },
       { key: "endyear", label: "Alumni Yr" },
       { key: "first_position", label: "Position" },
@@ -545,14 +599,15 @@ This page includes all current and former members. Please notify via  `zhenkewu 
         .replace(/"/g, "&quot;");
     }
 
-    function multiValueChipsHtml(value) {
+    function multiValueChipsHtml(value, extraClass) {
       var parts = splitMultiValue(value);
       if (!parts.length) return "";
+      var chipClass = "member-db-field-chip" + (extraClass ? " " + extraClass : "");
       return (
         '<span class="member-db-field-chips">' +
         parts
           .map(function (p) {
-            return '<span class="member-db-field-chip">' + escapeHtml(p) + "</span>";
+            return '<span class="' + chipClass + '">' + escapeHtml(p) + "</span>";
           })
           .join("") +
         "</span>"
@@ -563,7 +618,7 @@ This page includes all current and former members. Please notify via  `zhenkewu 
       var values = {};
       members.forEach(function (m) {
         if (!m[key]) return;
-        if (key === "field") {
+        if (key === "field" || key === "role") {
           splitMultiValue(m[key]).forEach(function (v) {
             values[v] = true;
           });
@@ -583,16 +638,22 @@ This page includes all current and former members. Please notify via  `zhenkewu 
       });
     }
 
+    fillSelect(roleFilter, uniqueValues("role"));
     fillSelect(fieldFilter, uniqueValues("field"));
     fillSelect(institutionFilter, uniqueValues("institution"));
     function filteredMembers() {
       var q = searchInput.value.trim().toLowerCase();
       var alumValue = alumFilter.value;
+      var roleValue = roleFilter.value;
       var fieldValue = fieldFilter.value;
       var institutionValue = institutionFilter.value;
 
       return members.filter(function (m) {
         if (alumValue && String(m.alum) !== alumValue) return false;
+        if (roleValue) {
+          var memberRoles = splitMultiValue(m.role);
+          if (memberRoles.indexOf(roleValue) === -1) return false;
+        }
         if (fieldValue) {
           var memberFields = splitMultiValue(m.field);
           if (memberFields.indexOf(fieldValue) === -1) return false;
@@ -600,12 +661,14 @@ This page includes all current and former members. Please notify via  `zhenkewu 
         if (institutionValue && m.institution !== institutionValue) return false;
 
         if (!q) return true;
+        var rolesForSearch = splitMultiValue(m.role).join(" ");
+        var fieldsForSearch = splitMultiValue(m.field).join(" ");
         var haystack = [
           m.title,
           m.first_name,
           m.last_name,
-          m.role,
-          m.field,
+          rolesForSearch,
+          fieldsForSearch,
           m.institution,
           m.endyear,
           m.first_position,
@@ -624,6 +687,18 @@ This page includes all current and former members. Please notify via  `zhenkewu 
         var bn = isNaN(by) ? -Infinity : by;
         if (an < bn) return -1 * sortDir;
         if (an > bn) return 1 * sortDir;
+        return 0;
+      }
+
+      if (sortKey === "role_field") {
+        var aRoles = splitMultiValue(a.role).join(" ");
+        var aFields = splitMultiValue(a.field).join(" ");
+        var bRoles = splitMultiValue(b.role).join(" ");
+        var bFields = splitMultiValue(b.field).join(" ");
+        var arf = (aRoles + " " + aFields).toLowerCase();
+        var brf = (bRoles + " " + bFields).toLowerCase();
+        if (arf < brf) return -1 * sortDir;
+        if (arf > brf) return 1 * sortDir;
         return 0;
       }
 
@@ -655,15 +730,21 @@ This page includes all current and former members. Please notify via  `zhenkewu 
         }
         var positionCell =
           '<div class="member-db-position-cell">' +
-          '<div class="member-db-position-line"><strong>First:</strong> ' + (m.first_position || "") + "</div>" +
-          '<div class="member-db-position-line"><strong>Current:</strong> ' + (currentPositionCell || "") + "</div>" +
+          '<div class="member-db-position-line"><span class="member-db-position-tag">First</span>' + (m.first_position || "") + "</div>" +
+          (currentPositionCell
+            ? '<div class="member-db-position-line"><span class="member-db-position-tag">Current</span>' + currentPositionCell + "</div>"
+            : "") +
+          "</div>";
+        var roleFieldCell =
+          '<div class="member-db-role-field-cell">' +
+          '<div class="member-db-role-field-line">' + multiValueChipsHtml(m.role, "member-db-field-chip--role") + "</div>" +
+          '<div class="member-db-role-field-line">' + multiValueChipsHtml(m.field, "member-db-field-chip--field") + "</div>" +
           "</div>";
 
         tr.innerHTML =
           '<td data-key="first_name"><a href="' + (m.url || "#") + '">' + (m.first_name || "") + "</a></td>" +
           '<td data-key="last_name">' + (m.last_name || "") + "</td>" +
-          '<td data-key="role">' + multiValueChipsHtml(m.role) + "</td>" +
-          '<td data-key="field">' + multiValueChipsHtml(m.field) + "</td>" +
+          '<td data-key="role_field">' + roleFieldCell + "</td>" +
           '<td data-key="institution">' + institutionCell + "</td>" +
           '<td data-key="endyear">' + (m.endyear || "") + "</td>" +
           '<td data-key="first_position">' + positionCell + "</td>" +
@@ -675,8 +756,7 @@ This page includes all current and former members. Please notify via  `zhenkewu 
         card.className = "member-db-card";
         card.innerHTML =
           '<div class="member-db-card-title"><a href="' + (m.url || "#") + '">' + (m.first_name || "") + " " + (m.last_name || "") + "</a></div>" +
-          '<div class="member-db-card-main member-db-card-field-row"><strong>Role:</strong> ' + multiValueChipsHtml(m.role) + "</div>" +
-          '<div class="member-db-card-main member-db-card-field-row"><strong>Field:</strong> ' + multiValueChipsHtml(m.field) + "</div>" +
+          '<div class="member-db-card-main member-db-card-field-row"><strong>Role / Field:</strong> ' + multiValueChipsHtml(m.role, "member-db-field-chip--role") + " " + multiValueChipsHtml(m.field, "member-db-field-chip--field") + "</div>" +
           '<div class="member-db-card-main"><strong>Institution:</strong> ' + institutionCell + "</div>" +
           '<div class="member-db-card-main"><strong>Current:</strong> ' + (m.alum ? "No" : "Yes") + "</div>" +
           '<details class="member-db-card-details"><summary>More details</summary>' +
@@ -689,7 +769,34 @@ This page includes all current and former members. Please notify via  `zhenkewu 
         cardsNode.appendChild(card);
       });
 
-      countNode.textContent = rows.length + " member(s) shown";
+      var criteriaParts = [];
+      var searchValue = searchInput.value.trim();
+      if (searchValue) criteriaParts.push('search: "' + searchValue + '"');
+      if (alumFilter.value === "true") criteriaParts.push("status: alumni");
+      if (alumFilter.value === "false") criteriaParts.push("status: current");
+      if (roleFilter.value) criteriaParts.push("role: " + roleFilter.value);
+      if (fieldFilter.value) criteriaParts.push("field: " + fieldFilter.value);
+      if (institutionFilter.value) criteriaParts.push("institution: " + institutionFilter.value);
+      if (sortKey) {
+        var sortLabelMap = {
+          first_name: "First",
+          last_name: "Last",
+          role_field: "Role / Field",
+          institution: "Institution",
+          endyear: "Alumni Yr",
+          first_position: "Position",
+          thesis_title: "Thesis"
+        };
+        var sortLabel = sortLabelMap[sortKey] || sortKey;
+        criteriaParts.push("sort: " + sortLabel + (sortDir === -1 ? " (desc)" : " (asc)"));
+      }
+
+      countNode.innerHTML =
+        rows.length +
+        " member(s) shown" +
+        (criteriaParts.length
+          ? '<span class="member-db-note-criteria">| ' + criteriaParts.join(" | ") + "</span>"
+          : "");
       applyColumnVisibility();
     }
 
@@ -706,7 +813,7 @@ This page includes all current and former members. Please notify via  `zhenkewu 
       });
     });
 
-    [searchInput, alumFilter, fieldFilter, institutionFilter].forEach(function (el) {
+    [searchInput, alumFilter, roleFilter, fieldFilter, institutionFilter].forEach(function (el) {
       el.addEventListener("input", render);
       el.addEventListener("change", render);
     });
@@ -714,6 +821,7 @@ This page includes all current and former members. Please notify via  `zhenkewu 
     resetBtn.addEventListener("click", function () {
       searchInput.value = "";
       alumFilter.value = "";
+      roleFilter.value = "";
       fieldFilter.value = "";
       institutionFilter.value = "";
       sortKey = "endyear";
