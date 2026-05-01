@@ -33,3 +33,5 @@ Co-mentored by [Jitao Wang](/team/jitao-wang).
 # Notes
 
 Thesis work awarded `Highest Honors` by Statistics Undergraduate Curriculum Committee.
+
+Thesis work also awarded `Inaugural Director’s Award for Distinguished Honors Thesis` (“Best Thesis Award”), Statistics, UMich
