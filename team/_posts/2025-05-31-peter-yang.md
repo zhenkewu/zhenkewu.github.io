@@ -22,7 +22,7 @@ alum: true
 collaborator: false
 support: false
 showicon: false
-web: https://peteryang.xyz/
+web: peteryang.xyz/
 field: math, stat, computer science
 authors: " "
 ---

@@ -22,7 +22,7 @@ alum: false
 collaborator: false
 support: false
 showicon: true
-web: https://www.linkedin.com/in/jianhan-zhang-175536231/
+web: www.linkedin.com/in/jianhan-zhang-175536231/
 field: 
     - math
     - data science
