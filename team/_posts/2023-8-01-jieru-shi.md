@@ -3,6 +3,8 @@ layout: member
 title: Jieru Shi
 position: PhD (Biostat), 2023
 role: PhD 
+ms_year: 2020
+ms_placement: PhD Student at UMich Biostatistics
 first_position: Postdoctoral Fellow, Department of Pure Mathematics and Mathematical Statistics (DPMMS), University of Cambridge, UK
 current_position: Senior Research Fellow in the Department of Statistical Science at University College London
 endyear: 2023

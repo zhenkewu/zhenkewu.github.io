@@ -3,6 +3,8 @@ layout: member
 title: Mengbing Li
 position: PhD (Biostat), 2025
 role: PhD
+ms_year: 2019
+ms_placement: PhD Student at UMich Biostatistics
 first_position: Eli Lilly, Indy, IN
 current_position: 
 endyear: 2025

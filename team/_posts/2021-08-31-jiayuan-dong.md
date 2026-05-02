@@ -2,7 +2,8 @@
 layout: member
 title: Jiayuan Dong
 position: Summer Intern (ADMP MS), 2021
-role: Summer Intern
+role: Undergrad
+paper: false
 first_position: Mechanical Engineering PhD Student, University of Michigan
 current_position: Mechanical Engineering PhD Student, University of Michigan
 endyear: 2021

@@ -3,6 +3,8 @@ layout: member
 title: Xingran Chen
 position: PhD Student (Biostat)
 role: PhD Student 
+ms_year: 2024
+ms_placement: PhD Student at UMich Biostatistics
 first_position:  
 current_position:  
 endyear: ""

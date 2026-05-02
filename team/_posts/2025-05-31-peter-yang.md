@@ -3,6 +3,7 @@ layout: member
 title: Peter Yang
 position: Undergraduate Student (Math/Computer Science/Statistics), 2025
 role: Undergrad
+paper: true
 first_position: Software Engineer, Meta
 current_position: Software Engineer, Meta
 endyear: 2025

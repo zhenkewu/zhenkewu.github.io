@@ -156,23 +156,61 @@ Please send an email to zhenkewu@gmail[punto]com for updates.
 <div class="bigspacer"></div>
 <div class="label label-info">Former MS Students: </div>
 <div class="bigspacer"></div>
-- [**Abigail Loe**](/team/abigail-loe). Next position: PhD Student in UMich Biostat
-- [**Xingran Chen**](/team/xingran-chen). Next position: PhD Student in UMich Biostat
-- [**Jieru Shi**](/team/jieru-shi). Next position: PhD Student in UMich Biostat
-- [**Jitao Wang**](/team/jitao-wang). Next position: PhD Student in UMich Biostat
-- [**Mengbing Li**](/team/mengbing-li). Next position: PhD Student in UMich Biostat
-- [**Chen Chen**](/team/chen-chen), MS, Biostatistics, 2022, U of Michigan, Ann Arbor. Graduate Student Research Assistant (November 2021 to August 2022; co-advise with Mike Elliott). (*Variance as a predictor for survival outcomes*). First position after graduation: PhD Student in Biostatistics, University of Toronto.
-- [**Jing Chu**](/team/jing-chu), MS in Applied Statistics, Department of Statistics, U of Michigan, Ann Arbor, 2018. Topic: Regression Extension to Bayesian Analytic Kit for Etiology Research (baker).
-- [**Zhongyuan Lyu**](/team/zhongyuan-lyu), MS, Applied Statistics, U of Michigan, Ann Arbor. 2019 Summer. Topic: Latent Class Model and Sparse Additive Regression Models" First position after graduation: Hong Kong University of Technology and Science, Math PhD Student. Now: Lecturer (Assistant Professor) in the Discipline of Business Analytics, University of Sydney Business School,
+<div class="smalltitle text-left">MS alumni (terminal MS in lab)</div>
+<div class="smallspacer"></div>
+{% assign former_ms_terminal = site.categories.team | where: "alum", true | where: "role", "MS" | sort: "endyear" | reverse %}
+<ul>
+{% for m in former_ms_terminal %}
+  <li>
+    {% assign ms_grad_year = m.ms_year | default: m.endyear %}
+    {% if m.url %}<a href="{{ m.url }}"><strong>{{ m.title }}</strong></a>{% else %}<strong>{{ m.title }}</strong>{% endif %}
+    {% if ms_grad_year %} | (MS {{ ms_grad_year }}){% endif %}
+    | MS
+    {% if m.institution %} | {{ m.institution }}{% endif %}
+    {% if m.field %} | {{ m.field }}{% endif %}
+    {% if m.thesis_title %} | "{{ m.thesis_title }}"{% endif %}
+    {% if m.first_position %} | First position after graduation: {{ m.first_position }}{% endif %}
+  </li>
+{% endfor %}
+</ul>
+
+<div class="smallspacer"></div>
+<div class="smalltitle text-left">MS placement (continued to PhD in lab)</div>
+<div class="smallspacer"></div>
+{% assign former_ms_continued = site.categories.team | where: "ms_placement", "PhD Student at UMich Biostatistics" | sort: "ms_year" | reverse %}
+<ul>
+{% for m in former_ms_continued %}
+  <li>
+    {% assign ms_grad_year = m.ms_year | default: m.endyear %}
+    {% if m.url %}<a href="{{ m.url }}"><strong>{{ m.title }}</strong></a>{% else %}<strong>{{ m.title }}</strong>{% endif %}
+    {% if ms_grad_year %} | (MS {{ ms_grad_year }}){% endif %}
+    | MS
+    {% if m.institution %} | {{ m.institution }}{% endif %}
+    {% if m.field %} | {{ m.field }}{% endif %}
+    | MS Placement: {{ m.ms_placement }}
+  </li>
+{% endfor %}
+</ul>
 
 
 <div class="bigspacer"></div>
 <div class="label label-info">Former Undergraduate Students </div>  (those who wrote paper in the lab is marked with $^*$):
 <div class="bigspacer"></div>
-- $^*$[**Peter Yang**](/team/peter-yang) (2024 May - 2025 May). Undergrad, Math/Computer Science/Stat, U of Michigan. "Apple SensorKit Data Analysis". First position after graduation: Software Engineer at Meta
-- [**Owen Yoo**](/team/owen-yoo) (2024 Fall). Undergrad,  Statistics and Data Science, Minor in Music, U of Michigan. "Prior elicitation algorithms for inferring causes of death from computer-coded verbal autopsy data"
-- $^*$[**Bolin Wu**](/team/bolin-wu) (co-mentored by [Mengbing Li](/team/mengbing-li)) (2023 Summer). Undergrad, Computer Science, U Of Michigan, Ann Arbor. "Shinyapp for Enhancing Latent Class Analysis using Dirichlet Diffusion Tree". First position after graduation: Carnegie Mellon University, Master of Computational Data Science Program. 
-- [**Jiayuan Dong**](/team/jiayuan-dong) (2021 Summer). MS, Accelerated Master Degree Program (ADMP), U of Michigan, Ann Arbor; Summer Intern. (Readings on Probablistic Graphical Models). First position after graduation: UMich, Mechanical Engineering PhD Student
+{% assign former_undergrads = site.categories.team | where: "alum", true | where: "role", "Undergrad" | sort: "endyear" | reverse %}
+<ul>
+{% for m in former_undergrads %}
+  <li>
+    {% if m.paper == true %}* {% endif %}
+    {% if m.url %}<a href="{{ m.url }}"><strong>{{ m.title }}</strong></a>{% else %}<strong>{{ m.title }}</strong>{% endif %}
+    {% if m.endyear %} | ({{ m.endyear }}){% endif %}
+    {% if m.role %} | {{ m.role }}{% endif %}
+    {% if m.institution %} | {{ m.institution }}{% endif %}
+    {% if m.field %} | {{ m.field }}{% endif %}
+    {% if m.thesis_title %} | "{{ m.thesis_title }}"{% endif %}
+    {% if m.first_position %} | First position after graduation: {{ m.first_position }}{% endif %}
+  </li>
+{% endfor %}
+</ul>
 
 <div class="bigspacer"></div>
 

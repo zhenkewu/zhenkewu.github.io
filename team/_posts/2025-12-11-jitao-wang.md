@@ -3,6 +3,8 @@ layout: member
 title: Jitao Wang
 position: PhD (Biostat), 2025
 role: PhD
+ms_year: 2019
+ms_placement: PhD Student at UMich Biostatistics
 first_position: Capital One
 current_position: Capital One
 endyear: 2025

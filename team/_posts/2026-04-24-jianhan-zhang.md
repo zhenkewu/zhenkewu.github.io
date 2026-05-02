@@ -3,9 +3,10 @@ layout: member
 title: Jianhan Zhang
 position: "*Undergrad (Math, Data Science)"
 role: Undergrad
+paper: true
 first_position: PhD Student, Michigan Statistics
 current_position: 
-endyear: ""
+endyear: 2026
 thesis_title: Counterfactual Fairness in Reinforcement Learning via Marginal Distributional Matching
 thesis_url: ""
 institute: University of Michigan
