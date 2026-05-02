@@ -62,6 +62,12 @@ navorder: 4
 
 I'm extremely fortunate to work with several amazing students to whom I serve as primary or co-advisor. <br>
 
+<div>
+  <strong>Interested in joining the lab?</strong>
+  For advising expectations and how to reach out (undergraduates, graduate students, postdocs, visiting scholars, and others), see
+  <a href="{{ '/sayhi/' | relative_url }}">Say hi / advising</a>.
+</div>
+
 <div class="smallspacer"></div>
 <div class="member-db-cta">
   <a href="/team/database" class="member-db-btn">Open Member Database</a>
@@ -127,8 +133,10 @@ I'm extremely fortunate to work with several amazing students to whom I serve as
 <div class="label label-success">Past Members </div>
 <div class="bigspacer"></div>
 
-Please send an email to zhenkewu@gmail[punto]com for updates.
-<br>
+<p >Alumni have gone on to faculty roles, industry, and strong graduate programs. Placements and timelines are easiest to explore in the
+<a href="{{ '/team/database' | relative_url }}">Member Database</a> (filter by alumni year, role, and more).</p>
+
+<p>Please send an email to zhenkewu@gmail[punto]com for updates to your entry.</p>
 
 <div class="bigspacer"></div>
 <div class="label label-info">Former PhD Students: </div>
@@ -156,26 +164,27 @@ Please send an email to zhenkewu@gmail[punto]com for updates.
 <div class="bigspacer"></div>
 <div class="label label-info">Former MS Students: </div>
 <div class="bigspacer"></div>
-<div class="smalltitle text-left">MS alumni (terminal MS in lab)</div>
+<div class="smalltitle text-left">Terminal MS degree</div>
 <div class="smallspacer"></div>
 {% assign former_ms_terminal = site.categories.team | where: "alum", true | where: "role", "MS" | sort: "endyear" | reverse %}
 <ul>
 {% for m in former_ms_terminal %}
   <li>
     {% assign ms_grad_year = m.ms_year | default: m.endyear %}
+    {% assign first_pos_out = m.first_position | default: "" | strip %}
     {% if m.url %}<a href="{{ m.url }}"><strong>{{ m.title }}</strong></a>{% else %}<strong>{{ m.title }}</strong>{% endif %}
     {% if ms_grad_year %} | (MS {{ ms_grad_year }}){% endif %}
     | MS
     {% if m.institution %} | {{ m.institution }}{% endif %}
     {% if m.field %} | {{ m.field }}{% endif %}
     {% if m.thesis_title %} | "{{ m.thesis_title }}"{% endif %}
-    {% if m.first_position %} | First position after graduation: {{ m.first_position }}{% endif %}
+    {% if first_pos_out != "" %} | First position after graduation: {{ first_pos_out }}{% endif %}
   </li>
 {% endfor %}
 </ul>
 
 <div class="smallspacer"></div>
-<div class="smalltitle text-left">MS placement (continued to PhD in lab)</div>
+<div class="smalltitle text-left">continued to PhD in lab</div>
 <div class="smallspacer"></div>
 {% assign former_ms_continued = site.categories.team | where: "ms_placement", "PhD Student at UMich Biostatistics" | sort: "ms_year" | reverse %}
 <ul>
@@ -195,11 +204,11 @@ Please send an email to zhenkewu@gmail[punto]com for updates.
 
 <div class="bigspacer"></div>
 <div class="label label-info">Former Undergraduate Students </div>  (those who wrote paper in the lab is marked with $^*$):
-<div class="bigspacer"></div>
 {% assign former_undergrads = site.categories.team | where: "alum", true | where: "role", "Undergrad" | sort: "endyear" | reverse %}
 <ul>
 {% for m in former_undergrads %}
   <li>
+    {% assign first_pos_out = m.first_position | default: "" | strip %}
     {% if m.paper == true %}* {% endif %}
     {% if m.url %}<a href="{{ m.url }}"><strong>{{ m.title }}</strong></a>{% else %}<strong>{{ m.title }}</strong>{% endif %}
     {% if m.endyear %} | ({{ m.endyear }}){% endif %}
@@ -207,7 +216,7 @@ Please send an email to zhenkewu@gmail[punto]com for updates.
     {% if m.institution %} | {{ m.institution }}{% endif %}
     {% if m.field %} | {{ m.field }}{% endif %}
     {% if m.thesis_title %} | "{{ m.thesis_title }}"{% endif %}
-    {% if m.first_position %} | First position after graduation: {{ m.first_position }}{% endif %}
+    {% if first_pos_out != "" %} | First position after graduation: {{ first_pos_out }}{% endif %}
   </li>
 {% endfor %}
 </ul>

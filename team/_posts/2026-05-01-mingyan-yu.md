@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Mingyan Yu
-position: PhD (Biostat)
+position: PhD (Biostat), 2026
 role: PhD
 first_position: Statistical Manager, Takeda, Cambridge, MA
 current_position: 
