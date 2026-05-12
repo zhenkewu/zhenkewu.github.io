@@ -121,9 +121,16 @@
 			<p>{{ member.endyear }}</p>
 			{% endif %}
 
-			{% if member.first_position and member.first_position != "" %}
+			{% assign member_first_pos = member.first_position | default: "" | strip %}
+			{% assign member_curr_pos = member.current_position | default: "" | strip %}
+			{% if member_curr_pos != "" and member_curr_pos != member_first_pos %}
+			<h1>Current Position</h1>
+			<p>{{ member_curr_pos }}</p>
+			{% endif %}
+
+			{% if member_first_pos != "" %}
 			<h1>First position after graduation</h1>
-			<p>{{ member.first_position }}</p>
+			<p>{{ member_first_pos }}</p>
 			{% endif %}
 
 			{% if member.thesis_title and member.thesis_title != "" %}

@@ -1,6 +1,6 @@
 ---
 layout: news
-title: "Jitao Wang defended"
+title: "Congrats to Dr. Wang"
 description: ""
 authors: " "
 year: 2025-12-11

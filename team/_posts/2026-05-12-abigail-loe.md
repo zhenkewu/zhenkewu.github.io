@@ -1,8 +1,8 @@
 ---
 layout: member
 title: Abigail Loe
-position: PhD Candidate (Biostat)
-role: PhD Candidate
+position: PhD (Biostat)
+role: PhD
 ms_year: 2023
 ms_placement: PhD Student at UMich Biostatistics
 first_position: Assistant Professor of Math/Stat/Computer Science, Macalester College, St Paul, MN
@@ -19,7 +19,7 @@ github: AbigailLoe
 scholar: 
 image: /assets/images/team/abby-loe.jpeg
 cv: 
-alum: false
+alum: true
 collaborator: false
 support: false
 showicon: true                                  
