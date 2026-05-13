@@ -10,4 +10,4 @@ tags:
   - member news
 ---
 
-Congrats to Dr. [Abby Loe](https://github.com/AbigailLoe) for her successful thesis defense! Her thesis is entitled: "Dynamic Prediction Models for Recurrent and Alternating Recurrent Events". 
+Congrats to Dr. [Abby Loe](https://zhenkewu.com/team/abigail-loe) for her successful thesis defense! Her thesis is entitled: "Dynamic Prediction Models for Recurrent and Alternating Recurrent Events". 
