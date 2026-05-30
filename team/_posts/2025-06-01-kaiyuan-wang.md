@@ -36,3 +36,7 @@ Other info: "I do competitive fencing. I was in UCSB team and UMich fencing team
 * 2024-Present, UMich PhD biostatistics 
 * 2022-2024, UMich masters statistics 
 * 2016-2020, UCSB undergrad Statistics + Classics major 
+
+# Awards:
+
+* 2026, Best Performance in PhD Qualifying Exam 
