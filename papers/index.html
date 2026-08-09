@@ -452,20 +452,34 @@ navorder: 1
       });
   }
 
+  function authorKey(name) {
+    var tokens = name.split(/\s+/).filter(function (t) { return !!t; });
+    if (tokens.length <= 1) return name.toLowerCase();
+    var first = tokens[0];
+    var last = tokens[tokens.length - 1];
+    return (first + " " + last).toLowerCase();
+  }
+
   function authorRowsByType(targetType) {
     var authorCount = {};
+    var displayName = {};
     papers.forEach(function (paper) {
       if (normalizeType(paper.type) !== targetType) return;
       var seen = {};
       splitAuthors(paper.authors).forEach(function (author) {
-        var key = author.toLowerCase();
+        var key = authorKey(author);
         if (seen[key]) return;
         seen[key] = true;
-        if (!authorCount[author]) authorCount[author] = 0;
-        authorCount[author] += 1;
+        if (!displayName[key]) displayName[key] = author;
+        if (!authorCount[key]) authorCount[key] = 0;
+        authorCount[key] += 1;
       });
     });
-    return topEntries(authorCount, null, "value-desc");
+    var converted = {};
+    Object.keys(authorCount).forEach(function (k) {
+      converted[displayName[k]] = authorCount[k];
+    });
+    return topEntries(converted, null, "value-desc");
   }
 
   function venueRowsByType(targetType) {

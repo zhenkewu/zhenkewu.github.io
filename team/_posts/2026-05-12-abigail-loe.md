@@ -23,7 +23,7 @@ alum: true
 collaborator: false
 support: false
 showicon: true                                  
-web: github.com/AbigailLoe
+web: abigailloe.github.io/
 field: biostat
 authors: " "
 
