@@ -72,18 +72,14 @@ navorder: 1
 }
 
 .paper-viz-bars {
-  margin-top: 2px;
-  padding: 0 12px 0 6px;
+  margin-top: 4px;
+  padding: 0 6px 2px 2px;
 }
 
 .paper-viz-bars-scroll {
-  max-height: 180px;
+  max-height: 200px;
   overflow-y: auto;
   scrollbar-gutter: stable;
-}
-
-.paper-viz-row {
-  margin-bottom: 2px;
 }
 
 .paper-viz-section-title {
@@ -93,26 +89,217 @@ navorder: 1
   margin: 6px 0 3px;
 }
 
-.paper-viz-row-head {
+.paper-viz-pills {
   display: flex;
-  justify-content: space-between;
-  gap: 6px;
-  font-size: 0.74em;
-  margin-bottom: 0;
-  color: #4a4f55;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
-.paper-viz-track {
-  width: 100%;
-  height: 6px;
-  background: #efefef;
+.paper-viz-pill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 120px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #e3e8ec;
+  background: #f7faf8;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+}
+
+.paper-viz-pill:hover {
+  background: #eef6ff;
+  border-color: #c5d8ef;
+  transform: translateY(-1px);
+}
+
+.paper-viz-pill-value {
+  font-size: 1.35em;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #2f3a44;
+}
+
+.paper-viz-pill-label {
+  font-size: 0.78em;
+  color: #5a6169;
+  margin-top: 2px;
+}
+
+.paper-viz-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: center;
+}
+
+.paper-viz-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid #e3e8ec;
   border-radius: 999px;
+  padding: 3px 8px 3px 9px;
+  background: #f8fafb;
+  cursor: pointer;
+  line-height: 1.2;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+}
+
+.paper-viz-chip:hover {
+  background: #eef6ff;
+  border-color: #c5d8ef;
+  transform: translateY(-1px);
+}
+
+.paper-viz-chip-label {
+  color: #2f3a44;
+  font-weight: 500;
+}
+
+.paper-viz-chip-count {
+  font-size: 0.78em;
+  font-weight: 600;
+  color: #fff;
+  background: #6d7680;
+  border-radius: 999px;
+  min-width: 1.4em;
+  text-align: center;
+  padding: 1px 6px;
+}
+
+.paper-viz-chip.is-tag {
+  border-radius: 6px;
+  padding: 2px 8px;
+}
+
+.paper-viz-chip.is-tag .paper-viz-chip-count {
+  background: transparent;
+  color: inherit;
+  opacity: 0.7;
+  padding: 0;
+  min-width: 0;
+  font-weight: 500;
+}
+
+/* Popup listing papers that match a clicked criterion */
+.paper-viz-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1050;
+  padding: 20px;
+}
+
+.paper-viz-modal-backdrop.open {
+  display: flex;
+}
+
+.paper-viz-modal {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 720px;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
 }
 
-.paper-viz-fill {
-  height: 100%;
+.paper-viz-modal-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 16px;
+  border-bottom: 1px solid #eceff1;
+}
+
+.paper-viz-modal-title {
+  font-weight: 600;
+  font-size: 0.98em;
+  color: #2f3a44;
+  line-height: 1.3;
+}
+
+.paper-viz-modal-title small {
+  display: block;
+  font-weight: 400;
+  color: #6d7680;
+  font-size: 0.82em;
+  margin-top: 2px;
+}
+
+.paper-viz-modal-close {
+  background: none;
+  border: none;
+  font-size: 1.3em;
+  line-height: 1;
+  color: #9aa2ab;
+  cursor: pointer;
+  padding: 0 4px;
+}
+
+.paper-viz-modal-close:hover {
+  color: #4a4f55;
+}
+
+.paper-viz-modal-body {
+  padding: 8px 16px 14px;
+  overflow-y: auto;
+}
+
+.paper-viz-modal-item {
+  padding: 8px 0;
+  border-bottom: 1px solid #f2f4f6;
+}
+
+.paper-viz-modal-item:last-child {
+  border-bottom: none;
+}
+
+.paper-viz-modal-item-title a {
+  font-weight: 600;
+}
+
+.paper-viz-modal-authors {
+  font-size: 0.86em;
+  color: #4a4f55;
+  margin-top: 2px;
+}
+
+.paper-viz-modal-meta {
+  font-size: 0.8em;
+  color: #6d7680;
+  margin-top: 2px;
+}
+
+.paper-viz-modal-tags {
+  margin-top: 3px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+
+.paper-viz-modal-tag {
+  font-size: 0.72em;
+  color: #5a6169;
+  background: #eef1f4;
   border-radius: 999px;
+  padding: 1px 8px;
+}
+
+.paper-viz-modal-links {
+  margin-top: 4px;
+}
+
+.paper-viz-modal-links a {
+  margin-right: 3px;
 }
 
 /* Enhanced styling for section jump buttons */
@@ -201,11 +388,21 @@ navorder: 1
     <button type="button" class="btn btn-xs btn-default" data-paper-viz-view="themes"> theme</button>
     <button type="button" class="btn btn-xs btn-default" data-paper-viz-view="venues-methods">Methods venue</button>
     <button type="button" class="btn btn-xs btn-default" data-paper-viz-view="venues-substantive">Substantive venue</button>
+    <button type="button" class="btn btn-xs btn-default" data-paper-viz-view="coauthors-all">co-author</button>
     <button type="button" class="btn btn-xs btn-default" data-paper-viz-view="coauthors-methods">Methods co-author</button>
     <button type="button" class="btn btn-xs btn-default" data-paper-viz-view="coauthors-substantive">Substantive co-author</button>
   </div>
   <div id="paper-viz-subtitle" class="smallnote"></div>
 	<div id="paper-viz-bars" class="paper-viz-bars"></div>
+</div>
+<div id="paper-viz-modal-backdrop" class="paper-viz-modal-backdrop">
+  <div class="paper-viz-modal" role="dialog" aria-modal="true" aria-labelledby="paper-viz-modal-title">
+    <div class="paper-viz-modal-head">
+      <div id="paper-viz-modal-title" class="paper-viz-modal-title"></div>
+      <button type="button" class="paper-viz-modal-close" data-paper-viz-close aria-label="Close">&times;</button>
+    </div>
+    <div id="paper-viz-modal-body" class="paper-viz-modal-body"></div>
+  </div>
 </div>
 <ul id="paper-viz-data" style="display:none;">
   {% for paper in site.categories.papers %}
@@ -219,6 +416,11 @@ navorder: 1
     data-github="{{ paper.github | default: '' | escape }}"
     data-supplement="{{ paper.supplement | default: '' | escape }}"
     data-pdf="{{ paper.pdf | default: '' | escape }}"
+    data-external="{{ paper.external_link | default: '' | escape }}"
+    data-doi="{{ paper.doi | default: '' | escape }}"
+    data-poster="{{ paper.poster | default: '' | escape }}"
+    data-slides="{{ paper.slides | default: '' | escape }}"
+    data-url="{{ paper.url | escape }}"
     data-title="{{ paper.title | escape }}">
   </li>
   {% endfor %}
@@ -344,7 +546,7 @@ navorder: 1
   var papers = paperNodes.map(function (node) {
     var rawYear = (node.getAttribute("data-year-raw") || "").trim();
     var fallbackYear = (node.getAttribute("data-year-fallback") || "").trim();
-    var yearValue = /^\d{4}$/.test(rawYear) ? rawYear : (rawYear ? "Submitted/In press" : fallbackYear);
+    var yearValue = /^\d{4}$/.test(rawYear) ? rawYear : (rawYear ? "Submitted" : fallbackYear);
     return {
       year: yearValue,
       type: node.getAttribute("data-type") || "other",
@@ -354,9 +556,29 @@ navorder: 1
       github: node.getAttribute("data-github") || "",
       supplement: node.getAttribute("data-supplement") || "",
       pdf: node.getAttribute("data-pdf") || "",
+      external: node.getAttribute("data-external") || "",
+      doi: node.getAttribute("data-doi") || "",
+      poster: node.getAttribute("data-poster") || "",
+      slides: node.getAttribute("data-slides") || "",
+      url: node.getAttribute("data-url") || "",
       title: node.getAttribute("data-title") || ""
     };
   });
+
+  var currentView = "type";
+  var currentRows = [];
+
+  function escapeHtml(value) {
+    return String(value).replace(/[&<>"']/g, function (ch) {
+      return ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;"
+      })[ch];
+    });
+  }
 
   function normalizeType(raw) {
     var t = (raw || "").toLowerCase();
@@ -389,35 +611,70 @@ navorder: 1
     return typeof limit === "number" ? entries.slice(0, limit) : entries;
   }
 
-  function renderBars(container, rows, color) {
+  function hexToRgb(hex) {
+    var h = (hex || "#6d7680").replace("#", "");
+    if (h.length === 3) h = h[0] + h[0] + h[1] + h[1] + h[2] + h[2];
+    return {
+      r: parseInt(h.slice(0, 2), 16),
+      g: parseInt(h.slice(2, 4), 16),
+      b: parseInt(h.slice(4, 6), 16)
+    };
+  }
+
+  function chipStyle(value, max, color, mode) {
+    var t = max ? value / max : 0;
+    var rgb = hexToRgb(color);
+    if (mode === "tags") {
+      var size = (0.78 + t * 0.55).toFixed(2);
+      var weight = t > 0.55 ? 600 : 500;
+      var alpha = (0.08 + t * 0.22).toFixed(2);
+      return "font-size:" + size + "em; font-weight:" + weight +
+        "; background:rgba(" + rgb.r + "," + rgb.g + "," + rgb.b + "," + alpha +
+        "); border-color:rgba(" + rgb.r + "," + rgb.g + "," + rgb.b + "," + (0.2 + t * 0.35).toFixed(2) +
+        "); color:rgb(" + Math.max(30, rgb.r - 40) + "," + Math.max(30, rgb.g - 40) + "," + Math.max(30, rgb.b - 40) + ");";
+    }
+    var alpha = (0.06 + t * 0.18).toFixed(2);
+    return "background:rgba(" + rgb.r + "," + rgb.g + "," + rgb.b + "," + alpha +
+      "); border-color:rgba(" + rgb.r + "," + rgb.g + "," + rgb.b + "," + (0.18 + t * 0.35).toFixed(2) + ");";
+  }
+
+  function countBadgeStyle(color) {
+    var rgb = hexToRgb(color);
+    return "background:rgb(" + rgb.r + "," + rgb.g + "," + rgb.b + ");";
+  }
+
+  function renderViz(container, rows, color, view, mode) {
+    currentRows = rows;
+    currentView = view;
     if (!rows.length) {
       container.innerHTML = "<div class='smallnote'>No data available.</div>";
       return;
     }
     var max = rows[0].value || 1;
-    container.innerHTML = rows.map(function (row) {
-      var width = Math.max(6, Math.round((row.value / max) * 100));
-      return (
-        "<div class='paper-viz-row'>" +
-          "<div class='paper-viz-row-head'><span>" + row.label + "</span><strong>" + row.value + "</strong></div>" +
-          "<div class='paper-viz-track'><div class='paper-viz-fill' style='width:" + width + "%; background:" + color + ";'></div></div>" +
-        "</div>"
-      );
-    }).join("");
-  }
 
-  function rowsToHtml(rows, color) {
-    if (!rows.length) return "<div class='smallnote'>No data available.</div>";
-    var max = rows[0].value || 1;
-    return rows.map(function (row) {
-      var width = Math.max(6, Math.round((row.value / max) * 100));
+    if (mode === "pills") {
+      container.innerHTML = "<div class='paper-viz-pills'>" + rows.map(function (row, idx) {
+        var rgb = hexToRgb(color);
+        var bg = "background:rgba(" + rgb.r + "," + rgb.g + "," + rgb.b + ",0.12); border-color:rgba(" + rgb.r + "," + rgb.g + "," + rgb.b + ",0.35);";
+        return (
+          "<div class='paper-viz-pill is-clickable' data-viz-index='" + idx + "' role='button' tabindex='0' title='Click to see these papers' style='" + bg + "'>" +
+            "<div class='paper-viz-pill-value' style='color:" + color + ";'>" + row.value + "</div>" +
+            "<div class='paper-viz-pill-label'>" + escapeHtml(row.label) + "</div>" +
+          "</div>"
+        );
+      }).join("") + "</div>";
+      return;
+    }
+
+    var tagClass = mode === "tags" ? " is-tag" : "";
+    container.innerHTML = "<div class='paper-viz-chips'>" + rows.map(function (row, idx) {
       return (
-        "<div class='paper-viz-row'>" +
-          "<div class='paper-viz-row-head'><span>" + row.label + "</span><strong>" + row.value + "</strong></div>" +
-          "<div class='paper-viz-track'><div class='paper-viz-fill' style='width:" + width + "%; background:" + color + ";'></div></div>" +
+        "<div class='paper-viz-chip is-clickable" + tagClass + "' data-viz-index='" + idx + "' role='button' tabindex='0' title='Click to see these papers' style='" + chipStyle(row.value, max, color, mode) + "'>" +
+          "<span class='paper-viz-chip-label'>" + escapeHtml(row.label) + "</span>" +
+          "<span class='paper-viz-chip-count'" + (mode === "tags" ? "" : " style='" + countBadgeStyle(color) + "'") + ">" + row.value + "</span>" +
         "</div>"
       );
-    }).join("");
+    }).join("") + "</div>";
   }
 
   function renderMetrics() {
@@ -464,7 +721,7 @@ navorder: 1
     var authorCount = {};
     var displayName = {};
     papers.forEach(function (paper) {
-      if (normalizeType(paper.type) !== targetType) return;
+      if (targetType && normalizeType(paper.type) !== targetType) return;
       var seen = {};
       splitAuthors(paper.authors).forEach(function (author) {
         var key = authorKey(author);
@@ -517,12 +774,149 @@ navorder: 1
     return topEntries(converted, null, "value-desc");
   }
 
+  function papersMatching(view, label) {
+    if (view === "coauthors-all" || view === "coauthors-methods" || view === "coauthors-substantive") {
+      var key = authorKey(label);
+      var atype = null;
+      if (view === "coauthors-methods") atype = "Theory/Methods";
+      if (view === "coauthors-substantive") atype = "Substantive";
+      return papers.filter(function (p) {
+        if (atype && normalizeType(p.type) !== atype) return false;
+        return splitAuthors(p.authors).some(function (a) { return authorKey(a) === key; });
+      });
+    }
+    if (view === "venues-methods" || view === "venues-substantive") {
+      var vtype = view === "venues-methods" ? "Theory/Methods" : "Substantive";
+      return papers.filter(function (p) {
+        return normalizeType(p.type) === vtype && (p.journal || "").trim() === label;
+      });
+    }
+    if (view === "themes") {
+      var lowered = label.toLowerCase();
+      return papers.filter(function (p) {
+        return (p.tags || "").split("||").map(function (t) { return t.trim().toLowerCase(); }).indexOf(lowered) >= 0;
+      });
+    }
+    return papers.filter(function (p) { return normalizeType(p.type) === label; });
+  }
+
+  function modalHeadingFor(view) {
+    if (view === "coauthors-all") return "Papers with co-author";
+    if (view === "coauthors-methods") return "Theory/methods papers with co-author";
+    if (view === "coauthors-substantive") return "Substantive papers with co-author";
+    if (view === "venues-methods") return "Theory/methods papers in";
+    if (view === "venues-substantive") return "Substantive papers in";
+    if (view === "themes") return "Papers tagged";
+    return "Papers of type";
+  }
+
+  function renderPaperItem(p) {
+    var titleHtml = p.url
+      ? "<a href='" + escapeHtml(p.url) + "'>" + escapeHtml(p.title) + "</a>"
+      : escapeHtml(p.title);
+
+    var authorsHtml = p.authors
+      ? "<div class='paper-viz-modal-authors'>" + escapeHtml(p.authors) + "</div>"
+      : "";
+
+    var meta = [];
+    if (p.year) meta.push(escapeHtml(p.year));
+    if (p.journal && p.journal.toLowerCase() !== "preprint") {
+      meta.push("<em>" + escapeHtml(p.journal) + "</em>");
+    }
+    meta.push(escapeHtml(normalizeType(p.type)));
+    var metaHtml = "<div class='paper-viz-modal-meta'>" + meta.join(" \u00B7 ") + "</div>";
+
+    var tags = (p.tags || "").split("||").map(function (t) { return t.trim(); }).filter(function (t) { return !!t; });
+    var tagsHtml = tags.length
+      ? "<div class='paper-viz-modal-tags'>" + tags.map(function (t) {
+          return "<span class='paper-viz-modal-tag'>" + escapeHtml(t) + "</span>";
+        }).join("") + "</div>"
+      : "";
+
+    var links = [];
+    if (p.external) links.push("<a class='label label-info' href='" + escapeHtml(p.external) + "'>[paper link]</a>");
+    if (p.pdf) links.push("<a class='label label-primary' href='" + escapeHtml(p.pdf) + "'>[pdf]</a>");
+    if (p.doi) links.push("<a class='label label-default' href='http://dx.doi.org/" + escapeHtml(p.doi) + "'>[doi]</a>");
+    if (p.github) links.push("<a class='label label-red' href='" + escapeHtml(p.github) + "'>[code]</a>");
+    if (p.supplement) links.push("<a class='label label-primary' href='" + escapeHtml(p.supplement) + "'>[supplement]</a>");
+    if (p.poster) links.push("<a class='label label-green' href='" + escapeHtml(p.poster) + "'>[poster]</a>");
+    if (p.slides) links.push("<a class='label label-purple' href='" + escapeHtml(p.slides) + "'>[slides]</a>");
+    var linksHtml = links.length ? "<div class='paper-viz-modal-links'>" + links.join(" ") + "</div>" : "";
+
+    return "<div class='paper-viz-modal-item'>" +
+      "<div class='paper-viz-modal-item-title'>" + titleHtml + "</div>" +
+      authorsHtml + metaHtml + tagsHtml + linksHtml +
+      "</div>";
+  }
+
+  function openModal(view, label) {
+    var matches = papersMatching(view, label).slice();
+    matches.sort(function (a, b) {
+      var ya = Number(a.year), yb = Number(b.year);
+      var na = Number.isNaN(ya), nb = Number.isNaN(yb);
+      if (na && nb) return a.title.localeCompare(b.title);
+      if (na) return -1;
+      if (nb) return 1;
+      if (yb !== ya) return yb - ya;
+      return a.title.localeCompare(b.title);
+    });
+
+    var titleEl = document.getElementById("paper-viz-modal-title");
+    var bodyEl = document.getElementById("paper-viz-modal-body");
+    titleEl.innerHTML =
+      escapeHtml(modalHeadingFor(view)) + " \u201C" + escapeHtml(label) + "\u201D" +
+      "<small>" + matches.length + " paper" + (matches.length === 1 ? "" : "s") + "</small>";
+
+    bodyEl.innerHTML = matches.length
+      ? matches.map(renderPaperItem).join("")
+      : "<div class='smallnote'>No matching papers.</div>";
+
+    document.getElementById("paper-viz-modal-backdrop").classList.add("open");
+  }
+
+  function closeModal() {
+    document.getElementById("paper-viz-modal-backdrop").classList.remove("open");
+  }
+
+  function bindModal() {
+    var bars = document.getElementById("paper-viz-bars");
+    function triggerFromEvent(e) {
+      var rowEl = e.target.closest ? e.target.closest(".is-clickable[data-viz-index]") : null;
+      if (!rowEl) return false;
+      var rowData = currentRows[Number(rowEl.getAttribute("data-viz-index"))];
+      if (rowData) openModal(currentView, rowData.label);
+      return true;
+    }
+    bars.addEventListener("click", triggerFromEvent);
+    bars.addEventListener("keydown", function (e) {
+      if (e.key !== "Enter" && e.key !== " ") return;
+      if (triggerFromEvent(e)) e.preventDefault();
+    });
+
+    var backdrop = document.getElementById("paper-viz-modal-backdrop");
+    backdrop.addEventListener("click", function (e) {
+      if (e.target === backdrop || (e.target.getAttribute && e.target.hasAttribute("data-paper-viz-close"))) {
+        closeModal();
+      }
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") closeModal();
+    });
+  }
+
   function render(view) {
     var bars = document.getElementById("paper-viz-bars");
     var subtitle = document.getElementById("paper-viz-subtitle");
     var rows;
     var color;
-    if (view === "coauthors-methods") {
+    var mode = "chips";
+    if (view === "coauthors-all") {
+      rows = authorRowsByType(null);
+      color = "#1abc9c";
+      subtitle.textContent = "Most frequent co-authors across all papers.";
+      bars.classList.add("paper-viz-bars-scroll");
+    } else if (view === "coauthors-methods") {
       rows = authorRowsByType("Theory/Methods");
       color = "#5bc0de";
       subtitle.textContent = "Most frequent co-authors on theory/methods papers.";
@@ -545,15 +939,18 @@ navorder: 1
     } else if (view === "themes") {
       rows = themeRows();
       color = "#9b59b6";
+      mode = "tags";
       subtitle.textContent = "Themes from paper tags.";
       bars.classList.add("paper-viz-bars-scroll");
     } else {
       rows = topEntries(countBy(papers, function (p) { return normalizeType(p.type); }), 3, "value-desc");
       color = "#5cb85c";
+      mode = "pills";
       subtitle.textContent = "Distribution between theory/methods and substantive work.";
       bars.classList.remove("paper-viz-bars-scroll");
     }
-    renderBars(bars, rows, color);
+    subtitle.textContent += " Click any item to list the matching papers.";
+    renderViz(bars, rows, color, view, mode);
   }
 
   function bindTabs() {
@@ -569,7 +966,9 @@ navorder: 1
 
   renderMetrics();
   bindTabs();
+  bindModal();
   render("type");
 })();
 </script>
+
 
