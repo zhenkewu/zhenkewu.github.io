@@ -11,8 +11,8 @@ slides:
 supplement: https://pycfrl-documentation.netlify.app/
 poster: /assets/pdfs/posters/2025-03-27 poster_CFRL.pdf
 github: https://github.com/JianhanZhang/PyCFRL
-doi:
-external_link: https://arxiv.org/abs/2510.06935
+doi: 10.21105/joss.09689
+external_link: 
 video_link: 
 type: statistical
 tags:
@@ -22,6 +22,8 @@ tags:
     - software
  
 ---
+
+[![DOI](https://joss.theoj.org/papers/10.21105/joss.09689/status.svg)](https://doi.org/10.21105/joss.09689)
 
 # Abstract
 
