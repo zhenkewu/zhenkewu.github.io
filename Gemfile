@@ -1,36 +1,24 @@
 source 'https://rubygems.org'
 
-# jekyll
+# Same Jekyll as local preview. GitHub Actions uses this Gemfile
+# instead of the github-pages gem (Jekyll 3).
 gem "jekyll", "4.3.2"
-# gem "redcarpet"   
+gem "kramdown"
+gem "webrick"
 
-# # compiling less
-# gem 'therubyracer'
-# gem 'less'
+group :jekyll_plugins do
+  gem "jekyll-feed"
+  gem "jekyll-redirect-from"
+  gem "jekyll-gist"
+end
 
-# minifying
-gem 'jekyll-press'
-
-# octokit
-gem 'octokit'
-gem 'netrc'
-
-gem 'jekyll-feed'
-gem 'jekyll-redirect-from'
-
-gem 'json'
-gem 'pygments.rb'
-
-gem 'kramdown'
-
-gem "rspec"
-
-# gem 'github-pages', group: :jekyll_plugins
-
-gem 'jekyll-twitter-plugin', group: :jekyll_plugins
-
-#group :jekyll_plugins do
-#  gem 'jekyll-commonmark-ghpages'
-#end
-
-gem 'jekyll-gist'
+# Local/dev tools only. CI sets BUNDLE_WITHOUT=development.
+group :development do
+  gem "jekyll-press"
+  gem "octokit"
+  gem "netrc"
+  gem "json"
+  gem "pygments.rb"
+  gem "rspec"
+  gem "jekyll-twitter-plugin"
+end
