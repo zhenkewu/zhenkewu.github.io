@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="PCORI reinforcement learning project icon">
+  <rect width="128" height="128" rx="24" fill="#2e6b4f"/>
+  <circle cx="32" cy="64" r="11" fill="#ffffff"/>
+  <circle cx="64" cy="34" r="11" fill="#ffffff"/>
+  <circle cx="64" cy="94" r="11" fill="#ffffff"/>
+  <circle cx="96" cy="64" r="11" fill="#ffffff"/>
+  <path d="M41 57 L55 41 M41 71 L55 87 M73 41 L87 57 M73 87 L87 71" stroke="#ffffff" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <circle cx="96" cy="64" r="4" fill="#cfe8d8"/>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="CODA Consortium project icon">
+  <rect width="128" height="128" rx="24" fill="#6d5a73"/>
+  <circle cx="64" cy="28" r="10" fill="#ffffff"/>
+  <circle cx="32" cy="64" r="9" fill="#ffffff"/>
+  <circle cx="96" cy="64" r="9" fill="#ffffff"/>
+  <circle cx="20" cy="100" r="8" fill="#ffffff"/>
+  <circle cx="48" cy="100" r="8" fill="#ffffff"/>
+  <circle cx="80" cy="100" r="8" fill="#ffffff"/>
+  <circle cx="108" cy="100" r="8" fill="#ffffff"/>
+  <path d="M64 38 V50 M64 50 L32 55 M64 50 L96 55 M32 73 V88 M96 73 V88 M32 88 L20 92 M32 88 L48 92 M96 88 L80 92 M96 88 L108 92" stroke="#ffffff" stroke-width="4.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

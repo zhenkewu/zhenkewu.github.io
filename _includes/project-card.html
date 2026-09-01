@@ -1,0 +1,38 @@
+{% assign p = include.project %}
+<div class="col-sm-12 col-md-6">
+	<a class="off" href="{{ p.url }}">
+		<div class="project-card project-card-{{ p.funder_type | default: 'other' }}">
+			<div class="project-card-icon">
+				{% if p.image %}
+				<img src="{{ p.image }}" alt="{{ p.short_title | default: p.title }}">
+				{% elsif p.icon %}
+				<div class="project-icon-fa project-icon-{{ p.funder_type | default: 'other' }}">
+					<i class="{{ p.icon }}"></i>
+				</div>
+				{% else %}
+				<div class="project-icon-fa project-icon-{{ p.funder_type | default: 'other' }}">
+					<i class="fa-solid fa-folder-open"></i>
+				</div>
+				{% endif %}
+			</div>
+			<div class="project-card-body">
+				<div class="project-card-title">{{ p.short_title | default: p.title }}</div>
+				<div class="project-card-desc">{{ p.description }}</div>
+				<div class="project-card-meta">
+					{% if p.funder %}
+					<span class="label project-funder-{{ p.funder_type | default: 'other' }}">{{ p.funder }}</span>
+					{% endif %}
+					{% if p.role %}
+					<span class="label label-default">{{ p.role }}</span>
+					{% endif %}
+					{% if p.years %}
+					<span class="label label-info">{{ p.years }}</span>
+					{% endif %}
+					{% if p.status %}
+					<span class="label {% if p.status == 'active' %}label-success{% elsif p.status == 'completed' %}label-default{% else %}label-info{% endif %}">{{ p.status }}</span>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+	</a>
+</div>

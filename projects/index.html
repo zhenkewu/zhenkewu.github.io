@@ -1,0 +1,89 @@
+---
+layout: default
+title: "projects"
+navtab: "projects"
+description: "Major research projects funded by federal, non-profit, philanthropy, and other sponsors"
+group: navigation
+navorder: 2
+---
+{% include JB/setup %}
+
+{% assign all_projects = site.categories.projects | where: "layout", "project" %}
+{% assign federal_projects = all_projects | where: "funder_type", "federal" %}
+{% assign nonprofit_projects = all_projects | where: "funder_type", "non-profit" %}
+{% assign philanthropy_projects = all_projects | where: "funder_type", "philanthropy" %}
+{% assign other_projects = all_projects | where: "funder_type", "other" %}
+
+{% if all_projects.size > 0 %}
+<nav class="project-hub-nav project-hub-nav-featured" aria-label="Jump to funder sections">
+	<div class="project-hub-nav-label">Jump to</div>
+	{% if federal_projects.size > 0 %}
+	<a class="project-hub-chip" href="#federal"><i class="fa-solid fa-landmark"></i> Federal <span class="project-hub-chip-count">{{ federal_projects.size }}</span></a>
+	{% endif %}
+	{% if nonprofit_projects.size > 0 %}
+	<a class="project-hub-chip" href="#non-profit"><i class="fa-solid fa-hand-holding-heart"></i> Non-profit <span class="project-hub-chip-count">{{ nonprofit_projects.size }}</span></a>
+	{% endif %}
+	{% if philanthropy_projects.size > 0 %}
+	<a class="project-hub-chip" href="#philanthropy"><i class="fa-solid fa-seedling"></i> Philanthropy <span class="project-hub-chip-count">{{ philanthropy_projects.size }}</span></a>
+	{% endif %}
+	{% if other_projects.size > 0 %}
+	<a class="project-hub-chip" href="#other"><i class="fa-solid fa-handshake"></i> Other <span class="project-hub-chip-count">{{ other_projects.size }}</span></a>
+	{% endif %}
+</nav>
+{% endif %}
+
+<div>
+{% include search-form-global.html %}
+</div>
+
+<div class="smalltitle text-left">Selected Research projects</div>
+<div class="smallspacer"></div>
+<div class="note">
+	Each entry is a project post with its own icon and description.
+	Software tools live under <a href="/software-products/">Software</a>.
+</div>
+
+<div class="bigspacer"></div>
+
+{% if all_projects.size > 0 %}
+{% assign funder_keys = "federal,non-profit,philanthropy,other" | split: "," %}
+{% assign funder_names = "Federal,Non-profit,Philanthropy,Other" | split: "," %}
+
+{% assign funder_icons = "fa-solid fa-landmark,fa-solid fa-hand-holding-heart,fa-solid fa-seedling,fa-solid fa-handshake" | split: "," %}
+
+{% for ftype in funder_keys %}
+	{% assign section_projects = all_projects | where: "funder_type", ftype %}
+	{% if section_projects.size > 0 %}
+		{% assign fname = funder_names[forloop.index0] %}
+		{% assign ficon = funder_icons[forloop.index0] %}
+		<section id="{{ ftype }}" class="project-hub-section">
+		<div class="project-section-marker project-section-marker-{{ ftype }}">
+			<div class="project-section-marker-left">
+				<i class="{{ ficon }}"></i>
+				<span class="project-section-marker-title">{{ fname }}</span>
+				<span class="project-section-marker-count">{{ section_projects.size }}</span>
+			</div>
+			<a class="project-section-marker-jump" href="#">Jump to top</a>
+		</div>
+		<div class="row">
+			{% assign active_projects = section_projects | where: "status", "active" %}
+			{% for project in active_projects %}
+				{% include project-card.html project=project %}
+			{% endfor %}
+			{% for project in section_projects %}
+				{% if project.status != "active" %}
+					{% include project-card.html project=project %}
+				{% endif %}
+			{% endfor %}
+		</div>
+		</section>
+	{% endif %}
+{% endfor %}
+
+{% else %}
+<div class="note">
+	No project posts yet. Add a markdown file to <code>projects/_posts/</code> using an existing project as a template.
+</div>
+{% endif %}
+
+<div class="bigspacer"></div>

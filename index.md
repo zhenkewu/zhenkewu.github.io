@@ -33,7 +33,9 @@ I am an [Associate Professor](https://sph.umich.edu/faculty-profiles/wu-zhenke.h
 
 [[Bio + Contact](/team/zhenke-wu)][[CV](assets/pdfs/team/zhenkewu_cv.pdf)] or [[CV 1-pager](assets/pdfs/team/zhenkewu_cv_one_page.pdf)]
 
-[Publications](/papers/) by [year](papers/archive/year), [topic](papers/archive/topic), or [word cloud](papers/archive/explore) 
+[Publications](/papers/) by [year](papers/archive/year), [topic](papers/archive/topic), or [word cloud](papers/archive/explore)
+
+[Research projects](/projects/) funded by federal, non-profit, philanthropy, and other sponsors 
 
 
 
@@ -118,6 +120,37 @@ I currently collaborate closely with
 		</div>
 	</div>				
 </div>
+
+{% if site.categories.projects.size > 0 %}
+<div class="row">
+	<div class="col-md-12">
+		<div class="head">
+			<a class="off" href="/projects/">Projects</a>
+		</div>
+		<div class="smallspacer"></div>
+	</div>
+	{% for project in site.categories.projects limit:4 %}
+	<div class="col-sm-6 col-md-3 project-home-tile">
+		<a class="off" href="{{ project.url }}">
+			{% if project.image %}
+			<img src="{{ project.image }}" alt="{{ project.short_title | default: project.title }}">
+			{% elsif project.icon %}
+			<div class="project-icon-fa project-icon-{{ project.funder_type | default: 'other' }}">
+				<i class="{{ project.icon }}"></i>
+			</div>
+			{% else %}
+			<div class="project-icon-fa project-icon-{{ project.funder_type | default: 'other' }}">
+				<i class="fa-solid fa-folder-open"></i>
+			</div>
+			{% endif %}
+			<div class="project-home-name">{{ project.short_title | default: project.title }}</div>
+			<div class="smallnote">{{ project.funder }}{% if project.years %} &middot; {{ project.years }}{% endif %}</div>
+		</a>
+	</div>
+	{% endfor %}
+</div>
+<div class="bigspacer"></div>
+{% endif %}
 
 <div class="row">
 	
@@ -229,31 +262,6 @@ I currently collaborate closely with
 		<div class="bigspacer"></div>
 	</div>
 	
-	<!-- <div class="col-md-4">
-		<div class="head">
-			<a class="off" href="/projects/">Projects</a>
-		</div>
-		<div class="bigspacer"></div>
-		<div class="feedbox pad-left">
-			{% for project in site.categories.project limit:4 %}
-				<div class="note-title">
-					<i class="fa fa-terminal"></i>
-					<a class="off" href="{{ project.url }}">
-					{{ project.title }}
-					</a>
-					<br/>
-					<div class='shortref note'>
-					{{ project.tags }}
-					</div>
-				</div>
-				<div class="smallspacer"></div>
-				<div class="spacer"></div>
-				<div class="spacer"></div>
-			{% endfor %}
-		</div>
-		<div class="bigspacer"></div>
-	</div> -->
-
 
 </div>
 

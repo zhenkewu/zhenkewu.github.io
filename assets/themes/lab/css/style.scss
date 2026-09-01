@@ -247,6 +247,373 @@ strong {
 	background-color: #FFFFCC;
 }
 
+.project-detail-icon {
+	width: 140px;
+	height: 140px;
+	object-fit: cover;
+	border-radius: 22px;
+	background: #f4f7fa;
+}
+
+.project-icon-fa {
+	width: 88px;
+	height: 88px;
+	border-radius: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 34px;
+	color: #fff;
+	background: #5a6b7d;
+}
+
+.media .project-icon-fa {
+	width: 140px;
+	height: 140px;
+	font-size: 52px;
+	border-radius: 22px;
+}
+
+.project-icon-federal { background: #20558a; }
+.project-icon-non-profit { background: #2e6b4f; }
+.project-icon-philanthropy { background: #b07d3a; }
+.project-icon-other { background: #6d5a73; }
+
+.label.project-funder-federal { background-color: #20558a; }
+.label.project-funder-non-profit { background-color: #2e6b4f; }
+.label.project-funder-philanthropy { background-color: #b07d3a; }
+.label.project-funder-other { background-color: #6d5a73; }
+
+.project-card {
+	display: flex;
+	gap: 16px;
+	align-items: flex-start;
+	min-height: 132px;
+	margin: 0 0 18px 0;
+	padding: 16px;
+	border: 1px solid #e7ecef;
+	border-left: 4px solid #c5d0d8;
+	border-radius: 8px;
+	background: #fcfdfc;
+	transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+a:hover .project-card {
+	box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+	border-color: #cfd8de;
+}
+
+.project-card-federal { border-left-color: #20558a; }
+.project-card-non-profit { border-left-color: #2e6b4f; }
+.project-card-philanthropy { border-left-color: #b07d3a; }
+.project-card-other { border-left-color: #6d5a73; }
+
+.project-card-icon img {
+	width: 88px;
+	height: 88px;
+	object-fit: cover;
+	border-radius: 18px;
+	background: #f4f7fa;
+}
+
+.project-card-body {
+	flex: 1;
+	min-width: 0;
+}
+
+.project-card-title {
+	font-size: 1.05em;
+	font-weight: 600;
+	line-height: 1.3;
+	color: #2f3a44;
+	margin-bottom: 6px;
+}
+
+.project-card-desc {
+	font-size: 0.92em;
+	line-height: 1.4;
+	color: #4d5660;
+	margin-bottom: 10px;
+}
+
+.project-card-meta .label {
+	margin: 0 4px 4px 0;
+	font-size: 0.72em;
+	font-weight: 500;
+	border-radius: 999px;
+	padding: 3px 8px;
+}
+
+.project-home-tile {
+	text-align: center;
+	margin-bottom: 18px;
+}
+
+.project-home-tile img,
+.project-home-tile .project-icon-fa {
+	width: 72px;
+	height: 72px;
+	margin: 0 auto 8px auto;
+	border-radius: 16px;
+}
+
+.project-home-tile img {
+	object-fit: cover;
+	display: block;
+}
+
+.project-home-tile .project-icon-fa {
+	font-size: 28px;
+}
+
+.project-home-name {
+	font-weight: 600;
+	line-height: 1.3;
+}
+
+.project-page-toc a {
+	display: inline-block;
+	padding: 2px 0;
+}
+
+.project-hub {
+	margin-top: 12px;
+	padding-top: 8px;
+	border-top: 1px solid #e4e8ec;
+}
+
+.project-hub-nav {
+	position: sticky;
+	top: 58px;
+	z-index: 20;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 6px;
+	margin: 0 0 22px 0;
+	padding: 8px 10px;
+	background: rgba(255,255,255,0.42);
+	border: 1px solid rgba(180,190,200,0.45);
+	border-radius: 10px;
+	box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+}
+
+.project-hub-nav-featured {
+	margin: 8px 0 22px 0;
+	padding: 8px 12px;
+	background: rgba(238,244,250,0.38);
+	border: 1px solid rgba(32,85,138,0.35);
+	box-shadow: 0 4px 16px rgba(32,85,138,0.08);
+}
+
+.project-hub-nav-label {
+	font-size: 0.72em;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: #6d7680;
+	margin-right: 2px;
+}
+
+.project-hub-nav-featured .project-hub-nav-label {
+	font-size: 0.72em;
+	color: #20558a;
+}
+
+.project-hub-nav-featured .project-hub-chip {
+	padding: 3px 9px;
+	font-size: 0.78em;
+	border-color: rgba(183,201,220,0.7);
+	background: rgba(255,255,255,0.55);
+	box-shadow: none;
+}
+
+.project-hub-chip {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	padding: 3px 9px;
+	border: 1px solid rgba(215,222,228,0.75);
+	border-radius: 999px;
+	background: rgba(255,255,255,0.55);
+	color: #2f3a44;
+	font-size: 0.78em;
+	font-weight: 600;
+	line-height: 1.2;
+	text-decoration: none;
+}
+
+.project-hub-chip:hover,
+.project-hub-chip:focus {
+	background: #20558a;
+	border-color: #20558a;
+	color: #fff;
+	text-decoration: none;
+}
+
+.project-hub-chip-count {
+	min-width: 1.15em;
+	padding: 0 5px;
+	border-radius: 999px;
+	background: rgba(0,0,0,0.08);
+	font-size: 0.85em;
+	text-align: center;
+}
+
+.project-hub-chip:hover .project-hub-chip-count,
+.project-hub-chip:focus .project-hub-chip-count {
+	background: rgba(255,255,255,0.22);
+}
+
+.project-hub-intro {
+	margin-bottom: 18px;
+}
+
+.project-hub-section {
+	margin: 0 0 28px 0;
+	padding: 0 0 8px 0;
+}
+
+.project-hub-section:target .project-section-marker {
+	box-shadow: 0 0 0 3px rgba(32,85,138,0.18);
+}
+
+.project-section-marker {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	margin: 0 0 14px 0;
+	padding: 10px 14px;
+	border-left: 5px solid #20558a;
+	border-radius: 8px;
+	background: linear-gradient(180deg, #f4f7fb 0%, #eef3f8 100%);
+}
+
+.project-section-marker-left {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	min-width: 0;
+}
+
+.project-section-marker-left i {
+	color: #20558a;
+	font-size: 1.05em;
+}
+
+.project-section-marker-title {
+	font-size: 1.15em;
+	font-weight: 700;
+	color: #243039;
+	line-height: 1.3;
+}
+
+.project-section-marker-count {
+	display: inline-block;
+	min-width: 1.6em;
+	padding: 2px 8px;
+	border-radius: 999px;
+	background: #20558a;
+	color: #fff;
+	font-size: 0.78em;
+	font-weight: 600;
+	text-align: center;
+}
+
+.project-section-marker-jump {
+	flex-shrink: 0;
+	font-size: 0.8em;
+	font-weight: 600;
+	color: #20558a;
+	text-decoration: none;
+}
+
+.project-section-marker-jump:hover {
+	text-decoration: underline;
+}
+
+.project-hub-section-note {
+	margin: -6px 0 12px 2px;
+}
+
+.project-resource-card {
+	margin: 0 0 14px 0;
+	padding: 12px 14px;
+	border: 1px solid #e7ecef;
+	border-radius: 8px;
+	background: #fcfdfc;
+}
+
+.project-resource-title {
+	font-weight: 600;
+	line-height: 1.35;
+	margin-bottom: 4px;
+}
+
+.project-resource-empty {
+	margin: 0 0 4px 2px;
+	color: #6d7680;
+}
+
+.project-section-marker-federal {
+	border-left-color: #20558a;
+}
+.project-section-marker-federal i { color: #20558a; }
+.project-section-marker-federal .project-section-marker-count { background: #20558a; }
+
+.project-section-marker-non-profit {
+	border-left-color: #2e6b4f;
+}
+.project-section-marker-non-profit i { color: #2e6b4f; }
+.project-section-marker-non-profit .project-section-marker-count { background: #2e6b4f; }
+
+.project-section-marker-philanthropy {
+	border-left-color: #b07d3a;
+}
+.project-section-marker-philanthropy i { color: #b07d3a; }
+.project-section-marker-philanthropy .project-section-marker-count { background: #b07d3a; }
+
+.project-section-marker-other {
+	border-left-color: #6d5a73;
+}
+.project-section-marker-other i { color: #6d5a73; }
+.project-section-marker-other .project-section-marker-count { background: #6d5a73; }
+
+#federal,
+#non-profit,
+#philanthropy,
+#other,
+#overview,
+#resources,
+.project-hub-section[id] {
+	scroll-margin-top: 120px;
+}
+
+@media all and (max-width: 767px) {
+	.project-hub-nav {
+		top: 52px;
+	}
+
+	.project-section-marker {
+		flex-wrap: wrap;
+	}
+}
+
+@media all and (max-width: 767px) {
+	.project-card {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.project-card-meta .label {
+		display: inline-block;
+	}
+}
+
 .paper-image {
 	width: 200px;
 }
@@ -879,6 +1246,7 @@ color:black;
 .label-green{background-color:#73a895}
 
 // Add padding to tag headings to prevent navbar overlap
-h2[id] {
-	scroll-margin-top: 55px;
+h2[id],
+.label[id] {
+	scroll-margin-top: 70px;
 }

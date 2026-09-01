@@ -15,6 +15,8 @@ doi: 10.21105/joss.09689
 external_link: 
 video_link: 
 type: statistical
+projects:
+    - pcori-rl
 tags:
     - reinforcement learning
     - ethical AI

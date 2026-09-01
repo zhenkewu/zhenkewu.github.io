@@ -1,0 +1,21 @@
+{% assign project_papers = "" | split: "" %}
+{% for paper in site.categories.papers %}
+	{% if paper.projects contains page.resource_hub %}
+		{% assign project_papers = project_papers | push: paper %}
+	{% endif %}
+{% endfor %}
+{% assign materials = site.posts | where: "hub", page.resource_hub %}
+{% assign presentation_items = materials | where: "type", "presentation" %}
+{% assign workshop_items = materials | where: "type", "workshop" %}
+{% assign conference_items = materials | where: "type", "conference" %}
+{% assign advisory_items = materials | where: "type", "advisory" %}
+
+<nav class="project-hub-nav project-hub-nav-featured" aria-label="Jump to page sections">
+	<div class="project-hub-nav-label">Jump to</div>
+	<a class="project-hub-chip" href="#overview"><i class="fa-solid fa-circle-info"></i> Overview</a>
+	<a class="project-hub-chip" href="#publication"><i class="fa-regular fa-file-lines"></i> Publications <span class="project-hub-chip-count">{{ project_papers.size }}</span></a>
+	<a class="project-hub-chip" href="#presentation"><i class="fa-solid fa-chalkboard-user"></i> Presentations <span class="project-hub-chip-count">{{ presentation_items.size }}</span></a>
+	<a class="project-hub-chip" href="#workshop"><i class="fa-solid fa-laptop-code"></i> Workshops <span class="project-hub-chip-count">{{ workshop_items.size }}</span></a>
+	<a class="project-hub-chip" href="#conference"><i class="fa-solid fa-users"></i> Conferences <span class="project-hub-chip-count">{{ conference_items.size }}</span></a>
+	<a class="project-hub-chip" href="#advisory"><i class="fa-solid fa-comments"></i> Advisory <span class="project-hub-chip-count">{{ advisory_items.size }}</span></a>
+</nav>

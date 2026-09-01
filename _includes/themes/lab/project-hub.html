@@ -1,0 +1,55 @@
+{% assign project_papers = "" | split: "" %}
+{% for paper in site.categories.papers %}
+	{% if paper.projects contains page.resource_hub %}
+		{% assign project_papers = project_papers | push: paper %}
+	{% endif %}
+{% endfor %}
+{% assign submitted_papers = "" | split: "" %}
+{% assign dated_papers = "" | split: "" %}
+{% for paper in project_papers %}
+	{% assign paper_year = paper.year | append: "" %}
+	{% if paper_year == "submitted" %}
+		{% assign submitted_papers = submitted_papers | push: paper %}
+	{% else %}
+		{% assign dated_papers = dated_papers | push: paper %}
+	{% endif %}
+{% endfor %}
+{% assign pub_years = dated_papers | map: "year" | uniq | sort | reverse %}
+{% assign ordered_dated = "" | split: "" %}
+{% for y in pub_years %}
+	{% assign year_key = y | append: "" %}
+	{% for paper in dated_papers %}
+		{% assign paper_year = paper.year | append: "" %}
+		{% if paper_year == year_key %}
+			{% assign ordered_dated = ordered_dated | push: paper %}
+		{% endif %}
+	{% endfor %}
+{% endfor %}
+{% assign project_papers = submitted_papers | concat: ordered_dated %}
+{% assign materials = site.posts | where: "hub", page.resource_hub %}
+{% assign presentation_items = materials | where: "type", "presentation" %}
+{% assign workshop_items = materials | where: "type", "workshop" %}
+{% assign conference_items = materials | where: "type", "conference" %}
+{% assign advisory_items = materials | where: "type", "advisory" %}
+{% assign type_keys = "presentation,workshop,conference,advisory" | split: "," %}
+{% assign type_names = "Presentations,Workshop and tutorial materials,Conference presentations,Advisory meeting materials" | split: "," %}
+{% assign type_icons = "fa-solid fa-chalkboard-user,fa-solid fa-laptop-code,fa-solid fa-users,fa-solid fa-comments" | split: "," %}
+
+<div class="project-hub" id="resources">
+	<div class="project-hub-intro">
+		<div class="smalltitle text-left">Dissemination and resources</div>
+		<div class="smallspacer"></div>
+		<div class="note">
+			Publications, presentations, workshop tutorials, conference talks
+			(including AI and Healthcare and JSM), and advisory meeting materials.
+		</div>
+	</div>
+
+	{% include project-hub-section.html materials=project_papers type="publication" title="Publications" icon="fa-regular fa-file-lines" skip_type_filter=true %}
+
+	{% for tkey in type_keys %}
+		{% assign tname = type_names[forloop.index0] %}
+		{% assign ticon = type_icons[forloop.index0] %}
+		{% include project-hub-section.html materials=materials type=tkey title=tname icon=ticon %}
+	{% endfor %}
+</div>

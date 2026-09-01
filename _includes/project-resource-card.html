@@ -1,0 +1,50 @@
+{% assign r = include.resource %}
+{% assign venue = r.venue | default: r.journal %}
+{% assign video = r.video | default: r.video_link %}
+{% if r.year and r.year != "" %}
+	{% assign year_label = r.year %}
+{% else %}
+	{% assign year_label = r.date | date: "%Y" %}
+{% endif %}
+<div class="project-resource-card">
+	<div class="project-resource-title">
+		<a class="off" href="{{ r.url }}">{{ r.title }}</a>
+	</div>
+	<div class="smallnote">
+		{% if venue and venue != "" %}<span class="label label-info">{{ venue }}</span>{% endif %}
+		{% if r.event %}<span class="label label-default">{{ r.event }}</span>{% endif %}
+		{% if r.shortref %}{{ r.shortref }} ({{ year_label }}).{% else %}{{ year_label }}{% endif %}
+		{% unless r.shortref %}
+			{% if r.authors %} &middot; {{ r.authors }}{% endif %}
+		{% endunless %}
+	</div>
+	{% if r.description %}
+	<div class="smallspacer"></div>
+	<div class="note">{{ r.description }}</div>
+	{% endif %}
+	<div class="smallspacer"></div>
+	<div class="smallnote">
+		{% if r.pdf %}
+		<a class="off" href="{{ r.pdf }}"><i class="fa-regular fa-file-pdf fa-fw"></i> PDF</a>
+		{% endif %}
+		{% if r.slides %}
+		&nbsp;<a class="off" href="{{ r.slides }}"><i class="fa-solid fa-chalkboard fa-fw"></i> Slides</a>
+		{% endif %}
+		{% if r.poster %}
+		&nbsp;<a class="off" href="{{ r.poster }}"><i class="fa-solid fa-table-cells-large fa-fw"></i> Poster</a>
+		{% endif %}
+		{% if video %}
+		&nbsp;<a class="off" href="{{ video }}"><i class="fa-solid fa-video fa-fw"></i> Video</a>
+		{% endif %}
+		{% if r.github %}
+		&nbsp;<a class="off" href="{{ r.github }}"><i class="fa-brands fa-github fa-fw"></i> Code</a>
+		{% endif %}
+		{% if r.doi %}
+		&nbsp;<a class="off" href="https://doi.org/{{ r.doi }}"><i class="fa-solid fa-link fa-fw"></i> DOI</a>
+		{% endif %}
+		{% if r.external_link %}
+		&nbsp;<a class="off" href="{{ r.external_link }}"><i class="fa-solid fa-arrow-up-right-from-square fa-fw"></i> Link</a>
+		{% endif %}
+		&nbsp;<a class="off" href="{{ r.url }}"><i class="fa-regular fa-file-lines fa-fw"></i> Details</a>
+	</div>
+</div>

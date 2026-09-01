@@ -1,0 +1,25 @@
+{% if include.skip_type_filter %}
+	{% assign items = include.materials %}
+{% else %}
+	{% assign items = include.materials | where: "type", include.type %}
+{% endif %}
+<section class="project-hub-section" id="{{ include.type }}">
+	<div class="project-section-marker">
+		<div class="project-section-marker-left">
+			{% if include.icon %}<i class="{{ include.icon }}"></i>{% endif %}
+			<span class="project-section-marker-title">{{ include.title }}</span>
+			<span class="project-section-marker-count">{{ items.size }}</span>
+		</div>
+		<a class="project-section-marker-jump" href="#resources">Jump to top</a>
+	</div>
+	{% if include.type == "conference" %}
+	<div class="project-hub-section-note smallnote">AI and Healthcare, JSM, and other conference presentations.</div>
+	{% endif %}
+	{% if items.size > 0 %}
+		{% for resource in items %}
+			{% include project-resource-card.html resource=resource %}
+		{% endfor %}
+	{% else %}
+		<div class="project-resource-empty smallnote">None posted yet. New materials will appear here.</div>
+	{% endif %}
+</section>

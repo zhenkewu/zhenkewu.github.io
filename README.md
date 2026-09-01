@@ -85,7 +85,9 @@ Zhenke Wu's Research Website: [click to view](http://zhenkewu.com)
 
 
 * projects
-    - For each repo (in the folder `/_data`), the `url` should not end with `/`. For example, use `url: /projects/baker`, instead of `url: /projects/baker/`
+    - Research projects (federal, non-profit, philanthropy, and other sponsors) live in `projects/_posts/`. Each project is one markdown post with `layout: project`. Copy the front matter from an existing file in that folder. Fields: `title`, `description`, `funder`, `funder_type` (`federal` / `non-profit` / `philanthropy` / `other`), `status` (`active` or `completed`). Optional: `short_title`, `image` (icon in `assets/images/projects/`), `icon` (Font Awesome class if there is no image), `role`, `pi`, `years`, `grant_number`, `grant_url`, `website`, `collaborators`, `related`. The Projects tab groups posts by `funder_type` and shows each project's icon and description.
+    - The PCORI RL project page (`/projects/pcori-rl`) is also a resource hub. Publications come from existing paper posts: add `projects: [pcori-rl]` to a paper in `papers/_posts/` (the same post can list multiple projects). For presentations, workshops, conferences, and advisory materials, create `pcori-rl/_posts/YYYY-MM-DD-slug.md` with `layout: project-resource`, `hub: pcori-rl`, and `type` one of `presentation`, `workshop`, `conference`, `advisory`. Copy `pcori-rl/_posts/1970-01-01-_template.md`. Files go in `assets/pdfs/projects/pcori-rl/`.
+    - Legacy GitHub-software project pages: for each repo in `/_data/projects.yml`, the `url` should not end with `/`. For example, use `url: /projects/baker`, instead of `url: /projects/baker/`
 * navigation:
     - For example, the "papers" tab is specified in the folder "papers/". At the top, `title` is for tab name; `group` can be either `navigation` or `subnavigation` depending on whether you want to show this tab or collapse into the "More" tab; `navorder` specifies the order appearing in the navigation bar (1 for the first tab).
 * team

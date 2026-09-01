@@ -1,0 +1,137 @@
+{% assign hub_page = site.posts | where: "resource_hub", page.hub | first %}
+
+<div class="bigspacer"></div>
+
+<div class="smallnote">
+	{% if hub_page %}
+	<a class="off" href="{{ hub_page.url }}"><i class="fa-solid fa-arrow-left fa-fw"></i> {{ hub_page.short_title | default: hub_page.title }}</a>
+	{% else %}
+	<a class="off" href="/projects/"><i class="fa-solid fa-arrow-left fa-fw"></i> Projects</a>
+	{% endif %}
+</div>
+
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-md-3">
+		<div class="glyphbox note">
+			{% if page.type %}
+			<div class="smallhead">Type</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa-regular fa-folder fa-fw"></i>
+				{{ page.type }}
+			</div>
+			<div class="bigspacer"></div>
+			{% endif %}
+
+			{% if page.venue %}
+			<div class="smallhead">Venue</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa-solid fa-location-dot fa-fw"></i>
+				{{ page.venue }}
+			</div>
+			<div class="bigspacer"></div>
+			{% endif %}
+
+			{% if page.event %}
+			<div class="smallhead">Event</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa-solid fa-calendar-day fa-fw"></i>
+				{{ page.event }}
+			</div>
+			<div class="bigspacer"></div>
+			{% endif %}
+
+			{% if page.authors %}
+			<div class="smallhead">Authors</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa-solid fa-users fa-fw"></i>
+				{{ page.authors }}
+			</div>
+			<div class="bigspacer"></div>
+			{% endif %}
+
+			<div class="smallhead">Date</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa-regular fa-calendar fa-fw"></i>
+				{{ page.date | date: "%B %d, %Y" }}
+			</div>
+			<div class="bigspacer"></div>
+
+			{% if page.pdf %}
+			<div class="smallhead">PDF</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa-regular fa-file-pdf fa-fw"></i>
+				<a class="off" href="{{ page.pdf }}">{{ page.pdf | split: '/' | last }}</a>
+			</div>
+			<div class="bigspacer"></div>
+			{% endif %}
+
+			{% if page.slides %}
+			<div class="smallhead">Slides</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa-solid fa-chalkboard fa-fw"></i>
+				<a class="off" href="{{ page.slides }}">{{ page.slides | split: '/' | last }}</a>
+			</div>
+			<div class="bigspacer"></div>
+			{% endif %}
+
+			{% if page.poster %}
+			<div class="smallhead">Poster</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa-solid fa-table-cells-large fa-fw"></i>
+				<a class="off" href="{{ page.poster }}">{{ page.poster | split: '/' | last }}</a>
+			</div>
+			<div class="bigspacer"></div>
+			{% endif %}
+
+			{% if page.video %}
+			<div class="smallhead">Video</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa-solid fa-video fa-fw"></i>
+				<a class="off" href="{{ page.video }}">Video</a>
+			</div>
+			<div class="bigspacer"></div>
+			{% endif %}
+
+			{% if page.external_link %}
+			<div class="smallhead">Link</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa-solid fa-arrow-up-right-from-square fa-fw"></i>
+				<a class="off" href="{{ page.external_link }}">{{ page.external_link | remove: 'http://' | remove: 'https://' | truncate: 42 }}</a>
+			</div>
+			<div class="bigspacer"></div>
+			{% endif %}
+
+			<div class="smallhead">Share</div>
+			<div class="post-sharing">
+				{% include JB/sharing %}
+			</div>
+		</div>
+	</div>
+
+	<div class="col-md-8">
+		<div class="title media-heading">{{ page.title }}</div>
+		{% if page.description %}
+		<div class="smallspacer"></div>
+		<div class="smallhead">{{ page.description }}</div>
+		{% endif %}
+		<div class="bigspacer"></div>
+		<div class="post">
+			{{ content }}
+		</div>
+	</div>
+	<div class="col-md-1"></div>
+</div>
+
+<div class="bigspacer"></div>
