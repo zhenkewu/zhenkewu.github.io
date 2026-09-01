@@ -35,8 +35,6 @@ I am an [Associate Professor](https://sph.umich.edu/faculty-profiles/wu-zhenke.h
 
 [Publications](/papers/) by [year](papers/archive/year), [topic](papers/archive/topic), or [word cloud](papers/archive/explore)
 
-[Research projects](/projects/) funded by federal, non-profit, philanthropy, and other sponsors 
-
 
 
 [[<i class="fa-brands fa-google-scholar"></i> Google Scholar](https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en)] [[<i class="fa-brands fa-github"></i> GitHub](https://github.com/zhenkewu?tab=activity)] [[<i class="fa-brands fa-x-twitter"></i>](https://twitter.com/ZhenkeWu)]
@@ -120,37 +118,6 @@ I currently collaborate closely with
 		</div>
 	</div>				
 </div>
-
-{% if site.categories.projects.size > 0 %}
-<div class="row">
-	<div class="col-md-12">
-		<div class="head">
-			<a class="off" href="/projects/">Projects</a>
-		</div>
-		<div class="smallspacer"></div>
-	</div>
-	{% for project in site.categories.projects limit:4 %}
-	<div class="col-sm-6 col-md-3 project-home-tile">
-		<a class="off" href="{{ project.url }}">
-			{% if project.image %}
-			<img src="{{ project.image }}" alt="{{ project.short_title | default: project.title }}">
-			{% elsif project.icon %}
-			<div class="project-icon-fa project-icon-{{ project.funder_type | default: 'other' }}">
-				<i class="{{ project.icon }}"></i>
-			</div>
-			{% else %}
-			<div class="project-icon-fa project-icon-{{ project.funder_type | default: 'other' }}">
-				<i class="fa-solid fa-folder-open"></i>
-			</div>
-			{% endif %}
-			<div class="project-home-name">{{ project.short_title | default: project.title }}</div>
-			<div class="smallnote">{{ project.funder }}{% if project.years %} &middot; {{ project.years }}{% endif %}</div>
-		</a>
-	</div>
-	{% endfor %}
-</div>
-<div class="bigspacer"></div>
-{% endif %}
 
 <div class="row">
 	
