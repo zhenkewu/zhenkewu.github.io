@@ -11,7 +11,9 @@
 <div class="wrapper">
   <div class="searchBar">
     <input id="search-input" type="search" name="search-input"
-    placeholder="&#xf06e; Search Papers. Try 'Bayesian','causal','2024', ... " value="" style="font-family:Arial, FontAwesome"/>
+    placeholder="&#xf06e; Search Papers. Try 'Bayesian','causal','2024', ... " value=""
+    autocomplete="off" autocorrect="off" spellcheck="false"/>
+    <ul class="search-suggest" id="search-suggest" hidden role="listbox"></ul>
   </div>
     <!-- select how many lists to display -->
     <div style="line-height:50%;">
@@ -40,6 +42,7 @@
  <!-- Configuration -->
 
 <script src="/assets/themes/lab/js/search-result.js" type="text/javascript"></script>
+<script src="/assets/themes/lab/js/search-autocomplete.js?v=3" type="text/javascript"></script>
 
 <!-- Configuration -->
 <script>
@@ -71,7 +74,7 @@ function getSelectedVal(selectElement) {
   // For example, display it in an alert
   // alert("Selected value: " + selectedValue);
   // Or perform any other action with the selected value
-  simple_search(paper_result_template,sort_curr,'/search.json');
+  simple_search(paper_result_template,sort_curr,'/assets/themes/lab/util/search.json');
 }
 
 

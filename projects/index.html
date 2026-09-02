@@ -15,7 +15,7 @@ navorder: 2
 {% assign other_projects = all_projects | where: "funder_type", "other" %}
 
 {% if all_projects.size > 0 %}
-<nav class="project-hub-nav project-hub-nav-featured" aria-label="Jump to funder sections">
+<nav class="project-hub-nav project-hub-nav-featured" data-hub-accent="projects" aria-label="Jump to funder sections">
 	<div class="project-hub-nav-label">Jump to</div>
 	{% if federal_projects.size > 0 %}
 	<a class="project-hub-chip" href="#federal"><i class="fa-solid fa-landmark"></i> Federal <span class="project-hub-chip-count">{{ federal_projects.size }}</span></a>
@@ -37,11 +37,6 @@ navorder: 2
 </div>
 
 <div class="smalltitle text-left">Selected Research projects</div>
-<div class="smallspacer"></div>
-<div class="note">
-	Each entry is a project post with its own icon and description.
-	Software tools live under <a href="/software-products/">Software</a>.
-</div>
 
 <div class="bigspacer"></div>
 

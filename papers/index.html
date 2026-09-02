@@ -10,7 +10,7 @@ navorder: 1
 {% assign methods_papers = site.categories.papers | where: "type", "statistical" %}
 {% assign substantive_papers = site.categories.papers | where: "type", "substantive" %}
 
-<nav class="project-hub-nav project-hub-nav-featured" aria-label="Jump to paper sections">
+<nav class="project-hub-nav project-hub-nav-featured" data-hub-accent="papers" aria-label="Jump to paper sections">
 	<div class="project-hub-nav-label">Jump to</div>
 	<a class="project-hub-chip" href="#statistical-methods"><i class="fa-solid fa-microchip"></i> Theory/Methods <span class="project-hub-chip-count">{{ methods_papers.size }}</span></a>
 	<a class="project-hub-chip" href="#substantive"><i class="fa-solid fa-flask"></i> Substantive <span class="project-hub-chip-count">{{ substantive_papers.size }}</span></a>
@@ -39,7 +39,16 @@ navorder: 1
   padding: 8px 10px;
   background: #fcfdfc;
   width: 100%;
-  margin: 0 0 4px 0;
+  margin: 4px 0 4px 0;
+}
+
+#search-container .wrapper > form + div {
+  display: none;
+}
+
+#search-container ul#results-container {
+  margin: 0;
+  padding: 0;
 }
 
 .project-section-marker-papers {
@@ -59,7 +68,8 @@ navorder: 1
   color: #3d8b40;
 }
 
-.project-hub-section:target .project-section-marker-papers {
+.project-hub-section:target .project-section-marker-papers,
+.project-hub-section.is-current .project-section-marker-papers {
   box-shadow: 0 0 0 3px rgba(92,184,92,0.22);
 }
 
@@ -366,11 +376,10 @@ navorder: 1
 
 <!-- <b >Some papers are not listed below. See <a href="https://scholar.google.com/citations?user=3ffCNrEAAAAJ&hl=en" class="label label-primary">Google Scholar</a> for a more complete list. </b><br> -->
 
-<div> 
+<div>
 {% include search-form.html %}
 </div>
 
-<div class="spacer"></div>
 <div class="paper-viz-wrap">
 	<div class="paper-viz-title"><i class="fa fa-chart-bar fa-fw"></i> Papers at a glance</div>
   <div class="paper-viz-help">
@@ -380,8 +389,7 @@ navorder: 1
   </div>
 	<div id="paper-viz-metrics" class="paper-viz-metrics"></div>
   <div class="paper-viz-tabs">
-    <button type="button" class="btn btn-xs btn-default active" data-paper-viz-view="type"> type</button>
-    <button type="button" class="btn btn-xs btn-default" data-paper-viz-view="themes"> theme</button>
+    <button type="button" class="btn btn-xs btn-default active" data-paper-viz-view="themes"> theme</button>
     <button type="button" class="btn btn-xs btn-default" data-paper-viz-view="venues-methods">Methods venue</button>
     <button type="button" class="btn btn-xs btn-default" data-paper-viz-view="venues-substantive">Substantive venue</button>
     <button type="button" class="btn btn-xs btn-default" data-paper-viz-view="coauthors-all">co-author</button>
@@ -538,7 +546,7 @@ navorder: 1
     };
   });
 
-  var currentView = "type";
+  var currentView = "themes";
   var currentRows = [];
 
   function escapeHtml(value) {
@@ -940,7 +948,7 @@ navorder: 1
   renderMetrics();
   bindTabs();
   bindModal();
-  render("type");
+  render("themes");
 })();
 </script>
 

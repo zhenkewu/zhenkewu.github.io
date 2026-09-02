@@ -1,0 +1,13 @@
+{% assign t = include.activity %}
+{% capture prefix_marks %}{% if t.status == "upcoming" %}<span class="teaching-mark teaching-mark-upcoming" title="upcoming">*</span>{% endif %}{% if t.created %}<span class="teaching-mark teaching-mark-created" title="course I developed">†</span>{% endif %}{% endcapture %}
+{% capture prefix %}{% if t.status == "upcoming" or t.created %}{{ prefix_marks }} {% endif %}{% endcapture %}
+{% capture material_btns %}{% include teaching-links.html activity=t %}{% endcapture %}
+{% if t.listings %}
+	{% for line in t.listings %}
+	<li><span class="teaching-list-text">{% if forloop.first %}{{ prefix }}{% endif %}{{ line | replace: "POST_URL", t.url | markdownify | replace: '<p>', '' | replace: '</p>', '' }}</span>{% if forloop.first %}{{ material_btns }}{% endif %}</li>
+	{% endfor %}
+{% elsif t.listing %}
+	<li><span class="teaching-list-text">{{ prefix }}{{ t.listing | replace: "POST_URL", t.url | markdownify | replace: '<p>', '' | replace: '</p>', '' }}</span>{{ material_btns }}</li>
+{% else %}
+	<li><span class="teaching-list-text">{{ prefix }}{% if t.term %}{{ t.term }} — {% elsif t.year %}{{ t.year }} — {% endif %}<a class="off" href="{{ t.url }}">{{ t.title }}</a>{% if t.course %} ({{ t.course }}){% endif %}</span>{{ material_btns }}</li>
+{% endif %}

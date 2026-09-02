@@ -1,21 +1,28 @@
 ---
-layout: post
-title: "Statistical Learning Reading Group (Winter, 2019)"
+layout: teaching
+title: "Statistical Learning Reading Group"
+short_title: "Statistical Learning Reading Group"
 year: 2019
+years: "2018–2019"
+priority: 10
 category: teaching
-description: ""
+description: "Reading group on statistical learning methods in Bayesian computing, vision/imaging analysis, tensor methods, and causal inference."
+type: reading-group
+term: Fall 2018–Winter 2019
+venue: M4117 SPH-II, University of Michigan
+role: Organizer
+status: past
+permalink: /teaching/statistical_learning_reading_group
+listing: >-
+  2018 Fall-2019 Winter - [Statistical Learning Reading Group](POST_URL)
 authors: Zhenke Wu
 author_handle: Zhenke Wu
-master: false
 published: true
 theme: lab
 tags: 
   - statistical learning
   - reading group
 ---
-
-# Statistical Learning Reading Groups
-------
 
 Theme:
 

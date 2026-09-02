@@ -25,7 +25,8 @@ categories:
 	</div>
 </div>
 
-{% for post in site.categories.teaching %}
+{% assign teaching_posts = site.categories.teaching | where: "layout", "teaching" %}
+{% for post in teaching_posts %}
 
 	{% for member in site.categories.team %}
 		{% if member.title == post.author %}
@@ -40,7 +41,7 @@ categories:
 			</div>	
 			<div class="smallspacer"></div>
 			<div class="smallnote">
-				{{ post.date | date_to_string }}
+				{% if post.course %}{{ post.course }} · {% endif %}{% if post.year %}{{ post.year }}{% else %}{{ post.date | date: "%Y" }}{% endif %}
 				{% if author %}
 				by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
 				{% endif %}	

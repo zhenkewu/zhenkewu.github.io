@@ -6,104 +6,156 @@ navtab: "teaching"
 group: navigation
 navorder: 3
 ---
-
-
 {% include JB/setup %}
 
-<div class="row">
-	<div class="col-md-12">
-		<div class="centered-pills">
-			<ul class="nav nav-pills note-button">
-				<li role="presentation" class="active">
-					<a class="off" href="/teaching/">
-						<i class="fa fa-refresh fa-fw"></i> Timeline
-					</a>
-				</li>
-				<li role="presentation">
-					<a class="off" href="/teaching/archive/">
-						<i class="fa fa-list-ul fa-fw"></i> Index
-					</a>
-				</li>
-			</ul>
-		</div>
-		<div class="bigspacer"></div>
-	</div>
-</div>
+{% assign all_teaching = site.categories.teaching | where: "layout", "teaching" %}
+{% assign short_courses = all_teaching | where: "type", "short-course" | sort: "date" | reverse %}
+{% assign classroom = all_teaching | where: "type", "classroom" | sort: "date" | reverse %}
+{% assign moocs = all_teaching | where: "type", "mooc" | sort: "date" | reverse %}
+{% assign slides = all_teaching | where: "type", "slides" | sort: "date" | reverse %}
+{% assign reading_groups = all_teaching | where: "type", "reading-group" | sort: "date" | reverse %}
 
-
-<div class="post-list">
-
-{% for post in site.categories.teaching limit: 8 %}
-
-	{% for member in site.categories.team %}
-		{% if member.title == post.author %}
-			{% assign author = member %}
-		{% endif %}
-	{% endfor %}
-
-  {% if post.master==true %}
-								
-	<div class="teaching-post">
-		<div class="row">
-			<div class="col-md-1"></div>	
-			<div class="col-md-10">
-				<div class="media">
-					<div class="media-body">
-						<div class="title media-heading">
-							<a href="{{ post.url }}" class="off">{{ post.title }}</a>
-						</div>
-						<p>
-						<div class="smallhead">
-							{{ post.date | date_to_string }}
-							
-							{% if author %}
-							by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
-							{% endif %}	
-
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-1"></div>					
-		</div>
-
-		<div class="bigspacer"></div>
-
-		<div class="row">
-			<div class="col-md-1"></div>
-			<div class="col-md-10">	
-				{% if post.image %}
-				<img class="offset" src="{{ post.image }}">
-				{% endif %}
-				<div class="post">
-					{{ post.content }}
-				</div>	
-			</div>			
-			<div class="col-md-1"></div>
-		</div>
-	
-		<div class="bigspacer"></div>
-		<div class="spacer"></div>	
-
-	</div>
-{% endif %}
-
+{% assign short_course_n = 0 %}
+{% for activity in short_courses %}
+	{% if activity.listings %}{% assign short_course_n = short_course_n | plus: activity.listings.size %}{% else %}{% assign short_course_n = short_course_n | plus: 1 %}{% endif %}
+{% endfor %}
+{% assign classroom_n = 0 %}
+{% for activity in classroom %}
+	{% if activity.listings %}{% assign classroom_n = classroom_n | plus: activity.listings.size %}{% else %}{% assign classroom_n = classroom_n | plus: 1 %}{% endif %}
+{% endfor %}
+{% assign mooc_n = 0 %}
+{% for activity in moocs %}
+	{% if activity.listings %}{% assign mooc_n = mooc_n | plus: activity.listings.size %}{% else %}{% assign mooc_n = mooc_n | plus: 1 %}{% endif %}
+{% endfor %}
+{% assign slides_n = 0 %}
+{% for activity in slides %}
+	{% if activity.listings %}{% assign slides_n = slides_n | plus: activity.listings.size %}{% else %}{% assign slides_n = slides_n | plus: 1 %}{% endif %}
+{% endfor %}
+{% assign reading_n = 0 %}
+{% for activity in reading_groups %}
+	{% if activity.listings %}{% assign reading_n = reading_n | plus: activity.listings.size %}{% else %}{% assign reading_n = reading_n | plus: 1 %}{% endif %}
 {% endfor %}
 
-</div>
+{% if all_teaching.size > 0 %}
+<nav class="project-hub-nav project-hub-nav-featured" data-hub-accent="teaching" aria-label="Jump to teaching sections">
+	<div class="project-hub-nav-label">Jump to</div>
+	{% if short_courses.size > 0 %}
+	<a class="project-hub-chip" href="#short-courses"><i class="fa-solid fa-chalkboard-user"></i> Short courses <span class="project-hub-chip-count">{{ short_course_n }}</span></a>
+	{% endif %}
+	{% if classroom.size > 0 %}
+	<a class="project-hub-chip" href="#classroom"><i class="fa-solid fa-school"></i> Classroom <span class="project-hub-chip-count">{{ classroom_n }}</span></a>
+	{% endif %}
+	{% if moocs.size > 0 %}
+	<a class="project-hub-chip" href="#moocs"><i class="fa-solid fa-laptop"></i> MOOCs <span class="project-hub-chip-count">{{ mooc_n }}</span></a>
+	{% endif %}
+	{% if slides.size > 0 %}
+	<a class="project-hub-chip" href="#slides"><i class="fa-solid fa-layer-group"></i> Slides <span class="project-hub-chip-count">{{ slides_n }}</span></a>
+	{% endif %}
+	{% if reading_groups.size > 0 %}
+	<a class="project-hub-chip" href="#reading-group"><i class="fa-solid fa-book-open"></i> Reading group <span class="project-hub-chip-count">{{ reading_n }}</span></a>
+	{% endif %}
+</nav>
+{% endif %}
 
+<div class="note"><span class="teaching-mark teaching-mark-upcoming" title="upcoming">*</span>: upcoming. <span class="teaching-mark teaching-mark-created" title="course I developed">†</span>: new course.</div>
+<div class="bigspacer"></div>
 
-<!-- <div class="row">
-	<div class="col-md-12">
-		<div id="scroll" class="centered-pills">
-			<ul class="nav nav-pills note">
-				<li role="presentation">
-					<a class="off" href="/teaching/">
-						<i class="fa fa-chevron-up fa-fw"></i> Back to top
-					</a>
-				</li>				
-			</ul>
+{% if all_teaching.size > 0 %}
+
+{% if short_courses.size > 0 %}
+<section id="short-courses" class="project-hub-section">
+	<div class="project-section-marker project-section-marker-teaching">
+		<div class="project-section-marker-left">
+			<i class="fa-solid fa-chalkboard-user"></i>
+			<span class="project-section-marker-title">Short courses/Tutorials</span>
+			<span class="project-section-marker-count">{{ short_course_n }}</span>
 		</div>
+		<a class="project-section-marker-jump" href="#">Jump to top</a>
 	</div>
-</div> -->
+	<ol class="teaching-list">
+		{% for activity in short_courses %}
+			{% include teaching-listing.html activity=activity %}
+		{% endfor %}
+	</ol>
+</section>
+{% endif %}
 
+{% if classroom.size > 0 %}
+<section id="classroom" class="project-hub-section">
+	<div class="project-section-marker project-section-marker-teaching">
+		<div class="project-section-marker-left">
+			<i class="fa-solid fa-school"></i>
+			<span class="project-section-marker-title">Classroom Instruction (Primary Instructor)</span>
+			<span class="project-section-marker-count">{{ classroom_n }}</span>
+		</div>
+		<a class="project-section-marker-jump" href="#">Jump to top</a>
+	</div>
+	<ol class="teaching-list">
+		{% for activity in classroom %}
+			{% include teaching-listing.html activity=activity %}
+		{% endfor %}
+	</ol>
+</section>
+{% endif %}
+
+{% if moocs.size > 0 %}
+<section id="moocs" class="project-hub-section">
+	<div class="project-section-marker project-section-marker-teaching">
+		<div class="project-section-marker-left">
+			<i class="fa-solid fa-laptop"></i>
+			<span class="project-section-marker-title">Massive Open Online Courses (MOOCs)</span>
+			<span class="project-section-marker-count">{{ mooc_n }}</span>
+		</div>
+		<a class="project-section-marker-jump" href="#">Jump to top</a>
+	</div>
+	<ol class="teaching-list">
+		{% for activity in moocs %}
+			{% include teaching-listing.html activity=activity %}
+		{% endfor %}
+	</ol>
+</section>
+{% endif %}
+
+{% if slides.size > 0 %}
+<section id="slides" class="project-hub-section">
+	<div class="project-section-marker project-section-marker-teaching">
+		<div class="project-section-marker-left">
+			<i class="fa-solid fa-layer-group"></i>
+			<span class="project-section-marker-title">Miscellaneous Slides</span>
+			<span class="project-section-marker-count">{{ slides_n }}</span>
+		</div>
+		<a class="project-section-marker-jump" href="#">Jump to top</a>
+	</div>
+	<ol class="teaching-list">
+		{% for activity in slides %}
+			{% include teaching-listing.html activity=activity %}
+		{% endfor %}
+	</ol>
+</section>
+{% endif %}
+
+{% if reading_groups.size > 0 %}
+<section id="reading-group" class="project-hub-section">
+	<div class="project-section-marker project-section-marker-teaching">
+		<div class="project-section-marker-left">
+			<i class="fa-solid fa-book-open"></i>
+			<span class="project-section-marker-title">Reading Group</span>
+			<span class="project-section-marker-count">{{ reading_n }}</span>
+		</div>
+		<a class="project-section-marker-jump" href="#">Jump to top</a>
+	</div>
+	<ol class="teaching-list">
+		{% for activity in reading_groups %}
+			{% include teaching-listing.html activity=activity %}
+		{% endfor %}
+	</ol>
+</section>
+{% endif %}
+
+{% else %}
+<div class="note">
+	No teaching posts yet.
+</div>
+{% endif %}
+
+<div class="bigspacer"></div>

@@ -12,7 +12,8 @@
     <div class="searchBar">
       <input id="search-input" type="search" name="search-input"
         placeholder="&#xf06e; Search zhenkewu.com. Try 'Bayesian', 'causal', 'AI' " value=""
-        style="font-family:Arial, FontAwesome" /> 
+        autocomplete="off" autocorrect="off" spellcheck="false" />
+      <ul class="search-suggest" id="search-suggest" hidden role="listbox"></ul>
     </div>
     <!-- select how many lists to display -->
     <div style="line-height:50%;">
@@ -41,10 +42,11 @@
 
 
 <script src="/assets/themes/lab/js/search-result.js" type="text/javascript"></script>
+<script src="/assets/themes/lab/js/search-autocomplete.js?v=3" type="text/javascript"></script>
 
 <!-- Configuration -->
 <script>
-  var global_result_template = '<li>[<em >{category}</em>] ({year}) <i class="label label-default"> {journal}</i> <a href="{url}">{title}</a> {author} </li>';
+  var global_result_template = '<li>[<em>{category}</em>] ({year}) <a href="{url}">{title}</a> {author} <i class="label label-default">{journal}</i></li>';
 
   function sort_curr(a, b) {
     var astr = String(a.category) + "-" + String(a.year);
@@ -66,13 +68,6 @@
   )
 
   function getSelectedVal(selectElement) {
-    // Get the selected value from the select element
-    var selectedValue = selectElement.value;
-    // You can now pass the selectedValue to your desired JavaScript function
-    // For example, display it in an alert
-    // alert("Selected value: " + selectedValue);
-    // Or perform any other action with the selected value
-    // console.log(document.getElementById('search-input').value);
-    simple_search(global_result_template, sort_curr,'/search-global.json');
+    simple_search(global_result_template, sort_curr,'/assets/themes/lab/util/search-global.json');
   }
 </script>

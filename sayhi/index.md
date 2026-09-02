@@ -8,7 +8,7 @@ navorder: 5
 ---
 {% include JB/setup %}
 
-<nav class="project-hub-nav project-hub-nav-featured" aria-label="Jump to advising sections">
+<nav class="project-hub-nav project-hub-nav-featured" data-hub-accent="sayhi" aria-label="Jump to advising sections">
 	<div class="project-hub-nav-label">Jump to</div>
 	<a class="project-hub-chip" href="#umich"><i class="fa-solid fa-building-columns"></i> UMich Students</a>
 	<a class="project-hub-chip" href="#non-umich"><i class="fa-solid fa-globe"></i> Non-UMich</a>
@@ -32,7 +32,8 @@ navorder: 5
           color: #2f6455;
     }
 
-    .project-hub-section:target .project-section-marker-sayhi {
+    .project-hub-section:target .project-section-marker-sayhi,
+    .project-hub-section.is-current .project-section-marker-sayhi {
           box-shadow: 0 0 0 3px rgba(59,125,106,0.22);
     }
 </style>

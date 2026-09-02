@@ -5,9 +5,28 @@ categories: papers
 ---
 {% include JB/setup %}
 
+{% assign years = site.categories.papers | map: 'year' | uniq %}
+{% assign submitted_key = nil %}
+{% for year in years %}
+	{% if year contains "submitted" %}
+		{% assign submitted_key = year %}
+	{% endif %}
+{% endfor %}
+{% assign numbered_years = years | where_exp: "y", "y != 'submitted'" | sort | reverse %}
+
+<nav class="project-hub-nav project-hub-nav-featured" data-hub-accent="papers" aria-label="Jump to paper years">
+	<div class="project-hub-nav-label">Jump to</div>
+	{% if submitted_key %}
+	<a class="project-hub-chip" href="#submitted"><i class="fa-regular fa-clock"></i> Submitted</a>
+	{% endif %}
+	{% for year in numbered_years %}
+		<a class="project-hub-chip" href="#year-{{ year }}">{{ year }}</a>
+	{% endfor %}
+</nav>
+
 <style>
 .centered-pills {
-  margin-top: -15px;
+  margin-top: 4px;
   margin-bottom: 5px;
 }
 .centered-pills .nav-pills {
@@ -19,6 +38,28 @@ categories: papers
 .centered-pills .nav-pills > li > a {
   padding: 5px 10px;
   font-size: 0.9em;
+}
+
+.project-section-marker-papers {
+  border-left-color: #5cb85c;
+  background: #fcfdfc;
+}
+
+.project-section-marker-papers .project-section-marker-left i {
+  color: #5cb85c;
+}
+
+.project-section-marker-papers .project-section-marker-count {
+  background: #5cb85c;
+}
+
+.project-section-marker-papers .project-section-marker-jump {
+  color: #3d8b40;
+}
+
+.project-hub-section:target .project-section-marker-papers,
+.project-hub-section.is-current .project-section-marker-papers {
+  box-shadow: 0 0 0 3px rgba(92,184,92,0.22);
 }
 </style>
 
@@ -59,13 +100,17 @@ categories: papers
 </div>
 
 
-{% assign years = site.categories.papers | map: 'year' | uniq %}
-
-
 <!-- submitted -->
 {% for year in years %}
 {% if year contains "submitted" %}
-<div class="smalltitle label-green" style="color:#00274c"><b > submitted </b></div>
+<section id="submitted" class="project-hub-section">
+<div class="project-section-marker project-section-marker-papers">
+	<div class="project-section-marker-left">
+		<i class="fa-regular fa-clock"></i>
+		<span class="project-section-marker-title">Submitted</span>
+	</div>
+	<a class="project-section-marker-jump" href="#">Jump to top</a>
+</div>
     {% assign paper_num = 0 %}
 	{% for paper in site.categories.papers %}
 	{% if paper.year == year%}
@@ -125,18 +170,25 @@ categories: papers
 			
 	{% endif %}
 	{% endfor %}
+</section>
 	{% endif %}
 {% endfor %}
 
 
 <!-- with years -->
 
-{% for year in years %}
-{% unless year contains "submitted" %}
-<div class="smalltitle label-green" style="color:#00274C"><b >{{ year }}</b></div>
+{% for year in numbered_years %}
+{% assign year_papers = site.categories.papers | where: "year", year %}
+<section id="year-{{ year }}" class="project-hub-section">
+<div class="project-section-marker project-section-marker-papers">
+	<div class="project-section-marker-left">
+		<i class="fa-regular fa-calendar"></i>
+		<span class="project-section-marker-title">{{ year }}</span>
+	</div>
+	<a class="project-section-marker-jump" href="#">Jump to top</a>
+</div>
     {% assign paper_num = 0 %}
-	{% for paper in site.categories.papers %}
-	{% if paper.year == year%}
+	{% for paper in year_papers %}
 	        {% assign paper_num = paper_num | plus: 1 %}
 
 						<div>{{ paper_num }}. <a href="{{ paper.url }}" class="off" style="font-family: Arial"> {{ paper.title }}</a></div>
@@ -189,10 +241,10 @@ categories: papers
 				<div class="bigspacer"></div>
 				<div class="spacer"></div>
 			
-	{% endif %}
 	{% endfor %}
-	{% endunless %}
+</section>
 {% endfor %}
+
 
 
 

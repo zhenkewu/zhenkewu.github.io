@@ -278,6 +278,22 @@ strong {
 .project-icon-non-profit { background: #2e6b4f; }
 .project-icon-philanthropy { background: #b07d3a; }
 .project-icon-other { background: #6d5a73; }
+.project-icon-teaching { background: #b56a3a; }
+
+.label.teaching-type-label { background-color: #b56a3a; }
+
+.teaching-mark {
+	font-weight: 600;
+	margin-right: 0.15em;
+}
+
+.teaching-mark-upcoming {
+	color: #b56a3a;
+}
+
+.teaching-mark-created {
+	color: #3b7d6a;
+}
 
 .label.project-funder-federal { background-color: #20558a; }
 .label.project-funder-non-profit { background-color: #2e6b4f; }
@@ -426,6 +442,30 @@ a:hover .project-card {
 	text-decoration: none;
 }
 
+.project-hub-nav[data-hub-accent="papers"] { --hub-accent: #5cb85c; --hub-accent-glow: rgba(92,184,92,0.22); }
+.project-hub-nav[data-hub-accent="projects"] { --hub-accent: #20558a; --hub-accent-glow: rgba(32,85,138,0.18); }
+.project-hub-nav[data-hub-accent="teaching"] { --hub-accent: #b56a3a; --hub-accent-glow: rgba(181,106,58,0.22); }
+.project-hub-nav[data-hub-accent="team"] { --hub-accent: #1d5fa7; --hub-accent-glow: rgba(29,95,167,0.22); }
+.project-hub-nav[data-hub-accent="sayhi"] { --hub-accent: #3b7d6a; --hub-accent-glow: rgba(59,125,106,0.22); }
+
+.project-hub-chip[href="#federal"] { --hub-accent: #20558a; }
+.project-hub-chip[href="#non-profit"] { --hub-accent: #2e6b4f; }
+.project-hub-chip[href="#philanthropy"] { --hub-accent: #b07d3a; }
+.project-hub-chip[href="#other"] { --hub-accent: #6d5a73; }
+
+.project-hub-chip.is-active,
+.project-hub-chip.is-active:hover,
+.project-hub-chip.is-active:focus {
+	background: var(--hub-accent, #20558a);
+	border-color: var(--hub-accent, #20558a);
+	color: #fff;
+	text-decoration: none;
+}
+
+.project-hub-chip.is-active .project-hub-chip-count {
+	background: rgba(255,255,255,0.22);
+}
+
 .project-hub-chip-count {
 	min-width: 1.15em;
 	padding: 0 5px;
@@ -449,7 +489,8 @@ a:hover .project-card {
 	padding: 0 0 8px 0;
 }
 
-.project-hub-section:target .project-section-marker {
+.project-hub-section:target .project-section-marker,
+.project-hub-section.is-current .project-section-marker {
 	box-shadow: 0 0 0 3px rgba(32,85,138,0.18);
 }
 
@@ -536,24 +577,127 @@ a:hover .project-card {
 }
 .project-section-marker-federal i { color: #20558a; }
 .project-section-marker-federal .project-section-marker-count { background: #20558a; }
+.project-hub-section.is-current .project-section-marker-federal {
+	box-shadow: 0 0 0 3px rgba(32,85,138,0.22);
+}
 
 .project-section-marker-non-profit {
 	border-left-color: #2e6b4f;
 }
 .project-section-marker-non-profit i { color: #2e6b4f; }
 .project-section-marker-non-profit .project-section-marker-count { background: #2e6b4f; }
+.project-hub-section.is-current .project-section-marker-non-profit {
+	box-shadow: 0 0 0 3px rgba(46,107,79,0.22);
+}
 
 .project-section-marker-philanthropy {
 	border-left-color: #b07d3a;
 }
 .project-section-marker-philanthropy i { color: #b07d3a; }
 .project-section-marker-philanthropy .project-section-marker-count { background: #b07d3a; }
+.project-hub-section.is-current .project-section-marker-philanthropy {
+	box-shadow: 0 0 0 3px rgba(176,125,58,0.22);
+}
 
 .project-section-marker-other {
 	border-left-color: #6d5a73;
 }
 .project-section-marker-other i { color: #6d5a73; }
 .project-section-marker-other .project-section-marker-count { background: #6d5a73; }
+.project-hub-section.is-current .project-section-marker-other {
+	box-shadow: 0 0 0 3px rgba(109,90,115,0.22);
+}
+
+.project-section-marker-teaching {
+	border-left-color: #b56a3a;
+	background: #fdf8f4;
+}
+.project-section-marker-teaching .project-section-marker-left i { color: #b56a3a; }
+.project-section-marker-teaching .project-section-marker-count { background: #b56a3a; }
+.project-section-marker-teaching .project-section-marker-jump { color: #8a4e28; }
+.project-hub-section:target .project-section-marker-teaching,
+.project-hub-section.is-current .project-section-marker-teaching {
+	box-shadow: 0 0 0 3px rgba(181,106,58,0.22);
+}
+
+.teaching-body {
+	overflow-x: hidden;
+}
+
+.teaching-body img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+.teaching-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	counter-reset: teaching-item;
+}
+
+.teaching-list li {
+	margin: 0 0 10px 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	gap: 4px 8px;
+	counter-increment: teaching-item;
+}
+
+.teaching-list li::before {
+	content: counter(teaching-item) ".";
+	flex: 0 0 1.75em;
+	font-weight: 600;
+	font-variant-numeric: tabular-nums;
+	color: #b56a3a;
+	text-align: right;
+}
+
+.teaching-list-text {
+	flex: 1 1 16em;
+}
+
+.teaching-links {
+	flex: 0 0 auto;
+	white-space: nowrap;
+}
+
+.teaching-link-btn {
+	display: inline-block;
+	font-size: 0.72em;
+	font-weight: 500;
+	line-height: 1.2;
+	padding: 2px 8px;
+	margin-left: 4px;
+	border-radius: 999px;
+	border: 1px solid #c9b6aa;
+	background: #fff;
+	color: #6a4530;
+	vertical-align: middle;
+}
+
+.teaching-link-btn:first-child {
+	margin-left: 0;
+}
+
+a.teaching-link-btn:hover,
+a.teaching-link-btn:focus {
+	background: #fdf8f4;
+	border-color: #b56a3a;
+	color: #8a4e28;
+	text-decoration: none;
+}
+
+.teaching-offerings ul {
+	margin-bottom: 0;
+	padding-left: 18px;
+}
+
+.teaching-offerings li {
+	margin-bottom: 4px;
+}
 
 #federal,
 #non-profit,
@@ -1075,7 +1219,7 @@ color:black;
 	//   A really simple fix is to add the following to your root .scss file:
 
 	  @media screen and (max-width: 767px) {
-		input, select, textarea {
+		input:not(#search-input), select, textarea {
 			 font-size: 16px !important;
 		}
    }
@@ -1089,21 +1233,100 @@ color:black;
 	  }
 	  
 	  .searchBar {
+		position: relative;
 		width: 100%;
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 	  }
-	  
+
+	  .searchBar.is-suggesting #search-input {
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+		border-bottom-color: transparent;
+		box-shadow: 0 1px 6px rgba(32,33,36,0.18);
+	  }
+
 	  #search-input {
 		width: 100%;
 		height: 2.8rem;
-		background: #f5f5f5;
+		background: #fff;
 		outline: none;
-		border: none;
+		border: 1px solid #dfe1e5;
 		border-radius: 1.625rem;
 		padding: 0 1.5rem 0 1.5rem;
-		font-size: 1.5rem;
+		font-size: $font-size-base;
+		font-family: $font-stack, FontAwesome, Arial, sans-serif;
+		box-shadow: 0 1px 3px rgba(32,33,36,0.08);
+	  }
+
+	  #search-input:focus {
+		border-color: rgba(223,225,229,0);
+		box-shadow: 0 1px 6px rgba(32,33,36,0.28);
+	  }
+
+	  .search-suggest {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 100%;
+		z-index: 15;
+		margin: 0;
+		padding: 6px 0 8px;
+		list-style: none;
+		background: rgba(255,255,255,0.42);
+		border: 1px solid rgba(223,225,229,0.45);
+		border-top: 1px solid rgba(232,234,237,0.55);
+		border-radius: 0 0 1.625rem 1.625rem;
+		box-shadow: 0 4px 14px rgba(32,33,36,0.06);
+		backdrop-filter: blur(8px);
+		-webkit-backdrop-filter: blur(8px);
+		max-height: 240px;
+		overflow-y: auto;
+	  }
+
+	  .search-suggest[hidden] {
+		display: none;
+	  }
+
+	  .search-suggest-item {
+		display: flex;
+		align-items: flex-start;
+		gap: 12px;
+		padding: 8px 18px;
+		cursor: pointer;
+		color: #202124;
+		font-size: $font-size-base;
+		line-height: 1.35;
+		background: transparent;
+	  }
+
+	  .search-suggest-item i {
+		margin-top: 3px;
+		width: 16px;
+		color: #70757a;
+		font-size: 0.85em;
+		text-align: center;
+	  }
+
+	  .search-suggest-item.is-active,
+	  .search-suggest-item:hover {
+		background: rgba(241,243,244,0.45);
+	  }
+
+	  .search-suggest-text {
+		min-width: 0;
+	  }
+
+	  .search-suggest-text b {
+		font-weight: 700;
+	  }
+
+	  .search-suggest-meta {
+		display: block;
+		margin-top: 1px;
+		color: #70757a;
+		font-size: 0.78em;
 	  }
 
 

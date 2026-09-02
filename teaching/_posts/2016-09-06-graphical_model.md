@@ -1,12 +1,26 @@
 ---
-layout: post
-title: "2016 Fall: BIOSTAT830 Graphical Models"
+layout: teaching
+title: "Statistical and Computational Methods for Learning through Graphical Models"
+short_title: "BIOSTAT830 · Graphical Models"
 year: 2016
+years: "2016"
+priority: 10
 category: teaching
-description: ""
+description: "Advanced Topics in Biostatistics (BIOSTAT 830) on statistical and computational methods for learning through graphical models."
+type: classroom
+course: BIOSTAT830
+term: Fall 2016
+venue: Department of Biostatistics, University of Michigan
+role: Primary instructor
+status: past
+created: true
+syllabus: /assets/pdfs/slides/teaching/2016/biostat830/BIOSTAT830-syllabus.pdf
+listing: >-
+  2016 Fall - [Statistical and Computational Methods for Learning through Graphical Models](POST_URL) (BIOSTAT 830: Advanced Topics)
+permalink: /teaching/graphical_model
+comments: true
 authors: Zhenke Wu
 author_handle: Zhenke Wu
-master: false
 published: true
 theme: lab
 tags: 
@@ -14,7 +28,6 @@ tags:
 ---
 {% include JB/setup %}
 
-# Statistical and Computational Methods for Learning through Graphical Models
 ------
 
 * **Instructor**: [Zhenke Wu](http://zhenkewu.com) PhD, Assistant Professor of Biostatistics

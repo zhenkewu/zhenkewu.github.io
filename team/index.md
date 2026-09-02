@@ -29,7 +29,7 @@ navorder: 4
 {% assign former_staff = site.categories.team | where: "alum", true | where: "role", "Research Staff" %}
 {% assign alumni = site.categories.team | where: "alum", true | where: "collaborator", false %}
 
-<nav class="project-hub-nav project-hub-nav-featured" aria-label="Jump to team sections">
+<nav class="project-hub-nav project-hub-nav-featured" data-hub-accent="team" aria-label="Jump to team sections">
 	<div class="project-hub-nav-label">Jump to</div>
 	<a class="project-hub-chip" href="#current"><i class="fa-solid fa-users"></i> Current <span class="project-hub-chip-count">{{ team_active.size }}</span></a>
 	<a class="project-hub-chip" href="#past"><i class="fa-solid fa-clock-rotate-left"></i> Past <span class="project-hub-chip-count">{{ alumni.size }}</span></a>
@@ -65,17 +65,19 @@ navorder: 4
           color: #174d87;
     }
 
-    .project-hub-section:target .project-section-marker-team {
+    .project-hub-section:target .project-section-marker-team,
+    .project-hub-section.is-current .project-section-marker-team {
           box-shadow: 0 0 0 3px rgba(29,95,167,0.22);
     }
 
     .member-db-cta {
-          margin: 10px 0 20px 0;
+          margin: 10px auto 20px auto;
           padding: 12px 14px;
           border: 1px solid #dfe7f3;
           border-radius: 10px;
           background: linear-gradient(180deg, #f8fbff 0%, #f2f7ff 100%);
-          display: inline-flex;
+          display: flex;
+          width: fit-content;
           align-items: center;
           gap: 10px;
           box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
@@ -101,16 +103,17 @@ navorder: 4
           color: #35557a;
           font-size: 13px;
     }
+
+    .label-team-pill {
+          background: #1d5fa7;
+          border-radius: 999px;
+          padding: 4px 10px;
+          font-size: 0.85em;
+          font-weight: 600;
+          letter-spacing: 0.01em;
+    }
 </style>
 
-
-<div>
-{% include search-form-global.html %}
-</div> 
-
-
-<div class="label label-default">Research Group Members </div>
-<div class="bigspacer"></div>
 
 I'm extremely fortunate to work with several amazing students to whom I serve as primary or co-advisor. <br>
 
@@ -154,16 +157,9 @@ I'm extremely fortunate to work with several amazing students to whom I serve as
     {% endfor %}   
 </div>
 
-<section id="undergrad" class="project-hub-section">
-<div class="project-section-marker project-section-marker-team">
-	<div class="project-section-marker-left">
-		<i class="fa-solid fa-graduation-cap"></i>
-		<span class="project-section-marker-title">Undergraduate Students</span>
-		<span class="project-section-marker-count">{{ current_undergrads.size }}</span>
-	</div>
-	<a class="project-section-marker-jump" href="#">Jump to top</a>
-</div>
-<div class="smallnote">(those writing paper with lab is marked with $^*$):</div>
+<section id="undergrad">
+<div class="label label-team-pill">Undergraduate students</div>
+<div class="smallnote">$^*$: writing a paper with the lab are marked.</div>
 <div class="smallspacer"></div>
 
 <!-- - $^*$[**Jianhan Zhang**](/team/jianhan-zhang), co-mentored by [Jitao Wang](/team/jitao-wang). Undergrad, Pure Math, Data Science, U of Michigan. **Undergraduate Honor Thesis**: "Counterfactual Fairness in Reinforcement Learning via Marginal Distributional Matching". Thesis work awarded `Highest Honors` in Statistics. -->
@@ -315,7 +311,20 @@ I'm extremely fortunate to work with several amazing students to whom I serve as
 	<a class="project-section-marker-jump" href="#">Jump to top</a>
 </div> 
 
-- [**Zihan Wang**](/team/zihan-wang). MS, Biostatistics, U of Michigan (2025). Next position: PhD Student in Health Data Science (Biostatistics concentration). Geroge Washington University.
+<ul>
+{% for m in former_staff %}
+  <li>
+    {% assign first_pos_out = m.first_position | default: "" | strip %}
+    {% if m.url %}<a href="{{ m.url }}"><strong>{{ m.title }}</strong></a>{% else %}<strong>{{ m.title }}</strong>{% endif %}
+    {% if m.endyear %} | ({{ m.endyear }}){% endif %}
+    {% if m.role %} | {{ m.role }}{% endif %}
+    {% if m.institution %} | {{ m.institution }}{% endif %}
+    {% if m.field %} | {{ m.field }}{% endif %}
+    {% if m.thesis_title %} | "{{ m.thesis_title }}"{% endif %}
+    {% if first_pos_out != "" %} | First position after graduation: {{ first_pos_out }}{% endif %}
+  </li>
+{% endfor %}
+</ul>
 </section>
 </section> 
 

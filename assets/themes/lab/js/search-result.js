@@ -10,4 +10,11 @@ function simple_search(result_template,sortfun,jsonfile) {
     limit: document.getElementById('viewnresults').value,// initial number of results
     fuzzy: false
   })
+
+  if (typeof window.initSearchAutocomplete === "function") {
+    window.initSearchAutocomplete({
+      input: document.getElementById("search-input"),
+      jsonUrl: jsonfile
+    });
+  }
 }

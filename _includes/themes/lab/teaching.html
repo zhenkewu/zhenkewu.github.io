@@ -1,0 +1,237 @@
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="title media-heading">
+			{% if page.status == "upcoming" %}<span class="teaching-mark teaching-mark-upcoming" title="upcoming">*</span>{% endif %}{% if page.created %}<span class="teaching-mark teaching-mark-created" title="course I developed">†</span>{% endif %}{% if page.status == "upcoming" or page.created %} {% endif %}{{ page.title }}
+		</div>
+		{% if page.description %}
+		<p>
+		<div class="smallhead">
+			{{ page.description }}
+		</div>
+		{% endif %}
+		<div class="smallspacer"></div>
+		<div class="smallnote">
+			{% if page.course %}
+			<span class="label teaching-type-label">{{ page.course }}</span>
+			{% endif %}
+			{% if page.role %}
+			<span class="label label-default">{{ page.role }}</span>
+			{% endif %}
+			{% if page.years %}
+			<span class="label label-info">{{ page.years }}</span>
+			{% elsif page.year %}
+			<span class="label label-info">{{ page.year }}</span>
+			{% endif %}
+			{% if page.status %}
+			<span class="label {% if page.status == 'upcoming' %}label-warning{% elsif page.status == 'current' %}label-success{% else %}label-default{% endif %}">{{ page.status }}</span>
+			{% endif %}
+		</div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-md-3">
+		<div class="bigspacer"></div>
+		<div class="glyphbox note">
+
+			{% if page.course %}
+			<div class="smallhead">Course</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa-solid fa-hashtag fa-fw"></i>
+				{{ page.course }}
+			</div>
+			<div class="bigspacer"></div>
+			{% assign course_offerings = site.categories.teaching | where: "layout", "teaching" | where: "course", page.course | sort: "year" | reverse %}
+			{% if course_offerings.size > 1 %}
+			<div class="smallhead">Offerings</div>
+			<div class="pad-left note">
+				{% for o in course_offerings %}
+				<div class="smallspacer"></div>
+				<i class="fa-regular fa-calendar fa-fw"></i>
+				{% if o.url == page.url %}
+				{{ o.term | default: o.year }}
+				{% else %}
+				<a class="off" href="{{ o.url }}">{{ o.term | default: o.year }}</a>
+				{% endif %}
+				{% endfor %}
+			</div>
+			<div class="bigspacer"></div>
+			{% endif %}
+			{% endif %}
+
+			{% if page.term %}
+			<div class="smallhead">Term</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa-regular fa-calendar fa-fw"></i>
+				{{ page.term }}
+			</div>
+			<div class="bigspacer"></div>
+			{% endif %}
+
+			{% if page.years %}
+			<div class="smallhead">Years</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa-regular fa-calendar fa-fw"></i>
+				{{ page.years }}
+			</div>
+			<div class="bigspacer"></div>
+			{% endif %}
+
+			{% if page.venue %}
+			<div class="smallhead">Venue</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa-solid fa-location-dot fa-fw"></i>
+				{{ page.venue }}
+			</div>
+			<div class="bigspacer"></div>
+			{% endif %}
+
+			{% if page.role %}
+			<div class="smallhead">Role</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa-solid fa-user-check fa-fw"></i>
+				{{ page.role }}
+			</div>
+			<div class="bigspacer"></div>
+			{% endif %}
+
+			{% if page.created %}
+			<div class="smallhead">Origin</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				Course I developed
+			</div>
+			<div class="bigspacer"></div>
+			{% endif %}
+
+			{% if page.enrollment %}
+			<div class="smallhead">Enrollment</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa-solid fa-users fa-fw"></i>
+				{{ page.enrollment }}
+			</div>
+			<div class="bigspacer"></div>
+			{% endif %}
+
+			{% if page.canvas %}
+			<div class="smallhead">Canvas</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa-solid fa-chalkboard fa-fw"></i>
+				<a class="off" href="{{ page.canvas }}">Course site</a>
+			</div>
+			<div class="bigspacer"></div>
+			{% endif %}
+
+			{% if page.syllabus %}
+			<div class="smallhead">Syllabus</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa-regular fa-file-lines fa-fw"></i>
+				<a class="off" href="{{ page.syllabus }}">PDF</a>
+			</div>
+			<div class="bigspacer"></div>
+			{% endif %}
+
+			{% if page.slides %}
+			<div class="smallhead">Slides</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa-solid fa-layer-group fa-fw"></i>
+				<a class="off" href="{{ page.slides }}">Slides</a>
+			</div>
+			<div class="bigspacer"></div>
+			{% endif %}
+
+			{% if page.code %}
+			<div class="smallhead">Code</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa-solid fa-code fa-fw"></i>
+				<a class="off" href="{{ page.code }}">{{ page.code | remove: 'http://' | remove: 'https://' | truncate: 42 }}</a>
+			</div>
+			<div class="bigspacer"></div>
+			{% endif %}
+
+			{% if page.website %}
+			<div class="smallhead">Page</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa-solid fa-arrow-up-right-from-square fa-fw"></i>
+				<a class="off" href="{{ page.website }}">{{ page.website | remove: 'http://' | remove: 'https://' | truncate: 42 }}</a>
+			</div>
+			<div class="bigspacer"></div>
+			{% endif %}
+
+			{% if page.materials %}
+			<div class="smallhead">Materials</div>
+			<div class="pad-left note">
+				{% for item in page.materials %}
+				<div class="smallspacer"></div>
+				<i class="fa-regular fa-file-lines fa-fw"></i>
+				<a class="off" href="{{ item.url }}">{{ item.label }}</a>
+				{% endfor %}
+			</div>
+			<div class="bigspacer"></div>
+			{% endif %}
+
+			{% if page.related %}
+			<div class="smallhead">Related</div>
+			<div class="pad-left note">
+				{% for item in page.related %}
+				<div class="smallspacer"></div>
+				<i class="fa-regular fa-file-lines fa-fw"></i>
+				<a class="off" href="{{ item.url }}">{{ item.title }}</a>
+				{% endfor %}
+			</div>
+			<div class="bigspacer"></div>
+			{% endif %}
+
+			<div class="smallhead">Share</div>
+			<div class="post-sharing">
+				{% include JB/sharing %}
+			</div>
+
+		</div>
+	</div>
+
+	<div class="col-md-8">
+		<div class="post teaching-body">
+			{% if page.offerings %}
+			<div class="teaching-offerings">
+				<div class="smallhead">Offerings</div>
+				<div class="smallspacer"></div>
+				<ul>
+				{% for o in page.offerings %}
+					<li>
+						{{ o.term }}{% if o.enrollment %} — {{ o.enrollment }}{% endif %}{% if o.note %} ({{ o.note }}){% endif %}{% if o.status == "upcoming" %} <span class="label label-warning">upcoming</span>{% endif %}
+						{% if o.canvas %} <a class="off" href="{{ o.canvas }}">Canvas</a>{% endif %}
+						{% if o.syllabus %} <a class="off" href="{{ o.syllabus }}">syllabus</a>{% endif %}
+					</li>
+				{% endfor %}
+				</ul>
+			</div>
+			<div class="bigspacer"></div>
+			{% endif %}
+			{{ content }}
+		</div>
+	</div>
+
+	<div class="col-md-1"></div>
+</div>
+
+<div class="bigspacer"></div>
+
+{% if page.comments %}
+{% include JB/comments %}
+{% endif %}

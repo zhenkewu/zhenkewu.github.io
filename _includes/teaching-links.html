@@ -1,0 +1,13 @@
+{% assign t = include.activity %}
+{% if t.canvas or t.syllabus or t.slides or t.code or t.website or t.materials %}
+<span class="teaching-links">
+	{% if t.canvas %}<a class="teaching-link-btn" href="{{ t.canvas }}">Canvas</a>{% endif %}
+	{% if t.syllabus %}<a class="teaching-link-btn" href="{{ t.syllabus }}">Syllabus</a>{% endif %}
+	{% if t.slides %}<a class="teaching-link-btn" href="{{ t.slides }}">Slides</a>{% endif %}
+	{% if t.code %}<a class="teaching-link-btn" href="{{ t.code }}">Code</a>{% endif %}
+	{% if t.website %}<a class="teaching-link-btn" href="{{ t.website }}">Website</a>{% endif %}
+	{% for m in t.materials %}
+	<a class="teaching-link-btn" href="{{ m.url }}">{{ m.label }}</a>
+	{% endfor %}
+</span>
+{% endif %}
