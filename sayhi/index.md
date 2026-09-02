@@ -8,17 +8,43 @@ navorder: 5
 ---
 {% include JB/setup %}
 
+<nav class="project-hub-nav project-hub-nav-featured" aria-label="Jump to advising sections">
+	<div class="project-hub-nav-label">Jump to</div>
+	<a class="project-hub-chip" href="#umich"><i class="fa-solid fa-building-columns"></i> UMich Students</a>
+	<a class="project-hub-chip" href="#non-umich"><i class="fa-solid fa-globe"></i> Non-UMich</a>
+</nav>
+
+<style>
+    .project-section-marker-sayhi {
+          border-left-color: #3b7d6a;
+          background: #f4fbf8;
+    }
+
+    .project-section-marker-sayhi .project-section-marker-left i {
+          color: #3b7d6a;
+    }
+
+    .project-section-marker-sayhi .project-section-marker-count {
+          background: #3b7d6a;
+    }
+
+    .project-section-marker-sayhi .project-section-marker-jump {
+          color: #2f6455;
+    }
+
+    .project-hub-section:target .project-section-marker-sayhi {
+          box-shadow: 0 0 0 3px rgba(59,125,106,0.22);
+    }
+</style>
 
 <div class="smalltitle text-left">Advising </div>
-<div class="bigspacer"></div>
-
 <div class="bigspacer"></div>
 
 We are recruiting motivated and hard-working people interested in the intersection of AI/ML and statistics, Bayesian methods and computation, graphical models, sequential decision making, reinforcement learning and large-scale health data analytics. You can review [recent publications](/papers/) to get a rough sense of what we are working on; it often is much more effective to talk if there is a sense of match in interest/technical ability/vision.
 
 I am extremely fortunate to have worked with many excellent graduate students at UM. Under an apprenticeship model, I have been working closely with my students to gain practical research experience, which when combined with individual students’ particular strengths led to mutually rewarding collaborations and research results. My goal in mentoring is to train students who will be highly sought-after in areas of their interests upon graduation.
 
-I very much look forward to meeting you! Let's do the following to streamline the process. 
+I very much look forward to meeting you! Let's do the following to streamline the process.
 
 For potential trainees and student visitors, **please consider providing relevant information via Google Form [here](https://forms.gle/zNf4aMBiE69prweU7)**.
 
@@ -26,7 +52,14 @@ For potential trainees and student visitors, **please consider providing relevan
 
 If you are emailing for the first time, add the word `giraffe` at the end of the subject line to indicate you have visited this site.
 
-## UMich Students
+<section id="umich" class="project-hub-section" markdown="1">
+<div class="project-section-marker project-section-marker-sayhi">
+	<div class="project-section-marker-left">
+		<i class="fa-solid fa-building-columns"></i>
+		<span class="project-section-marker-title">UMich Students</span>
+	</div>
+	<a class="project-section-marker-jump" href="#">Jump to top</a>
+</div>
 
 - If you are an **UMich graduate student interested in doing research**, such as doctoral/master theses, independent studies/readings, journal clubs, and lab meetings, send me an email with a brief description of interests, CV, transcript, and a link to your homepage (if you have one). We will find a time to meet. You are also welcome to sign up for [office hours](https://calendar.app.google/KPxDS1RAB85avAmq5).
 
@@ -34,8 +67,16 @@ If you are emailing for the first time, add the word `giraffe` at the end of the
 
 - If you are an **UMich student with other questions** such as outreach activities, graduate school application, or asking for a reference letter, please send an email or sign up to come to [office hours](https://calendar.app.google/KPxDS1RAB85avAmq5).
   - If you requesting a reference letter, you need to send your transcript(s), CV, and statements in an email explaining your objective.
-	
-## Non-UMich Folks
+</section>
+
+<section id="non-umich" class="project-hub-section" markdown="1">
+<div class="project-section-marker project-section-marker-sayhi">
+	<div class="project-section-marker-left">
+		<i class="fa-solid fa-globe"></i>
+		<span class="project-section-marker-title">Non-UMich Folks</span>
+	</div>
+	<a class="project-section-marker-jump" href="#">Jump to top</a>
+</div>
 
 - If you are **interested in doing a postdoc**, please send me an email with a brief description of interests, CV, names of references, and a link to your homepage (if you have one). This applies to current senior UMich graduate students in relevant disciplines who expect to graduate soon.
 
@@ -44,4 +85,6 @@ If you are emailing for the first time, add the word `giraffe` at the end of the
 - If you are **interested in a temporary research position**, this is available at a non-regular basis and depends on projects and funding. Because of many such requests, unfortunately we are not able to respond to all such inquiries.
 
 - If you are **interested in other collaborations**, please send me an email.
+</section>
+
 

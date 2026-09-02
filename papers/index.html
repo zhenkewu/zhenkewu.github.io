@@ -7,9 +7,18 @@ navorder: 1
 ---
 {% include JB/setup %}
 
+{% assign methods_papers = site.categories.papers | where: "type", "statistical" %}
+{% assign substantive_papers = site.categories.papers | where: "type", "substantive" %}
+
+<nav class="project-hub-nav project-hub-nav-featured" aria-label="Jump to paper sections">
+	<div class="project-hub-nav-label">Jump to</div>
+	<a class="project-hub-chip" href="#statistical-methods"><i class="fa-solid fa-microchip"></i> Theory/Methods <span class="project-hub-chip-count">{{ methods_papers.size }}</span></a>
+	<a class="project-hub-chip" href="#substantive"><i class="fa-solid fa-flask"></i> Substantive <span class="project-hub-chip-count">{{ substantive_papers.size }}</span></a>
+</nav>
+
 <style>
 .centered-pills {
-  margin-top: -15px;
+  margin-top: 4px;
   margin-bottom: 5px;
 }
 .centered-pills .nav-pills {
@@ -31,6 +40,27 @@ navorder: 1
   background: #fcfdfc;
   width: 100%;
   margin: 0 0 4px 0;
+}
+
+.project-section-marker-papers {
+  border-left-color: #5cb85c;
+  background: #fcfdfc;
+}
+
+.project-section-marker-papers .project-section-marker-left i {
+  color: #5cb85c;
+}
+
+.project-section-marker-papers .project-section-marker-count {
+  background: #5cb85c;
+}
+
+.project-section-marker-papers .project-section-marker-jump {
+  color: #3d8b40;
+}
+
+.project-hub-section:target .project-section-marker-papers {
+  box-shadow: 0 0 0 3px rgba(92,184,92,0.22);
 }
 
 .paper-viz-title {
@@ -301,40 +331,6 @@ navorder: 1
 .paper-viz-modal-links a {
   margin-right: 3px;
 }
-
-/* Enhanced styling for section jump buttons */
-.section-jump-buttons .nav-pills > li > a {
-  padding: 0px 5px;
-  font-size: 0.9em;
-  font-weight: 600;
-  border-radius: 6px;
-  transition: all 0.3s ease;
-  background-color: #f8f9fa;
-  border: 2px solid #e9ecef;
-  color: #495057;
-  text-decoration: none;
-  display: inline-block;
-  min-width: 140px;
-  text-align: center;
-}
-
-.section-jump-buttons .nav-pills > li > a:hover {
-  background-color: #007bff;
-  border-color: #007bff;
-  color: white;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0,123,255,0.3);
-}
-
-.section-jump-buttons .nav-pills > li > a:active {
-  transform: translateY(0);
-  box-shadow: 0 1px 1px rgba(0,123,255,0.3);
-}
-
-/* Add scroll padding to section headers to account for fixed navigation */
-#statistical-methods, #substantive {
-  scroll-margin-top: 80px;
-}
 </style>
 
 <div class="row">
@@ -426,36 +422,14 @@ navorder: 1
   {% endfor %}
 </ul>
 
-<div class="spacer"></div>
-<div class="row">
-	<div class="col-md-12">
-		<div class="centered-pills section-jump-buttons">
-			<ul class="nav nav-pills">
-				<li role="presentation">
-					<a href="#statistical-methods">
-						<i class="fa fa-microchip fa-fw"></i> Theory/Methods
-					</a>
-				</li>
-				<li role="presentation">
-					<a href="#substantive">
-						<i class="fa fa-flask fa-fw"></i> Substantive
-					</a>
-				</li>
-			</ul>
-		</div>
-		<div class="bigspacer"></div>
+<section id="statistical-methods" class="project-hub-section">
+<div class="project-section-marker project-section-marker-papers">
+	<div class="project-section-marker-left">
+		<i class="fa-solid fa-microchip"></i>
+		<span class="project-section-marker-title">Theory/Methods</span>
+		<span class="project-section-marker-count">{{ methods_papers.size }}</span>
 	</div>
-</div>
-
-<div class="label label-default" id="statistical-methods">Statistical Methods</div>
-<div class="bigspacer"></div>
-<div class="row">
-	<div class="col-md-12">
-		<a href="#" class="btn btn-sm btn-default">
-			<i class="fa fa-chevron-up fa-fw"></i> Back to Top
-		</a>
-		<div class="spacer"></div>
-	</div>
+	<a class="project-section-marker-jump" href="#">Jump to top</a>
 </div>
 <div class="container">
 {% for paper in site.categories.papers %}
@@ -483,19 +457,17 @@ navorder: 1
 {% endfor %}
 {% cycle 'close rows': '', '</div><div class="bigspacer"></div>', '</div><div class="bigspacer"></div>' %}
 </div>
+</section>
 
-<hr/>
-<div class="label label-default" id="substantive">Substantive</div>
-<div class="bigspacer"></div>
-<div class="row">
-	<div class="col-md-12">
-		<a href="#" class="btn btn-sm btn-default">
-			<i class="fa fa-chevron-up fa-fw"></i> Back to Top
-		</a>
-		<div class="spacer"></div>
+<section id="substantive" class="project-hub-section">
+<div class="project-section-marker project-section-marker-papers">
+	<div class="project-section-marker-left">
+		<i class="fa-solid fa-flask"></i>
+		<span class="project-section-marker-title">Substantive</span>
+		<span class="project-section-marker-count">{{ substantive_papers.size }}</span>
 	</div>
+	<a class="project-section-marker-jump" href="#">Jump to top</a>
 </div>
-
 <div class="container">
 {% for paper in site.categories.papers %}
   {% if paper.type == "substantive"%}
@@ -522,6 +494,7 @@ navorder: 1
 {% endfor %}
 {% cycle 'close rows2': '', '</div><div class="bigspacer"></div>', '</div><div class="bigspacer"></div>' %}
 </div>
+</section>
 
 <div class="bigspacer"></div>
 

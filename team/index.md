@@ -8,6 +8,37 @@ navorder: 4
 ---
 {% include JB/setup %}
 
+{% assign team_active = site.categories.team | where: "alum", false | where: "collaborator", false | where: "support", false %}
+{% assign current_undergrads = team_active | where: "role", "Undergrad" %}
+{% assign current_members = "" | split: "" %}
+{% for member in team_active %}
+	{% unless member.role == "Undergrad" %}
+		{% assign current_members = current_members | push: member %}
+	{% endunless %}
+{% endfor %}
+{% assign former_phd_icons = "" | split: "" %}
+{% for member in site.categories.team %}
+	{% if member.showicon == true and member.alum == true and member.collaborator == false %}
+		{% assign former_phd_icons = former_phd_icons | push: member %}
+	{% endif %}
+{% endfor %}
+{% assign former_ms_terminal = site.categories.team | where: "alum", true | where: "role", "MS" | sort: "endyear" | reverse %}
+{% assign former_ms_continued = site.categories.team | where: "ms_placement", "PhD Student at UMich Biostatistics" | sort: "ms_year" | reverse %}
+{% assign former_ms_count = former_ms_terminal.size | plus: former_ms_continued.size %}
+{% assign former_undergrads = site.categories.team | where: "alum", true | where: "role", "Undergrad" | sort: "endyear" | reverse %}
+{% assign former_staff = site.categories.team | where: "alum", true | where: "role", "Research Staff" %}
+{% assign alumni = site.categories.team | where: "alum", true | where: "collaborator", false %}
+
+<nav class="project-hub-nav project-hub-nav-featured" aria-label="Jump to team sections">
+	<div class="project-hub-nav-label">Jump to</div>
+	<a class="project-hub-chip" href="#current"><i class="fa-solid fa-users"></i> Current <span class="project-hub-chip-count">{{ team_active.size }}</span></a>
+	<a class="project-hub-chip" href="#past"><i class="fa-solid fa-clock-rotate-left"></i> Past <span class="project-hub-chip-count">{{ alumni.size }}</span></a>
+	<a class="project-hub-chip" href="#former-phd"><i class="fa-solid fa-user-graduate"></i> Former PhD <span class="project-hub-chip-count">{{ former_phd_icons.size }}</span></a>
+	<a class="project-hub-chip" href="#former-ms"><i class="fa-solid fa-book"></i> Former MS <span class="project-hub-chip-count">{{ former_ms_count }}</span></a>
+	<a class="project-hub-chip" href="#former-undergrad"><i class="fa-solid fa-user"></i> Former undergrad <span class="project-hub-chip-count">{{ former_undergrads.size }}</span></a>
+	<a class="project-hub-chip" href="#former-staff"><i class="fa-solid fa-briefcase"></i> Former staff <span class="project-hub-chip-count">{{ former_staff.size }}</span></a>
+</nav>
+
 <style>
     img.photo{
           object-fit: cover;
@@ -15,6 +46,27 @@ navorder: 4
           object-position: 10% 10%; 
           width:150px;
           height:150px;
+    }
+
+    .project-section-marker-team {
+          border-left-color: #1d5fa7;
+          background: linear-gradient(180deg, #f8fbff 0%, #f2f7ff 100%);
+    }
+
+    .project-section-marker-team .project-section-marker-left i {
+          color: #1d5fa7;
+    }
+
+    .project-section-marker-team .project-section-marker-count {
+          background: #1d5fa7;
+    }
+
+    .project-section-marker-team .project-section-marker-jump {
+          color: #174d87;
+    }
+
+    .project-hub-section:target .project-section-marker-team {
+          box-shadow: 0 0 0 3px rgba(29,95,167,0.22);
     }
 
     .member-db-cta {
@@ -74,9 +126,15 @@ I'm extremely fortunate to work with several amazing students to whom I serve as
   <span class="member-db-text">Search, filter, and sort all members</span>
 </div>
 
-<div class="bigspacer"></div>
-<div class="label label-primary">Current </div>
-<div class="bigspacer"></div>
+<section id="current" class="project-hub-section">
+<div class="project-section-marker project-section-marker-team">
+	<div class="project-section-marker-left">
+		<i class="fa-solid fa-users"></i>
+		<span class="project-section-marker-title">Current</span>
+		<span class="project-section-marker-count">{{ team_active.size }}</span>
+	</div>
+	<a class="project-section-marker-jump" href="#">Jump to top</a>
+</div>
 
 
 <div class="row">
@@ -96,10 +154,17 @@ I'm extremely fortunate to work with several amazing students to whom I serve as
     {% endfor %}   
 </div>
 
-<div class="bigspacer"></div>
-
-<div class="label label-info"> Undergraduate Students </div> 
-(those writing paper with lab is marked with $^*$):
+<section id="undergrad" class="project-hub-section">
+<div class="project-section-marker project-section-marker-team">
+	<div class="project-section-marker-left">
+		<i class="fa-solid fa-graduation-cap"></i>
+		<span class="project-section-marker-title">Undergraduate Students</span>
+		<span class="project-section-marker-count">{{ current_undergrads.size }}</span>
+	</div>
+	<a class="project-section-marker-jump" href="#">Jump to top</a>
+</div>
+<div class="smallnote">(those writing paper with lab is marked with $^*$):</div>
+<div class="smallspacer"></div>
 
 <!-- - $^*$[**Jianhan Zhang**](/team/jianhan-zhang), co-mentored by [Jitao Wang](/team/jitao-wang). Undergrad, Pure Math, Data Science, U of Michigan. **Undergraduate Honor Thesis**: "Counterfactual Fairness in Reinforcement Learning via Marginal Distributional Matching". Thesis work awarded `Highest Honors` in Statistics. -->
 
@@ -124,23 +189,33 @@ I'm extremely fortunate to work with several amazing students to whom I serve as
     {% endif %}
     {% endfor %}
 </div>
+</section>
+</section>
 
-<div class="bigspacer"></div>
-
-
-<hr/>
-<div class="bigspacer"></div>
-<div class="label label-success">Past Members </div>
-<div class="bigspacer"></div>
+<section id="past" class="project-hub-section">
+<div class="project-section-marker project-section-marker-team">
+	<div class="project-section-marker-left">
+		<i class="fa-solid fa-clock-rotate-left"></i>
+		<span class="project-section-marker-title">Past Members</span>
+		<span class="project-section-marker-count">{{ alumni.size }}</span>
+	</div>
+	<a class="project-section-marker-jump" href="#">Jump to top</a>
+</div>
 
 <p >Alumni have gone on to faculty roles, industry, and strong graduate programs. Placements and timelines are easiest to explore in the
 <a href="{{ '/team/database' | relative_url }}">Member Database</a> (filter by alumni year, role, and more).</p>
 
 <p>Please send an email to zhenkewu@gmail[punto]com for updates to your entry.</p>
 
-<div class="bigspacer"></div>
-<div class="label label-info">Former PhD Students: </div>
-<div class="bigspacer"></div>
+<section id="former-phd" class="project-hub-section">
+<div class="project-section-marker project-section-marker-team">
+	<div class="project-section-marker-left">
+		<i class="fa-solid fa-user-graduate"></i>
+		<span class="project-section-marker-title">Former PhD Students</span>
+		<span class="project-section-marker-count">{{ former_phd_icons.size }}</span>
+	</div>
+	<a class="project-section-marker-jump" href="#">Jump to top</a>
+</div>
 
 <div class="row">
     {% for member in site.categories.team %}
@@ -155,18 +230,19 @@ I'm extremely fortunate to work with several amazing students to whom I serve as
     {%endif%}
     {% endfor %}    
 </div>
+</section>
 
-<div class="bigspacer"></div>
-
-
-
-
-<div class="bigspacer"></div>
-<div class="label label-info">Former MS Students: </div>
-<div class="bigspacer"></div>
+<section id="former-ms" class="project-hub-section">
+<div class="project-section-marker project-section-marker-team">
+	<div class="project-section-marker-left">
+		<i class="fa-solid fa-book"></i>
+		<span class="project-section-marker-title">Former MS Students</span>
+		<span class="project-section-marker-count">{{ former_ms_count }}</span>
+	</div>
+	<a class="project-section-marker-jump" href="#">Jump to top</a>
+</div>
 <div class="smalltitle text-left">Terminal MS degree</div>
 <div class="smallspacer"></div>
-{% assign former_ms_terminal = site.categories.team | where: "alum", true | where: "role", "MS" | sort: "endyear" | reverse %}
 <ul>
 {% for m in former_ms_terminal %}
   <li>
@@ -186,7 +262,6 @@ I'm extremely fortunate to work with several amazing students to whom I serve as
 <div class="smallspacer"></div>
 <div class="smalltitle text-left">continued to PhD in lab</div>
 <div class="smallspacer"></div>
-{% assign former_ms_continued = site.categories.team | where: "ms_placement", "PhD Student at UMich Biostatistics" | sort: "ms_year" | reverse %}
 <ul>
 {% for m in former_ms_continued %}
   <li>
@@ -200,11 +275,19 @@ I'm extremely fortunate to work with several amazing students to whom I serve as
   </li>
 {% endfor %}
 </ul>
+</section>
 
-
-<div class="bigspacer"></div>
-<div class="label label-info">Former Undergraduate Students </div>  (those who wrote paper in the lab is marked with $^*$):
-{% assign former_undergrads = site.categories.team | where: "alum", true | where: "role", "Undergrad" | sort: "endyear" | reverse %}
+<section id="former-undergrad" class="project-hub-section">
+<div class="project-section-marker project-section-marker-team">
+	<div class="project-section-marker-left">
+		<i class="fa-solid fa-user"></i>
+		<span class="project-section-marker-title">Former Undergraduate Students</span>
+		<span class="project-section-marker-count">{{ former_undergrads.size }}</span>
+	</div>
+	<a class="project-section-marker-jump" href="#">Jump to top</a>
+</div>
+<div class="smallnote">(those who wrote paper in the lab is marked with $^*$)</div>
+<div class="smallspacer"></div>
 <ul>
 {% for m in former_undergrads %}
   <li>
@@ -220,12 +303,21 @@ I'm extremely fortunate to work with several amazing students to whom I serve as
   </li>
 {% endfor %}
 </ul>
+</section>
 
-<div class="bigspacer"></div>
+<section id="former-staff" class="project-hub-section">
+<div class="project-section-marker project-section-marker-team">
+	<div class="project-section-marker-left">
+		<i class="fa-solid fa-briefcase"></i>
+		<span class="project-section-marker-title">Former Research Staff</span>
+		<span class="project-section-marker-count">{{ former_staff.size }}</span>
+	</div>
+	<a class="project-section-marker-jump" href="#">Jump to top</a>
+</div> 
 
-<div class="label label-info">Former Research Staff </div> 
-
-- [**Zihan Wang**](/team/zihan-wang). MS, Biostatistics, U of Michigan (2025). Next position: PhD Student in Health Data Science (Biostatistics concentration). Geroge Washington University. 
+- [**Zihan Wang**](/team/zihan-wang). MS, Biostatistics, U of Michigan (2025). Next position: PhD Student in Health Data Science (Biostatistics concentration). Geroge Washington University.
+</section>
+</section> 
 
 
 <!--
