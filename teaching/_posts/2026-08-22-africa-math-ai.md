@@ -7,7 +7,7 @@ type: short-course
 year: 2026
 years: "2026"
 priority: 20
-term: March 24–28, 2026
+term: August 24–28, 2026
 venue: Africa Institute for Capacity Development (AICAD)
 role: Instructor
 status: past
