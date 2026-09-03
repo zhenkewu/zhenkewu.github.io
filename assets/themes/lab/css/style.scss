@@ -699,6 +699,173 @@ a.teaching-link-btn:focus {
 	margin-bottom: 4px;
 }
 
+.teaching-timeline {
+	margin: 0 0 22px 0;
+	padding: 10px 12px 8px;
+	border: 1px solid #e8ddd4;
+	border-left: 4px solid #b56a3a;
+	border-radius: 6px;
+	background: #fdf8f4;
+}
+
+.teaching-timeline-title {
+	font-weight: 600;
+	font-size: 0.9em;
+	color: #2f3a44;
+	margin-bottom: 2px;
+}
+
+.teaching-timeline-help {
+	font-size: 0.74em;
+	color: #6d7680;
+	margin-bottom: 8px;
+}
+
+.teaching-timeline-legend {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+	margin-bottom: 10px;
+}
+
+.teaching-timeline-filter {
+	appearance: none;
+	border: 1px solid #d7c4b6;
+	background: #fff;
+	color: #6a4530;
+	border-radius: 999px;
+	padding: 2px 9px;
+	font-size: 0.72em;
+	font-weight: 600;
+	line-height: 1.4;
+	cursor: pointer;
+}
+
+.teaching-timeline-filter:hover,
+.teaching-timeline-filter:focus {
+	border-color: #b56a3a;
+	color: #8a4e28;
+}
+
+.teaching-timeline-filter.is-active {
+	background: #b56a3a;
+	border-color: #b56a3a;
+	color: #fff;
+}
+
+.teaching-timeline-filter[data-type="classroom"].is-active { background: #b56a3a; border-color: #b56a3a; }
+.teaching-timeline-filter[data-type="short-course"].is-active { background: #3b7d6a; border-color: #3b7d6a; }
+.teaching-timeline-filter[data-type="mooc"].is-active { background: #1d5fa7; border-color: #1d5fa7; }
+.teaching-timeline-filter[data-type="slides"].is-active { background: #8a6a3b; border-color: #8a6a3b; }
+.teaching-timeline-filter[data-type="reading-group"].is-active { background: #6d5a73; border-color: #6d5a73; }
+
+.teaching-timeline-scroll {
+	overflow-x: auto;
+	padding-bottom: 4px;
+}
+
+.teaching-timeline-track {
+	display: flex;
+	align-items: flex-end;
+	min-width: max-content;
+	gap: 0;
+	padding: 4px 4px 0;
+}
+
+.teaching-timeline-col {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-width: 108px;
+	max-width: 132px;
+	padding: 0 6px;
+}
+
+.teaching-timeline-items {
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: stretch;
+	gap: 5px;
+	width: 100%;
+	min-height: 2.5em;
+	margin-bottom: 8px;
+}
+
+.teaching-timeline-chip {
+	display: block;
+	padding: 4px 6px;
+	border-radius: 6px;
+	border: 1px solid transparent;
+	text-decoration: none;
+	line-height: 1.2;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+}
+
+.teaching-timeline-chip:hover,
+.teaching-timeline-chip:focus {
+	text-decoration: none;
+	filter: brightness(0.96);
+	box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.teaching-timeline-chip.is-dim {
+	opacity: 0.22;
+}
+
+.teaching-timeline-chip-name {
+	display: block;
+	font-size: 0.7em;
+	font-weight: 700;
+	color: #fff;
+}
+
+.teaching-timeline-chip-term {
+	display: block;
+	font-size: 0.62em;
+	color: rgba(255,255,255,0.88);
+	margin-top: 1px;
+}
+
+.teaching-timeline-chip-type-classroom { background: #b56a3a; border-color: #9a542c; }
+.teaching-timeline-chip-type-short-course { background: #3b7d6a; border-color: #2f6455; }
+.teaching-timeline-chip-type-mooc { background: #1d5fa7; border-color: #174d87; }
+.teaching-timeline-chip-type-slides { background: #8a6a3b; border-color: #6f542c; }
+.teaching-timeline-chip-type-reading-group { background: #6d5a73; border-color: #56445c; }
+
+.teaching-timeline-chip.is-upcoming {
+	box-shadow: 0 0 0 2px #fff, 0 0 0 3px #b56a3a;
+}
+
+.teaching-timeline-axis {
+	position: relative;
+	width: 100%;
+	padding-top: 10px;
+	text-align: center;
+	border-top: 2px solid #d7c4b6;
+}
+
+.teaching-timeline-col .teaching-timeline-axis::before {
+	content: "";
+	position: absolute;
+	top: -5px;
+	left: 50%;
+	width: 8px;
+	height: 8px;
+	margin-left: -4px;
+	border-radius: 50%;
+	background: #b56a3a;
+	border: 2px solid #fdf8f4;
+}
+
+.teaching-timeline-year-label {
+	display: block;
+	padding-top: 6px;
+	font-size: 0.78em;
+	font-weight: 700;
+	font-variant-numeric: tabular-nums;
+	color: #8a4e28;
+}
+
 #federal,
 #non-profit,
 #philanthropy,

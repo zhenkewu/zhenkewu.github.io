@@ -36,9 +36,12 @@ navorder: 3
 	{% if activity.listings %}{% assign reading_n = reading_n | plus: activity.listings.size %}{% else %}{% assign reading_n = reading_n | plus: 1 %}{% endif %}
 {% endfor %}
 
+{% assign timeline_years = all_teaching | map: "year" | compact | uniq | sort | reverse %}
+
 {% if all_teaching.size > 0 %}
 <nav class="project-hub-nav project-hub-nav-featured" data-hub-accent="teaching" aria-label="Jump to teaching sections">
 	<div class="project-hub-nav-label">Jump to</div>
+	<a class="project-hub-chip" href="#timeline"><i class="fa-solid fa-timeline"></i> Timeline</a>
 	{% if short_courses.size > 0 %}
 	<a class="project-hub-chip" href="#short-courses"><i class="fa-solid fa-chalkboard-user"></i> Short courses <span class="project-hub-chip-count">{{ short_course_n }}</span></a>
 	{% endif %}
@@ -59,6 +62,45 @@ navorder: 3
 
 <div class="note"><span class="teaching-mark teaching-mark-upcoming" title="upcoming">*</span>: upcoming. <span class="teaching-mark teaching-mark-created" title="course I developed">†</span>: new course.</div>
 <div class="bigspacer"></div>
+
+<section id="timeline" class="project-hub-section">
+<div class="teaching-timeline" data-teaching-timeline>
+	<div class="teaching-timeline-title"><i class="fa-solid fa-timeline"></i> When courses were taught</div>
+	<div class="teaching-timeline-help">Click a course to open its page. Use the pills to show one type.</div>
+	<div class="teaching-timeline-legend">
+		<button type="button" class="teaching-timeline-filter is-active" data-type="all">All</button>
+		<button type="button" class="teaching-timeline-filter" data-type="classroom">Classroom</button>
+		<button type="button" class="teaching-timeline-filter" data-type="short-course">Short course</button>
+		<button type="button" class="teaching-timeline-filter" data-type="mooc">MOOC</button>
+		<button type="button" class="teaching-timeline-filter" data-type="slides">Slides</button>
+		<button type="button" class="teaching-timeline-filter" data-type="reading-group">Reading group</button>
+	</div>
+	<div class="teaching-timeline-scroll">
+		<div class="teaching-timeline-track">
+			{% for year in timeline_years %}
+			{% assign year_items = all_teaching | where: "year", year %}
+			<div class="teaching-timeline-col">
+				<div class="teaching-timeline-items">
+					{% for activity in year_items %}
+					{% assign chip_name = activity.course | default: activity.short_title | default: activity.title %}
+					<a class="teaching-timeline-chip teaching-timeline-chip-type-{{ activity.type }}{% if activity.status == 'upcoming' %} is-upcoming{% endif %}"
+						href="{{ activity.url }}"
+						data-type="{{ activity.type }}"
+						title="{{ activity.title | escape }}{% if activity.term %} · {{ activity.term | escape }}{% endif %}">
+						<span class="teaching-timeline-chip-name">{% if activity.status == "upcoming" %}* {% endif %}{% if activity.created %}† {% endif %}{{ chip_name }}</span>
+						{% if activity.term %}<span class="teaching-timeline-chip-term">{{ activity.term }}</span>{% endif %}
+					</a>
+					{% endfor %}
+				</div>
+				<div class="teaching-timeline-axis">
+					<span class="teaching-timeline-year-label">{{ year }}</span>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+</section>
 
 {% if all_teaching.size > 0 %}
 
@@ -159,3 +201,22 @@ navorder: 3
 {% endif %}
 
 <div class="bigspacer"></div>
+
+<script>
+(function () {
+  var root = document.querySelector("[data-teaching-timeline]");
+  if (!root) return;
+  var buttons = Array.prototype.slice.call(root.querySelectorAll(".teaching-timeline-filter"));
+  var chips = Array.prototype.slice.call(root.querySelectorAll(".teaching-timeline-chip"));
+  buttons.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var type = btn.getAttribute("data-type") || "all";
+      buttons.forEach(function (b) { b.classList.toggle("is-active", b === btn); });
+      chips.forEach(function (chip) {
+        var on = type === "all" || chip.getAttribute("data-type") === type;
+        chip.classList.toggle("is-dim", !on);
+      });
+    });
+  });
+})();
+</script>
