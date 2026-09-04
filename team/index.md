@@ -159,7 +159,7 @@ I'm extremely fortunate to work with several amazing students to whom I serve as
 
 <section id="undergrad">
 <div class="label label-team-pill">Undergraduate students</div>
-<div class="smallnote">$^*$: writing a paper with the lab are marked.</div>
+<div class="smallnote">$^*$: writing a paper with the lab.</div>
 <div class="smallspacer"></div>
 
 <!-- - $^*$[**Jianhan Zhang**](/team/jianhan-zhang), co-mentored by [Jitao Wang](/team/jitao-wang). Undergrad, Pure Math, Data Science, U of Michigan. **Undergraduate Honor Thesis**: "Counterfactual Fairness in Reinforcement Learning via Marginal Distributional Matching". Thesis work awarded `Highest Honors` in Statistics. -->
@@ -282,7 +282,7 @@ I'm extremely fortunate to work with several amazing students to whom I serve as
 	</div>
 	<a class="project-section-marker-jump" href="#">Jump to top</a>
 </div>
-<div class="smallnote">(those who wrote paper in the lab is marked with $^*$)</div>
+<div class="smallnote">(those who wrote paper(s) in the lab is marked with $^*$)</div>
 <div class="smallspacer"></div>
 <ul>
 {% for m in former_undergrads %}
