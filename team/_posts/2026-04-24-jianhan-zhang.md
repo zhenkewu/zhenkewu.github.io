@@ -14,7 +14,6 @@ image: /assets/images/team/ph.png
 web: www.linkedin.com/in/jianhan-zhang-175536231/
 ---
 
-
 Previously an undergraduate researcher in the lab
 
 Co-mentored by [Jitao Wang](/team/jitao-wang) as an undergraduate.
