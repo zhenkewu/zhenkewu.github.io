@@ -1,31 +1,17 @@
 ---
 layout: member
 title: Mingyan Yu
-position: PhD (Biostat), 2026
 role: PhD
-first_position: Statistical Manager, Takeda, Cambridge, MA
-current_position: 
-endyear: 2026
-thesis_title: Bayesian Joint Models to Incorporate Individual-Level Variability as Predictors for Health Outcomes
-thesis_url: ""
-institute: University of Michigan
-institution: UMich
-handle: Mingyan Yu
-email: myanyu@umich[punto]edu
-twitter: 
-github: 
-scholar: 
-image: /assets/images/team/mingyan-yu.jpg
-cv: 
-alum: true
-collaborator: false
-support: false
-showicon: true                                  
-web: 
 field: biostat
-authors: " "
-
+position: PhD (Biostat), 2026
+endyear: 2026
+placement: Statistical Manager, Takeda, Cambridge, MA
+thesis_title: Bayesian Joint Models to Incorporate Individual-Level Variability as Predictors for Health Outcomes
+institution: UMich
+email: "myanyu@umich[punto]edu"
+image: /assets/images/team/mingyan-yu.jpg
 ---
+
 
 # Education:
 

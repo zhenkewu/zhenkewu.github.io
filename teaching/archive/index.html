@@ -43,7 +43,7 @@ categories:
 			<div class="smallnote">
 				{% if post.course %}{{ post.course }} · {% endif %}{% if post.year %}{{ post.year }}{% else %}{{ post.date | date: "%Y" }}{% endif %}
 				{% if author %}
-				by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
+				by <a class="off" href="{{ author.url }}">{{ author.handle | default: author.title }}</a>
 				{% endif %}	
 			</div>
 			<div class="bigspacer"></div>

@@ -58,7 +58,8 @@ navorder: 7
 {% for post in site.categories.blog %}
 
 	{% for member in site.categories.team %}
-		{% if member.handle == post.author_handle %}
+		{% assign member_handle = member.handle | default: member.title %}
+		{% if member_handle == post.author_handle %}
 			{% assign author = member %}
 		{% endif %}
 	{% endfor %}
@@ -73,7 +74,7 @@ navorder: 7
 			<div class="smallnote">
 				{{ post.date | date_to_string }}
 				{% if author %}
-				by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
+				by <a class="off" href="{{ author.url }}">{{ author.handle | default: author.title }}</a>
 				{% endif %}				
 			</div>	
 		</div>

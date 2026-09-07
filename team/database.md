@@ -501,11 +501,13 @@ This page includes all current and former members. Please notify via  `zhenkewu 
         position: {{ member.position | default: "" | jsonify }},
         role: {{ member.role | default: "" | jsonify }},
         field: {{ member.field | default: "" | jsonify }},
+        ug_field: {{ member.ug_field | default: "" | jsonify }},
         institution: {{ member.institution | default: "" | jsonify }},
-        alum: {{ member.alum | jsonify }},
+        alum: {% if member.endyear %}true{% else %}false{% endif %},
         endyear: {{ member.endyear | default: "" | jsonify }},
-        first_position: {{ member.first_position | default: "" | jsonify }},
-        current_position: {{ member.current_position | default: "" | jsonify }},
+        ug_year: {{ member.ug_year | default: "" | jsonify }},
+        first_position: {{ member.placement | default: "" | jsonify }},
+        current_placement: {{ member.current_placement | default: "" | jsonify }},
         thesis_title: {{ member.thesis_title | default: "" | jsonify }},
         thesis_url: {{ member.thesis_url | default: "" | jsonify }}
       }{% unless forloop.last %},{% endunless %}
@@ -663,17 +665,21 @@ This page includes all current and former members. Please notify via  `zhenkewu 
         if (!q) return true;
         var rolesForSearch = splitMultiValue(m.role).join(" ");
         var fieldsForSearch = splitMultiValue(m.field).join(" ");
+        var ugFieldsForSearch = splitMultiValue(m.ug_field).join(" ");
         var haystack = [
           m.title,
           m.first_name,
           m.last_name,
           rolesForSearch,
           fieldsForSearch,
+          ugFieldsForSearch,
           m.institution,
           m.endyear,
+          m.ug_year,
           m.first_position,
-          m.current_position,
-          m.thesis_title
+          m.current_placement,
+          m.thesis_title,
+          m.ug_year ? "former undergrad" : ""
         ].join(" ").toLowerCase();
         return haystack.indexOf(q) !== -1;
       });
@@ -716,7 +722,7 @@ This page includes all current and former members. Please notify via  `zhenkewu 
 
       rows.forEach(function (m) {
         var tr = document.createElement("tr");
-        var currentPositionCell = m.current_position || "";
+        var currentPositionCell = m.current_placement || "";
         if (currentPositionCell === (m.first_position || "")) {
           currentPositionCell = "";
         }

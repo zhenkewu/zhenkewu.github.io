@@ -3,7 +3,8 @@
 </div>
 
 {% for member in site.categories.team %}
-  {% if member.handle == page.author_handle %}
+  {% assign member_handle = member.handle | default: member.title %}
+  {% if member_handle == page.author_handle %}
     {% assign author = member %}
   {% endif %}
 {% endfor %}
@@ -16,7 +17,7 @@
           {{ page.date | date_to_string }}
           {% if author %}
           <div class="bigspacer"></div>
-          by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
+          by <a class="off" href="{{ author.url }}">{{ author.handle | default: author.title }}</a>
           {% endif %}           
         </div>
         <div class="bigspacer"></div>

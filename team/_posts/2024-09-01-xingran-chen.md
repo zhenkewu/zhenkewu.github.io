@@ -1,33 +1,16 @@
 ---
 layout: member
 title: Xingran Chen
-position: PhD Student (Biostat)
-role: PhD Student 
-ms_year: 2024
-ms_placement: PhD Student at UMich Biostatistics
-first_position:  
-current_position:  
-endyear: ""
-thesis_title: ""
-thesis_url: ""
-institute: University of Michigan
-institution: UMich
-handle: Xingran Chen
-email: chenxran@umich[punto]edu
-twitter: 
-github: 
-scholar: 
-image: /assets/images/team/xingran-chen.jpg
-cv: 
-alum: false
-collaborator: false
-support: false
-showicon: true                                  
-web: chenxingran.com/
+role: PhD
 field: biostat
-authors: " "
-
+position: PhD Student (Biostat)
+ms_year: 2024
+institution: UMich
+email: "chenxran@umich[punto]edu"
+image: /assets/images/team/xingran-chen.jpg
+web: chenxingran.com/
 ---
+
 
 Interests: AI/ML + Statistics, LLM
 

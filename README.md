@@ -91,7 +91,37 @@ Zhenke Wu's Research Website: [click to view](http://zhenkewu.com)
 * navigation:
     - For example, the "papers" tab is specified in the folder "papers/". At the top, `title` is for tab name; `group` can be either `navigation` or `subnavigation` depending on whether you want to show this tab or collapse into the "More" tab; `navorder` specifies the order appearing in the navigation bar (1 for the first tab).
 * team
-    - for photos, set roughly 200px wide and 300px height, with resolution 144. The width requirement is to help display the photo properly on an individual's page.
+    - Member pages live in `team/_posts/YYYY-MM-DD-name.md` with `layout: member`. Copy an existing post and delete unused keys. Omit empty fields.
+    - For photos, set roughly 200px wide and 300px height, with resolution 144. The width requirement is to help display the photo properly on an individual's page.
+    - **Fields (keep this small set):**
+        - Always: `title`, `role`, `field`, `position`, `institution`.
+        - `role` is the listing bucket: `PhD`, `MS`, `Undergrad`, `Research Staff`, or `Principal Investigator`.
+        - `field` is the **current** field (`biostat`, `stat`, …). `position` is the caption under the photo (e.g. `PhD Student (Stat)`).
+        - `institution` is usually `UMich` (the profile page expands this to University of Michigan).
+        - `endyear`: year they **left the lab**. Omit if they are current. Current vs alumni is inferred from this (no separate `alum` flag).
+        - Prior stages **in this lab** (omit if not applicable):
+            - `ms_year`: they did MS here, then continued to PhD.
+            - `ug_year`: they were an undergrad here.
+            - `ug_field`: undergraduate field, **only if it differs from** `field`.
+            - `paper: true`: undergrad wrote a paper with the lab (adds `*` on the team page).
+        - After leaving: `placement` (first destination). Add `current_placement` only if it later changed.
+        - Optional links, only when present: `email`, `web`, `github`, `twitter`, `scholar`, `image`, `cv`, `thesis_title`, `thesis_url`.
+        - `handle`: only if it differs from `title` (used to match news/blog `author_handle`; otherwise `title` is used).
+    - **How the team page lists people** (`team/index.md`):
+        - Current: no `endyear`. Current undergrads also have `role: Undergrad`; everyone else in Current is the photo grid.
+        - Past / alumni: has `endyear`.
+        - Former PhD: has `endyear` and `role` contains `PhD`.
+        - Former MS, terminal: has `endyear` and `role: MS`.
+        - Former MS, continued in lab: has `ms_year` and `role` contains `PhD` (they may still be current PhD students, or later alumni).
+        - Former undergrad, left after undergrad: has `ug_year` and `role: Undergrad`.
+        - Former undergrad, continued in lab: has `ug_year` and `role` is not `Undergrad` (e.g. now `PhD` or `MS`). The former-undergrad list shows `ug_field` (falling back to `field`) so a later field change does not overwrite the undergrad record.
+        - Former staff: has `endyear` and `role: Research Staff`.
+    - **Typical edits:**
+        - Current PhD/MS: `role`, `field`, `position`; no `endyear`.
+        - Undergrad who leaves: keep `role: Undergrad`, set `endyear`, `ug_year`, `placement`, and `paper: true` if they wrote a paper.
+        - Undergrad who stays (e.g. Jianhan): change `role`/`field`/`position` to the new stage, keep `ug_year` (and `ug_field` if the field changed), omit `endyear` until they leave the lab.
+        - MS who continues to PhD: change `role` to `PhD`, set `ms_year`, omit `endyear` until they leave.
+    - Member papers on a profile are matched by author **first and last name tokens** (so `Yi Wang` does not match `Yixin Wang`). Emails are printed exactly as in the `email` field (use `[arroba]` / `[punto]` if you want obfuscation).
 
  ## Other Technicalities
  * `categories`

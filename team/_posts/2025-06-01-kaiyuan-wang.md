@@ -1,31 +1,14 @@
 ---
 layout: member
 title: Kaiyuan Wang
-position: PhD Student (Biostat)
-role: PhD Student
-first_position:  
-current_position:  
-endyear: ""
-thesis_title: ""
-thesis_url: ""
-institute: University of Michigan
-institution: UMich
-handle: Kaiyuan Wang
-email: kaiyuanw@umich[punto]edu
-twitter: 
-github: 
-scholar: 
-image: /assets/images/team/kaiyuan-wang.png
-cv: 
-alum: false
-collaborator: false
-support: false
-showicon: true                                  
-web: 
+role: PhD
 field: biostat
-authors: " "
-
+position: PhD Student (Biostat)
+institution: UMich
+email: "kaiyuanw@umich[punto]edu"
+image: /assets/images/team/kaiyuan-wang.png
 ---
+
 
 Interests: Bayesian analysis, latent variable analysis
 

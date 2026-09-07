@@ -8,26 +8,21 @@ navorder: 4
 ---
 {% include JB/setup %}
 
-{% assign team_active = site.categories.team | where: "alum", false | where: "collaborator", false | where: "support", false %}
-{% assign current_undergrads = team_active | where: "role", "Undergrad" %}
-{% assign current_members = "" | split: "" %}
-{% for member in team_active %}
-	{% unless member.role == "Undergrad" %}
-		{% assign current_members = current_members | push: member %}
-	{% endunless %}
-{% endfor %}
-{% assign former_phd_icons = "" | split: "" %}
-{% for member in site.categories.team %}
-	{% if member.showicon == true and member.alum == true and member.collaborator == false %}
-		{% assign former_phd_icons = former_phd_icons | push: member %}
-	{% endif %}
-{% endfor %}
-{% assign former_ms_terminal = site.categories.team | where: "alum", true | where: "role", "MS" | sort: "endyear" | reverse %}
-{% assign former_ms_continued = site.categories.team | where: "ms_placement", "PhD Student at UMich Biostatistics" | sort: "ms_year" | reverse %}
+{% assign team_active = site.categories.team | where_exp: "m", "m.endyear == nil" %}
+{% assign current_undergrads = site.categories.team | where_exp: "m", "m.endyear == nil and m.role == 'Undergrad'" %}
+{% assign current_members = site.categories.team | where_exp: "m", "m.endyear == nil and m.role != 'Undergrad'" %}
+{% assign former_phd_icons = site.categories.team | where_exp: "m", "m.endyear and m.role contains 'PhD'" %}
+{% assign former_ms_terminal = site.categories.team | where_exp: "m", "m.endyear and m.role == 'MS'" | sort: "endyear" | reverse %}
+{% assign former_ms_continued = site.categories.team | where_exp: "m", "m.ms_year and m.role contains 'PhD'" | sort: "ms_year" | reverse %}
 {% assign former_ms_count = former_ms_terminal.size | plus: former_ms_continued.size %}
-{% assign former_undergrads = site.categories.team | where: "alum", true | where: "role", "Undergrad" | sort: "endyear" | reverse %}
-{% assign former_staff = site.categories.team | where: "alum", true | where: "role", "Research Staff" %}
-{% assign alumni = site.categories.team | where: "alum", true | where: "collaborator", false %}
+{% comment %}
+Member fields: role, field, position, endyear (omit if current). Optional prior lab stages: ms_year; ug_year, ug_field (only if different from field), paper. After leaving: placement, and current_placement only if it later changed. Links only if present. handle only if it differs from title.
+{% endcomment %}
+{% assign former_undergrads_terminal = site.categories.team | where_exp: "m", "m.ug_year and m.role == 'Undergrad'" | sort: "ug_year" | reverse %}
+{% assign former_undergrads_continued = site.categories.team | where_exp: "m", "m.ug_year and m.role != 'Undergrad'" | sort: "ug_year" | reverse %}
+{% assign former_undergrads_count = former_undergrads_terminal.size | plus: former_undergrads_continued.size %}
+{% assign former_staff = site.categories.team | where_exp: "m", "m.endyear and m.role == 'Research Staff'" %}
+{% assign alumni = site.categories.team | where_exp: "m", "m.endyear" %}
 
 <nav class="project-hub-nav project-hub-nav-featured" data-hub-accent="team" aria-label="Jump to team sections">
 	<div class="project-hub-nav-label">Jump to</div>
@@ -35,7 +30,7 @@ navorder: 4
 	<a class="project-hub-chip" href="#past"><i class="fa-solid fa-clock-rotate-left"></i> Past <span class="project-hub-chip-count">{{ alumni.size }}</span></a>
 	<a class="project-hub-chip" href="#former-phd"><i class="fa-solid fa-user-graduate"></i> Former PhD <span class="project-hub-chip-count">{{ former_phd_icons.size }}</span></a>
 	<a class="project-hub-chip" href="#former-ms"><i class="fa-solid fa-book"></i> Former MS <span class="project-hub-chip-count">{{ former_ms_count }}</span></a>
-	<a class="project-hub-chip" href="#former-undergrad"><i class="fa-solid fa-user"></i> Former undergrad <span class="project-hub-chip-count">{{ former_undergrads.size }}</span></a>
+	<a class="project-hub-chip" href="#former-undergrad"><i class="fa-solid fa-user"></i> Former undergrad <span class="project-hub-chip-count">{{ former_undergrads_count }}</span></a>
 	<a class="project-hub-chip" href="#former-staff"><i class="fa-solid fa-briefcase"></i> Former staff <span class="project-hub-chip-count">{{ former_staff.size }}</span></a>
 </nav>
 
@@ -143,7 +138,7 @@ I'm extremely fortunate to work with several amazing students to whom I serve as
 <div class="row">
     <!-- iterate over members; new members last. Undergrads are listed under Undergraduate Students. -->
     {% for member in site.categories.team reversed %}
-    {% if member.alum == false and member.collaborator == false and member.support == false %}
+    {% unless member.endyear %}
     {% unless member.role == "Undergrad" %}
     <div class="col-sm-3" style="text-align: center">
     {%if member.url%}
@@ -153,28 +148,18 @@ I'm extremely fortunate to work with several amazing students to whom I serve as
     </div>
     {%endif%}
     {% endunless %}
-    {%endif%}
+    {% endunless %}
     {% endfor %}   
 </div>
 
+{% if current_undergrads.size > 0 %}
 <section id="undergrad">
 <div class="label label-team-pill">Undergraduate students</div>
 <div class="smallnote">$^*$: writing a paper with the lab.</div>
 <div class="smallspacer"></div>
 
-<!-- - $^*$[**Jianhan Zhang**](/team/jianhan-zhang), co-mentored by [Jitao Wang](/team/jitao-wang). Undergrad, Pure Math, Data Science, U of Michigan. **Undergraduate Honor Thesis**: "Counterfactual Fairness in Reinforcement Learning via Marginal Distributional Matching". Thesis work awarded `Highest Honors` in Statistics. -->
-
-
-<!-- <div class="bigspacer"></div>
-
-<hr/>
-<div class="bigspacer"></div>
-<div class="smalltitle text-left">Support Staff </div>
-<div class="bigspacer"></div> -->
-
 <div class="row">
-    {% for member in site.categories.team reversed %}
-    {% if member.alum == false and member.collaborator == false and member.support == false and member.role == "Undergrad" %}
+    {% for member in current_undergrads reversed %}
     {% if member.url %}
     <div class="col-sm-3" style="text-align: center">
     <a href="{{ member.url }}"> <img class="photo" src="{{member.image}}"> </a> <br>
@@ -182,10 +167,10 @@ I'm extremely fortunate to work with several amazing students to whom I serve as
     <p class="note">{{ member.position }}</p>
     </div>
     {% endif %}
-    {% endif %}
     {% endfor %}
 </div>
 </section>
+{% endif %}
 </section>
 
 <section id="past" class="project-hub-section">
@@ -215,13 +200,15 @@ I'm extremely fortunate to work with several amazing students to whom I serve as
 
 <div class="row">
     {% for member in site.categories.team %}
-    {% if member.showicon == true and member.alum == true and member.collaborator == false %}
+    {% if member.endyear %}
+    {% if member.role contains "PhD" %}
     <div class="col-sm-3" style="text-align: center">
     {%if member.url%}
     <a href="{{ member.url }}"> <img class="photo" src="{{member.image}}"> </a> <br>
     <div class="head media-heading member-name"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>  
     <p class="note">{{ member.position }}</p>
     </div>
+    {%endif%}
     {%endif%}
     {%endif%}
     {% endfor %}    
@@ -243,7 +230,7 @@ I'm extremely fortunate to work with several amazing students to whom I serve as
 {% for m in former_ms_terminal %}
   <li>
     {% assign ms_grad_year = m.ms_year | default: m.endyear %}
-    {% assign first_pos_out = m.first_position | default: "" | strip %}
+    {% assign first_pos_out = m.placement | default: "" | strip %}
     {% if m.url %}<a href="{{ m.url }}"><strong>{{ m.title }}</strong></a>{% else %}<strong>{{ m.title }}</strong>{% endif %}
     {% if ms_grad_year %} | (MS {{ ms_grad_year }}){% endif %}
     | MS
@@ -267,7 +254,8 @@ I'm extremely fortunate to work with several amazing students to whom I serve as
     | MS
     {% if m.institution %} | {{ m.institution }}{% endif %}
     {% if m.field %} | {{ m.field }}{% endif %}
-    | MS Placement: {{ m.ms_placement }}
+    {% if m.thesis_title %} | "{{ m.thesis_title }}"{% endif %}
+    {% if m.position %} | Placement: {{ m.position }}{% endif %}
   </li>
 {% endfor %}
 </ul>
@@ -278,24 +266,49 @@ I'm extremely fortunate to work with several amazing students to whom I serve as
 	<div class="project-section-marker-left">
 		<i class="fa-solid fa-user"></i>
 		<span class="project-section-marker-title">Former Undergraduate Students</span>
-		<span class="project-section-marker-count">{{ former_undergrads.size }}</span>
+		<span class="project-section-marker-count">{{ former_undergrads_count }}</span>
 	</div>
 	<a class="project-section-marker-jump" href="#">Jump to top</a>
 </div>
 <div class="smallnote">(those who wrote paper(s) in the lab is marked with $^*$)</div>
 <div class="smallspacer"></div>
+<div class="smalltitle text-left">After undergraduate research</div>
+<div class="smallspacer"></div>
 <ul>
-{% for m in former_undergrads %}
+{% for m in former_undergrads_terminal %}
   <li>
-    {% assign first_pos_out = m.first_position | default: "" | strip %}
+    {% assign ug_grad_year = m.ug_year | default: m.endyear %}
+    {% assign ug_place_out = m.placement | default: "" | strip %}
+    {% assign ug_field_out = m.ug_field | default: m.field | default: "" | strip %}
     {% if m.paper == true %}* {% endif %}
     {% if m.url %}<a href="{{ m.url }}"><strong>{{ m.title }}</strong></a>{% else %}<strong>{{ m.title }}</strong>{% endif %}
-    {% if m.endyear %} | ({{ m.endyear }}){% endif %}
-    {% if m.role %} | {{ m.role }}{% endif %}
+    {% if ug_grad_year %} | (UG {{ ug_grad_year }}){% endif %}
+    | Undergrad
     {% if m.institution %} | {{ m.institution }}{% endif %}
-    {% if m.field %} | {{ m.field }}{% endif %}
+    {% if ug_field_out != "" %} | {{ ug_field_out }}{% endif %}
     {% if m.thesis_title %} | "{{ m.thesis_title }}"{% endif %}
-    {% if first_pos_out != "" %} | First position after graduation: {{ first_pos_out }}{% endif %}
+    {% if ug_place_out != "" %} | Placement: {{ ug_place_out }}{% endif %}
+  </li>
+{% endfor %}
+</ul>
+
+<div class="smallspacer"></div>
+<div class="smalltitle text-left">continued in lab</div>
+<div class="smallspacer"></div>
+<ul>
+{% for m in former_undergrads_continued %}
+  <li>
+    {% assign ug_grad_year = m.ug_year | default: m.endyear %}
+    {% assign ug_place_out = m.position | default: "" | strip %}
+    {% assign ug_field_out = m.ug_field | default: m.field | default: "" | strip %}
+    {% if m.paper == true %}* {% endif %}
+    {% if m.url %}<a href="{{ m.url }}"><strong>{{ m.title }}</strong></a>{% else %}<strong>{{ m.title }}</strong>{% endif %}
+    {% if ug_grad_year %} | (UG {{ ug_grad_year }}){% endif %}
+    | Undergrad
+    {% if m.institution %} | {{ m.institution }}{% endif %}
+    {% if ug_field_out != "" %} | {{ ug_field_out }}{% endif %}
+    {% if m.thesis_title %} | "{{ m.thesis_title }}"{% endif %}
+    {% if ug_place_out != "" %} | Placement: {{ ug_place_out }}{% endif %}
   </li>
 {% endfor %}
 </ul>
@@ -314,7 +327,7 @@ I'm extremely fortunate to work with several amazing students to whom I serve as
 <ul>
 {% for m in former_staff %}
   <li>
-    {% assign first_pos_out = m.first_position | default: "" | strip %}
+    {% assign first_pos_out = m.placement | default: "" | strip %}
     {% if m.url %}<a href="{{ m.url }}"><strong>{{ m.title }}</strong></a>{% else %}<strong>{{ m.title }}</strong>{% endif %}
     {% if m.endyear %} | ({{ m.endyear }}){% endif %}
     {% if m.role %} | {{ m.role }}{% endif %}
@@ -334,7 +347,7 @@ I'm extremely fortunate to work with several amazing students to whom I serve as
 <div class="smalltitle text-left">Research Group Members </div>
 <div class="bigspacer"></div>
 {% for member in site.categories.team %}
-	{% if member.alum == false and member.collaborator == false %}
+	{% unless member.endyear %}
 	    {% cycle 'add rows': '<div class="row">', '', '' %}
 			<div class="col-md-9 memberbox">
 				<div class="media">
@@ -359,7 +372,7 @@ I'm extremely fortunate to work with several amazing students to whom I serve as
 				</div>
 	        </div>	  
 	    {% cycle 'close rows': '', '', '</div><div class="bigspacer"></div>' %}
-	{% endif %}
+	{% endunless %}
 {% endfor %}
 {% cycle 'close rows': '', '</div><div class="bigspacer"></div>', '</div><div class="bigspacer"></div>' %}
 </div>

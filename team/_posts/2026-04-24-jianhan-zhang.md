@@ -1,35 +1,23 @@
 ---
 layout: member
 title: Jianhan Zhang
-position: "*Undergrad (Math, Data Science)"
-role: Undergrad
+role: PhD
+field: stat
+position: PhD Student (Stat)
+ug_year: 2026
+ug_field: math, data science
 paper: true
-first_position: PhD Student, Michigan Statistics
-current_position: 
-endyear: 2026
+placement: PhD Student, Michigan Statistics
 thesis_title: Counterfactual Fairness in Reinforcement Learning via Marginal Distributional Matching
-thesis_url: ""
-institute: University of Michigan
 institution: UMich
-handle: Jianhan Zhang
-email:
-twitter:
-github:
-scholar:
 image: /assets/images/team/ph.png
-cv:
-alum: false
-collaborator: false
-support: false
-showicon: true
 web: www.linkedin.com/in/jianhan-zhang-175536231/
-field: 
-    - math
-    - data science
-authors: " "
 ---
 
-Co-mentored by [Jitao Wang](/team/jitao-wang). 
+
+Previously an undergraduate researcher in the lab
+
+Co-mentored by [Jitao Wang](/team/jitao-wang) as an undergraduate.
 
 # Notes
 

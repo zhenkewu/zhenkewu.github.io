@@ -1,33 +1,15 @@
 ---
 layout: member
 title: Kamron Ramemeier
-position: MS Student (Biostat)
-role: MS Student
-ms_year: 2026
-ms_placement: 
-first_position: 
-current_position: 
-endyear: 
-thesis_title: 
-thesis_url: 
-institute: University of Michigan
-institution: UMich
-handle: 
-email: kamronas@umich[punto]edu
-twitter: 
-github:
-scholar: 
-image: /assets/images/team/kamron-ramemeier.jpg
-cv: 
-alum: false
-collaborator: false
-support: false
-showicon: true                                  
-web: https://tinyurl.com/38hxw6ex
+role: MS
 field: biostat
-authors: " "
-
+position: MS Student (Biostat)
+institution: UMich
+email: "kamronas@umich[punto]edu"
+image: /assets/images/team/kamron-ramemeier.jpg
+web: "https://tinyurl.com/38hxw6ex"
 ---
+
 
 *Current Topic*: Developing and implementing PS-PPI package to improve statistical inference in the presence of ML-imputed missing data. (co-advised by PhD Student [Xingran Chen](/team/xingran-chen))
 

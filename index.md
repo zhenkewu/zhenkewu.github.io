@@ -163,7 +163,8 @@ I currently collaborate closely with
 			{% for news in site.categories.news limit:5 %}
 			
 				{% for member in site.categories.team %}
-					{% if member.handle == news.author_handle %}
+					{% assign member_handle = member.handle | default: member.title %}
+					{% if member_handle == news.author_handle %}
 						{% assign author = member %}
 					{% endif %}
 				{% endfor %}		
@@ -182,7 +183,7 @@ I currently collaborate closely with
 					Posted
 					{{ news.date | date_to_string }}
 					{% if author %}
-					by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
+					by <a class="off" href="{{ author.url }}">{{ author.handle | default: author.title }}</a>
 					{% endif %}						
 				</div>
 				<div class="spacer"></div>	
@@ -215,7 +216,7 @@ I currently collaborate closely with
 					Posted
 					{{ blog.date | date_to_string }}
 					{% if author %}
-					by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
+					by <a class="off" href="{{ author.url }}">{{ author.handle | default: author.title }}</a>
 					{% endif %}						
 				</div>
 				<div class="spacer"></div>	

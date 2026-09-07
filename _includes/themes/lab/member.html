@@ -25,7 +25,11 @@
 			</div>
 			<br/>
 			<div class="smallhead">
-				{{ member.institute }}
+			{% if member.institution == "UMich" %}
+			University of Michigan
+			{% else %}
+			{{ member.institution }}
+			{% endif %}
 			</div>
 		</div>
 	</div>				
@@ -102,35 +106,33 @@
 		<div class="bigspacer"></div>	
 		{% endif %}				   	
 		{% if member.email %}
-		{% assign emailarray = member.email | split: '@' %}
 		<div class="smallhead">
 			Email
 		</div>	
 		<div class="pad-left note">
 			<div class="smallspacer"></div>
 			<i class="fa fa-inbox fa-fw"></i>
-			{{ emailarray.first }}<span style="display:none">obfuscate</span>@{{ emailarray.last }}
+			{{ member.email }}
 		</div>		
 		<div class="bigspacer"></div>			
 		{% endif %}						
 	</div>
 	<div class="col-md-8">	
 		<div class="post">
-			{% if member.alum == true and member.endyear and member.endyear != "" %}
+			{% if member.endyear %}
 			<h1>Alumnus Since</h1>
 			<p>{{ member.endyear }}</p>
 			{% endif %}
 
-			{% assign member_first_pos = member.first_position | default: "" | strip %}
-			{% assign member_curr_pos = member.current_position | default: "" | strip %}
-			{% if member_curr_pos != "" and member_curr_pos != member_first_pos %}
+			{% assign member_placement = member.placement | default: "" | strip %}
+			{% assign member_curr_pos = member.current_placement | default: "" | strip %}
+			{% if member_placement != "" %}
+			<h1>Placement</h1>
+			<p>{{ member_placement }}</p>
+			{% endif %}
+			{% if member_curr_pos != "" and member_curr_pos != member_placement %}
 			<h1>Current Position</h1>
 			<p>{{ member_curr_pos }}</p>
-			{% endif %}
-
-			{% if member_first_pos != "" %}
-			<h1>First position after graduation</h1>
-			<p>{{ member_first_pos }}</p>
 			{% endif %}
 
 			{% if member.thesis_title and member.thesis_title != "" %}
@@ -147,19 +149,26 @@
 		
 		{% assign lastname = member.title | split: ' ' | last %}
 		{% assign firstname = member.title | split: ' ' | first %}
+		{% assign paper_num = 0 %}
 		{% for paper in site.categories.papers %}
-			{% if paper.authors contains lastname and paper.authors contains firstname %}
-				{% assign papersq = true %}
-			{% endif %}
-		{% endfor %}
-
-		{% if papersq == true %}
-			<div class="bigspacer"></div>
-			<div class="head">Papers (partial)</div>
-			<div class="spacer"></div>
-			{% assign paper_num = 0 %}	
-			{% for paper in site.categories.papers %}
-			{% if paper.authors contains lastname and paper.authors contains firstname %}
+			{% assign paper_matches_member = false %}
+			{% assign author_list = paper.authors | default: "" | split: "," %}
+			{% for author_iter in author_list %}
+				{% assign author_clean = author_iter | remove: "*" | strip %}
+				{% if author_clean != "" %}
+					{% assign author_first = author_clean | split: " " | first %}
+					{% assign author_last = author_clean | split: " " | last %}
+					{% if author_first == firstname and author_last == lastname %}
+						{% assign paper_matches_member = true %}
+					{% endif %}
+				{% endif %}
+			{% endfor %}
+			{% if paper_matches_member %}
+					{% if paper_num == 0 %}
+					<div class="bigspacer"></div>
+					<div class="head">Papers (partial)</div>
+					<div class="spacer"></div>
+					{% endif %}
 					{% assign paper_num = paper_num | plus: 1 %}
 					{% if paper.embargo %}
 					<p>{{ paper.title }}</p>
@@ -211,12 +220,12 @@
 							{%if paper.slides%}<a href="{{ paper.slides }}" class="label label-purple">[slides]</a>{% endif %}
 					
 					{% endif %}
-				{% endif %}
-			{% endfor %}
-		{% endif %}		
+			{% endif %}
+		{% endfor %}
 		
+		{% assign member_handle = member.handle | default: member.title %}
 		{% for post in site.categories.blog %}
-			{% if member.handle == post.author_handle %}
+			{% if member_handle == post.author_handle %}
 				{% assign postsq = true %}
 			{% endif %}
 		{% endfor %}
@@ -226,7 +235,7 @@
 			<div class="head">Posts</div>
 			<div class="spacer"></div>
 			{% for post in site.categories.blog %}
-				{% if member.handle == post.author_handle %}
+				{% if member_handle == post.author_handle %}
 					<p><a href="{{ post.url }}" class="off">{{ post.title }}</a>
 				{% endif %}
 			{% endfor %}

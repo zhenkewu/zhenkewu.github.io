@@ -1,30 +1,19 @@
 ---
 layout: member
 title: Tsung-Hung Yao
-position: PhD (Biostat), 2023
 role: PhD
-first_position: Postdoctoral Fellow, Department of Biostatistics, MD Anderson Cancer Center
-current_position: Assistant Professor, Department of Biostatistics, University of Florida
-endyear: 2023
-thesis_title: Bayesian Learning of Structured Covariances, with Applications to Cancer Data
-thesis_url: ""
-institute: University of Michigan
-institution: UMich
-handle: Tsung-Hung Yao
-email: yaots@umich[punto]edu
-twitter: 
-github: 
-scholar: 
-image: /assets/images/team/tsung-hung-yao.png
-cv: 
-alum: true
-collaborator: false
-support: false
-showicon: true                                  
-web: thyao.github.io/
 field: biostat
-authors: " "
+position: PhD (Biostat), 2023
+endyear: 2023
+placement: Postdoctoral Fellow, Department of Biostatistics, MD Anderson Cancer Center
+current_placement: Assistant Professor, Department of Biostatistics, University of Florida
+thesis_title: Bayesian Learning of Structured Covariances, with Applications to Cancer Data
+institution: UMich
+email: "yaots@umich[punto]edu"
+image: /assets/images/team/tsung-hung-yao.png
+web: thyao.github.io/
 ---
+
 
 
 # Education:

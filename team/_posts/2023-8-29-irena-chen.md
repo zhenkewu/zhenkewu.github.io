@@ -1,30 +1,19 @@
 ---
 layout: member
 title: Irena Chen
-position: PhD (Biostat), 2023
-role: PhD 
-first_position: Postdoctoral Fellow, Max Planck Institute for Demographic Research., Germany
-current_position: Research Scientist, Max Planck Institute for Demographic Research., Germany
-endyear: 2023
-thesis_title: Joint Modeling Methods for Individual-level Variances as Predictors of Health Outcomes
-thesis_url: ""
-institute: University of Michigan
-institution: UMich
-handle: Irena Chen
-email: irena@umich[punto]edu
-twitter: 
-github: 
-scholar: 
-image: /assets/images/team/irena-chen.png
-cv: 
-alum: true
-collaborator: false
-support: false
-showicon: true                                 
-web: realirena.github.io/index.html
+role: PhD
 field: biostat
-authors: " "
+position: PhD (Biostat), 2023
+endyear: 2023
+placement: Postdoctoral Fellow, Max Planck Institute for Demographic Research., Germany
+current_placement: Research Scientist, Max Planck Institute for Demographic Research., Germany
+thesis_title: Joint Modeling Methods for Individual-level Variances as Predictors of Health Outcomes
+institution: UMich
+email: "irena@umich[punto]edu"
+image: /assets/images/team/irena-chen.png
+web: realirena.github.io/index.html
 ---
+
 
 
 # Education:

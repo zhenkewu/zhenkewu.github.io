@@ -1,33 +1,20 @@
 ---
 layout: member
 title: Jieru Shi
-position: PhD (Biostat), 2023
-role: PhD 
-ms_year: 2020
-ms_placement: PhD Student at UMich Biostatistics
-first_position: Postdoctoral Fellow, Department of Pure Mathematics and Mathematical Statistics (DPMMS), University of Cambridge, UK
-current_position: Senior Research Fellow in the Department of Statistical Science at University College London
-endyear: 2023
-thesis_title: "Statistical Methods for Assessing Time-varying Causal Effects; Novel Estimands and Inference"
-thesis_url: ""
-institute: University of Michigan
-institution: UMich
-handle: Jieru Shi
-email: herashi@umich[punto]edu
-twitter: 
-github: 
-scholar: 
-image: /assets/images/team/hera-shi.jpeg
-cv: 
-alum: true
-collaborator: false
-support: false
-showicon: true                                  
-web: herashi.github.io
+role: PhD
 field: biostat
-authors: " "
-
+position: PhD (Biostat), 2023
+endyear: 2023
+ms_year: 2020
+placement: Postdoctoral Fellow, Department of Pure Mathematics and Mathematical Statistics (DPMMS), University of Cambridge, UK
+current_placement: Senior Research Fellow in the Department of Statistical Science at University College London
+thesis_title: Statistical Methods for Assessing Time-varying Causal Effects; Novel Estimands and Inference
+institution: UMich
+email: "herashi@umich[punto]edu"
+image: /assets/images/team/hera-shi.jpeg
+web: herashi.github.io
 ---
+
 
 # Education:
 

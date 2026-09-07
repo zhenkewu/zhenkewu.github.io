@@ -1,32 +1,18 @@
 ---
 layout: member
 title: Jitao Wang
-position: PhD (Biostat), 2025
 role: PhD
-ms_year: 2019
-ms_placement: PhD Student at UMich Biostatistics
-first_position: Capital One
-current_position: Capital One
-endyear: 2025
-thesis_title: Reinforcement Learning for Interventional Mobile Health; Non-stationarity, Mediation, and Fairness Considerations
-thesis_url: ""
-institute: University of Michigan
-institution: UMich
-handle: Jitao Wang
-email: 
-twitter: 
-github: 
-scholar: 
-image: /assets/images/team/jitao-wang.png
-cv: 
-alum: true
-collaborator: false
-support: false
-showicon: true                                  
-web: jtwang95.github.io/
 field: biostat
-authors: " "
+position: PhD (Biostat), 2025
+endyear: 2025
+ms_year: 2019
+placement: Capital One
+thesis_title: Reinforcement Learning for Interventional Mobile Health; Non-stationarity, Mediation, and Fairness Considerations
+institution: UMich
+image: /assets/images/team/jitao-wang.png
+web: jtwang95.github.io/
 ---
+
 
 # Education:
 

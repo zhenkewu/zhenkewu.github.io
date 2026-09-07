@@ -1,32 +1,23 @@
 ---
 layout: member
 title: Timothy NeCamp
-position: PhD(Stat),19;NSF Grad Fellow 
-role: 
-    - PhD
-    - NSF Grad Fellow 
-first_position: Co-Founder, Data Bloom
-current_position: Co-Founder, Data Bloom
+role:
+  - PhD
+  - NSF Grad Fellow
+field: stat
+position: PhD(Stat),19;NSF Grad Fellow
 endyear: 2019
+placement: Co-Founder, Data Bloom
 thesis_title: Design and Analysis of Sequential Randomized Trials with Applications to Mental Health and Online Education
-thesis_url: https://deepblue.lib.umich.edu/handle/2027.42/151503
-institute: University of Michigan
+thesis_url: "https://deepblue.lib.umich.edu/handle/2027.42/151503"
 institution: UMich
 handle: Tim NeCamp
-email: tnecamp@umich[punto]edu
-twitter: 
+email: "tnecamp@umich[punto]edu"
 github: tnecamp
-scholar: 
-image: https://pbs.twimg.com/media/D-F-ZHrWsAAFb-_?format=jpg&name=360x360
-cv: 
-alum: true
-collaborator: false  
-support: false
-showicon: true                            
+image: "https://pbs.twimg.com/media/D-F-ZHrWsAAFb-_?format=jpg&name=360x360"
 web: www-personal.umich.edu/~tnecamp/
-field: stat
-authors: " "
 ---
+
 <!-- 436 West Hall <br /> 
 1085 S. University Avenue<br /> 
 University of Michigan <br /> 

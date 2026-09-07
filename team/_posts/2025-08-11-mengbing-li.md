@@ -1,32 +1,20 @@
 ---
 layout: member
 title: Mengbing Li
-position: PhD (Biostat), 2025
 role: PhD
-ms_year: 2019
-ms_placement: PhD Student at UMich Biostatistics
-first_position: Eli Lilly, Indy, IN
-current_position: 
+field: biostat
+position: PhD (Biostat), 2025
 endyear: 2025
+ms_year: 2019
+placement: Eli Lilly, Indy, IN
 thesis_title: Bayesian Structured Latent Variable Models for Individualized Health
-thesis_url: ""
-institute: University of Michigan
 institution: UMich
-handle: Mengbing Li
-email: mengbing@umich[punto]edu
-twitter: 
-github: 
+email: "mengbing@umich[punto]edu"
 scholar: PZAo084AAAAJ
 image: /assets/images/team/mengbing-li.jpg
-cv: 
-alum: true
-collaborator: false         
-support: false
-showicon: true                           
 web: limengbinggz.github.io/
-field: biostat
-authors: " "
 ---
+
 
 
 # Education:
