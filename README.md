@@ -121,7 +121,7 @@ Zhenke Wu's Research Website: [click to view](http://zhenkewu.com)
         - Undergrad who leaves: keep `role: Undergrad`, set `endyear`, `ug_year`, `placement`, and `paper: true` if they wrote a paper.
         - Undergrad who stays (e.g. Jianhan): change `role`/`field`/`position` to the new stage, keep `ug_year` (and `ug_field` if the field changed), omit `endyear` until they leave the lab.
         - MS who continues to PhD: change `role` to `PhD`, set `ms_year`, omit `endyear` until they leave.
-    - Member papers on a profile are matched by author **first and last name tokens** (so `Yi Wang` does not match `Yixin Wang`). Emails are printed exactly as in the `email` field (use `[arroba]` / `[punto]` if you want obfuscation).
+    - Member papers on a profile are matched by author **first and last name tokens** (so `A B` does not match `AC B`). Emails are printed exactly as in the `email` field (use `[arroba]` / `[punto]` if you want obfuscation).
 
  ## Other Technicalities
  * `categories`
