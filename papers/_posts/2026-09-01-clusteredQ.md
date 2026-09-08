@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: "Generalized Fitted Q-Iteration With Clustered Data"
-image: /assets/images/papers/DIRL.png
+image: /assets/images/papers/qlearning_cluster.png
 authors: Liyuan Hu, Jitao Wang, Zhenke Wu, Chengchun Shi
 year: 2025
 shortref: Hu et al.
