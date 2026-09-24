@@ -3,9 +3,9 @@ layout: paper
 title: "A Distribution Mapping Approach to Counterfactually Fair Reinforcement Learning"
 image: /assets/images/papers/cfrl.png
 authors: Jianhan Zhang, Jitao Wang, John Piette, Donglin Zeng, Chengchun Shi, Zhenke Wu
-year: submitted
+year: 2026
 shortref: Zhang et al.
-journal: 
+journal: NeurIPS
 pdf: 
 slides:
 supplement: 
