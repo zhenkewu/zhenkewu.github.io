@@ -22,7 +22,7 @@ tags:
   - global health
 related:
   - title: "CODA benchmark paper"
-    url: /papers/CODA-benchmark-paper-copy
+    url: /papers/champs-multimodal-benchmark
   - title: "LCVA"
     url: /papers/LCVA
   - title: "treeVA"

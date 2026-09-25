@@ -3,9 +3,9 @@ layout: paper
 title: "A Multimodal Benchmark for Evaluating Cause-of-Death Inference Using Child Health and Mortality Data"
 image: /assets/images/papers/coda_benchmark.png
 authors: Junhe Yang, Soumyakanti Pan, Hyun Seung Lim, Yue Chu, Yuting Guo, Nishtha Agarwal, Varun Babbar, Gaurav Rajesh Parikh, Yiqun T. Chen, Chris A. Rees, Ziyaad Dangor, Sanjay G. Lala, Zehang Richard Li, Samuel J. Clark, Zhenke Wu, Abhirup Datta, Li Liu, Cynthia Rudin, Samuel V. Scarpino, Benjamin M. Gyori, Tyler H. McCormick
-year: submitted
+year: 2026
 shortref: Yang et al.
-journal: 
+journal: NeurIPS
 pdf: 
 slides: 
 supplement:  
