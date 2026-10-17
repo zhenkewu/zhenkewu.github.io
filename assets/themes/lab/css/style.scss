@@ -1031,6 +1031,38 @@ a.teaching-link-btn:focus {
 	}
 }
 
+// Keep long sidebar URLs (papers, projects, teaching) inside the left column.
+.glyphbox {
+	min-width: 0;
+	max-width: 100%;
+	overflow-wrap: anywhere;
+	word-break: break-word;
+}
+
+.glyphbox a {
+	overflow-wrap: anywhere;
+	word-break: break-word;
+}
+
+.sidebar-url {
+	display: flex;
+	align-items: flex-start;
+	gap: 0.35em;
+	min-width: 0;
+	max-width: 100%;
+}
+
+.sidebar-url i {
+	flex: 0 0 auto;
+}
+
+.sidebar-url a {
+	flex: 1 1 0;
+	min-width: 0;
+	overflow-wrap: anywhere;
+	word-break: break-word;
+}
+
 .note-button {
 	font-size: $font-size-base;
 	font-weight: $font-weight-base;
