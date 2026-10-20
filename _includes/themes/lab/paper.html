@@ -149,7 +149,7 @@ with gratitude.
 				<div class="smallspacer"></div>
 				<div class="sidebar-url">
 					<i class="fa fa-external-link fa-fw"></i>
-					<a class="off" href="http://dx.doi.org/{{ page.doi }}">{{ page.doi }}</a>
+					<span><a class="off" href="http://dx.doi.org/{{ page.doi }}">{{ page.doi }}</a></span>
 				</div>
 			</div>
 			<div class="bigspacer"></div>			
@@ -163,7 +163,7 @@ with gratitude.
 				<div class="smallspacer"></div>
 				<div class="sidebar-url">
 					<i class="fa fa-external-link fa-fw"></i>
-					<a class="off" href="http://arxiv.org/abs/{{ page.arXiv }}">{{ page.arXiv }}</a>
+					<span><a class="off" href="http://arxiv.org/abs/{{ page.arXiv }}">{{ page.arXiv }}</a></span>
 				</div>
 			</div>
 			<div class="bigspacer"></div>			
@@ -177,7 +177,7 @@ with gratitude.
 				<div class="smallspacer"></div>
 				<div class="sidebar-url">
 					<i class="fa fa-external-link fa-fw"></i>
-					<a class="off" href="{{ page.external_link }}">{{ page.external_link | remove: 'http://' | remove: 'https://' | replace: '/', '/<wbr>' }}</a>
+					<span><a class="off" href="{{ page.external_link }}">{{ page.external_link | remove: 'http://' | remove: 'https://' | replace: '/', '/<wbr>' }}</a></span>
 				</div>
 			</div>
 			<div class="bigspacer"></div>			
@@ -191,7 +191,7 @@ with gratitude.
 				<div class="smallspacer"></div>
 				<div class="sidebar-url">
 					<i class="fa fa-cog fa-fw"></i>
-					<a class="off" href="{{ page.github }}">{{ page.github | remove: 'http://' | remove: 'https://' | replace: '/', '/<wbr>' }}</a>
+					<span><a class="off" href="{{ page.github }}">{{ page.github | remove: 'http://' | remove: 'https://' | replace: '/', '/<wbr>' }}</a></span>
 				</div>
 			</div>
 			<div class="bigspacer"></div>
@@ -217,7 +217,7 @@ with gratitude.
 				<div class="smallspacer"></div>
 				<div class="sidebar-url">
 					<i class="fa fa-file-video-o" aria-hidden="true"></i>
-					<a class="off" href="{{ page.video_link }}">{{ page.video_link | remove: 'http://' | remove: 'https://' | replace: '/', '/<wbr>' }}</a>
+					<span><a class="off" href="{{ page.video_link }}">{{ page.video_link | remove: 'http://' | remove: 'https://' | replace: '/', '/<wbr>' }}</a></span>
 				</div>
 			</div>
 			<div class="bigspacer"></div>			

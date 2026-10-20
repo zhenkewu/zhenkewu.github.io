@@ -1056,9 +1056,16 @@ a.teaching-link-btn:focus {
 	flex: 0 0 auto;
 }
 
-.sidebar-url a {
-	flex: 1 1 0;
+// The span fills the column so long URLs wrap; the link stays inline so its
+// dotted border follows each line of text instead of the full sidebar width.
+.sidebar-url > span {
+	flex: 1 1 auto;
 	min-width: 0;
+	overflow-wrap: anywhere;
+	word-break: break-word;
+}
+
+.sidebar-url a {
 	overflow-wrap: anywhere;
 	word-break: break-word;
 }

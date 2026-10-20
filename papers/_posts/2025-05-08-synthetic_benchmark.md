@@ -16,11 +16,11 @@ external_link: https://arxiv.org/abs/2411.04281
 video_link: 
 type: statistical
 tags:
-    - synthetic EHR data
+    - synthetic data
     - generative AI
     - benchmarking
     - review
-    - ehr
+    - EHR
  
 ---
 
